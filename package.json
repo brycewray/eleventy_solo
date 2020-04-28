@@ -40,6 +40,7 @@
     "debug": "^4.1.1",
     "del": "^5.1.0",
     "eleventy-plugin-error-overlay": "^0.1.2",
+    "eleventy-plugin-local-respimg": "^0.2.0",
     "eleventy-plugin-youtube-embed": "^1.2.0",
     "eleventy-rss-helper": "^1.2.1",
     "fibers": "^4.0.2",

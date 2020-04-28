@@ -3,6 +3,8 @@ const htmlmin = require('html-minifier')
 const ofotigrid = require('./src/_includes/ofotigrid.js')
 const sanitizeHTML = require('sanitize-html')
 const filters = require('./src/assets/utils/filters.js')
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
+const ErrorOverlay = require('eleventy-plugin-error-overlay')
 
 module.exports = function (eleventyConfig) {
 
@@ -16,6 +18,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('robots.txt')
   eleventyConfig.addPassthroughCopy('favicon.ico')
+  eleventyConfig.addPassthroughCopy('./src/assets/fonts')
+  eleventyConfig.addPassthroughCopy('./src/images')
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy")
@@ -73,6 +77,21 @@ module.exports = function (eleventyConfig) {
     }
   })
   eleventyConfig.setLibrary("md", markdownEngine)
+
+  eleventyConfig.addPlugin(lazyImagesPlugin)
+
+  eleventyConfig.setBrowserSyncConfig({
+    ...eleventyConfig.browserSyncConfig,
+    files: [
+      './src/**/*.md',
+      './src/**/*.js',
+      './src/assets/css/*.css',
+      './src/assets/fonts/*.*'
+    ],
+    ghostMode: false
+  })
+
+  eleventyConfig.addPlugin(ErrorOverlay)
 
   eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
 

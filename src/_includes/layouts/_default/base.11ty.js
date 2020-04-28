@@ -7,7 +7,6 @@ module.exports = function (data) {
     ${this.siteHeader(data)}
       ${data.content}
     ${this.siteFooter(data)}
-    <script src="/bundle.js"></script>
   </body>
 </html>
   `

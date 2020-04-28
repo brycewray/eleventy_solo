@@ -92,7 +92,7 @@ module.exports = function(eleventyConfig) {
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-16.png">
     <meta name="msapplication-TileImage" content="/images/ms-icon-144x144-144.png">
 
-    <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <link rel="stylesheet" href="/css/index.css" type="text/css">
     <noscript><style>.lazyload {display: none !important;}</style></noscript>
 
     <noscript>

@@ -86,7 +86,8 @@ In fact, as I quickly saw to my growing consternation, it didn't have the change
 
 Sync was stuck on my Mac's installation of Ulysses, and had been that way for days.
 
-{% lazypicture "iCloud_sync-save_icon_in_Ulysses_634x265", "jpg", 634, "Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" %}
+![Screen capture from Ulysses showing iCloud icon, indicating ongoing sync](/images/iCloud_sync-save_icon_in_Ulysses_634x265.jpg)
+
 <p class="lazypicturecaption">When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn&rsquo;t change, even though you edited this file days ago on another device—Houston, we have an iCloud&nbsp;sync&nbsp;problem.</p>
 
 Yet, other apps seemed to be doing fine and there were no signs of trouble in the Mac Finder or even iCloud itself, according to [Apple's status page](https://www.apple.com/support/systemstatus/).
@@ -189,7 +190,8 @@ However, that was probably just how my wandering mind took them; because, by the
 
 ## The geek's prerogative
 
-{% lazypicture "iA_Writer_on_why-left-ulysses_post_cropped_1272x620", "jpg", 1272, "Screen capture from iA Writer app" %}
+![Screen capture from iA Writer app](/images/iA_Writer_on_why-left-ulysses_post_cropped_1272x620.jpg)
+
 <p class="lazypicturecaption">Ladies and gentlemen, the winner (for now): iA&nbsp;Writer.</p>
 
 *For now*, iA Writer is the winner for my heart and mind when it comes to picking a writing app. I use it to write both the WIP and posts like this one, and I like it more every day. I share the feelings of those who say it actually makes them want to write something just so they can use it, especially its iOS version, which I prefer greatly to those for Scrivener and Ulysses[^scrolling_iAW]---and that's high praise, because each of those is outstanding in its own way.

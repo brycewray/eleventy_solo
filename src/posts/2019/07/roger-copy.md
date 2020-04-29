@@ -76,7 +76,7 @@ So, this matter (pardon the pun) handled, I then pushed the commit---first, to B
 
 So I was all ready to go. Then all I had to do when I got back on the Mac was to use my [currently preferred macOS Git client](https://git-fork.com) to fetch the changes from Bitbucket, which instantly added this Markdown file to the Mac's version of the repo so I could work on it more. Incidentally, I could choose---and have chosen---to do text edits within Working Copy itself. Here you can see the Markdown file for my [last post](/posts/2019/07/lessons-learned):
 
-{% lazypicture "Working_Copy_scr_cap_11_1024x768", "jpg", 1024, "iPad screen capture: Working Copy display showing its built-in text editor" %}
+![iPad screen capture: Working Copy display showing its built-in text editor](/images/Working_Copy_scr_cap_11_1024x768.jpg)
 
 However, to Borum's credit, he [advises](https://workingcopyapp.com/manual/extending-ios) using a separate editor that's likely better suited to what a typical user wants, especially if that's involving code editing; so I also added [Textastic](https://www.textasticapp.com) to my iOS devices and have quickly learned it, too, is a great addition for one who wants to do as much site-editing in iOS as possible when necessary.
 

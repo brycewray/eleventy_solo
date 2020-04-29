@@ -3,8 +3,8 @@ const htmlmin = require('html-minifier')
 const ofotigrid = require('./src/_includes/ofotigrid.js')
 const sanitizeHTML = require('sanitize-html')
 const filters = require('./src/assets/utils/filters.js')
-const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
-// const pluginLocalRespImg = require('eleventy-plugin-local-respimg')
+// const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
+const pluginLocalRespImg = require('eleventy-plugin-local-respimg')
 const ErrorOverlay = require('eleventy-plugin-error-overlay')
 
 module.exports = function (eleventyConfig) {
@@ -93,36 +93,36 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(ErrorOverlay)
 
-  eleventyConfig.addPlugin(lazyImagesPlugin)
+  // eleventyConfig.addPlugin(lazyImagesPlugin)
 
-//  eleventyConfig.addPlugin(pluginLocalRespImg, {
-//    folders: {
-//      source: 'src',
-//      output: '_site',      
-//    },
-//    images: {
-//      resize: {
-//        min: 300,
-//        max: 1500,
-//        step: 300,
-//      },
-//      gifToVideo: false,
-//      sizes: '100vw',
-//      lazy: true,
-//      additional: [
-//        'images/icons/**/*',
-//      ],
-//      watch: {
-//        src: 'images/**/*'
-//      },
-//      pngquant: {},
-//      mozjpeg: {},
-//      svgo: {},
-//      gifresize: {},
-//      webp: {},
-//      gifwebp: {},
-//    }
-//  })
+  eleventyConfig.addPlugin(pluginLocalRespImg, {
+    folders: {
+      source: 'src',
+      output: '_site',      
+    },
+    images: {
+      resize: {
+        min: 300,
+        max: 1500,
+        step: 300,
+      },
+      gifToVideo: false,
+      sizes: '100vw',
+      lazy: true,
+      additional: [
+        'images/icons/**/*',
+      ],
+      watch: {
+        src: 'images/**/*'
+      },
+      pngquant: {},
+      mozjpeg: {},
+      svgo: {},
+      gifresize: {},
+      webp: {},
+      gifwebp: {},
+    }
+  })
 
   // eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
 

@@ -7,28 +7,28 @@ exports.render = function (data) {
 
   <main>
 
-  <div class="hero-home">
+  <div class="w-full height-hero pt-12">
     <img src="${data.featured_image}" alt="${data.featured_image_alt}" class="imgCover" />
   </div>
   ${
     (data.featured_image_caption)
-    ? `<p class="legal ctr text-muted" style="margin-top: 0.5em;">${data.featured_image_caption}<span class="IEonly"> &bull; <em>(May appear distorted in obsolete browsers.)</em></span></p>`
+    ? `<p class="text-center text-xs tracking-normal mt-1">${data.featured_image_caption}</p>`
     : ``
   }
 
-  <div class="container-home">
-    <div class="column-home-1">
+  <div class="container px-8 grid grid-cols-5 gap-16 lg:w-5/6 mr-auto ml-auto">
+    <div class="col-span-3">
       ${data.content}
     </div>
-    <div class="column-home-2">
-      <h2 class="h1 topofHome" style="margin-bottom: 0.5em;"><a href="/posts/">Posts</a></h2>
+    <div class="col-span-2">
+      <h2 class="h1 mb-4"><a href="/posts/">Posts</a></h2>
       ${
         data.collections.post.slice(0, 7).map(post =>
         `
       <div>
-        <h2 class="h5"><a href="${post.url}">${post.data.title}</a></h2>
-        <p class="h5"><em>${post.data.subtitle}</em></p>
-        <p class="legal text-muted" style="margin-top: 0;">
+        <h2 class="h5 not-italic"><a href="${post.url}">${post.data.title}</a></h2>
+        <p class="font-bold text-sm mb-0 italic"><em>${post.data.subtitle}</em></p>
+        <p class="text-xs tracking-normal mt-0 mb-1">
           <time style="display: inline;" datetime="${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}">${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}</time>
           ${
             post.data.lastmod
@@ -38,14 +38,14 @@ exports.render = function (data) {
             : ``
           }
         </p>
-        <p class="pokey text-body" style="margin-top: 0.5em; margin-bottom: 1.5em;">
+        <p class="text-sm mt-2 mb-3">
           ${post.data.description}
         </p>
       </div>
         ` 
       ).join('')}
 
-      <p><a href="/posts/"><strong>All ${data.collections.post.length} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
+      <p><a href="/posts/"><strong>All ${data.collections.post.length} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
       <!-- Twitter timeline used to go here -->
     </div>
   </div>

@@ -14,7 +14,7 @@ body {
 
 p, li {
   /* for handling Markdown-created <p> and <li> */
-  @apply mb-3 text-base text-lg;
+  @apply mb-3 text-lg tracking-tight;
 }
 
 pre, code {
@@ -120,8 +120,8 @@ h5, .h5 {
 }
 
 .height-post {
-  height: 65vh;
-  max-height: 65vh;
+  height: 35vh;
+  max-height: 35vh;
 }
 
 .text-nowrap, .text-nobrk {
@@ -143,15 +143,15 @@ article p {
     max-height: 70vh;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 769px) {
   .height-post {
-    height: 75vh;
-    max-height: 75vh;
+    height: 40vh;
+    max-height: 40vh;
   }
 }
 
 .yellowBox {
-  @apply bg-yellow-300 p-4 mx-auto my-2 w-full py-0 px-6;
+  @apply bg-yellow-300 p-4 mx-auto my-2 w-full p-6;
   border: 1px solid #000;
 }
 
@@ -328,6 +328,20 @@ hr {
   }
 }
 
+.YTembed { /* container for iframe */
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  & iframe, & object, & embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 /* purgecss end ignore */
 
 @tailwind components;

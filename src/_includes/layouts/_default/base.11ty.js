@@ -5,7 +5,7 @@ module.exports = function (data) {
   ${this.headTag(data)}
   <body>
     ${this.siteHeader(data)}
-      ${data.content}
+    ${data.content}
     ${this.siteFooter(data)}
     <script src="/assets/js/flying-pages.min.js"></script>
     <script src="/assets/js/twitterMeta.js"></script>

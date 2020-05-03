@@ -23,22 +23,22 @@ module.exports = function(eleventyConfig) {
         ${likesSize
           ? `<details>
               <summary class="h4 not-italic">Likes&nbsp;&nbsp;<span class="text-xs font-normal">(${likesSize})</span></summary>
-              <ul class="webmentions__list_facepile">
+              <div>
               ${likes.map(like =>
-                `<li><a href="${like.url}" class="u-url"><img class="webmention__author__photo u-photo" src="${like.author.photo}" alt="${like.author.name}"></a></li>`
+                `<a href="${like.url}" class="u-url"><img class="webmention__author__photo u-photo" src="${like.author.photo}" alt="${like.author.name}"></a>`
               ).join('')}
-              </ul>
+              </div>
             </details>`
           : ``
         }
         ${repostsSize
           ? `<details>
               <summary class="h4 not-italic">Reposts&nbsp;&nbsp;<span class="text-xs font-normal">(${repostsSize})</span></summary>
-              <ul class="webmentions__list_facepile">
+              <div>
               ${reposts.map(repost =>
-                `<li><a href="${repost.url}" class="u-url"><img class="webmention__author__photo u-photo" src="${repost.author.photo}" alt="${repost.author.name}"></a></li>`
+                `<a href="${repost.url}" class="u-url"><img class="webmention__author__photo u-photo" src="${repost.author.photo}" alt="${repost.author.name}"></a>`
               ).join('')}
-              </ul>
+              </div>
             </details>`
           : ``
         }

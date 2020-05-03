@@ -73,6 +73,7 @@
   border-radius: 50%;
   object-fit: cover;
   margin-right: .5rem;
+  display: inline !important; /* otherwise overridden by TWCSS */
 }
 
 .webmention__pubdate {

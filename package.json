@@ -9,12 +9,16 @@
     "clean": "rm -rf _site",
     "start": "npm-run-all clean --parallel dev:*",
     "dev:postcss": "postcss src/assets/css/index.css -d _site/css/ --config ./postcss.config.js -w",
-    "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --watch --serve --quiet",
-    "Notdev:bsync": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode",
+    "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --watch --quiet",
+    "dev:bsync": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode",
     "build": "npm-run-all clean --parallel prod:*",
+    "prod:postcss": "postcss src/assets/css/index.css -d _site/css/ --config ./postcss.config.js",
     "prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site",
-    "prod:bsync": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode",
-    "testbuild": "npm-run-all clean --parallel prod:webpack prod:eleventy bsprod"
+    "testProd:postcss": "postcss src/assets/css/index.css -d _site/css/ --config ./postcss.config.js -w",
+    "testProd:bsync": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode",
+    "testProd:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site --watch",
+    "setProd": "NODE_ENV=production",
+    "testbuild": "NODE_ENV=production npm-run-all clean --parallel testProd:*"
   },
   "keywords": [],
   "author": "",
@@ -62,7 +66,6 @@
     "node-loader": "^0.6.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^7.0.27",
-    "postcss-cli": "^7.1.1",
     "postcss-css-variables": "^0.14.0",
     "postcss-nesting": "^7.0.1",
     "postcss-partial-import": "^4.1.0",
@@ -81,6 +84,9 @@
     "get-json": "^1.0.1",
     "html-minifier": "^4.0.0",
     "jsonfile": "^6.0.1",
-    "md5": "^2.2.1"
+    "md5": "^2.2.1",
+    "postcss-clean": "^1.1.0",
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.4.4"
   }
 }

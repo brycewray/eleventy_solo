@@ -4,7 +4,7 @@
 /* keep header here rather than base or layout SCSS */
 
 header {
-  height: 30px;
+  /* height: 30px; */
   font-family: var(--sans-serif);
   width: 100%;
   background-color: var(--darkblue);
@@ -196,8 +196,12 @@ nav {
   }
   font-size: calc(var(--minimalbig) * 1em);
   font-weight: 700;
-  margin-top: 0.2em;
+  margin-top: 0.5em;
   margin-left: 5%;
+}
+
+.site-logo img {
+  display: inline !important; /* Otherwise, is overridden by TWCSS */
 }
 
 
@@ -250,7 +254,6 @@ nav {
 }
 
 .site-logo-holder {
-  vertical-align: text-top;
   & img {
     height: 18px;
     width: 18px;

@@ -28,12 +28,12 @@ As I close this little update about this new little one, please allow "Pawpaw"--
 
 ![Brad and Sarah Beck (the latter is our daughter) admire their new child, Kennedy, less than an hour after her arrival](/images/Mom-and-Dad-admire-Kennedy-first-night__1008x756.jpg)
 
-Our daughter and son-in-law, Sarah and Brad, admire their new baby, less than an hour after she arrived.{.lazypicturecaption}
+<p class="text-sm text-center leading-5">Our daughter and son-in-law, Sarah and Brad, admire their new baby, less than an hour after she arrived.</p>
 
 ![Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth](/images/BW-holding-Kennedy-first-night__crop_1008x712.jpg)
 
-Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough "firsts" for you there?{.lazypicturecaption}
+<p class="text-sm text-center leading-5">Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough "firsts" for you there?</p>
 
 ![Kennedy Beck, a newborn baby, rests in a car seat as she goes home for the first time](/images/Kennedy-goes-home__crop_1008x1021.jpg)
 
-Despite her slightly early arrival, Kennedy checked out just fine over the next couple of days, and Mom and Dad got to take her home when she was a bit over <span class="nobrk">forty-three hours old</span>.{.lazypicturecaption}
+<p class="text-sm text-center leading-5">Despite her slightly early arrival, Kennedy checked out just fine over the next couple of days, and Mom and Dad got to take her home when she was a bit over <span class="nobrk">forty-three hours old</span>.</p>

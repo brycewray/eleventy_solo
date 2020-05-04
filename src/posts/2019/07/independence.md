@@ -68,7 +68,7 @@ In the days that followed, I eagerly found and read everything I could find abou
 
 ![Me, in 1984, eagerly wrapping my new Macintosh.](/images/1984-07-11_01_retouched_1280x720.jpg)
 
-<p class="lazypicturecaption">July 11, 1984: A much younger and skinnier me eagerly unwraps my new &ldquo;Skinny Mac.&rdquo; (Photo by my overly tolerant&nbsp;spouse.)</p>
+<p class="text-sm text-center leading-5">July 11, 1984: A much younger and skinnier me eagerly unwraps my new &ldquo;Skinny Mac.&rdquo; (Photo by my overly tolerant&nbsp;spouse.)</p>
 
 That fall, I started teaching at a community college, so I used the Mac and the ImageWriter to produce tons of materials for my classes over the next few years: lesson recaps, tests, graphics to illustrate various concepts, and so on.
 

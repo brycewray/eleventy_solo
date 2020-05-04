@@ -82,6 +82,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("src/**/*.js")
   eleventyConfig.addWatchTarget("./src/assets/css/*.css")
+  eleventyConfig.addWatchTarget("./src/**/*.md")
 
   eleventyConfig.setBrowserSyncConfig({
     ...eleventyConfig.browserSyncConfig,

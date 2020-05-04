@@ -3,7 +3,7 @@ const htmlmin = require('html-minifier')
 const ofotigrid = require('./src/_includes/ofotigrid.js')
 const sanitizeHTML = require('sanitize-html')
 const filters = require('./src/assets/utils/filters.js')
-// const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
 // const pluginLocalRespImg = require('eleventy-plugin-local-respimg')
 const ErrorOverlay = require('eleventy-plugin-error-overlay')
 
@@ -95,7 +95,15 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(ErrorOverlay)
 
-  // eleventyConfig.addPlugin(lazyImagesPlugin)
+  eleventyConfig.addPlugin(lazyImagesPlugin, {
+    scriptSrc: "/assets/js/lazysizes.min.js",
+    transformImgPath: (imgPath) => {
+      if (imgPath.startsWith('/') && !imgPath.startsWith('//')) {
+        return `./src${imgPath}`;
+      }
+      return imgPath
+    },
+  })
 
 //  eleventyConfig.addPlugin(pluginLocalRespImg, {
 //    folders: {

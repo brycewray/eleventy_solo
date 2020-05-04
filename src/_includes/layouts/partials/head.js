@@ -99,8 +99,6 @@ module.exports = function(eleventyConfig) {
       <meta name="twitter:widgets:theme" content="dark">
       <meta name="twitter:widgets:link-color" content="#00bbff">
     </noscript>
-
-    <script src="/assets/js/lazysizes.min.js" async></script>
   </head>
   `
 

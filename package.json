@@ -90,9 +90,11 @@
     "imagemin-pngquant": "^8.0.0",
     "jimp": "^0.10.3",
     "jsonfile": "^6.0.1",
+    "junk": "^3.1.0",
     "md5": "^2.2.1",
+    "node-dir": "^0.1.17",
     "postcss-clean": "^1.1.0",
     "postcss-import": "^12.0.1",
-    "tailwindcss": "^1.4.4"
+    "tailwindcss": "^1.4.5"
   }
 }

@@ -50,3 +50,5 @@ _site
 data/*.json
 
 .lazyimages.json
+
+pngquant*

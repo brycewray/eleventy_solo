@@ -52,3 +52,5 @@ data/*.json
 .lazyimages.json
 
 pngquant*
+
+imgxfm.js

@@ -1,16 +1,9 @@
-/* * * * * * * * * * 
-Based on:
-https://web.dev/serve-responsive-images/
-https://sharp.pixelplumbing.com/api-output
-https://nodejs.org/api/fs.html
-
-* * * * * * * * * */
-
-const sharp = require('sharp');
-const fs = require('fs');
+const sharp = require('sharp')
+const fs = require('fs')
 const SITEDIR = '_site'
 const IMGLNDG = '_site/images'
-const directory = 'src/images';
+const directory = 'src/images'
+const sizeOf = require('image-size')
 const respSizes = [300, 600, 900, 1200]
 
 // begin, for test only
@@ -22,38 +15,62 @@ if(!fs.existsSync(IMGLNDG)) {
 }
 // end, for test only
 
-fs.readdirSync(directory).forEach(file => {
-  var fileExt = file.substr((file.lastIndexOf('.') + 1 ))
-  var fileBas = file.slice(0, -4)
-  respSizes.forEach(size => {
-    fileExt == 'jpg'
-    ? sharp(`${directory}/${file}`)
+fs.readdirSync(directory)
+  /*.filter(function(file) {
+    return file !== '.DS_Store' 
+  })
+  */
+  .forEach((file) => {
+    var fileExt = file.substr((file.lastIndexOf('.') + 1 ))
+    var fileBas = file.slice(0, -4)
+    console.log(`Directory = ${directory} and file = ${file}`)
+    // var dimensions = sizeOf(file)
+    // var fileWidth = dimensions.width
+    fileWidth = 1201
+    respSizes.forEach(size => {
+      fileExt == 'jpg' && size <= fileWidth
+      ? sharp(`${directory}/${file}`)
         .jpeg({
           quality: 60,
         })
-      .resize(size)
-      .toFile(`${IMGLNDG}/${fileBas}-${size}.${fileExt}`)
-      .then()
-      .catch(err => {console.log(err + file)})
+        .resize({
+          width: size,
+          withoutEnlargement: true,
+        })
+        .toFile(`${IMGLNDG}/${fileBas}-${size}.${fileExt}`)
+        .then(() => {
+          console.log(`Sharp output ${file} as ${fileBas}-${size}.${fileExt}`)
+        })
+        .catch(err => {console.log(err + file)})
       : ``
-    fileExt == 'png'
-    ? sharp(`${directory}/${file}`)
+      fileExt == 'png' && size <= fileWidth
+      ? sharp(`${directory}/${file}`)
         .png({})
-      .resize(size)
-      .toFile(`${IMGLNDG}/${fileBas}-${size}.${fileExt}`)
-      .then()
-      .catch(err => {console.log(err + file)})
+        .resize({
+          width: size,
+          withoutEnlargement: true,
+        })
+        .toFile(`${IMGLNDG}/${fileBas}-${size}.${fileExt}`)
+        .then(() => {
+          console.log(`Sharp output ${file} as ${fileBas}-${size}.${fileExt}`)
+        })
+        .catch(err => {console.log(err + file)})
       : ``
-    // now, make webp for each, regardless of original file format
-    fileExt == 'jpg' || fileExt == 'png' // trying to miss the 'icons' dir and the hidden .DS_Store files on macOS
-    ? sharp(`${directory}/${file}`)
+      // now, make webp for each, regardless of original file format
+      size <= fileWidth    
+      ? sharp(`${directory}/${file}`)
         .webp({
           quality: 60,
         })
-      .resize(size)
-      .toFile(`${IMGLNDG}/${fileBas}-${size}.webp`)
-      .then()
-      .catch(err => {console.log(err + file)})
-    : ``
+        .resize({
+          width: size,
+          withoutEnlargement: true,
+        })
+        .toFile(`${IMGLNDG}/${fileBas}-${size}.webp`)
+        .then(() => {
+          console.log(`Sharp output ${file} as ${fileBas}-${size}.${fileExt}`)
+        })
+        .catch(err => {console.log(err + file)})
+      : ``
+    })
   })
-})

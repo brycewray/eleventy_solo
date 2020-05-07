@@ -44,9 +44,9 @@ Dr. Nielsen [first released MailMate as a public beta](https://blog.freron.com/2
 
 It's hard for somebody who's prided himself since the 1980s on knowing his way around the Mac-o-sphere *not* to give MailMate a try sooner or later. After all, its [fans](https://www.youtube.com/watch?v=e_SlbQzL9lc) [swear](https://brettterpstra.com/2018/01/08/best-of-2017-working-on-macos/) [by](https://www.slant.co/options/1952/~mailmate-review) [it](https://www.youtube.com/playlist?list=PLC4ZkBr87CO0jmrQvGQ77t44tCT-xklqU) as *the* email client for Mac power users. However, perhaps *because* [I had become so locked into my personal "Holy Grail" where email is concerned](/posts/2019/05/the-holy-mail), I became aware of it only recently.
 
-![Screen capture of the MailMate app](/images/MailMate_screen_cap_1280x720.jpg)
+{% lazypicture "MailMate_screen_cap_1280x720", "jpg", 1280, "Screen capture of the MailMate app" %}
 
-<p class="text-sm text-center leading-5">MailMate, with its Latin-displaying “distortion mode” engaged for privacy’s sake.</p>
+<p class="lazypicturecaption">MailMate, with its Latin-displaying “distortion mode” engaged for privacy’s sake.</p>
 
 Although my email needs aren't dramatic---as I've explained before, I don't use my Mac to access work-related email[^vmMail], so it's simply my personal stuff, albeit over twenty years' worth of it, and plenty more rolling in every day---I still was intrigued by several aspects of MailMate.
 

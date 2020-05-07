@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
     return `
   
     <div class="webmentions" id="webmentions">
-      <h3 class="mt2 mb-4 italic">Webmentions</h3>
+      <h3 class="mt-2 mb-4 italic text-3xl tracking-tighter">Webmentions</h3>
       ${wMentions.length > 0
         ? 
         `

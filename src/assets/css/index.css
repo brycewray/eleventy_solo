@@ -141,8 +141,7 @@ article h1, article h2, article h3, article h4 {
 }
 
 article p {
-  @apply leading-relaxed;
-  @apply mt-6 mb-6;
+  @apply text-xl leading-relaxed mt-6 mb-6;
 }
 
 @media screen and (min-width: 769px) {

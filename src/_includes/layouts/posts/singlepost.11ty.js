@@ -5,17 +5,17 @@ exports.data = {
 exports.render = function (data) {
   return `
 <main class="pt-12">
-  <div class="container h-auto w-full min-w-full relative overflow-hidden gradient-titles pt-12 pb-6 px-20">
-    <h1 class="text-center text-3xl md:text-left md:text-5xl lg:text-6xl text-gray-200 tracking-tighter leading-tight mb-8 px-4 md:px-0">${data.title}</h1>
-    <h2 class="text-center italic text-xl md:text-left md:text-3xl lg:text-4xl text-gray-200 leading-tight tracking-tighter px-6 md:px-0">
+  <div class="container h-auto w-full min-w-full relative overflow-hidden gradient-titles pt-12 pb-6 px-16">
+    <h1 class="text-center text-3xl md:text-left md:text-5xl lg:text-6xl text-white tracking-tighter leading-tight mb-6 px-4 md:px-0">${data.title}</h1>
+    <h2 class="text-center italic text-xl md:text-left md:text-3xl lg:text-5xl text-white leading-tight tracking-tighter px-6 md:px-0">
       ${
         data.subtitle
           ? data.subtitle
           : `&nbsp;`
       }
     </h2>
-    <p class="hidden not-italic md:block md:text-xl lg:text-2xl tracking-tighter md:text-base md:mt-8 text-gray-200">${data.description}</p>
-    <p class="text-base text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-6 text-gray-200">
+    <p class="hidden not-italic md:block md:text-xl lg:text-2xl tracking-tighter md:text-base md:mt-8 mb-6 text-white">${data.description}</p>
+    <p class="text-base text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
       <span style="font-variant: small-caps">published:</span>&nbsp; <strong>${(data.page.date).toLocaleDateString('en-US', {
         year: 'numeric', month: 'long', day: 'numeric'})}</strong><br />
       <span class="text-sm">
@@ -29,7 +29,7 @@ exports.render = function (data) {
     </p>
   </div>
 
-  <div class="sm:w-5/6 md:w-2/3 lg:w-1/2 mt-10 mr-auto ml-auto px-12">
+  <div class="sm:w-5/6 md:w-2/3 lg:w-1/2 mt-10 mr-auto ml-auto px-16">
     <article>
       ${data.content}
     </article>

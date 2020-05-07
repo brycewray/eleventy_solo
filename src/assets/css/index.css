@@ -135,8 +135,8 @@ article h1, article h2, article h3, article h4 {
   @apply tracking-tight mt-8 mb-6;
 }
 
-article p {
-  @apply text-xl leading-relaxed mt-6 mb-6;
+article p, li {
+  @apply text-base leading-relaxed mt-6 mb-6;
 }
 
 @media screen and (min-width: 769px) {
@@ -144,11 +144,14 @@ article p {
     height: 70vh;
     max-height: 70vh;
   }
-}
-@media screen and (min-width: 769px) {
+
   .height-post {
     height: 40vh;
     max-height: 40vh;
+  }
+
+  article p, li {
+    @apply text-xl;
   }
 }
 

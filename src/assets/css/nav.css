@@ -51,6 +51,7 @@ header {
 @media (min-width: 900px) {
   .nav__item {
     display: inline-block;
+    @apply text-lg;
     & a {
       display: inline-block;
       padding-top: 0.25em;
@@ -229,7 +230,7 @@ nav {
     top: 15%;
     transform: none;
     margin-top: 0;
-    margin-left: 60%;
+    margin-left: 50%;
     display: table;
     grid-column: 4 / 5;
     & a {

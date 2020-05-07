@@ -117,8 +117,9 @@ header {
    &:checked {
      & ~ nav .nav__items {
        height: auto;
+       background-color: var(--darkblue);
        max-height: 30rem;
-       transition: all 2s cubic-bezier(.5, 1, .22, 1);
+       transition: all 0.5s cubic-bezier(.5, 1, .22, 1);
      }
      & ~ label .nav__icon-line:first-child {
        top: 0px;

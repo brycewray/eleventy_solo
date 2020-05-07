@@ -60,7 +60,7 @@ exports.render = function (data) {
         <strong>Previous</strong>: 
         <a class="border-transparent text-blue-200 hover:text-white hover:border-blue-200" href="${data.prevPost.url}">${data.prevPost.data.title}</a>
       </p>`
-      : ``
+      : `<p class="text-xs my-0 py-0 leading-tight">&nbsp;</p>`
     }
     </div>`
     : ``

@@ -123,10 +123,14 @@ summary.h4 {
 
 /* for imported comments */
 
+.commentHead {
+  @apply text-3xl text-center tracking-tighter mt-2;
+}
+
 .commentOpen {
-  @apply text-sm mt-6 mb-0;
+  @apply text-base mt-6 mb-0;
 }
 
 .commentBody {
-  @apply text-sm my-0;
+  @apply text-base my-0;
 }

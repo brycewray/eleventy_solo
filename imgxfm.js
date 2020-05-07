@@ -119,7 +119,7 @@ dir.files(directory, function(err, files){
         })
         .toFile(`${IMGLNDG}/${fileBas}-${size}.${fileExt}`)
         .then(() => {
-          console.log(`Sharp output ${file} as ${fileBas}-${size}.${fileExt}`)
+          // console.log(`Sharp output ${file} as ${fileBas}-${size}.${fileExt}`)
         })
         .catch(err => {console.log(err + file)})
       : ``
@@ -141,4 +141,5 @@ dir.files(directory, function(err, files){
       : ``
     })
   })
+  console.log(`Image processing complete`)
 })

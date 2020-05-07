@@ -8,7 +8,11 @@ exports.render = function (data) {
   <main>
 
   <div class="w-full height-hero pt-12">
-    <img src="${data.featured_image}" alt="${data.featured_image_alt}" class="imgCover" />
+    <picture>
+      <source srcset="/images/${data.featured_image_base}-300.webp 300w, /images/${data.featured_image_base}-600.webp 600w, /images/${data.featured_image_base}-1200.webp 1200w" class="imgCover" type="image/webp" />
+      <source srcset="/images/${data.featured_image_base}-300.${data.featured_image_ext} 300w, /images/${data.featured_image_base}-600.${data.featured_image_ext} 600w, /images/${data.featured_image_base}-1200.${data.featured_image_ext} 1200w" class="imgCover" type="image/${data.featured_image_ext}" />
+      <img src="/images/${data.featured_image_base}-1200.${data.featured_image_ext}" alt="${data.featured_image_alt}" class="imgCover" />
+    </picture>
   </div>
   ${
     (data.featured_image_caption)

@@ -3,7 +3,7 @@ const htmlmin = require('html-minifier')
 const ofotigrid = require('./src/_includes/ofotigrid.js')
 const sanitizeHTML = require('sanitize-html')
 const filters = require('./src/assets/utils/filters.js')
-const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
+// const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
 // const pluginLocalRespImg = require('eleventy-plugin-local-respimg')
 const ErrorOverlay = require('eleventy-plugin-error-overlay')
 
@@ -21,7 +21,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('favicon.ico')
   eleventyConfig.addPassthroughCopy('./src/assets/fonts')
   eleventyConfig.addPassthroughCopy('./src/assets/js')
-  eleventyConfig.addPassthroughCopy('./src/images')
+  eleventyConfig.addPassthroughCopy('./src/images/icons')
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy")
@@ -95,6 +95,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(ErrorOverlay)
 
+  /*
   eleventyConfig.addPlugin(lazyImagesPlugin, {
     scriptSrc: "/assets/js/lazysizes.min.js",
     transformImgPath: (imgPath) => {
@@ -104,6 +105,7 @@ module.exports = function (eleventyConfig) {
       return imgPath
     },
   })
+  */
 
 //  eleventyConfig.addPlugin(pluginLocalRespImg, {
 //    folders: {
@@ -134,7 +136,7 @@ module.exports = function (eleventyConfig) {
 //    }
 //  })
 
-  // eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
+  eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {

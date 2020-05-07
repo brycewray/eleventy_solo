@@ -9,8 +9,8 @@ lastmod: 2020-04-22T19:30:00-05:00
 discussionId: "2019-04-why-left-ulysses"
 oldComments: |
     <div class="webmentions">
-      <h3 class="ctr">Comments</h3>
-      <p class="legal ctr">
+      <h3 class="commentHead">Comments</h3>
+      <p class="text-xs italic text-center">
         (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="nofollow">Talkyard</a>.)
       </p>
       <p class="commentOpen"><strong>Chris Rosser</strong> <em>2019-04-30</em></p>

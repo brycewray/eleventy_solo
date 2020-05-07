@@ -10,8 +10,8 @@ lastmod: 2020-03-29T10:08:00-05:00
 discussionId: "2019-09-now-im-sixty-four"
 oldComments: |
   <div class="webmentions">
-    <h3 class="ctr">Comments</h3>
-    <p class="legal ctr">
+    <h3 class="commentHead">Comments</h3>
+    <p class="text-xs italic text-center">
       (Imported from previous comments host, <a href="https://talkyard.io">Talkyard</a>.)
     </p>
 

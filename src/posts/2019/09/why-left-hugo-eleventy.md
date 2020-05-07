@@ -10,8 +10,8 @@ lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-09-why-left-hugo-eleventy"
 oldComments: |
     <div class="webmentions">
-      <h3 class="ctr">Comments</h3>
-      <p class="legal ctr">
+      <h3 class="commentHead">Comments</h3>
+      <p class="text-xs italic text-center">
         (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="nofollow">Talkyard</a>.)
       </p>
       <p class="commentOpen"><strong>Chris Rosser</strong> <em>2019-09-08</em></p>

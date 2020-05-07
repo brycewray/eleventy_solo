@@ -10,8 +10,8 @@ lastmod: 2019-07-25T19:05:00-05:00
 discussionId: "2019-06-ahoy-mate"
 oldComments: |
     <div class="webmentions">
-      <h3 class="ctr">Comments</h3>
-      <p class="legal ctr">
+      <h3 class="commentHead">Comments</h3>
+      <p class="text-xs italic text-center">
         (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="nofollow">Talkyard</a>.)
       </p>
       <p class="commentOpen"><strong>Andrew Canion</strong> <em>2019-06-16</em></p>

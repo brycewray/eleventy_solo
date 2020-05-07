@@ -48,3 +48,9 @@ _site
 .env
 
 data/*.json
+
+.lazyimages.json
+
+pngquant*
+
+imgxfm.js

@@ -5,9 +5,12 @@ module.exports = function (data) {
   ${this.headTag(data)}
   <body>
     ${this.siteHeader(data)}
-      ${data.content}
+    ${data.content}
     ${this.siteFooter(data)}
-    <script src="/bundle.js"></script>
+    <script src="/assets/js/lazysizes.min.js"></script>
+    <script src="/assets/js/ls.blur-up.min.js"></script>
+    <script src="/assets/js/flying-pages.min.js"></script>
+    <script src="/assets/js/twitterMeta.js"></script>
   </body>
 </html>
   `

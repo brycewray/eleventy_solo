@@ -3,6 +3,9 @@ const htmlmin = require('html-minifier')
 const ofotigrid = require('./src/_includes/ofotigrid.js')
 const sanitizeHTML = require('sanitize-html')
 const filters = require('./src/assets/utils/filters.js')
+// const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
+// const pluginLocalRespImg = require('eleventy-plugin-local-respimg')
+const ErrorOverlay = require('eleventy-plugin-error-overlay')
 
 module.exports = function (eleventyConfig) {
 
@@ -16,6 +19,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('robots.txt')
   eleventyConfig.addPassthroughCopy('favicon.ico')
+  eleventyConfig.addPassthroughCopy('./src/assets/fonts')
+  eleventyConfig.addPassthroughCopy('./src/assets/js')
+  eleventyConfig.addPassthroughCopy('./src/images/icons')
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy")
@@ -43,7 +49,7 @@ module.exports = function (eleventyConfig) {
   })
 
   // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
-  eleventyConfig.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.njk")
+  eleventyConfig.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.11ty.js")
 
   /* Markdown plugins */
   // https://www.11ty.dev/docs/languages/markdown/
@@ -69,10 +75,66 @@ module.exports = function (eleventyConfig) {
     pattern: /^https:/,
     attrs: {
       target: '_blank',
-      rel: 'noopener'
+      rel: 'noreferrer noopener'
     }
   })
   eleventyConfig.setLibrary("md", markdownEngine)
+
+  eleventyConfig.addWatchTarget("src/**/*.js")
+  eleventyConfig.addWatchTarget("./src/assets/css/*.css")
+  eleventyConfig.addWatchTarget("./src/**/*.md")
+
+  eleventyConfig.setBrowserSyncConfig({
+    ...eleventyConfig.browserSyncConfig,
+    files: [
+      "src/**/*.js",
+      "src/assets/css/*.css",
+    ],
+    ghostMode: false
+  })
+
+  eleventyConfig.addPlugin(ErrorOverlay)
+
+  /*
+  eleventyConfig.addPlugin(lazyImagesPlugin, {
+    scriptSrc: "/assets/js/lazysizes.min.js",
+    transformImgPath: (imgPath) => {
+      if (imgPath.startsWith('/') && !imgPath.startsWith('//')) {
+        return `./src${imgPath}`;
+      }
+      return imgPath
+    },
+  })
+  */
+
+//  eleventyConfig.addPlugin(pluginLocalRespImg, {
+//    folders: {
+//      source: 'src',
+//      output: '_site',      
+//    },
+//    images: {
+//      resize: {
+//        min: 300,
+//        max: 1500,
+//        step: 300,
+//      },
+//      gifToVideo: false,
+//      sizes: '100vw',
+//      lazy: true,
+//      additional: [
+//        'images/icons/**/*',
+//      ],
+//      watch: {
+//        src: 'images/**/*'
+//      },
+//      pngquant: {},
+//      mozjpeg: {},
+//      svgo: {},
+//      gifresize: {},
+//      webp: {},
+//      gifwebp: {},
+//    }
+//  })
 
   eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
 

@@ -16,43 +16,43 @@ module.exports = function(eleventyConfig) {
     return `
   
     <div class="webmentions" id="webmentions">
-      <h3>Webmentions</h3>
+      <h3 class="mt2 mb-4 italic">Webmentions</h3>
       ${wMentions.length > 0
         ? 
         `
         ${likesSize
           ? `<details>
-              <summary class="h4">Likes&nbsp;&nbsp;<span class="legal" style="font-weight: normal;">(${likesSize})</span></summary>
-              <ul class="webmentions__list_facepile">
+              <summary class="h4">Likes&nbsp;&nbsp;<span class="text-xs font-normal">(${likesSize})</span></summary>
+              <div>
               ${likes.map(like =>
-                `<li><a href="${like.url}" class="u-url"><img class="webmention__author__photo u-photo" src="${like.author.photo}" alt="${like.author.name}"></a></li>`
+                `<a href="${like.url}" class="u-url"><img class="webmention__author__photo u-photo" src="${like.author.photo}" alt="${like.author.name}"></a>`
               ).join('')}
-              </ul>
+              </div>
             </details>`
           : ``
         }
         ${repostsSize
           ? `<details>
-              <summary class="h4">Reposts&nbsp;&nbsp;<span class="legal" style="font-weight: normal;">(${repostsSize})</span></summary>
-              <ul class="webmentions__list_facepile">
+              <summary class="h4">Reposts&nbsp;&nbsp;<span class="text-xs font-normal">(${repostsSize})</span></summary>
+              <div>
               ${reposts.map(repost =>
-                `<li><a href="${repost.url}" class="u-url"><img class="webmention__author__photo u-photo" src="${repost.author.photo}" alt="${repost.author.name}"></a></li>`
+                `<a href="${repost.url}" class="u-url"><img class="webmention__author__photo u-photo" src="${repost.author.photo}" alt="${repost.author.name}"></a>`
               ).join('')}
-              </ul>
+              </div>
             </details>`
           : ``
         }
         ${repliesSize
           ? `<details>
-              <summary class="h4">Comments&nbsp;&bull;&nbsp;Replies&nbsp;&nbsp;<span class="legal" style="font-weight: normal;">(${repliesSize})</span></summary>
+              <summary class="h4">Comments&nbsp;&bull;&nbsp;Replies&nbsp;&nbsp;<span class="text-xs font-normal">(${repliesSize})</span></summary>
               <ol class="webmentions__list">
                 ${replies.map(reply =>
                   `<li class="webmentions__item">
                     <article class="webmention h-cite">
                       <div class="webmention__meta">
-                        <a class="webmention__author p-author h-card u-url" href="${reply.url}"><img class="webmention__author__photo u-photo" src="${reply.author.photo}" alt="${reply.author.name}"><strong class="p-name">${reply.author.name}</strong></a>&nbsp;<span class="legal"><time class="webmention__pubdate dt-published" datetime="${reply.published}">${this.readableDateFromISO(reply.published)}</time></span>
+                        <a class="webmention__author p-author h-card u-url" href="${reply.url}"><img class="webmention__author__photo u-photo" src="${reply.author.photo}" alt="${reply.author.name}"><strong class="p-name">${reply.author.name}</strong></a>&nbsp;<span class="text-sm"><time class="webmention__pubdate dt-published" datetime="${reply.published}">${this.readableDateFromISO(reply.published)}</time></span>
                       </div>
-                      <div class="webmention__content p-content">
+                      <div class="webmention__content p-content text-sm">
                         ${reply.content.html}
                       </div>
                     </article>
@@ -64,15 +64,15 @@ module.exports = function(eleventyConfig) {
         }
         ${mentionsSize
           ? `<details>
-              <summary class="h4">Mentions&nbsp;&nbsp;<span class="legal" style="font-weight: normal;">(${mentionsSize})</span></summary>
+              <summary class="h4">Mentions&nbsp;&nbsp;<span class="text-xs font-normal">(${mentionsSize})</span></summary>
               <ol class="webmentions__list">
                 ${mentions.map(mention =>
                   `<li class="webmentions__item">
                     <article class="webmention h-cite">
                       <div class="webmention__meta">
-                        <a class="webmention__author p-author h-card u-url" href="${mention.url}"><img class="webmention__author__photo u-photo" src="${mention.author.photo}" alt="${mention.author.name}"><strong class="p-name">${mention.author.name}</strong></a>&nbsp;<span class="legal"><time class="webmention__pubdate dt-published" datetime="${mention.published}">${this.readableDateFromISO(mention.published)}</time></span>
+                        <a class="webmention__author p-author h-card u-url" href="${mention.url}"><img class="webmention__author__photo u-photo" src="${mention.author.photo}" alt="${mention.author.name}"><strong class="p-name">${mention.author.name}</strong></a>&nbsp;<span class="text-xs"><time class="webmention__pubdate dt-published" datetime="${mention.published}">${this.readableDateFromISO(mention.published)}</time></span>
                       </div>
-                      <div class="webmention__content p-content">
+                      <div class="webmention__content p-content text-sm">
                         ${mention.content.html}
                       </div>
                     </article>
@@ -82,7 +82,7 @@ module.exports = function(eleventyConfig) {
             </details>`
           : ``
         }`
-        : `<p class="ctr">(No webmentions yet.)</p>`
+        : `<p class="text-center text-base">(No webmentions yet.)</p>`
       }
     </div>  
     `

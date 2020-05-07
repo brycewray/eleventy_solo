@@ -219,4 +219,12 @@ a.footnote-return{
   }
 }
 
+img {
+  /* display: block; -- messes up some images */
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  /* for eleventy-plugin-lazyimages */
+}
+
 

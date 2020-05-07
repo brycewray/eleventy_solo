@@ -5,6 +5,8 @@
 @import 'webmentions.css';
 
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* purgecss start ignore */
 body {
@@ -60,13 +62,23 @@ pre, code {
   @apply text-xs;
 }
 
-a {
-  @apply text-blue-light;
-  border-bottom: 1px solid #0033ff;
+a, a:focus, a:hover, a:active {
+  text-decoration: none;
+  border-bottom: 1px solid var(--blue);
+  text-decoration-skip-ink: auto;
 }
 
-a:hover {
-  @apply text-blue-600;
+a {
+  color: var(--blue);
+}
+
+a:focus, a:hover, a:active {
+  color: var(--darkblue);
+  border-bottom: 1px solid var(--blueFirst);
+}
+
+sup a, a.previous, a.next, .footnote-return {
+  border-bottom: 0;
 }
 
 #nav-toggle:checked + #navMenu {
@@ -83,10 +95,6 @@ a.navborderless {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   @apply font-bold leading-tight;
-}
-
-h4, .h4, h6, .h6 {
-  @apply italic;
 }
 
 h1, .h1 {
@@ -328,6 +336,14 @@ hr {
   }
 }
 
+.lazypicturecaption {
+  font-size: calc(var(--pokey) * 1em);
+  padding: 0;
+  margin-top: 0.5em;
+  line-height: 1.4;
+  text-align: center;
+}
+
 .YTembed { /* container for iframe */
   position: relative;
   padding-top: 30px;
@@ -343,7 +359,3 @@ hr {
   }
 }
 /* purgecss end ignore */
-
-@tailwind components;
-
-@tailwind utilities;

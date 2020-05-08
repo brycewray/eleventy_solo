@@ -6,13 +6,13 @@ subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray
 date: 2020-01-12T11:00:00-06:00
-lastmod: 2020-01-18T12:36:00-06:00
+lastmod: 2020-05-08T12:40:00-06:00
 discussionId: "2020-01-two-cheers-tailwind"
 ---
 
 <div class="yellowBox">
-	<p><em><strong>Update, 2020-01-18</strong>:</em><br />
-	<em>You&rsquo;ll quickly notice that I&rsquo;m not wildly enthusiastic about the subject of this piece, which will make the newly added ending more understandable. Hint,&nbsp;hint.</em></p>
+	<p><em><strong>Update, 2020-05-08</strong>:</em><br />
+	<em>Although it was clear from this take&mdash;and what I added at the bottom&mdash;that I wasn&rsquo;t crazy about the subject of this post, I later changed my mind and reinstated it. Will have a post to explain that (and other background changes in the site) in the near future. Still, am leaving this post in place for archival purposes and <a href="/posts/2019/10/otoh">transparency</a>.</em></p>
 </div>
 
 A couple of weekends ago, I tweeted a question for the Web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year's, so I figured I'd be fortunate if I got a handful of responses.

@@ -2,20 +2,17 @@ const sharp = require('sharp')
 const fs = require('fs')
 const sizeOf = require('image-size')
 const dir = require('node-dir')
-// const junk = require('junk')
 const SITEDIR = '_site'
 const IMGLNDG = '_site/images'
 const directory = 'src/images'
 const respSizes = [20, 300, 600, 900, 1200, 1500]
 
-// begin, for test only
 if(!fs.existsSync(SITEDIR)) {
   fs.mkdirSync(SITEDIR)
 }
 if(!fs.existsSync(IMGLNDG)) {
   fs.mkdirSync(IMGLNDG)
 }
-// end, for test only
 
 dir.files(directory, function(err, files){
   if (err) throw err
@@ -61,7 +58,6 @@ dir.files(directory, function(err, files){
     file = file.replace('src/images/','') // losing the directory now, before processing
     var fileExt = file.substring((file.lastIndexOf('.') + 1 ))
     var fileBas = file.slice(0, -4)
-    // console.log(`Directory = ${directory} and file = ${file} and width = ${fileWidth}`)
     // process a JPG
     fileExt == 'jpg'
     ? sharp(`${directory}/${file}`)

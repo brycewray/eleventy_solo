@@ -2,92 +2,74 @@
 /* from https://github.com/maxboeck/eleventy-webmentions/blob/master/css/webmentions.css */
 
 .webmentions {
-  border-top: 1px solid #333;
-  display:block;
-  margin-top: 2em;
-  margin-bottom: 0;
-  margin-right: auto;
-  margin-left: auto;
-  width: 80%;
+  @apply border-t border-solid block mt-8 mb-0 mr-auto ml-auto w-3/4;
+  border-color: #333;
 }
 
 .webmentions h2, .webmentions h3, .webmentions h4 {
-  text-align: center;
+  @apply text-center;
 }
 
 .webmentions__facepile {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  @apply flex items-center flex-wrap;
 }
 
 .webmentions__face {
-  width: 2rem;
-  height: 2rem;
+  @apply w-8 h-8 object-cover flex-none;
   border-radius: 50%;
-  object-fit: cover;
-  flex: none;
 }
 
 .webmentions__list, .webmentions__list_facepile {
-  list-style-type: none;
-  padding:0;
+  @apply list-none p-0;
 }
 
 .webmentions__list_facepile {
-  margin-top: 0;
+  @apply mt-0;
 }
 
 .webmentions__list_facepile li {
-  display: inline;
+  @apply inline;
 }
 
 .webmentions__item {
-  margin-bottom: 2rem;
+  @apply mt-8;
 }
 
 /* Single Webmention */
 
 .webmention {
-  display: block;
+  @apply block;
 }
 
 .webmention__meta,
 .webmention__author {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+  @apply flex items-center flex-wrap;
 }
 
 .webmention__meta {
-  margin-bottom: .5rem;
+  @apply mb-2;
 }
 
 .webmention__author {
-  margin-right: .25rem;
+  @apply mr-1;
 }
 
 .webmention__author__photo {
-  height: 3rem;
-  width: 3rem;
+  @apply h-12 w-12 object-cover mr-2;
   border-radius: 50%;
-  object-fit: cover;
-  margin-right: .5rem;
   display: inline !important; /* otherwise overridden by TWCSS */
 }
 
 .webmention__pubdate {
-  font-style: italic;
+  @apply italic;
 }
 
 .p-note {
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 1.5em; /* avoids phone UI stuff */
+  @apply my-0 w-11/12 mx-auto pb-6; /* avoids phone UI stuff */
 }
 
 summary.h4 {
-  margin-bottom: 0.25em;
+  @apply mb-1;
 }
 
 @media screen and (min-width: 900px) {
@@ -98,8 +80,7 @@ summary.h4 {
 
 @media screen and (min-width: 1025px) {
   .p-note {
-    width: 50%;
-    padding-bottom: 0.5em;
+    @apply w-1/2 pb-2;
   }
 }
 
@@ -110,10 +91,10 @@ summary.h4 {
 
 @media (prefers-color-scheme: dark) {
   .webmentions {
-    border-top: 1px solid #fff;
+    @apply border-t border-solid border-white;
   }
   .p-name {
-    color: #fff;
+    @apply text-white;
   }
   .u-url {
     color: #ddd;

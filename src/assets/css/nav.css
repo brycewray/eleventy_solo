@@ -149,7 +149,7 @@ nav {
 }
 
 .site-logo {
-  @apply text-white font-bold mt-2;
+  @apply text-white font-bold mt-2 pt-1;
   font-size: calc(var(--minimalbig) * 1em);
   margin-left: 5%;
   & a {
@@ -195,7 +195,7 @@ nav {
     @apply mt-0;
     top: 15%;
     transform: none;
-    margin-left: 50%;
+    margin-left: 55%;
     grid-column: 4 / 5;
     & a {
       @apply opacity-100 relative;
@@ -216,6 +216,7 @@ nav {
   & img {
     height: 18px;
     width: 18px;
+    @apply mb-1;
   }
 }
 

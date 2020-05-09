@@ -38,7 +38,7 @@ In a similar vein but **not** because of webpack one way or the other, I was unh
 
 Still, one intriguing thing I'd learned from the Tailwind experiment was the amazing power of [PurgeCSS](https://purgecss.com), when combined with PostCSS, to shrink even the multi-megabyte CSS loads of a Tailwind config down to just a few kilobytes at production. That was three to four times smaller than my "handmade" CSS after each had undergone the same [minification](https://blog.logrocket.com/the-complete-best-practices-for-minifying-css/) process during a build to production.
 
-My more recent rethinking process coincided with a renewal of at least curiosity about Tailwind, which [in February](https://github.com/tailwindcss/tailwindcss/releases/tag/v1.2.0) became compatible with [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) ([here](/posts/2018/11/grid-locked-no-more)'s why that mattered to me) and [just a few days ago](https://github.com/tailwindcss/tailwindcss/releases/tag/v1.4.0) also began *including* PurgeCSS right out of the box.
+My more recent rethinking process coincided with a renewal of at least curiosity about Tailwind, which [in February](https://github.com/tailwindcss/tailwindcss/releases/tag/v1.2.0) became compatible with [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) ([this post](/posts/2018/11/grid-locked-no-more) from November, 2018, tells why that mattered to me) and [just a few days ago](https://github.com/tailwindcss/tailwindcss/releases/tag/v1.4.0) also began *including* PurgeCSS right out of the box.
 
 Anyway, I'll get back to the Tailwind front in a bit.
 

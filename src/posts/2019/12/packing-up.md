@@ -6,9 +6,14 @@ subtitle: Eleventy and webpack are a powerful pair
 description: "How using a bundler makes the coolest SSG even better."
 author: Bryce Wray
 date: 2019-12-08T17:48:00-06:00
-lastmod: 2020-01-15T19:00:00-06:00
+lastmod: 2020-05-09T09:45:00-05:00
 discussionId: "2019-12-packing-up"
 ---
+
+<div class="yellowBox">
+	<p><em><strong>Update, 2020-05-09</strong>:</em><br />
+	A few months later, I went with an Eleventy-only setup after <a href="/posts/2020/05/going-solo-eleventy">deciding</a> it would be just fine, after all. Still, I&rsquo;ll leave this and other, related posts in place for archival purposes and the sake of <a href="posts/2019/10/otoh">transparency</a>.</p>
+</div>
 
 It's that time again, [static site generator](https://staticgen.com) (SSG) nerdiness fans. Yes, that's right, it's time for me to geek out about another change to this site.
 

@@ -5,7 +5,7 @@ title: "Going solo with Eleventy"
 subtitle: "Losing webpack, regaining Tailwind CSS"
 description: "As the saying goes, less is more."
 author: Bryce Wray
-date: 2020-05-09T17:30:00-05:00
+date: 2020-05-09T09:45:00-05:00
 #lastmod: TBD
 discussionId: "2020-05-going-solo-eleventy"
 ---
@@ -22,13 +22,13 @@ But, then, some funny things happened on my way to [SSG](https://staticgen.com) 
 
 In the ensuing months, I removed two of the biggest reasons for having added webpack in the first place:
 
-- I dropped [SASS/SCSS](https://sass-lang.com) for [PostCSS](https://postcss.org) while [experimenting briefly](/posts/2020/02/two-cheers-tailwind) with [Tailwind CSS](https://tailwindcss.com). While I didn't warm up (then) to Tailwind, I liked PostCSS a lot and decided to stick with it. And while you certainly *could* use webpack to incorporate PostCSS with Eleventy, it wasn't *necessary* to do so.
+- I dropped [SASS/SCSS](https://sass-lang.com) for [PostCSS](https://postcss.org) while [experimenting briefly](/posts/2020/01/two-cheers-tailwind) with [Tailwind CSS](https://tailwindcss.com). While I didn't warm up (then) to Tailwind, I liked PostCSS a lot and decided to stick with it. And while you certainly *could* use webpack to incorporate PostCSS with Eleventy, it wasn't *necessary* to do so.
 
 - [Hero images](https://en.wikipedia.org/wiki/Hero_image), once a mainstay of this site, were the [next to go](/posts/2020/02/so-much-for-heroes) after it became clear the hassles of trying to provide the proper sizes and, in particular, file formats weren't worth the effort when compared to those images' actual utility. Only those few images necessary to tell certain posts' stories remained, and their spartan quantities and nature constituted wastes of all the webpack code that processed them---relatively slowly---on each build.[^Time]
 
 [^Time]: This wasn't just a matter of keeping me from twiddling my thumbs every time I made changes to the site. Limiting build times is important---especially since the Netlify free tier has a limit of 300 minutes a month; and, recently, I've been using [Zapier zaps](https://zapier.com/help/create/basics/create-zaps) to auto-build the site each midnight, Central time, to keep its [webmentions](https://alistapart.com/article/webmentions-enabling-better-communication-on-the-internet/) more frequently updated. The Eleventy/webpack combo typically took roughly two minutes per build, meaning over sixty minutes a month *even if I didn't change anything else on the site*---and, to be sure, I am *always* changing things, even things you may never notice.
 
-Then, in what I hoped would be a learning experience for not only me but also others out there in [GitHub](https://github.com) land, I [produced near-duplicate repositories](/posts/2020/04/different-modes-different-codes) of this site in its two previous SSGs, [Hugo](https://gohugo.io) and Gatsby. The experience with the Hugo repo was particularly eye-opening, because by necessity it *had* to be webpack-free. Yet, I had been able to re-make this site down to almost the last detail without a whiff of webpack---and all that goes with webpack: namely, a big ol' bundle of JavaScript code on every download.
+Then, in what I hoped would be a learning experience for not only me but also others out there in [GitHub](https://github.com) land, I [produced near-duplicate repositories](/posts/2020/04/different-modes-different-code) of this site in its two previous SSGs, [Hugo](https://gohugo.io) and Gatsby. The experience with the Hugo repo was particularly eye-opening, because by necessity it *had* to be webpack-free. Yet, I had been able to re-make this site down to almost the last detail without a whiff of webpack---and all that goes with webpack: namely, a big ol' bundle of JavaScript code on every download.
 
 And I began to wonder just how much I really needed webpack---and whether my site-development process might actually be better *without* it.
 
@@ -42,7 +42,7 @@ My more recent rethinking process coincided with a renewal of at least curiosity
 
 Anyway, I'll get back to the Tailwind front in a bit.
 
-In the background during all this, I'd noticed that Eleventy itself was getting additional and more powerful [plugins](https://11ty.dev/plugins) and, with newer Eleventy versions both since I'd started using it and those to come in the near future, greater capabilities.
+In the background during all this, I'd noticed that Eleventy itself was getting additional and more powerful [plugins](https://11ty.dev/docs/plugins) and, with newer Eleventy versions both since I'd started using it and those to come in the near future, greater capabilities.
 
 All this gradually made it clear to me that, if I made some reasonably sensible config changes, I could build an Eleventy-based repo that probably could do everything the Eleventy/webpack one could, but *without* webpack. It would be an interesting experiment, anyway; and, even if I couldn't make it go the distance, the real site could still exist on the unaltered Eleventy/webpack repo.
 
@@ -50,7 +50,7 @@ With that safe haven in mind, I cloned the existing repo and started the process
 
 ## Image processing: birth of a notion
 
-At first, things went pretty smoothly. I whacked all the webpack config files, added this site's typefaces much as I had done to the Hugo repo (since I no longer was using the [npm](https://npmjs.com) package [typefaces](https://www.npmjs.com/package/typefaces) with webpack to deliver them), and used more conventional, *non*-bundler ways to provide the JavaScript that was absolutely necessary.
+At first, things went pretty smoothly. I whacked all the webpack config files, added this site's typefaces much as I had done to the Hugo repo (since I no longer was using the [npm](https://nodejs.dev/an-introduction-to-the-npm-package-manager) package [typefaces](https://www.npmjs.com/package/typefaces) with webpack to deliver them), and used more conventional, *non*-bundler ways to provide the JavaScript that was absolutely necessary.
 
 (In the latter case, I even finally got to replace the [instant.page](https://www.npmjs.com/package/instant.page) [preloader](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/) utility with what I consider to be its superior competitor, [Flying Pages](https://www.npmjs.com/package/flying-pages). Speed is good, higher speed is better.)
 
@@ -90,7 +90,7 @@ But, in the end, I felt this retrenching, like the jettisoning of webpack, made 
 
 Late in the day on May 7, I finally had things ready *enough*, and "told" [Netlify](https://netlify.com) to do a new build---but, this time, from `eleventy_solo` rather than `eleventy_bundler` as it had been set to do since [five months ago](/posts/2019/12/packing-up). On the first try, a glitch occurred and halted the build. Fortunately, in such a case, Netlify just errors out and leaves your existing site in place. Then, after running my `testbuild` script from `package.json` locally to figure out what was wrong, I got things to go through a little while later.[^PurgeInProd]
 
-[^PurgeInProd]: There was one more false start when, after getting the build to work for the first time, my eager inspection of the resulting CSS showed it was a porky 1.6 MB *even after* the usual minification and GZipping---meaning PurgeCSS hadn't worked. However, I soon realized that it was because I'd forgotten to set the *final* build's environment variable to *PRODUCTION* rather than *DEVELOPMENT*, as I'd done during testing builds (thanks to [great and patient advice from none other than Mr. Wathan himself](https://github.com/tailwindcss/tailwindcss/issues/1675#issuecomment-623159742)). Once that was fixed, the next build went through just fine and the real site's CSS had dropped to just under 7 KB. Bingo.
+[^PurgeInProd]: There was one more false start when, after getting the build to work for the first time, my eager inspection of the resulting CSS showed it was a porky 1.6 MB *even after* the usual minification and GZipping---meaning PurgeCSS hadn't worked. However, I soon realized that it was because I'd forgotten to set the *final* build's environment variable to *PRODUCTION* rather than *DEVELOPMENT* (on which I'd received [great and patient advice from none other than Mr. Wathan himself](https://github.com/tailwindcss/tailwindcss/issues/1675#issuecomment-623159742)). Once that was fixed, the next build went through just fine and the real site's CSS had dropped to just under 7 KB. Bingo.
 
 Thus, here we are. This site now runs on Eleventy only, not Eleventy and webpack. Yet, it still has responsive and processed images as well as all the good stuff that PostCSS makes possible, *but* now also the re-added Tailwind. The magic of PurgeCSS-inside-Tailwind makes the delivered CSS a fraction of my old CSS's bulk. And, speaking of smaller deliveries, the JavaScript is about one-fourteenth of its size when webpack was involved, despite providing even *more* goodies (*e.g.*, Flying Pages as opposed to instant.page).
 

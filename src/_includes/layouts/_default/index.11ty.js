@@ -9,8 +9,8 @@ exports.render = function (data) {
 
   <div class="w-full height-hero pt-12">
     <picture>
-      <source srcset="/images/${data.featured_image_base}-300.webp 300w, /images/${data.featured_image_base}-600.webp 600w, /images/${data.featured_image_base}-1200.webp 1200w" class="imgCover" type="image/webp" />
-      <source srcset="/images/${data.featured_image_base}-300.${data.featured_image_ext} 300w, /images/${data.featured_image_base}-600.${data.featured_image_ext} 600w, /images/${data.featured_image_base}-1200.${data.featured_image_ext} 1200w" class="imgCover" type="image/${data.featured_image_ext}" />
+      <source srcset="/images/${data.featured_image_base}-300.webp 300w, /images/${data.featured_image_base}-450.webp 450w, /images/${data.featured_image_base}-600.webp 600w, /images/${data.featured_image_base}-750.webp 750w, /images/${data.featured_image_base}-900.webp 900w, /images/${data.featured_image_base}-1050.webp 1050w, /images/${data.featured_image_base}-1200.webp 1200w, /images/${data.featured_image_base}-1350.webp 1350w, /images/${data.featured_image_base}-1500.webp 1500w" class="imgCover" type="image/webp" />
+      <source srcset="/images/${data.featured_image_base}-300.${data.featured_image_ext} 300w, /images/${data.featured_image_base}-450.${data.featured_image_ext} 450w, /images/${data.featured_image_base}-600.${data.featured_image_ext} 600w, /images/${data.featured_image_base}-750.${data.featured_image_ext} 750w, /images/${data.featured_image_base}-900.${data.featured_image_ext} 900w, /images/${data.featured_image_base}-1050.${data.featured_image_ext} 1050w, /images/${data.featured_image_base}-1200.${data.featured_image_ext} 1200w, /images/${data.featured_image_base}-1350.${data.featured_image_ext} 1350w, /images/${data.featured_image_base}-1500.${data.featured_image_ext} 1500w" class="imgCover" type="image/${data.featured_image_ext}" />
       <img src="/images/${data.featured_image_base}-1200.${data.featured_image_ext}" alt="${data.featured_image_alt}" class="imgCover" />
     </picture>
   </div>

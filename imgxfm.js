@@ -5,7 +5,7 @@ const dir = require('node-dir')
 const SITEDIR = '_site'
 const IMGLNDG = '_site/images'
 const directory = 'src/images'
-const respSizes = [20, 300, 600, 900, 1200, 1500]
+const respSizes = [20, 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
 
 if(!fs.existsSync(SITEDIR)) {
   fs.mkdirSync(SITEDIR)
@@ -19,6 +19,7 @@ dir.files(directory, function(err, files){
   files = files.filter(file => {
     return [
       'src/images/.DS_Store',
+      'src/images/icons/.DS_Store',
       'src/images/icons/apple-icon-57x57.png',
       'src/images/icons/apple-icon-60x60.png',
       'src/images/icons/apple-icon-72x72.png',
@@ -38,6 +39,8 @@ dir.files(directory, function(err, files){
       'src/images/icons/BW_avatar_36x36_xpar.png',
       'src/images/icons/favicon-16x16.png',
       'src/images/icons/favicon-32x32.png',
+      'src/images/icons/favicon-45x45.png',
+      'src/images/icons/favicon-90x90.png',
       'src/images/icons/favicon-96x96.png',
       'src/images/icons/favicon-512x512.png',
       'src/images/icons/favicon.ico',
@@ -91,7 +94,7 @@ dir.files(directory, function(err, files){
       })
       .catch(err => {console.log(err + file)})
     respSizes.forEach(size => {
-      fileExt == 'jpg' && size <= fileWidth
+      fileExt == 'jpg'// && size <= fileWidth
       ? sharp(`${directory}/${file}`)
         .jpeg({
           quality: 60,
@@ -106,7 +109,7 @@ dir.files(directory, function(err, files){
         })
         .catch(err => {console.log(err + file)})
       : ``
-      fileExt == 'png' && size <= fileWidth
+      fileExt == 'png'// && size <= fileWidth
       ? sharp(`${directory}/${file}`)
         .png({})
         .resize({
@@ -120,7 +123,7 @@ dir.files(directory, function(err, files){
         .catch(err => {console.log(err + file)})
       : ``
       // now, make webp for each, regardless of original file format
-      size <= fileWidth    
+      size// <= fileWidth    
       ? sharp(`${directory}/${file}`)
         .webp({
           quality: 60,

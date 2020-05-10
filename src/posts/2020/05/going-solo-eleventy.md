@@ -6,7 +6,7 @@ subtitle: "Losing webpack, regaining Tailwind CSS"
 description: "As the saying goes, less is more."
 author: Bryce Wray
 date: 2020-05-09T09:45:00-05:00
-#lastmod: TBD
+lastmod: 2020-05-10T12:15:00-05:00
 discussionId: "2020-05-going-solo-eleventy"
 ---
 
@@ -66,9 +66,12 @@ That's how a script called `imgxfm.js` was born. After an embarrassingly high nu
 
 `imgxfm.js` didn't *always* produce *smaller* files, especially where the largest iterations of certain `.png` files were concerned, but in the vast majority of cases it accomplished this well enough for my purposes. Most of the site's larger images are `.jpg` files, which it handled just fine, so I was satisfied with the overall result.
 
-The commit in which `imgxfm.js` first appeared was called "Image processing while waiting for plugin to be ready"; but, once this little file was reliably doing what I wanted on each build, I realized it was no longer a stand-in. The star of the show had failed to arrive at the performance hall on time (albeit through no fault of his own), so I let the scraggly stand-in take his place; and, scraggly though he was, he did just fine and pleased the crowd just the same.[^ImagePlugins]
+The commit in which `imgxfm.js` first appeared was called "Image processing while waiting for plugin to be ready"; but, once this little file was reliably doing what I wanted on each build, I realized it was no longer a stand-in. The star of the show had failed to arrive at the performance hall on time (albeit through no fault of his own), so I let the scraggly stand-in take his place; and, scraggly though he was, he did just fine and pleased the crowd just the same.
 
-[^ImagePlugins]: Nonetheless: I will gladly replace `imgxfm.js` with one or more plugins when that becomes possible.
+<div class="yellowBox">
+	<p><strong><em>Update, 2020-05-10&nbsp;.&nbsp;.&nbsp;.</em></strong><br />
+	Late last night, I finally was able to start using a <strong>real</strong> image-processing plugin&mdash;<code>eleventy-plugin-local-respimg</code> by <a href="https://github.com/Snugug">Sam Richard</a>&mdash;and thus replace <code>imgxfm.js</code>. Because this plugin does quite a bit more, and does it so much better, than my script, the build times are now a bit slower than I describe later, <strong>but</strong> it&rsquo;s worth it to have a much better, much more capable image-processing solution! (And I extend a big thanks to <a href="https://github.com/rickthehat">Rick G.</a> for <a href="https://github.com/chromeos/static-site-scaffold-modules/issues/16#issuecomment-626250527">tipping me off</a> as to why I&rsquo;d previously been unable to use Mr. Richard's excellent plugin.)</p>
+</div>
 
 ## "An API for your design system"
 

@@ -169,45 +169,32 @@ nav {
 /* === Beginning of primary settings for larger screens === */
 
 @media screen and (min-width: 900px) {
-/* can't use CSS vars in media queries' parameters yet */
   .nav-toggle-label {
     @apply hidden;
   }
   
   header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(300px, 1fr) minmax(500px, 1fr);
-    position: fixed;
+    @apply fixed grid grid-cols-5;
   }
 
   .site-logo {
-    @apply z-50 text-left pl-6;
-    grid-column: 1 / 2;
-    /*
-    z-index: 999999;
-    text-align: left;
-    padding-left: 1.5em;
-    */
-    font-size: calc(var(--minimalbig) * 1em);
+    @apply z-50 text-left col-start-1 col-end-3 text-lg;
+    padding-left: 8%;
   }
 
   nav {
-    @apply mt-0;
+    @apply mt-0 col-start-4 col-end-6;
     top: 15%;
     transform: none;
-    margin-left: 55%;
-    grid-column: 4 / 5;
     & a {
       @apply opacity-100 relative;
     }
     & ul {
-      margin: auto;
-      padding-right: 20%;
-      @apply text-left;
-      /* fixes old browsers that don't understand media queries */
+      padding-right: 8%;
+      @apply text-right;
     }
     & li {
-      @apply inline-block ml-12 mb-0;
+      @apply inline-block p-0 mb-0;
     }
   }
 }

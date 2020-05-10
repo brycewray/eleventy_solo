@@ -3,8 +3,7 @@ const htmlmin = require('html-minifier')
 const ofotigrid = require('./src/_includes/ofotigrid.js')
 const sanitizeHTML = require('sanitize-html')
 const filters = require('./src/assets/utils/filters.js')
-// const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
-// const pluginLocalRespImg = require('eleventy-plugin-local-respimg')
+const pluginLocalRespImg = require('eleventy-plugin-local-respimg')
 const ErrorOverlay = require('eleventy-plugin-error-overlay')
 
 module.exports = function (eleventyConfig) {
@@ -95,48 +94,43 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(ErrorOverlay)
 
-  /*
-  eleventyConfig.addPlugin(lazyImagesPlugin, {
-    scriptSrc: "/assets/js/lazysizes.min.js",
-    transformImgPath: (imgPath) => {
-      if (imgPath.startsWith('/') && !imgPath.startsWith('//')) {
-        return `./src${imgPath}`;
-      }
-      return imgPath
+  eleventyConfig.addPlugin(pluginLocalRespImg, {
+    folders: {
+      source: 'src',
+      output: '_site',      
     },
+    images: {
+      resize: {
+        min: 300,
+        max: 1500,
+        step: 300,
+      },
+      gifToVideo: false,
+      sizes: '100vw',
+      lazy: true,
+      additional: [
+        'images/icons/**/*',
+      ],
+      watch: {
+        src: 'images/**/*'
+      },
+      pngquant: {
+        speed: 10,
+        quality: [0.5, 0.7]
+      },
+      mozjpeg: {
+        quality: 60
+      },
+      svgo: {},
+      gifresize: {},
+      webp: {
+        quality: 60
+      },
+      gifwebp: {
+        quality: 60
+      },
+    }
   })
-  */
-
-//  eleventyConfig.addPlugin(pluginLocalRespImg, {
-//    folders: {
-//      source: 'src',
-//      output: '_site',      
-//    },
-//    images: {
-//      resize: {
-//        min: 300,
-//        max: 1500,
-//        step: 300,
-//      },
-//      gifToVideo: false,
-//      sizes: '100vw',
-//      lazy: true,
-//      additional: [
-//        'images/icons/**/*',
-//      ],
-//      watch: {
-//        src: 'images/**/*'
-//      },
-//      pngquant: {},
-//      mozjpeg: {},
-//      svgo: {},
-//      gifresize: {},
-//      webp: {},
-//      gifwebp: {},
-//    }
-//  })
-
-  eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {

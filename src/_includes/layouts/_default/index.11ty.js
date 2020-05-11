@@ -8,7 +8,7 @@ exports.render = function (data) {
   <main>
 
   <div class="w-full height-hero pt-12">
-      <img src="/images/${data.featured_image_base}.${data.featured_image_ext}" alt="${data.featured_image_alt}" class="imgCover" />
+      <img src="/images/${data.featured_image_base}.${data.featured_image_ext}" alt="${data.featured_image_alt}" class="object-cover object-center h-full w-full" />
   </div>
   ${
     (data.featured_image_caption)

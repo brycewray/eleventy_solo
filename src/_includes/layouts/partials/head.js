@@ -93,6 +93,16 @@ module.exports = function(eleventyConfig) {
     <meta name="msapplication-TileImage" content="/images/ms-icon-icons/144x144.png">
 
     <link rel="stylesheet" href="/css/index.css" type="text/css">
+    <style>
+      .ieOnly {
+        display: none;
+      }
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        .ieOnly {
+          display: block;
+        }
+      }
+    </style>
 
     <noscript>
       <!-- Dark mode for Twitter items if browser blocks JS at bottom; it’s debatable whether it’s needed since non-JS Twitter is pretty spare and mostly adheres to other CSS, but we’ll do it just to be consistent -->

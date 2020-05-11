@@ -32,7 +32,7 @@
   --code-bkgd-dark-mode: #0e2e3e;
 
   /* Typography */
-  --sans-serif: "Public Sans", system-ui;
+  --sans-serif: "Public Sans", system-ui, sans-serif;
   --serif-primary: Georgia, serif;
   --monospaced: "Roboto Mono", monospace;
   /* ==== rems ==== */

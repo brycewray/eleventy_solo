@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
     </div>
     <!-- for webmentions -->
     <hr class="mt-8 border-black" />
-    <div class="w-full px-6 lg:px-12 mx-auto">
+    <div class="w-5/6 md:w-3/4 lg:w-2/3 mx-auto">
       <h4 class="not-italic text-sm tracking-tighter mt-4 mb-2">Information for webmentions</h4>
       <p class="inline-flex mt-0"><img class="u-photo" alt="This site's 'BW' logo" src="/images/icons/favicon-90x90.png" style="width: 45px; height: 45px;" /></p>
       <p class="p-note text-xs tracking-normal leading-tight mt-0">Unrepentant advocate for and user of the Oxford comma (sorry,&nbsp;AP). Webmentions&nbsp;of others&rsquo; content do&nbsp;not necessarily constitute endorsements. Comments&nbsp;and opinions expressed herein are my&nbsp;own, unless otherwise&nbsp;noted.</p>
@@ -34,7 +34,7 @@ module.exports = function(eleventyConfig) {
             : ``
         }
         </div>
-        <a class="u-url tracking-normal" href="${data.page.url}">Published <time class="dt-published">${this.dateFromRFC2822(data.page.date)}</time>
+        <a class="u-url no-underline border-0 text-black dark:text-white tracking-normal" href="${data.page.url}">Published <time class="dt-published">${this.dateFromRFC2822(data.page.date)}</time>
         </a>
         <link rel="author" href="https://brycewray.com/" />
       </article>`

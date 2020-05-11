@@ -272,11 +272,6 @@ blockquote {
   padding-bottom: 56.25%;
 }
 
-.imgCover {
-  @apply object-cover h-full w-full;
-  object-position: 50% 50%;
-}
-
 hr {
   @apply border-gray-900;
 }

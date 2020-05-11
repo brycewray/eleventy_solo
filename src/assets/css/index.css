@@ -1,8 +1,6 @@
-@import 'variables.css';
 @import 'fonts.css';
 @import 'nav.css';
 @import 'prismjs.css';
-@import 'webmentions.css';
 
 @tailwind base;
 @tailwind components;
@@ -24,7 +22,7 @@ pre, code {
 }
 
 .bg-blue-deep {
-  background-color: #00a;
+  @apply bg-darkblue;
 }
 
 .navWhite, .navWhite:visited {
@@ -36,11 +34,11 @@ pre, code {
 }
 
 .text-blue-light {
-  color: #0033ff;
+  @apply text-mainblue;
 }
 
 .text-blue-dark { /* for dark mode */
-  color: #00bbff;
+  @apply text-lghtblue;
 }
 
 .text-shadow-titles {
@@ -63,30 +61,27 @@ pre, code {
 }
 
 a, a:focus, a:hover, a:active {
-  text-decoration: none;
-  border-bottom: 1px solid var(--blue);
-  text-decoration-skip-ink: auto;
+  @apply no-underline border-b border-solid border-mainblue;
 }
 
 a {
-  color: var(--blue);
+  @apply text-mainblue;
 }
 
 a:focus, a:hover, a:active {
-  color: var(--darkblue);
-  border-bottom: 1px solid var(--blueFirst);
+  @apply text-darkblue border-b border-hovrblue;
 }
 
 sup a, a.previous, a.next, .footnote-return {
-  border-bottom: 0;
+  @apply border-b-0;
 }
 
 #nav-toggle:checked + #navMenu {
-  display: block;
+  @apply block;
 }
 
 a.navborderless {
-  border-bottom: none;
+  @apply border-b-0;
 }
 
 .dateInfo {
@@ -128,7 +123,7 @@ h5, .h5, h6, .h6 {
 }
 
 .text-nowrap, .text-nobrk {
-  white-space: nowrap;
+  @apply whitespace-no-wrap;
 }
 
 article h1, article h2, article h3, article h4 {
@@ -164,8 +159,7 @@ article p, li {
 }
 
 .yellowBox {
-  @apply bg-yellow-300 mx-auto my-2 w-full px-6 py-2;
-  border: 1px solid #000;
+  @apply bg-yellow-300 border border-gray-900 border-solid mx-auto my-2 w-full px-6 py-2;
 }
 
 .yellowbox p { 
@@ -185,47 +179,37 @@ ol {
 }
 
 .twitter-tweet {
-  margin: 1em auto 0 auto;
+  @apply mt-4 mx-auto mb-0;
 }
 
 table.leagues {
-	width: 90%;
-	margin: 1em auto 0 auto;
-	border: 0;
-	border-collapse: collapse;
+  @apply w-11/12 mt-4 mx-auto mb-0 border-0 border-collapse;
 }
 
 table.leagues td.col {
-  width: 50%;
+  @apply w-1/2;
 }
 
 @media (min-width: 900px) {
   table.leagues {
-    width: 60%;
+    @apply w-3/5;
   }
   table.noborders {
-    width: 90%;
+    @apply w-11/12;
   }
 }
 
 table.noborders {
-  width: 100%;
-  margin: 1.5em auto 1em auto;
-  border: 0;
-  border-collapse: collapse;
+  @apply w-full border-0 border-collapse mt-6 mx-auto mb-4;
 }
 
 table.noborders td {
-  text-align: left !important;
-  vertical-align: middle;
-  padding: 0.25em 0 0.25em 0.5em;
-  @apply text-gray-800;
+  @apply text-gray-800 text-left align-middle py-1 pr-0 pl-2;
+  /* text-align: left !important; */
 }
 
 table.noborders td img {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0;
+  @apply inline-block align-middle m-0;
 }
 
 table.noborders tr {
@@ -237,23 +221,19 @@ table.noborders tr:nth-child(even) {
 }
 
 table.noborders thead tr {
-  background-color: #0500a9;
+  @apply bg-darkblue;
 }
   
 table.noborders thead td {
-  color: #fff !important;
-  font-weight: bold;
-  @apply font-body;
+  @apply text-white font-body font-bold;
 }
   
 table.noborders td.td70 {
   width: 70%;
 }
 table.noborders td.td70 img {
-  display: block;
-  width: 50%;
+  @apply block w-1/2 h-auto;
   max-width: 50%;
-  height: auto;
 }
 
 table.noborders td.td30 {
@@ -261,8 +241,7 @@ table.noborders td.td30 {
 }
 
 blockquote {
-  @apply px-6;
-  @apply text-gray-700;
+  @apply px-6 text-gray-700;
 }
 
 /* start, footnotes */
@@ -287,30 +266,32 @@ blockquote {
   @apply text-sm tracking-normal;
 }
 
+/* == end, footnotes */
+
 .aspect-16x9 {
   padding-bottom: 56.25%;
 }
 
-/* == end, footnotes */
-
 .imgCover {
-  object-fit: cover;
+  @apply object-cover h-full w-full;
   object-position: 50% 50%;
-  height: 100%;
-  width: 100%;
 }
 
 hr {
-  border: 0.5px solid black;
+  @apply border-gray-900;
 }
 
+/* 
+======= start, dark-mode stuff ======
+*/
 @media (prefers-color-scheme: dark) {
   html, body {
-    background-color: #000 !important;
+    @apply bg-black;
+    /* background-color: #000 !important; */
   }
 
   hr {
-    border: 0.5px solid #ddd;
+    @apply border border-b border-solid;
   }
 
   .border-black {
@@ -318,7 +299,7 @@ hr {
   }
 
   .text-body, body, figcaption {
-    color: #ddd;
+    @apply text-gray-200;
   }
 
   footer {
@@ -330,8 +311,7 @@ hr {
   }
 
   a {
-    @apply text-blue-dark;
-    border-bottom: 1px solid #00bbff;
+    @apply text-lghtblue border-b border-lghtblue;
   }
 
   a:hover {
@@ -343,27 +323,22 @@ hr {
   }
   
   .yellowBox {
-    @apply bg-gray-900;
-    border: 1px solid #aaa;
+    @apply bg-gray-900 border border-solid border-gray-500;
   }
 }
+/* 
+======= end, dark-mode stuff ======
+*/
 
 .lazypicturecaption {
   @apply text-sm p-0 -mt-3 leading-snug text-center;
 }
 
 .YTembed { /* container for iframe */
-  position: relative;
-  padding-top: 30px;
+  @apply relative pt-8 h-0 overflow-hidden;
   padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
   & iframe, & object, & embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    @apply absolute top-0 left-0 w-full h-full;
   }
 }
 

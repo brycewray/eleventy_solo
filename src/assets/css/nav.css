@@ -4,8 +4,7 @@
 /* keep header here rather than base or layout SCSS */
 
 header {
-  @apply h-12 font-body w-full fixed p-0 mt-0 z-50;
-  background-color: var(--darkblue);
+  @apply h-12 bg-darkblue font-body w-full fixed p-0 mt-0 z-50;
   /* keeps YT videos from appearing over it, for one thing */
 }
 

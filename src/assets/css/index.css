@@ -136,7 +136,7 @@ article h1, article h2, article h3, article h4 {
 }
 
 article p, li {
-  @apply text-base leading-relaxed mt-6 mb-6;
+  @apply text-lg leading-relaxed mt-6 mb-6;
 }
 
 @media screen and (min-width: 769px) {
@@ -149,7 +149,15 @@ article p, li {
     height: 40vh;
     max-height: 40vh;
   }
+}
 
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  article p, li {
+    @apply text-xl;
+  }
+}
+
+@media screen and (min-width: 1280px) {
   article p, li {
     @apply text-xl;
   }

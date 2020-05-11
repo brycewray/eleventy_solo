@@ -6,15 +6,15 @@ exports.render = function (data) {
   return `
 <main class="pt-12">
   <div class="container h-auto w-full min-w-full relative overflow-hidden gradient-titles pt-12 pb-6 px-4 md:px-12">
-    <h1 class="text-center text-3xl md:text-left md:text-5xl lg:text-6xl text-white tracking-tighter leading-tight mb-6 px-4 md:px-0">${data.title}</h1>
-    <h2 class="text-center italic text-xl md:text-left md:text-3xl lg:text-5xl text-white leading-tight tracking-tighter px-6 md:px-0">
+    <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl text-white tracking-tighter leading-tight mb-6 px-4 md:px-0">${data.title}</h1>
+    <h2 class="text-center italic text-2xl md:text-left md:text-3xl lg:text-5xl text-white leading-tight tracking-tighter px-6 md:px-0">
       ${
         data.subtitle
           ? data.subtitle
           : `&nbsp;`
       }
     </h2>
-    <p class="hidden not-italic md:block md:text-xl lg:text-2xl tracking-tighter md:text-base md:mt-8 mb-6 text-white">${data.description}</p>
+    <p class="hidden not-italic md:block md:text-2xl lg:text-3xl tracking-tighter md:text-base md:mt-8 mb-6 text-white">${data.description}</p>
     <p class="text-base text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
       <span style="font-variant: small-caps">published:</span>&nbsp; <strong>${(data.page.date).toLocaleDateString('en-US', {
         year: 'numeric', month: 'long', day: 'numeric'})}</strong><br />

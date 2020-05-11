@@ -3,21 +3,6 @@
 
 /* keep header here rather than base or layout SCSS */
 
-header {
-  @apply h-12 bg-darkblue font-body w-full fixed p-0 mt-0 z-50;
-  /* keeps YT videos from appearing over it, for one thing */
-}
-
-.nav__bar {
-  padding-top: var(--nav-height);
-}
-@media (min-width: 900px) {
-  .nav__bar {
-    max-height: none;
-    @apply text-center;
-  }
-}
-
 .nav__item {
   @apply p-0 m-0;
 
@@ -45,7 +30,7 @@ header {
 
 .nav__icon {
   @apply block absolute cursor-pointer;
-  top: calc((var(--nav-height) - 20px)/2);
+  top: 15px;
   right: 13px;
   height: 27px;
   width: 27px;
@@ -145,23 +130,6 @@ nav {
   & a {
     @apply opacity-100;
   }
-}
-
-.site-logo {
-  @apply text-white font-bold mt-2 pt-1;
-  font-size: calc(var(--minimalbig) * 1em);
-  margin-left: 5%;
-  & a {
-    @apply text-white no-underline border-b-0;
-  }
-  & a:active, & a:hover {
-    color: var(--grey-2);
-    @apply border-b-0;
-  }
-}
-
-.site-logo img {
-  display: inline !important; /* Otherwise, is overridden by TWCSS */
 }
 
 

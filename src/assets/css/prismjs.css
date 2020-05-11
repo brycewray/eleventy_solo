@@ -5,10 +5,8 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  * Based on https://github.com/chriskempson/tomorrow-theme
  * @author Rose Pritchard
  */
-
- code {
-   font-family: var(--monospaced);
-   background: #dfefff;
+code {
+  background: #dfefff;
  }
 
  @media (prefers-color-scheme: dark) {
@@ -21,8 +19,6 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  pre[class*="language-"] {
    color: #ccc;
    background: none;
-   /* @apply font-codefont; */
-   font-family: var(--monospaced);
    text-align: left;
    white-space: pre;
    word-spacing: normal;

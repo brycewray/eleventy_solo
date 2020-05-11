@@ -273,7 +273,7 @@ blockquote {
 }
 
 hr {
-  @apply border-gray-900;
+  @apply border-solid border-gray-900;
 }
 
 /* 
@@ -286,7 +286,7 @@ hr {
   }
 
   hr {
-    @apply border border-b border-solid;
+    @apply border-gray-100;
   }
 
   .border-black {

@@ -1,5 +1,3 @@
-// const colors = require('material-ui-colors')
-
 module.exports = {
   purge: {
     content: [
@@ -26,7 +24,6 @@ module.exports = {
         },
       },
       colors: { 
-        // ... colors, // adding Material Design colors
         'mainblue': "#0033ff", // variables.css: 'blue'
         'hovrblue': "#0088ff", // variables.css: 'blueFirst'
         'darkblue': "#0000aa",

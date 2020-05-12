@@ -18,7 +18,7 @@ module.exports = {
     },
     "files": false,
     "watchEvents": [
-        "change"
+      "change"
     ],
     "watch": true, // default is false
     "ignore": [],

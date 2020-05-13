@@ -7,16 +7,7 @@ exports.render = function (data) {
 
   <main>
 
-  <div class="w-full height-hero pt-12">
-      <img src="/images/${data.featured_image_base}.${data.featured_image_ext}" alt="${data.featured_image_alt}" class="object-cover object-center h-full w-full" />
-  </div>
-  ${
-    (data.featured_image_caption)
-    ? `<p class="text-center text-xs tracking-normal mt-1">${data.featured_image_caption}</p>`
-    : ``
-  }
-
-  <div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 lg:w-5/6 mr-auto ml-auto">
+  <div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 lg:w-5/6 pt-20 mr-auto ml-auto">
     <div class="col-span-3 home-colOne">
       ${data.content}
     </div>

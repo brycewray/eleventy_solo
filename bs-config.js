@@ -16,9 +16,15 @@ module.exports = {
     "ui": {
         "port": 3001
     },
-    "files": false,
+    "files": [
+      "./src/**/*.js",
+      "./src/assets/css/*.css",
+      "./src/**/*.md"
+    ],
     "watchEvents": [
-      "change"
+      "add",
+      "change",
+      "addDir"
     ],
     "watch": true, // default is false
     "ignore": [],

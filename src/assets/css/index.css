@@ -225,7 +225,7 @@ table.noborders thead tr {
 }
   
 table.noborders thead td {
-  @apply text-white font-body font-bold;
+  @apply text-white font-bold;
 }
   
 table.noborders td.td70 {

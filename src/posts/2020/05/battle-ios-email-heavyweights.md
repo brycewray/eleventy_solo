@@ -5,7 +5,7 @@ title: "Battle of the iOS email heavyweights"
 subtitle: "AltaMail vs. Preside: Two apps for power users"
 description: "There’s no MailMate for iOS, but these try to play in the same ballpark."
 author: Bryce Wray
-date: 2020-05-14T18:30:00-05:00
+date: 2020-05-14T17:45:00-05:00
 #lastmod: TBD
 discussionId: "2020-05-battle-ios-email-heavyweights"
 ---
@@ -82,7 +82,7 @@ Ladies and gentlemen, here's a look at **[AltaMail](https://mobile.eurosmartz.co
 
 ## Focusing on MailMate-ish features
 
-To keep this post to a sort-of-tolerable length, we'll look primarily at the two apps' features that are most likely to appeal to MailMate users. After all, any decent-quality iOS email app can deftly handle multiple accounts, accept some limited degree of look-and-feel customization, and so forth. So let's deal, instead, with the stuff an email power user expects beyond such pedestrian capabilities.
+To keep this post to a sort-of-tolerable length, we'll look primarily at the two apps' features that are most likely to appeal to MailMate users. After all, any decent-quality iOS email app can deftly handle multiple accounts, accept some limited degree of look-and-feel customization, and so forth. So let's deal, instead, with the stuff an email power user expects beyond such basic capabilities.
 
 ### Organizational powers
 
@@ -201,4 +201,4 @@ Finally, as a new user to each, I found Preside considerably more approachable, 
 
 It could be that, somewhere out there, somebody is secretly working on a truly MailMate-like iOS email app and, if so, there will be a small but extremely interested cadre of users ready to embrace it when it appears on the App Store. But, unless and until that occurs, Preside is the way to go.
 
-**Acknowledgment**: I'm extremely grateful to the members of the MailMate mailing list who responded to my recent request for their impressions of both AltaMail and Preside. I knew my pedestrian use cases couldn't begin to match the experiences of *true* email power users, so I found their observations invaluable.{.yellowBox}
+**Acknowledgment**: I'm extremely grateful to the members of the MailMate mailing list who responded to my recent request for their impressions of both AltaMail and Preside. I knew my use cases couldn't begin to match the experiences of *true* email power users, so I found their observations invaluable.{.yellowBox}

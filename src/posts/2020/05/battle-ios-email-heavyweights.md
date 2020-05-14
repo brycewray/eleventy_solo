@@ -30,7 +30,7 @@ That leaves to others the tall order of trying to make an iOS mail client of sim
 
 - Handling massive amounts of emails, each of which must be retained as long as needed *and* filed exactly as needed, preferably automatically.
 - Seamless integration of multiple accounts.
-- Accessing essentially endless levels of folders, and managing them (again) automatically as possible. Many iOS email apps can see the top levels of folders, but getting further down is another matter.
+- Accessing essentially endless levels of folders, and managing them (again) as automatically as possible. Many iOS email apps can see the top levels of folders, but getting further down is another matter.
 - Extensive ability to customize both functionality and look-and-feel, for not only individual elements but also the app as a whole.
 - Complete freedom over how they build and compose emails.
 
@@ -38,7 +38,7 @@ Suffice it to say that such an app wouldn't exactly be an "everything-just-works
 
 After all, that's probably what they've already done with MailMate.
 
-Over and above the complexity involved, an iOS-for-MailMate-users candidate probably isn't attractive to developers because, frankly, there's not a huge demand for it. Particularly in the iOS dev world with its tiny-amount-per-sale compensation model, one wants to go for the big score, a "gotta-have" app. Devs may doubt there are enough true email power users to constitute an attractive target for such efforts. (Maybe, maybe not. **Still**, those that do exist, like attorneys[^Gavel] and others who must keep and store *every* business-related email for legal purposes, likely are a lucrative market willing to pay more than ninety-nine cents for an app that deserves it; so perhaps those devs should think about it that way.[^NotClickbait])
+Over and above the complexity involved, an iOS-for-MailMate-users candidate probably isn't attractive to developers because, frankly, there's not a huge demand for it. Particularly in the iOS dev world with its tiny-amount-per-sale compensation model, one wants to go for the big score, a "gotta-have" app. Devs may doubt there are enough true email power users to constitute an attractive target for such efforts. (Maybe, maybe not. **Still**, those that do exist, like attorneys[^Gavel] and others who must keep and store *every* business-related email for legal purposes, likely are a lucrative market willing to pay a fair sum for an app that deserves it; so perhaps those devs should think about it that way.[^NotClickbait])
 
 [^Gavel]: The likelihood that attorneys want and need a souped-up email app is almost certainly at least part of the reason why one of the apps reviewed herein, Preside, bears an app icon showing a gavel.
 
@@ -82,7 +82,7 @@ Ladies and gentlemen, here's a look at **[AltaMail](https://mobile.eurosmartz.co
 
 ## Focusing on MailMate-ish features
 
-To keep this post to a sort-of-tolerable length, we'll look at the two apps' features that are most likely to appeal to MailMate users. After all, any decent-quality iOS email app can deftly handle multiple accounts, accept some limited degree of look-and-feel customization, and so forth. So let's deal, instead, with the stuff an email power user expects beyond such pedestrian capabilities.
+To keep this post to a sort-of-tolerable length, we'll look primarily at the two apps' features that are most likely to appeal to MailMate users. After all, any decent-quality iOS email app can deftly handle multiple accounts, accept some limited degree of look-and-feel customization, and so forth. So let's deal, instead, with the stuff an email power user expects beyond such pedestrian capabilities.
 
 ### Organizational powers
 
@@ -96,13 +96,13 @@ Account
            |_ FolderLevel Four
 ```
 
-.&nbsp;.&nbsp;. in which case, AltaMail and Preside pretty much are the only games in town. Attorneys especially ache for this kind of functionality in an iOS email app, since they often keep at least one separate "master" folder and practically never-ending sets of subfolders for *each* client's emails. Better yet is if an app can gradually "learn" how and where you file *and* start helping you do it, often with just a swipe. AltaMail and Preside can. One user said, "I'm almost always pleasantly surprised by the ability of Preside to 'guess right' about what I want to do with a specific message."
+.&nbsp;.&nbsp;. in which case, AltaMail and Preside pretty much are the only games in town. Attorneys especially ache for this kind of functionality in an iOS email app, since they often keep at least one separate "master" folder, and practically never-ending sets and levels of subfolders, for *each* client's emails. Better yet is if an app can gradually "learn" how and where you file *and* start helping you do it, often with just a swipe. AltaMail and Preside can. One user said, "I'm almost always pleasantly surprised by the ability of Preside to 'guess right' about what I want to do with a specific message."
 
 Another key organizational feature for heavy email users is the ability to assign *tags* to emails. While AltaMail apparently lacks this feature, Preside not only allows this---using iMAP keywords, as is true for MailMate---but also can suggest tags for you based on past behavior.
 
 ### Over-the-top, smart support
 
-MailMate users don't need their hands held very often but, when they do have questions, they tend to be detailed questions that need equally detailed answers. That's what these users get from Dr. Nielsen through a variety of sources, and they'd expect nothing less in support for either AltaMail or Preside.
+MailMate users don't need their hands held very often but, when they do have questions, those questions tend to be detailed ones that need equally detailed answers. That's what these users get from Dr. Nielsen through a variety of sources, and they'd expect nothing less in support for either AltaMail or Preside.
 
 In reviews on the iOS App Store that go back several years, both apps' users almost uniformly proclaim the support to be superb, regardless of the issues raised; and my own anecdotal information (both my own experiences and those from others with whom I've communicated about this topic) goes along with that.
 
@@ -110,7 +110,7 @@ In reviews on the iOS App Store that go back several years, both apps' users alm
 
 ### No funny business, period
 
-MailMate users require a no-nonsense email app, and are used to an equally firm adherence to email standards, which ensures their emails' archival safety for years to come. Both of these apps deliver on that.
+MailMate users require a no-nonsense email app, and are used to an equally firm adherence to email standards, which ensures their emails can not only "talk" to any other receiving client out there but also rest in archival safety, now and for years to come. Both of these apps deliver on that.
 
 MailMate users also are used to a complete lack of privacy-compromising shenanigans between the app of choice and their email vendor. Same goes for AltaMail and Preside on that score, too. For your reference:
 - [AltaMail privacy policy](https://mobile.eurosmartz.com/privacy.html)
@@ -118,11 +118,11 @@ MailMate users also are used to a complete lack of privacy-compromising shenanig
 
 ### Totally customizable look-and-feel
 
-MailMate users want function first, "pretty" last---and what degree of "pretty" they'll allow is something they want to control. It's what they're used to having from MailMate itself. So they'll be quite comfortable with how extensively you can customize each app's appearance in many different regards: which icons appear and when, color schemes, display typefaces, and so on. You *can't* make either look quite as bare-bones in appearance as many a "pretty" app; but, after all, that's almost certainly not of interest to anyone who'd want to use either, much less to a MailMate user.[^Antiquated]
+MailMate users want function first, "pretty" last---and what degree of "pretty" they'll allow is something they want to control. It's what they're used to having from MailMate itself. So they'll be quite comfortable with how extensively you can customize each app's appearance in many different regards: which icons appear and when, color schemes, display typefaces, and so on. You *can't* make either look quite as bare-bones in appearance as many a "pretty" app; but, after all, that's almost certainly not of interest to anyone who'd want to use MailMate, AltaMail, or Preside.[^Antiquated]
 
 [^Antiquated]: I did, however, hear from one otherwise enthusiastic Preside user who described its UI as "lacking and dated" when compared to other email client apps.
 
-One appearances-related drawback these apps share when compared to MailMate is that neither allows use of [Markdown](https://daringfireball.net/projects/markdown) in composing emails.[^MDinMM] However, this isn't the big deal it might otherwise be, since Markdown's requirement to enter special characters can be more of a hassle on iOS devices' touchscreens than with a Mac keyboard. Indeed, some MailMate users say they're *glad* not to deal with Markdown in iOS apps, email or otherwise.
+One appearances-related drawback these apps share when compared to MailMate is that neither allows use of [Markdown](https://daringfireball.net/projects/markdown) in composing emails.[^MDinMM] However, this isn't the big deal it might otherwise be, since Markdown's requirement to enter certain characters for formatting can be more of a hassle on iOS devices' touchscreens than with a Mac keyboard. Indeed, some MailMate users say they're *glad* not to deal with Markdown in iOS apps, email or otherwise.
 
 [^MDinMM]: Remember that MailMate doesn't simply *allow* composing in Markdown---[it *requires* it](https://manual.mailmate-app.com/).
 
@@ -169,7 +169,7 @@ Were I to gain control over AltaMail's development team through some bizarre cos
 
 Where Preside is concerned, the elephant in the room for me is *notifications*---but, if you're a less "twitchy" email user than I, you may not even care.
 
-In Preside's FAQs-serving-as-documentation, its dev makes what I concede is a [well-argued case](https://preside.io/faq.html#Notifications) against even using notifications *at all*, since he believes that *all* notifications compromise one's productivity. As a result, you won't be surprised to know that this is not an app which does notifications well---at least, not *real-time* notifications.[^HolyMail]
+In Preside's FAQs-serving-as-documentation, its dev makes what I concede is a [well-argued case](https://preside.io/faq.html#Notifications) against even using notifications *at all*, since he believes that *all* notifications compromise one's productivity. As a result, you won't be surprised to know that Preside is lacking where notifications are concerned---at least, *real-time* notifications.[^HolyMail]
 
 [^HolyMail]: As I've [explained before](/posts/2019/05/the-holy-mail), I wanted real-time email notifications in iOS badly enough to switch email vendors after over a decade. My choice, FastMail, [worked with Apple](https://blog.fastmail.com/2015/07/17/push-email-now-available-in-ios-mail) to enable real-time notifications capability for its servers' emails in the Apple Mail app.
 
@@ -197,7 +197,7 @@ Another thing that made Preside a superior choice for me is the sheer number of 
 
 Finally, as a new user to each, I found Preside considerably more approachable, easier to make it conform to my wishes, and just plain less "odd" compared to AltaMail.[^WeirdUI]
 
-[^WeirdUI]: It's one thing for an app's UI to be different, but quite another for it to be *so* off the beaten path as to be difficult to grok. I found AltaMail veering into this uncomfortable territory all too often, despite the many strong features it does have.
+[^WeirdUI]: It's one thing for an app's UI to be different, but quite another for it to be *so* off the beaten path as to be difficult to "get." I found AltaMail veering into this uncomfortable territory all too often, despite the many strong features it does have.
 
 It could be that, somewhere out there, somebody is secretly working on a truly MailMate-like iOS email app and, if so, there will be a small but extremely interested cadre of users ready to embrace it when it appears on the App Store. But, unless and until that occurs, Preside is the way to go.
 

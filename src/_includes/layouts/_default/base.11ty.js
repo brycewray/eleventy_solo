@@ -135,10 +135,10 @@ module.exports = function (data) {
     ${data.content}
     <footer class="text-center pb-6">
       <div class="w-5/6 md:w-3/4 lg:w-2/3 mx-auto">
-        <p class="text-xs inline-flex mt-4 mb-4"><a href="https://github.com/brycewray/eleventy_solo" target="_blank" rel="noopener" class="mb-0 border-transparent"><img src="/images/icons/GitHub_octocat_logo_blue_48x48.png" style="height: 24px; width: 24px;" alt="GitHub"></a>&nbsp;&nbsp;<a href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener" class="mb-0 border-transparent"><img src="/images/icons/twitter-2430933_48x48.png" style="height: 24px; width: 24px;" alt="Twitter"></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/brycewray" target="_blank" rel="noopener" class="mb-0 border-transparent"><img src="/images/icons/linked-in-2674741_48x48.png" style="height: 24px; width: 24px;" alt="LinkedIn"></a>&nbsp;&nbsp;<a href="/feed.xml" class="mb-0 border-transparent"><img src="/images/icons/rss-2440955_48x48.png" style="height: 24px; width:24px;" alt="RSS"></a></p>
-        <p class="text-xs tracking-normal">
+        <p class="text-xs inline-flex mt-4 mb-4"><a href="https://github.com/brycewray/eleventy_solo" target="_blank" rel="noopener" class="mb-0 border-transparent"><img src="/images/icons/GitHub_octocat_logo_blue_96x96.png" style="height: 48px; width: 48px;" alt="GitHub logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener" class="mb-0 border-transparent"><img src="/images/icons/twitter-2430933_circle_96x96.png" style="height: 48px; width: 48px;" alt="Twitter logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/brycewray" target="_blank" rel="noopener" class="mb-0 border-transparent"><img src="/images/icons/linked-in-2674741_circle_96x96.png" style="height: 48px; width: 48px;" alt="LinkedIn logo"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/feed.xml" class="mb-0 border-transparent"><img src="/images/icons/rss-2440955_circle_96x96.png" style="height: 48px; width:48px;" alt="RSS logo"></a></p>
+        <p class="text-xs tracking-tight">
           &copy;&nbsp;${copyYear}&nbsp;<a class="h-card" rel="me" href="https://brycewray.com">Bryce Wray</a>.<br />
-          Site built and managed with <a href="https://jamstack.org" target="_blank" rel="noopener">the Jamstack</a>, <a href="https://tailwindcss.com/" target="_blank" rel="noopener">Tailwind CSS</a>, <a href="https://www.apple.com/macos" target="_blank" rel="noopener">macOS</a>, <a href="https://www.apple.com/ios" target="_blank" rel="noopener">iOS</a>, <a href="https://daringfireball.net/projects/markdown" target="_blank" rel="noopener">Markdown</a>, <span class="text-nowrap">time, and&nbsp;love.</span> <span class="text-nowrap">Hosted by&nbsp;<a href="https://netlify.com" target="_blank" rel="noopener">Netlify</a></span>.
+          Site built and managed with <a href="https://jamstack.org" target="_blank" rel="noopener">the Jamstack</a>, <a href="https://11ty.dev" target="_blank" rel="noopener">Eleventy</a>, <a href="https://tailwindcss.com/" target="_blank" rel="noopener">Tailwind CSS</a>, <a href="https://www.apple.com/macos" target="_blank" rel="noopener">macOS</a>, <a href="https://www.apple.com/ios" target="_blank" rel="noopener">iOS</a>, <a href="https://daringfireball.net/projects/markdown" target="_blank" rel="noopener">Markdown</a>, <span class="text-nowrap">time, and&nbsp;love.</span> <span class="text-nowrap">Hosted by&nbsp;<a href="https://netlify.com" target="_blank" rel="noopener">Netlify</a></span>.
         </p>
       </div>
       <!-- for webmentions -->
@@ -146,11 +146,11 @@ module.exports = function (data) {
       <div class="w-5/6 md:w-3/4 lg:w-2/3 mx-auto">
         <h4 class="not-italic text-sm tracking-tighter mt-4 mb-2">Information for webmentions</h4>
         <p class="inline-flex mt-0"><img class="u-photo" alt="This site's 'BW' logo" src="/images/icons/favicon-90x90.png" style="width: 45px; height: 45px;" /></p>
-        <p class="p-note text-xs tracking-normal leading-tight mt-0">Unrepentant advocate for and user of the Oxford comma (sorry,&nbsp;AP). Webmentions&nbsp;of others&rsquo; content do&nbsp;not necessarily constitute endorsements. Comments&nbsp;and opinions expressed herein are my&nbsp;own, unless otherwise&nbsp;noted.</p>
+        <p class="p-note text-xs tracking-tight leading-tight mt-0">Unrepentant advocate for and user of the Oxford comma (sorry,&nbsp;AP). Webmentions&nbsp;of others&rsquo; content do&nbsp;not necessarily constitute endorsements. Comments&nbsp;and&nbsp;opinions expressed herein are my&nbsp;own, unless otherwise&nbsp;noted.</p>
         ${data.title !="Posts"
-        ? `<h4 class="text-center not-italic text-sm mt-4">About this page</h4>
+        ? `<h4 class="text-center not-italic text-sm mt-4 tracking-tight">About this page</h4>
         <article class="h-entry text-xs leading-tight">
-          <div class="e-content p-name tracking-normal">
+          <div class="e-content p-name tracking-tight">
           ${data.title}
             ${data.subtitle 
               ? `&nbsp;&nbsp;|&nbsp;&nbsp;${data.subtitle}`
@@ -169,7 +169,6 @@ module.exports = function (data) {
         }
       </div>
     </footer>    
-    <!-- <script src="/assets/js/lazysizes.min.js"></script> -->
     <script src="/assets/js/flying-pages.min.js"></script>
     <script src="/assets/js/twitterMeta.js"></script>
   </body>

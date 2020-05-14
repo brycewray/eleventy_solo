@@ -5,9 +5,9 @@ exports.data = {
 exports.render = function (data) {
   return `
 <main class="pt-12">
-  <div class="container h-auto w-full min-w-full relative overflow-hidden bg-darkblue pt-12 pb-6 px-4 md:px-12">
-    <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl text-white tracking-tighter leading-tight mb-6 px-4 md:px-0">${data.title}</h1>
-    <h2 class="text-center italic text-2xl md:text-left md:text-3xl lg:text-5xl text-white leading-tight tracking-tighter px-6 md:px-0">
+  <div class="container h-auto w-full min-w-full relative overflow-hidden pt-12 pb-6 px-4 md:px-12 bg-inkyblue">
+    <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl tracking-tighter leading-tight mb-6 px-4 md:px-0 text-white">${data.title}</h1>
+    <h2 class="text-center italic text-2xl md:text-left md:text-3xl lg:text-5xl leading-tight tracking-tighter px-6 md:px-0 text-white">
       ${
         data.subtitle
           ? data.subtitle

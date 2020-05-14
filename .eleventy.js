@@ -95,8 +95,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(ErrorOverlay)
 
-  eleventyConfig.addPlugin(lazyImagesPlugin)
-
   eleventyConfig.addPlugin(pluginLocalRespImg, {
     folders: {
       source: 'src',
@@ -133,6 +131,16 @@ module.exports = function (eleventyConfig) {
         quality: 60
       },
     }
+  })
+
+  eleventyConfig.addPlugin(lazyImagesPlugin, { // **must** go AFTER eleventy-plugin-local-respimg
+    transformImgPath: (imgPath) => {
+      if (imgPath.startsWith('/') && !imgPath.startsWith('//')) {
+        return `./src${imgPath}`
+      }
+      return imgPath
+    },
+    scriptSrc: "/assets/js/lazysizes.min.js",
   })
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {

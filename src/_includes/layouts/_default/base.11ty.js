@@ -144,11 +144,11 @@ module.exports = function (data) {
       <!-- for webmentions -->
       <hr class="mt-8 border-black" />
       <div class="w-5/6 md:w-3/4 lg:w-2/3 mx-auto">
-        <h4 class="not-italic text-sm tracking-tighter mt-4 mb-2">Information for webmentions</h4>
+        <p class="font-bold text-base tracking-tighter mt-4 mb-2">Information for webmentions</p>
         <p class="inline-flex mt-0"><img class="u-photo" alt="This site's 'BW' logo" src="/images/icons/favicon-90x90.png" style="width: 45px; height: 45px;" /></p>
         <p class="p-note text-xs tracking-tight leading-tight mt-0">Unrepentant advocate for and user of the Oxford comma (sorry,&nbsp;AP). Webmentions&nbsp;of others&rsquo; content do&nbsp;not necessarily constitute endorsements. Comments&nbsp;and&nbsp;opinions expressed herein are my&nbsp;own, unless otherwise&nbsp;noted.</p>
         ${data.title !="Posts"
-        ? `<h4 class="text-center not-italic text-sm mt-4 tracking-tight">About this page</h4>
+        ? `<p class="font-bold text-center text-sm mt-4 mb-0 tracking-tight">About this page</p>
         <article class="h-entry text-xs leading-tight">
           <div class="e-content p-name tracking-tight">
           ${data.title}

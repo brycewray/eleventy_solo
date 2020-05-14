@@ -170,7 +170,7 @@ module.exports = function (data) {
       </div>
     </footer>    
     <script src="/assets/js/flying-pages.min.js"></script>
-    <script src="/assets/js/twitterMeta.js"></script>
+    <script src="/assets/js/twitterMeta.min.js"></script>
   </body>
 </html>
   `

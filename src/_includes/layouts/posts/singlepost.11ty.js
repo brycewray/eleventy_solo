@@ -65,5 +65,6 @@ exports.render = function (data) {
     </div>`
     : ``
   }
+</main>
 `
 }

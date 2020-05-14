@@ -88,7 +88,7 @@ a.navborderless {
   @apply text-gray-700;
 }
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  @apply font-bold leading-tight;
+  @apply font-bold leading-tight tracking-tighter;
 }
 
 h1, .h1 {
@@ -225,7 +225,7 @@ table.noborders thead tr {
 }
   
 table.noborders thead td {
-  @apply text-white font-body font-bold;
+  @apply text-white font-bold;
 }
   
 table.noborders td.td70 {
@@ -298,7 +298,7 @@ hr {
   }
 
   footer {
-    background: linear-gradient(rgba(0,0,0,0),#0500a9);
+    /* was --  background: linear-gradient(rgba(0,0,0,0),#0500a9); */
   }
 
   blockquote {

@@ -19,8 +19,6 @@ Eons ago, when [the Web was a new thing](http://info.cern.ch/hypertext/WWW/ThePr
 
 And, yes, I had one, back on what then was called [GTE.net](https://en.wikipedia.org/wiki/GTE). In fact, I was a "Charter Subscriber" to that ISP.
 
-!["HTML code from a 1997 Web site"](/images/gte-net_HTML_1997-04-17_crop_1280x715.jpg)
-
 Yet, as that free-file-space thing gradually went away, so, too, did many personal sites---mine among them.
 
 Over the years, database-driven content management systems ([CMSs](https://en.wikipedia.org/wiki/Web_content_management_system)) like [WordPress](https://wordpress.org) appeared. They provide click-and-drag ease in building a personal site, but they tend to be [security nightmares unless properly maintained](https://ithemes.com/2017/01/16/wordpress-security-issues/), which many aren't. They also introduce a great deal of technical overhead.

@@ -27,6 +27,7 @@ module.exports = {
         'mainblue': "#0033ff", // variables.css: 'blue'
         'hovrblue': "#0088ff", // variables.css: 'blueFirst'
         'darkblue': "#0000aa",
+        'inkyblue': '#000066',
         'lghtblue': "#00bbff", // variables.css: 'blueLight' (for use with dark mode where supported)          
       },
     },

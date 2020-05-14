@@ -5,6 +5,7 @@ const sanitizeHTML = require('sanitize-html')
 const filters = require('./src/assets/utils/filters.js')
 const pluginLocalRespImg = require('eleventy-plugin-local-respimg')
 const ErrorOverlay = require('eleventy-plugin-error-overlay')
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
 
 module.exports = function (eleventyConfig) {
 
@@ -132,6 +133,16 @@ module.exports = function (eleventyConfig) {
     }
   })
 
+  eleventyConfig.addPlugin(lazyImagesPlugin, { // **must** go AFTER eleventy-plugin-local-respimg
+    transformImgPath: (imgPath) => {
+      if (imgPath.startsWith('/') && !imgPath.startsWith('//')) {
+        return `./src${imgPath}`
+      }
+      return imgPath
+    },
+    scriptSrc: "/assets/js/lazysizes.min.js",
+  })
+
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {
       let minified = htmlmin.minify(content, {
@@ -209,16 +220,13 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("posts", function(collection) {
     const coll = collection.getFilteredByTag("post")
-
     for(let i = 0; i < coll.length; i++) {
       const prevPost = coll[i-1]
       const nextPost = coll[i+1]
-
       coll[i].data["prevPost"] = prevPost
       coll[i].data["nextPost"] = nextPost
     }
-
-    return coll;
+    return coll
   })
 
   /* === END, prev/next posts stuff === */

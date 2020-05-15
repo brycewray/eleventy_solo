@@ -10,7 +10,7 @@ lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-07-why-staying-with-hugo"
 oldComments: |
     <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 px-6">
-      <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tighter">Comments</h3>
+      <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
       <p class="text-xs italic text-center">
         (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="nofollow">Talkyard</a>.)
       </p>

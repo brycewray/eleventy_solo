@@ -1,4 +1,4 @@
-/* @import 'fonts.css'; */
+@import 'fonts.css';
 @import 'nav.css';
 @import 'prismjs.css';
 
@@ -6,7 +6,7 @@
 
 /* purgecss start ignore */
 body {
-  /* @apply font-body; */
+  @apply font-body;
   font-feature-settings: "liga" 1; /* ligatures won't work without this */
 }
 
@@ -16,7 +16,7 @@ p, li {
 }
 
 pre, code {
-  /* @apply font-codefont; */
+  @apply font-codefont;
 }
 
 .bg-blue-deep {

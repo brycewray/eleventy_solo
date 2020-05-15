@@ -1,7 +1,7 @@
 ---
 layout: layouts/posts/singlepost.11ty.js
 tags: post
-title: "Battle of the iOS email heavyweights"
+title: "Battle of the iOS email heavyweights"
 subtitle: "AltaMail vs. Preside: Two apps for power users"
 description: "There’s no MailMate for iOS, but these try to play in the same ballpark."
 author: Bryce Wray

@@ -1,10 +1,8 @@
-/* @import 'fonts.css'; */
+@import 'fonts.css';
 @import 'nav.css';
 @import 'prismjs.css';
 
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* purgecss start ignore */
 body {
@@ -346,3 +344,6 @@ hr {
   }
 }
 /* purgecss end ignore */
+
+@tailwind components;
+@tailwind utilities;

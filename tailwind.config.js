@@ -15,6 +15,7 @@ module.exports = {
     },
     fontFamily: {
       body: ['Public Sans', 'system-ui', 'sans-serif'],
+      // body: ['EB Garamond', 'Georgia', 'Times New Roman', 'serif'],
       codefont: ['Roboto Mono', 'monospace'],
     },
     extend: {

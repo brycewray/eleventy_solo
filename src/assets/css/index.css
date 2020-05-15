@@ -1,4 +1,4 @@
-@import 'fonts.css';
+/* @import 'fonts.css'; */
 @import 'nav.css';
 @import 'prismjs.css';
 
@@ -8,7 +8,7 @@
 
 /* purgecss start ignore */
 body {
-  @apply font-body;
+  /* @apply font-body; */
   font-feature-settings: "liga" 1; /* ligatures won't work without this */
 }
 
@@ -293,7 +293,7 @@ hr {
     @apply border-gray-200 !important;
   }
 
-  .text-body, body, figcaption {
+  body, figcaption {
     @apply text-gray-200;
   }
 

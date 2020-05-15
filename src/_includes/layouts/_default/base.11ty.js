@@ -92,11 +92,10 @@ module.exports = function (data) {
   <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
   <meta name="msapplication-TileImage" content="/images/ms-icon-icons/144x144.png">
 
-  <link rel="preload" href="/css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/css/index.css" type="text/css">
   <style>.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
 
   <noscript>
-    <link rel="stylesheet" href="/css/index.css" type="text/css">
     <!-- Dark mode for Twitter items if browser blocks JS at bottom; it’s debatable whether it’s needed since non-JS Twitter is pretty spare and mostly adheres to other CSS, but we’ll do it just to be consistent -->
     <meta name="twitter:widgets:theme" content="dark">
     <meta name="twitter:widgets:link-color" content="#00bbff">
@@ -161,10 +160,10 @@ module.exports = function (data) {
         }
       </div>
     </footer> 
-    <script src="/assets/js/lazysizes.min.js" defer></script>
-    <script src="/assets/js/ls.blur-up.min.js" defer></script>
-    <!-- <script src="/assets/js/flying-pages.min.js" defer></script> -->
-    <script src="/assets/js/twitterMeta.min.js" defer></script>
+    <script src="/assets/js/lazysizes.min.js"></script>
+    <script src="/assets/js/ls.blur-up.min.js"></script>
+    <script src="/assets/js/flying-pages.min.js"></script>
+    <script src="/assets/js/twitterMeta.min.js"></script>
   </body>
 </html>
   `

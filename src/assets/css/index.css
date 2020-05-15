@@ -6,7 +6,7 @@
 
 /* purgecss start ignore */
 body {
-  /* @apply font-body; */
+  @apply font-body;
   font-feature-settings: "liga" 1; /* ligatures won't work without this */
 }
 

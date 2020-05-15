@@ -92,11 +92,10 @@ module.exports = function (data) {
   <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
   <meta name="msapplication-TileImage" content="/images/ms-icon-icons/144x144.png">
 
-  <link rel="preload" href="/css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/css/index.css" type="text/css">
   <style>.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
 
   <noscript>
-    <link rel="stylesheet" href="/css/index.css" type="text/css">
     <!-- Dark mode for Twitter items if browser blocks JS at bottom; it’s debatable whether it’s needed since non-JS Twitter is pretty spare and mostly adheres to other CSS, but we’ll do it just to be consistent -->
     <meta name="twitter:widgets:theme" content="dark">
     <meta name="twitter:widgets:link-color" content="#00bbff">

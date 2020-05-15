@@ -7,7 +7,7 @@ exports.render = function (data) {
 
   <main>
 
-    <div class="w-full height-hero pt-12">
+    <!--<div class="w-full height-hero pt-12">
         <img src="/images/${data.featured_image_base}.${data.featured_image_ext}" alt="${data.featured_image_alt}" class="object-cover object-center h-full w-full" />
     </div>
     ${
@@ -15,8 +15,9 @@ exports.render = function (data) {
       ? `<p class="text-center text-xs tracking-normal mt-1">${data.featured_image_caption}</p>`
       : ``
     }
+    -->
 
-    <div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 lg:w-5/6 mr-auto ml-auto">
+    <div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 lg:w-5/6 mr-auto ml-auto pt-24">
       <div class="col-span-3 home-colOne">
         ${data.content}
       </div>
@@ -26,8 +27,8 @@ exports.render = function (data) {
           data.collections.post.slice(0, 7).map(post =>
           `
         <div>
-          <h2 class="h4 not-italic tracking-tighter"><a href="${post.url}">${post.data.title}</a></h2>
-          <p class="font-bold text-base mt-2 mb-0 italic leading-5"><em>${post.data.subtitle}</em></p>
+          <h2 class="h4 not-italic tracking-tight"><a href="${post.url}">${post.data.title}</a></h2>
+          <p class="font-bold text-base mt-2 mb-0 leading-5"><em>${post.data.subtitle}</em></p>
           <p class="text-xs tracking-normal mt-0 mb-1">
             <time style="display: inline;" datetime="${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}">${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}</time>
             ${

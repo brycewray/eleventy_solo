@@ -16,13 +16,13 @@ module.exports = function(eleventyConfig) {
     return `
   
     <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 px-6" id="webmentions">
-      <h3 class="mt-2 mb-4 italic text-center text-3xl tracking-tighter">Webmentions</h3>
+      <h3 class="mt-2 mb-4 italic text-center text-3xl tracking-tight">Webmentions</h3>
       ${wMentions.length > 0
         ? 
         `
         ${likesSize
           ? `<details>
-              <summary class="text-2xl font-bold tracking-tighter">Likes&nbsp;&nbsp;<span class="text-base font-normal">(${likesSize})</span></summary>
+              <summary class="text-2xl font-bold tracking-tight">Likes&nbsp;&nbsp;<span class="text-base font-normal">(${likesSize})</span></summary>
               <div>
               ${likes.map(like =>
                 `<a href="${like.url}" class="border-0 no-underline"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo" src="${like.author.photo}" alt="${like.author.name}"></a>`
@@ -33,7 +33,7 @@ module.exports = function(eleventyConfig) {
         }
         ${repostsSize
           ? `<details>
-              <summary class="text-2xl font-bold tracking-tighter">Reposts&nbsp;&nbsp;<span class="text-base font-normal">(${repostsSize})</span></summary>
+              <summary class="text-2xl font-bold tracking-tight">Reposts&nbsp;&nbsp;<span class="text-base font-normal">(${repostsSize})</span></summary>
               <div>
               ${reposts.map(repost =>
                 `<a href="${repost.url}" class="border-0 no-underline"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo" src="${repost.author.photo}" alt="${repost.author.name}"></a>`
@@ -44,7 +44,7 @@ module.exports = function(eleventyConfig) {
         }
         ${repliesSize
           ? `<details>
-              <summary class="text-2xl font-bold tracking-tighter">Comments&nbsp;&bull;&nbsp;Replies&nbsp;&nbsp;<span class="text-base font-normal">(${repliesSize})</span></summary>
+              <summary class="text-2xl font-bold tracking-tight">Comments&nbsp;&bull;&nbsp;Replies&nbsp;&nbsp;<span class="text-base font-normal">(${repliesSize})</span></summary>
               <ol class="list-none p-0">
                 ${replies.map(reply =>
                   `<li class="mt-8">
@@ -64,7 +64,7 @@ module.exports = function(eleventyConfig) {
         }
         ${mentionsSize
           ? `<details>
-              <summary class="text-2xl font-bold tracking-tighter">Mentions&nbsp;&nbsp;<span class="text-base font-normal">(${mentionsSize})</span></summary>
+              <summary class="text-2xl font-bold tracking-tight">Mentions&nbsp;&nbsp;<span class="text-base font-normal">(${mentionsSize})</span></summary>
               <ol class="list-none p-0">
                 ${mentions.map(mention =>
                   `<li class="mt-8">

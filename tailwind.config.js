@@ -14,7 +14,7 @@ module.exports = {
       'xl': '1280px',
     },
     fontFamily: {
-      body: ['Public Sans', 'system-ui', 'sans-serif'],
+      body: ['Public Sans', 'apple-system', 'sans-serif'],
       codefont: ['Roboto Mono', 'monospace'],
     },
     extend: {

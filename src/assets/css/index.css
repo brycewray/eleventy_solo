@@ -3,8 +3,6 @@
 @import 'prismjs.css';
 
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 /* purgecss start ignore */
 body {
@@ -293,7 +291,7 @@ hr {
     @apply border-gray-200 !important;
   }
 
-  .text-body, body, figcaption {
+  body, figcaption {
     @apply text-gray-200;
   }
 
@@ -346,3 +344,6 @@ hr {
   }
 }
 /* purgecss end ignore */
+
+@tailwind components;
+@tailwind utilities;

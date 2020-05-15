@@ -104,7 +104,7 @@ module.exports = function (eleventyConfig) {
       resize: {
         min: 300,
         max: 1500,
-        step: 300,
+        step: 150,
       },
       gifToVideo: false,
       sizes: '100vw',
@@ -125,10 +125,10 @@ module.exports = function (eleventyConfig) {
       svgo: {},
       gifresize: {},
       webp: {
-        quality: 60
+        quality: 50
       },
       gifwebp: {
-        quality: 60
+        quality: 50
       },
     }
   })

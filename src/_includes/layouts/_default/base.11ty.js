@@ -92,8 +92,12 @@ module.exports = function (data) {
   <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
   <meta name="msapplication-TileImage" content="/images/ms-icon-icons/144x144.png">
 
-  <link rel="preload" href="/css/index.css" as="style">
-  <link rel="stylesheet" href="/css/index.css" type="text/css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="/css/index.css" />
+  <link rel="stylesheet" href="/css/index.css" type="text/css" />
   <style>.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
 
   <noscript>
@@ -104,7 +108,7 @@ module.exports = function (data) {
   </head>
   <body>
     <p class="ieOnly text-center">Sorry, this site&rsquo;s CSS&mdash;and many others&rsquo;&mdash;no longer fully supports Internet&nbsp;Explorer.</p>
-    <header class="h-12 bg-darkblue font-body w-full fixed p-0 mt-0 z-50">
+    <header class="h-12 bg-darkblue w-full fixed p-0 mt-0 z-50">
       <p class="text-white font-bold mt-2 pt-1 text-lg ml-4 md:ml-8 lg:ml-10"><span class="site-logo-holder"><a href="/" class="text-white no-underline border-b-0 active:text-gray-400 hover:text-gray-400"><img class="inline" src="/images/icons/BW_avatar_36x36_xpar.png" alt="This site's logo; click here to go to the home page"></a></span>&nbsp;&nbsp;&nbsp;<a href="/" class="text-white no-underline border-b-0 active:text-gray-400 hover:text-gray-400">BryceWray.com</a></p>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
       <label for="nav-toggle" class="nav__icon" aria-hidden="true">
@@ -160,9 +164,8 @@ module.exports = function (data) {
         : ``
         }
       </div>
-    </footer> 
+    </footer>
     <script src="/assets/js/lazysizes.min.js" defer></script>
-    <script src="/assets/js/ls.blur-up.min.js" defer></script>
     <script src="/assets/js/flying-pages.min.js" defer></script>
     <script src="/assets/js/twitterMeta.min.js" defer></script>
   </body>

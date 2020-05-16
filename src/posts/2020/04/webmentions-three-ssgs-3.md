@@ -6,7 +6,7 @@ subtitle: "IndieWebbin’ in Hugo"
 description: "Part 3 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Hugo."
 author: Bryce Wray
 date: 2020-04-28T16:40:00-05:00
-lastmod: 2020-04-29T06:40:00-05:00
+lastmod: 2020-05-16T15:10:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-3"
 ---
 
@@ -44,7 +44,7 @@ Finally, after hours of sifting through similar issues reports from Hugo users, 
 
 [^NPMRun]: This is invoked by the `npm run start` or `npm run build` script, as appropriate for your use case, in conjunction with the necessary Hugo script.
 
-```
+```node
 "dev:wmFetch": "node -r dotenv/config assets/js/webmentions.js"
 ```
 

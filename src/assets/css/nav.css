@@ -71,7 +71,7 @@ CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/W
    &:checked {
      & ~ nav .nav__items {
        height: auto;
-       @apply bg-darkblue transition-all duration-500 ease-linear;
+       @apply bg-blue-700 transition-all duration-500 ease-linear;
        max-height: 30rem;
      }
      & ~ label .nav__icon-line:first-child {
@@ -100,11 +100,13 @@ nav {
     }
   }
   & a {
-    @apply text-white text-lg no-underline border-b-0 opacity-0;
-  }
+    @apply text-white text-lg opacity-0;
+    text-decoration: none !important;
+    border: 0 !important;
+  }/*
   & a:hover, & a:active {
     @apply border-b-0 text-gray-500;
-  }
+  }*/
 }
 
 .nav-toggle:checked ~ nav {

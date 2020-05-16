@@ -5,7 +5,7 @@ exports.data = {
 exports.render = function (data) {
   return `
 <main class="pt-12">
-  <div class="container h-auto w-full min-w-full relative overflow-hidden pt-12 pb-6 px-4 md:px-12 bg-inkyblue">
+  <div class="container h-auto w-full min-w-full relative overflow-hidden pt-12 pb-6 px-4 md:px-12 bg-blue-900">
     <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">${data.title}</h1>
     <h2 class="text-center text-2xl md:text-left md:text-3xl lg:text-5xl leading-tight tracking-tight px-6 md:px-0 text-white">
       ${
@@ -46,19 +46,19 @@ exports.render = function (data) {
   }
   
   ${data.title != "The obligatory About Me page"
-    ? `<div class="w-full px-8 md:px-0 bg-blue-deep align-middle mt-10 mb-10">
-    <h3 class="text-center text-3xl tracking-tight mb-0 pt-2"><a href="/posts" class="border-transparent text-blue-200 hover:text-white italic">Other posts</a></h3>
+    ? `<div class="w-full px-8 md:px-0 bg-blue-900 align-middle mt-10 mb-10">
+    <h3 class="text-center text-3xl tracking-tight mb-0 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white italic">Other posts</a></h3>
     ${data.nextPost && data.nextPost.url !== null
-      ? `<p class="text-center mt-2 mb-2 text-xl text-gray-200 leading-tight">
+      ? `<p class="text-center mt-2 mb-2 text-xl text-white leading-tight">
         <strong>Next</strong>: 
-        <a class="border-transparent text-blue-200 hover:text-white hover:border-blue-200" href="${data.nextPost.url}">${data.nextPost.data.title}</a>
+        <a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="${data.nextPost.url}">${data.nextPost.data.title}</a>
       </p>`
       : ``
     }
     ${data.prevPost && data.prevPost.url !== null
-      ? `<p class="text-center pb-4 my-0 text-xl text-gray-200 leading-tight">
+      ? `<p class="text-center pb-4 my-0 text-xl text-white leading-tight">
         <strong>Previous</strong>: 
-        <a class="border-transparent text-blue-200 hover:text-white hover:border-blue-200" href="${data.prevPost.url}">${data.prevPost.data.title}</a>
+        <a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="${data.prevPost.url}">${data.prevPost.data.title}</a>
       </p>`
       : `<p class="text-xs my-0 py-0 leading-tight">&nbsp;</p>`
     }

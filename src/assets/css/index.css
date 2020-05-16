@@ -3,7 +3,7 @@
 
 @tailwind base;
 
-/* purgecss start ignore */
+/* where we told pcss to start ignoring */
 body {
   @apply font-body; /* assigned in tailwind.config.js */
   font-feature-settings: "liga" 1; /* ligatures won't work without this */
@@ -18,10 +18,6 @@ pre, code {
   /* @apply font-codefont; */ /* assigned in tailwind.config.js */
 }
 
-.bg-blue-deep {
-  @apply bg-darkblue;
-}
-
 .navWhite, .navWhite:visited {
   color: #fff;
 }
@@ -31,11 +27,11 @@ pre, code {
 }
 
 .text-blue-light {
-  @apply text-mainblue;
+  @apply text-blue-500;
 }
 
 .text-blue-dark { /* for dark mode */
-  @apply text-lghtblue;
+  @apply text-blue-200;
 }
 
 .text-shadow-titles {
@@ -58,15 +54,15 @@ pre, code {
 }
 
 a, a:focus, a:hover, a:active {
-  @apply no-underline border-b border-solid border-mainblue;
+  @apply no-underline border-b border-solid border-blue-500;
 }
 
 a {
-  @apply text-mainblue;
+  @apply text-blue-500;
 }
 
 a:focus, a:hover, a:active {
-  @apply text-darkblue border-b border-hovrblue;
+  @apply text-blue-800 border-b border-blue-500;
 }
 
 sup a, a.previous, a.next, .footnote-return {
@@ -218,7 +214,7 @@ table.noborders tr:nth-child(even) {
 }
 
 table.noborders thead tr {
-  @apply bg-darkblue;
+  @apply bg-blue-700;
 }
   
 table.noborders thead td {
@@ -303,7 +299,7 @@ hr {
   }
 
   a {
-    @apply text-lghtblue border-b border-lghtblue;
+    @apply text-blue-200 border-b border-blue-200;
   }
 
   a:hover {
@@ -342,7 +338,7 @@ hr {
     @apply my-4;
   }
 }
-/* purgecss end ignore */
+/* where we told pcss to end ignoring */
 
 @tailwind components;
 @tailwind utilities;

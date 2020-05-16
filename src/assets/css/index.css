@@ -15,7 +15,7 @@ p, li {
 }
 
 pre, code {
-  /* @apply font-codefont; */ /* assigned in tailwind.config.js */
+  @apply font-codefont; /* assigned in tailwind.config.js */
 }
 
 .navWhite, .navWhite:visited {
@@ -124,7 +124,7 @@ article h1, article h2, article h3, article h4 {
 }
 
 article p, li {
-  @apply text-lg leading-relaxed mt-6 mb-6;
+  @apply text-lg leading-relaxed tracking-tight mt-6 mb-6;
 }
 
 @media screen and (min-width: 769px) {

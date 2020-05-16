@@ -7,7 +7,7 @@ exports.render = function (data) {
 <main class="pt-12">
   <div class="container h-auto w-full min-w-full relative overflow-hidden pt-12 pb-6 px-4 md:px-12 bg-blue-900">
     <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">${data.title}</h1>
-    <h2 class="text-center text-2xl md:text-left md:text-3xl lg:text-5xl leading-tight tracking-tight px-6 md:px-0 text-white">
+    <h2 class="text-center text-2xl md:text-left md:text-3xl lg:text-5xl italic leading-tight tracking-tight px-6 md:px-0 text-white">
       ${
         data.subtitle
           ? data.subtitle

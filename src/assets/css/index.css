@@ -291,7 +291,7 @@ hr {
   }
 
   footer {
-    /* was --  background: linear-gradient(rgba(0,0,0,0),#0500a9); */
+    background: linear-gradient(rgba(0,0,0,0),#0500a9);
   }
 
   blockquote {

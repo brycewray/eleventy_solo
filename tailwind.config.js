@@ -14,9 +14,10 @@ module.exports = {
       'xl': '1280px',
     },
     fontFamily: {
-      body: ['Public Sans', 'system-ui', 'sans-serif'],
+      body: ['sans-serif'], /* until the Chrome/Chromium fonts bug (https://bugs.chromium.org/p/chromium/issues/detail?id=1057654) is fixed */
+      // body: ['Public Sans', 'system-ui', 'sans-serif'],
       // body: ['EB Garamond', 'Georgia', 'Times New Roman', 'serif'],
-      codefont: ['Roboto Mono', 'monospace'],
+      // codefont: ['Roboto Mono', 'monospace'],
     },
     extend: {
       screens: {

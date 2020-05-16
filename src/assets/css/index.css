@@ -15,7 +15,7 @@ p, li {
 }
 
 pre, code {
-  @apply font-codefont; /* assigned in tailwind.config.js */
+  /* @apply font-codefont; */ /* assigned in tailwind.config.js */
 }
 
 .bg-blue-deep {

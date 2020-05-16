@@ -39,8 +39,8 @@ exports.render = function (data) {
         data.pagination.items.map(post =>
         `
         <div>          
-          <h2 class="text-xl mb-1 leading-tight tracking-tighter"><a href="${post.url}">${post.data.title}</a><br />
-          <span class="text-base tracking-tight"><em>${post.data.subtitle}</em></span></h2>
+          <h2 class="text-xl mb-1 leading-tight tracking-tight"><a href="${post.url}">${post.data.title}</a><br />
+          <span class="text-base tracking-tight">${post.data.subtitle}</span></h2>
           <p class="text-sm dateInfo" style="margin-top: 0;">
             Published: <time style="display: inline;" datetime="${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}">${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}</time>
             ${

@@ -27,7 +27,7 @@ exports.render = function (data) {
           `
         <div>
           <h2 class="h4 not-italic tracking-tight"><a href="${post.url}">${post.data.title}</a></h2>
-          <p class="font-bold text-base mt-2 mb-0 leading-5"><em>${post.data.subtitle}</em></p>
+          <p class="font-bold text-base mt-2 mb-0 leading-5">${post.data.subtitle}</p>
           <p class="text-xs tracking-normal mt-0 mb-1">
             <time style="display: inline;" datetime="${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}">${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}</time>
             ${

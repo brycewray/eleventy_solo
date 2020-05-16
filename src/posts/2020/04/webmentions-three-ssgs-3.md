@@ -44,7 +44,7 @@ Finally, after hours of sifting through similar issues reports from Hugo users, 
 
 [^NPMRun]: This is invoked by the `npm run start` or `npm run build` script, as appropriate for your use case, in conjunction with the necessary Hugo script.
 
-```node
+```json
 "dev:wmFetch": "node -r dotenv/config assets/js/webmentions.js"
 ```
 

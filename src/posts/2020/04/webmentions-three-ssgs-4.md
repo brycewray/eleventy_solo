@@ -6,7 +6,7 @@ subtitle: "IndieWebbin’ in Gatsby"
 description: "Part 4 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Gatsby."
 author: Bryce Wray
 date: 2020-04-28T16:45:00-05:00
-lastmod: 2020-04-29T06:40:00-05:00
+lastmod: 2020-05-16T15:22:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-4"
 ---
 
@@ -68,7 +68,7 @@ But there's this one little thing about Gatsby page components as opposed to Gat
 
 In essence, the problem was feeding the GraphQL queries the right information so GraphQL could find the webmentions that went with each page---*i.e.*, because each webmention refers to a page's URL as the `wm-target`, I had to make the GraphQL ask, "What is this page's URL, so that I can then sift through the webmentions and find only the ones that go with it?" Since [StaticQuery can't accept the variable](https://www.gatsbyjs.org/docs/static-query/#how-staticquery-differs-from-page-query) which otherwise would've made that reasonably simple, I had to put the code in a *page* component rather than a *non*-page component.[^MaxComment]
 
-[^MaxComment]: I got an unexpected laugh when, while searching for a way to make this happen, I found a fine [CSS-Tricks](https://css-tricks.com) article, "[How to Get the Current Page URL in Gatsby](https://css-tricks.com/how-to-the-get-current-page-url-in-gatsby/)," by Dmitry Mayorov. My laugh came after I'd read Mr. Mayorov's rather detailed explanation, when I saw that the very first reader response was in the form of a [comment by none other than Max Böck](https://css-tricks.com/how-to-the-get-current-page-url-in-gatsby/#comment-1753198) which would resonate with anyone vexed by Gatsby's complexity: *"Jesus that's a lot of JS just to access the page url. This is literally just {{page.url}} in most other SSGs."* Preach on, Brother Böck.
+[^MaxComment]: I got an unexpected laugh when, while searching for a way to make this happen, I found a fine [CSS-Tricks](https://css-tricks.com) article, "[How to Get the Current Page URL in Gatsby](https://css-tricks.com/how-to-the-get-current-page-url-in-gatsby/)," by Dmitry Mayorov. My laugh came after I'd read Mr. Mayorov's rather detailed explanation, when I saw that the very first reader response was in the form of a [comment by none other than Max Böck](https://css-tricks.com/how-to-the-get-current-page-url-in-gatsby/#comment-1753198) which would resonate with anyone vexed by Gatsby's complexity: *"Jesus that's a lot of JS just to access the page url. This is literally just \{\{page.url\}\} in most other SSGs."* Preach on, Brother Böck.
 
 What this meant for my specific situation was that, rather than have a `/src/components/webmentions.js` component that each template could call separately, I ended up putting the appropriate code in *each* affected component.
 

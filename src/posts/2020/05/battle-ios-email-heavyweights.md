@@ -6,7 +6,7 @@ subtitle: "AltaMail vs. Preside: Two apps for power users"
 description: "There’s no MailMate for iOS, but these try to play in the same ballpark."
 author: Bryce Wray
 date: 2020-05-14T17:45:00-05:00
-#lastmod: TBD
+lastmod: 2020-05-16T12:15:00-05:00
 discussionId: "2020-05-battle-ios-email-heavyweights"
 ---
 
@@ -98,7 +98,9 @@ Account
 
 .&nbsp;.&nbsp;. in which case, AltaMail and Preside pretty much are the only games in town. Attorneys especially ache for this kind of functionality in an iOS email app, since they often keep at least one separate "master" folder, and practically never-ending sets and levels of subfolders, for *each* client's emails. Better yet is if an app can gradually "learn" how and where you file *and* start helping you do it, often with just a swipe. AltaMail and Preside can. One user said, "I'm almost always pleasantly surprised by the ability of Preside to 'guess right' about what I want to do with a specific message."
 
-Another key organizational feature for heavy email users is the ability to assign *tags* to emails. While AltaMail apparently lacks this feature, Preside not only allows this---using iMAP keywords, as is true for MailMate---but also can suggest tags for you based on past behavior.
+Another key organizational feature for heavy email users is the ability to assign *tags* to emails. Both apps provide this feature (contrary to what I said in the original version[^AMCorrected] of this post); AltaMail calls them *flags* rather than *tags*. Preside's tags use iMAP keywords, as is true for MailMate; Preside also can suggest tags for you based on past behavior.
+
+[^AMCorrected]: At first, I said AltaMail had no tagging ability; but a long-time AltaMail user kindly corrected me on that, as I had asked the MailMate mailing list recipients to do if they found errors in the post. This particular gentleman noted: "Tags/Keywords are also available. If I recall these are not on by default. In fact they may be called Flags which makes it more confusing." I did confirm this within the [appropriate section](https://mobile.eurosmartz.com/help/app/am/setFlag.html) of the AltaMail documentation. 
 
 ### Over-the-top, smart support
 

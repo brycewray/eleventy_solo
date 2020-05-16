@@ -7,7 +7,7 @@ exports.render = function (data) {
 <main class="pt-12">
   <div class="container h-auto w-full min-w-full relative overflow-hidden gradient-titles pt-12 pb-6 px-4 md:px-12">
     <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">${data.title}</h1>
-    <h2 class="text-center text-2xl md:text-left md:text-3xl lg:text-5xl italic leading-tight tracking-tight px-6 md:px-0 text-white">
+    <h2 class="text-center text-2xl md:text-left md:text-3xl lg:text-5xl leading-tight tracking-tight px-6 md:px-0 text-white">
       ${
         data.subtitle
           ? data.subtitle
@@ -47,7 +47,7 @@ exports.render = function (data) {
   
   ${data.title != "The obligatory About Me page"
     ? `<div class="w-full px-8 md:px-0 bg-blue-700 align-middle mt-10 mb-10">
-    <h3 class="text-center text-3xl tracking-tight mb-0 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white italic">Other posts</a></h3>
+    <h3 class="text-center text-3xl tracking-normal mb-0 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white italic">Other posts</a></h3>
     ${data.nextPost && data.nextPost.url !== null
       ? `<p class="text-center mt-2 mb-2 text-xl text-white leading-tight tracking-tight">
         <strong>Next</strong>: 

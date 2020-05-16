@@ -14,7 +14,7 @@ exports.render = function (data) {
           : `&nbsp;`
       }
     </h2>
-    <p class="hidden not-italic md:block md:text-2xl lg:text-3xl tracking-tight md:text-base md:mt-8 mb-6 text-white">${data.description}</p>
+    <p class="hidden not-italic md:block md:text-2xl tracking-tight md:text-base md:mt-8 mb-6 text-white">${data.description}</p>
     <p class="text-base text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
       <span style="font-variant: small-caps">published:</span>&nbsp; <strong>${(data.page.date).toLocaleDateString('en-US', {
         year: 'numeric', month: 'long', day: 'numeric'})}</strong><br />
@@ -49,14 +49,14 @@ exports.render = function (data) {
     ? `<div class="w-full px-8 md:px-0 bg-blue-700 align-middle mt-10 mb-10">
     <h3 class="text-center text-3xl tracking-tight mb-0 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white italic">Other posts</a></h3>
     ${data.nextPost && data.nextPost.url !== null
-      ? `<p class="text-center mt-2 mb-2 text-xl text-white leading-tight">
+      ? `<p class="text-center mt-2 mb-2 text-xl text-white leading-tight tracking-tight">
         <strong>Next</strong>: 
         <a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="${data.nextPost.url}">${data.nextPost.data.title}</a>
       </p>`
       : ``
     }
     ${data.prevPost && data.prevPost.url !== null
-      ? `<p class="text-center pb-4 my-0 text-xl text-white leading-tight">
+      ? `<p class="text-center pb-4 my-0 text-xl text-white leading-tight tracking-tight">
         <strong>Previous</strong>: 
         <a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="${data.prevPost.url}">${data.prevPost.data.title}</a>
       </p>`

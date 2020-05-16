@@ -24,7 +24,7 @@ module.exports = {
       },
       colors: {
         blue: {
-          '100': '#aaffff', // really pretty much light cyan
+          '100': '#bbeeff',
           '200': '#00aaff',
           '300': '#0088ff',
           '400': '#0033ff',

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Murdered darlings"
 subtitle: "R.I.P., WIP"
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2020-04-22T19:30:00-05:00
 #lastmod: TBD
 discussionId: "2020-04-murdered-darlings"
+featured_image: /images/candles-memorial-2905395_1280x853.jpg
+featured_image_alt: "Candles lit in memoriam of the dead"
+featured_image_caption: "Image: Henryk Niestrój; Pixabay"
 ---
 
 Friends, we are gathered here on a solemn occasion. But, before I get to that, allow me to flesh out the title's background.

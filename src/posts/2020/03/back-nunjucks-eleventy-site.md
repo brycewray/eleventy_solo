@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Back to Nunjucks for my Eleventy site"
 subtitle: "Taking a course of lesser resistance"
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2020-03-22T14:30:00-05:00
 lastmod: 2020-04-15T17:30:00-05:00
 discussionId: "2020-03-back-nunjucks-eleventy-site"
+featured_image: /images/Nunjucks-template-screen-capture-2020-02_edit_1280x881.png
+featured_image_alt: "Nunjucks template file displayed in Visual Studio Code"
+#featured_image_caption: "Image: PublicDomainPictures; Pixabay"
 ---
 
 As even a casual perusal of some recent posts to this site could easily make clear, I have become a real fanboy for the [Eleventy](https://11ty.dev) [static site generator (SSG)](https://staticgen.com), which I use to create and maintain the site. It offers a tremendous number of advantages over the competiion, and one of those advantages is the simplicity of *templating*.

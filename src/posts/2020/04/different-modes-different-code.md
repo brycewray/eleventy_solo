@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Different modes for different code"
 subtitle: "Filling it out in triplicate"
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2020-04-05T13:45:00-05:00
 lastmod: 2020-04-15 17:30:00-05:00
 discussionId: "2020-04-different-modes-different-code"
+featured_image: /images/hal-gatewood-tZc3vjPCk-Q-unsplash_1920x1280_60pct.jpg
+featured_image_alt: "Watercolor art from Web site design process"
+featured_image_caption: "Image: Hal Gatewood; Unsplash"
 ---
 
 As we all hunker down from [COVID-19](/posts/2020/03/coherence-covid-19), maintaining some degree of sanity occasionally requires one to divert one's mind from this thing. At least, that's true for me; and, yes, "sanity" is a relative term when applied to me, but that said&nbsp;.&nbsp;.&nbsp;.

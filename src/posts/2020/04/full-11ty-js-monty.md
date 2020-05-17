@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "The full .11ty.js monty"
 subtitle: "Going all-JavaScript with my Eleventy site"
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2020-04-15T17:30:00-05:00
 #lastmod: TBD
 discussionId: "2020-04-full-11ty-js-monty"
+featured_image: /images/puzzle-completion-654962_1280x960.jpg
+featured_image_alt: "Interlocked pieces of a completed jigsaw puzzle"
+featured_image_caption: "Image: Hebi. B.; Pixabay"
 ---
 
 Well, wouldn't you know it? My [recent post](/posts/2020/03/back-nunjucks-eleventy-site) notwithstanding, this [Eleventy](https://11ty.dev)-/[webpack](https://webpack.js.org)-based site is now using nothing but [JavaScript-*only*](https://11ty.dev/docs/languages/javascript) [templating](https://11ty.dev/docs/templates). That means .11ty.js template files rather than [.njk](https://11ty.dev/docs/languages/nunjucks) ([Nunjucks](https://mozilla.github.io/nunjucks/)) files.

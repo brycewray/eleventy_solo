@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "So much for heroes"
 subtitle: "The Big Picture regarding big pictures"
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2020-02-01T09:50:00-06:00
 lastmod: 2020-02-04T14:41:00-06:00
 discussionId: "2020-02-so-much-for-heroes"
+featured_image: /images/paint-splatter-2224800_1280x960.jpg
+featured_image_alt: "Paint brushes and colorful, splattered paint"
+featured_image_caption: "Image: evondue; Pixabay"
 ---
 
 Who needs heroes? Not this site, I've decided.

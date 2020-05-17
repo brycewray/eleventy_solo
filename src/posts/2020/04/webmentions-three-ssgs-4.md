@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Webmentions in three SSGs: Part 4"
 subtitle: "IndieWebbin’ in Gatsby"
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2020-04-28T16:45:00-05:00
 lastmod: 2020-05-16T15:22:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-4"
+featured_image: /images/cell-phone-690192_1920x1280.jpg
+featured_image_alt: "Closeup of hands using a smartphone"
+featured_image_caption: "Image: Free-Photos; Pixabay"
 ---
 
 **Note**: This is Part 4 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in Web sites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2)), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3)), and [Gatsby](https://gatsbyjs.org) (covered in detail in this part). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors' code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.{.yellowBox}

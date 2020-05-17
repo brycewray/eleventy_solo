@@ -9,16 +9,16 @@ exports.render = function (data) {
     <img src="${data.featured_image}" alt="${data.featured_image_alt}" class="imgCover" />
     <div class="background-hero-title-block-fit">
       <div class="background-hero-title-text">
-        <h1 class="text-center text-4xl md:text-5xl lg:text-6xl md:text-left tracking-tight leading-tight mb-6 text-white">${data.title}</h1>
-        <h2 class="text-center text-2xl md:text-left md:text-3xl lg:text-4xl leading-tight tracking-tight text-white">
+        <h1 class="text-center text-4xl md:text-5xl md:text-left tracking-tight leading-tight mb-2 text-white">${data.title}</h1>
+        <h2 class="text-center text-2xl md:text-left md:text-3xl leading-tight tracking-tight text-white italic">
           ${
             data.subtitle
               ? data.subtitle
               : `&nbsp;`
           }
         </h2>
-        <p class="hidden not-italic md:block md:text-xl lg:text-2xl tracking-tight md:mt-8 mb-6 text-white">${data.description}</p>
-        <p class="text-base text-center md:text-right mt-4 md:mt-0 mb-0 text-white">
+        <p class="hidden not-italic md:block md:text-xl tracking-tight md:mt-3 mb-0 text-white">${data.description}</p>
+        <p class="text-base text-center md:text-right mt-3 mb-0 text-white">
           <span style="font-variant: small-caps">published:</span>&nbsp; <strong>${(data.page.date).toLocaleDateString('en-US', {
             year: 'numeric', month: 'long', day: 'numeric'})}</strong><br />
           <span class="text-sm">

@@ -167,7 +167,7 @@ module.exports = function (data) {
         }
       </div>
     </footer>
-    <!--<script src="/assets/js/lazysizes.min.js" defer></script>-->
+    <script src="/assets/js/lazysizes.min.js" defer></script>
     <script src="/assets/js/flying-pages.min.js" defer></script>
     <script src="/assets/js/twitterMeta.min.js" defer></script>
   </body>

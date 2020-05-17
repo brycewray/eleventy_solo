@@ -5,6 +5,7 @@ const sanitizeHTML = require('sanitize-html')
 const filters = require('./src/assets/utils/filters.js')
 const pluginLocalRespImg = require('eleventy-plugin-local-respimg')
 const ErrorOverlay = require('eleventy-plugin-error-overlay')
+const lazyImagesPlugin = require('eleventy-plugin-lazyimages')
 
 module.exports = function (eleventyConfig) {
 
@@ -131,6 +132,15 @@ module.exports = function (eleventyConfig) {
     }
   })
 
+  eleventyConfig.addPlugin(lazyImagesPlugin, { // **must** go AFTER eleventy-plugin-local-respimg
+    transformImgPath: (imgPath) => {
+      if (imgPath.startsWith('/') && !imgPath.startsWith('//')) {
+        return `./src${imgPath}`
+      }
+      return imgPath
+    },
+    scriptSrc: "/assets/js/lazysizes.min.js",
+  })
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: Publish or perish 
 subtitle: Going live with your Hugo site
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2019-04-11T19:00:00-05:00
 lastmod: 2019-07-29T20:55:00-05:00
 discussionId: "2019-04-publish-or-perish"
+featured_image: /images/office-381228_1280x960.jpg
+featured_image_alt: Hand moving a computer mouse near a keyboard
+featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 oldComments: |
   <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 px-6">
       <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>

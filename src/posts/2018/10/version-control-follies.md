@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: The version-control follies
 subtitle: Life’s too short for CLI
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2018-10-06T08:30:00-05:00
 lastmod: 2019-07-14T11:40:00-05:00
 discussionId: "2018-10-version-control-follies"
+featured_image: /images/javascript-programming-1873854_1280x703.png
+featured_image_alt: "Computer code on a monitor"
+featured_image_caption: "Image: Pixabay"
 ---
 
 If you, as did I, came late to all the static site generators (SSGs) fun, don’t feel bad. Besides, from what I can tell in some changelogs and various articles from the last few years, we picked a good time to get in. What were once pretty bare-bones ways of generating and serving Web pages are much better now, and are continuing to improve.

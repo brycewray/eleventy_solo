@@ -30,13 +30,15 @@ exports.render = function (data) {
           }
           </span>
         </p>
+        <p class="text-center text-white text-xs pb-4">
+        ${data.featured_image_caption
+          ? `${data.featured_image_caption}`
+          : `&nbsp;`
+        }
+        </p>
       </div>
     </div>
   </div>
-  ${data.featured_image_caption
-      ? `<p class="text-center text-xs">${data.featured_image_caption}</p>`
-      : ``
-  }
 
   <div class="sm:w-5/6 md:w-4/5 xl:w-1/2 mt-10 mr-auto ml-auto px-6 lg:px-16">
     <article>

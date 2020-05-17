@@ -121,8 +121,8 @@ h5, .h5, h6, .h6 {
 
 .background-hero-image-div {
   @apply relative overflow-hidden w-full;
-  height: 65vh;
-  max-height: 65vh;
+  height: 95vh;
+  max-height: 95vh;
 }
 
 .background-hero-title-block-fit {
@@ -139,22 +139,12 @@ h5, .h5, h6, .h6 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .background-hero-image-div {
-    height: 75vh;
-    max-height: 75vh;
-  }
-
   .background-hero-title-block-fit {
     @apply px-12;
   }
 }
 
 @media screen and (min-width: 1025px) {
-  .background-hero-image-div {
-    height: 80vh;
-    max-height: 80vh;
-  }
-
   .background-hero-title-block-fit {
     @apply px-16;
   }

@@ -17,7 +17,7 @@ exports.render = function (data) {
               : `&nbsp;`
           }
         </h2>
-        <p class="hidden not-italic md:block md:text-xl lg:text-3xl tracking-tight md:mt-8 mb-6 text-white">${data.description}</p>
+        <p class="hidden not-italic md:block md:text-xl lg:text-2xl tracking-tight md:mt-8 mb-6 text-white">${data.description}</p>
         <p class="text-base text-center md:text-right mt-4 md:mt-0 mb-0 text-white">
           <span style="font-variant: small-caps">published:</span>&nbsp; <strong>${(data.page.date).toLocaleDateString('en-US', {
             year: 'numeric', month: 'long', day: 'numeric'})}</strong><br />

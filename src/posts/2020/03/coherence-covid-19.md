@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-03-21T09:45:00-05:00
 #lastmod: TBD
 discussionId: "2020-03-coherence-covid-19"
-featured_image: /images/covid-19-5080434_1280x853.jpg
+featured_image: /images/covid19-5080434_1280x853.jpg
 featured_image_alt: "Photo illustration depicting novel coronavirus and protective facemask"
 featured_image_caption: "Image: Dr. Johnny Sangoquiza; Pixabay"
 ---

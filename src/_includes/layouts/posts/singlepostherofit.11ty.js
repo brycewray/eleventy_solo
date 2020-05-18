@@ -9,8 +9,8 @@ exports.render = function (data) {
     <img src="${data.featured_image}" alt="${data.featured_image_alt}" class="imgCover" />
     <div class="background-hero-title-block-fit">
       <div class="background-hero-title-text">
-        <h1 class="text-center text-4xl md:text-5xl md:text-left tracking-tight leading-tight mb-2 text-white">${data.title}</h1>
-        <h2 class="text-center text-2xl md:text-left md:text-3xl leading-tight tracking-tight text-white italic">
+        <h1 class="text-center text-4xl md:text-5xl xl:text-6xl md:text-left tracking-tight leading-tight mb-2 text-white">${data.title}</h1>
+        <h2 class="text-center text-2xl md:text-left md:text-3xl xl:text-4xl leading-tight tracking-tight text-white italic">
           ${
             data.subtitle
               ? data.subtitle

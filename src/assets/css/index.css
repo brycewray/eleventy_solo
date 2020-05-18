@@ -125,6 +125,7 @@ h5, .h5, h6, .h6 {
   max-height: 85vh;
 }
 
+
 .background-hero-title-block-fit {
   @apply block w-full absolute bottom-0 px-4 pt-3 pb-6;
   background: linear-gradient(
@@ -138,7 +139,7 @@ h5, .h5, h6, .h6 {
   text-shadow: 4px 4px 2px #000;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .background-hero-title-block-fit {
     @apply px-12;
   }
@@ -149,7 +150,7 @@ h5, .h5, h6, .h6 {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .background-hero-title-block-fit {
     @apply px-16;
   }
@@ -185,13 +186,7 @@ article p, li {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-  article p, li {
-    @apply text-xl;
-  }
-}
-
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 769px) {
   article p, li {
     @apply text-xl;
   }

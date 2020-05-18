@@ -103,7 +103,7 @@ module.exports = function (eleventyConfig) {
       resize: {
         min: 300,
         max: 1500,
-        step: 150,
+        step: 200,
       },
       gifToVideo: false,
       sizes: '100vw',

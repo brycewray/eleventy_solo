@@ -30,7 +30,7 @@ exports.render = function (data) {
           }
           </span>
         </p>
-        <p class="text-center text-white text-xs pb-4">
+        <p class="text-center text-white text-xs mt-4 mb-0 md:mb-1 pb-1">
         ${data.featured_image_caption
           ? `${data.featured_image_caption}`
           : `&nbsp;`

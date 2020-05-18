@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: Now I’m a Gatsby geezer
 subtitle: Gatsby Experiment III proves the winner
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2019-10-27T10:00:00-05:00
 #lastmod: t/k
 discussionId: "2019-10-now-gatsby-geezer"
+featured_image: /images/gatsby-monogram-puzzle-monochrome-1816470_1920x1080_darker.jpg
+featured_image_alt: "Gatsby monogram logo over monochrome photo of puzzle pieces"
+featured_image_caption: "Images: Gatsby; Pixabay"
 ---
 
 While stubbornness is by no means always a virtue, it has its moments. What I'll be announcing in this post is proof.

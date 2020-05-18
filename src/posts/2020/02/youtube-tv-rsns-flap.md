@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "YouTube TV and the RSNs flap"
 subtitle: "Is the pyramid near collapse?"
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2020-02-28T21:30:00-06:00
 lastmod: 2020-04-02T12:23:00-05:00
 discussionId: "2020-02-youtube-tv-rsns-flap"
+featured_image: /images/globe-life-park-rangers-1402096_1280x853.jpg
+featured_image_alt: "Baseball game at Globe Life Park, Arlington, Texas"
+featured_image_caption: "Image: rwelborn; Pixabay"
 ---
 
 ***Update, 2020-02-29***---This morning, I learned from [a story on *CordCutters News*](https://www.cordcuttersnews.com/youtube-tv-sinclair-agree-to-a-short-term-extension-to-keep-fox-regional-sports-networks/) that YouTube TV and Sinclair are continuing to negotiate over the dispute described in this post and have agreed that, while they do so, YouTube TV will keep carrying the RSNs. I'll still keep this post in place because (a.) that's not exactly a final resolution, if indeed such a thing is ever possible in this case and (b.) there are a number of points herein which, in this here point-maker's opinion, remain salient nonetheless.{.yellowBox}

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 title: Lessons learned
 tags: post
 subtitle: What I found while trying other SSGs
@@ -7,6 +7,9 @@ description: During my ill-fated (and ultimately wrong-headed) attempt to conver
 date: 2019-07-21T17:43:00-05:00
 lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-07-lessons-learned"
+featured_image: /images/binoculars-4143165_1280x719.jpg
+featured_image_alt: A binocular telescope on a stand near a body of water
+featured_image_caption: "Image: Kisistvan77; Pixabay" # quotation marks to allow colon
 oldComments: |
     <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 px-6">
       <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Some Sirius(XM) thoughts"
 subtitle: "Radio, and more, from on high"
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2020-03-15T15:35:00-05:00
 #lastmod: TBD
 discussionId: "2020-03-some-siriusxm-thoughts"
+featured_image: /images/audio-radio-station-3153963_1280x853.jpg
+featured_image_alt: "Stylistic view from behind microphone in radio control room"
+featured_image_caption: "Image: Benjamin Hartwich; Pixabay"
 ---
 
 Perhaps the title for this post should've been "[Old geezer](/posts/2019/09/now-im-sixty-four) talks about satellite radio as if he's never had it before, which is appropriate because he *hasn't*." However, that seemed a bit much, its accuracy notwithstanding.

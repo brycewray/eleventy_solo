@@ -1,9 +1,9 @@
 @import 'nav.css';
 @import 'prismjs.css';
 
+/* purgecss start ignore */
 @tailwind base;
 
-/* where we told pcss to start ignoring */
 body {
   @apply font-body; /* assigned in tailwind.config.js */
   font-feature-settings: "liga" 1; /* ligatures won't work without this */
@@ -115,6 +115,54 @@ h5, .h5, h6, .h6 {
   max-height: 35vh;
 }
 
+.imgCover {
+  @apply object-cover object-center h-full w-full;
+}
+
+.background-hero-image-div {
+  @apply relative overflow-hidden w-full;
+  /* Have to allow for mobile browsers' own "chrome"; can't go by Inspector simulations of smaller breakpoints */
+  height: 80vh;
+  max-height: 80vh;
+}
+
+
+.background-hero-title-block-fit {
+  @apply block w-full absolute bottom-0 px-4 pt-3 pb-6;
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.75) 80%,
+    rgba(0, 0, 0, 1.00)
+  );
+}
+
+.background-hero-title-text {
+  text-shadow: 4px 4px 2px #000;
+}
+
+@media screen and (min-width: 768px) {
+  .background-hero-title-block-fit {
+    @apply px-12;
+  }
+
+  .background-hero-image-div {
+    height: 85vh;
+    max-height: 85vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .background-hero-title-block-fit {
+    @apply px-16;
+  }
+
+  .background-hero-image-div {
+    height: 95vh;
+    max-height: 95vh;
+  }
+}
+
+
 .text-nowrap, .text-nobrk {
   @apply whitespace-no-wrap;
 }
@@ -139,13 +187,7 @@ article p, li {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-  article p, li {
-    @apply text-xl;
-  }
-}
-
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 769px) {
   article p, li {
     @apply text-xl;
   }
@@ -206,7 +248,7 @@ table.noborders td img {
 }
 
 table.noborders tr {
-  @apply bg-blue-200;
+  @apply bg-blue-100;
 }
 
 table.noborders tr:nth-child(even) {
@@ -338,7 +380,9 @@ hr {
     @apply my-4;
   }
 }
-/* where we told pcss to end ignoring */
 
 @tailwind components;
+
+/* purgecss end ignore */
+
 @tailwind utilities;

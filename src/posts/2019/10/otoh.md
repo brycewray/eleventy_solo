@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "OTOH"
 subtitle: "Retracting my retractions"
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2019-10-11T19:00:00-05:00
 lastmod: 2019-11-09T10:00:00-06:00
 discussionId: "2019-10-otoh"
+featured_image: /images/compass-1344839_1280x853.jpg
+featured_image_alt: "Compass lying on a granite background"
+featured_image_caption: "Image: Steen Jepsen; Pixabay" # quotation marks to allow colon
 ---
 
 So, see, this crazy person took control of my site a few days ago and wrote a post that sounded *just like* something I'd write, and then he deleted several old posts just to prove a point. Or something like that.

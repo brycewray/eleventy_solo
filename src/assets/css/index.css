@@ -1,9 +1,9 @@
 @import 'nav.css';
 @import 'prismjs.css';
 
+/* purgecss start ignore */
 @tailwind base;
 
-/* where we told pcss to start ignoring */
 body {
   @apply font-body; /* assigned in tailwind.config.js */
   font-feature-settings: "liga" 1; /* ligatures won't work without this */
@@ -384,7 +384,9 @@ hr {
     @apply my-4;
   }
 }
-/* where we told pcss to end ignoring */
 
 @tailwind components;
+
+/* purgecss end ignore */
+
 @tailwind utilities;

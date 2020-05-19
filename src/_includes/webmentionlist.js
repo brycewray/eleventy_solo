@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
         `
         ${likesSize
           ? `<details>
-              <summary class="text-2xl font-bold tracking-tight">Likes&nbsp;&nbsp;<span class="text-base font-normal">(${likesSize})</span></summary>
+              <summary class="md:text-2xl font-bold tracking-tight">Likes&nbsp;&nbsp;<span class="text-base font-normal">(${likesSize})</span></summary>
               <div>
               ${likes.map(like =>
                 `<a href="${like.url}" class="border-0 no-underline"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo" src="${like.author.photo}" alt="${like.author.name}"></a>`
@@ -33,7 +33,7 @@ module.exports = function(eleventyConfig) {
         }
         ${repostsSize
           ? `<details>
-              <summary class="text-2xl font-bold tracking-tight">Reposts&nbsp;&nbsp;<span class="text-base font-normal">(${repostsSize})</span></summary>
+              <summary class="md:text-2xl font-bold tracking-tight">Reposts&nbsp;&nbsp;<span class="text-base font-normal">(${repostsSize})</span></summary>
               <div>
               ${reposts.map(repost =>
                 `<a href="${repost.url}" class="border-0 no-underline"><img class="inline h-12 w-12 object-cover mr-2 rounded-full u-photo" src="${repost.author.photo}" alt="${repost.author.name}"></a>`
@@ -44,7 +44,7 @@ module.exports = function(eleventyConfig) {
         }
         ${repliesSize
           ? `<details>
-              <summary class="text-2xl font-bold tracking-tight">Comments&nbsp;&bull;&nbsp;Replies&nbsp;&nbsp;<span class="text-base font-normal">(${repliesSize})</span></summary>
+              <summary class="md:text-2xl font-bold tracking-tight">Comments&nbsp;&bull;&nbsp;Replies&nbsp;&nbsp;<span class="text-base font-normal">(${repliesSize})</span></summary>
               <ol class="list-none p-0">
                 ${replies.map(reply =>
                   `<li class="mt-8">
@@ -64,7 +64,7 @@ module.exports = function(eleventyConfig) {
         }
         ${mentionsSize
           ? `<details>
-              <summary class="text-2xl font-bold tracking-tight">Mentions&nbsp;&nbsp;<span class="text-base font-normal">(${mentionsSize})</span></summary>
+              <summary class="md:text-2xl font-bold tracking-tight">Mentions&nbsp;&nbsp;<span class="text-base font-normal">(${mentionsSize})</span></summary>
               <ol class="list-none p-0">
                 ${mentions.map(mention =>
                   `<li class="mt-8">

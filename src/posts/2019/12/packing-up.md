@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: Packing up
 subtitle: Eleventy and webpack are a powerful pair
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2019-12-08T17:48:00-06:00
 lastmod: 2020-05-09T09:45:00-05:00
 discussionId: "2019-12-packing-up"
+featured_image: chain-11ty-webpack-3867751_1920x1080.jpg
+featured_image_alt: "Eleventy and webpack logos over a chain"
+featured_image_caption: "Images: 11ty.dev; webpack.js.org; Pixabay"
 ---
 
 <div class="yellowBox">

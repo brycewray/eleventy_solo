@@ -1,14 +1,22 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "So much for heroes"
 subtitle: "The Big Picture regarding big pictures"
 description: "A few days of dithering over images leads to a clean break."
 author: Bryce Wray
 date: 2020-02-01T09:50:00-06:00
-lastmod: 2020-02-04T14:41:00-06:00
+lastmod: 2020-05-17T16:15:00-05:00
 discussionId: "2020-02-so-much-for-heroes"
+featured_image: paint-splatter-2224800_1280x960.jpg
+featured_image_base: paint-splatter-2224800_1280x960
+featured_image_width: 1280
+featured_image_ext: jpg
+featured_image_alt: "Paint brushes and colorful, splattered paint"
+featured_image_caption: "Image: evondue; Pixabay"
 ---
+
+**Update, 2020-05-17**: As you can plainly see above, I decided later to reinstate the hero images (post about the reasons why: TBD). Nonetheless, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh). In addition, you may find some value in the discussion herein concerning image processing.{.yellowBox}
 
 Who needs heroes? Not this site, I've decided.
 
@@ -16,7 +24,7 @@ Of course, I'm referring to a [hero *image*](https://www.optimizely.com/optimiza
 
 If you're among my few (but beloved, I assure you) regular readers and this is your latest visit since before I first issued this post, you're probably wondering, "Hey, where's the usual great, big, honkin' stock photo he always puts up here underneath the post title and all that stuff?" For example, it'd usually look something like this (taken from a pre-today incarnation of [this post](/posts/2019/11/curmudgeonish-2019)):
 
-![Screen capture of “hero image” from “Some curmudgeonish thoughts, 2019 edition,” as it appeared before the site redesign](/images/2020-01-31--curmudgeonishish-2019_1280x726.jpg)
+{% lazypicture "2020-01-31--curmudgeonishish-2019_1280x726.jpg", "Screen capture of “hero image” from “Some curmudgeonish thoughts, 2019 edition,” as it appeared before the site redesign" %}
 
 Not today, though. In fact, you might want to open another browser tab or window and check around the rest of the site, except for the home page. You'll see that this isn't an aberration.
 

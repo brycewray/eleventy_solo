@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Welcome, sweet little early bird"
 subtitle: "Plans, schmans"
@@ -8,6 +8,12 @@ author: Bryce Wray
 date: 2020-03-10T09:50:00-05:00
 #lastmod: TBD
 discussionId: "2020-03-welcome-sweet-little-early-bird"
+featured_image: door-bear-for-newborn-Kennedy-Beck_edit_1280x720.jpg
+featured_image_base: door-bear-for-newborn-Kennedy-Beck_edit_1280x720
+featured_image_width: 1280
+featured_image_ext: jpg
+featured_image_alt: "Hospital room “door bear” to commemorate birth of Kennedy Beck"
+#featured_image_caption: "Image: rwelborn; Pixabay"
 ---
 
 This'll be short. It's just an update on some good news I'd previously mentioned.
@@ -26,14 +32,14 @@ About nine hours after we received that "breaking" news (sorry), Kennedy Lane Be
 
 As I close this little update about this new little one, please allow "Pawpaw"---as I apparently will be called---to share a small smattering of photos about this momentous event in our little family. Think of it as the online equivalent of what I'd have done if this were decades ago and we met on the street, in which case I'd be whipping out a wallet containing photographs of the new arrival.
 
-![Brad and Sarah Beck (the latter is our daughter) admire their new child, Kennedy, less than an hour after her arrival](/images/Mom-and-Dad-admire-Kennedy-first-night__1008x756.jpg)
+{% lazypicture "Mom-and-Dad-admire-Kennedy-first-night__1008x756.jpg", "Brad and Sarah Beck (the latter is our daughter) admire their new child, Kennedy, less than an hour after her arrival" %}
 
 Our daughter and son-in-law, Sarah and Brad, admire their new baby, less than an hour after she arrived.{.lazypicturecaption}
 
-![Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth](/images/BW-holding-Kennedy-first-night__crop_1008x712.jpg)
+{% lazypicture "BW-holding-Kennedy-first-night__crop_1008x712.jpg", "Bryce Wray holds his new granddaughter, Kennedy Beck, on the night of her birth" %}
 
 Your faithful correspondent holds his first grandchild for the first time, on the first night of her life. Enough "firsts" for you there?{.lazypicturecaption}
 
-![Kennedy Beck, a newborn baby, rests in a car seat as she goes home for the first time](/images/Kennedy-goes-home__crop_1008x1021.jpg)
+{% lazypicture "Kennedy-goes-home__crop_1008x1021.jpg", "Kennedy Beck, a newborn baby, rests in a car seat as she goes home for the first time" %}
 
 Despite her slightly early arrival, Kennedy checked out just fine over the next couple of days, and Mom and Dad got to take her home when she was a bit over <span class="nobrk">forty-three hours old</span>.{.lazypicturecaption}

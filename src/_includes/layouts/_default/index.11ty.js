@@ -1,14 +1,45 @@
+const sizeOf = require('image-size')
+const respSizes = [20, 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
+const srcDir = 'src/images'
+
 exports.data = {
   layout: 'layouts/_default/base.11ty.js'
 }
 
 exports.render = function (data) {
+  var fImg = data.featured_image
+  var alt = data.featured_image_alt
+  var ext = fImg.substring((fImg.lastIndexOf('.') + 1))
+  var urlBase = fImg.slice(0, -4)
+  var dimensions = sizeOf(`${srcDir}/${fImg}`) // the REAL, original file
+  var width = dimensions.width
+  var stringtoRet = ``
+  stringtoRet = `<picture>
+  <source type="image/webp" srcset="/images/${urlBase}-20.webp" data-srcset="`
+  respSizes.forEach(size => {
+    if (size <= width) {
+      stringtoRet += `/images/${urlBase}-${size}.webp ${size}w, `
+    }
+  })
+  stringtoRet += `/images/${urlBase}-${width}.webp ${width}w" /> 
+  <source type="image/${ext}" srcset="/images/${urlBase}-20.${ext}" data-srcset="`
+  respSizes.forEach(size => {
+    if (size <= width) {
+      stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w, `
+    }
+  })
+  stringtoRet += `/images/${urlBase}-${width}.${ext} ${width}w" />
+  <img class="lazyload object-cover object-center h-full w-full" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
+  </picture>
+  <noscript>
+    <img class="imgCover" loading="lazy" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
+  </noscript>`
   return `
 
   <main>
 
     <div class="w-full height-hero pt-12">
-        <img src="/images/${data.featured_image_base}.${data.featured_image_ext}" alt="${data.featured_image_alt}" class="object-cover object-center h-full w-full" />
+      ${stringtoRet}
     </div>
     ${
       (data.featured_image_caption)

@@ -1,13 +1,16 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Going solo with Eleventy"
 subtitle: "Losing webpack, regaining Tailwind CSS"
 description: "As the saying goes, less is more."
 author: Bryce Wray
 date: 2020-05-09T09:45:00-05:00
-lastmod: 2020-05-10T12:15:00-05:00
+lastmod: 2020-05-17T16:15:00-05:00
 discussionId: "2020-05-going-solo-eleventy"
+featured_image: solo-flight-by-a-seagull-at-sunset-4238769_1280x924.jpg
+featured_image_alt: "A seagull flying alone over water at sunset"
+featured_image_caption: "Image: Stan Paregien; Pixabay"
 ---
 
 You know how it is. You go in a certain direction for a while, perhaps through adversity, only to reach a point and ask yourself, "And exactly *why* I am doing this, again?"
@@ -24,7 +27,7 @@ In the ensuing months, I removed two of the biggest reasons for having added web
 
 - I dropped [SASS/SCSS](https://sass-lang.com) for [PostCSS](https://postcss.org) while [experimenting briefly](/posts/2020/01/two-cheers-tailwind) with [Tailwind CSS](https://tailwindcss.com). While I didn't warm up (then) to Tailwind, I liked PostCSS a lot and decided to stick with it. And while you certainly *could* use webpack to incorporate PostCSS with Eleventy, it wasn't *necessary* to do so.
 
-- [Hero images](https://en.wikipedia.org/wiki/Hero_image), once a mainstay of this site, were the [next to go](/posts/2020/02/so-much-for-heroes) after it became clear the hassles of trying to provide the proper sizes and, in particular, file formats weren't worth the effort when compared to those images' actual utility. Only those few images necessary to tell certain posts' stories remained, and their spartan quantities and nature constituted wastes of all the webpack code that processed them---relatively slowly---on each build.[^Time]
+- [Hero images](https://en.wikipedia.org/wiki/Hero_image), once a mainstay of this site, were the [next to go](/posts/2020/02/so-much-for-heroes) after it became clear the hassles of trying to provide the proper sizes and, in particular, file formats weren't worth the effort when compared to those images' actual utility. Only those few images necessary to tell certain posts' stories remained, and their spartan quantities and nature constituted wastes of all the webpack code that processed them---relatively slowly---on each build.[^Time] (**Update, 2020-05-17**: You can see at the top of this and other posts that I later brought back those hero images. There may be a future post to explain why.)
 
 [^Time]: This wasn't just a matter of keeping me from twiddling my thumbs every time I made changes to the site. Limiting build times is important---especially since the Netlify free tier has a limit of 300 minutes a month; and, recently, I've been using [Zapier zaps](https://zapier.com/help/create/basics/create-zaps) to auto-build the site each midnight, Central time, to keep its [webmentions](https://alistapart.com/article/webmentions-enabling-better-communication-on-the-internet/) more frequently updated. The Eleventy/webpack combo typically took roughly two minutes per build, meaning over sixty minutes a month *even if I didn't change anything else on the site*---and, to be sure, I am *always* changing things, even things you may never notice.
 

@@ -41,7 +41,7 @@ module.exports = (url, alt) => {
     }
   })
   stringtoRet += `/images/${urlBase}-${width}.${ext} ${width}w" />
-  <img class="lazyload blur-up containedImage" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
+  <img class="lazyload containedImage" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
   </picture>
   <noscript>
     <img class="containedImage" loading="lazy" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />

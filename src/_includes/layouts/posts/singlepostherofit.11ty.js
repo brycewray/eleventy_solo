@@ -29,7 +29,7 @@ exports.render = function (data) {
     }
   })
   stringtoRet += `/images/${urlBase}-${width}.${ext} ${width}w" />
-  <img class="lazyload blur-up imgCover" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
+  <img class="lazyload imgCover" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
   </picture>
   <noscript>
     <img class="imgCover" loading="lazy" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />

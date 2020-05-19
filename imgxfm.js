@@ -5,7 +5,7 @@ const dir = require('node-dir')
 const SITEDIR = '_site'
 const IMGLNDG = '_site/images'
 const directory = 'src/images'
-const respSizes = [20, 300, 600, 900, 1200, 1500]
+const respSizes = [20, 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
 
 if(!fs.existsSync(SITEDIR)) {
   fs.mkdirSync(SITEDIR)
@@ -19,6 +19,7 @@ dir.files(directory, function(err, files){
   files = files.filter(file => {
     return [
       'src/images/.DS_Store',
+      'src/images/icons/.DS_Store',
       'src/images/icons/apple-icon-57x57.png',
       'src/images/icons/apple-icon-60x60.png',
       'src/images/icons/apple-icon-72x72.png',
@@ -38,17 +39,26 @@ dir.files(directory, function(err, files){
       'src/images/icons/BW_avatar_36x36_xpar.png',
       'src/images/icons/favicon-16x16.png',
       'src/images/icons/favicon-32x32.png',
+      'src/images/icons/favicon-45x45.png',
+      'src/images/icons/favicon-90x90.png',
       'src/images/icons/favicon-96x96.png',
       'src/images/icons/favicon-512x512.png',
       'src/images/icons/favicon.ico',
       'src/images/icons/GitHub_octocat_logo_blue_48x48.png',
+      'src/images/icons/GitHub_octocat_logo_blue_96x96.png',
       'src/images/icons/linked-in-2674741_48x48.png',
+      'src/images/icons/linked-in-2674741_96x96.png',
+      'src/images/icons/linked-in-2674741_circle_96x96.png',
       'src/images/icons/ms-icon-70x70.png',
       'src/images/icons/ms-icon-144x144.png',
       'src/images/icons/ms-icon-150x150.png',
       'src/images/icons/ms-icon-310x310.png',
       'src/images/icons/rss-2440955_48x48.png',
+      'src/images/icons/rss-2440955_96x96.png',
+      'src/images/icons/rss-2440955_circle_96x96.png',
       'src/images/icons/twitter-2430933_48x48.png',
+      'src/images/icons/twitter-2430933_96x96.png',
+      'src/images/icons/twitter-2430933_circle_96x96.png',
       'src/images/icons/webmention-avatar-default.svg'
     ].indexOf(file) === -1
   })
@@ -64,9 +74,9 @@ dir.files(directory, function(err, files){
       .jpeg({
         quality: 60,
       })
-      .toFile(`${IMGLNDG}/${fileBas}.${fileWidth}.${fileExt}`)
+      .toFile(`${IMGLNDG}/${fileBas}-${fileWidth}.${fileExt}`)
       .then(() => {
-        // console.log(`Sharp output ${file} as ${fileBas}.${fileWidth}.${fileExt}`)
+        // console.log(`Sharp output ${file} as ${fileBas}-${fileWidth}.${fileExt}`)
       })
       .catch(err => {console.log(err + file)})
     : ``
@@ -74,20 +84,20 @@ dir.files(directory, function(err, files){
     fileExt == 'png'
     ? sharp(`${directory}/${file}`)
       .png({})
-      .toFile(`${IMGLNDG}/${fileBas}.${fileWidth}.${fileExt}`)
+      .toFile(`${IMGLNDG}/${fileBas}-${fileWidth}.${fileExt}`)
       .then(() => {
-        // console.log(`Sharp output ${file} as ${fileBas}.${fileWidth}.${fileExt}`)
+        // console.log(`Sharp output ${file} as ${fileBas}-${fileWidth}.${fileExt}`)
       })
       .catch(err => {console.log(err + file)})
     : ``
     // now, make webp for each, regardless of original file format
     sharp(`${directory}/${file}`)
       .webp({
-        quality: 60,
+        quality: 50,
       })
-      .toFile(`${IMGLNDG}/${fileBas}.${fileWidth}.webp`)
+      .toFile(`${IMGLNDG}/${fileBas}-${fileWidth}.webp`)
       .then(() => {
-        // console.log(`Sharp output ${file}.${fileWidth} as ${fileBas}.${fileWidth}.webp`)
+        // console.log(`Sharp output ${file}-${fileWidth} as ${fileBas}-${fileWidth}.webp`)
       })
       .catch(err => {console.log(err + file)})
     respSizes.forEach(size => {
@@ -100,9 +110,9 @@ dir.files(directory, function(err, files){
           width: size,
           withoutEnlargement: true,
         })
-        .toFile(`${IMGLNDG}/${fileBas}.${size}.${fileExt}`)
+        .toFile(`${IMGLNDG}/${fileBas}-${size}.${fileExt}`)
         .then(() => {
-          // console.log(`Sharp output ${file} as ${fileBas}.${size}.${fileExt}`)
+          // console.log(`Sharp output ${file} as ${fileBas}-${size}.${fileExt}`)
         })
         .catch(err => {console.log(err + file)})
       : ``
@@ -113,9 +123,9 @@ dir.files(directory, function(err, files){
           width: size,
           withoutEnlargement: true,
         })
-        .toFile(`${IMGLNDG}/${fileBas}.${size}.${fileExt}`)
+        .toFile(`${IMGLNDG}/${fileBas}-${size}.${fileExt}`)
         .then(() => {
-          // console.log(`Sharp output ${file} as ${fileBas}.${size}.${fileExt}`)
+          // console.log(`Sharp output ${file} as ${fileBas}-${size}.${fileExt}`)
         })
         .catch(err => {console.log(err + file)})
       : ``
@@ -123,15 +133,15 @@ dir.files(directory, function(err, files){
       size <= fileWidth    
       ? sharp(`${directory}/${file}`)
         .webp({
-          quality: 60,
+          quality: 50,
         })
         .resize({
           width: size,
           withoutEnlargement: true,
         })
-        .toFile(`${IMGLNDG}/${fileBas}.${size}.webp`)
+        .toFile(`${IMGLNDG}/${fileBas}-${size}.webp`)
         .then(() => {
-          // console.log(`Sharp output ${file} as ${fileBas}.${size}.webp`)
+          // console.log(`Sharp output ${file} as ${fileBas}-${size}.webp`)
         })
         .catch(err => {console.log(err + file)})
       : ``

@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-04-28T16:30:00-05:00
 #lastmod: TBD
 discussionId: "2020-04-webmentions-three-ssgs-1"
-featured_image: /images/group-chat-photoillustration-3354365_1280x741.jpg
+featured_image: group-chat-photoillustration-3354365_1280x741.jpg
 featured_image_alt: "Photoillustration of a multi-participant Web chat"
 featured_image_caption: "Image: Gerd Altmann; Pixabay"
 ---

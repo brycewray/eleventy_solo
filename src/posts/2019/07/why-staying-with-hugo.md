@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
 lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-07-why-staying-with-hugo"
-featured_image: /images/hugo-logo-on-black-1280x720.png
+featured_image: hugo-logo-on-black-1280x720.png
 featured_image_alt: Logo for the Hugo static site generator.
 featured_image_caption: "Image: Hugo logo by Hugo creator Steve Francia, sourced from gohugo.io."
 oldComments: |

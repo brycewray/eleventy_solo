@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-05-16T17:40:00-05:00
 lastmod: 2020-05-17T07:40:00-05:00
 discussionId: "2020-05-mixed-nuts-2020-05"
-featured_image: /images/nuts-511492_1280x847.jpg
+featured_image: nuts-511492_1280x847.jpg
 featured_image_alt: "A bowl contained mixed nuts, including hazelnuts and walnuts"
 featured_image_caption: "Image: Ina Hall; Pixabay"
 ---

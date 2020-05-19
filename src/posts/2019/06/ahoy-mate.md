@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-06-08T20:25:00-05:00
 lastmod: 2020-05-16T16:15:00-05:00
 discussionId: "2019-06-ahoy-mate"
-featured_image: /images/MailMate_screen_cap_1280x720.jpg
+featured_image: MailMate_screen_cap_1280x720.jpg
 featured_image_alt: Screen capture of the MailMate app
 featured_image_caption: "Image: Screen capture of MailMate, with its Latin-displaying “distortion mode” engaged for privacy’s sake" # quotation marks to allow colon
 oldComments: |

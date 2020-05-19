@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-04-11T19:00:00-05:00
 lastmod: 2019-07-29T20:55:00-05:00
 discussionId: "2019-04-publish-or-perish"
-featured_image: /images/office-381228_1280x960.jpg
+featured_image: office-381228_1280x960.jpg
 featured_image_alt: Hand moving a computer mouse near a keyboard
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 oldComments: |

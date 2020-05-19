@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2018-12-07T13:35:00-06:00
 # lastmod
 discussionId: "2018-12-on-edge"
-featured_image: /images/MS-Edge-logo-and-bkgd_1920x1080.jpg
+featured_image: MS-Edge-logo-and-bkgd_1920x1080.jpg
 featured_image_alt: Logos for Microsoft Edge and Chromium
 featured_image_caption: "Images: DeviantArt; The Chromium Projects" # quotation marks to allow colon
 ---

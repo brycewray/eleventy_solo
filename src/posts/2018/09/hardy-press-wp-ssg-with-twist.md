@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2018-09-15T08:28:17-05:00
 lastmod: 2019-04-27T13:45:00-05:00
 discussionId: "2018-09-hardy-press-wp-ssg-with-twist"
-featured_image: /images/wordpress-macbook-pro-923188_1920x1280.jpg
+featured_image: wordpress-macbook-pro-923188_1920x1280.jpg
 featured_image_alt: WordPress administrative interface in use on a laptop computer
 featured_image_caption: "Image: Pixabay"
 ---

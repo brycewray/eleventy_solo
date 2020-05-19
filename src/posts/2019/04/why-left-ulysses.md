@@ -7,7 +7,7 @@ author: Bryce Wray
 date: 2019-04-20T11:17:00-05:00
 lastmod: 2020-04-22T19:30:00-05:00
 discussionId: "2019-04-why-left-ulysses"
-featured_image: /images/hand-butterfly_3751159_1280x853.jpg
+featured_image: hand-butterfly_3751159_1280x853.jpg
 featured_image_alt: "Hand releases a butterfly (note: a butterfly is the Ulysses logo)"
 featured_image_caption: "Image: Gerd Altmann; Pixabay" # quotation marks to allow colon
 oldComments: |
@@ -61,7 +61,7 @@ At the beginning, I wished only to make blogging a little less tedious.
 
 I've mentioned from [time](/posts/2019/01/blox-sux/) [to](/posts/2019/02/ia-for-io/) [time](/posts/2019/02/old-dog-old-trick) over the  last few months that I was experimenting with other [Markdown](https://daringfireball.net/projects/markdown/) editors. While I still enjoyed writing this site's posts in Ulysses, I'd wearied of the write-export-write-export dance it required because the native Ulysses file format is proprietary, not the standalone Markdown (.md) needed by my [static site generator](https://www.staticgen.com) of choice, [Hugo](https://gohugo.io). Thus, I was trying writing apps that saved *natively* to Markdown without needing to export.[^preview]
 
-![Screen capture of Quick Export feature of Ulysses app](/images/Ulysses_export_to_Markdown_750x528.jpg)
+{% lazypicture "Ulysses_export_to_Markdown_750x528.jpg", "Screen capture of Quick Export feature of Ulysses app" %}
 
 <p class="lazypicturecaption">Ulysses’s Quick Export feature: the only way you can derive a true, standalone, visible Markdown&nbsp;file from one of its native, proprietary-format&nbsp;files.</p>
 
@@ -89,7 +89,7 @@ In fact, as I quickly saw to my growing consternation, it didn't have the change
 
 Sync was stuck on my Mac's installation of Ulysses, and had been that way for days.
 
-![Screen capture from Ulysses showing iCloud icon, indicating ongoing sync](/images/iCloud_sync-save_icon_in_Ulysses_634x265.jpg)
+{% lazypicture "iCloud_sync-save_icon_in_Ulysses_634x265.jpg", "[Screen capture from Ulysses showing iCloud icon, indicating ongoing sync" %}
 
 <p class="lazypicturecaption">When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn&rsquo;t change, even though you edited this file days ago on another device—Houston, we have an iCloud&nbsp;sync&nbsp;problem.</p>
 
@@ -193,7 +193,7 @@ However, that was probably just how my wandering mind took them; because, by the
 
 ## The geek's prerogative
 
-![Screen capture from iA Writer app](/images/iA_Writer_on_why-left-ulysses_post_cropped_1272x620.jpg)
+{% lazypicture "iA_Writer_on_why-left-ulysses_post_cropped_1272x620.jpg", "Screen capture from iA Writer app" %}
 
 <p class="lazypicturecaption">Ladies and gentlemen, the winner (for now): iA&nbsp;Writer.</p>
 

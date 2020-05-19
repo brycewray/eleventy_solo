@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2018-11-01T11:00:00-05:00
 lastmod: 2019-07-30T19:50:00-05:00
 discussionId: "2018-11-some-curmudgeonish-thoughts"
-featured_image: /images/smilies-2912641_1280x851.jpg
+featured_image: smilies-2912641_1280x851.jpg
 featured_image_alt: Not-so-happy smiley-face pillow
 featured_image_caption: "Image: Alexas_Fotos; Pixabay" # quotation marks to allow colon
 ---

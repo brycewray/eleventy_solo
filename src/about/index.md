@@ -7,7 +7,7 @@ publishdate: 2018-09-14T15:00:00-05:00
 date: 2018-09-14T15:00:00-05:00
 lastmod: 2020-04-22T19:30:00-05:00
 discussionId: "about"
-featured_image: /images/question-mark-over-mac-keyboard-49958_1280x905.jpg
+featured_image: question-mark-over-mac-keyboard-49958_1280x905.jpg
 featured_image_alt: Stylistic image of question mark superimposed over computer keyboard
 featured_image_caption: "Image: Dalamo; Pixabay" 
 ---

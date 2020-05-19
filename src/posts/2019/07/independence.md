@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-07-06T10:38:00-05:00
 lastmod: 2020-05-17T16:15:00-05:00
 discussionId: "2019-07-independence"
-featured_image: /images/1984-07-11_01_retouched_1280x720.jpg
+featured_image: 1984-07-11_01_retouched_1280x720.jpg
 featured_image_alt: "Me, in 1984, eagerly unwrapping my new Macintosh."
 featured_image_caption: "July 11, 1984: A much younger and skinnier me eagerly unwraps my new “Skinny Mac.” (Photo by my overly tolerant spouse.)"
 ---

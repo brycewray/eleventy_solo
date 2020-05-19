@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-12-23T15:16:00-06:00
 lastmod: 2019-12-25T08:05:00-06:00
 discussionId: "2019-12-previous-next-eleventy"
-featured_image: /images/sand-1522182_1280x850.jpg
+featured_image: sand-1522182_1280x850.jpg
 featured_image_alt: "View from above of directional arrow in sand"
 featured_image_caption: "Image: Maret Hosemann; Pixabay"
 ---

@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2018-11-14T15:09:00-06:00
 lastmod: 2020-01-10T13:45:00-06:00
 discussionId: "2018-11-getting-framed"
-featured_image: /images/scaffolding-1617969_1280x818.jpg
+featured_image: scaffolding-1617969_1280x818.jpg
 featured_image_alt: Scaffolding for a building, with construction workers climbing and working within
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

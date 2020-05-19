@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-03-02T16:00:00-06:00
 lastmod: 2020-05-17T16:15:00-05:00
 discussionId: "2019-03-plain-truth"
-featured_image: /images/typewriter-1031024_1280x853.jpg
+featured_image: typewriter-1031024_1280x853.jpg
 featured_image_alt: A very old Royal-brand typewriter
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

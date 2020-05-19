@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-04-15T17:30:00-05:00
 #lastmod: TBD
 discussionId: "2020-04-full-11ty-js-monty"
-featured_image: /images/puzzle-completion-654962_1280x960.jpg
+featured_image: puzzle-completion-654962_1280x960.jpg
 featured_image_alt: "Interlocked pieces of a completed jigsaw puzzle"
 featured_image_caption: "Image: Hebi. B.; Pixabay"
 ---

@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-04-28T16:40:00-05:00
 lastmod: 2020-05-16T15:10:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-3"
-featured_image: /images/marko-pekic-IpLa37Uj2Dw-unsplash_1920x1280.jpg
+featured_image: marko-pekic-IpLa37Uj2Dw-unsplash_1920x1280.jpg
 featured_image_alt: "Communications concept - Red pay telephone booths"
 featured_image_caption: "Image: Marko Pekić; Unsplash"
 ---

@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-04-05T13:45:00-05:00
 lastmod: 2020-04-15 17:30:00-05:00
 discussionId: "2020-04-different-modes-different-code"
-featured_image: /images/hal-gatewood-tZc3vjPCk-Q-unsplash_1920x1280_60pct.jpg
+featured_image: hal-gatewood-tZc3vjPCk-Q-unsplash_1920x1280_60pct.jpg
 featured_image_alt: "Watercolor art from Web site design process"
 featured_image_caption: "Image: Hal Gatewood; Unsplash"
 ---

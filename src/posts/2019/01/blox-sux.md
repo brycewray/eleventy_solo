@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-01-19T09:25:00-06:00
 lastmod: 2019-10-06T19:00:00-05:00
 discussionId: "2019-01-blox-sux"
-featured_image: /images/lego-169603_1280x960.jpg
+featured_image: lego-169603_1280x960.jpg
 featured_image_alt: Lego blocks arranged stylistically
 featured_image_caption: "Image: M W; Pixabay" # quotation marks to allow colon
 ---
@@ -34,7 +34,7 @@ That consideration aside, said Godforsaken Unidentified Page Builder, hereafter 
 - **Shortcode spray**—GUPB is one of those page builders that, if deactivated in favor of a better option, leaves behind a <em>\[bleep\]</em>ton of shortcode that is (a.)&nbsp;absolutely useless and (b.)&nbsp;a tedious chore to clean up. The following screen capture from [Pippin Williamson’s excellent “WordPress page builder plugins: A critical review”](https://pippinsplugins.com/wordpress-page-builder-plugins-critical-review/) is a perfect example, even though it shows only a  fraction of some of the shortcodes mess that’s really likely to result *(and, yeah, that is from GUPB, as it turns out; so, if you’re willing to do a little detective work and/or you simply know your page builder shortcodes when you see ’em, you now know which page builder is GUPB)*.
 <p style="height: 0; margin: 0;">&nbsp;</p><!-- Needed to get the image out from the list for formatting -->
 
-![Screen capture showing shortcodes from a WordPress page builder](/images/screen-cap-from-Pippin-Williamson-s-page-builders-review.png)
+{% lazypicture "screen-cap-from-Pippin-Williamson-s-page-builders-review.png", "Screen capture showing shortcodes from a WordPress page builder" %}
 
 My having once specifically replaced GUPB in favor of another pagebuilder at a different company for precisely these reasons (well, except for code bloat, because they *all* do that) doesn’t make it any easier.
 

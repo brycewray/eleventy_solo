@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-10-20T19:00:00-05:00
 lastmod: 2019-10-21T14:05:00-05:00
 discussionId: "2019-10-picture-perfect"
-featured_image: /images/camera-733546_1280x960.jpg
+featured_image: camera-733546_1280x960.jpg
 featured_image_alt: "Antique Nikon F camera in subdued light on a windowsill"
 featured_image_caption: "Image: Kelsey Burns; Pixabay"
 ---

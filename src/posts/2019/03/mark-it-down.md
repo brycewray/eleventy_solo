@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-03-08T22:08:00-06:00
 lastmod: 2020-01-01T08:39:00-06:00
 discussionId: "2019-03-mark-it-down"
-featured_image: /images/swan-1639154_1280x854.jpg
+featured_image: swan-1639154_1280x854.jpg
 featured_image_alt: A baby swan swimming
 featured_image_caption: "Image: AnnRos; Pixabay" # quotation marks to allow colon
 ---

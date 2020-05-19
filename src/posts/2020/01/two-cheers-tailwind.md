@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-01-12T11:00:00-06:00
 lastmod: 2020-05-09T09:45:00-06:00
 discussionId: "2020-01-two-cheers-tailwind"
-featured_image: /images/CSS-code-1797778_1280x848.jpg
+featured_image: CSS-code-1797778_1280x848.jpg
 featured_image_alt: "Closeup of computer monitor showing CSS"
 featured_image_caption: "Image: Wojciech Krakowiak; Pixabay"
 ---

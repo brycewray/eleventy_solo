@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-03-15T15:35:00-05:00
 #lastmod: TBD
 discussionId: "2020-03-some-siriusxm-thoughts"
-featured_image: /images/audio-radio-station-3153963_1280x853.jpg
+featured_image: audio-radio-station-3153963_1280x853.jpg
 featured_image_alt: "Stylistic view from behind microphone in radio control room"
 featured_image_caption: "Image: Benjamin Hartwich; Pixabay"
 ---

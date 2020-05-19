@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-12-14T11:05:00-06:00
 lastmod: 2019-12-27T11:08:00-06:00
 discussionId: "2019-12-code-comfort-eleventy-webpack"
-featured_image: /images/code-1486361_1280x853.jpg
+featured_image: code-1486361_1280x853.jpg
 featured_image_alt: "Computer code on a monitor"
 featured_image_caption: "Image: Markus Spiske; Pixabay"
 ---

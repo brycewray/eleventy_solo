@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-11-24T10:15:00-06:00
 lastmod: 2020-04-22T19:30:00-05:00
 discussionId: "2019-11-mixed-nuts-2019-11"
-featured_image: /images/nuts-768243_1280x853.jpg
+featured_image: nuts-768243_1280x853.jpg
 featured_image_alt: "Closeup view of mixed nuts"
 featured_image_caption: "Image: Okan Caliskan; Pixabay"
 ---

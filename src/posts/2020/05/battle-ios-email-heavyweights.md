@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-05-14T17:45:00-05:00
 lastmod: 2020-05-16T12:15:00-05:00
 discussionId: "2020-05-battle-ios-email-heavyweights"
-featured_image: /images/mail-old-mailboxes-1048452_1280x853.jpg
+featured_image: mail-old-mailboxes-1048452_1280x853.jpg
 featured_image_alt: "Row of old mailboxes in apparently rural setting"
 featured_image_caption: "Image: Anne-Onyme; Pixabay"
 ---

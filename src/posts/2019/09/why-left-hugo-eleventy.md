@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
 lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-09-why-left-hugo-eleventy"
-featured_image: /images/detour-2496197_1280x850.jpg
+featured_image: detour-2496197_1280x850.jpg
 featured_image_alt: "Orange road sign, “DETOUR AHEAD”"
 featured_image_caption: "Image: awsloley; Pixabay" # quotation marks to allow colon
 oldComments: |

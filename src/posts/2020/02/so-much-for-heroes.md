@@ -9,6 +9,9 @@ date: 2020-02-01T09:50:00-06:00
 lastmod: 2020-05-17T16:15:00-05:00
 discussionId: "2020-02-so-much-for-heroes"
 featured_image: /images/paint-splatter-2224800_1280x960.jpg
+featured_image_base: paint-splatter-2224800_1280x960
+featured_image_width: 1280
+featured_image_ext: jpg
 featured_image_alt: "Paint brushes and colorful, splattered paint"
 featured_image_caption: "Image: evondue; Pixabay"
 ---

@@ -147,5 +147,5 @@ dir.files(directory, function(err, files){
       : ``
     })
   })
-  console.log(`Image processing complete`)
+  console.log(`Writing responsive images...`)
 })

@@ -7,7 +7,7 @@ shortcode takes the following form...
 // const path = require('path')
 // const fs = require('fs')
 const sizeOf = require('image-size')
-const respSizes = [20, 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
+const respSizes = [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
 const srcDir = 'src/images'
 // const siteDir = '_site/images'
  
@@ -27,21 +27,20 @@ module.exports = (url, alt) => {
   var width = dimensions.width
   var stringtoRet = ``
   stringtoRet = `<picture>
-  <source type="image/webp" srcset="/images/${urlBase}-20.webp" data-srcset="`
+  <source type="image/webp" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.webp ${size}w, `
     }
   })
-  stringtoRet += `/images/${urlBase}-${width}.webp ${width}w" /> 
-  <source type="image/${ext}" srcset="/images/${urlBase}-20.${ext}" data-srcset="`
+  stringtoRet += `/images/${urlBase}-${width}.webp ${width}w" data-sizes="100vw" />
+  <img class="lazy containedImage" loading="lazy" src="/images/${urlBase}-20.${ext}" data-src="/images/${urlBase}-${width}.${ext}" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w, `
     }
   })
-  stringtoRet += `/images/${urlBase}-${width}.${ext} ${width}w" />
-  <img class="lazyload containedImage" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
+  stringtoRet += `/images/${urlBase}-${width}.${ext} ${width}w" alt="${alt}" data-sizes="100vw" />
   </picture>
   <noscript>
     <img class="containedImage" loading="lazy" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />

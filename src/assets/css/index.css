@@ -361,7 +361,7 @@ hr {
 */
 
 .lazypicturecaption {
-  @apply text-sm p-0 -mt-3 leading-snug text-center;
+  @apply text-sm p-0 mt-2 leading-snug text-center;
 }
 
 .YTembed { /* container for iframe */

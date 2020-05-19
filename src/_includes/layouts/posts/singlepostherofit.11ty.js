@@ -1,16 +1,43 @@
+const sizeOf = require('image-size')
+const respSizes = [20, 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
+const srcDir = 'src/images'
+
 exports.data = {
   layout: 'layouts/_default/base.11ty.js'
 }
 
 exports.render = function (data) {
+  var fImg = data.featured_image
+  var alt = data.featured_image_alt
+  var ext = fImg.substring((fImg.lastIndexOf('.') + 1))
+  var urlBase = fImg.slice(0, -4)
+  var dimensions = sizeOf(`${srcDir}/${fImg}`) // the REAL, original file
+  var width = dimensions.width
+  var stringtoRet = ``
+  stringtoRet = `<picture>
+  <source type="image/webp" srcset="/images/${urlBase}-20.webp" data-srcset="`
+  respSizes.forEach(size => {
+    if (size <= width) {
+      stringtoRet += `/images/${urlBase}-${size}.webp ${size}w, `
+    }
+  })
+  stringtoRet += `/images/${urlBase}-${width}.webp ${width}w" /> 
+  <source type="image/${ext}" srcset="/images/${urlBase}-20.${ext}" data-srcset="`
+  respSizes.forEach(size => {
+    if (size <= width) {
+      stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w, `
+    }
+  })
+  stringtoRet += `/images/${urlBase}-${width}.${ext} ${width}w" />
+  <img class="lazyload blur-up imgCover" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
+  </picture>
+  <noscript>
+    <img class="imgCover" loading="lazy" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
+  </noscript>`
   return `
 <main class="pt-12">
   <div class="background-hero-image-div">
-    <picture>
-      <source srcset="/images/${data.featured_image_base}-300.webp 300w, /images/${data.featured_image_base}-450.webp 450w, /images/${data.featured_image_base}-600.webp 600w, /images/${data.featured_image_base}-750.webp 750w, /images/${data.featured_image_base}-900.webp 900w, /images/${data.featured_image_base}-1050.webp 1050w, /images/${data.featured_image_base}-1200.webp 1200w, /images/${data.featured_image_base}-${data.featured_image_width}.webp ${data.featured_image_width}w" class="imgCover" type="image/webp" />
-      <source srcset="/images/${data.featured_image_base}-300.${data.featured_image_ext} 300w, /images/${data.featured_image_base}-450.${data.featured_image_ext} 450w, /images/${data.featured_image_base}-600.${data.featured_image_ext} 600w, /images/${data.featured_image_base}-750.${data.featured_image_ext} 750w, /images/${data.featured_image_base}-900.${data.featured_image_ext} 900w, /images/${data.featured_image_base}-1050.${data.featured_image_ext} 1050w, /images/${data.featured_image_base}-1200.${data.featured_image_ext} 1200w, /images/${data.featured_image_base}-${data.featured_image_width}.${data.featured_image_ext} ${data.featured_image_width}w" class="imgCover" type="image/${data.featured_image_ext}" />
-      <img src="/images/${data.featured_image_base}-${data.featured_image_width}.${data.featured_image_ext}" alt="${data.featured_image_alt}" class="imgCover" />
-    </picture>
+    ${stringtoRet}
     <div class="background-hero-title-block-fit">
       <div class="background-hero-title-text">
         <h1 class="text-center text-4xl md:text-5xl xl:text-6xl md:text-left tracking-tight leading-tight mb-2 text-white">${data.title}</h1>

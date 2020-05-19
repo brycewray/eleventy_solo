@@ -49,10 +49,14 @@ li .lazywrapper {
 
 .blur-up {
   -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -ms-filter: blur(20px);
   filter: blur(20px);
-  transition: filter 200ms, -webkit-filter 200ms;
+  transition: filter 200ms, -moz-filter 200ms, -webkit-filter 200ms, -ms-filter 200ms;
   &.lazyloaded {
     -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -ms-filter: blur(0);
     filter: blur(0);
   }
 }

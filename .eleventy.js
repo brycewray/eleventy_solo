@@ -144,6 +144,8 @@ module.exports = function (eleventyConfig) {
   })
   */
 
+ eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
+
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {
       let minified = htmlmin.minify(content, {

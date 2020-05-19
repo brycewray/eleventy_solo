@@ -6,7 +6,7 @@ subtitle: "Filling it out in triplicate"
 description: "I tread familiar ground as I provide versions of this site in its two previous SSGs."
 author: Bryce Wray
 date: 2020-04-05T13:45:00-05:00
-lastmod: 2020-05-19T17:00:00-05:00
+lastmod: 2020-05-19T14:20:00-05:00
 discussionId: "2020-04-different-modes-different-code"
 featured_image: hal-gatewood-tZc3vjPCk-Q-unsplash_1920x1280_60pct.jpg
 featured_image_alt: "Watercolor art from Web site design process"

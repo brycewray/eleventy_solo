@@ -19,7 +19,7 @@
     "testProd:bsync": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode",
     "testProd:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site --watch",
     "setProd": "NODE_ENV=production",
-    "testbuild": "NODE_ENV=production npm-run-all clean img --parallel testProd:*"
+    "testbuild": "NODE_ENV=production npm-run-all clean imgs --parallel testProd:*"
   },
   "keywords": [],
   "author": "",

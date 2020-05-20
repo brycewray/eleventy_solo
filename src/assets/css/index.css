@@ -403,7 +403,7 @@ img.error {
 img:not([src]) {
   visibility: hidden;
 }
-
+/* end of CSS from vanilla-lazyload */
 
 @tailwind components;
 

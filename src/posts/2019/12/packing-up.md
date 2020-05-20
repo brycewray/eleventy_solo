@@ -6,7 +6,7 @@ subtitle: Eleventy and webpack are a powerful pair
 description: "How using a bundler makes the coolest SSG even better."
 author: Bryce Wray
 date: 2019-12-08T17:48:00-06:00
-lastmod: 2020-05-09T09:45:00-05:00
+lastmod: 2020-05-20T12:50:00-05:00
 discussionId: "2019-12-packing-up"
 featured_image: chain-11ty-webpack-3867751_1920x1080.jpg
 featured_image_alt: "Eleventy and webpack logos over a chain"
@@ -88,7 +88,9 @@ Bundler software like webpack[^otherBundlers] handles all of these issues. When 
 
 - Orders all the code appropriately to manage the dependencies.
 
-They can do even more than that, however. For just one example, webpack makes it easy to use [Typefaces](https://www.npmjs.com/package/typefaces) to install open-source Web typefaces. In fact, that's how I easily converted this site to first [Roboto](https://fonts.google.com/specimen/Roboto) (and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) for the code examples you'll see here and there), and later [Public Sans](https://fonts.google.com/specimen/Public+Sans). Normally, it can be challenging to add Web "fonts" to one's site without depending on another separate site (*e.g.*, Google Fonts); but Typefaces---created by Gatsby's Kyle Matthews---works with webpack to make it a relative piece of cake.
+They can do even more than that, however. For just one example, webpack makes it easy to use [Typefaces](https://www.npmjs.com/package/typefaces) to install open-source Web typefaces. In fact, that's how I easily converted this site to first [Roboto](https://fonts.google.com/specimen/Roboto) (and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) for the code examples you'll see here and there), and later [Public Sans](https://fonts.google.com/specimen/Public+Sans).[^BacktoSys] Normally, it can be challenging to add Web "fonts" to one's site without depending on another separate site (*e.g.*, Google Fonts); but Typefaces---created by Gatsby's Kyle Matthews---works with webpack to make it a relative piece of cake.
+
+[^BacktoSys]: A few months later, I decided to [revert](/posts/2018/10/web-typography-part-2) to using system "fonts" to add a little more performance and avoid the [Flash of Unstyled Content](https://en.wikipedia.org/wiki/Flash_of_unstyled_content) (FOUC) effect during Web "font"-loading.
 
 So, I hope, that explains bundlers. Now, where was I? Oh, yeah&nbsp;.&nbsp;.&nbsp;.
 

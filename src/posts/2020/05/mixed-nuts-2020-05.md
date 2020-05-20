@@ -6,7 +6,7 @@ subtitle: "Month-of-May meanderings through my, um, mind"
 description: "Updates, uptakes, follow-ups, and foul-ups—not necessarily in that order."
 author: Bryce Wray
 date: 2020-05-16T17:40:00-05:00
-lastmod: 2020-05-17T07:40:00-05:00
+lastmod: 2020-05-20T12:57:00-05:00
 discussionId: "2020-05-mixed-nuts-2020-05"
 featured_image: nuts-511492_1280x847.jpg
 featured_image_alt: "A bowl contained mixed nuts, including hazelnuts and walnuts"
@@ -29,7 +29,9 @@ Anyway: as Memorial Day of 2020 nears, I thought it a good time for another bowl
 
 -------
 
-As I [noted recently on Twitter](https://twitter.com/BryceWrayTX/status/1261657209391452162), I gave up trying to get a high rating on the [Eleventy Performance Leaderboard](https://www.11ty.dev/leaderboard/perf/)---and, by "a high rating," I mean a 100-out-of-100 score on the [LightHouse CLI tool](https://developers.google.com/web/tools/lighthouse) used to compile that Leaderboard's standings every few days. Oh, I did try. I spent hours cutting down CSS, going back to system "[fonts](/posts/2018/10/web-typography-part-2)", losing *every* image (even the footer icons!), cutting back on JavaScript that actually makes the site work more smoothly and quickly for human beings as opposed to automated performance-rating tools, *etc.* But it was all for naught. The LightHouse CLI tool would give me the occasional 100 but, the vast majority of the time, wouldn't budge past 99. Ah, well&nbsp;.&nbsp;.&nbsp;.
+As I [noted recently on Twitter](https://twitter.com/BryceWrayTX/status/1261657209391452162), I gave up trying to get a high rating on the [Eleventy Performance Leaderboard](https://www.11ty.dev/leaderboard/perf/)---and, by "a high rating," I mean a 100-out-of-100 score on the [LightHouse CLI tool](https://developers.google.com/web/tools/lighthouse) used to compile that Leaderboard's standings every few days. Oh, I did try. I spent hours cutting down CSS, going back to system "[fonts](/posts/2018/10/web-typography-part-2),"[^BacktoSys] losing *every* image (even the footer icons!), cutting back on JavaScript that actually makes the site work more smoothly and quickly for human beings as opposed to automated performance-rating tools, *etc.* But it was all for naught. The LightHouse CLI tool would give me the occasional 100 but, the vast majority of the time, wouldn't budge past 99. Ah, well&nbsp;.&nbsp;.&nbsp;.
+
+[^BacktoSys]: A few days later, I decided to [revert](/posts/2018/10/web-typography-part-2) to using system "fonts" after all, not only to add a little more performance but also avoid the [Flash of Unstyled Content](https://en.wikipedia.org/wiki/Flash_of_unstyled_content) (FOUC) effect during Web "font"-loading.
 
 *Speaking of system "fonts": while going through that little exercise, I ran into a [bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1057654) in [Chromium](https://chromium.org)-based browsers running in macOS Catalina---including, of course, Google Chrome and Microsoft Edge---that causes them not to show bold-weight system "fonts" text that's twenty pixels high or larger. This is supposed to be resolved in the "M83" release Any Day Now. In the meantime, the many sites that use system "fonts" to enhance performance are going to look a bit strange to those browsers' users in Catalina. And, if one can believe developers' YouTube videos as a source of some truth, that constitutes a* lot *of Web devs who, one can guess, are not happy about this.*
 

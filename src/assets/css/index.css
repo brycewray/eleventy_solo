@@ -5,22 +5,17 @@
 @tailwind base;
 
 body {
-  /* @apply font-body; */
   font-feature-settings: "liga" 1;
 }
-/* font-body assigned in tailwind.config.js */
 
 p, li {
   /* for handling Markdown-created <p> and <li> */
   @apply mb-3 text-lg;
 }
 
-/*
 pre, code {
-  @apply font-codefont;
+  @apply text-base;
 }
-*/
-/* font-codefont assigned in tailwind.config.js */
 
 .navWhite, .navWhite:visited {
   color: #fff;

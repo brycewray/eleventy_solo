@@ -6,7 +6,7 @@ subtitle: From 3-2-1 to 4-2-2
 description: "Some observations on good backup practices, notably the 4-2-2 approach I’m now using."
 author: Bryce Wray
 date: 2019-02-23T12:45:00-06:00
-lastmod: 2020-02-16T13:32:00-06:00
+lastmod: 2020-05-20T20:46:00-05:00
 discussionId: "2019-02-back-up-jack"
 featured_image: binary-2688910_1280x719.jpg
 featured_image_alt: Stylistic illustration of moving binary data
@@ -105,7 +105,7 @@ But I also have digital copies of videos from long-ago camcorders.
 
 Making those copies was something I fretted about for years before I had a system with the oomph to handle digitizing them and the storage to keep them; I was certain the old tapes—some more than thirty years old—would ruin at least partially before I had a chance to save their recordings into a digital format which would preserve them long after I’m gone. Odds were that they indeed would’ve deteriorated before I could copy their contents to digital files, or even gotten snarled during whatever copying process I finally could achieve. But I got lucky. I got ’em all, without a single problem. Granted, they’re in 640 &times; 480 resolution and my camera work was hardly stellar, but I have them—safe, sound, sync’d, and quadruple-backed-up.
 
-So, with a click, I can see our only child, now grown and an outstanding[^10] kindergarten teacher, as a newborn, or as a little girl squawking nervously because she was getting her hair cut for the first time, or as a poised young woman graduating from high school or college and posing with the long-time boyfriend who eventually would become her husband.
+So, with a click, I can see our only child, now grown and an outstanding[^10] kindergarten teacher, as a five-month-old baby, or as a little girl squawking nervously because she was getting her hair cut for the first time, or as a poised young woman graduating from high school or college and posing with the long-time boyfriend who eventually would become her husband.
 
 I also can see and hear again my father, grandparents, and other relatives who’ve all preceded me in death.
 

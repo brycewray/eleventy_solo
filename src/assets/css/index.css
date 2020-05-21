@@ -15,6 +15,7 @@ p, li {
 
 pre, code {
   @apply text-base;
+  font-feature-settings: normal;
 }
 
 .navWhite, .navWhite:visited {
@@ -298,6 +299,10 @@ blockquote {
 
 .footnote-item, .footnote-item p {
   @apply text-sm tracking-normal;
+}
+
+.footnote-item pre, .footnote-item code {
+  @apply text-xs;
 }
 
 /* == end, footnotes */

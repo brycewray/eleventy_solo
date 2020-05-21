@@ -96,7 +96,7 @@ Only after a few hours of trial-and-error futzing did I finally locate a [Hugo c
 
 After studying that page for a while, I grasped that, before Hugo would run PostCSS, the `postcss-config.js` code for using the [`postcss-partial-import` plugin](https://github.com/jonathantneal/postcss-partial-import) had to refer to the `path`, rather than the `root` reference which worked for the Eleventy/webpack and Gatsby repos. It seems a small distinction, but I guess it's not where Hugo's innards are concerned.
 
-By contrast, this site's departure from hero images *(**update, 2020-05-19**: a departure that I later rescinded, as you can see at the top of this page)* was more easily handled in Hugo than in Gatsby.
+By contrast, this site's departure from hero images *(**update, 2020-05-19**: a departure that I [later rescinded](/posts/2020/05/thousand-words-indeed), as you can see at the top of this page)* was more easily handled in Hugo than in Gatsby.
 
 As I've [noted before](/posts/2019/10/picture-perfect), Gatsby typically does its image-processing magic only on image files that are in the same directory as the Markdown content which calls them.[^HugoImgs] That meant distinguishing between posts which had no images "inside" and those which did. As a result: I'd leave a file of the former type as an `index.md` in a directory named for the post; as for a file of the latter type, I'd name it after the post and move it into the appropriate "month" path.
 

@@ -37,6 +37,8 @@ dir.files(directory, function(err, files){
       'src/images/icons/apple-touch-icon_180x180.png',
       'src/images/icons/apple-touch-icon_1024x1024.png',
       'src/images/icons/BW_avatar_36x36_xpar.png',
+      'src/images/icons/BW_avatar_48x48_xpar.png',
+      'src/images/icons/BW_avatar_54x54_xpar.png',
       'src/images/icons/favicon-16x16.png',
       'src/images/icons/favicon-32x32.png',
       'src/images/icons/favicon-45x45.png',

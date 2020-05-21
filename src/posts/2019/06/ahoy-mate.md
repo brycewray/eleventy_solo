@@ -46,7 +46,7 @@ It's hard for somebody who's prided himself since the 1980s on knowing his way a
 
 {% lazypicture "MailMate_screen_cap_1280x720.jpg", "Screen capture of the MailMate app" %}
 
-<p class="lazypicturecaption">MailMate, with its Latin-displaying “distortion mode” engaged for privacy’s sake.</p>
+<p class="lazypicturecaption">MailMate, with its Latin-displaying “distortion mode” engaged for privacy’s sake.</p>
 
 Although my email needs aren't dramatic---as I've explained before, I don't use my Mac to access work-related email[^vmMail], so it's simply my personal stuff, albeit over twenty years' worth of it, and plenty more rolling in every day---I still was intrigued by several aspects of MailMate.
 

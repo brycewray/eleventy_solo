@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: "Webmentions in three SSGs: Part 5"
 subtitle: "Thanking our sources for this series about IndieWebbin’"
@@ -8,9 +8,6 @@ author: Bryce Wray
 date: 2020-04-28T16:50:00-05:00
 #lastmod: TBD
 discussionId: "2020-04-webmentions-three-ssgs-5"
-featured_image: letters-pen-ink-paper-2111533_1280x960.jpg
-featured_image_alt: "Writing concept - Fountain pen, white sheet of paper, open bottle of ink"
-featured_image_caption: "Image: Bruno/Germany; Pixabay"
 ---
 
 **Note**: This is the conclusion of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in Web sites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2)), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3)), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4)).{.yellowBox}

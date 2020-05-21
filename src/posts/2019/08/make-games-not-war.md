@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: Make games, not war
 subtitle: "Hey, MLB and NFL: time to unify" # quotation marks to allow colon
@@ -8,9 +8,6 @@ author: Bryce Wray
 date: 2019-08-03T11:00:00-05:00
 lastmod: 2019-08-07T12:42:00-05:00
 discussionId: "2019-08-make-games-not-war"
-featured_image: stadium-seats-3310891_1280x853.jpg
-featured_image_alt: Rows of empty seats in a sports stadium
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
 Feel free to consider this a once-in-a-while break from my usual tech-y stuff, so I can pontificate on another subject near and dear to my choler: the need to make the USA's two most prominent major pro sports leagues admit at last that the wars are over.

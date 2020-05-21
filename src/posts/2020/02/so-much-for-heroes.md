@@ -1,22 +1,14 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: "So much for heroes"
 subtitle: "The Big Picture regarding big pictures"
 description: "A few days of dithering over images leads to a clean break."
 author: Bryce Wray
 date: 2020-02-01T09:50:00-06:00
-lastmod: 2020-05-20T20:50:00-05:00
+lastmod: 2020-02-04T14:41:00-06:00
 discussionId: "2020-02-so-much-for-heroes"
-featured_image: paint-splatter-2224800_1280x960.jpg
-featured_image_base: paint-splatter-2224800_1280x960
-featured_image_width: 1280
-featured_image_ext: jpg
-featured_image_alt: "Paint brushes and colorful, splattered paint"
-featured_image_caption: "Image: evondue; Pixabay"
 ---
-
-**Update, 2020-05-17**: As you can plainly see above, I decided later to [reinstate the hero images](/posts/2020/05/thousand-words-indeed). Nonetheless, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh). In addition, you may find some value in the discussion herein concerning image processing.{.yellowBox}
 
 Who needs heroes? Not this site, I've decided.
 

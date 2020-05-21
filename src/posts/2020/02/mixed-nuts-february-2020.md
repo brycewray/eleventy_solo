@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: "Mixed nuts • February, 2020"
 subtitle: "Here and there, frick and frack, yadda and yadda"
@@ -8,9 +8,6 @@ author: Bryce Wray
 date: 2020-02-09T16:05:00-06:00
 #lastmod: TBD
 discussionId: "2020-02-mixed-nuts-2020-02"
-featured_image: almond-21502_1280x853.jpg
-featured_image_alt: "Almonds and other nuts in a store"
-featured_image_caption: "Image: PublicDomainPictures; Pixabay"
 ---
 
 The world didn't end when I issued the [inaugural set of Mixed Nuts](/posts/2019/11/mixed-nuts-2019-11) so, while that's hardly a proof of the wisdom of Going There again, I figure: hey, why not? With that ringing endorsement from your humble host, here goes nothing (which may be truer than I'd like to believe).

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: Grid-locked no more
 subtitle: Doing a 180 on CSS Grid
@@ -8,10 +8,8 @@ author: Bryce Wray
 date: 2018-11-28T09:00:00-06:00
 lastmod: 2019-10-02T19:20:00-05:00
 discussionId: "2018-11-grid-locked-no-more"
-featured_image: railing-4274523_1280x853.jpg
-featured_image_alt: Clear view of sky above fencing
-featured_image_caption: "Image: Analogicus; Pixabay" # quotation marks to allow colo
 ---
+
 As [Emily Litella](https://en.wikipedia.org/wiki/Emily_Litella) said it so well: “Never mind.”
 
 I said in my [last post](/posts/2018/11/getting-framed) that I’d use [Bootstrap 4](https://getbootstrap.com) for this site while learning [CSS Grid](https://www.w3schools.com/css/css_grid.asp) over time. Then, only a few days later, I decided there was no time like the present.

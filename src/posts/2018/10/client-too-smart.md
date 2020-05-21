@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: The client is too smart for you
 subtitle: The email client, that is
@@ -8,9 +8,6 @@ author: Bryce Wray
 date: 2018-10-11T15:30:00-05:00
 lastmod: 2020-01-31T10:30:00-06:00
 discussionId: "2018-10-client-too-smart"
-featured_image: contact-2805253_cropped_1280x720.png
-featured_image_alt: Illustration - mail flying at a stylized human head
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
 It’s been nearly two decades since we tech marketing folks started counting on the majority of prospects and customers to have access to reasonably fast email. Hey, I remember when we used to send out mass faxes. (We shall now observe a moment of silence for all the trees that we sacrificed in the service of raising profits.)

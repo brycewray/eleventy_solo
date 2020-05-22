@@ -6,7 +6,7 @@ subtitle: "Radio, and more, from on high"
 description: "Some pros and cons of having SiriusXM."
 author: Bryce Wray
 date: 2020-03-15T15:35:00-05:00
-#lastmod: TBD
+lastmod: 2020-05-22T16:45:00-05:00
 discussionId: "2020-03-some-siriusxm-thoughts"
 ---
 
@@ -90,6 +90,8 @@ If I could have my druthers, I'd just get the first person on the phone and say,
 
 [^Sorry]: Sorry if that sounds callous where the next person is concerned, but facts are stubborn things and all that.
 
+**Note**: Please see the update at the end.{.yellowBox}
+
 But that is, as I said, "if I could have my druthers." In real life, I'm sure it would be nowhere near that easy.
 
 *(I'm sure what they're doing is allowed under U. S. law, which isn't saying much. But **ethical**? Nah.)*
@@ -101,3 +103,5 @@ So, in short, I'd say this: *if* you don't mind the negotiation garbage I just d
 As for me, I have a few more weeks[^Kaching] to decide whether I like the service enough to jump through the negotiation hoops that a SiriusXM subscription unfortunately involves.
 
 [^Kaching]: My three-month freebie ends in early May, and I then could get another three "free" months---*by signing up*. Can you say, "Ka-ching"?
+
+**Update, 2020-05-22**: Today, I saw an offer on the SiriusXM site for *precisely* the new-subscriber deal I wanted: one year of the All-Access package for $99 (not counting the music royalty fee and other stuff, of course, but I always knew that would be part of it, no matter what); so, two weeks after my freebie ended, I did go ahead and subscribe, after all. And I've already set a calendar reminder for May 15 of *next* year so I'll have plenty time to go back and cancel in time to avoid auto-renewal at $22 a month (or whatever the rate is by then)---or, if I can, negotiate a fair renewal price.{.yellowBox}

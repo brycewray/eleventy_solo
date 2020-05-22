@@ -22,7 +22,7 @@ exports.render = function (data) {
     }
   })
   stringtoRet += `/images/${urlBase}-${width}.webp ${width}w" sizes="100vw" />
-  <img class="object-cover object-center h-full w-full containedImage hero" src="/images/${urlBase}-20.${ext}" srcset="`
+  <img class="object-cover object-center h-full w-full containedImage" src="/images/${urlBase}-20.${ext}" srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w, `
@@ -31,7 +31,7 @@ exports.render = function (data) {
   stringtoRet += `/images/${urlBase}-${width}.${ext}" alt="${alt}" sizes="100vw" />
   </picture>
   <noscript>
-    <img class="imgCover" loading="lazy" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
+    <img class="imgCover hero" loading="lazy" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
   </noscript>`
   return `
 

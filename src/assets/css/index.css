@@ -386,25 +386,23 @@ hr {
 }
 
 /* from vanilla-lazyload */
-/*
-img {
+.lazy {
   opacity: 0;
 }
 
-img:not(.initial) {
+.lazy:not(.initial) {
   transition: opacity 1s;
 }
 
-img.initial,
-img.loaded,
-img.error {
+.lazy.initial,
+.lazy.loaded,
+.lazy.error {
   opacity: 1;
 }
 
-img:not([src]) {
+.lazy:not([src]) {
   visibility: hidden;
 }
-*/
 /* end of CSS from vanilla-lazyload */
 
 @tailwind components;

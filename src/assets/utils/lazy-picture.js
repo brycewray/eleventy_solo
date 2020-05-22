@@ -8,7 +8,7 @@ shortcode takes the following form...
 // const fs = require('fs')
 const sizeOf = require('image-size')
 const respSizes = [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
-const srcDir = 'src/images'
+const srcDir = 'src/imgstaging'
 // const siteDir = '_site/images'
  
 /*

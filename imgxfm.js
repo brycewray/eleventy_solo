@@ -2,14 +2,17 @@ const sharp = require('sharp')
 const fs = require('fs')
 const sizeOf = require('image-size')
 const dir = require('node-dir')
-const SITEDIR = '_site'
-const IMGLNDG = '_site/images'
-const directory = 'src/images'
+// const SITEDIR = '_site'
+const IMGLNDG = 'src/images'
+const directory = 'src/imgstaging'
 const respSizes = [20, 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
 
+/*
 if(!fs.existsSync(SITEDIR)) {
   fs.mkdirSync(SITEDIR)
 }
+*/
+
 if(!fs.existsSync(IMGLNDG)) {
   fs.mkdirSync(IMGLNDG)
 }
@@ -53,7 +56,7 @@ dir.files(directory, function(err, files){
   .forEach(file => {
     var dimensions = sizeOf(`${file}`)
     var fileWidth = dimensions.width
-    file = file.replace('src/images/','') // losing the directory now, before processing
+    file = file.replace('src/imgstaging/','') // losing the directory now, before processing
     var fileExt = file.substring((file.lastIndexOf('.') + 1 ))
     var fileBas = file.slice(0, -4)
     // process a JPG

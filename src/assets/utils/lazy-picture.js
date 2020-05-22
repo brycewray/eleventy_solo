@@ -4,22 +4,10 @@ shortcode takes the following form...
 {% lazypicture [parameters separated by commas] %}
 */
 
-// const path = require('path')
-// const fs = require('fs')
 const sizeOf = require('image-size')
 const respSizes = [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
-const srcDir = 'src/imgstaging'
-// const siteDir = '_site/images'
+const srcDir = 'src/images'
  
-/*
-try {
-  const arrayOfFiles = fs.readdirSync("_site/images")
-  console.log(arrayOfFiles)
-} catch(e) {
-  console.log(e)
-}
-*/
-
 module.exports = (url, alt) => {
   var ext = url.substring((url.lastIndexOf('.') + 1))
   var urlBase = url.slice(0, -4)

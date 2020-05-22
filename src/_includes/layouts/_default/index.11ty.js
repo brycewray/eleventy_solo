@@ -1,6 +1,6 @@
 const sizeOf = require('image-size')
 const respSizes = [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
-const srcDir = 'src/imgstaging'
+const srcDir = 'src/images'
 
 exports.data = {
   layout: 'layouts/_default/base.11ty.js'

@@ -13,6 +13,7 @@ module.exports = (url, alt) => {
   var urlBase = url.slice(0, -4)
   var dimensions = sizeOf(`${srcDir}/${url}`) // the REAL, original file
   var width = dimensions.width
+  var height = dimensions.height
   var stringtoRet = ``
   stringtoRet = `<picture>
   <source type="image/webp" data-srcset="`
@@ -28,7 +29,7 @@ module.exports = (url, alt) => {
       stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w, `
     }
   })
-  stringtoRet += `/images/${urlBase}-${width}.${ext} ${width}w" alt="${alt}" data-sizes="100vw" />
+  stringtoRet += `/images/${urlBase}-${width}.${ext} ${width}w" alt="${alt}" width="${width}" height="${height}" data-sizes="100vw" />
   </picture>
   <noscript>
     <img class="containedImage" loading="lazy" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />

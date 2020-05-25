@@ -6,7 +6,7 @@ subtitle: "Losing webpack, regaining Tailwind CSS"
 description: "As the saying goes, less is more."
 author: Bryce Wray
 date: 2020-05-09T09:45:00-05:00
-lastmod: 2020-05-10T12:15:00-05:00
+lastmod: 2020-05-25T16:43:00-05:00
 discussionId: "2020-05-going-solo-eleventy"
 ---
 
@@ -68,10 +68,8 @@ That's how a script called `imgxfm.js` was born. After an embarrassingly high nu
 
 The commit in which `imgxfm.js` first appeared was called "Image processing while waiting for plugin to be ready"; but, once this little file was reliably doing what I wanted on each build, I realized it was no longer a stand-in. The star of the show had failed to arrive at the performance hall on time (albeit through no fault of his own), so I let the scraggly stand-in take his place; and, scraggly though he was, he did just fine and pleased the crowd just the same.
 
-<div class="yellowBox">
-	<p><strong><em>Update, 2020-05-10&nbsp;.&nbsp;.&nbsp;.</em></strong><br />
-	Late last night, I finally was able to start using a <strong>real</strong> image-processing plugin&mdash;<code>eleventy-plugin-local-respimg</code> by <a href="https://github.com/Snugug">Sam Richard</a>&mdash;and thus replace <code>imgxfm.js</code>. Because this plugin does quite a bit more, and does it so much better, than my script, the build times are now a bit slower than I describe later, <strong>but</strong> it&rsquo;s worth it to have a much better, much more capable image-processing solution! (And I extend a big thanks to <a href="https://github.com/rickthehat">Rick G.</a> for <a href="https://github.com/chromeos/static-site-scaffold-modules/issues/16#issuecomment-626250527">tipping me off</a> as to why I&rsquo;d previously been unable to use Mr. Richard's excellent plugin.)</p>
-</div>
+***Update, 2020-05-25***&nbsp;.&nbsp;.&nbsp;.<br />
+The next day, I switched to a **real** image-processing plugin---`eleventy-plugin-local-respimg` by [Sam Richard](https://github.com/Snugug)---thus replacing `imgxfm.js`. However, while this plugin obviously was superior to my script, my [later switch](https://twitter.com/BryceWrayTX/status/1263641169889824769) from LazySizes to [LazyLoad](https://github.com/verlok/lazyload) for lazy-loading made it [necessary](https://github.com/verlok/vanilla-lazyload/issues/461#issuecomment-633234705) to revert to `imgxfm.js`, at least for now. (That said: I still extend a big thanks to [Rick G.](https://github.com/rickthehat) for [helping me](https://github.com/chromeos/static-site-scaffold-modules/issues/16#issuecomment-626250527) get past earlier issues with Mr. Richard's excellent plugin.){.yellowBox}
 
 ## "An API for your design system"
 

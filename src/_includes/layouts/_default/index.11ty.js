@@ -46,24 +46,24 @@ exports.render = function (data) {
       : ``
     }
 
-    <div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 lg:w-5/6 mr-auto ml-auto">
+    <div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 xb:gap-32 lg:w-3/4 xb:w-7/12 mr-auto ml-auto">
       <div class="col-span-3 home-colOne">
         ${data.content}
       </div>
       <div class="col-span-2 border-black border-t lg:border-0 pt-4 lg:pt-0">
-        <h2 class="h1 mb-4"><a href="/posts/">Posts</a></h2>
+        <h2 class="h1 mb-4">Recent <a href="/posts/">posts</a></h2>
         ${
-          data.collections.post.slice(0, 7).map(post =>
+          data.collections.post.slice(0, 5).map(post =>
           `
         <div>
           <h2 class="h4 not-italic tracking-tight"><a href="${post.url}">${post.data.title}</a></h2>
           <p class="font-bold text-base mt-2 mb-0 leading-5">${post.data.subtitle}</p>
           <p class="text-xs tracking-normal mt-0 mb-1">
-            <time style="display: inline;" datetime="${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}">${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}</time>
+            Published: <time style="display: inline;" datetime="${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}">${(post.date).toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'})}</time>
             ${
               post.data.lastmod
               ? `
-            &nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="${(post.data.lastmod.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}))}">${(post.data.lastmod.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}))}</time>
+            <br />Last modified: <time style="display: inline;" datetime="${(post.data.lastmod.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}))}">${(post.data.lastmod.toLocaleDateString('en-US', {year: 'numeric', month: 'long', day: 'numeric'}))}</time>
               `
               : ``
             }

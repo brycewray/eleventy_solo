@@ -11,18 +11,17 @@ module.exports = {
       'md': '768px',  // => @media (min-width: 768px) { ... }
       'lg': '1024px', // => @media (min-width: 1024px) { ... }
       'xl': '1280px', // => @media (min-width: 1280px) { ... }
+      'xb': '1920px', // => @media (min-width: 1920px) { ... }
     },
-    /*
-    fontFamily: {
-      body: ['Public Sans', 'sans-serif'],
-      codefont: ['Roboto Mono', 'monospace'],
-    },
-    */
     extend: {
       screens: {
         'dark': {
           'raw': '(prefers-color-scheme: dark)',
         },
+      },
+      fontSize: {
+        '7xl': '4.5rem',
+        '8xl': '5rem',
       },
       colors: {
         blue: {

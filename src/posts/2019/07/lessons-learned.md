@@ -8,12 +8,12 @@ date: 2019-07-21T17:43:00-05:00
 lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-07-lessons-learned"
 oldComments: |
-    <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 px-6">
+    <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
       <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
       <p class="text-xs italic text-center">
         (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="nofollow">Talkyard</a>.)
       </p>
-      <p class="mt-6 mb-0"><strong>Magnus Lindberg</strong> <em>2019-09-30</em></p>
+      <p class="mt-6 mb-0 text-base"><strong>Magnus Lindberg</strong> <span class="italic text-sm">2019-09-30</span></p>
       <p class="my-0 text-base leading-normal">Hi Bryce, I found a way to use both Git and cloud sync at the same time, for the same directory :- )<br />
       I <em>exclude</em> the <code>.git</code> directory from the cloud sync &mdash; that's why this works. (Otherwise I think the Git repo would &quot;self destruct&quot; itself, when <code>.git</code> internal changes from one laptop, attempts to sync with changes from another laptop :- ))</p>
       <p class="my-0 text-base leading-normal">I use Syncthing, here's my Syncthing config that excludes <code>.git</code> and other auto generated / downloaded things:</p>
@@ -34,7 +34,7 @@ oldComments: |
       <p class="my-0 text-base leading-normal">... And every few days I Git-merge/rebase changes the two directories onto each other.</p>
       <p class="my-0 text-base leading-normal">Cheers</p>
     
-      <p class="mt-6 mb-0"><strong>Bryce Wray</strong> <em>2019-09-30</em></p>
+      <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-09-30</span></p>
       <p class="my-0 text-base leading-normal">Very interesting! Will check into this.</p>
       <p class="my-0 text-base leading-normal">(To other readers: this gentleman is the creator and developer of the Talkyard platform that powers these comments. If you have your own SSG-based site and need a way to provide comments, I highly recommend both Talkyard and this extremely helpful dev.)</p>
     </div>

@@ -54,3 +54,5 @@ data/*.json
 pngquant*
 
 imgxfm_SAFE.js
+# Local Netlify folder
+.netlify

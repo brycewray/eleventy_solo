@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: Back with Hugo
 subtitle: "Well, that didn’t last long"
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2019-09-20T16:40:00-05:00
 lastmod: 2020-01-01T08:56:00-06:00
 discussionId: "2019-09-back-with-hugo"
+featured_image: skid-mark-567668_1280x853.jpg
+featured_image_alt: "Skid marks on asphalt"
+featured_image_caption: "Image: Jan Mallander; Pixabay" # quotation marks to allow colon
 ---
 
 <div class="border-black border-solid yellowBox">

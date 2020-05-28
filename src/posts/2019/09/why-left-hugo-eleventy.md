@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: Why I left Hugo for Eleventy
 subtitle: "The quest to learn more"
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
 lastmod: 2019-12-17T18:50:00-06:00
 discussionId: "2019-09-why-left-hugo-eleventy"
+featured_image: detour-2496197_1280x850.jpg
+featured_image_alt: "Orange road sign, “DETOUR AHEAD”"
+featured_image_caption: "Image: awsloley; Pixabay" # quotation marks to allow colon
 oldComments: |
     <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
       <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>

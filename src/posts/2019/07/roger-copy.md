@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: Roger, Copy
 subtitle: Keeping my .git together with Working Copy
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2019-07-27T06:38:00-05:00
 lastmod: 2020-02-03T14:23:00-06:00
 discussionId: "2019-07-roger-copy"
+featured_image: animals-geese-in-a-row-2364769_1280x960.jpg
+featured_image_alt: Geese walking together in a row, illustrating synchronicity.
+featured_image_caption: "Image: Wolfgang Eckert; Pixabay" # quotation marks to allow colon
 ---
 
 If this site had a horde of regular readers, there probably would be enough of you out there that, probability suggests, a tiny percentage could be expected to watch every change with eagle eyes.

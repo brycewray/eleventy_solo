@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: A stacked deck
 subtitle: Part 2 of a two-part series on Web typography
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
 lastmod: 2020-05-20T12:51:00-05:00
 discussionId: "2018-10-web-typography-part-2"
+featured_image: computer-1869236_1920x1440.jpg
+featured_image_alt: Backlit computer keyboard
+featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
 In [Part 1](/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on Web sites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.

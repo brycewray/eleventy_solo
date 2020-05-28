@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Mixed nuts • May, 2020"
 subtitle: "Month-of-May meanderings through my, um, mind"
@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2020-05-16T17:40:00-05:00
 lastmod: 2020-05-22T16:45:00-05:00
 discussionId: "2020-05-mixed-nuts-2020-05"
+featured_image: nuts-511492_1280x847.jpg
+featured_image_alt: "A bowl contained mixed nuts, including hazelnuts and walnuts"
+featured_image_caption: "Image: Ina Hall; Pixabay"
 ---
 
 The [last time](/posts/2020/02/mixed-nuts-february-2020) I put you through---ahem, I mean, *provided for you*---the periodical mixed-bag-of-observations I call "Mixed Nuts," it was February. We here in the United States were in a totally different state of existence.

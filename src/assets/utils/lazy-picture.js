@@ -16,7 +16,8 @@ module.exports = (url, alt) => {
   var width = dimensions.width
   var height = dimensions.height
   var stringtoRet = ``
-  stringtoRet = `<picture>
+  stringtoRet = `<div class="relative bg-cover" style="background-image: url(/images/${urlBase}-20.${ext});">
+  <picture>
   <source type="image/webp" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
@@ -24,7 +25,7 @@ module.exports = (url, alt) => {
     }
   })
   stringtoRet += `/images/${urlBase}-${width}.webp ${width}w" data-sizes="100vw" />
-  <img class="lazy containedImage" loading="lazy" src="/images/${urlBase}-20.${ext}" data-src="/images/${urlBase}-${width}.${ext}" data-srcset="`
+  <img class="lazy containedImage" src="/images/${urlBase}-20.${ext}" data-src="/images/${urlBase}-${width}.${ext}" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w, `
@@ -32,6 +33,7 @@ module.exports = (url, alt) => {
   })
   stringtoRet += `/images/${urlBase}-${width}.${ext} ${width}w" alt="${alt}" width="${width}" height="${height}" data-sizes="100vw" />
   </picture>
+  </div>
   <noscript>
     <img class="containedImage" loading="lazy" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
   </noscript>`

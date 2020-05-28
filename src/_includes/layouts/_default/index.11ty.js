@@ -14,22 +14,24 @@ exports.render = function (data) {
   var dimensions = sizeOf(`${srcDir}/${fImg}`) // the REAL, original file
   var width = dimensions.width
   var stringtoRet = ``
-  stringtoRet = `<picture>
-  <source type="image/webp" srcset="`
+  stringtoRet = `<div class="bg-cover bg-blue-200 h-full" style="background-image: url(/images/${urlBase}-20.${ext});">
+  <picture>
+  <source type="image/webp" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.webp ${size}w, `
     }
   })
-  stringtoRet += `/images/${urlBase}-${width}.webp ${width}w" sizes="100vw" />
-  <img class="object-cover object-center h-full w-full containedImage" src="/images/${urlBase}-20.${ext}" srcset="`
+  stringtoRet += `/images/${urlBase}-${width}.webp ${width}w" data-sizes="100vw" />
+  <img class="lazy object-cover object-center h-full w-full containedImage" src="/images/${urlBase}-20.${ext}" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w, `
     }
   })
-  stringtoRet += `/images/${urlBase}-${width}.${ext}" alt="${alt}" sizes="100vw" />
+  stringtoRet += `/images/${urlBase}-${width}.${ext}" alt="${alt}" data-sizes="100vw" />
   </picture>
+  </div>
   <noscript>
     <img class="imgCover hero" loading="lazy" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
   </noscript>`

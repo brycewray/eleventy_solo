@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Mixed nuts • May, 2020"
 subtitle: "Month-of-May meanderings through my, um, mind"

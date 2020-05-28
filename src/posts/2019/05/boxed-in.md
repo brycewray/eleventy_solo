@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2019-05-04T06:00:00-05:00
 lastmod: 2020-04-22T19:30:00-05:00
 discussionId: "2019-05-boxed-in"
+featured_image: kelly-sikkema-_JBGjZFFYRk-unsplash_1280x853.jpg
+featured_image_alt: View downward into brown cardboard box with all flaps open
+featured_image_caption: "Image: Kelly Sikkema; Unsplash" # quotation marks to allow colon
 ---
 
 Constant reexamination is part of my daily life. It's an inescapable part of my Day Job, to be sure. It's part of why it takes me so long to write some things---the Work-in-Progress (WIP) being the most damnable example thereof.[^RIPWIP]

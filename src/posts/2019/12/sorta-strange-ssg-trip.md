@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2019-12-27T14:42:40-06:00
 lastmod: 2020-02-19T19:57:00-06:00
 discussionId: "2019-12-sorta-strange-ssg-trip"
+featured_image: alarm-clock-4711181_1280x853.jpg
+featured_image_alt: "Old alarm clock nearing midnight on New Year's Eve"
+featured_image_caption: "Image: MrGajowy3; Pixabay"
 ---
 
 In what almost certainly is my last post of 2019---this site's first full calendar year of existence---I want to look back at the major changes that I made on the site this year, and the learning experiences that resulted.

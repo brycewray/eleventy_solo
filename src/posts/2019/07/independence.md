@@ -1,13 +1,16 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: Independence
 subtitle: Thirty-five years a Mac lover
 description: "Thirty-five years ago this week, I encountered a Mac for the first time, and it literally changed my life."
 author: Bryce Wray
 date: 2019-07-06T10:38:00-05:00
-lastmod: 2020-01-31T14:27:00-06:00
+lastmod: 2020-05-17T16:15:00-05:00
 discussionId: "2019-07-independence"
+featured_image: 1984-07-11_01_retouched_1280x720.jpg
+featured_image_alt: "Bryce Wray, in 1984, unwrapping his new Macintosh computer."
+featured_image_caption: "July 11, 1984: A much younger and skinnier me eagerly unwraps my new “Skinny Mac.” (Photo by my overly tolerant spouse.)"
 ---
 
 This most recent Fourth of July was the 243rd anniversary of the *signing* of the Declaration of Independence---not the actual small-d declaration itself, which actually was [two days earlier](https://www.archives.gov/press/press-releases/2005/nr05-83.html), as all we American history nerds know.
@@ -65,10 +68,6 @@ I knew I had to have a Mac.
 ## Hints of a future
 
 In the days that followed, I eagerly found and read everything I could find about the Mac; and, a week later to the evening, powered by a loan from our credit union, I went to our local [ComputerLand](https://en.wikipedia.org/wiki/ComputerLand) and bought a Mac, an extra microfloppy drive to save all the [disk-swapping](https://www.folklore.org/StoryView.py?story=Disk_Swappers_Elbow.txt&topic=Technical&detail=medium&showcomments=1) the magazines warned me against, and an [ImageWriter](https://www.computinghistory.org.uk/det/11813/Apple%20ImageWriter%20I%20/) printer.
-
-{% lazypicture "1984-07-11_01_retouched_1280x720.jpg", "Me, in 1984, eagerly unwrapping my new Macintosh." %}
-
-<p class="lazypicturecaption">July 11, 1984: A much younger and skinnier me eagerly unwraps my new &ldquo;Skinny Mac.&rdquo; (Photo by my overly tolerant&nbsp;spouse.)</p>
 
 That fall, I started teaching at a community college, so I used the Mac and the ImageWriter to produce tons of materials for my classes over the next few years: lesson recaps, tests, graphics to illustrate various concepts, and so on.
 

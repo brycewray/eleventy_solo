@@ -7,6 +7,9 @@ author: Bryce Wray
 date: 2019-04-20T11:17:00-05:00
 lastmod: 2020-04-22T19:30:00-05:00
 discussionId: "2019-04-why-left-ulysses"
+featured_image: hand-butterfly_3751159_1280x853.jpg
+featured_image_alt: "Hand releases a butterfly (note: a butterfly is the Ulysses logo)"
+featured_image_caption: "Image: Gerd Altmann; Pixabay" # quotation marks to allow colon
 oldComments: |
     <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
       <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>

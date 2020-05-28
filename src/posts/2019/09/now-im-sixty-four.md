@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2019-09-06T06:40:00-05:00
 lastmod: 2020-03-29T10:08:00-05:00
 discussionId: "2019-09-now-im-sixty-four"
+featured_image: chevrolet-1955-stylized-829805_1280x720.jpg
+featured_image_alt: Stylized view of a deep blue 1955 Chevrolet Bel Air two-door automobile
+featured_image_caption: "Original image: Pixabay; edited in Affinity Photo" # quotation marks to allow colon
 oldComments: |
   <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
     <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>

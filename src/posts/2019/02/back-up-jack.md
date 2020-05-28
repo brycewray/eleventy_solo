@@ -8,6 +8,9 @@ author: Bryce Wray
 date: 2019-02-23T12:45:00-06:00
 lastmod: 2020-05-20T20:46:00-05:00
 discussionId: "2019-02-back-up-jack"
+featured_image: binary-2688910_1280x719.jpg
+featured_image_alt: Stylistic illustration of moving binary data
+featured_image_caption: "Image: Gerd Altmann; Pixabay" # quotation marks to allow colon
 ---
 
 <div class="yellowBox">

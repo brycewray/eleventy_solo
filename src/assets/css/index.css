@@ -397,7 +397,7 @@ hr {
 }
 
 .lazy:not(.initial) {
-  transition: opacity 1.5s;
+  transition: opacity 0.5s;
 }
 
 .lazy.initial,

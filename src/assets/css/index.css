@@ -393,17 +393,18 @@ hr {
 
 /* from vanilla-lazyload */
 .lazy {
-  opacity: 0;
+  @apply opacity-0;
 }
 
 .lazy:not(.initial) {
-  transition: opacity 0.5s;
+  @apply transition-opacity duration-300 ease-in-out;
+  /* transition: opacity 0.4s; */
 }
 
 .lazy.initial,
 .lazy.loaded,
 .lazy.error {
-  opacity: 1;
+  @apply opacity-100;
 }
 
 .lazy:not([src]) {

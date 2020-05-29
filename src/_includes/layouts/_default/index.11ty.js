@@ -14,7 +14,7 @@ exports.render = function (data) {
   var dimensions = sizeOf(`${srcDir}/${fImg}`) // the REAL, original file
   var width = dimensions.width
   var stringtoRet = ``
-  stringtoRet = `<div class="bg-cover bg-blue-200 h-full" style="background-image: url(/images/${urlBase}-20.${ext});">
+  stringtoRet = `<div class="bg-cover h-full" style="background-image: url(/images/${urlBase}-20.${ext});">
   <picture>
   <source type="image/webp" data-srcset="`
   respSizes.forEach(size => {

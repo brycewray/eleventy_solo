@@ -6,7 +6,7 @@ subtitle: "Month-of-May meanderings through my, um, mind"
 description: "Updates, uptakes, follow-ups, and foul-ups—not necessarily in that order."
 author: Bryce Wray
 date: 2020-05-16T17:40:00-05:00
-lastmod: 2020-05-22T16:45:00-05:00
+lastmod: 2020-05-28T20:40:00-05:00
 discussionId: "2020-05-mixed-nuts-2020-05"
 featured_image: nuts-511492_1280x847.jpg
 featured_image_alt: "A bowl contained mixed nuts, including hazelnuts and walnuts"
@@ -47,10 +47,8 @@ While dark mode is a good idea on a smartphone with an [OLED](https://en.wikiped
 
 *After [ho-humming it a few months ago](/posts/2020/01/two-cheers-tailwind), I [recently](/posts/2020/05/going-solo-eleventy) started using [Tailwind CSS](https://tailwindcss.com) again on this site. I think I have a much better grasp of its good points this time and plan to stick with this popular CSS framework, especially given some of its recent improvements. If you're interested in using Tailwind in your Web dev efforts, also, I highly recommend bookmarking [Jay Elaraj](https://twitter.com/nerdcave)'s [Tailwind CSS Cheat Sheet](https://nerdcave.com/tailwind-cheat-sheet). It'll save you a ton of time and trouble while you're getting the hang of the Tailwind naming and numbering schemes, and it's frequently revised to stay current with Tailwind's own updates.*
 
-"On a personal note," as they say on social media: yep, I'm still working for a living despite the recent and continuing economic chaos caused by COVID-19. I've been much more fortunate than many others of whom I know, including some present and former co-workers, whose jobs haven't survived. Since my job is one I can do entirely from home[^Telework], and also since I'm right on the cusp of that age bracket which is supposed to Stay The Hell Home for the foreseeable future, it's unclear when I'll be back in the office, the doors of which I haven't darkened since the afternoon of Thursday, March 12.
+My [recent review](/posts/2020/05/battle-ios-email-heavyweights) of the [AltaMail](https://mobile.eurosmartz.com/products/altamail.html) and [Preside](https://preside.io) email client apps allowed me the pleasure of working with two apps whose developers truly respect the privacy of their customers' emails. However, today, the folks behind [Edison Mail](https://mail.edison.tech) got caught [failing](https://www.macrumors.com/2020/05/16/edison-mail-sync-bug/) on that critical concern. Since this [isn't Edison's first such SNAFU](https://www.vice.com/en_ca/article/pkekmb/free-email-apps-spying-on-you-edison-slice-cleanfox), you have to wonder if the company will survive it---and whether you should care.
 
-[^Telework]: My job involves zero paperwork---it's all on-screen, all-virtual---and, now, I report to another teleworker, a fellow who lives hundreds of miles away and, even in normal times of frequent business travel on jam-packed jet planes, would only occasionally be in our company's Dallas-area branch offices.
-
-*My [recent review](/posts/2020/05/battle-ios-email-heavyweights) of the [AltaMail](https://mobile.eurosmartz.com/products/altamail.html) and [Preside](https://preside.io) email client apps allowed me the pleasure of working with two apps whose developers truly respect the privacy of their customers' emails. However, today, the folks behind [Edison Mail](https://mail.edison.tech) got caught [failing](https://www.macrumors.com/2020/05/16/edison-mail-sync-bug/) on that critical concern. Since this [isn't Edison's first such SNAFU](https://www.vice.com/en_ca/article/pkekmb/free-email-apps-spying-on-you-edison-slice-cleanfox), you have to wonder if the company will survive it---and whether you should care.*
+----
 
 To my fellow Americans: enjoy the upcoming Memorial Day weekend with family and other loved ones as best you can under the current COVID-19 weirdness. And, to everyone everywhere, stay safe.

@@ -1,10 +1,16 @@
+const jsonInfo = require(`../../../../package.json`)
+var eleventyVersion = jsonInfo.devDependencies['@11ty/eleventy']
+if (eleventyVersion.charAt(0) == "^") {
+  eleventyVersion = eleventyVersion.substring(1)
+}
+
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addShortcode('headTag', function(data) {
 
     return `
     <head>
-    <meta name="generator" content="Eleventy - https://11ty.dev" />
+    <meta name="generator" content="Eleventy - 11ty - https://11ty.dev - Version ${eleventyVersion}" />
         
     ${
       (data.title == "Home page")

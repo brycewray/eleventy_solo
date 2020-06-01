@@ -1,5 +1,5 @@
 const sizeOf = require('image-size')
-const respSizes = [250, 550, 850, 1150, 1500]
+const respSizes = [250, 500, 750, 1000, 1250, 1500]
 const srcDir = 'src/images'
 
 exports.data = {

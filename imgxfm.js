@@ -5,7 +5,7 @@ const dir = require('node-dir')
 const SITEDIR = '_site'
 const IMGLNDG = '_site/images'
 const directory = 'src/images'
-const respSizes = [20, 200, 400, 600, 800, 1000, 1200, 1400, 1600]
+const respSizes = [20, 250, 500, 750, 1000, 1250, 1500]
 //            was: 20, 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500
 
 if(!fs.existsSync(SITEDIR)) {

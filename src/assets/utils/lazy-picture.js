@@ -5,7 +5,7 @@ shortcode takes the following form...
 */
 
 const sizeOf = require('image-size')
-const respSizes = [250, 550, 850, 1150, 1500]
+const respSizes = [250, 500, 750, 1000, 1250, 1500]
   // was 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500
 const srcDir = 'src/images'
  
@@ -24,14 +24,14 @@ module.exports = (url, alt) => {
       stringtoRet += `/images/${urlBase}-${size}.webp ${size}w, `
     }
   })
-  stringtoRet += `/images/${urlBase}-${width}.webp ${width}w" data-sizes="100vw" />
+  stringtoRet += `/images/${urlBase}-${width}.webp ${width}w" data-sizes="(min-width: 1024px) 25vw, 100vw" />
   <img class="lazy containedImage" src="/images/${urlBase}-20.${ext}" data-src="/images/${urlBase}-${width}.${ext}" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w, `
     }
   })
-  stringtoRet += `/images/${urlBase}-${width}.${ext} ${width}w" alt="${alt}" width="${width}" height="${height}" data-sizes="100vw" />
+  stringtoRet += `/images/${urlBase}-${width}.${ext} ${width}w" alt="${alt}" width="${width}" height="${height}" data-sizes="(min-width: 1024px) 25vw, 100vw" />
   </picture>
   </div>
   <noscript>

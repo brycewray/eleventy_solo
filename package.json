@@ -26,8 +26,7 @@
   "license": "MIT",
   "browserslist": [
     "defaults",
-    "maintained node versions",
-    "> 5%"
+    "maintained node versions"
   ],
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",

@@ -7,6 +7,7 @@ const IMGLNDG = '_site/images'
 const directory = 'src/images'
 const respSizes = [20, 250, 500, 750, 1000, 1250, 1500]
 //            was: 20, 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500
+var respSizesThis = Array.from(respSizes)
 
 if(!fs.existsSync(SITEDIR)) {
   fs.mkdirSync(SITEDIR)
@@ -58,39 +59,13 @@ dir.files(directory, function(err, files){
     file = file.replace('src/images/','') // losing the directory now, before processing
     var fileExt = file.substring((file.lastIndexOf('.') + 1 ))
     var fileBas = file.slice(0, -4)
-    // process a JPG
-    fileExt == 'jpg'
-    ? sharp(`${directory}/${file}`)
-      .jpeg({
-        quality: 60,
-      })
-      .toFile(`${IMGLNDG}/${fileBas}-${fileWidth}.${fileExt}`)
-      .then(() => {
-        // console.log(`Sharp output ${file} as ${fileBas}-${fileWidth}.${fileExt}`)
-      })
-      .catch(err => {console.log(err + file)})
+
+    // now, check whether the respSizes array includes the image width; it not, add it to respSizes
+    // so we create a processed, original-width file, too
+    !respSizesThis.includes(fileWidth)
+    ? respSizesThis.push(fileWidth)
     : ``
-    // process a PNG
-    fileExt == 'png'
-    ? sharp(`${directory}/${file}`)
-      .png({})
-      .toFile(`${IMGLNDG}/${fileBas}-${fileWidth}.${fileExt}`)
-      .then(() => {
-        // console.log(`Sharp output ${file} as ${fileBas}-${fileWidth}.${fileExt}`)
-      })
-      .catch(err => {console.log(err + file)})
-    : ``
-    // now, make webp for each, regardless of original file format
-    sharp(`${directory}/${file}`)
-      .webp({
-        quality: 50,
-      })
-      .toFile(`${IMGLNDG}/${fileBas}-${fileWidth}.webp`)
-      .then(() => {
-        // console.log(`Sharp output ${file}-${fileWidth} as ${fileBas}-${fileWidth}.webp`)
-      })
-      .catch(err => {console.log(err + file)})
-    respSizes.forEach(size => {
+    respSizesThis.forEach(size => {
       fileExt == 'jpg' && size <= fileWidth
       ? sharp(`${directory}/${file}`)
         .jpeg({
@@ -136,6 +111,9 @@ dir.files(directory, function(err, files){
         .catch(err => {console.log(err + file)})
       : ``
     })
+    // resetting respSizesThis to original ref array (respSizes) so extra values don't keep getting added
+    respSizesThis.splice(0,respSizesThis.length)
+    respSizesThis = Array.from(respSizes)
   })
   console.log(`Writing responsive images...`)
 })

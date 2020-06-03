@@ -56,3 +56,6 @@ pngquant*
 imgxfm_SAFE.js
 # Local Netlify folder
 .netlify
+
+.base64imgs.txt
+.base64imgs.json

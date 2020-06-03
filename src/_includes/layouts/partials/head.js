@@ -9,9 +9,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode('headTag', function(data) {
 
     return `
-    <head>
-    <meta name="generator" content="Eleventy - 11ty - https://11ty.dev - Version ${eleventyVersion}" />
-        
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"><!-- due to IE 11 issue with TWCSS -->
+    <meta name="generator" content="Eleventy - 11ty - https://11ty.dev - Version ${eleventyVersion}" />        
     ${
       (data.title == "Home page")
       ? `
@@ -23,7 +23,6 @@ module.exports = function(eleventyConfig) {
       <meta property="og:title" content="${data.title} | ${data.siteparams.siteTitle}" />
       `
     }
-
     <!-- IndieWeb -->
     ${
       (data.title == "Home page")
@@ -41,7 +40,6 @@ module.exports = function(eleventyConfig) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta property="og:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720-1280.jpg" />
-
     ${
       (data.title == "Home page")
       ? `
@@ -54,7 +52,6 @@ module.exports = function(eleventyConfig) {
         `
       : ``
     }
-
     ${
       (data.page.url !== null)
       ? `

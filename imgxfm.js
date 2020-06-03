@@ -60,7 +60,7 @@ dir.files(directory, function(err, files){
     var fileExt = file.substring((file.lastIndexOf('.') + 1 ))
     var fileBas = file.slice(0, -4)
 
-    // now, check whether the respSizes array includes the image width; it not, add it to respSizes
+    // now, check whether the respSizes array includes the image width; if not, add it to respSizes
     // so we create a processed, original-width file, too
     !respSizesThis.includes(fileWidth)
     ? respSizesThis.push(fileWidth)

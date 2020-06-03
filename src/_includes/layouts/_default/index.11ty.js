@@ -1,6 +1,8 @@
 const sizeOf = require('image-size')
 const respSizes = [250, 500, 750, 1000, 1250, 1500]
 const srcDir = 'src/images'
+const SITEDIR = '_site/images'
+const fs = require('fs')
 
 exports.data = {
   layout: 'layouts/_default/base.11ty.js'
@@ -10,11 +12,20 @@ exports.render = function (data) {
   var fImg = data.featured_image
   var alt = data.featured_image_alt
   var ext = fImg.substring((fImg.lastIndexOf('.') + 1))
+  var ext64 = ext
+  if (ext == 'jpg') { 
+    ext64 = 'jpeg'
+  }
   var urlBase = fImg.slice(0, -4)
+  var lqipImg = `${SITEDIR}/${urlBase}-20.${ext}`
   var dimensions = sizeOf(`${srcDir}/${fImg}`) // the REAL, original file
   var width = dimensions.width
+
+  var base64ImgCode = fs.readFileSync(lqipImg, 'base64')
+  var base64Img = `data:image/${ext64};base64,${base64ImgCode}`
+
   var stringtoRet = ``
-  stringtoRet = `<div class="bg-cover h-full" style="background-image: url(/images/${urlBase}-20.${ext});">
+  stringtoRet = `<div class="h-full" style="background-image: url(${base64Img}); background-position: center; background-repeat: no-repeat; background-size: cover;">
   <picture>
   <source type="image/webp" data-srcset="`
   respSizes.forEach(size => {
@@ -23,7 +34,7 @@ exports.render = function (data) {
     }
   })
   stringtoRet += `/images/${urlBase}-${width}.webp ${width}w" data-sizes="100vw" />
-  <img class="lazy object-cover object-center h-full w-full containedImage" src="/images/${urlBase}-20.${ext}" data-src="/images/${urlBase}-${width}.${ext}" data-srcset="`
+  <img class="lazy object-cover object-center h-full w-full containedImage" src="${base64Img}" data-src="/images/${urlBase}-${width}.${ext}" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w, `

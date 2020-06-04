@@ -8,7 +8,9 @@ const directory = 'src/images'
 const respSizes = [250, 500, 750, 1000, 1250, 1500]
 //            was: 20, 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500
 var respSizesThis = Array.from(respSizes)
-const cacheFile = '.base64imgs.txt'
+const cacheFile = '.base64imgs.json'
+// clear cacheFile...
+fs.writeFileSync(cacheFile,'')
 let base64Cache = {}
 
 if(!fs.existsSync(SITEDIR)) {
@@ -33,22 +35,27 @@ files.forEach(file => {
     ext64 = 'jpeg'
   }
   var fileBas = file.slice(0, -4)
-
+    // first, the 20-pixel Base64
+    sharp(`${directory}/${file}`)
+      .resize(20) // width only -- auto-resizes height to match aspect ratio
+      .toBuffer()
+      .then(( data ) => {
+        var base64Add = {
+          filename: `${file}`,
+          base64VS: `data:image/${ext64};base64,${data.toString('base64')}`
+        }
+        base64Cache = {...base64Cache, ...base64Add}
+        fs.writeFileSync(cacheFile, JSON.stringify(base64Cache, null, 2), {flag: 'a'})
+      })
+      .catch(err => console.log(err))
+  /*
+   
   // now, check whether the respSizes array includes the image width; if not,
   // add it to respSizesThis so we create a processed, original-width file, too
   !respSizesThis.includes(fileWidth)
   ? respSizesThis.push(fileWidth)
   : ``
   respSizesThis.forEach(size => {
-    // first, the 20-pixel Base64
-    sharp(`${directory}/${file}`)
-      .resize(20) // width only -- auto-resizes height to match aspect ratio
-      .toBuffer()
-      .then(( data ) => {
-        fs.writeFileSync(cacheFile, `data:image/${ext64};base64,${data.toString('base64')}`)
-      })
-      .catch(err => console.log(err))
-    /*
     // now, the responsive images
     fileExt == 'jpg' && size <= fileWidth
     ? sharp(`${directory}/${file}`)
@@ -94,8 +101,8 @@ files.forEach(file => {
       })
       .catch(err => {console.log(err + file)})
     : ``
-    */
   })
+  */
   // resetting respSizesThis to original ref array (respSizes) so extra values don't keep getting added
   respSizesThis.splice(0,respSizesThis.length)
   respSizesThis = Array.from(respSizes)

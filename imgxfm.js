@@ -41,8 +41,7 @@ files.forEach(file => {
       .toBuffer()
       .then(( data ) => {
         var base64Add = {
-          filename: `${file}`,
-          base64VS: `data:image/${ext64};base64,${data.toString('base64')}`
+          file: `data:image/${ext64};base64,${data.toString('base64')}`
         }
         base64Cache = {...base64Cache, ...base64Add}
         fs.writeFileSync(cacheFile, JSON.stringify(base64Cache, null, 2), {flag: 'a'})
@@ -102,9 +101,9 @@ files.forEach(file => {
       .catch(err => {console.log(err + file)})
     : ``
   })
-  */
   // resetting respSizesThis to original ref array (respSizes) so extra values don't keep getting added
   respSizesThis.splice(0,respSizesThis.length)
   respSizesThis = Array.from(respSizes)
+  */
 })
 console.log(`Writing responsive images...`)

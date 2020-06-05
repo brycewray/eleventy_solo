@@ -48,8 +48,8 @@ files.forEach(file => {
     .catch(err => {
       console.log(err)
     })
-  // now, check whether the respSizes array includes the image width; if not,
-  // add it to respSizesThis so we create a processed, original-width file, too
+  // now, check whether the respSizesThis array includes the image width; if not,
+  // add it so we create a processed, original-width file, too
   !respSizesThis.includes(fileWidth)
   ? respSizesThis.push(fileWidth)
   : ``

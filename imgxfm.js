@@ -35,18 +35,19 @@ files.forEach(file => {
     ext64 = 'jpeg'
   }
   var fileBas = file.slice(0, -4)
-    // first, the 20-pixel Base64
-    sharp(`${directory}/${file}`)
-      .resize(20) // width only -- auto-resizes height to match aspect ratio
-      .toBuffer()
-      .then(( data ) => {
-        var base64Add = {
-          file: `data:image/${ext64};base64,${data.toString('base64')}`
-        }
-        base64Cache = {...base64Cache, ...base64Add}
-        fs.writeFileSync(cacheFile, JSON.stringify(base64Cache, null, 2), {flag: 'a'})
-      })
-      .catch(err => console.log(err))
+  // first, the 20-pixel Base64
+  sharp(`${directory}/${file}`)
+    .resize(20) // width only -- auto-resizes height to match aspect ratio
+    .toBuffer()
+    .then(( data ) => {
+      var base64Add = {
+        name: `${file}`,
+        file: `data:image/${ext64};base64,${data.toString('base64')}`
+      }
+      base64Cache = {...base64Cache, ...base64Add}
+      fs.writeFileSync(cacheFile, JSON.stringify(base64Cache, null, 2), {flag: 'a'})
+    })
+    .catch(err => console.log(err))
   /*
    
   // now, check whether the respSizes array includes the image width; if not,

@@ -11,7 +11,7 @@ var respSizesThis = Array.from(respSizes)
 const cacheFile = '.base64imgs.json'
 // clear cacheFile...
 fs.writeFileSync(cacheFile,'')
-let base64Cache = {}
+let base64Cache = []
 
 if(!fs.existsSync(SITEDIR)) {
   fs.mkdirSync(SITEDIR)
@@ -36,20 +36,18 @@ files.forEach(file => {
   }
   var fileBas = file.slice(0, -4)
   // first, the 20-pixel Base64
-  sharp(`${directory}/${file}`)
-    .resize(20) // width only -- auto-resizes height to match aspect ratio
+  sharp(`${directory}/${file}`, {failOnError: false })
+    .resize(20)
     .toBuffer()
-    .then(( data ) => {
-      var base64Add = {
-        name: `${file}`,
-        file: `data:image/${ext64};base64,${data.toString('base64')}`
-      }
-      base64Cache = {...base64Cache, ...base64Add}
-      fs.writeFileSync(cacheFile, JSON.stringify(base64Cache, null, 2), {flag: 'a'})
+    .then(data => {
+      var b64Res = `data:image/${ext64};base64,${data.toString('base64')}`
+      var b64Add = {file, b64Res}
+      base64Cache = [...base64Cache, b64Add]
+      fs.writeFileSync(cacheFile, JSON.stringify(base64Cache, null, 2))
     })
-    .catch(err => console.log(err))
-  /*
-   
+    .catch(err => {
+      console.log(err)
+    })
   // now, check whether the respSizes array includes the image width; if not,
   // add it to respSizesThis so we create a processed, original-width file, too
   !respSizesThis.includes(fileWidth)
@@ -105,6 +103,5 @@ files.forEach(file => {
   // resetting respSizesThis to original ref array (respSizes) so extra values don't keep getting added
   respSizesThis.splice(0,respSizesThis.length)
   respSizesThis = Array.from(respSizes)
-  */
 })
 console.log(`Writing responsive images...`)

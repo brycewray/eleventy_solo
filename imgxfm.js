@@ -35,6 +35,7 @@ files.forEach(file => {
     ext64 = 'jpeg'
   }
   var fileBas = file.slice(0, -4)
+
   // first, the 20-pixel Base64
   sharp(`${directory}/${file}`, {failOnError: false })
     .resize(20)
@@ -48,6 +49,7 @@ files.forEach(file => {
     .catch(err => {
       console.log(err)
     })
+
   // now, check whether the respSizesThis array includes the image width; if not,
   // add it so we create a processed, original-width file, too
   !respSizesThis.includes(fileWidth)
@@ -66,7 +68,6 @@ files.forEach(file => {
       })
       .toFile(`${IMGLNDG}/${fileBas}-${size}.${fileExt}`)
       .then(() => {
-        // console.log(`Sharp output ${file} as ${fileBas}-${size}.${fileExt}`)
       })
       .catch(err => {console.log(err + file)})
     : ``
@@ -79,10 +80,10 @@ files.forEach(file => {
       })
       .toFile(`${IMGLNDG}/${fileBas}-${size}.${fileExt}`)
       .then(() => {
-        // console.log(`Sharp output ${file} as ${fileBas}-${size}.${fileExt}`)
       })
       .catch(err => {console.log(err + file)})
     : ``
+
     // now, make webp for each, regardless of original file format
     size <= fileWidth    
     ? sharp(`${directory}/${file}`)
@@ -95,13 +96,14 @@ files.forEach(file => {
       })
       .toFile(`${IMGLNDG}/${fileBas}-${size}.webp`)
       .then(() => {
-        // console.log(`Sharp output ${file} as ${fileBas}-${size}.webp`)
       })
       .catch(err => {console.log(err + file)})
     : ``
   })
+
   // resetting respSizesThis to original ref array (respSizes) so extra values don't keep getting added
   respSizesThis.splice(0,respSizesThis.length)
   respSizesThis = Array.from(respSizes)
+
 })
 console.log(`Writing responsive images...`)

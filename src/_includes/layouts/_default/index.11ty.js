@@ -3,6 +3,8 @@ const respSizes = [250, 500, 750, 1000, 1250, 1500]
 const srcDir = 'src/images'
 const SITEDIR = '_site/images'
 const fs = require('fs')
+const cacheFile = '.base64imgs.json'
+const jsonData = JSON.parse(fs.readFileSync(cacheFile))
 
 exports.data = {
   layout: 'layouts/_default/base.11ty.js'
@@ -10,6 +12,8 @@ exports.data = {
 
 exports.render = function (data) {
   var fImg = data.featured_image
+  const fileSeek = jsonData.find(image => image.file === fImg)
+  var base64Img = fileSeek.b64Res
   var alt = data.featured_image_alt
   var ext = fImg.substring((fImg.lastIndexOf('.') + 1))
   var ext64 = ext
@@ -17,12 +21,8 @@ exports.render = function (data) {
     ext64 = 'jpeg'
   }
   var urlBase = fImg.slice(0, -4)
-  var lqipImg = `${SITEDIR}/${urlBase}-20.${ext}`
   var dimensions = sizeOf(`${srcDir}/${fImg}`) // the REAL, original file
   var width = dimensions.width
-
-  var base64ImgCode = fs.readFileSync(lqipImg, 'base64')
-  var base64Img = `data:image/${ext64};base64,${base64ImgCode}`
 
   var stringtoRet = ``
   stringtoRet = `<div class="h-full" style="background-image: url(${base64Img}); background-position: center; background-repeat: no-repeat; background-size: cover;">

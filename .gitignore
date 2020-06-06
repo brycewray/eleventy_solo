@@ -57,5 +57,6 @@ imgxfm_SAFE.js
 # Local Netlify folder
 .netlify
 
-.base64imgs.*
+.base64imgs.txt
+.base64imgs.json
 arraytest.js

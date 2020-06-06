@@ -73,7 +73,10 @@ files.forEach(file => {
     : ``
     fileExt == 'png' && size <= fileWidth
     ? sharp(`${directory}/${file}`)
-      .png({})
+      .png({
+        compressionLevel: 9,
+        adaptiveFiltering: true
+      })
       .resize({
         width: size,
         withoutEnlargement: true,

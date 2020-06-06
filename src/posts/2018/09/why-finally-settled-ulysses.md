@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2018-09-22T11:04:36-05:00
 lastmod: 2020-04-22T19:30:00-05:00
 discussionId: "2018-09-why-finally-settled-ulysses"
-featured_image: Ulysses-Preferences-General-screen-shot-dark-mode_blk_bkgd_1280x720.png
+featured_image: Ulysses-Preferences-General-screen-shot-dark-mode_blk_bkgd_1280x720.jpg
 featured_image_alt: Screen capture - Ulysses app preferences window
 ---
 

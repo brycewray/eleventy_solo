@@ -10,21 +10,22 @@ const respSizes = [250, 500, 750, 1000, 1250, 1500]
 const srcDir = 'src/images'
 const SITEDIR = '_site/images'
 const fs = require('fs')
+const cacheFile = '.base64imgs.json'
+const jsonData = JSON.parse(fs.readFileSync(cacheFile))
  
 module.exports = (url, alt) => {
+  const fileSeek = jsonData.find(image => image.file === url)
+  var base64Img = fileSeek.b64Res
+
   var ext = url.substring((url.lastIndexOf('.') + 1))
   var ext64 = ext
   if (ext == 'jpg') {
     ext64 = 'jpeg'
   }
   var urlBase = url.slice(0, -4)
-  var lqipImg = `${SITEDIR}/${urlBase}-20.${ext}`
   var dimensions = sizeOf(`${srcDir}/${url}`) // the REAL, original file
   var width = dimensions.width
   var height = dimensions.height
-
-  var base64ImgCode = fs.readFileSync(lqipImg, 'base64')
-  var base64Img = `data:image/${ext64};base64,${base64ImgCode}`
 
   var stringtoRet = ``
   stringtoRet = `<div class="relative" style="background-image: url(${base64Img}); background-position: center; background-repeat: no-repeat; background-size: cover;">

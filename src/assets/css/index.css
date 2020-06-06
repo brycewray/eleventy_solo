@@ -175,6 +175,11 @@ article p, li {
   @apply text-lg leading-relaxed mt-6 mb-6;
 }
 
+article img.containedImage {
+  min-width: 100%;
+  max-width: 100%;
+}
+
 @media screen and (min-width: 769px) {
   .height-hero {
     height: 70vh;

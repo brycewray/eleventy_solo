@@ -30,10 +30,6 @@ files.forEach(file => {
   var fileWidth = dimensions.width
   file = file.replace('src/images/','') // losing the directory now, before processing
   var fileExt = file.substring((file.lastIndexOf('.') + 1 ))
-  var ext64 = fileExt
-  if (fileExt == 'jpg') { 
-    ext64 = 'jpeg'
-  }
   var fileBas = file.slice(0, -4)
 
   // first, the 20-pixel Base64
@@ -41,7 +37,7 @@ files.forEach(file => {
     .resize(20)
     .toBuffer()
     .then(data => {
-      var b64Res = `data:image/${ext64};base64,${data.toString('base64')}`
+      var b64Res = `data:image/jpeg;base64,${data.toString('base64')}`
       var b64Add = {file, b64Res}
       base64Cache = [...base64Cache, b64Add]
       fs.writeFileSync(cacheFile, JSON.stringify(base64Cache, null, 2))
@@ -66,26 +62,31 @@ files.forEach(file => {
         width: size,
         withoutEnlargement: true,
       })
-      .toFile(`${IMGLNDG}/${fileBas}-${size}.${fileExt}`)
+      .toFile(`${IMGLNDG}/${fileBas}-${size}.jpg`)
       .then(() => {
       })
       .catch(err => {console.log(err + file)})
     : ``
+    // commenting out the PNG part since we're eschewing its use for now - 2020-06-06
+    /*
     fileExt == 'png' && size <= fileWidth
     ? sharp(`${directory}/${file}`)
-      .png({
-        compressionLevel: 9,
-        adaptiveFiltering: true
+      .toFormat('jpeg')
+      .jpeg({
+        quality: 60,
+        progressive: true,
+        chromaSubsampling: '4:4:4'
       })
       .resize({
         width: size,
         withoutEnlargement: true,
       })
-      .toFile(`${IMGLNDG}/${fileBas}-${size}.${fileExt}`)
+      .toFile(`${IMGLNDG}/${fileBas}-${size}.jpg`)
       .then(() => {
       })
       .catch(err => {console.log(err + file)})
     : ``
+    */
 
     // now, make webp for each, regardless of original file format
     size <= fileWidth    

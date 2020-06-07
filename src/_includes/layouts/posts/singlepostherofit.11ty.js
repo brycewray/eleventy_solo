@@ -1,55 +1,15 @@
-const sizeOf = require('image-size')
-const respSizes = [250, 500, 750, 1000, 1250, 1500]
-const srcDir = 'src/images'
-const SITEDIR = '_site/images'
-const fs = require('fs')
-const cacheFile = '.base64imgs.json'
-const jsonData = JSON.parse(fs.readFileSync(cacheFile))
+const stringtoRet = require('../../../assets/utils/lazy-picture.js')
+
 
 exports.data = {
   layout: 'layouts/_default/base.11ty.js'
 }
 
 exports.render = function (data) {
-  var fImg = data.featured_image
-  const fileSeek = jsonData.find(image => image.file === fImg)
-  var base64Img = fileSeek.b64Res
-  var alt = data.featured_image_alt
-  var ext = fImg.substring((fImg.lastIndexOf('.') + 1))
-  var ext64 = ext
-  if (ext == 'jpg') { 
-    ext64 = 'jpeg'
-  }
-  var urlBase = fImg.slice(0, -4)
-  var dimensions = sizeOf(`${srcDir}/${fImg}`) // the REAL, original file
-  var width = dimensions.width
-
-  var stringtoRet = ``
-  stringtoRet = `<div class="h-full" style="background-image: url(${base64Img}); background-position: center; background-repeat: no-repeat; background-size: cover;">
-  <picture>
-  <source type="image/webp" data-srcset="`
-  respSizes.forEach(size => {
-    if (size <= width) {
-      stringtoRet += `/images/${urlBase}-${size}.webp ${size}w, `
-    }
-  })
-  stringtoRet += `/images/${urlBase}-${width}.webp ${width}w" data-sizes="100vw" />
-  <img class="imgCover hero lazy" src="${base64Img}" data-src="/images/${urlBase}-${width}.${ext}" data-srcset="`
-  respSizes.forEach(size => {
-    if (size <= width) {
-      stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w, `
-    }
-  })
-  stringtoRet += `/images/${urlBase}-${width}.${ext} ${width}w" alt="${alt}" data-sizes="100vw" />
-  </picture>
-  </div>
-  <noscript>
-    <img class="imgCover" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
-  </noscript>`
   return `
 <main class="pt-12">
   <div class="background-hero-image-div">
-    ${stringtoRet}
+    ${stringtoRet(data.featured_image, data.featured_image_alt, "posts")}
     <div class="background-hero-title-block-fit">
       <div class="background-hero-title-text">
       <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl xb:text-8xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">${data.title}</h1>

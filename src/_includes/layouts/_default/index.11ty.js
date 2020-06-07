@@ -1,64 +1,20 @@
-const sizeOf = require('image-size')
-const respSizes = [250, 500, 750, 1000, 1250, 1500]
-const srcDir = 'src/images'
-const SITEDIR = '_site/images'
-const fs = require('fs')
-const cacheFile = '.base64imgs.json'
-const jsonData = JSON.parse(fs.readFileSync(cacheFile))
+const stringtoRet = require('../../../assets/utils/lazy-picture.js')
 
 exports.data = {
   layout: 'layouts/_default/base.11ty.js'
 }
 
 exports.render = function (data) {
-  var fImg = data.featured_image
-  const fileSeek = jsonData.find(image => image.file === fImg)
-  var base64Img = fileSeek.b64Res
-  var alt = data.featured_image_alt
-  var ext = fImg.substring((fImg.lastIndexOf('.') + 1))
-  var ext64 = ext
-  if (ext == 'jpg') { 
-    ext64 = 'jpeg'
-  }
-  var urlBase = fImg.slice(0, -4)
-  var dimensions = sizeOf(`${srcDir}/${fImg}`) // the REAL, original file
-  var width = dimensions.width
-
-  var stringtoRet = ``
-  stringtoRet = `<div class="h-full" style="background-image: url(${base64Img}); background-position: center; background-repeat: no-repeat; background-size: cover;">
-  <picture>
-  <source type="image/webp" data-srcset="`
-  respSizes.forEach(size => {
-    if (size <= width) {
-      stringtoRet += `/images/${urlBase}-${size}.webp ${size}w, `
-    }
-  })
-  stringtoRet += `/images/${urlBase}-${width}.webp ${width}w" data-sizes="100vw" />
-  <img class="lazy object-cover object-center h-full w-full containedImage" src="${base64Img}" data-src="/images/${urlBase}-${width}.${ext}" data-srcset="`
-  respSizes.forEach(size => {
-    if (size <= width) {
-      stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w, `
-    }
-  })
-  stringtoRet += `/images/${urlBase}-${width}.${ext}" alt="${alt}" data-sizes="100vw" />
-  </picture>
-  </div>
-  <noscript>
-    <img class="imgCover hero" loading="lazy" src="/images/${urlBase}-${width}.${ext}" alt="${alt}" />
-  </noscript>`
   return `
-
   <main>
-
     <div class="w-full height-hero pt-12">
-      ${stringtoRet}
+      ${stringtoRet(data.featured_image, data.featured_image_alt, "index")}
     </div>
     ${
       (data.featured_image_caption)
       ? `<p class="text-center text-xs tracking-normal mt-1">${data.featured_image_caption}</p>`
       : ``
     }
-
     <div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 xb:gap-32 lg:w-3/4 xb:w-7/12 mr-auto ml-auto">
       <div class="col-span-3 home-colOne">
         ${data.content}

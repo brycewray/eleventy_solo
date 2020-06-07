@@ -6,12 +6,14 @@ subtitle: "R.I.P., WIP"
 description: "A farewell to this site’s original purpose."
 author: Bryce Wray
 date: 2020-04-22T19:30:00-05:00
-#lastmod: TBD
+lastmod: 2020-06-07T16:15:00-05:00
 discussionId: "2020-04-murdered-darlings"
 featured_image: candles-memorial-2905395_1280x853.jpg
 featured_image_alt: "Candles lit in memoriam of the dead"
 featured_image_caption: "Image: Henryk Niestrój; Pixabay"
 ---
+
+**Update, 2020-06-07**: As is my wont, [I later had second thoughts about this](/posts/2020/06/why-kept-ulysses), but I'll leave this here for the sake of [transparency](/posts/2019/10/otoh); besides, the change of mind isn't yet final.{.yellowBox}
 
 Friends, we are gathered here on a solemn occasion. But, before I get to that, allow me to flesh out the title's background.
 

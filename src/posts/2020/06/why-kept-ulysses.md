@@ -25,7 +25,7 @@ Or, then again, maybe I *shouldn't* have been surprised.
 
 Let's face it: it's reasonable to assume there are a lot more folks out there with a passion for writing, as compared to others who find getting down-and-dirty with SSGs a great way to spend one's free time. (*Blush.*)
 
-So I'd guess I'm about to welcome even more traffic with this piece about what I sometimes call "Big U." Hello, folks. Nice to see you. Please be nice to this [old](/posts/2019/09/now-im-sixty-four) guy with [Type A blood](https://www.pharmacytimes.com/news/study-suggests-blood-type-a-associated-with-higher-risk-of-covid-19) and keep your [social distance](https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html) but, otherwise, welcome (back?).
+So I'd guess I'm about to welcome even more traffic with this piece about what I sometimes call "Big U." Hello, folks. Good to see you. Please be nice to this [old](/posts/2019/09/now-im-sixty-four) guy with [Type A blood](https://www.pharmacytimes.com/news/study-suggests-blood-type-a-associated-with-higher-risk-of-covid-19) and keep your [social distance](https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html) but, otherwise, welcome (back?).
 
 ## WIP-lash
 

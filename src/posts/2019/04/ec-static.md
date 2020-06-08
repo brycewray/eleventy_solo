@@ -6,7 +6,7 @@ subtitle: How to go Hugo
 description: "Some tips for ordinary non-geeks on using the Hugo static site generator to create and maintain their own Web sites."
 author: Bryce Wray
 date: 2019-04-07T14:00:00-05:00
-lastmod: 2019-10-02T19:30:00-05:00
+lastmod: 2020-06-07T14:25:00-05:00
 discussionId: "2019-04-ec-static"
 featured_image: server-1235959_1280x853.jpg
 featured_image_alt: Internet server
@@ -55,7 +55,7 @@ These instructions are based heavily on Hugo's [Quick Start page](https://gohugo
 ```bash
 text that looks like this
 ```
-.&nbsp;.&nbsp;. in the entry. **don't** try to re-type it because, in all probability, you'll miss something, mistake a page-forced line break for a return character, *etc*. Also, when you copy, be sure to select the **entire** entry, including anything that may require scrolling to the right, and also **not** to select any **extraneous** characters (such as spaces) on the end. These commands have to entered exactly as shown---no more, no less.
+.&nbsp;.&nbsp;. in the entry. **Don't** try to re-type it because, in all probability, you'll miss something, mistake a page-forced line break for a return character, *etc*. Also, when you copy, be sure to select the **entire** entry, including anything that may require scrolling to the right, and also **not** to select any **extraneous** characters (such as spaces) on the end. These commands have to entered exactly as shown---no more, no less.
 
 ### STEP 1: Install Hugo.
 

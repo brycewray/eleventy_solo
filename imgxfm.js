@@ -2,12 +2,15 @@ const sharp = require('sharp')
 const globAll = require('glob-all')
 const fs = require('fs')
 const sizeOf = require('image-size')
+const imagemin = require('imagemin')
+const pngquant = require('imagemin-pngquant')
 const SITEDIR = '_site'
 const IMGLNDG = '_site/images'
 const directory = 'src/images'
 const respSizes = [250, 500, 750, 1000, 1250, 1500]
 //            was: 20, 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500
 var respSizesThis = Array.from(respSizes)
+var output // init only
 const cacheFile = '.base64imgs.json'
 // clear cacheFile...
 fs.writeFileSync(cacheFile,'')
@@ -67,26 +70,26 @@ files.forEach(file => {
       })
       .catch(err => {console.log(err + file)})
     : ``
-    // commenting out the PNG part since we're eschewing its use for now - 2020-06-06
-    /*
     fileExt == 'png' && size <= fileWidth
-    ? sharp(`${directory}/${file}`)
-      .toFormat('jpeg')
-      .jpeg({
-        quality: 60,
-        progressive: true,
-        chromaSubsampling: '4:4:4'
+    ? (async size => {
+        output = await sharp(`${directory}/${file}`)
+        .resize({
+          width: size,
+          withoutEnlargement: true,
+        })
+        .toBuffer()
+        .catch(err => {console.log(err + file)})
+        output = await imagemin.buffer(output, {
+          destination: `${IMGLNDG}/${fileBas}-${size}.png`,
+          plugins: [
+            pngquant({
+              speed: 10,
+              quality: [0.3, 0.5]
+            })
+          ]
+        })
       })
-      .resize({
-        width: size,
-        withoutEnlargement: true,
-      })
-      .toFile(`${IMGLNDG}/${fileBas}-${size}.jpg`)
-      .then(() => {
-      })
-      .catch(err => {console.log(err + file)})
     : ``
-    */
 
     // now, make webp for each, regardless of original file format
     size <= fileWidth    

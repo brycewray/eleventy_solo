@@ -50,6 +50,8 @@
     "from-env": "^1.1.4",
     "glob": "^7.1.6",
     "glob-all": "^3.2.1",
+    "imagemin": "^7.0.1",
+    "imagemin-pngquant": "^9.0.0",
     "inline-source-map": "^0.6.2",
     "lodash": "^4.17.15",
     "luxon": "^1.24.1",

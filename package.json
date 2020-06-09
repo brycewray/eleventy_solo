@@ -51,6 +51,7 @@
     "glob": "^7.1.6",
     "glob-all": "^3.2.1",
     "inline-source-map": "^0.6.2",
+    "jimp": "^0.13.0",
     "lodash": "^4.17.15",
     "luxon": "^1.24.1",
     "markdown-it": "^10.0.0",

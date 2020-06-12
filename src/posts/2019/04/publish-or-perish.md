@@ -65,7 +65,7 @@ If you go along with me on that, [set up a free Bitbucket account](https://bitbu
 
 ### Step 6c: Connect Sourcetree to your Bitbucket account
 
-Now you want to tell Sourcetree how to connect to this new Bitbucket account. No problem; with your Bitbucket account up and running in one browser window/tab, open another window/tab and go to the [applicable Atlassian help page](https://confluence.atlassian.com/get-started-with-sourcetree/connect-your-bitbucket-or-github-account-847359096.html). It shows you what to do. 
+Now you want to tell Sourcetree how to connect to this new Bitbucket account. No problem; with your Bitbucket account up and running in one browser window/tab, open another window/tab and go to the [applicable Atlassian help page](https://confluence.atlassian.com/get-started-with-sourcetree/connect-your-bitbucket-or-github-account-847359096.html). It shows you what to do.
 ### Step 6d: Push your local repo to Bitbucket
 
 Now that Sourcetree can talk to your Bitbucket account, use Sourcetree to [**push**](https://confluence.atlassian.com/sourcetreekb/commit-push-and-pull-a-repository-on-sourcetree-785616067.html) the local repo out to that account. When you do, it will automatically create a new remote repo with all the necessary files from your local Hugo site.

@@ -15,7 +15,7 @@ oldComments: |
     <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
       <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
       <p class="text-xs italic text-center">
-        (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="nofollow">Talkyard</a>.)
+        (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)
       </p>
       <p class="mt-6 mb-0 text-base"><strong>Cole Krumz</strong> <span class="italic text-sm">2019-07-15</span></p>
       <p class="my-0 text-base leading-normal">Interesting read. Any chance you'd be willing to open source the attempted site, bugs and all, as a learning tool? I'd be pretty interested to try to get your site working, and in the process understand how gatsby handles a set of "real-world" requirements.</p>

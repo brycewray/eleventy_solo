@@ -15,10 +15,10 @@ oldComments: |
   <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
       <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>
     <p class="text-xs italic text-center">
-      (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="nofollow">Talkyard</a>.)
+      (Imported from previous comments host, <a href="https://talkyard.io" target="_blank" rel="noopener">Talkyard</a>.)
     </p>
     <p class="mt-6 mb-0 text-base"><strong>Andrew Canion</strong> <span class="italic text-sm">2019-06-18</span></p>
-    <p class="my-0 text-base leading-normal">Thank you for this tutorial. I'd never used Hugo or Netlify before, but with your guide I was able to create a landing page for <a href="https://www.hannahbeazley.com" target="_blank" rel="nofollow">my wife's domain</a>. Your guide also <a href="https://micro.blog/joshsullivan/4100487" target="_blank" rel="nofollow">helped another user on micro.blog</a>.</p>
+    <p class="my-0 text-base leading-normal">Thank you for this tutorial. I'd never used Hugo or Netlify before, but with your guide I was able to create a landing page for <a href="https://www.hannahbeazley.com" target="_blank" rel="noopener">my wife's domain</a>. Your guide also <a href="https://micro.blog/joshsullivan/4100487" target="_blank" rel="noopener">helped another user on micro.blog</a>.</p>
   
     <p class="mt-6 mb-0 text-base"><strong>Bryce Wray</strong> <span class="italic text-sm">2019-06-18</span></p>
     <p class="my-0 text-base leading-normal">Very glad I could help. Have fun with Hugo! I certainly do.</p>
@@ -65,7 +65,7 @@ If you go along with me on that, [set up a free Bitbucket account](https://bitbu
 
 ### Step 6c: Connect Sourcetree to your Bitbucket account
 
-Now you want to tell Sourcetree how to connect to this new Bitbucket account. No problem; with your Bitbucket account up and running in one browser window/tab, open another window/tab and go to the [applicable Atlassian help page](https://confluence.atlassian.com/get-started-with-sourcetree/connect-your-bitbucket-or-github-account-847359096.html). It shows you what to do. 
+Now you want to tell Sourcetree how to connect to this new Bitbucket account. No problem; with your Bitbucket account up and running in one browser window/tab, open another window/tab and go to the [applicable Atlassian help page](https://confluence.atlassian.com/get-started-with-sourcetree/connect-your-bitbucket-or-github-account-847359096.html). It shows you what to do.
 ### Step 6d: Push your local repo to Bitbucket
 
 Now that Sourcetree can talk to your Bitbucket account, use Sourcetree to [**push**](https://confluence.atlassian.com/sourcetreekb/commit-push-and-pull-a-repository-on-sourcetree-785616067.html) the local repo out to that account. When you do, it will automatically create a new remote repo with all the necessary files from your local Hugo site.

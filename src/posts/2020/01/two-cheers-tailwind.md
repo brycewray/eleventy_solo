@@ -6,7 +6,7 @@ subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray
 date: 2020-01-12T11:00:00-06:00
-lastmod: 2020-05-20T12:54:00-05:00
+lastmod: 2020-06-13T16:30:00-05:00
 discussionId: "2020-01-two-cheers-tailwind"
 featured_image: CSS-code-1797778_1280x848.jpg
 featured_image_alt: "Closeup of computer monitor showing CSS"
@@ -83,9 +83,7 @@ What I'm saying, then, is that any concerns I have about this approach definitel
 
 I guess what still mainly bugs me is the whole idea of whether, specifically for an [SSG](https://staticgen.com)-built site like mine that depends so heavily on a small number of [templates](https://www.11ty.dev/docs/templates/), I might not be better off just going back to a less utilitarian method. Am I really gaining anything from this build-the-appearance-one-Lego-block-at-a-time approach? Would I be wiser just to revert to the way I was doing it before?
 
-By the way: no matter which way I go, a reversion to my previous workflow probably *wouldn't* mean going back to SASS/SCSS, which I jettisoned in the transition to utility-first. To learn how to use Tailwind CSS, I also had to learn about using [PostCSS](https://postcss.org). It's clear that, even I do go back to a less utilitarian approach, PostCSS and its [plugins](https://www.postcss.parts) can do everything, and more, for which I used SASS/SCSS. In fact, what PostCSS enables is pretty frickin' amazing. Just being able to take what starts out in dev mode as 2.4&nbsp;**MB** of CSS (more than half of which is related to using Web "fonts," I should note in all fairness[^BacktoSys]) and end up with it in production mode at only about 7&nbsp;**K** is impressive, to put it mildly.
-
-[^BacktoSys]: A few months later, I decided to [revert](/posts/2018/10/web-typography-part-2) to using system "fonts" to add a little more performance and avoid the [Flash of Unstyled Content](https://en.wikipedia.org/wiki/Flash_of_unstyled_content) (FOUC) effect during Web "font"-loading.
+By the way: no matter which way I go, a reversion to my previous workflow probably *wouldn't* mean going back to SASS/SCSS, which I jettisoned in the transition to utility-first. To learn how to use Tailwind CSS, I also had to learn about using [PostCSS](https://postcss.org). It's clear that, even I do go back to a less utilitarian approach, PostCSS and its [plugins](https://www.postcss.parts) can do everything, and more, for which I used SASS/SCSS. In fact, what PostCSS enables is pretty frickin' amazing. Just being able to take what starts out in dev mode as well over 2&nbsp;**MB** of CSS and end up with it in production mode at only 6--7&nbsp;**K** is impressive, to put it mildly.
 
 ## We Shall See<sup style="font-size: 0.5em; font-weight: normal; vertical-align: baseline; position: relative; top: -1.1em; margin-right: -1em;">&trade;</sup>---as usual
 

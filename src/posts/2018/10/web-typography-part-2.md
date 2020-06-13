@@ -6,20 +6,22 @@ subtitle: Part 2 of a two-part series on Web typography
 description: Making the case for a system “fonts” approach to the typography on Web sites.
 author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
-lastmod: 2020-05-20T12:51:00-05:00
+lastmod: 2020-06-13T06:30:00-05:00
 discussionId: "2018-10-web-typography-part-2"
 featured_image: computer-1869236_1920x1440.jpg
 featured_image_alt: Backlit computer keyboard
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
+**Update**: Although the system "fonts" approach I describe in this post is still quite sensible in many cases, [later](/posts/2019/12/packing-up) [decisions](/posts/2020/05/thousand-words-indeed) allowed me to adopt a standard appearance for all devices and OSs without some of the usual technical drawbacks I'll mention herein.{.yellowBox}
+
 In [Part 1](/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on Web sites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.
 
-<hr />
+----
 
 _**Note**: For those teeming masses who had already read this deathless prose before November 9, 2018, please be advised there’s a major change at the bottom. For the rest of you, as a friend from my high school days used to say, “Go ahead on.”_
 
-<hr />
+----
 
 First, this nerdish note: you’ll see me referring herein to _typefaces_ rather than _fonts_. That said, if we were just sitting around having the kind of chat about on-screen typography that people do every day (normal people do that, right? Right?), I would probably slip and call them “fonts,” as well.[^1] It’s more commonly understood and, besides, we’re all accustomed to how our apps’ menus call them “fonts” rather than “typefaces.” That convention that dates back at least to 1984 and the original Mac. However, as Wikipedia says:
 
@@ -74,23 +76,6 @@ As for which typefaces to specify and in which order in your CSS, any number of 
 - **Helvetica Neue**—iOS prior to iOS 9 and Mac OS X 10.10.x (Yosemite). 
 - **Lucida Grande**—Mac OS X 10.0.x (Cheetah) through Mac OS X 10.9.x (Mavericks). 
 - **sans-serif** (yes, without capitalization)—This is at the end as a fallback in case, somehow, none of the others will float your device’s boat, although that’s _extremely_ unlikely.
-
-In case you aren’t familiar with all of these, here you go (all except the generic sans-serif fallback, since it _is_ so generic and also, obviously, would vary by system and/or device):
-
-<table class="noborders">
-<thead><tr><td class="td30">Typeface name</td><td class="td70">Sample image</td></tr></thead>
-<tr><td class="td30">San Francisco</td><td class="td70"><img data-src="/images/Sys_font_stack_San_Francisco-684.png" class="lazy" loading="lazy" alt="San Francisco typeface" /></td></tr>
-<tr><td class="td30">Segoe UI</td><td class="td70"><img data-src="/images/Sys_font_stack_Segoe_UI-684.png" class="lazy" loading="lazy" alt="Segoe UI typeface" /></td></tr>
-<tr><td class="td30">Tahoma</td><td class="td70"><img data-src="/images/Sys_font_stack_Tahoma-684.png" class="lazy" loading="lazy" alt="Tahoma typeface" /></td></tr>
-<tr><td class="td30">Roboto</td><td class="td70"><img data-src="/images/Sys_font_stack_Roboto_from_GF-684.png" class="lazy" loading="lazy" alt="Roboto typeface" /></td></tr>
-<tr><td class="td30">Oxygen</td><td class="td70"><img data-src="/images/Sys_font_stack_Oxygen_from_GF-684.png" class="lazy" loading="lazy" alt="Oxygen typeface" /></td></tr>
-<tr><td class="td30">Ubuntu</td><td class="td70"><img data-src="/images/Sys_font_stack_Ubuntu_from_GF-684.png" class="lazy" loading="lazy" alt="Ubuntu typeface" /></td></tr>
-<tr><td class="td30">Cantarell</td><td class="td70"><img data-src="/images/Sys_font_stack_Cantarell_from_GF-684.png" class="lazy" loading="lazy" alt="Cantarell typeface" /></td></tr>
-<tr><td class="td30">Fira Sans</td><td class="td70"><img data-src="/images/Sys_font_stack_Fira_Sans_from_GF-684.png" class="lazy" loading="lazy" alt="Fira Sans typeface" /></td></tr>
-<tr><td class="td30">Droid Sans</td><td class="td70"><img data-src="/images/Sys_font_stack_Droid_Sans_from_GF-684.png" class="lazy" loading="lazy" alt="Droid Sans typeface" /></td></tr>
-<tr><td class="td30">Helvetica Neue</td><td class="td70"><img data-src="/images/Sys_font_stack_Helvetica_Neue-680.png" class="lazy" loading="lazy" alt="Helvetica Neue typeface" /></td></tr>
-<tr><td class="td30">Lucida Grande</td><td class="ctr td70"><img data-src="/images/Sys_font_stack_Lucida_Grande-680.png" class="lazy" loading="lazy" alt="Lucida Grande typeface" /></td></tr>
-</table>
 
 The easiest way[^3] to implement this “system fonts stack” throughout your site is assigning the following CSS to the `<html>` tag (or `<body>` tag, if you prefer):
 

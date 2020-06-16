@@ -109,6 +109,10 @@ module.exports = function(eleventyConfig) {
       <meta name="twitter:widgets:theme" content="dark">
       <meta name="twitter:widgets:link-color" content="#00bbff">
     </noscript>
+
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" site="CSERHYIA" defer></script>
+    <!-- / Fathom -->
   </head>
     `
 

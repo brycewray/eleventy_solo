@@ -111,7 +111,7 @@ module.exports = function(eleventyConfig) {
     </noscript>
 
     <!-- Fathom - beautiful, simple website analytics -->
-    <script src="https://boa.brycewray.com/script.js" site="CSERHYIA" defer></script>
+    <script src="https://boa.brycewray.com/script.js" site="CSERHYIA" excluded-domains="localhost" defer></script>
     <!-- / Fathom -->
   </head>
     `

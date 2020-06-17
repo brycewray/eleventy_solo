@@ -1,4 +1,17 @@
 const jsonInfo = require(`../../../../package.json`)
+/* ===
+If you fork this repo, use the following constant to fill in your own analytics code.
+Note that the constant appears in this repo at the **end** of the <head>, so you may need 
+to move it to conform to your analytics provider's instructions.
+=== */
+const analyticsCode = `
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://boa.brycewray.com/script.js" site="CSERHYIA" excluded-domains="localhost" defer></script>
+    <!-- / Fathom -->
+`
+/* ===
+End of analytics code constant
+=== */
 var eleventyVersion = jsonInfo.devDependencies['@11ty/eleventy']
 if (eleventyVersion.charAt(0) == "^") {
   eleventyVersion = eleventyVersion.substring(1)
@@ -110,9 +123,7 @@ module.exports = function(eleventyConfig) {
       <meta name="twitter:widgets:link-color" content="#00bbff">
     </noscript>
 
-    <!-- Fathom - beautiful, simple website analytics -->
-    <script src="https://boa.brycewray.com/script.js" site="CSERHYIA" excluded-domains="localhost" defer></script>
-    <!-- / Fathom -->
+    ${analyticsCode}
   </head>
     `
 

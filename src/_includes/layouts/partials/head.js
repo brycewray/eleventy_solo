@@ -1,4 +1,5 @@
 const jsonInfo = require(`../../../../package.json`)
+const analyticsCode = require('../../../assets/utils/analytics.js')
 var eleventyVersion = jsonInfo.devDependencies['@11ty/eleventy']
 if (eleventyVersion.charAt(0) == "^") {
   eleventyVersion = eleventyVersion.substring(1)
@@ -111,15 +112,7 @@ module.exports = function(eleventyConfig) {
       <meta name="twitter:widgets:link-color" content="#00bbff">
     </noscript>
 
-    ${
-      data.metadata.domain == "brycewray.com"
-      ? `
-      <!-- Fathom - beautiful, simple website analytics -->
-      <script src="https://boa.brycewray.com/script.js" site="CSERHYIA" excluded-domains="localhost" defer></script>
-      <!-- / Fathom -->
-      `
-      : ``
-    }
+    ${analyticsCode}
   </head>
     `
 

@@ -1,9 +1,4 @@
-const jsonInfo = require(`../../../../package.json`)
 const analyticsCode = require('../../../assets/utils/analytics.js')
-var eleventyVersion = jsonInfo.devDependencies['@11ty/eleventy']
-if (eleventyVersion.charAt(0) == "^") {
-  eleventyVersion = eleventyVersion.substring(1)
-}
 
 let bodyName = 'Public+Sans'
 let codeName = 'Roboto+Mono'
@@ -15,7 +10,7 @@ module.exports = function(eleventyConfig) {
     return `
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=10"><!-- due to IE 11 issue with TWCSS -->
-    <meta name="generator" content="Eleventy - 11ty - https://11ty.dev - Version ${eleventyVersion}" />        
+    <meta name="generator" content="Eleventy - 11ty - https://11ty.dev - v${require(`@11ty/eleventy/package.json`).version}" />        
     ${
       (data.title == "Home page")
       ? `

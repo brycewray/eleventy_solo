@@ -6,16 +6,14 @@ subtitle: “Shoebox” apps (including Ulysses) and iCloud sync
 description: 'A revisiting of the whole Ulysses matter—after I learned some more about “shoebox” apps in general.'
 author: Bryce Wray
 date: 2019-05-04T06:00:00-05:00
-lastmod: 2020-04-22T19:30:00-05:00
+lastmod: 2020-06-20T09:45:00-05:00
 discussionId: "2019-05-boxed-in"
 featured_image: kelly-sikkema-_JBGjZFFYRk-unsplash_1280x853.jpg
 featured_image_alt: View downward into brown cardboard box with all flaps open
 featured_image_caption: "Image: Kelly Sikkema; Unsplash" # quotation marks to allow colon
 ---
 
-Constant reexamination is part of my daily life. It's an inescapable part of my Day Job, to be sure. It's part of why it takes me so long to write some things---the Work-in-Progress (WIP) being the most damnable example thereof.[^RIPWIP]
-
-[^RIPWIP]: [How sadly true that turned out to be](/posts/2020/04/murdered-darlings).
+Constant reexamination is part of my daily life. It's an inescapable part of my Day Job, to be sure. It's part of why it takes me so long to write some things---the Work-in-Progress (WIP) being the most damnable example thereof.
 
 Yeah, I know: "Write it all the way through, first, then edit later." Still, you may as well tell me not to cross my “t”s and dot my “i”s in mid-word, and I've been doing that since I was a kid. (Don't get me started on why.)
 

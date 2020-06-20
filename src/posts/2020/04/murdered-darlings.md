@@ -6,14 +6,14 @@ subtitle: "R.I.P., WIP"
 description: "A farewell to this site’s original purpose."
 author: Bryce Wray
 date: 2020-04-22T19:30:00-05:00
-lastmod: 2020-06-07T16:15:00-05:00
+lastmod: 2020-06-20T09:45:00-05:00
 discussionId: "2020-04-murdered-darlings"
 featured_image: candles-memorial-2905395_1280x853.jpg
 featured_image_alt: "Candles lit in memoriam of the dead"
 featured_image_caption: "Image: Henryk Niestrój; Pixabay"
 ---
 
-**Update, 2020-06-07**: As is my wont, [I later had second thoughts about this](/posts/2020/06/why-kept-ulysses), but I'll leave this here for the sake of [transparency](/posts/2019/10/otoh); besides, the change of mind isn't yet final.{.yellowBox}
+**Update, 2020-06-20**: As is my wont, [I later had second thoughts about this](/posts/2020/06/why-kept-ulysses), but I'll leave this here for the sake of [transparency](/posts/2019/10/otoh).{.yellowBox}
 
 Friends, we are gathered here on a solemn occasion. But, before I get to that, allow me to flesh out the title's background.
 
@@ -83,7 +83,7 @@ Quite the contrary: I throughly enjoy writing the content on this site and, as r
 
 Still, I'm glad for the learning experiences I had while trying to write the WIP. That's true for both the previously mentioned research I did and, especially, the writing apps I used.[^Ulysses]
 
-[^Ulysses]: However, this does mean an end to my use of [Ulysses](https://ulysses.app), my only writing app with a subscription---which runs out next month. So long, Big&nbsp;U. It was fun while it lasted.
+[^Ulysses]: However, this does mean an end to my use of [Ulysses](https://ulysses.app), my only writing app with a subscription---which runs out next month. So long, Big&nbsp;U. It was fun while it lasted. ***Update, 2020-06-20:*** *As noted at the top of this post, I [later changed my mind](/posts/2020/06/why-kept-ulysses) and renewed the sub for another year.*
 
 I'll always retain a warm spot in my consciousness for my characters, especially the two leads. Somewhere in the recesses of my brain, they've ended up together happily ever after, all battles fought, all enemies defeated, all futures secured.
 

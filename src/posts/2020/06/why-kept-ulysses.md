@@ -6,7 +6,7 @@ subtitle: "Wanting to write more than nerdy stuff"
 description: "Renewing the subscription for another year."
 author: Bryce Wray
 date: 2020-06-07T16:15:00-05:00
-#lastmod: TBD
+lastmod: 2020-06-20T09:45:00-05:00
 discussionId: "2020-06-why-kept-ulysses"
 featured_image: Ulysses-logo-over-Mac-keyboard_1280x720.jpg
 featured_image_alt: "Ulysses app’s butterfly-and-pen logo over a keyboard"
@@ -39,7 +39,7 @@ Well, yes and no.
 
 Yes, I decided to work on it again. (It's amazing how many fresh ideas come to your head when you drop a WIP for a while and then come back to it later.) No, I haven't finally, utterly decided that I'll go through with it.
 
-However, because I *did* let the Ulysses sub lapse a few weeks back, my reactivating the sub yesterday restored the two-week trial everyone gets on first installation. That was an unexpected benefit: it gives me that amount of time to see if I can get the WIP back on track. If, within the two weeks, I figure I was right, after all, to stop working on the WIP, I simply cancel the sub again before the trial ends.
+However, because I *did* let the Ulysses sub lapse a few weeks back, my reactivating the sub yesterday restored the two-week trial everyone gets on first installation. That was an unexpected benefit: it gives me that amount of time to see if I can get the WIP back on track. If, within the two weeks, I figure I was right, after all, to stop working on the WIP, I simply cancel the sub again before the trial ends. *(**2020-06-20**: See the update at the end.)*
 
 But, you may still wonder, why bother to keep Ulysses active even if I *know* I'll go ahead with the WIP? Haven't I made it clear in multiple past posts that I have great affinity also for [Scrivener](https://literatureandlatte.com/scrivener/overview) and [iA Writer](https://ia.net/writer), both of which I already own outright? (The subscription-haters among you may be yelling, "Hell, yeah," at this point.)
 
@@ -90,3 +90,5 @@ There's one additional thing that drew me back to Ulysses, and it has nothing to
 You see, Ulysses 20 is coming soon, and hints from the Ulysses team in Leipzig indicate [it'll be really cool](https://blog.ulysses.app/beta-ulysses-20/), offering certain features the Ulysses community has wanted for a very long time.
 
 With any luck at all, I---and a very-much-still-alive WIP---will be waiting eagerly for it when it arrives.
+
+**Update, 2020-06-20**: I decided to stay with the annual renewal past that additional two weeks, having made enough renewed progress on the WIP that I considered another year's worth of Ulysses a worthy investment.{.yellowBox}

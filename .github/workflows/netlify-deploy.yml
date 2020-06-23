@@ -30,7 +30,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: auth and envir
+      - name: Build content
+        run: npm run build
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
+
+      - name: Deploy site
         uses: netlify/actions/cli@master
         env:
           CI: true
@@ -40,12 +47,5 @@ jobs:
         with:
           args: deploy --dir=_site --prod
           secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID", "WEBMENTION_IO_TOKEN"]'
-
-      - name: Build and deploy
-        run: npm run build && npm run deployNetlify
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
           
       

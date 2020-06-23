@@ -7,7 +7,7 @@ module.exports = function (data) {
     ${this.siteHeader(data)}
     ${data.content}
     ${this.siteFooter(data)}
-    <script src="/assets/js/flying-pages.min.js" defer></script>
+    <!-- <script src="/assets/js/flying-pages.min.js" defer></script> -->
     <script src="/assets/js/twitterMeta.min.js" defer></script>
     <script src="/assets/js/lazyload.min.js"></script>
     <script>

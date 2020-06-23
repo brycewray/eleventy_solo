@@ -30,9 +30,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build and deploy
-        run: npm run build && npm run deployNetlify
-
       - name: auth and envir
         uses: netlify/actions/cli@master
         env:
@@ -43,3 +40,6 @@ jobs:
         with:
           args: deploy --dir=_site --prod
           secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID", "WEBMENTION_IO_TOKEN"]'
+
+      - name: Build and deploy
+        run: npm run build && npm run deployNetlify

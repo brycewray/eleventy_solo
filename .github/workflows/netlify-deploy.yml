@@ -1,4 +1,4 @@
-name: CI
+name: CI-Netlify
 
 on:
   push:
@@ -25,14 +25,18 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v1
         with: 
-          node-version: 12.16
+          node-version: '12.x'
 
       - name: Install dependencies
         run: npm install
 
       - name: Build & deploy
-        run: npm run build && npm run deployFirebase
+        run: npm run build && npm run deployNetlify
         env:
           CI: true
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
+        with:
+          args: deploy --dir=_site --prod
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID", "WEBMENTION_IO_TOKEN"]'

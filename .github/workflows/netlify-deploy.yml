@@ -31,8 +31,10 @@ jobs:
         run: npm install
 
       - name: Build and deploy
-        uses: netlify/actions/cli@master
         run: npm run build && npm run deployNetlify
+
+      - name: auth and envir
+        uses: netlify/actions/cli@master
         env:
           CI: true
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}

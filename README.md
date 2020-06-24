@@ -1,5 +1,7 @@
 # Repo for brycewray.com
 
+![CI-Netlify](https://github.com/brycewray/eleventy_solo/workflows/CI-Netlify/badge.svg)
+
 This is the repository from which the [Eleventy](https://11ty.dev)-generated version of [brycewray.com](https://brycewray.com) is built. Unlike its most recent predecessor (an un-updated version of which [remains available](https://github.com/brycewray/eleventy_bundler) for the curious), it is all-Eleventy with no added build tools, most notably [webpack](https://webpack.js.org). While the webpack experience was interesting, I decided this public repo might be of more use without it since, let&rsquo;s face it, dealing with webpack configuration is not everybody&rsquo;s cup of tea.
 
 **Note**: Be sure to change the `_data/metadata.json` file to reflect **your** information rather than mine, especially if you want to use `src/utils/analytics.js` with `src/_includes/layouts/partials/head.js` to inject your own Web analytics provider's code.

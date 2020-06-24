@@ -45,7 +45,7 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
           WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
         with:
-          netlify-config-path: ./netlify.toml
+          netlify-config-path: "./netlify.toml"
           args: deploy --dir=_site --prod
           secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID", "WEBMENTION_IO_TOKEN"]'
           

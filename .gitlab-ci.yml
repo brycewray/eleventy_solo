@@ -1,19 +1,20 @@
 stages:
   - deploy
 
+image: node:latest
+
 variables:
   - WEBMENTION_IO_TOKEN: $WEBMENTION_IO_TOKEN
 
 netlify:
   stage: deploy
-  image: node:latest
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
   environment:
     name: production
     url: https://brycewray.com
   only:
-    - schedules
+    - master
   script:
     - "rm -rf _site"
     - npm install

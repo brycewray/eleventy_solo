@@ -1,8 +1,12 @@
 stages:
   - deploy
 
-deploy:
+variables:
+  - WEBMENTION_IO_TOKEN: $WEBMENTION_IO_TOKEN
+
+netlify:
   stage: deploy
+  image: node:latest
   rules:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
   environment:
@@ -13,8 +17,9 @@ deploy:
   script:
     - "rm -rf _site"
     - npm install
+    - npm i -g netlify-cli
     - npm run build
-    - npx netlify-cli deploy --site $NETLIFY_SITE_ID -p _site $NETLIFY_AUTH_TOKEN
+    - netlify deploy -s $NETLIFY_SITE_ID -p _site -t $NETLIFY_AUTH_TOKEN -e production
   artifacts:
     paths:
       - public

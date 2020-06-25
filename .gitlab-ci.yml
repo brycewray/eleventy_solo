@@ -4,8 +4,8 @@ stages:
 image: node:latest
 
 variables:
-  - WEBMENTION_IO_TOKEN: $WEBMENTION_IO_TOKEN
-
+  WEBMENTION_IO_TOKEN: $WEBMENTION_IO_TOKEN
+  
 netlify:
   stage: deploy
   rules:
@@ -13,8 +13,6 @@ netlify:
   environment:
     name: production
     url: https://brycewray.com
-  only:
-    - schedules
   script:
     - "rm -rf _site"
     - npm install

@@ -14,7 +14,7 @@ netlify:
     name: production
     url: https://brycewray.com
   only:
-    - master
+    - schedules
   script:
     - "rm -rf _site"
     - npm install

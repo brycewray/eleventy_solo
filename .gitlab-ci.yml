@@ -18,7 +18,7 @@ netlify:
     - npm install
     - npm i -g netlify-cli
     - npm run build
-    - netlify deploy -s $NETLIFY_SITE_ID -p _site -t $NETLIFY_AUTH_TOKEN -e production
+    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
   artifacts:
     paths:
       - public

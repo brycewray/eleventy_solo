@@ -41,17 +41,11 @@ jobs:
       - name: Deploy site
         uses: xmflsct/action-vercel-deployment@v0.5.3
         with:
+          vercelToken: ${{ secrets.VERCEL_TOKEN }}
+          vercelOrgId: ${{ secrets.VERCEL_ORG_ID }}
+          vercelProjectId: ${{ secrets.VERCEL_PROJECT_ID }}
+          githubToken: ${{ secrets.PAT }}
           vercel-args: '--prod'
           sourceDirectory: 'src'
-          vercelToken: ${{ secrets.VERCEL_TOKEN }}
-          vercelOrgId: ${{ secrets.VERCEL_ORG_ID }}
-          vercelProjectId: ${{ secrets.VERCEL_PROJECT_ID }}
-          githubToken: ${{ secrets.PAT }}
-          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
         env:
-          CI: true
-          vercelToken: ${{ secrets.VERCEL_TOKEN }}
-          vercelOrgId: ${{ secrets.VERCEL_ORG_ID }}
-          vercelProjectId: ${{ secrets.VERCEL_PROJECT_ID }}
-          githubToken: ${{ secrets.PAT }}
           WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}

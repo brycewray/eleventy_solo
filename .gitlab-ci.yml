@@ -18,8 +18,10 @@ netlify:
     - "rm -rf _site"
     - npm install
     - npm i -g netlify-cli
+    - npm i -g vercel
     - npm run build
     - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+    - vercel --env [VERCEL_ORG_ID=$VERCEL_ORG_ID VERCEL_PROJECT_ID=$VERCEL_PROJECT_ID] --token $VERCEL_TOKEN --prod
 #  artifacts:
 #    paths:
 #      - public

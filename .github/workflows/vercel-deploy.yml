@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - master
-  schedule:
-    - cron: '0 5 1/1 * *'
+  # schedule: # commenting out because action-vercel-deployment doesn't yet support scheduling
+  #  - cron: '0 5 1/1 * *'
 
 jobs:
   build:

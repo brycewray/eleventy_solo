@@ -44,7 +44,7 @@ jobs:
           vercelToken: ${{ secrets.VERCEL_TOKEN }}
           vercelOrgId: ${{ secrets.VERCEL_ORG_ID }}
           vercelProjectId: ${{ secrets.VERCEL_PROJECT_ID }}
-          githubToken: ${{ secrets.PAT }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
           vercel-args: '--prod'
           sourceDirectory: 'src'
         env:

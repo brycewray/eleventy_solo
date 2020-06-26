@@ -39,7 +39,7 @@ jobs:
           WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
 
       - name: Deploy site
-        uses: actions/vercel-deployment@0.5.1
+        uses: xmflsct/action-vercel-deployment@v0.5.3
         env:
           CI: true
           vercelToken: ${{ secrets.VERCEL_TOKEN }}

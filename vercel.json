@@ -1,7 +1,5 @@
 {
   "name": "vercel-action",
-  "version": 2,
-  "scope": "amond",
   "public": false,
   "github": {
     "enabled": false

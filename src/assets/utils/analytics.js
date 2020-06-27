@@ -1,5 +1,3 @@
-const { data } = require("autoprefixer")
-
 const metadata = require('../../../_data/metadata.json')
 
 var analyticsCode = ``

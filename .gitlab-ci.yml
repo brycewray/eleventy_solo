@@ -17,7 +17,7 @@ deploySite:
   script:
     - "rm -rf _site"
     - npm install
-    - npm i -g netlify-cli
+    # - npm i -g netlify-cli
     - npm i -g vercel
     - npm run build
     # - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod

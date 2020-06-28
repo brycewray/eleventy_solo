@@ -15,7 +15,7 @@ featured_image_caption: "Image: SparrowsHome; Pixabay"
 
 Netlify's [free "Starter" site-hosting tier](https://www.netlify.com/pricing/) is an amazing way to have a personal or small-business Web site, especially one built by a [static site generator](https://staticgen.com) (SSG) like the [Eleventy](https://11ty.dev) SSG this site uses.
 
-As long as your site's monthly in/out bandwidth stays under 100 GB, Netlify gives you all these advantages even on the free tier:
+As long as your site's monthly in/out bandwidth stays under 100&nbsp;GB, Netlify gives you all these advantages even on the free tier:
 
 - **Easy and quick deployment from your online repository**---You can connect your Netlify-based site to a repo on [Bitbucket](https://bitbucket.org), [GitHub](https://github.com), or [GitLab](https://gitlab.com); then, every time you push to its default branch, *bang*, Netlify auto-deploys. So, if you keep your site project synchronized among your devices ([as I do](/posts/2019/07/roger-copy)), you can easily make changes and push them from just about anywhere.
 - **CDN-powered speed and efficiency**---Netlify puts your site's generated files on a [content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network) (CDN) through its partnership with multiple CDN providers, mainly [Amazon CloudFront](https://aws.amazon.com/cloudfront/). This allows your visitors, wherever they are, to access your site much more quickly than if its content lived on just one location that could be halfway around the world from them. This is a huge benefit under any circumstances, but particularly if you use images. And, speaking of assets like images&nbsp;.&nbsp;.&nbsp;.

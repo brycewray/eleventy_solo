@@ -123,6 +123,8 @@ Yes, I know: *whew*. But it's all necessary. Quoting Mr. Pukaj once more:
 
 On my repo is a [GitHub Actions file for Netlify deploys](https://github.com/brycewray/eleventy_solo/blob/master/.github/workflows/netlify-deploy.yml). Such a file goes in a `/.github/workflows/` folder at the top level of your site repo. This file **does** allow for webmentions, but feel free to take out the relevant parts if you don't use webmentions. (I'm not including it here because my particular setup doesn't correctly translate some of the characters, but that link will show it to you just fine.)
 
+**Note**: If you use this approach, you need to go to your site's Netlify settings, click **Deploys**, and then click **Stop auto publishing**. Otherwise, the auto-builds will continue and, thus, keep adding to your used minutes.{.yellowBox}
+
 Here's how it works.
 
 - The `on` section tells it to run whenever one of two things happens:

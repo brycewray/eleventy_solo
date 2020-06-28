@@ -121,60 +121,7 @@ Yes, I know: *whew*. But it's all necessary. Quoting Mr. Pukaj once more:
 
 &nbsp;.&nbsp;.&nbsp;. which brings us to our GitHub Action for the build/deploy operation.
 
-Here's the content of a GitHub Actions file for Netlify deploys. You'd put it in a `/.github/workflows/` folder at the top level of your site repo. This **does** allow for webmentions, but feel free to take out the relevant parts if you don't use webmentions.
-
-```yml
-name: CI-Netlify
-
-on:
-  push:
-    branches:
-      - master
-  schedule:
-    - cron: '0 5 1/1 * *'
-
-jobs:
-  build:
-    if: "!contains(github.event.head_commit.message, '[skip-ci]')"
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout branch
-        uses: actions/checkout@v1
-
-      - name: Retrieve npm cache (if any)
-        uses: actions/cache@v1
-        with:
-          path: ~/.npm
-          key: npm-packages
-
-      - name: Use Node.js
-        uses: actions/setup-node@v1
-        with: 
-          node-version: '12.x'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build content
-        run: npm run build
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
-
-      - name: Deploy site
-        uses: netlify/actions/cli@master
-        env:
-          CI: true
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
-        with:
-          netlify-config-path: "./netlify.toml"
-          args: deploy --dir=_site --prod
-          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID", "WEBMENTION_IO_TOKEN"]'
-```
+On my repo is a [GitHub Actions file for Netlify deploys](https://github.com/brycewray/eleventy_solo/blob/master/.github/workflows/netlify-deploy.yml). Such a file goes in a `/.github/workflows/` folder at the top level of your site repo. This file **does** allow for webmentions, but feel free to take out the relevant parts if you don't use webmentions. (I'm not including it here because my particular setup doesn't correctly translate some of the characters, but that link will show it to you just fine.)
 
 Here's how it works.
 
@@ -200,24 +147,7 @@ Finally: you may wonder, hey, what if the Netlify folks learn you're doing this?
 
 I told you GitHub haters I'd have an alternative, so here it is. Fact is, GitLab was doing CI/CD years before GitHub Actions existed, so there's a GitLab way to do this, too. Compared to GitHub's free-tier build limits (unlimited monthly minutes for a public repo and 2,000 monthly minutes for a private repo, as noted earlier), GitLab provides [2,000 "pipeline" minutes per month](https://about.gitlab.com/releases/2020/03/18/ci-minutes-for-free-users/).
 
-Your `.gitlab-ci.yml` file should be in the top level of your repo, and the example below will do everything the GitHub Action above will do, except that it does it on GitLab's servers rather than GitHub's. (You obviously should replace *my* `url` with yours!)
-
-```yml
-deploySite:
-  stage: deploy
-  rules:
-    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
-    - if: '$CI_PIPELINE_SOURCE == "schedule"'
-  environment:
-    name: production
-    url: https://brycewray.com
-  script:
-    - "rm -rf _site"
-    - npm install
-    - npm i -g netlify-cli
-    - npm run build
-    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
-```
+Your `.gitlab-ci.yml` file---[here's mine](https://gitlab.com/brycewray/eleventy_solo/-/blob/master/.gitlab-ci.yml)---should be in the top level of your repo. Mine does everything the GitHub Action mentioned above will do, except that it does it on GitLab's servers rather than GitHub's. (You obviously should replace *my* `url` with yours!)
 
 Of course, just as with the "Secrets" in GitHub, you'll have to enter the necessary environment variables in GitLab. The procedure starts in your GitLab repo at **Settings** > **CI/CD** > **Variables**. At least you **can** view and edit these again later, but it's probably still a good idea to keep them in a secure text file just for safety's sake. *(And, no, I **don't** know why this script works even without a reference to the webmentions token, but it does. "[Don't worry, be happy](https://en.wikipedia.org/wiki/Don%27t_Worry,_Be_Happy).")*
 

@@ -2,7 +2,7 @@
   "name": "vercel-action",
   "public": false,
   "github": {
-    "enabled": false
+    "enabled": true
   },
   "routes": [
     { "src": "/(.*)", "dest": "_site/$1" }

@@ -149,7 +149,7 @@ I told you GitHub haters I'd have an alternative, so here it is. Fact is, GitLab
 
 Your `.gitlab-ci.yml` file---[here's mine](https://gitlab.com/brycewray/eleventy_solo/-/blob/master/.gitlab-ci.yml)---should be in the top level of your repo. Mine does everything the GitHub Action mentioned above will do, except that it does it on GitLab's servers rather than GitHub's. (You obviously should replace *my* `url` with yours!)
 
-Of course, just as with the "Secrets" in GitHub, you'll have to enter the necessary environment variables in GitLab. The procedure starts in your GitLab repo at **Settings** > **CI/CD** > **Variables**. At least you **can** view and edit these again later, but it's probably still a good idea to keep them in a secure text file just for safety's sake. *(And, no, I **don't** know why this script works even without a reference to the webmentions token, but it does. "[Don't worry, be happy](https://en.wikipedia.org/wiki/Don%27t_Worry,_Be_Happy).")*
+Of course, just as with the "Secrets" in GitHub, you'll have to enter the necessary environment variables in GitLab. The procedure starts in your GitLab repo at **Settings** > **CI/CD** > **Variables**. At least you **can** view and edit these again later, but it's probably still a good idea to keep them in a secure text file just for safety's sake.
 
 There's no cron job set up here, as in the GitHub Actions file; that's because, in GitLab, you set up a cron job in your repo: **CI/CD** > **Schedules**. Note that it's **not** in **Settings** > **CI/CD**---which is different, for reasons that escape me.
 

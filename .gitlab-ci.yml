@@ -10,7 +10,11 @@ deploySite:
   stage: deploy
   rules:
     # - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
-    # Disabling on my site because I'm already using GitHub to do this.
+    # Disabling the above on my site because I'm already using GitHub to do this;
+    # but, if enabled, it'll deploy on any push to master. To use this, you should
+    # turn off the auto-deploy GitHub-to-Netlify setup --- thus shutting off the 
+    # Netlify-side builds, thus not using your monthly build minutes quota;
+    # see https://brycewray.com/posts/2020/06/o-say-can-you-ci-cd/
     - if: '$CI_PIPELINE_SOURCE == "schedule"'
   environment:
     name: production

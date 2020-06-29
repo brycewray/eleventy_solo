@@ -1,27 +1,31 @@
-stages:
-  - deploy
-
-image: node:latest
-
-variables:
-  WEBMENTION_IO_TOKEN: $WEBMENTION_IO_TOKEN
-  
-deploySite:
-  stage: deploy
-  rules:
-    # - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
-    # Disabling the above on my site because I'm already using GitHub to do this;
-    # but, if enabled, it'll deploy on any push to master. To use this, you should
-    # turn off the auto-deploy GitHub-to-Netlify setup --- thus shutting off the 
-    # Netlify-side builds, thus not using your monthly build minutes quota;
-    # see https://brycewray.com/posts/2020/06/o-say-can-you-ci-cd/
-    - if: '$CI_PIPELINE_SOURCE == "schedule"'
-  environment:
-    name: production
-    url: https://brycewray.com
-  script:
-    - "rm -rf _site"
-    - npm install
-    - npm i -g netlify-cli
-    - npm run build
-    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+## Note: Am commenting out everything here so that 
+## it **won't** deploy to Netlify, because I changed hosts today.
+## However, you can **un**-comment-out everything and 
+## use it as described in 
+## https://brycewray.com/posts/2020/06/o-say-can-you-ci-cd/ ...
+## ...and a future post will talk about the host change. -- B.W., 2020-06-29
+#
+# stages:
+#  - deploy
+#
+# image: node:latest
+#
+#variables:
+#  WEBMENTION_IO_TOKEN: $WEBMENTION_IO_TOKEN
+#  
+#deploySite:
+#  stage: deploy
+#  rules:
+#    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+#    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+#  environment:
+#    name: production
+#    url: https://brycewray.com
+#    # Of course, use ypur **own** URL above. :-)
+#
+#  script:
+#    - "rm -rf _site"
+#    - npm install
+#    - npm i -g netlify-cli
+#    - npm run build
+#    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod

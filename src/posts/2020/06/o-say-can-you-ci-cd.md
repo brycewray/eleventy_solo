@@ -6,7 +6,7 @@ subtitle: "A way around the Netlify build limit"
 description: "How you can stay within the free tier."
 author: Bryce Wray
 date: 2020-06-28T13:45:00-05:00
-#lastmod: TBD
+lastmod: 2020-06-29T20:00:00-05:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
 featured_image: dominoes-4020617_1280x702.jpg
 featured_image_alt: "A row of dominoes with a hand about to tip them over"
@@ -149,7 +149,39 @@ Finally: you may wonder, hey, what if the Netlify folks learn you're doing this?
 
 I told you GitHub haters I'd have an alternative, so here it is. Fact is, GitLab was doing CI/CD years before GitHub Actions existed, so there's a GitLab way to do this, too. Compared to GitHub's free-tier build limits (unlimited monthly minutes for a public repo and 2,000 monthly minutes for a private repo, as noted earlier), GitLab provides [2,000 "pipeline" minutes per month](https://about.gitlab.com/releases/2020/03/18/ci-minutes-for-free-users/).
 
-Your `.gitlab-ci.yml` file---[here's mine](https://gitlab.com/brycewray/eleventy_solo/-/blob/master/.gitlab-ci.yml)---should be in the top level of your repo. Mine does everything the GitHub Action mentioned above will do, except that it does it on GitLab's servers rather than GitHub's. (You obviously should replace *my* `url` with yours!)
+Your `.gitlab-ci.yml` file should be in the top level of your repo. Here's a sample file (I can reproduce **this** one here, because my [.11ty.js-templated](/posts/2020/04/full-11ty-js-monty) Eleventy setup has no problem with any special characters in it):
+
+```yaml
+stages:
+  - deploy
+
+image: node:latest
+
+variables:
+  WEBMENTION_IO_TOKEN: $WEBMENTION_IO_TOKEN
+  
+deploySite:
+  stage: deploy
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+    # To use the above, you should turn off the auto-deploy
+    # GitHub-to-Netlify setup --- thus shutting off the 
+    # Netlify-side builds, thus not using your monthly build 
+    # minutes quota.
+    - if: '$CI_PIPELINE_SOURCE == "schedule"'
+  environment:
+    name: production
+    url: https://brycewray.com
+    # Obviously, use **your** URL! :-)
+  script:
+    - "rm -rf _site"
+    - npm install
+    - npm i -g netlify-cli
+    - npm run build
+    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+```
+
+That does everything the GitHub Action mentioned above will do, except that it does it on GitLab's servers rather than GitHub's. (As I note above, you should replace *my* `url` with yours!)
 
 Of course, just as with the "Secrets" in GitHub, you'll have to enter the necessary environment variables in GitLab. The procedure starts in your GitLab repo at **Settings** > **CI/CD** > **Variables**. At least you **can** view and edit these again later, but it's probably still a good idea to keep them in a secure text file just for safety's sake.
 

@@ -6,7 +6,7 @@ subtitle: "A way around the Netlify build limit"
 description: "How you can stay within the free tier."
 author: Bryce Wray
 date: 2020-06-28T13:45:00-05:00
-lastmod: 2020-06-29T20:00:00
+lastmod: 2020-06-30T07:00:00-05:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
 featured_image: dominoes-4020617_1280x702.jpg
 featured_image_alt: "A row of dominoes with a hand about to tip them over"
@@ -121,9 +121,64 @@ Yes, I know: *whew*. But it's all necessary. Quoting Mr. Pukaj once more:
 
 &nbsp;.&nbsp;.&nbsp;. which brings us to our GitHub Action for the build/deploy operation.
 
-On my repo is a [GitHub Actions file for Netlify deploys](https://github.com/brycewray/eleventy_solo/blob/master/.github/workflows/netlify-deploy.yml). Such a file goes in a `/.github/workflows/` folder at the top level of your site repo. This file **does** allow for webmentions, but feel free to take out the relevant parts if you don't use webmentions. (I'm not including it here because my particular setup doesn't correctly translate some of the characters, but that link will show it to you just fine.)
+Store the following---call it `netlify-deploy.yml`, if you wish---in a `/.github/workflows/` folder at the top level of your site repo. This file **does** allow for webmentions, but feel free to take out the relevant parts if you don't use webmentions.
 
-**Note**: If you use this approach, you need to make sure you don't have your repo linked in Netlify for continuous deployment (in your site settings, that's **Build &amp; deploy** > **Continuous deployment**). Otherwise, the auto-builds will continue and, thus, keep adding to your used minutes.{.yellowBox}
+{% raw %}
+```yaml
+name: CI-Netlify
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '0 5 1/1 * *'
+
+jobs:
+  build:
+    if: "!contains(github.event.head_commit.message, '[skip-ci]')"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v1
+
+      - name: Retrieve npm cache (if any)
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: npm-packages
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with: 
+          node-version: '12.x'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build content
+        run: npm run build
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
+
+      - name: Deploy site
+        uses: netlify/actions/cli@master
+        env:
+          CI: true
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
+        with:
+          netlify-config-path: "./netlify.toml"
+          args: deploy --dir=_site --prod
+          secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID", "WEBMENTION_IO_TOKEN"]'
+```
+{% endraw %}
+
+**Note**: If you use this approach, you need to make sure you **don't** have your repo linked in Netlify for continuous deployment (in your site settings, that's **Build &amp; deploy** > **Continuous deployment**). Otherwise, the auto-builds will continue and, thus, keep adding to your used minutes.{.yellowBox}
 
 Here's how it works.
 
@@ -149,7 +204,7 @@ Finally: you may wonder, hey, what if the Netlify folks learn you're doing this?
 
 I told you GitHub haters I'd have an alternative, so here it is. Fact is, GitLab was doing CI/CD years before GitHub Actions existed, so there's a GitLab way to do this, too. Compared to GitHub's free-tier build limits (unlimited monthly minutes for a public repo and 2,000 monthly minutes for a private repo, as noted earlier), GitLab provides [2,000 "pipeline" minutes per month](https://about.gitlab.com/releases/2020/03/18/ci-minutes-for-free-users/).
 
-Your `.gitlab-ci.yml` file should be in the top level of your repo. Here's a sample file (I can reproduce **this** one here, because my [.11ty.js-templated](/posts/2020/04/full-11ty-js-monty) Eleventy setup has no problem with any special characters in it):
+Your `.gitlab-ci.yml` file should be in the top level of your repo:
 
 ```yaml
 stages:

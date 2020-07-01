@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-03-21T09:45:00-05:00
 #lastmod: TBD
 discussionId: "2020-03-coherence-covid-19"
-featured_image: wash-hands-covid-19-4968117_1280x960.jpg
+featured_image: wash-hands-covid-19-4968117_4032x3024.jpg
 featured_image_alt: "Hand-washing"
 featured_image_caption: "Image: thisispatrice; Pixabay"
 ---

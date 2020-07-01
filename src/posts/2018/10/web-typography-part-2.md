@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
 lastmod: 2020-06-13T06:30:00-05:00
 discussionId: "2018-10-web-typography-part-2"
-featured_image: computer-1869236_1920x1440.jpg
+featured_image: computer-1869236_3264x2448.jpg
 featured_image_alt: Backlit computer keyboard
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

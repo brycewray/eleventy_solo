@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-04-28T16:50:00-05:00
 #lastmod: TBD
 discussionId: "2020-04-webmentions-three-ssgs-5"
-featured_image: letters-pen-ink-paper-2111533_1280x960.jpg
+featured_image: letters-pen-ink-paper-2111533_4608x3456.jpg
 featured_image_alt: "Writing concept - Fountain pen, white sheet of paper, open bottle of ink"
 featured_image_caption: "Image: Bruno/Germany; Pixabay"
 ---

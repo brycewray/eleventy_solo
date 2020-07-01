@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2018-10-17T14:40:00-05:00
 lastmod: 2019-04-11T20:33:00-05:00
 discussionId: "2018-10-web-typography-part-1"
-featured_image: letters-691842_1280x856.jpg
+featured_image: letters-691842_2504x1676.jpg
 featured_image_alt: Letters for old-style typesetting
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

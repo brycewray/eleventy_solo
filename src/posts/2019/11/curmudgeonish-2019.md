@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-11-03T19:01:00-06:00
 #lastmod: t/k
 discussionId: "2019-11-curmudgeonish-2019"
-featured_image: cat-4383134_1280x800.jpg
+featured_image: cat-4383134_3840x2400.jpg
 featured_image_alt: "Obviously angry cat"
 featured_image_caption: "Image: Mircea Lancu; Pixabay"
 ---

@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2018-10-11T15:30:00-05:00
 lastmod: 2020-01-31T10:30:00-06:00
 discussionId: "2018-10-client-too-smart"
-featured_image: letters-envelope-on-color-strips-4029672_1280x868.jpg
+featured_image: letters-envelope-on-color-strips-4029672_5376x3648.jpg
 featured_image_alt: "Communications concept: Envelope hanging over color strips"
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---

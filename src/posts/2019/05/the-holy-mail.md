@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2019-05-10T07:20:00-05:00
 #lastmod
 discussionId: "2019-05-the-holy-mail"
-featured_image: letterbox-1926493_1280x738.jpg
+featured_image: letterbox-1926493_4589x2648.jpg
 featured_image_alt: Old metal mailslot on bright red door
 featured_image_caption: "Image: Andrew Martin; Pixabay" # quotation marks to allow colon
 ---

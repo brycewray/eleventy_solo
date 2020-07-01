@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2018-10-06T08:30:00-05:00
 lastmod: 2019-07-14T11:40:00-05:00
 discussionId: "2018-10-version-control-follies"
-featured_image: javascript-programming-1873854_1280x703.jpg
+featured_image: javascript-programming-1873854_2605x1432.jpg
 featured_image_alt: "Computer code on a monitor"
 featured_image_caption: "Image: Pixabay"
 ---

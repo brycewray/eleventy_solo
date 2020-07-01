@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-02-01T09:50:00-06:00
 lastmod: 2020-05-20T20:50:00-05:00
 discussionId: "2020-02-so-much-for-heroes"
-featured_image: paint-splatter-2224800_1280x960.jpg
+featured_image: paint-splatter-2224800_3648x2736.jpg
 featured_image_alt: "Paint brushes and colorful, splattered paint"
 featured_image_caption: "Image: evondue; Pixabay"
 ---

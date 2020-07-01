@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-04-28T16:35:00-05:00
 #lastmod: TBD
 discussionId: "2020-04-webmentions-three-ssgs-2"
-featured_image: pavan-trikutam-71CjSSB83Wo-unsplash_1920x1280.jpg
+featured_image: pavan-trikutam-71CjSSB83Wo-unsplash_4401x2934.jpg
 featured_image_alt: "Communications concept - vintage pay telephones on a wall"
 featured_image_caption: "Image: Pavan Trikutam; Unsplash"
 ---

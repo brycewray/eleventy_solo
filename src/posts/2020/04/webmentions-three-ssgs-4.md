@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-04-28T16:45:00-05:00
 lastmod: 2020-05-16T15:22:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-4"
-featured_image: jackrabbit-673965_1280x853.jpg
+featured_image: jackrabbit-673965_3600x2400.jpg
 featured_image_alt: "Communications concept - A long-eared rabbit listening for something"
 featured_image_caption: "Image: “272447”; Pixabay"
 ---

@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-06-18T18:45:00-05:00
 #lastmod: TBD
 discussionId: "2020-06-fathom-analytics-count-on-it"
-featured_image: alexander-sinn-KgLtFCgfC28-unsplash_1920x1283_filtered.jpg
+featured_image: alexander-sinn-KgLtFCgfC28-unsplash_6024x4024.jpg
 featured_image_alt: "Concept image: Red heart shape superimposed over binary data on a computer display."
 featured_image_caption: "Image: Alexander Sinn; Unsplash. Filtered in Affinity Photo."
 ---

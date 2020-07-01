@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-06-28T13:45:00-05:00
 lastmod: 2020-06-30T07:00:00-05:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
-featured_image: dominoes-4020617_1280x702.jpg
+featured_image: dominoes-4020617_4870x2672.jpg
 featured_image_alt: "A row of dominoes with a hand about to tip them over"
 featured_image_caption: "Image: SparrowsHome; Pixabay"
 ---

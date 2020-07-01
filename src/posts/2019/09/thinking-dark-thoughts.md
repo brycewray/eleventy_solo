@@ -7,7 +7,7 @@ description: "As Dark Mode grows in use, it’s easy to make your site dark-frie
 date: 2019-09-29T10:08:00-05:00
 lastmod: 2019-11-09T10:00:00-06:00
 discussionId: "2019-09-thinking-dark-thoughts"
-featured_image: sunset-1090164_1280x960.jpg
+featured_image: sunset-1090164_4608x3456.jpg
 featured_image_alt: "Skies at sunset"
 featured_image_caption: "Image: Hans Braxmeier; Pixabay"
 ---

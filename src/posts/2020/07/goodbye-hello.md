@@ -108,7 +108,7 @@ One afternoon over two decades ago, I was standing at the wall of my cubicle at 
 
 Happy though I was about the pay raise and opportunity the new job was about to give me[^opportunity], as I took in that view I had an eerie feeling in the pit of my stomach combined with a sudden realization of "And now this will all go on without me."
 
-[^opportunity]: Indeed, I would end up staying there for nearly seventeen years and might still be there to this day, had a nasty budget cut not ended that part of my career.
+[^opportunity]: I would end up staying there for nearly seventeen years and might still be there to this day, had a nasty budget cut not ended that part of my career.
 
 So it was a strange, *déjà vu*-ish moment for me earlier this week when, after I confirmed the site was up and [running worldwide](https://ns1.com/resources/dns-propagation) on Vercel, I deleted my site's content from the Netlify instance where it had lived since September 19, 2018. My little site was only one of untold multitudes on Netlify, so I'm sure Netlify couldn't care less (especially since my site generated zero dollars for Netlify other than the nine-buck-a-month Netlify Analytics subscription), but---even as it felt good to arrive at Vercel, and I'm really liking it so far---the finality of it all gave me more pause than I'd expected. It was oddly reminiscent of when one moves out of one's parents' home for the last time, in a way I can't truly explain.
 

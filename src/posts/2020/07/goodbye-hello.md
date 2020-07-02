@@ -15,7 +15,7 @@ featured_image_caption: "Image: Gina Janosch; Pixabay"
 
 Welcome to a story about an ending---and a beginning.
 
-A few days ago, I [posted](/posts/2020/06/o-say-can-you-ci-cd) about how a user of [Netlify](https://netlify.com), on which I launched this site in September, 2018, could work around the the Netlify free tier's monthly limit of 300 build minutes. I also mentioned that one other option was simply to find a different host with fewer restrictions.
+A few days ago, I [posted](/posts/2020/06/o-say-can-you-ci-cd) about how a user of [Netlify](https://netlify.com), on which I launched this site in September, 2018, could work around the Netlify free tier's monthly limit of 300 build minutes. I also mentioned that one other option was simply to find a different host with fewer restrictions.
 
 However, I didn't *suggest* that course of action to you, mostly because changing hosts is a big deal. It can be fraught with potential perils at worst and headache-inducing inconveniences at best, especially if you've never done it before. And that doesn't even account for all the time and work you have to spend in figuring out which host to pick.
 

@@ -38,7 +38,7 @@ module.exports = function(eleventyConfig) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720-1280.jpg" />
+    <meta property="og:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_6260x4374-1200.jpg" />
     ${
       (data.title == "Home page")
       ? `
@@ -63,7 +63,7 @@ module.exports = function(eleventyConfig) {
     <meta name="twitter:site" content="@BryceWrayTX">
     <meta name="twitter:creator" content="@BryceWrayTX">
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720-1280.jpg" />
+    <meta name="twitter:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_6260x4374-1200.jpg" />
     ${
       data.title !== "Home page"
       ? `

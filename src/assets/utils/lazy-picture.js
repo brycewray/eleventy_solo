@@ -5,7 +5,8 @@ shortcode takes the following form...
 */
 
 const sizeOf = require('image-size')
-const respSizes = [250, 500, 750, 1000, 1250, 1500]
+const respSizes = [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
+// const respSizes = [250, 500, 750, 1000, 1250, 1500]
   // was 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500
 const srcDir = 'src/images'
 const fs = require('fs')
@@ -55,7 +56,9 @@ module.exports = (url, alt, tmpl) => {
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.webp ${size}w, `
-      sizeScr = size
+      width <= 1920
+      ? sizeScr = width
+      : sizeScr = size
     }
     return sizeScr
   })

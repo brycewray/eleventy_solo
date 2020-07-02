@@ -5,7 +5,8 @@ const sizeOf = require('image-size')
 const SITEDIR = '_site'
 const IMGLNDG = '_site/images'
 const directory = 'src/images'
-const respSizes = [250, 500, 750, 1000, 1250, 1500]
+const respSizes = [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
+// const respSizes = [250, 500, 750, 1000, 1250, 1500]
 //            was: 20, 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500
 var respSizesThis = Array.from(respSizes)
 var output // init only
@@ -51,13 +52,12 @@ files.forEach(file => {
     .catch(err => {
       console.log(err)
     })
-  /*
-  // now, check whether the respSizesThis array includes the image width; if not,
-  // add it so we create a processed, original-width file, too
-  !respSizesThis.includes(fileWidth)
+  // now, check whether the respSizesThis array includes the image width;
+  // if not, add it so we create a processed, original-width file, too,
+  // **as long as it's not TOO big**
+  !respSizesThis.includes(fileWidth) && fileWidth <= 1920
   ? respSizesThis.push(fileWidth)
   : ``
-  */
   respSizesThis.forEach(size => {
     // now, the responsive images
     fileExt == 'jpg' && size <= fileWidth

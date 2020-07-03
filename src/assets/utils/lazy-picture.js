@@ -63,7 +63,7 @@ module.exports = (url, alt, tmpl) => {
     return sizeScr
   })
   stringtoRet += `/images/${urlBase}-${sizeScr}.webp ${sizeScr}w" data-sizes="${dataSzes}" />
-  <img class="${imgClass}" src="${base64Img}" data-src="/images/${urlBase}-${width}.${ext}" data-srcset="`
+  <img class="${imgClass}" src="${base64Img}" data-src="/images/${urlBase}-${sizeScr}.${ext}" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w, `

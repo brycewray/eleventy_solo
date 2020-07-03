@@ -6,7 +6,7 @@ subtitle: "Moving from Netlify to Vercel"
 description: "How this site gained a new home."
 author: Bryce Wray
 date: 2020-07-02T17:05:00-05:00
-#lastmod: TBD
+lastmod: 2020-07-03T10:30:00-05:00
 discussionId: "2020-07-goodbye-hello"
 featured_image: away-706464_4608x2592.jpg
 featured_image_alt: "An entrance to a pathway in a rural setting"
@@ -94,7 +94,7 @@ When compared to not only Netlify but also other vendors I tested by actually se
 
 [^hiRes]: Indeed, I've taken advantage of Vercel's added oomph to raise the quality of the *original* images from which my build creates responsive images, after seeing [this Twitter conversation](https://twitter.com/jensimmons/status/1276187305401860097).
 
-Finally, I simply preferred the Vercel DX, especially the developer UI, over that of either the increasingly cluttered Netlify and the getting-there-but-not-there-yet Render---not to mention the you-better-have-time-to-read-a-lot-of-docs Firebase.
+Finally, I simply preferred the Vercel DX, especially the developer UI, over that of either the increasingly cluttered Netlify or the getting-there-but-not-there-yet Render---not to mention the you-better-have-time-to-read-a-lot-of-docs Firebase.
 
 So, on June 30, this site moved to Vercel.
 

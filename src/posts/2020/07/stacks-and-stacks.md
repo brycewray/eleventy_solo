@@ -67,7 +67,7 @@ So, for your geeky pleasure, here goes nothing.
 
 2020-07-05: *Same*.
 
-## Primary text editor for codes and config
+## Primary text editor for coding and config
 
 2019-07-05: Visual Studio Code.
 

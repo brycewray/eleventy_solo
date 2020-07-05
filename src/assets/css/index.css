@@ -15,6 +15,7 @@ p, li {
 
 pre, code {
   font-feature-settings: normal;
+  @apply text-base;
 }
 
 .navWhite, .navWhite:visited {

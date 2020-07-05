@@ -6,8 +6,6 @@ shortcode takes the following form...
 
 const sizeOf = require('image-size')
 const respSizes = [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
-// const respSizes = [250, 500, 750, 1000, 1250, 1500]
-  // was 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500
 const srcDir = 'src/images'
 const fs = require('fs')
 const cacheFile = '.base64imgs.json'
@@ -55,21 +53,32 @@ module.exports = (url, alt, tmpl) => {
   <source type="image/webp" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
-      stringtoRet += `/images/${urlBase}-${size}.webp ${size}w, `
+      stringtoRet += `/images/${urlBase}-${size}.webp ${size}w`
       width <= 1920
       ? sizeScr = width
       : sizeScr = size
+      stringtoRet += `, `
     }
     return sizeScr
   })
-  stringtoRet += `/images/${urlBase}-${sizeScr}.webp ${sizeScr}w" data-sizes="${dataSzes}" />
+  sizeScr == width
+  ? stringtoRet +=`/images/${urlBase}-${sizeScr}.webp ${sizeScr}w`
+  : stringtoRet +=`` 
+  stringtoRet += `" data-sizes="${dataSzes}" />
   <img class="${imgClass}" src="${base64Img}" data-src="/images/${urlBase}-${sizeScr}.${ext}" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
-      stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w, `
+      stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w`
+      width <= 1920
+      ? sizeScr = width
+      : sizeScr = size
+      stringtoRet += `, `
     }
   })
-  stringtoRet += `/images/${urlBase}-${sizeScr}.${ext} ${sizeScr}w" alt="${alt}" width="${sizeScr}" height="${height}" data-sizes="${dataSzes}" />
+  sizeScr == width
+  ? stringtoRet +=`/images/${urlBase}-${sizeScr}.${ext} ${sizeScr}w`
+  : stringtoRet +=`` 
+  stringtoRet += `" alt="${alt}" width="${sizeScr}" height="${height}" data-sizes="${dataSzes}" />
   </picture>
   </div>
   <noscript>

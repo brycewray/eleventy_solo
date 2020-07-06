@@ -6,6 +6,7 @@ author: Bryce Wray
 date: 2018-09-14T21:00:00-05:00
 lastmod: 2019-10-02T19:15:00-05:00
 featured_image: typewriter-monochrome_2242164_6260x4374.jpg
+featured_image_alt: "Monochrome photo of hands typing on an old typewriter"
 featured_image_caption: "Image: Pixabay"
 ---
 

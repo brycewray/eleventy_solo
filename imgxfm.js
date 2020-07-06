@@ -5,11 +5,8 @@ const sizeOf = require('image-size')
 const SITEDIR = '_site'
 const IMGLNDG = '_site/images'
 const directory = 'src/images'
-const respSizes = [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
-// const respSizes = [250, 500, 750, 1000, 1250, 1500]
-//            was: 20, 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500
+const respSizes = require(`./_data/siteparams.json`).respSizes
 var respSizesThis = Array.from(respSizes)
-var output // init only
 const cacheFile = '.base64imgs.json'
 // clear cacheFile...
 fs.writeFileSync(cacheFile,'')
@@ -55,7 +52,7 @@ files.forEach(file => {
   // now, check whether the respSizesThis array includes the image width;
   // if not, add it so we create a processed, original-width file, too,
   // **as long as it's not TOO big**
-  !respSizesThis.includes(fileWidth) && fileWidth <= 1920
+  !respSizesThis.includes(fileWidth) && fileWidth <= 1500
   ? respSizesThis.push(fileWidth)
   : ``
   respSizesThis.forEach(size => {
@@ -108,4 +105,5 @@ files.forEach(file => {
   respSizesThis = Array.from(respSizes)
 
 })
+
 console.log(`Writing responsive images...`)

@@ -1,11 +1,15 @@
 /* 
 shortcode takes the following form...
+{% lazypicture url, alt[, temp] %}
+... with 'temp[late]' optional in body copy; the template is
+used to specify hero images on either the home page ('index')
+or post pages ('posts'); without this parameter, the `switch`
+statement below defaults to body copy-style image-handling
 --- name 'lazypicture' rather than 'lazy-picture' comes from config in .eleventy.js
-{% lazypicture [parameters separated by commas] %}
 */
 
 const sizeOf = require('image-size')
-const respSizes = [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
+const respSizes = require(`../../../_data/siteparams.json`).respSizes
 const srcDir = 'src/images'
 const fs = require('fs')
 const cacheFile = '.base64imgs.json'

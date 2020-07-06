@@ -1,11 +1,12 @@
 /* 
-shortcode takes the following form...
-{% lazypicture url, alt[, temp] %}
-... with 'temp[late]' optional in body copy; the template is
-used to specify hero images on either the home page ('index')
-or post pages ('posts'); without this parameter, the `switch`
-statement below defaults to body copy-style image-handling
---- name 'lazypicture' rather than 'lazy-picture' comes from config in .eleventy.js
+This shortcode takes the following form...
+  {% lazypicture url, alt[, temp] %}
+...with 'temp[late]' optional in body copy; the template is used to specify 
+hero images on either the home page ('index') or post pages ('posts'). 
+Without this parameter, the `switch` statement below defaults to 
+body copy-style image-handling.
+The name 'lazypicture' (rather than 'lazy-picture') comes from the config 
+in .eleventy.js. ¯\_(ツ)_/¯
 */
 
 const sizeOf = require('image-size')
@@ -50,7 +51,7 @@ module.exports = (url, alt, tmpl) => {
   var width = dimensions.width
   var height = dimensions.height
   var widthScr, heightFactor, heightScr
-  var separator = ''
+  var separator = ', '
 
   var stringtoRet = ``
   stringtoRet = `<div class="${divClass}" style="background-image: url(${base64Img}); background-position: center; background-repeat: no-repeat; background-size: cover;">
@@ -68,9 +69,8 @@ module.exports = (url, alt, tmpl) => {
         heightScr = parseInt(height * heightFactor)
       }
       if (widthScr !== width || widthScr !== size) {
-        separator = ', '
+        stringtoRet += separator
       }
-      stringtoRet += separator
     }
   })
   if (widthScr == width) {
@@ -81,7 +81,9 @@ module.exports = (url, alt, tmpl) => {
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w`
-      stringtoRet += `, `
+      if (widthScr !== width || widthScr !== size) {
+        stringtoRet += separator
+      }
     }
   })
   if (widthScr == width) {

@@ -45,7 +45,7 @@ module.exports = (url, alt, tmpl) => {
   var dimensions = sizeOf(`${srcDir}/${url}`) // the REAL, original file
   var width = dimensions.width
   var height = dimensions.height
-  var sizeScr = ''
+  var widthScr, heightFactor, heightScr, separator
 
   var stringtoRet = ``
   stringtoRet = `<div class="${divClass}" style="background-image: url(${base64Img}); background-position: center; background-repeat: no-repeat; background-size: cover;">
@@ -54,35 +54,37 @@ module.exports = (url, alt, tmpl) => {
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.webp ${size}w`
-      width <= 1920
-      ? sizeScr = width
-      : sizeScr = size
-      stringtoRet += `, `
+      if (width <= 1920) {
+        widthScr = width
+        heightScr = height
+      } else {
+        widthScr = size
+        heightFactor = widthScr/width
+        heightScr = parseInt(height * heightFactor)
+      }
+      separator = ', '
+      stringtoRet += separator
     }
-    return sizeScr
   })
-  sizeScr == width
-  ? stringtoRet +=`/images/${urlBase}-${sizeScr}.webp ${sizeScr}w`
-  : stringtoRet +=`` 
+  if (widthScr == width) {
+    stringtoRet +=`/images/${urlBase}-${widthScr}.webp ${widthScr}w`
+  }
   stringtoRet += `" data-sizes="${dataSzes}" />
-  <img class="${imgClass}" src="${base64Img}" data-src="/images/${urlBase}-${sizeScr}.${ext}" data-srcset="`
+  <img class="${imgClass}" src="${base64Img}" data-src="/images/${urlBase}-${widthScr}.${ext}" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w`
-      width <= 1920
-      ? sizeScr = width
-      : sizeScr = size
       stringtoRet += `, `
     }
   })
-  sizeScr == width
-  ? stringtoRet +=`/images/${urlBase}-${sizeScr}.${ext} ${sizeScr}w`
-  : stringtoRet +=`` 
-  stringtoRet += `" alt="${alt}" width="${sizeScr}" height="${height}" data-sizes="${dataSzes}" />
+  if (widthScr == width) {
+    stringtoRet +=`/images/${urlBase}-${widthScr}.${ext} ${widthScr}w`
+  }
+  stringtoRet += `" alt="${alt}" width="${widthScr}" height="${heightScr}" data-sizes="${dataSzes}" />
   </picture>
   </div>
   <noscript>
-    <img class="${nscClass}" src="/images/${urlBase}-${sizeScr}.${ext}" alt="${alt}" />
+    <img class="${nscClass}" src="/images/${urlBase}-${widthScr}.${ext}" alt="${alt}" />
   </noscript>`
 
   return stringtoRet

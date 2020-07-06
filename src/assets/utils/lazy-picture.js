@@ -45,7 +45,8 @@ module.exports = (url, alt, tmpl) => {
   var dimensions = sizeOf(`${srcDir}/${url}`) // the REAL, original file
   var width = dimensions.width
   var height = dimensions.height
-  var widthScr, heightFactor, heightScr, separator
+  var widthScr, heightFactor, heightScr
+  var separator = ''
 
   var stringtoRet = ``
   stringtoRet = `<div class="${divClass}" style="background-image: url(${base64Img}); background-position: center; background-repeat: no-repeat; background-size: cover;">
@@ -54,7 +55,7 @@ module.exports = (url, alt, tmpl) => {
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.webp ${size}w`
-      if (width <= 1920) {
+      if (width <= respSizes[respSizes.length - 1]) {
         widthScr = width
         heightScr = height
       } else {
@@ -62,7 +63,9 @@ module.exports = (url, alt, tmpl) => {
         heightFactor = widthScr/width
         heightScr = parseInt(height * heightFactor)
       }
-      separator = ', '
+      if (widthScr !== width || widthScr !== size) {
+        separator = ', '
+      }
       stringtoRet += separator
     }
   })

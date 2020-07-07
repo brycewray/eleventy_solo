@@ -6,7 +6,7 @@ subtitle: "That was then, this is now"
 description: "Comparing the site’s “tech stacks,” one year apart."
 author: Bryce Wray
 date: 2020-07-05T10:40:00-05:00
-#lastmod: TBD
+lastmod: 2020-07-07T08:40:00-05:00
 discussionId: "2020-07-stacks-and-stacks"
 featured_image: stones-stack-3841920_6000x4000.jpg
 featured_image_alt: "A stack of smooth stones on a beach near an ocean"
@@ -23,7 +23,7 @@ So, for your geeky pleasure, here goes nothing.
 
 2019-07-05: [Hugo](https://gohugo.io) 0.55.6. At the time, I *thought* I was about to chuck Hugo for [Gatsby](https://gatsbyjs.org). [Didn't quite go that way](/posts/2019/07/why-staying-with-hugo). For full details on my oft-shifting SSG loyalties---the "Dance"---in the latter half of 2019 in particular, see my [2019 year-end wrap-up](/posts/2019/12/sorta-strange-ssg-trip).
 
-2020-07-06: [Eleventy](https://11ty.dev) 0.11.0.
+2020-07-05: [Eleventy](https://11ty.dev) 0.11.0.
 
 ## OSs used for local dev
 

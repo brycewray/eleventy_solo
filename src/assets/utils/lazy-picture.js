@@ -72,23 +72,15 @@ module.exports = (url, alt, tmpl) => {
     }
   })
   stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2)
-  if (widthScr == width) {
-    stringtoRet +=`, /images/${urlBase}-${widthScr}.webp ${widthScr}w`
-  }
   stringtoRet += `" data-sizes="${dataSzes}" />
   <img class="${imgClass}" src="${base64Img}" data-src="/images/${urlBase}-${widthScr}.${ext}" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w`
-      if (widthScr !== width || widthScr !== size) {
-        stringtoRet += separator
-      }
+      stringtoRet += separator
     }
   })
   stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2)
-  if (widthScr == width) {
-    stringtoRet +=`, /images/${urlBase}-${widthScr}.${ext} ${widthScr}w`
-  }
   stringtoRet += `" alt="${alt}" width="${widthScr}" height="${heightScr}" data-sizes="${dataSzes}" />
   </picture>
   </div>

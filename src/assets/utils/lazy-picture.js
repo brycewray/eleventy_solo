@@ -1,11 +1,16 @@
 /* 
-shortcode takes the following form...
---- name 'lazypicture' rather than 'lazy-picture' comes from config in .eleventy.js
-{% lazypicture [parameters separated by commas] %}
+This shortcode takes the following form...
+  {% lazypicture url, alt[, temp] %}
+...with 'temp[late]' optional in body copy; the template is used to specify 
+hero images on either the home page ('index') or post pages ('posts'). 
+Without this parameter, the `switch` statement below defaults to 
+body copy-style image-handling.
+The name 'lazypicture' (rather than 'lazy-picture') comes from the config 
+in .eleventy.js. ¯\_(ツ)_/¯
 */
 
 const sizeOf = require('image-size')
-const respSizes = [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500]
+const respSizes = require(`../../../_data/siteparams.json`).respSizes
 const srcDir = 'src/images'
 const fs = require('fs')
 const cacheFile = '.base64imgs.json'
@@ -45,7 +50,8 @@ module.exports = (url, alt, tmpl) => {
   var dimensions = sizeOf(`${srcDir}/${url}`) // the REAL, original file
   var width = dimensions.width
   var height = dimensions.height
-  var widthScr, heightFactor, heightScr, separator
+  var widthScr, heightFactor, heightScr
+  var separator = ', '
 
   var stringtoRet = ``
   stringtoRet = `<div class="${divClass}" style="background-image: url(${base64Img}); background-position: center; background-repeat: no-repeat; background-size: cover;">
@@ -54,7 +60,7 @@ module.exports = (url, alt, tmpl) => {
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.webp ${size}w`
-      if (width <= 1920) {
+      if (width <= respSizes[respSizes.length - 1]) {
         widthScr = width
         heightScr = height
       } else {
@@ -62,23 +68,26 @@ module.exports = (url, alt, tmpl) => {
         heightFactor = widthScr/width
         heightScr = parseInt(height * heightFactor)
       }
-      separator = ', '
       stringtoRet += separator
     }
   })
+  stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2)
   if (widthScr == width) {
-    stringtoRet +=`/images/${urlBase}-${widthScr}.webp ${widthScr}w`
+    stringtoRet +=`, /images/${urlBase}-${widthScr}.webp ${widthScr}w`
   }
   stringtoRet += `" data-sizes="${dataSzes}" />
   <img class="${imgClass}" src="${base64Img}" data-src="/images/${urlBase}-${widthScr}.${ext}" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `/images/${urlBase}-${size}.${ext} ${size}w`
-      stringtoRet += `, `
+      if (widthScr !== width || widthScr !== size) {
+        stringtoRet += separator
+      }
     }
   })
+  stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2)
   if (widthScr == width) {
-    stringtoRet +=`/images/${urlBase}-${widthScr}.${ext} ${widthScr}w`
+    stringtoRet +=`, /images/${urlBase}-${widthScr}.${ext} ${widthScr}w`
   }
   stringtoRet += `" alt="${alt}" width="${widthScr}" height="${heightScr}" data-sizes="${dataSzes}" />
   </picture>

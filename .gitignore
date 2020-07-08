@@ -63,5 +63,5 @@ arraytest.js
 .firebase
 .vercel
 .firebaserc
-.Ulysses-Group.plist
+.Ulysses*.plist
 ztest.js

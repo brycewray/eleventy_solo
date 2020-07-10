@@ -28,4 +28,4 @@ For those interested in other static site generators, I have also created more l
 - [Gatsby version](https://github.com/brycewray/gatsby_site_css-grid)
 - [Hugo version](https://github.com/brycewray/hugo_site_css-grid)
 
-Please note that I **do not** promise to keep them **fully** up to date with this repo (*i.e*, the real site).
+Please note that I **do not** promise to keep them **fully** up to date with this repo (*i.e*, the one with the content for the real site).

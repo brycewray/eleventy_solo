@@ -1,4 +1,6 @@
 const sharp = require('sharp')
+const imagemin = require('imagemin')
+const imageminPngquant = require('imagemin-pngquant')
 const globAll = require('glob-all')
 const fs = require('fs')
 const sizeOf = require('image-size')
@@ -71,18 +73,18 @@ files.forEach(file => {
       })
       .catch(err => {console.log(err + file)})
     : ``
-    fileExt == 'png' && size <= fileWidth
-    ? sharp(`${directory}/${file}`)
-      .png({})
-      .resize({
-        width: size,
-        withoutEnlargement: true,
-      })
-      .toFile(`${IMGLNDG}/${fileBas}-${size}.${fileExt}`)
-      .then(() => {
-      })
-      .catch(err => {console.log(err + file)})
-    : ``    
+    fileExt == 'png' // we have no need to re-size the PNGs, and Sharp is bad at it anyway.
+    ? (async () => {
+        await imagemin([`${directory}/${file}`], {
+          destination: `${IMGLNDG}`,
+          plugins: [
+            imageminPngquant({
+              quality: [0.5, 0.6]
+            })
+          ]
+        })
+      })()
+    : ``
     // now, make webp for each, regardless of original file format
     size <= fileWidth    
     ? sharp(`${directory}/${file}`)

@@ -23,7 +23,7 @@ I initially chose to build this site with [Nunjucks](https://mozilla.github.io/n
 
 ## Interested in other SSGs?
 
-For those interested in other static site generators, I have also created [Gatsby](https://gatsbyjs.org)- and [Hugo](https://gohugo.io)-based versions of this repo. For more information, see “[Different modes for different code](https://brycewray.com/posts/2020/04/different-modes-different-code).” As for the repo links themselves:
+For those interested in other static site generators, I have also created more limited [Gatsby](https://gatsbyjs.org)- and [Hugo](https://gohugo.io)-based versions of this repo. For more information, see “[Different modes for different code](https://brycewray.com/posts/2020/04/different-modes-different-code).” As for the repo links themselves:
 
 - [Gatsby version](https://github.com/brycewray/gatsby_site_css-grid)
 - [Hugo version](https://github.com/brycewray/hugo_site_css-grid)

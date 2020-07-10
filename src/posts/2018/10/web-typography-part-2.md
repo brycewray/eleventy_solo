@@ -6,7 +6,7 @@ subtitle: Part 2 of a two-part series on Web typography
 description: Making the case for a system “fonts” approach to the typography on Web sites.
 author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
-lastmod: 2020-07-09T20:55:00-05:00
+lastmod: 2020-07-09T20:55:00
 discussionId: "2018-10-web-typography-part-2"
 featured_image: computer-1869236_3264x2448.jpg
 featured_image_alt: Backlit computer keyboard

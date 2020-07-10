@@ -6,7 +6,7 @@ subtitle: Part 2 of a two-part series on Web typography
 description: Making the case for a system “fonts” approach to the typography on Web sites.
 author: Bryce Wray
 date: 2018-10-25T07:40:00-05:00
-lastmod: 2020-05-20T12:51:00-05:00
+lastmod: 2020-07-09T20:55:00-05:00
 discussionId: "2018-10-web-typography-part-2"
 featured_image: computer-1869236_3264x2448.jpg
 featured_image_alt: Backlit computer keyboard
@@ -79,17 +79,17 @@ In case you aren’t familiar with all of these, here you go (all except the gen
 
 <table class="noborders">
 <thead><tr><td class="td30">Typeface name</td><td class="td70">Sample image</td></tr></thead>
-<tr><td class="td30">San Francisco</td><td class="td70"><img data-src="/images/Sys_font_stack_San_Francisco-684.png" class="lazy" loading="lazy" alt="San Francisco typeface" /></td></tr>
-<tr><td class="td30">Segoe UI</td><td class="td70"><img data-src="/images/Sys_font_stack_Segoe_UI-684.png" class="lazy" loading="lazy" alt="Segoe UI typeface" /></td></tr>
-<tr><td class="td30">Tahoma</td><td class="td70"><img data-src="/images/Sys_font_stack_Tahoma-684.png" class="lazy" loading="lazy" alt="Tahoma typeface" /></td></tr>
-<tr><td class="td30">Roboto</td><td class="td70"><img data-src="/images/Sys_font_stack_Roboto_from_GF-684.png" class="lazy" loading="lazy" alt="Roboto typeface" /></td></tr>
-<tr><td class="td30">Oxygen</td><td class="td70"><img data-src="/images/Sys_font_stack_Oxygen_from_GF-684.png" class="lazy" loading="lazy" alt="Oxygen typeface" /></td></tr>
-<tr><td class="td30">Ubuntu</td><td class="td70"><img data-src="/images/Sys_font_stack_Ubuntu_from_GF-684.png" class="lazy" loading="lazy" alt="Ubuntu typeface" /></td></tr>
-<tr><td class="td30">Cantarell</td><td class="td70"><img data-src="/images/Sys_font_stack_Cantarell_from_GF-684.png" class="lazy" loading="lazy" alt="Cantarell typeface" /></td></tr>
-<tr><td class="td30">Fira Sans</td><td class="td70"><img data-src="/images/Sys_font_stack_Fira_Sans_from_GF-684.png" class="lazy" loading="lazy" alt="Fira Sans typeface" /></td></tr>
-<tr><td class="td30">Droid Sans</td><td class="td70"><img data-src="/images/Sys_font_stack_Droid_Sans_from_GF-684.png" class="lazy" loading="lazy" alt="Droid Sans typeface" /></td></tr>
-<tr><td class="td30">Helvetica Neue</td><td class="td70"><img data-src="/images/Sys_font_stack_Helvetica_Neue-680.png" class="lazy" loading="lazy" alt="Helvetica Neue typeface" /></td></tr>
-<tr><td class="td30">Lucida Grande</td><td class="ctr td70"><img data-src="/images/Sys_font_stack_Lucida_Grande-680.png" class="lazy" loading="lazy" alt="Lucida Grande typeface" /></td></tr>
+<tr><td class="td30">San Francisco</td><td class="td70"><img data-src="/images/Sys_font_stack_San_Francisco.png" class="lazy" loading="lazy" alt="San Francisco typeface" /></td></tr>
+<tr><td class="td30">Segoe UI</td><td class="td70"><img data-src="/images/Sys_font_stack_Segoe_UI.png" class="lazy" loading="lazy" alt="Segoe UI typeface" /></td></tr>
+<tr><td class="td30">Tahoma</td><td class="td70"><img data-src="/images/Sys_font_stack_Tahoma.png" class="lazy" loading="lazy" alt="Tahoma typeface" /></td></tr>
+<tr><td class="td30">Roboto</td><td class="td70"><img data-src="/images/Sys_font_stack_Roboto_from_GF.png" class="lazy" loading="lazy" alt="Roboto typeface" /></td></tr>
+<tr><td class="td30">Oxygen</td><td class="td70"><img data-src="/images/Sys_font_stack_Oxygen_from_GF.png" class="lazy" loading="lazy" alt="Oxygen typeface" /></td></tr>
+<tr><td class="td30">Ubuntu</td><td class="td70"><img data-src="/images/Sys_font_stack_Ubuntu_from_GF.png" class="lazy" loading="lazy" alt="Ubuntu typeface" /></td></tr>
+<tr><td class="td30">Cantarell</td><td class="td70"><img data-src="/images/Sys_font_stack_Cantarell_from_GF.png" class="lazy" loading="lazy" alt="Cantarell typeface" /></td></tr>
+<tr><td class="td30">Fira Sans</td><td class="td70"><img data-src="/images/Sys_font_stack_Fira_Sans_from_GF.png" class="lazy" loading="lazy" alt="Fira Sans typeface" /></td></tr>
+<tr><td class="td30">Droid Sans</td><td class="td70"><img data-src="/images/Sys_font_stack_Droid_Sans_from_GF.png" class="lazy" loading="lazy" alt="Droid Sans typeface" /></td></tr>
+<tr><td class="td30">Helvetica Neue</td><td class="td70"><img data-src="/images/Sys_font_stack_Helvetica_Neue.png" class="lazy" loading="lazy" alt="Helvetica Neue typeface" /></td></tr>
+<tr><td class="td30">Lucida Grande</td><td class="ctr td70"><img data-src="/images/Sys_font_stack_Lucida_Grande.png" class="lazy" loading="lazy" alt="Lucida Grande typeface" /></td></tr>
 </table>
 
 The easiest way[^3] to implement this “system fonts stack” throughout your site is assigning the following CSS to the `<html>` tag (or `<body>` tag, if you prefer):

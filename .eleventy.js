@@ -44,6 +44,10 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromISO(dateObj).toFormat('LLL d, yyyy h:mm:ss a ZZZZ')
   })
 
+  eleventyConfig.addFilter('pub_lastmod', dateObj => {
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('MMMM d, yyyy')
+  })
+
   // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
   eleventyConfig.addLayoutAlias("posts", "src/_includes/layouts/posts/singlepost.11ty.js")
 

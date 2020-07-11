@@ -12,7 +12,6 @@
     "dev:postcss": "postcss src/assets/css/index.css -d _site/css/ --config ./postcss.config.js -w",
     "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --watch --quiet",
     "dev:svrx": "svrx",
-    "dev:bsync": "browser-sync start --server ./_site -w --no-open --no-notify --no-ghost-mode",
     "build": "NODE_ENV=production npm-run-all clean imgs --parallel prod:*",
     "prod:postcss": "postcss src/assets/css/index.css -d _site/css/ --config ./postcss.config.js",
     "prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site",

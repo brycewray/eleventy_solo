@@ -20,7 +20,7 @@ exports.render = function (data) {
               : `&nbsp;`
           }
         </h2>
-        <p class="hidden not-italic md:block md:text-2xl xb:text-4xl tracking-tight md:text-base md:mt-8 mb-6 text-white">${data.description}</p>
+        <p class="hidden not-italic md:block md:text-2xl xb:text-4xl tracking-tight md:mt-8 mb-6 text-white">${data.description}</p>
         <p class="text-sm md:text-base xb:text-lg text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
           <span style="font-variant: small-caps;">published:</span>&nbsp; <strong>${this.pub_lastmod(data.page.date)}</strong><span class="text-sm" style="font-variant: small-caps;">&nbsp;utc</span><br />
           <span class="text-xs md:text-sm">

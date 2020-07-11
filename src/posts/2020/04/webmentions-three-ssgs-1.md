@@ -5,7 +5,7 @@ title: "Webmentions in three SSGs: Part 1"
 subtitle: "Getting started with IndieWebbin’ in general"
 description: "The intro to a five-part series about incorporating webmentions into three different static site generators (SSGs)."
 author: Bryce Wray
-date: 2020-04-28T16:30:00-05:00
+date: 2020-04-28T21:30:00
 #lastmod: TBD
 discussionId: "2020-04-webmentions-three-ssgs-1"
 featured_image: group-chat-photoillustration-3354365_4928x2855.jpg

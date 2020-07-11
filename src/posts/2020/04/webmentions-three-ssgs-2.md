@@ -5,7 +5,7 @@ title: "Webmentions in three SSGs: Part 2"
 subtitle: "IndieWebbin’ in Eleventy"
 description: "Part 2 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Eleventy."
 author: Bryce Wray
-date: 2020-04-28T16:35:00-05:00
+date: 2020-04-28T21:35:00
 #lastmod: TBD
 discussionId: "2020-04-webmentions-three-ssgs-2"
 featured_image: pavan-trikutam-71CjSSB83Wo-unsplash_4401x2934.jpg

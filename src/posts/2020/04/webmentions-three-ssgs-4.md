@@ -5,8 +5,8 @@ title: "Webmentions in three SSGs: Part 4"
 subtitle: "IndieWebbin’ in Gatsby"
 description: "Part 4 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Gatsby."
 author: Bryce Wray
-date: 2020-04-28T16:45:00-05:00
-lastmod: 2020-05-16T15:22:00-05:00
+date: 2020-04-28T21:45:00
+lastmod: 2020-05-16T20:22:00
 discussionId: "2020-04-webmentions-three-ssgs-4"
 featured_image: jackrabbit-673965_3600x2400.jpg
 featured_image_alt: "Communications concept - A long-eared rabbit listening for something"

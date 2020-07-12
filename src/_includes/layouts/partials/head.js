@@ -1,6 +1,4 @@
 const analyticsCode = require('../../../assets/utils/analytics.js')
-let bodyName = 'Public+Sans'
-let codeName = 'Roboto+Mono'
 
 module.exports = function(eleventyConfig) {
 
@@ -92,12 +90,6 @@ module.exports = function(eleventyConfig) {
     <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
     <meta name="msapplication-TileImage" content="/images/ms-icon-icons/144x144.png">
 
-    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=${bodyName}:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=${codeName}:ital@0;1&display=swap" />
-    <link href="https://fonts.googleapis.com/css2?family=${bodyName}:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=${codeName}:ital@0;1&display=swap" rel="stylesheet">
     <link rel="preload" as="style" href="/css/index.css" />
     <link rel="stylesheet" href="/css/index.css" type="text/css" />
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}.notInIE{display: none;}}</style>

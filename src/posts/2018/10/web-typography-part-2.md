@@ -6,14 +6,12 @@ subtitle: Part 2 of a two-part series on Web typography
 description: Making the case for a system “fonts” approach to the typography on Web sites.
 author: Bryce Wray
 date: 2018-10-25T12:40:00
-lastmod: 2020-07-12T15:00:00
+lastmod: 2020-07-10T01:55:00
 discussionId: "2018-10-web-typography-part-2"
 featured_image: computer-1869236_3264x2448.jpg
 featured_image_alt: Backlit computer keyboard
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
-
-**Update, 2020-07-12**: Although the system "fonts" approach I describe in this post is still quite sensible in many cases, [later decisions](/posts/2020/05/thousand-words-indeed) allowed me to adopt a standard appearance for all devices and OSs without some of the usual technical drawbacks I'll mention herein.{.yellowBox}
 
 In [Part 1](/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on Web sites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.
 

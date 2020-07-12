@@ -13,10 +13,6 @@ module.exports = {
       'xl': '1280px', // => @media (min-width: 1280px) { ... }
       'xb': '1920px', // => @media (min-width: 1920px) { ... }
     },
-    fontFamily: {
-      body: ['Public Sans', 'sans-serif'],
-      codefont: ['Roboto Mono', 'monospace'],
-    },
     extend: {
       screens: {
         'dark': {

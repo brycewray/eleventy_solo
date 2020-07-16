@@ -22,7 +22,7 @@ It's that time again, [static site generator](https://staticgen.com) (SSG) nerdi
 
 Hello? Is this thing on? *[crickets]*
 
-Well, for those of you still in the room: bear with me, because there's a story here even if you're not at all into building Web sites. It's about helping a good product built by a [good person](https://www.zachleat.com) get even better.
+Well, for those of you still in the room: bear with me, because there's a story here even if you're not at all into building websites. It's about helping a good product built by a [good person](https://www.zachleat.com) get even better.
 
 Still, for those who are edging toward the exits, I won't [bury the lede](https://style.mla.org/dont-bury-the-lede/): I found a way to come back to my favorite SSG, [Eleventy](https://11ty.dev). But, mind you, this is Eleventy on steroids, with added awesomeness that *bundler* software---specifically, [webpack](https://webpack.js.org)---makes possible.
 
@@ -36,7 +36,7 @@ Just as Mr. Zhou did, I will explain bundlers by describing the pains-in-the-fan
 
 ### Script calls
 
-Until not all that many years ago, if you wanted to add JavaScript code to your Web site for whatever interactive jazz you wanted it to do, you'd either link to JS files&nbsp;.&nbsp;.&nbsp;.
+Until not all that many years ago, if you wanted to add JavaScript code to your website for whatever interactive jazz you wanted it to do, you'd either link to JS files&nbsp;.&nbsp;.&nbsp;.
 
 ```html
 <script src="/js/comments-script.js"></script>
@@ -58,7 +58,7 @@ Until not all that many years ago, if you wanted to add JavaScript code to your 
 
 (Back then, you generally needed to specify that a `<script>` tag was introducing JS code. Nowadays, that's assumed.)
 
-In the bad old days before [HTTP/2](https://http2.github.io) became widespread, the linking method, in particular, was something against which Web performance gurus preached because it involved yet one more time-consuming request to the Web server, as if you weren't already making enough requests for images and other assets. *One* reasonably sized JS file? Fine. But, soon, the typical Web site was loading many JS files per page. Especially as smartphones came into the picture with their then-limited connectivity speeds, it became even clearer that this wouldn't fly.
+In the bad old days before [HTTP/2](https://http2.github.io) became widespread, the linking method, in particular, was something against which web performance gurus preached because it involved yet one more time-consuming request to the web server, as if you weren't already making enough requests for images and other assets. *One* reasonably sized JS file? Fine. But, soon, the typical website was loading many JS files per page. Especially as smartphones came into the picture with their then-limited connectivity speeds, it became even clearer that this wouldn't fly.
 
 ### Concatenation and minifying
 
@@ -88,9 +88,9 @@ Bundler software like webpack[^otherBundlers] handles all of these issues. When 
 
 - Orders all the code appropriately to manage the dependencies.
 
-They can do even more than that, however. For just one example, webpack makes it easy to use [Typefaces](https://www.npmjs.com/package/typefaces) to install open-source Web typefaces. In fact, that's how I easily converted this site to first [Roboto](https://fonts.google.com/specimen/Roboto) (and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) for the code examples you'll see here and there), and later [Public Sans](https://fonts.google.com/specimen/Public+Sans).[^BacktoSys] Normally, it can be challenging to add Web "fonts" to one's site without depending on another separate site (*e.g.*, Google Fonts); but Typefaces---created by Gatsby's Kyle Matthews---works with webpack to make it a relative piece of cake.
+They can do even more than that, however. For just one example, webpack makes it easy to use [Typefaces](https://www.npmjs.com/package/typefaces) to install open-source web typefaces. In fact, that's how I easily converted this site to first [Roboto](https://fonts.google.com/specimen/Roboto) (and [Roboto Mono](https://fonts.google.com/specimen/Roboto+Mono) for the code examples you'll see here and there), and later [Public Sans](https://fonts.google.com/specimen/Public+Sans).[^BacktoSys] Normally, it can be challenging to add web "fonts" to one's site without depending on another separate site (*e.g.*, Google Fonts); but Typefaces---created by Gatsby's Kyle Matthews---works with webpack to make it a relative piece of cake.
 
-[^BacktoSys]: A few months later, I decided to [revert](/posts/2018/10/web-typography-part-2) to using system "fonts" to add a little more performance and avoid the [Flash of Unstyled Content](https://en.wikipedia.org/wiki/Flash_of_unstyled_content) (FOUC) effect during Web "font"-loading.
+[^BacktoSys]: A few months later, I decided to [revert](/posts/2018/10/web-typography-part-2) to using system "fonts" to add a little more performance and avoid the [Flash of Unstyled Content](https://en.wikipedia.org/wiki/Flash_of_unstyled_content) (FOUC) effect during web "font"-loading.
 
 So, I hope, that explains bundlers. Now, where was I? Oh, yeah&nbsp;.&nbsp;.&nbsp;.
 
@@ -124,7 +124,7 @@ I *highly* encourage anyone considering taking up webpack to spend plenty of tim
 
 ### Image processing
 
-I had mentioned I was impressed with Gatsby's image processing power. Indeed, I still am. However, it's worth keeping in mind that you make people download a *ton* of JS to make that happen. I had decided that wasn't worth it, especially for my humble little place on the Web.
+I had mentioned I was impressed with Gatsby's image processing power. Indeed, I still am. However, it's worth keeping in mind that you make people download a *ton* of JS to make that happen. I had decided that wasn't worth it, especially for my humble little place on the web.
 
 My priority was to deliver images that were optimized and "[lazy-loaded](https://en.wikipedia.org/wiki/Lazy_loading)." And, in this new setup, I achieved all the things I decided were critical to achieve, thanks in particular to [responsive-loader](https://github.com/herrstucki/responsive-loader) and the popular [lazysizes](https://github.com/aFarkas/lazysizes) library. By the way, webpack makes lazysizes much easier to use.
 
@@ -142,19 +142,19 @@ For that matter, as you've probably gathered by now, webpack makes short work of
 
 I can also tell you that the development experience of my setup is a lot cleaner and less bug-laden than with Gatsby. For reasons I still don't understand, and this goes back to my agonies of last summer, the Gatsby development environment is just plain unstable at times. For example, it would often pull up the wrong template at odd intervals, making, say, the home page use the very different posts template. Sure, I *knew* that it wouldn't do it when actually building the site and delivering it via [Netlify](https://netlify.com), but it still bugged me. Eleventy by itself, as well as Eleventy-with-webpack, simply doesn't do that sort of thing to me. I greatly prefer that kind of experience.
 
-Oh, by the way: in my first few builds out to Netlify, I've found this combo to beat Gatsby on build speed, also. (To be fair, Gatsby hasn't ever been known for being a quick builder.) I was pleased to see that, despite the fact I was putting together the config with zero experience with webpack, it all worked, and quickly, when it finally came time to put the thing on the Web for real.
+Oh, by the way: in my first few builds out to Netlify, I've found this combo to beat Gatsby on build speed, also. (To be fair, Gatsby hasn't ever been known for being a quick builder.) I was pleased to see that, despite the fact I was putting together the config with zero experience with webpack, it all worked, and quickly, when it finally came time to put the thing on the web for real.
 
 In summary, the Eleventy/webpack combo gives me things I couldn't have had if I'd used either without the other.[^webpackAlone] 
 
-- Eleventy allows easier and more flexible [templating](https://www.11ty.dev/docs/templates/). Yes, you *can* use Markdown with webpack to create Web pages, but I simply find Eleventy's method easier to use and configure.
+- Eleventy allows easier and more flexible [templating](https://www.11ty.dev/docs/templates/). Yes, you *can* use Markdown with webpack to create web pages, but I simply find Eleventy's method easier to use and configure.
 
-- Webpack makes it easier to integrate third-party JS. If I stuck with only Eleventy, I'd have to rely on the fairly small number of Eleventy plugins to integrate some features; but the massively popular webpack, with its much wider universe of plugins and loaders, opens me up to far more possibilities out there.
+- webpack makes it easier to integrate third-party JS. If I stuck with only Eleventy, I'd have to rely on the fairly small number of Eleventy plugins to integrate some features; but the massively popular webpack, with its much wider universe of plugins and loaders, opens me up to far more possibilities out there.
 
-[^webpackAlone]: As you're likely aware, many use webpack *by itself* to build Web sites and Web apps. However, I prefer the versatile templating abilities of Eleventy, so I chose to go the combo route.
+[^webpackAlone]: As you're likely aware, many use webpack *by itself* to build websites and web apps. However, I prefer the versatile templating abilities of Eleventy, so I chose to go the combo route.
 
 ## Looking back .&nbsp;.&nbsp;. looking ahead
 
-Although I have never been adept at dealing with mechanical things, much to my wife's chagrin when things need fixing around our aging home[^doorknob], I *do* like to tinker. Only thing is, what I like tinkering with is: code that makes Web pages work.
+Although I have never been adept at dealing with mechanical things, much to my wife's chagrin when things need fixing around our aging home[^doorknob], I *do* like to tinker. Only thing is, what I like tinkering with is: code that makes web pages work.
 
 [^doorknob]: Like today, for example, when I struggled to replace a doorknob---although, in my defense, doorknobs aren't really designed for easy replacement. Have *you* tried, lately, putting the mounting screws into a doorknob *around* the doorknob? It's not as if screwdrivers are flexible.
 
@@ -164,6 +164,6 @@ In fact, not long ago, our company owner asked a group of us about our hobbies. 
 
 That said, this tendency can come in handy. What you're seeing now is proof.
 
-Don't misunderstand: this isn't a finished product, by any means. No Web site ever is. I'll keep doing cleanup, trying to make things work and look better. But there comes a time to "ship it," as the saying goes, and I decided today was as good a day as any.
+Don't misunderstand: this isn't a finished product, by any means. No website ever is. I'll keep doing cleanup, trying to make things work and look better. But there comes a time to "ship it," as the saying goes, and I decided today was as good a day as any.
 
 When this year started, I had no idea I'd be engaging in this six-month soap opera of switching back and forth among SSGs. However, I've loved learning all the stuff that went with that "dance," and---now that I'm back with my favorite SSG but also inaugurated into the webpack ecosphere about which I've been reading so much---I hope the sky's the limit.

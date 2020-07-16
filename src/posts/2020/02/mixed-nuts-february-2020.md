@@ -23,7 +23,7 @@ This hoary, old boomer has studiously avoided addressing the "OK, boomer" phenom
 
 One benefit I didn't expect from the [streaming](/posts/2020/01/streamers-party) experience: being able to find and store so many items in the [YouTube TV](https://tv.youtube.com) cloud DVD has let me introduce my wife to [wonderful](https://www.imdb.com/title/tt0025878/) [old](https://www.imdb.com/title/tt0040613/) [movies](https://www.imdb.com/title/tt0032904/) she'd never seen before. I love seeing her enjoy them on her first views as much as I long have on my many repeated viewings.
 
-*It never fails to amaze me when I view the source code of some elaborate-looking commercial Web site and see it was built on [WordPress](https://wordpress.org). Are these people totally unaware of the advantages, notably the cost savings and improved security, of [static site generators](https://staticgen.com)?*
+*It never fails to amaze me when I view the source code of some elaborate-looking commercial website and see it was built on [WordPress](https://wordpress.org). Are these people totally unaware of the advantages, notably the cost savings and improved security, of [static site generators](https://staticgen.com)?*
 
 One thing I did *not* expect to occur when I made [this site's repository](https://github.com/brycewray/eleventy_bundler) [public](/posts/2019/12/code-comfort-eleventy-webpack) was that it would get GitHub stars. At this writing, the quantity is still in the single digits but, hey, man, it's actual *Github stars*. We Are Not Worthy.
 

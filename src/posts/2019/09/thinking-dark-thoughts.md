@@ -12,11 +12,11 @@ featured_image_alt: "Skies at sunset"
 featured_image_caption: "Image: Hans Braxmeier; Pixabay"
 ---
 
-With the recent release of [iOS 13](https://en.wikipedia.org/wiki/IOS_13), system-wide [Dark Mode](https://en.wikipedia.org/wiki/Light-on-dark_color_scheme) [finally became available to iPhone and iPad users](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/dark-mode/). That means a massive number of people are now going to be looking at apps and Web sites in completely different ways than before.[^Android] Moreover, [browsers on both mobile devices and the desktop are getting increasingly Dark Mode-savvy](https://www.cnet.com/news/dark-mode-web-browsers-are-here-safari-firefox-soon-chrome/), switching between Light and Dark Modes fairly seamlessly.
+With the recent release of [iOS 13](https://en.wikipedia.org/wiki/IOS_13), system-wide [Dark Mode](https://en.wikipedia.org/wiki/Light-on-dark_color_scheme) [finally became available to iPhone and iPad users](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/dark-mode/). That means a massive number of people are now going to be looking at apps and websites in completely different ways than before.[^Android] Moreover, [browsers on both mobile devices and the desktop are getting increasingly Dark Mode-savvy](https://www.cnet.com/news/dark-mode-web-browsers-are-here-safari-firefox-soon-chrome/), switching between Light and Dark Modes fairly seamlessly.
 
 [^Android]: Android users have had Dark Mode [since the release of Android P](https://9to5google.com/2018/12/17/android-dark-mode-theme-pie/) last year---at least, for those Android users who actually [got to upgrade](https://www.techopedia.com/definition/3899/android-fragmentation) to Android P---and any number of apps on both iOS and Android have provided at least some form of Dark Mode. But, due to the sheer quantity of iOS users (especially in North America) and the likelihood that the vast majority of them will be on iOS 13 fairly quickly if [iOS 12 adoption](https://www.macrumors.com/2019/08/08/ios-12-adoption-88-percent/) was any reliable measuring stick, it's especially significant that iOS 13 adds Dark Mode as a system-wide option.
 
-However, if you don't make the proper adjustments to your Web site and it's in the more traditional dark-content-on-a-bright-background motif, Dark Mode users might get a rude jolt when they stop by. It's sort of like what happens when you've been sitting in a dark room watching TV and suddenly somebody comes in and turns on all the lights. Might not be all that welcome.
+However, if you don't make the proper adjustments to your website and it's in the more traditional dark-content-on-a-bright-background motif, Dark Mode users might get a rude jolt when they stop by. It's sort of like what happens when you've been sitting in a dark room watching TV and suddenly somebody comes in and turns on all the lights. Might not be all that welcome.
 
 Fortunately, it's easy to fix. Well, *relatively* easy.
 
@@ -77,7 +77,7 @@ If yours, like mine, is a site where you sometimes use code blocks (like the one
 
 If you look at the source for such code blocks, you'll notice they have a lot of different `<span>`s in them to provide the various color treatments. So---assuming you weren't already using a dark background scheme for your code blocks, as some do---you're going to have to reassign the colors for not only the code block backgrounds but also each of the individual color codes.
 
-Yes, that can be tedious, particularly if you haven't yet done code blocks with that many different languages, because each language has its own specific color-coding and, as you do a code block in a language you haven't previously included, you'll see new combinations; so, as in all things Web dev, you'll first need to test (and fix) locally.
+Yes, that can be tedious, particularly if you haven't yet done code blocks with that many different languages, because each language has its own specific color-coding and, as you do a code block in a language you haven't previously included, you'll see new combinations; so, as in all things web dev, you'll first need to test (and fix) locally.
 
 ### External iframes
 

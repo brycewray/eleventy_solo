@@ -13,7 +13,7 @@ featured_image_alt: "Writing concept - Fountain pen, white sheet of paper, open 
 featured_image_caption: "Image: Bruno/Germany; Pixabay"
 ---
 
-**Note**: This is the conclusion of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in Web sites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2)), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3)), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4)).{.yellowBox}
+**Note**: This is the conclusion of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2)), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3)), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4)).{.yellowBox}
 
 [Yes, Virginia](https://en.wikipedia.org/wiki/Yes,_Virginia,_there_is_a_Santa_Claus), there *is* an end to this series.
 
@@ -48,7 +48,7 @@ Also, it'll often surprise me what I pick up from how others' code works, especi
 
 ### Eleventy sites ([Part 2](/posts/2020/04/webmentions-three-ssgs-2))
 
-- [Max Böck](https://mxb.dev), "[Static Indieweb pt2: Using Webmentions](https://mxb.dev/blog/using-webmentions-on-static-sites/)."
+- [Max Böck](https://mxb.dev), "[Static IndieWeb pt2: Using Webmentions](https://mxb.dev/blog/using-webmentions-on-static-sites/)."
 
 - [Sia Karamalegos](https://sia.codes), "[An In-Depth Tutorial of Webmentions + Eleventy](https://sia.codes/posts/webmentions-eleventy-in-depth/)."
 

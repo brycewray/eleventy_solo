@@ -13,7 +13,7 @@ featured_image_alt: "A row of dominoes with a hand about to tip them over"
 featured_image_caption: "Image: SparrowsHome; Pixabay"
 ---
 
-Netlify's [free "Starter" site-hosting tier](https://www.netlify.com/pricing/) is an amazing way to have a personal or small-business Web site, especially one built by a [static site generator](https://staticgen.com) (SSG) like the [Eleventy](https://11ty.dev) SSG this site uses.
+Netlify's [free "Starter" site-hosting tier](https://www.netlify.com/pricing/) is an amazing way to have a personal or small-business website, especially one built by a [static site generator](https://staticgen.com) (SSG) like the [Eleventy](https://11ty.dev) SSG this site uses.
 
 As long as your site's monthly in/out bandwidth stays under 100&nbsp;GB, Netlify gives you all these advantages even on the free tier:
 
@@ -29,7 +29,7 @@ Lots of goodies for free, right? You betcha. So what's the problem?
 
 On October 1, 2019, Netlify's free tier started having a monthly limit of 300 build minutes. While it was understandable that there would have to be a limit of this nature, and 300 minutes seemed a lot for many users of the free tier, some folks [didn't take it well](https://www.reddit.com/r/webdev/comments/dc7lx0/netlify_starts_charging_for_build_minutes/). It didn't help that Netlify announced this to free-tier customers via an email with the subject line, "Introducing the Builds Tab in the Netlify dashboard," which buried the lede---the new limit---several paragraphs down.
 
-It's important to understand that a build isn't simply what *you* are uploading to the remote box. In order to make sure the build is "clean," so to speak, each build *reinstalls* everything you've got in your setup. For example, in this site's case, that means installing [Node.js](https://nodejs.org), Eleventy, and all the [npm](https://npmjs.com) plugins that my repo's `package.json` "knows" should be there. Again: that's on *every build*. Only *then* do your actual Web site files come into play.
+It's important to understand that a build isn't simply what *you* are uploading to the remote box. In order to make sure the build is "clean," so to speak, each build *reinstalls* everything you've got in your setup. For example, in this site's case, that means installing [Node.js](https://nodejs.org), Eleventy, and all the [npm](https://npmjs.com) plugins that my repo's `package.json` "knows" should be there. Again: that's on *every build*. Only *then* do your actual website files come into play.
 
 In my own case, three factors gradually inflated my build times to the point that this limit became problematic for me. See if they apply, or might apply down the line, to your site.
 
@@ -256,6 +256,6 @@ So, to you brave souls who got all the way through this, here's the bottom&nbsp;
 
 If you're using Netlify's free tier and want to stay with it, but are chafing under that 300-minute monthly build limit, follow my advice and you'll chafe no more. I can speak from experience, thanks to the aforementioned "time, research, testing, and tinkering." 
 
-There is something very precious about the right to express one's self on the Web, just as in any other forum. Perhaps this long, nerdy post will help you continue to do so as often as you want, and however you want.
+There is something very precious about the right to express one's self on the web, just as in any other forum. Perhaps this long, nerdy post will help you continue to do so as often as you want, and however you want.
 
 As the 2020 version of my country's Independence Day observance nears, I say: here's to freedom.

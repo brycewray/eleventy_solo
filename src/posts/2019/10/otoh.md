@@ -73,7 +73,7 @@ Moreover, it's going quite a bit more smoothly this time (he said, his rabbit's 
 
 That's due in large part to the *excellent* advice and tutorials I've found from, yes, those other folks out there who've written about their sites and how, in some cases, they learned so much from their mistakes with particularly complicated SSGs like Gatsby.
 
-Am I ready to switch? Oh, not yet. Baby steps. But I'm learning some good stuff and catching some goofy things I did the first few times. (My recent interest in [Webpack](https://webpack.js.org/), which is part of Gatsby as well as a powerful package of its own, didn't hurt.) Whether what I'm learning will translate into articles that will help you---much less into my actually being able to migrate this site to Gatsby as [I'd originally attempted months ago](/posts/2019/07/why-staying-with-hugo)---well, that's what we'll find out in the weeks and months ahead.
+Am I ready to switch? Oh, not yet. Baby steps. But I'm learning some good stuff and catching some goofy things I did the first few times. (My recent interest in [webpack](https://webpack.js.org/), which is part of Gatsby as well as a powerful package of its own, didn't hurt.) Whether what I'm learning will translate into articles that will help you---much less into my actually being able to migrate this site to Gatsby as [I'd originally attempted months ago](/posts/2019/07/why-staying-with-hugo)---well, that's what we'll find out in the weeks and months ahead.
 
 ## See ya, CYA
 

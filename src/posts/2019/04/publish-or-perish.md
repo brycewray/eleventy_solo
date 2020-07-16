@@ -25,7 +25,7 @@ oldComments: |
   </div>
 ---
 
-This is a follow-up to [my previous post](/posts/2019/04/ec-static/) showing you how to launch a [Hugo](https://gohugo.io)-based [static Web site](https://dzone.com/articles/6-reasons-why-you-should-go-for-a-static-website). Assuming you followed the instructions in that post and now have a local Hugo site running and looking the way you want on your system, here's how you publish it to the **real** Web. Don't be deterred by the length of these instructions; a great deal of this will go very quickly once you actually do it, but **explaining** it is somewhat wordy by nature.
+This is a follow-up to [my previous post](/posts/2019/04/ec-static/) showing you how to launch a [Hugo](https://gohugo.io)-based [static website](https://dzone.com/articles/6-reasons-why-you-should-go-for-a-static-website). Assuming you followed the instructions in that post and now have a local Hugo site running and looking the way you want on your system, here's how you publish it to the **real** web. Don't be deterred by the length of these instructions; a great deal of this will go very quickly once you actually do it, but **explaining** it is somewhat wordy by nature.
 
 ## Keepin' it easy: Go GUI
 
@@ -37,15 +37,15 @@ First, let me harken back to another [previous post](/posts/2018/10/version-cont
 
 In that aforementioned post about setting up Hugo, I left you hanging at **STEP 6**, which was:
 
-> **STEP 6: Publish the site to the Web.**
+> **STEP 6: Publish the site to the web.**
 
 *All right, fine; so now what?* you're wondering. Here we go. We'll consider all of these parts of **STEP 6**, and thus I'll label them as such.
 
 ### Step 6a: Set up a local repo
 
-Whichever place on the Web you plan to publish your site, you need an online [**repository**](https://en.wikipedia.org/wiki/Repository_(version_control)), or **repo**, where your files will be stored and version control will occur. This is how pretty much all the [SSG](https://staticgen.com)-friendly hosting sites work, and it's a good thing because it makes it reasonably easy for you to revert to earlier versions of your content in case things get wonky. But, before you can make the best use of that, you first need a **local** repo on your computer. That's where you'll be practicing **local** version control, and it's where the online or **remote** repo will get its files. We'll get there. Hang with me.
+Whichever place on the web you plan to publish your site, you need an online [**repository**](https://en.wikipedia.org/wiki/Repository_(version_control)), or **repo**, where your files will be stored and version control will occur. This is how pretty much all the [SSG](https://staticgen.com)-friendly hosting sites work, and it's a good thing because it makes it reasonably easy for you to revert to earlier versions of your content in case things get wonky. But, before you can make the best use of that, you first need a **local** repo on your computer. That's where you'll be practicing **local** version control, and it's where the online or **remote** repo will get its files. We'll get there. Hang with me.
 
-We're going to accomplish this with Sourcetree. First, get Sourcetree by visiting its [Web site](https://www.sourcetreeapp.com) and downloading/installing the appropriate version for your operating system. You need **administrator-level** access to install software on your system, of course.
+We're going to accomplish this with Sourcetree. First, get Sourcetree by visiting its [website](https://www.sourcetreeapp.com) and downloading/installing the appropriate version for your operating system. You need **administrator-level** access to install software on your system, of course.
 
 Once you have Sourcetree running, Atlassian has a [great help page](https://confluence.atlassian.com/get-started-with-sourcetree/create-a-local-repository-847359103.html) to show you to how to create your local repo, and I really can't improve upon it---except to say: 
 
@@ -76,11 +76,11 @@ Before connecting this repo with the host so your site will actually work, you w
 
 There are oodles of sites that sell custom domains. The one I personally prefer is [Namecheap](https://namecheap.com), but choose the one you want. Try to buy a reasonably short one if you can, but mainly just buy one. By default, your chosen domain provider will usually give you preliminary, standby hosting, but that's not important; you'll soon be having it point to what you're about to have. (**Note**: To do that pointing, keep the domain provider's browser window/tab open while you proceed to the next step.)
 
-Now that your Hugo site's files are out in a remote repo and you have a domain for them, it's time to introduce you to the place where all this will become a real Web site.
+Now that your Hugo site's files are out in a remote repo and you have a domain for them, it's time to introduce you to the place where all this will become a real website.
 
 ### Step 6f: Put the site on Netlify
 
-[Netlify](https://www.netlify.com) hosts SSG sites for free on a highly advanced, eerily fast, [CDN](https://www.webopedia.com/TERM/C/CDN.html)-driven setup and makes it extremely easy to get your content from your remote repo to a real, live Web site, especially once you've completed the setup I'm about to describe.
+[Netlify](https://www.netlify.com) hosts SSG sites for free on a highly advanced, eerily fast, [CDN](https://www.webopedia.com/TERM/C/CDN.html)-driven setup and makes it extremely easy to get your content from your remote repo to a real, live website, especially once you've completed the setup I'm about to describe.
 
 The first thing to do is [set up a free Netlify account](https://app.netlify.com/signup). Choose to do it through your newly created Bitbucket account, which will make the rest of this even easier. When Bitbucket prompts you to **authorize** Netlify to use it, let it do so.
 
@@ -115,6 +115,6 @@ So, once all this is done, how do you update your site in the future when you ch
 
 Once more, I apologize for the length of this, especially when combined with its [predecessor](/posts/2019/04/ec-static). I am sure you can find better how-to-SSG guides out there, and I encourage you to search for and find the one that works best with your learning methods[^visual] and knowledge level.
 
-However it ends up, I hope that you enjoy having your own Hugo-powered Web site as much as I've enjoyed mine so far. Build some content, spiff things up, speak your mind, and have fun!
+However it ends up, I hope that you enjoy having your own Hugo-powered website as much as I've enjoyed mine so far. Build some content, spiff things up, speak your mind, and have fun!
 
 [^visual]: In particular, you may be one of those folks who learns best from pictures and videos, not wordy instructions like these. If so, you might try the Hugo-related videos on [Mike Dane's YouTube channel](https://www.youtube.com/channel/UCvmINlrza7JHB1zkIOuXEbw) and [this "Deploy Websites In Seconds With Netlify" video](https://www.youtube.com/watch?v=bjVUqvcCnxM), just for starters.

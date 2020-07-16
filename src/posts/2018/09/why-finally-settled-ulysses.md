@@ -46,7 +46,7 @@ You see, in the end, I realized one fundamental, albeit annoying, truth about my
 
 I think that’s because I’ve spent the vast majority of my adult working life writing things that had to **look** good as well as read well. Thank you, desktop publishing. Indeed, when I briefly tried writing a novel back in the ’90s, I actually used Quark XPress, back then my daily driver where DTP was concerned, because I was nearly as concerned with the layout as I was the words. Bad, bad me. Fortunately, I also exported it to .doc format—the Word format of the time—or I’d now have no idea how it read except from my increasingly foggy memory of it. I can tell you I didn’t get too far with it in either XPress or Word, which was probably just as well.
 
-To be sure, picking up Web design in the mid-’90s as first a hobby and then a part of my daily working life didn’t help, either, especially once I discovered CSS.[^2]
+To be sure, picking up web design in the mid-’90s as first a hobby and then a part of my daily working life didn’t help, either, especially once I discovered CSS.[^2]
 
 It turns out that this predilection toward how it looks also has a positive, *if* I decide to self-publish my novel as I’m increasingly inclined to do. That’s because my three decades of DTP taught me how to format professionally, and—if I do say so myself—I think I’ll be able to do a fairly nice cover design, too.
 
@@ -60,14 +60,14 @@ Once I realized this about myself, it was clear why my particular DTP-/typograph
 
 Ulysses probably isn’t where I’d want to write, say, _another_ book the size of the James Joyce novel after which I presume it was named. At least, that’s what most reviewers say with almost an “And of course you know” sort of shrug. Since I’m more into writing stuff that ranges from short stories to, in the case of the current WIP, slightly-longer-than-novella novels, that’s not a problem for me. If you’re trying to write the twenty-first century version of _War and Peace_, well, then you’re probably better off in Scrivener.
 
-I don’t mean to cast shade on Scrivener and the wonderful people at L&amp;L. There are many authors who swear by Scrivener as the only way they can write. They clearly don’t have my problem with being distracted by the appearance of text. But, believe me, when you’ve spent most of your adult life having to make sure paragraphs and pages and Web sites both _looked_ and _read_ a certain way, you’re going to find it hard to divorce the text from the look of the text. Yet, that’s exactly what you have to do if you’re going to _write_. 
+I don’t mean to cast shade on Scrivener and the wonderful people at L&amp;L. There are many authors who swear by Scrivener as the only way they can write. They clearly don’t have my problem with being distracted by the appearance of text. But, believe me, when you’ve spent most of your adult life having to make sure paragraphs and pages and websites both _looked_ and _read_ a certain way, you’re going to find it hard to divorce the text from the look of the text. Yet, that’s exactly what you have to do if you’re going to _write_. 
 
 As [David Hewson](https://davidhewson.com) [puts it so well](https://davidhewson.com/2017/08/13/five-reasons-i-use-ulysses/):
 
 > Ulysses is about text on the page. Yes, you can do lots of clever things with tagging and stuff if you want (and I do when it’s necessary). But at its heart Ulysses works like a very clever digital typewriter. Clear the decks of all the frills, the folders, the styles, the agonising over whether to write in Avenir or Helvetica. Get all that out of the way and just write. What you see is what the eventual reader will see. In essence Ulysses is extremely simple. Once you get your head around the basics you can forget about software and focus on the hard bit — saying what you want to say and saying it well. There are no distractions, and that’s a wonderful thing because writers tend to hunt for distractions all the time. It’s easier puzzling over them than getting down to the real job in hand.[^3]
 
 
-[^1]:	I’ll save it from a Ulysses “sheet” to an .md file in an appropriate part of my Hugo site’s “posts” directory and, therefore, convert it into this Web page.
+[^1]:	I’ll save it from a Ulysses “sheet” to an .md file in an appropriate part of my Hugo site’s “posts” directory and, therefore, convert it into this web page.
 
 [^2]:	By the way: if you don’t know CSS yet but you’re using Ulysses, learn it ASAP. It’s a delight to know how to customize the export styles in Ulysses using its CSS-derived styles language. If you’re concerned at all with the final appearance of whatever you export, it behooves you to know this schtuff.
 

@@ -23,7 +23,7 @@ First, lest we forget, there were several months *before* I embarked on "the dan
 
 ### January
 
-- **[Blox sux](/posts/2019/01/blox-sux/)**---If you *have* to use WordPress in building Web sites, you should be very picky about which page editor plugin you use.
+- **[Blox sux](/posts/2019/01/blox-sux/)**---If you *have* to use WordPress in building websites, you should be very picky about which page editor plugin you use.
 
 ### February
 
@@ -37,11 +37,11 @@ First, lest we forget, there were several months *before* I embarked on "the dan
 
 - **[Plain truth](/posts/2019/03/plain-truth/)**---If your words are worth writing, they're worth keeping for the future in *plain text*. That led to the obvious question about how one then can format such text, which I answered with&nbsp;.&nbsp;.&nbsp;.
 
-- **[Mark it down](/posts/2019/03/mark-it-down)**---This is my salute to [Markdown](https://daringfireball.net/projects/markdown). There are many like it on the Web, but this is mine.
+- **[Mark it down](/posts/2019/03/mark-it-down)**---This is my salute to [Markdown](https://daringfireball.net/projects/markdown). There are many like it on the web, but this is mine.
 
 ### April
 
-- **[Ec-static](/posts/2019/04/ec-static)**---Still blissfully unaware that "the dance" was about to occupy my brain, I started a two-parter on how to get started using what then was my SSG of record, [Hugo](https://gohugo.io). In this part, I worked you through setting up Hugo itself and getting a site going.[^howto11ty] That left the most practical part---actually getting the site *on the Web*---for Part&nbsp;II.
+- **[Ec-static](/posts/2019/04/ec-static)**---Still blissfully unaware that "the dance" was about to occupy my brain, I started a two-parter on how to get started using what then was my SSG of record, [Hugo](https://gohugo.io). In this part, I worked you through setting up Hugo itself and getting a site going.[^howto11ty] That left the most practical part---actually getting the site *on the web*---for Part&nbsp;II.
 
 [^howto11ty]: I have considered doing a similar piece about my Eleventy/webpack setup, but the webpack part of the puzzle would make that a lot more challenging. I may just have to continue my [stance](/posts/2019/09/why-left-hugo-eleventy) that, for an outright SSG newbie, Hugo and its single-binary, lotsa-stuff-out-of-the-box approach would still be the better choice.
 
@@ -98,7 +98,7 @@ I still stand by all the good things I said about Eleventy in this post. What I 
 
 ### October
 
-So, here we were in October, three and a half months after I'd begun "the dance" with Gatsby Experiment I. Even now, I still was reading voraciously all the docs I could find about Gatsby. I even dabbled briefly with the somewhat similar [Next.js](https://nextjs.org) although nothing came of that, except for some interesting stuff which I never put on the Web.
+So, here we were in October, three and a half months after I'd begun "the dance" with Gatsby Experiment I. Even now, I still was reading voraciously all the docs I could find about Gatsby. I even dabbled briefly with the somewhat similar [Next.js](https://nextjs.org) although nothing came of that, except for some interesting stuff which I never put on the web.
 
 But I was, as I said, angry with myself about where things sat. And that led to my first post of what turned out to be an eventful October where "the dance" was concerned.
 

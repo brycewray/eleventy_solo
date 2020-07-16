@@ -31,7 +31,7 @@ But it *is* a trial. And I still haven't decided whether to go beyond that. I'll
 
 Before I get to the reasons why I have some reluctance about continuing with this service when the free trial ends, I'll address some of the service-based criticisms one often sees about SiriusXM.
 
-If reading the Web-based comments from those who gripe about SiriusXM programming[^IntelligentOnes] can provide an accurate picture of what SiriusXM users think---and that's a *big* "if," in my view---it would seem that a lot of those users wish that:
+If reading the web-based comments from those who gripe about SiriusXM programming[^IntelligentOnes] can provide an accurate picture of what SiriusXM users think---and that's a *big* "if," in my view---it would seem that a lot of those users wish that:
 
 [^IntelligentOnes]: And I mean the intelligent ones, not the ones who TYPE IN ALL CAPS or can't spell or can't punctuate or---ah, you get the idea.
 
@@ -71,17 +71,17 @@ Problem is, SiriusXM employs a "customer retention" operation that puts cable co
 
 I *hate* negotiating prices, whether with car dealers or with "retention specialists." If I could erase the world and remake it to suit me, *everything would have a fixed price*. There would be *true* "no-haggle" pricing. Unfortunately, that's not how one buys a vehicle, and it's also not how one deals with SiriusXM.
 
-At this writing, the top-of-the-line XM All Access package,  which is the only one I would consider having, has a list price---or let's call it a *sticker price*, to keep the car-buying analogy sufficiently sound---of twenty-two bucks a month. However, you know what they say about buying vehicles: "Never pay the sticker price." Numerous commenters on the Web tell you that, when it's time either to start a subscription or renew one, you should negotiate that number ’way, ’way down. The consensus seems to be that you ought to be able to get the "retention specialist" to give you twelve months' worth of XM All Access for just a hundred bucks, which is less than half of what it's supposed to cost.[^XMS]
+At this writing, the top-of-the-line XM All Access package,  which is the only one I would consider having, has a list price---or let's call it a *sticker price*, to keep the car-buying analogy sufficiently sound---of twenty-two bucks a month. However, you know what they say about buying vehicles: "Never pay the sticker price." Numerous commenters on the web tell you that, when it's time either to start a subscription or renew one, you should negotiate that number ’way, ’way down. The consensus seems to be that you ought to be able to get the "retention specialist" to give you twelve months' worth of XM All Access for just a hundred bucks, which is less than half of what it's supposed to cost.[^XMS]
 
 [^XMS]: For the more popular XM Select, which has fewer channels but the vast majority of those that the [Reddit](https://reddit.com) crowd seems to want, the sticker price is seventeen bucks a month *but* you'll see lots of people bragging they got it down to six months for just thirty bucks, or thereabout.
 
 Of course, to *do* that, you have to go through all kinds of crappy negotiating.
 
-First of all: while you can *sign up* with SiriusXM through its Web site, you must *call*[^Cali] to *cancel* or get the rate you want, *if* you can.
+First of all: while you can *sign up* with SiriusXM through its website, you must *call*[^Cali] to *cancel* or get the rate you want, *if* you can.
 
 [^Cali]: That is, you must call *unless* you live in a jurisdiction, like California, that actually protects its residents with laws against this idiocy. However, Texas, where I live, couldn't care less.
 
-And how do you do this? Well, there's a certain number to call, the "experts" say, as opposed to the usual one SiriusXM lists on its Web site. Often, you have to go through numerous calls---and all their accompanying on-hold time---and keep at it until you get a "retention specialist," or a (supposed) manager of that person, who'll give in. You'll probably have to threaten to cancel, or *actually* cancel, several times in all of this rigamarole.
+And how do you do this? Well, there's a certain number to call, the "experts" say, as opposed to the usual one SiriusXM lists on its website. Often, you have to go through numerous calls---and all their accompanying on-hold time---and keep at it until you get a "retention specialist," or a (supposed) manager of that person, who'll give in. You'll probably have to threaten to cancel, or *actually* cancel, several times in all of this rigamarole.
 
 Then, of course, you have to rinse and repeat when it's about time for that subscription to end. Also, you don't dare wait too late if they *do* have your credit card on record, lest they auto-bill you for the higher amount they really want to charge.[^AutoBill]
 

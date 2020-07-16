@@ -71,7 +71,7 @@ So, now, I keep my Hugo directory in a drive that's not sync'd with the cloud. [
 
 ## Oh, the typography
 
-If you read [that last post](/posts/2019/07/why-staying-with-hugo), you know the ultimate straw that caused me to cancel the whole thing with Gatsby came when I found its handling of on-screen typography to be erratic after I'd attempted to install [MDX](https://mdxjs.com) compatibility. As I made clear last year, typography is a [big](/posts/2018/10/web-typography-part-1) [deal](/posts/2018/10/web-typography-part-2) with me, no less on the Web than anywhere else, so that was the final show-stopper.
+If you read [that last post](/posts/2019/07/why-staying-with-hugo), you know the ultimate straw that caused me to cancel the whole thing with Gatsby came when I found its handling of on-screen typography to be erratic after I'd attempted to install [MDX](https://mdxjs.com) compatibility. As I made clear last year, typography is a [big](/posts/2018/10/web-typography-part-1) [deal](/posts/2018/10/web-typography-part-2) with me, no less on the web than anywhere else, so that was the final show-stopper.
 
 Well, I want to tell you: in my admittedly limited research, I found this  to be a problem with many of the newer SSGs.
 

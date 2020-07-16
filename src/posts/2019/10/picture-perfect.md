@@ -17,7 +17,7 @@ When I [was](/posts/2019/07/why-staying-with-hugo) [railing](/posts/2019/07/less
 
 I won't take you back through the whole rant, especially since I linked above to the extended-length posts that contained its component parts, but here it is in TL;DR form:
 
-> "Ah been buildin' Web sites since the days of Abe Lincoln, by jingo, and Ah'm used to puttin' images in an `/images` folder at the top level and accessin' them from there from any dang Web page Ah build. If Ah cain't do that no more, this Gatsby whipper-snapper can kiss mah grits. *[Now pardon me, sonny, while Ah go spit my tobacky juice.]*"
+> "Ah been buildin' websites since the days of Abe Lincoln, by jingo, and Ah'm used to puttin' images in an `/images` folder at the top level and accessin' them from there from any dang web page Ah build. If Ah cain't do that no more, this Gatsby whipper-snapper can kiss mah grits. *[Now pardon me, sonny, while Ah go spit my tobacky juice.]*"
 
 .&nbsp;.&nbsp;. so you can well imagine the shock my *hubris* took when I learned that an insistence on where images should go **isn't** just a Gatsby requirement. It's even a [Hugo](https://gohugo.io) requirement, not to mention a requirement for the Gatsby near-beer, [Gridsome](https://gridsome.org). It all depends on how you want the site to perform where those images are concerned.
 
@@ -59,7 +59,7 @@ Each of these three SSGs can do that, too, albeit with some settings from you. H
 
 ### Smart lazy loading, and with cool effects
 
-Many people view the Web under less-than-ideal conditions, so it's best not to serve *everybody* big-a$# images, or all the images on your page, from the get-go.
+Many people view the web under less-than-ideal conditions, so it's best not to serve *everybody* big-a$# images, or all the images on your page, from the get-go.
 
 Intelligent *lazy loading*, which means loading only those images that actually need to appear based on what the person is actually scrolling up on screen at the time, is built into Gatsby's `gatsby-image` and Gridsome's `g-image` components.
 
@@ -73,7 +73,7 @@ Hugo doesn't do either of these out of the box, but you can add to your Hugo sit
 
 ## Can't I just pre-optimize?
 
-If you're an old-school Web geek such as I, remembering the days when such capabilities didn't exist, you might be wondering, "Why can't we just do what we used to do, which is to process the images *ourselves* beforehand in our image editors of choice?"
+If you're an old-school web geek such as I, remembering the days when such capabilities didn't exist, you might be wondering, "Why can't we just do what we used to do, which is to process the images *ourselves* beforehand in our image editors of choice?"
 
 The answer to that is, of course: you absolutely **can**. And many still do. It's just that, this way, you don't have to do so.
 

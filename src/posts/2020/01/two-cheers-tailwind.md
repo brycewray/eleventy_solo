@@ -16,9 +16,9 @@ featured_image_caption: "Image: Wojciech Krakowiak; Pixabay"
 ***Update, 2020-05-09***:<br />
 Although it was clear from this take---and what I added at the bottom---that I wasn't crazy about the subject of this post, I later changed my mind and reinstated it, as explained [here](/posts/2020/05/going-solo-eleventy). Still, am leaving this post in place for archival purposes and the sake of [transparency](/posts/2019/10/otoh).{.yellowBox}
 
-A couple of weekends ago, I tweeted a question for the Web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year's, so I figured I'd be fortunate if I got a handful of responses.
+A couple of weekends ago, I tweeted a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year's, so I figured I'd be fortunate if I got a handful of responses.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Reading about <a href="https://twitter.com/tailwindcss?ref_src=twsrc%5Etfw">@tailwindcss</a> and other <a href="https://twitter.com/hashtag/atomicCSS?src=hash&amp;ref_src=twsrc%5Etfw">#atomicCSS</a> approaches (<a href="https://twitter.com/tachyons_css?ref_src=twsrc%5Etfw">@tachyons_css</a>, <a href="https://twitter.com/basscss?ref_src=twsrc%5Etfw">@basscss</a> , etc.). They seem aimed at the multi-project, multi-dev use case. But what if it’s just one personal Web site with one maintainer (HTML and CSS)? Worth it then?</p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1210975092999704578?ref_src=twsrc%5Etfw">December 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Reading about <a href="https://twitter.com/tailwindcss?ref_src=twsrc%5Etfw">@tailwindcss</a> and other <a href="https://twitter.com/hashtag/atomicCSS?src=hash&amp;ref_src=twsrc%5Etfw">#atomicCSS</a> approaches (<a href="https://twitter.com/tachyons_css?ref_src=twsrc%5Etfw">@tachyons_css</a>, <a href="https://twitter.com/basscss?ref_src=twsrc%5Etfw">@basscss</a> , etc.). They seem aimed at the multi-project, multi-dev use case. But what if it’s just one personal website with one maintainer (HTML and CSS)? Worth it then?</p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1210975092999704578?ref_src=twsrc%5Etfw">December 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Then it got retweeted by the [Tailwind CSS](https://tailwindcss.com) [Twitter account](https://twitter.com/tailwindcss) and, well, my phone was pretty actively "bink"-ing at me for a few hours thereafter.
 
@@ -81,7 +81,7 @@ What I'm saying, then, is that any concerns I have about this approach definitel
 
 I guess what still mainly bugs me is the whole idea of whether, specifically for an [SSG](https://staticgen.com)-built site like mine that depends so heavily on a small number of [templates](https://www.11ty.dev/docs/templates/), I might not be better off just going back to a less utilitarian method. Am I really gaining anything from this build-the-appearance-one-Lego-block-at-a-time approach? Would I be wiser just to revert to the way I was doing it before?
 
-By the way: no matter which way I go, a reversion to my previous workflow probably *wouldn't* mean going back to SASS/SCSS, which I jettisoned in the transition to utility-first. To learn how to use Tailwind CSS, I also had to learn about using [PostCSS](https://postcss.org). It's clear that, even I do go back to a less utilitarian approach, PostCSS and its [plugins](https://www.postcss.parts) can do everything, and more, for which I used SASS/SCSS. In fact, what PostCSS enables is pretty frickin' amazing. Just being able to take what starts out in dev mode as 2.4&nbsp;**MB** of CSS (some of which is related to using Web "fonts," I should note in all fairness) and end up with it in production mode at only about 7&nbsp;**K** is impressive, to put it mildly.
+By the way: no matter which way I go, a reversion to my previous workflow probably *wouldn't* mean going back to SASS/SCSS, which I jettisoned in the transition to utility-first. To learn how to use Tailwind CSS, I also had to learn about using [PostCSS](https://postcss.org). It's clear that, even I do go back to a less utilitarian approach, PostCSS and its [plugins](https://www.postcss.parts) can do everything, and more, for which I used SASS/SCSS. In fact, what PostCSS enables is pretty frickin' amazing. Just being able to take what starts out in dev mode as 2.4&nbsp;**MB** of CSS (some of which is related to using web "fonts," I should note in all fairness) and end up with it in production mode at only about 7&nbsp;**K** is impressive, to put it mildly.
 
 ## We Shall See<sup style="font-size: 0.5em; font-weight: normal; vertical-align: baseline; position: relative; top: -1.1em; margin-right: -1em;">&trade;</sup>---as usual
 
@@ -89,7 +89,7 @@ As I observed near the end of my [last post](/posts/2019/12/sorta-strange-ssg-tr
 
 .&nbsp;.&nbsp;. Or not.
 
-One aspect I have to keep in mind is, as I often mention in these posts, my wish to stay current with whatever New Hotness exists in Web dev. Mind you, I won't *adopt* it all, but I do want to *know* about it. The question I must now resolve regarding utility-first CSS is whether I can know enough about it without actually using it.
+One aspect I have to keep in mind is, as I often mention in these posts, my wish to stay current with whatever New Hotness exists in web dev. Mind you, I won't *adopt* it all, but I do want to *know* about it. The question I must now resolve regarding utility-first CSS is whether I can know enough about it without actually using it.
 
 That remains TBD.
 
@@ -123,6 +123,6 @@ I *won't* try to tell you that it was easy to take my previous SCSS and convert 
 
 [^elevwp]: Thank goodness for my [Eleventy/webpack setup](/posts/2019/12/packing-up), without which the whole process of reversion would've been much more onerous. I shudder to think about, say, if I'd still been on [Gatsby](/posts/2019/10/now-gatsby-geezer).
 
-Don't get me wrong. I do understand that there definitely are cases to be made for utility-based CSS, especially---as I tweeted back on December 28---for multi-dev shops. I just don't believe my little one-man, one-approver Web site qualifies as a good example of such a case.
+Don't get me wrong. I do understand that there definitely are cases to be made for utility-based CSS, especially---as I tweeted back on December 28---for multi-dev shops. I just don't believe my little one-man, one-approver website qualifies as a good example of such a case.
 
 And, more to the point: I just like this way better and, unlike so many other things in my life, this is one situation where I get to make the final call.

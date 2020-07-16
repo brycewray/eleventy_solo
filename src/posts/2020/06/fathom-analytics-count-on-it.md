@@ -2,7 +2,7 @@
 layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Fathom Analytics: Count on it"
-subtitle: "A better way to analyze Web sites"
+subtitle: "A better way to analyze websites"
 description: "How to count visitors while protecting them—and yourself."
 author: Bryce Wray
 date: 2020-06-18T23:45:00
@@ -15,7 +15,7 @@ featured_image_caption: "Image: Alexander Sinn; Unsplash. Filtered in Affinity P
 
 **Affiliation disclaimer**: What follows is my *honest opinion* of something I'm now using on this site and paying for with my own money. But I want to advise you up-front that, if you [use this affiliate link (or others like it herein) to **sign up with Fathom Analytics**](https://usefathom.com/ref/ZKHYWX), I'll get a commission---***and*** **you** will get a **$10 credit** on your first invoice. So, if you like what I'm telling you here and want to [give this product a try](https://usefathom.com/ref/ZKHYWX), help out an old nerd **and** yourself and your visitors, okay? Thanks!{.yellowBox}
 
-Got your own Web site? Wonder how it's doing out there?
+Got your own website? Wonder how it's doing out there?
 
 Or, if you think you *know* how it's doing, how much can you trust the numbers you're viewing? Does the way you get those numbers put you at odds with the growing number of laws targeting Internet privacy violations?
 
@@ -23,7 +23,7 @@ This article is for you.
 
 It's only natural to be curious about which of your content your visitors are reading, what attracts them, and even what apparently has no appeal to them whatsoever. You definitely also want to know how those visitors found you in the first place.
 
-It's equally helpful to know what mix of screen sizes your users have---*e.g.*, how your site is doing with the ever-growing number of those who view the Web only from their phones---as well as which browsers they use and the countries where they live.
+It's equally helpful to know what mix of screen sizes your users have---*e.g.*, how your site is doing with the ever-growing number of those who view the web only from their phones---as well as which browsers they use and the countries where they live.
 
 Until not long ago, the obvious answer to these and other, similar wishes was to use Google Analytics. After all, it gives you a staggering amount of data on your visitors, and it's even absolutely free.
 
@@ -59,9 +59,9 @@ I've used it off-and-on since then, and---[as](https://jarv.is/notes/netlify-ana
 - **Thirty days and that's it**---The data goes back only a rolling thirty days. In other words, if you want to look back and see what your site was doing thirty-one days ago, tough.
 - **Real-time? Really?**---There is no real-time display of data; it's updated once an hour, and that's all she wrote.
 - **Questionable data**---Netlify Analytics doesn't give you any way to block your own traffic. So, if you're sitting there trying to figure out something about your own site's appearance and thus hitting numerous pages, Netlify Analytics is counting all that. The same goes for views of your site when it's only on "[localhost](https://en.wikipedia.org/wiki/Localhost)" during development. What good does having *that* data do you? And, speaking of bogus traffic&nbsp;.&nbsp;.&nbsp;.
-- **“Bots” are** ***not*** **people**---Netlify Analytics doesn't block the jillions of "bots" that scour the Web for all manners of reasons, so *that* traffic, too, inflates your numbers to the point of near-uselessness.
+- **“Bots” are** ***not*** **people**---Netlify Analytics doesn't block the jillions of "bots" that scour the web for all manners of reasons, so *that* traffic, too, inflates your numbers to the point of near-uselessness.
 
-In short, while you could say that Netlify Analytics' "heart" is in the right place, it's just not as smart as you'd want, especially when you're paying for it. (I've justified the pricing to myself mainly as a way of paying for the quality of what I get from Netlify's otherwise free tier of Web site hosting, as I think a lot of other Netlify Analytics users have while waiting on the product to get better.)
+In short, while you could say that Netlify Analytics' "heart" is in the right place, it's just not as smart as you'd want, especially when you're paying for it. (I've justified the pricing to myself mainly as a way of paying for the quality of what I get from Netlify's otherwise free tier of website hosting, as I think a lot of other Netlify Analytics users have while waiting on the product to get better.)
 
 There's another thing worth considering: **log retention**. For all the seemingly privacy-respecting aspects of Netlify Analytics, it obviously [requires the keeping of server access logs](https://docs.netlify.com/monitor-sites/analytics/how-analytics-works/#chart-data) for at least thirty days, so the platform definitely is not, and cannot be, log-free.
 
@@ -124,6 +124,6 @@ Forgive me for mentioning this just once more, **but** if you [click here to tak
 
 *(Curious how that works? You can easily get [full details](https://usefathom.com/affiliates) about the [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) affiliate program---which, if* ***you*** *sign up for it, can benefit you and your visitors, as well.)*
 
-But even if you just want to go to the Fathom Analytics [Web site](https://usefathom.com) without giving me or you a break, I urge you to check out this product. It has a lot going for it, especially considering the alternatives. It strikes me as the best option available now for knowing what your Web site's doing while protecting both your visitors and you.
+But even if you just want to go to the Fathom Analytics [website](https://usefathom.com) without giving me or you a break, I urge you to check out this product. It has a lot going for it, especially considering the alternatives. It strikes me as the best option available now for knowing what your website's doing while protecting both your visitors and you.
 
 Let's put it this way: Fathom Analytics is the kind of counting on which you **can** count.

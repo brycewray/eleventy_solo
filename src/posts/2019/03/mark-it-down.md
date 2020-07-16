@@ -15,7 +15,7 @@ featured_image_caption: "Image: AnnRos; Pixabay" # quotation marks to allow colo
 
 Before summer, 2015, if you'd asked me what Markdown was, I'd have said, "Cutting the price on a product, of course." And I wouldn't have been kidding, either.
 
-My first encounter with the Markdown I'll discuss herein was part of an interview process for a Web development job. The hiring manager sent me an email with the URL of a [GitHub](https://github.com) repository where I'd find several programming puzzles, accompanied by explanatory text files. I expected to find *readme.txt* and that sort of thing.
+My first encounter with the Markdown I'll discuss herein was part of an interview process for a web development job. The hiring manager sent me an email with the URL of a [GitHub](https://github.com) repository where I'd find several programming puzzles, accompanied by explanatory text files. I expected to find *readme.txt* and that sort of thing.
 
 Instead, there were .md files.
 
@@ -41,9 +41,9 @@ However, as I mentioned at the end:
 
 > Ah, yes. Well, this looks like a job for [Markdown](https://daringfireball.net/projects/markdown).
 
-Indeed, you might think of plain text as an ugly duckling compared to the beautiful swan that is a cleanly formatted document or Web page.
+Indeed, you might think of plain text as an ugly duckling compared to the beautiful swan that is a cleanly formatted document or web page.
 
-But Markdown is the trick up that little bird's sleeve---um, fuzz. (I would say, "down," particularly as a reference to Markdown, but that's too corny even for me, which is saying a lot.) So I'll spend a little time here on what almost certainly is the umpteenth paean to Markdown that you can find on the Web, just in case some of the more technical articles singing its praises leave you cold.
+But Markdown is the trick up that little bird's sleeve---um, fuzz. (I would say, "down," particularly as a reference to Markdown, but that's too corny even for me, which is saying a lot.) So I'll spend a little time here on what almost certainly is the umpteenth paean to Markdown that you can find on the web, just in case some of the more technical articles singing its praises leave you cold.
 
 ## How to make plain text powerful?
 
@@ -51,7 +51,7 @@ Plain text has been the backbone of computing in general, and the Internet (and 
 
 This got some serious minds to doing some serious thinking. They couldn't simply ignore the fact that most users wanted their text formatted---boldfaced, italicized, organized with headings and subheadings, full of bulleted and numbered lists, and so on. But how could all that get into plain text, period, much less in a uniform manner?
 
-Finding a solution to this question became more urgent in the early 2000s as, increasingly, documentation for software apps moved from its traditional print format to online. One obvious answer had been in place since around 1990: HTML. After all, the source code of every single Web page is absolutely plain text. It just has a lot of stuff that makes it not *look* plain:
+Finding a solution to this question became more urgent in the early 2000s as, increasingly, documentation for software apps moved from its traditional print format to online. One obvious answer had been in place since around 1990: HTML. After all, the source code of every single web page is absolutely plain text. It just has a lot of stuff that makes it not *look* plain:
 
 ```html
 <h1>This is a top-level heading (H1).</h1>
@@ -69,7 +69,7 @@ Finding a solution to this question became more urgent in the early 2000s as, in
 </ul>
 ```
 
-All of the above---and please understand, that's some pretty *bare-bones* HTML---then would look like this in the Web page itself:
+All of the above---and please understand, that's some pretty *bare-bones* HTML---then would look like this in the web page itself:
 
 > # This is a top-level heading (H1).
 > 
@@ -110,9 +110,9 @@ This would give you a paragraph with **bold text here** and *italicized text her
 - This is another unnumbered item.
 ```
 
-Again, it's a simple example, but you can see how much less typing that would involve, especially for people writing tech docs that would become Web pages. Although Markdown took its sweet time catching on, it's become a lifeline for such writers.
+Again, it's a simple example, but you can see how much less typing that would involve, especially for people writing tech docs that would become web pages. Although Markdown took its sweet time catching on, it's become a lifeline for such writers.
 
-That would be sufficiently important in and of itself; but, in recent years, Markdown has become a mainstay of a broader set of writers, even those such as I who are perfectly happy using HTML (hey, I've been coding Web pages since early 1996, back in the era when [<code style="color: inherit;">\<blink\></code> was still a thing](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink))---as apps like [Ulysses](https://ulyssesapp.com), [iA Writer](https://www.ia.net/writer), [Bear](https://bear.app), [Byword](https://bywordapp.com), [Drafts](https://getdrafts.com), and more have come into their own as go-to writing tools for those who've long since realized there was a better world beyond the confining quarters of Microsoft Word, Google Docs, and others of that ilk.
+That would be sufficiently important in and of itself; but, in recent years, Markdown has become a mainstay of a broader set of writers, even those such as I who are perfectly happy using HTML (hey, I've been coding web pages since early 1996, back in the era when [<code style="color: inherit;">\<blink\></code> was still a thing](https://developer.mozilla.org/en-US/docs/web/HTML/Element/blink))---as apps like [Ulysses](https://ulyssesapp.com), [iA Writer](https://www.ia.net/writer), [Bear](https://bear.app), [Byword](https://bywordapp.com), [Drafts](https://getdrafts.com), and more have come into their own as go-to writing tools for those who've long since realized there was a better world beyond the confining quarters of Microsoft Word, Google Docs, and others of that ilk.
 
 In fact, one very cool thing about Markdown is that, if you're *not* averse to using HTML and CSS here and there, you can **mix it seamlessly with those languages** to get things an app may not give you otherwise.
 
@@ -138,7 +138,7 @@ Oh, that reminds me: I mentioned earlier that a first look at Markdown might cau
 
 ## It'll set you free---often, *for* free
 
-You don't have to buy anything to give Markdown a try. There are any number of online sites that will let you play with Markdown and, in most cases, save and/or export your work. Some even let you do it absolutely for free, perhaps with some optional extra charges for certain goodies. (Of those online editors, my limited personal experience leads me to recommend [StackEdit](https://stackedit.io), but you'll want to search for your own best landing spot.)  That means even folks who are mostly Web-bound, like [Chromebook](https://www.google.com/chromebook) users, can get in on the fun.
+You don't have to buy anything to give Markdown a try. There are any number of online sites that will let you play with Markdown and, in most cases, save and/or export your work. Some even let you do it absolutely for free, perhaps with some optional extra charges for certain goodies. (Of those online editors, my limited personal experience leads me to recommend [StackEdit](https://stackedit.io), but you'll want to search for your own best landing spot.)  That means even folks who are mostly web-bound, like [Chromebook](https://www.google.com/chromebook) users, can get in on the fun.
 
 And, yes, it actually *is* fun. It looks a little goofy on-screen, depending on the editor you're using, but you get used to it pretty quickly. Then, as you realize how much more deeply you're getting into your writing by using a lean, *writing*-focused Markdown editor rather than a bloated, *presentation*-focused word processor---and as you enjoy the warm feeling of knowing that using Markdown enables you to save your work in bulletproof plain text---you'll be amazed how much freer you'll feel when you write.
 

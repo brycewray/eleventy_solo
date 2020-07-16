@@ -9,15 +9,15 @@ date: 2020-04-28T21:30:00
 #lastmod: TBD
 discussionId: "2020-04-webmentions-three-ssgs-1"
 featured_image: group-chat-photoillustration-3354365_4928x2855.jpg
-featured_image_alt: "Photoillustration of a multi-participant Web chat"
+featured_image_alt: "Photoillustration of a multi-participant web chat"
 featured_image_caption: "Image: Gerd Altmann; Pixabay"
 ---
 
-**Note**: This is the Introduction to a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in Web sites built by three different [static site generators](https://staticgen.com) (SSGs): [Eleventy](https://11ty.dev), [Hugo](https://gohugo.io), and [Gatsby](https://gatsbyjs.org). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors' code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.{.yellowBox}
+**Note**: This is the Introduction to a five-part series about how you can set up [webmentions](https://indieweb.org/webmention) in websites built by three different [static site generators](https://staticgen.com) (SSGs): [Eleventy](https://11ty.dev), [Hugo](https://gohugo.io), and [Gatsby](https://gatsbyjs.org). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors' code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.{.yellowBox}
 
 It's an [often-misattributed](https://www.artsy.net/article/artsy-editorial-four-iconic-quotes-artists) phrase: "Good artists copy; great artists steal." Well, in the case of your faithful correspondent, here, it's more a case of "Great coders code; mediocre coders borrow shamelessly." But, if I didn't, I couldn't keep this site going, so shameless I shall continue to be.
 
-A few months ago, I first learned of the [IndieWeb](https://indieweb.org) movement and, more to the point, [webmentions](https://indieweb.org/Webmention). In case you're new to this stuff, too, the idea behind webmentions is that people should own their own Web content because it's unwise to depend on third parties---even apparently financially healthy ones---to keep that content safe for the future. Having your own personal Web site is part of that idea, but having webmention functionality *on* that site is another major puzzle piece.
+A few months ago, I first learned of the [IndieWeb](https://indieweb.org) movement and, more to the point, [webmentions](https://indieweb.org/Webmention). In case you're new to this stuff, too, the idea behind webmentions is that people should own their own web content because it's unwise to depend on third parties---even apparently financially healthy ones---to keep that content safe for the future. Having your own personal website is part of that idea, but having webmention functionality *on* that site is another major puzzle piece.
 
 When I [converted](/posts/2019/12/packing-up) this site to an [Eleventy](https://11ty.dev)-/[webpack](https://webpack.js.org)-based platform a few months back, I also began a tentative, gradual integration of webmentions into the site.[^FullWM] As [mentioned before](/posts/2020/04/full-11ty-js-monty), I leaned heavily (out of my usual necessity) on code and articles by others who'd mastered this on their own sites. That's when I knew I'd be writing this post; but I'll get to that in a moment.
 
@@ -31,7 +31,7 @@ Although I said at the time that I'd be wary about keeping those repos up to dat
 
 Accordingly, when I enhanced this site's webmentions capabilities recently so that it now shows more kinds of webmentions, I couldn't resist doing the same for the other two repos. And, this past Saturday, I was able to post the necessary changes to them.
 
-**This series is for sharing some of what I learned in the process**. That's especially true where the Hugo and Gatsby repos were concerned, because getting them up to speed, notably the Gatsby repo, required quite a bit more futzing as compared to doing it in the Eleventy repo. I therefore decided to use this series as a way of providing help for anyone else who might want to add webmentions to a Web site based on any of these three SSGs.
+**This series is for sharing some of what I learned in the process**. That's especially true where the Hugo and Gatsby repos were concerned, because getting them up to speed, notably the Gatsby repo, required quite a bit more futzing as compared to doing it in the Eleventy repo. I therefore decided to use this series as a way of providing help for anyone else who might want to add webmentions to a website based on any of these three SSGs.
 
 ### Chase scenes
 
@@ -47,7 +47,7 @@ And no chase scenes involved, I hope.
 
 It's not within the scope of this series to give you *extensive* details about the general niceties of making your site compatible with webmentions in the first place. Fortunately, [IndieWebify.Me](https://indiewebify.me) not only is pretty much the canonical location for that, but also makes it easy.
 
-To facilitate the capture of webmentions for my site, I chose to use a combination of two free, hosted services: [webmention.io](https://webmention.io), which is an endpoint for receiving webmentions for Web pages registered with it; and [Bridgy](https://brid.gy), which "watches" social media sites for responses to its registered users' pages and sends the responses back to those pages as webmentions. Each service has pretty simple instructions for how to sign up with and start using it. In my case, I did the following for each repo:
+To facilitate the capture of webmentions for my site, I chose to use a combination of two free, hosted services: [webmention.io](https://webmention.io), which is an endpoint for receiving webmentions for web pages registered with it; and [Bridgy](https://brid.gy), which "watches" social media sites for responses to its registered users' pages and sends the responses back to those pages as webmentions. Each service has pretty simple instructions for how to sign up with and start using it. In my case, I did the following for each repo:
 
 1. Added the necessary **[microformats](https://indieweb.org/microformats)** information to the site footer. This essentially acts like a "beacon" to other sites, "announcing" pages' titles, descriptions, and more. The other sites can then "respond."
 

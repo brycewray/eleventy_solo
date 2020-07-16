@@ -17,9 +17,9 @@ featured_image_caption: "Image: Sergeljeanette; Pixabay" # quotation marks to al
 
 A few days ago, I felt like that guy: enlightened and glad for it, but chastened for my failure to "try to keep up," as the impatient are wont to say. Yes, it's okay for an old dog to learn a new trick, but when an old dog missed the trick a long time ago---and he was getting paid dog biscuits to *know* that trick---hoo, boy.
 
-## Fooling the king of Web futz
+## Fooling the king of web futz
 
-If there's anything an old Web guy likes, it's another way to schnooker Internet Explorer.
+If there's anything an old web guy likes, it's another way to schnooker Internet Explorer.
 
 Oh, pardon the technospeak; let's say, "to fool" Internet Explorer (which is akin to fooling an addled fly). Said schnookery is to avoid having to kowtow to [IE's ancient, hoary behavior](https://crossbrowsertesting.com/blog/browsers/why-is-internet-explorer-so-bad/) in ways that cause problems for more standards-compliant browsers. As a matter of fact, I learned of one this week---and it works like a charm.
 
@@ -29,7 +29,7 @@ So, I'm both relieved to know it and embarrassed that I didn't. Let me tell you 
 
 ## Wresting victory from the jaws .&nbsp;.&nbsp;.
 
-Remember that wretched excuse for a WordPress page builder against which [I inveighed](/posts/2019/01/blox-sux/)? Well, I have managed to convince the appropriate folks that we should yank it from my employer's growing number of Web sites as the opportunities present themselves. Yay. Of course, that'll be a while, because we're talking about production sites that serve many thousands of people a day, and one mustn't throw the proverbial monkey wrench into that functionality. But the path has been laid out. We will get there. Again, yay.
+Remember that wretched excuse for a WordPress page builder against which [I inveighed](/posts/2019/01/blox-sux/)? Well, I have managed to convince the appropriate folks that we should yank it from my employer's growing number of websites as the opportunities present themselves. Yay. Of course, that'll be a while, because we're talking about production sites that serve many thousands of people a day, and one mustn't throw the proverbial monkey wrench into that functionality. But the path has been laid out. We will get there. Again, yay.
 
 Part of the way I managed to get this decision, for which I am more grateful than words will express, was to take one of our existing test sites, rebuild it (and, I believe, improve it) in [the page builder I prefer when I have to prefer one](https://elementor.com), and let the appropriate folks check out the results for themselves.
 
@@ -39,7 +39,7 @@ Only thing is, my day job is in [one of those enterprise shops where Windows 7 a
 
 Everything had gone fine in that respect *except* for one thing that bedeviled me throughout last weekend, when I completed the vast majority of the transition to the test site that, as it turned out, would earn my path to freedom from what I've [dubbed](/posts/2019/01/blox-sux) "GUPB," for *godforsaken unidentified page builder*.
 
-However, like the pimple on one's nose on the night of a big date, this particular "one thing" was a big, honking problem *on the home page*. On the *first slide* of a slider, carousel, whatchamacallit, at the *top of the home page*.^[I'm no fan of image sliders for a variety of reasons, chiefly that I think they distract from your messaging more than they help it. But [t'ain't my call, McGee](https://www.phrases.org.uk/bulletin_board/61/messages/878.html). When I was a Webmaster working in Marketing, I could influence such decisions; those days are behind me.] Arrgh!
+However, like the pimple on one's nose on the night of a big date, this particular "one thing" was a big, honking problem *on the home page*. On the *first slide* of a slider, carousel, whatchamacallit, at the *top of the home page*.^[I'm no fan of image sliders for a variety of reasons, chiefly that I think they distract from your messaging more than they help it. But [t'ain't my call, McGee](https://www.phrases.org.uk/bulletin_board/61/messages/878.html). When I was a webmaster working in Marketing, I could influence such decisions; those days are behind me.] Arrgh!
 
 To be specific, the text that overlay that first slide was shifted 'way too far to the right. It looked fine in the desktop versions of Chrome, Firefox, and even Edge. And it looked fine on iOS and Android. Only the damnable IE resisted.
 

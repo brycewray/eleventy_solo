@@ -35,7 +35,7 @@ I’m unclear as to when people got [the notion that _ya_ or _yea_ is how you sp
 
 I make no bones about it: I am a dyed-in-the-wool Apple fan, and from ’way back in the eighties at that. (I would say, “Apple sheep,” but I think [this guy](https://www.youtube.com/channel/UCa962e5dqRMO1nUldwaaRMw) may have that term locked up.) Of course, many don’t share my high regard for that company and its products, and they absolutely have a right to feel that way.
 
-However, I don’t get the Web commenters who, usually with antipathy, refer to the Macintosh as the _MAC_ (or just _MAC_ in referring to the platform). All caps? No. Not ever. It’s _Mac_. It was never an acronym for something.
+However, I don’t get the web commenters who, usually with antipathy, refer to the Macintosh as the _MAC_ (or just _MAC_ in referring to the platform). All caps? No. Not ever. It’s _Mac_. It was never an acronym for something.
 
 _MAC_, however, _is_ an acronym for either a [MAC address](https://techterms.com/definition/macaddress) or the telephone industry term, [_moves, adds, and changes_](https://www.gartner.com/it-glossary/mac-moves-adds-and-changes) (in which case, that would be _MACs_). So my Mac has a MAC address and, if it were in a place of business rather than my home office, probably would be sitting near a phone that is subject to a MAC order. Fair enough?
 
@@ -60,7 +60,7 @@ I really thought this would’ve gone away back in the late nineties as the [gro
 
 But once your output was proportional type, one space was quite enough, [as it has been in conventional typography for decades](https://en.wikipedia.org/wiki/Sentence_spacing#Transition_to_single_spacing). Even [legal documents](https://abovethelaw.com/2011/04/small-firms-big-lawyers-the-perfect-font-to-show-you-don%E2%80%99t-care/) have been overwhelmingly in proportional type for a long time, now.
 
-If you’re using monospaced typefaces for whatever reason, then, yes, double-space between sentences to your heart’s content if you want. **But** if you’re using **proportional** type—which the vast majority of you are—there really is **no** reason to type double spaces between sentences. That’s especially true if you’re preparing copy for the Web, since [browsers usually ignore more than one space after a period unless you purposely work around that](https://stackoverflow.com/questions/17784595/do-browsers-remove-whitespace-in-between-text-of-any-html-tag).
+If you’re using monospaced typefaces for whatever reason, then, yes, double-space between sentences to your heart’s content if you want. **But** if you’re using **proportional** type—which the vast majority of you are—there really is **no** reason to type double spaces between sentences. That’s especially true if you’re preparing copy for the web, since [browsers usually ignore more than one space after a period unless you purposely work around that](https://stackoverflow.com/questions/17784595/do-browsers-remove-whitespace-in-between-text-of-any-html-tag).
 
 <p>&nbsp;</p>
 

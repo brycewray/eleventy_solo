@@ -2,8 +2,8 @@
 layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: A stacked deck
-subtitle: Part 2 of a two-part series on Web typography
-description: Making the case for a system “fonts” approach to the typography on Web sites.
+subtitle: Part 2 of a two-part series on web typography
+description: Making the case for a system “fonts” approach to the typography on web sites.
 author: Bryce Wray
 date: 2018-10-25T12:40:00
 lastmod: 2020-07-10T01:55:00
@@ -13,7 +13,7 @@ featured_image_alt: Backlit computer keyboard
 featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
 ---
 
-In [Part 1](/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on Web sites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.
+In [Part 1](/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on websites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.
 
 ----
 
@@ -29,26 +29,26 @@ So, with that understood, let’s get on with it.
 
 ## A simpler—and duller—time
 
-The early years of the Web involved considerable limitations where Web pages’ body type was concerned. Any text needing more than a [small collection of “safe” system “fonts”](http://web.mit.edu/jmorzins/www/fonts.html) usually was a graphic rather than true text. That became a major no-no once [search engine optimization (SEO)](https://moz.com/beginners-guide-to-seo) became a critical feature, because search engines can’t read graphics as text; but it wasn’t such a show-stopper back then, when the Web search industry [now dominated by Google](http://www.visualcapitalist.com/this-chart-reveals-googles-true-dominance-over-the-web/) was [in its infancy](http://www.thehistoryofseo.com/The-Industry/Short_History_of_Early_Search_Engines.aspx). As a result, you tended to see a lot of graphics-posing-as-text when designers wanted their pages to stand out typographically. Here’s an example from the Apple Web site as it appeared on November 16, 1999, courtesy of the [Internet Archive](https://archive.org):
+The early years of the web involved considerable limitations where web pages’ body type was concerned. Any text needing more than a [small collection of “safe” system “fonts”](http://web.mit.edu/jmorzins/www/fonts.html) usually was a graphic rather than true text. That became a major no-no once [search engine optimization (SEO)](https://moz.com/beginners-guide-to-seo) became a critical feature, because search engines can’t read graphics as text; but it wasn’t such a show-stopper back then, when the web search industry [now dominated by Google](http://www.visualcapitalist.com/this-chart-reveals-googles-true-dominance-over-the-web/) was [in its infancy](http://www.thehistoryofseo.com/The-Industry/Short_History_of_Early_Search_Engines.aspx). As a result, you tended to see a lot of graphics-posing-as-text when designers wanted their pages to stand out typographically. Here’s an example from the Apple website as it appeared on November 16, 1999, courtesy of the [Internet Archive](https://archive.org):
 
-{% lazypicture "Early-Web-font-grfx-1-2018-10-16_1218x1296.jpg", "Image from Apple Web site in 1999 showing graphic elements as text" %}
+{% lazypicture "Early-Web-font-grfx-1-2018-10-16_1218x1296.jpg", "Image from Apple website in 1999 showing graphic elements as text" %}
 
 The only “real” text in this view was the timestamp, on the right side under the image of the [iMac of that era in all its Bondi Blue glory](https://everymac.com/systems/apple/imac/specs/imac_ab.html). All other textual elements shown were graphics. (The image-missing icon above the [iBook](https://everymac.com/systems/apple/ibook/index-ibook.html) image apparently indicates a missing image that the Internet Archive didn’t capture at the time or, otherwise, was unable to recover at the time I made this screen capture.)
 
 In that era, the graphics-as-text approach was a technological necessity for two reasons:
 
-1. There was no standard way to deliver Web “fonts” automatically, nor was it always easy to detect which computer platform and which browser were displaying the text; so it was necessary to use only those “fonts” you could be sure would be on any computer capable of running a Web browser. (At least back then, you could assume they _were_ computers, since this was well before Web-capable phones and tablets appeared.) So, yes, people saw a lot of Times New Roman, Arial, Tahoma, Verdana, and the like.
-2. If there _had_ been the means to deliver such “fonts,” the slow Internet connections of that era would’ve made their use unpopular. Even today, there can be some delivery issues with Web “fonts” that require [effective mitigation](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization#optimizing_loading_and_rendering).
+1. There was no standard way to deliver web “fonts” automatically, nor was it always easy to detect which computer platform and which browser were displaying the text; so it was necessary to use only those “fonts” you could be sure would be on any computer capable of running a web browser. (At least back then, you could assume they _were_ computers, since this was well before web-capable phones and tablets appeared.) So, yes, people saw a lot of Times New Roman, Arial, Tahoma, Verdana, and the like.
+2. If there _had_ been the means to deliver such “fonts,” the slow Internet connections of that era would’ve made their use unpopular. Even today, there can be some delivery issues with web “fonts” that require [effective mitigation](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization#optimizing_loading_and_rendering).
 
 .&nbsp;.&nbsp;.&nbsp;And that, conveniently enough, brings me to my next point.
 
 ## Embarrassment of riches
 
-As I write this in late 2018, it’s long been common to go from one site to another and see many variations in Web typefaces. Sites for many major publications, in particular, have prided themselves on typography resembling that of their print versions to the maximum extent possible. Also, [Google Fonts](https://fonts.google.com) and other repositories of free typefaces have transformed the ability of even modest sites to have truly professional-looking typography. All that’s necessary is to add code that links to the necessary repository and, wham, the page downloads and displays the typefaces automatically.
+As I write this in late 2018, it’s long been common to go from one site to another and see many variations in web typefaces. Sites for many major publications, in particular, have prided themselves on typography resembling that of their print versions to the maximum extent possible. Also, [Google Fonts](https://fonts.google.com) and other repositories of free typefaces have transformed the ability of even modest sites to have truly professional-looking typography. All that’s necessary is to add code that links to the necessary repository and, wham, the page downloads and displays the typefaces automatically.
 
 So what possibly could be wrong with that?
 
-Well, there’s this thing called speed. Google giveth with Google Fonts, and Google taketh away with the added lag downloadable “fonts” can induce. The same is true for paid “font” platforms like [Adobe Fonts](https://fonts.adobe.com) (branded until recently as TypeKit). It gets even worse if people go really crazy with not only different typefaces but also numerous _weights_ and _styles_ thereof. _Each_ downloaded typographical variation adds a certain amount of delay to the rendering of the Web page involved. As a result, the more variety you add through downloadable “fonts,” the more slowly your page will load.
+Well, there’s this thing called speed. Google giveth with Google Fonts, and Google taketh away with the added lag downloadable “fonts” can induce. The same is true for paid “font” platforms like [Adobe Fonts](https://fonts.adobe.com) (branded until recently as TypeKit). It gets even worse if people go really crazy with not only different typefaces but also numerous _weights_ and _styles_ thereof. _Each_ downloaded typographical variation adds a certain amount of delay to the rendering of the web page involved. As a result, the more variety you add through downloadable “fonts,” the more slowly your page will load.
 
 And, guess who dings a page’s search results downward if the page is comparatively slower than another page with roughly equal “search juice”? Yep, Google.
 
@@ -58,7 +58,7 @@ So, what to do?
 
 What I’ve chosen, and what quite a few sites have chosen, is to go back in time and trust the so-called “[system fonts stack](https://woorkup.com/system-font/).” That refers to the system-default sans-serif typefaces on people’s individual devices. They’re already there, and they load virtually instantaneously. If you’re doubting the wisdom of such an approach considering my earlier explanation of how that worked in the 1990s, please understand that this is a major case of “That was then and this is now.”
 
-Two things are far, far better than they were in the olden days: system typefaces and the displays on which they appear. In the early days of the Web, a [typical user](http://www.relativelyinteresting.com/comparing-todays-computers-to-1995s/) was fortunate to have something as nice as, say, a seventeen-inch, 256-color, 1,024 &times; 768 monitor (in the form of a bulky [CRT](https://whatis.techtarget.com/definition/cathode-ray-tube-CRT), of course); therefore, system typefaces not only didn’t _have_ to be but, indeed, _couldn’t_ be truly high-resolution. But, now, super-high-res flat displays of all sizes on a multiplicity of devices are normal, and so are extra-high-quality system typefaces. If I’ve said it once, I’ve said it a hundred times: I love living in the future.
+Two things are far, far better than they were in the olden days: system typefaces and the displays on which they appear. In the early days of the web, a [typical user](http://www.relativelyinteresting.com/comparing-todays-computers-to-1995s/) was fortunate to have something as nice as, say, a seventeen-inch, 256-color, 1,024 &times; 768 monitor (in the form of a bulky [CRT](https://whatis.techtarget.com/definition/cathode-ray-tube-CRT), of course); therefore, system typefaces not only didn’t _have_ to be but, indeed, _couldn’t_ be truly high-resolution. But, now, super-high-res flat displays of all sizes on a multiplicity of devices are normal, and so are extra-high-quality system typefaces. If I’ve said it once, I’ve said it a hundred times: I love living in the future.
 
 As for which typefaces to specify and in which order in your CSS, any number of sites have posted what seems to be the consensus pick for the “system fonts stack”:
 
@@ -106,7 +106,7 @@ The first three entries take care of current Apple devices and also, in the case
 
 If you, or Those Who Tell You How to Design, are dead-set on having all your site’s visitors see the same, specific typeface, this approach won’t be for you. I’ve been in your shoes. I understand.
 
-However, if your primary mission with your Web site to ensure not just the best readability but also the fastest possible loading speed, using a “system fonts stack” is an easily implemented way to help achieve that.
+However, if your primary mission with your website to ensure not just the best readability but also the fastest possible loading speed, using a “system fonts stack” is an easily implemented way to help achieve that.
 
 <hr style="border: 1px solid #666;" />
 

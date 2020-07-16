@@ -44,7 +44,7 @@ To be sure, Netlify's free tier has a ton to offer, so I was determined that the
 - A top-quality [content delivery network (CDN)](https://techterms.com/definition/cdn) in front of it.
 - Relatively easy---and, ideally, automatic---deploys from my choice of online Git [repository](https://techterms.com/definition/repository).
 - The option to deploy *also* (not *only*) via a [command-line interface (CLI)](https://en.wikipedia.org/wiki/Command-line_interface)[^CLIstuff] if the circumstances ever demand it.
-- [Brotli](https://opensource.googleblog.com/2015/09/introducing-brotli-new-compression.html) compression, which is even more efficient than the [gzip](https://en.wikipedia.org/wiki/Gzip) (the smaller the delivered content, the faster the Web pages load) that pretty much any host offers.
+- [Brotli](https://opensource.googleblog.com/2015/09/introducing-brotli-new-compression.html) compression, which is even more efficient than the [gzip](https://en.wikipedia.org/wiki/Gzip) (the smaller the delivered content, the faster the web pages load) that pretty much any host offers.
 
 [^CLIstuff]: While failure to have a CLI isn't a show-stopper by itself, the [advantages I found for that in the getting-around-Netlify post](/posts/2020/06/o-say-can-you-ci-cd) showed the availability of a CLI to be a worthwhile "want." Ya never know&nbsp;.&nbsp;.&nbsp;.
 
@@ -76,7 +76,7 @@ Unfortunately, some of Render's DX (developer experience)---notably the document
 
 {% lazypicture "Vercel_screen_cap_1280x726.jpg", "Screen capture of vercel.com home page as of 2020-07-01" %}
 
-Best known as the preeminent host for [Next.js](https://next.js.org)-based Web sites and apps but now branching out with better support for SSGs[^nextSSG], Vercel ticked all my boxes. Since I've also experimented a little with Next.js and admire the thinking and team behind that platform, I already had a good feeling about Vercel.
+Best known as the preeminent host for [Next.js](https://next.js.org)-based websites and apps but now branching out with better support for SSGs[^nextSSG], Vercel ticked all my boxes. Since I've also experimented a little with Next.js and admire the thinking and team behind that platform, I already had a good feeling about Vercel.
 
 [^nextSSG]: Next.js isn't an SSG, although it can do that sort of thing, particularly since the [release of Next.js 9.3](https://nextjs.org/blog/next-9-3).
 
@@ -114,6 +114,6 @@ So it was a strange, *déjà vu*-ish moment for me earlier this week when, after
 
 But don't get me wrong: leaving one place is followed by arriving at another---with the thrill of that first moment in a new place, a realization that you're starting over with all the opportunities that presents.
 
-Thank you, Netlify, for twenty-one-and-a-half good and interesting months as my home on the Web. I am sure you will continue to be a great place for static sites to live, especially where site owners are just getting started.
+Thank you, Netlify, for twenty-one-and-a-half good and interesting months as my home on the web. I am sure you will continue to be a great place for static sites to live, especially where site owners are just getting started.
 
 And thank you, Vercel, for your warm welcome, and for the interesting journey on which we've embarked this week. I look forward to watching your already strong capabilities get even more impressive over time. Building upon the high performance of your platform, I hope to make this site a better place for nice folks to spend some time and learn a thing or two.

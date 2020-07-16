@@ -45,7 +45,7 @@ Over and above the complexity involved, an iOS-for-MailMate-users candidate prob
 
 [^Gavel]: The likelihood that attorneys want and need a souped-up email app is almost certainly at least part of the reason why one of the apps reviewed herein, Preside, bears an app icon showing a gavel.
 
-[^NotClickbait]: Similarly: if power equated to popularity, every Mac user would know about MailMate. The truth is quite different. MailMate isn't that well-known outside its circle, so it's not widely reviewed. A mention of MailMate just isn't clickbait, so most Web sites give it only passing notice at best. I can find no major-site reviews of MailMate newer than about 2016.
+[^NotClickbait]: Similarly: if power equated to popularity, every Mac user would know about MailMate. The truth is quite different. MailMate isn't that well-known outside its circle, so it's not widely reviewed. A mention of MailMate just isn't clickbait, so most websites give it only passing notice at best. I can find no major-site reviews of MailMate newer than about 2016.
 
 Instead, when you start searching for reviews of third-party iOS email clients, the same names keep coming up: [Spark](https://sparkmailapp.com), [Outlook](https://apps.apple.com/us/app/microsoft-outlook/id951937596), [Edison Mail](https://mail.edison.tech/), [Canary](https://canarymail.io/), [Airmail](https://airmailapp.com/), [Postbox](https://www.postbox-inc.com/), and so forth. But none of these comes close to---or was ever meant to be---a heavy-lifter email app like MailMate.
 
@@ -164,7 +164,7 @@ And you have to figure it out on your own, because this is all you get from the 
 > 
 > Tap on the "Folders" button in the left side panel. Then tap on the folder button beside an email account to show the folders. You may have to tap the left arrow beside the folder heading to go back to the correct account.
 
-So, if you're trying out AltaMail and want to navigate through multiple folders in one session, now you know how to do it---**but** only from the steps I gave above, **not** from the documentation. It would be one thing if AltaMail were sufficiently popular that there were a million Web pages out there with "The AltaMail manual that EuroSmartz forgot to write" kind of help for you from other users, but that's just not reality.
+So, if you're trying out AltaMail and want to navigate through multiple folders in one session, now you know how to do it---**but** only from the steps I gave above, **not** from the documentation. It would be one thing if AltaMail were sufficiently popular that there were a million web pages out there with "The AltaMail manual that EuroSmartz forgot to write" kind of help for you from other users, but that's just not reality.
 
 As for the procedure itself: it's clunky even on an iPad in landscape view, where you have all the room in the world to play this game. On an iPhone in portrait view, though, it's a now-you-see-it-now-you-don't mess, even if you're sitting safely in a chair with nothing else going on around you; I'd especially hate to try it while walking or as a car passenger.
 

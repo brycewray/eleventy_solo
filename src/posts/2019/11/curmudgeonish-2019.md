@@ -21,7 +21,7 @@ Well, surprise: I have more to add to the list. So we'll call this the 2019 edit
 
 If you spend a lot of time dealing with businesspeople, one word that will come up frequently is *verbiage*.
 
-For example, there will be a discussion about an upcoming customers-targeted ad or email or Web page, and you'll hear one of the participants say something like: "And right here in this section, we can add some verbiage about&nbsp;.&nbsp;.&nbsp;."
+For example, there will be a discussion about an upcoming customers-targeted ad or email or web page, and you'll hear one of the participants say something like: "And right here in this section, we can add some verbiage about&nbsp;.&nbsp;.&nbsp;."
 
 However, the primary meaning of *verbiage* **is not** "words we haven't yet written" or "some text we'll jam into this spot"---it's *an excessive amount of text*.[^verbiageMW] So, yes, text can be verbiage, but only if it's ’way more text than is necessary.[^snark]
 

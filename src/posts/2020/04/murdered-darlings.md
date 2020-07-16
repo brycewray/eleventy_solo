@@ -57,9 +57,9 @@ Figuring that story would be nice and all, yet probably not exactly a page-turne
 
 (Let's just say I hope anybody who may have monitored my search history since 2017, especially at certain times, hasn't formed the wrong impression of me. No: I do *not* plan to engage people in fraudulent investments; I do *not* have a morbid interest in the practices of medical examiners; and I most definitely do *not* intend to murder anybody at all, much less through a bizarre method. Okay?)
 
-Soon, it had been nearly a year since I'd started, and I (naïvely) thought I was *close* to finishing---close enough, at least, that I needed to plan how to promote the book. I'd decided to self-publish through Amazon *et al.* and, as I researched the whole self-publication subject, one thing stuck out from the advice of those who'd done it with any degree of success: *get yourself a Web site*.
+Soon, it had been nearly a year since I'd started, and I (naïvely) thought I was *close* to finishing---close enough, at least, that I needed to plan how to promote the book. I'd decided to self-publish through Amazon *et al.* and, as I researched the whole self-publication subject, one thing stuck out from the advice of those who'd done it with any degree of success: *get yourself a website*.
 
-That's why, in the late summer of 2018, I returned to heavier reading about a subject which had caught my eye earlier in the year as an "Oh-that-sounds-geekily-interesting" item: building Web sites with [static site generators](https://staticgen.com) (SSGs). I then spent a couple of weekends getting everything set up and, in mid-September, *brycewray.com* went live for the first time. At its birth, the site had just three pages: the home page, the "About" page, and a very short [initial post](/posts/2018/09/hardy-press-wp-ssg-with-twist).
+That's why, in the late summer of 2018, I returned to heavier reading about a subject which had caught my eye earlier in the year as an "Oh-that-sounds-geekily-interesting" item: building websites with [static site generators](https://staticgen.com) (SSGs). I then spent a couple of weekends getting everything set up and, in mid-September, *brycewray.com* went live for the first time. At its birth, the site had just three pages: the home page, the "About" page, and a very short [initial post](/posts/2018/09/hardy-press-wp-ssg-with-twist).
 
 So the site was online. Now I just had to finish the frickin' book.
 
@@ -73,11 +73,11 @@ That's when I finally realized, after twenty months, that the characters and sto
 
 Oh, could I have finally finished *something*? Sure. Could I then have self-published it? Yep. But would the final product have been good enough? No.
 
-So the WIP is dead. Long live the Web site.
+So the WIP is dead. Long live the website.
 
 ## Takeaways
 
-That's not to say I now sport a T-shirt saying, "I visited Book-writing Land and all I got was this lousy Web site."
+That's not to say I now sport a T-shirt saying, "I visited Book-writing Land and all I got was this lousy website."
 
 Quite the contrary: I throughly enjoy writing the content on this site and, as recent posts make clear, doing all the geeky stuff that keeps it running. In fact, truth be known, I like *this* kind of writing more, which probably has its own role in the events that led to this decision.
 

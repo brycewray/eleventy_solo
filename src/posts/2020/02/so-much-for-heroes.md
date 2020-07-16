@@ -17,7 +17,7 @@ featured_image_caption: "Image: evondue; Pixabay"
 
 Who needs heroes? Not this site, I've decided.
 
-Of course, I'm referring to a [hero *image*](https://www.optimizely.com/optimization-glossary/hero-image/)---a massive photo or other graphic element that constitutes much if not all of the "above-the-fold" content on the typical Web site these days.
+Of course, I'm referring to a [hero *image*](https://www.optimizely.com/optimization-glossary/hero-image/)---a massive photo or other graphic element that constitutes much if not all of the "above-the-fold" content on the typical website these days.
 
 If you're among my few (but beloved, I assure you) regular readers and this is your latest visit since before I first issued this post, you're probably wondering, "Hey, where's the usual great, big, honkin' stock photo he always puts up here underneath the post title and all that stuff?" For example, it'd usually look something like this (taken from a pre-today incarnation of [this post](/posts/2019/11/curmudgeonish-2019)):
 
@@ -85,7 +85,7 @@ I'd thought about it before because, frankly, I had tired of always having to fi
 
 Besides, as I kept telling myself: "Dude, what few people you have visiting here from time to time *don't* come here looking for the Picture of the Day. They come here looking for *information*. For *words*. If you want to stick images *inside* certain posts to *illustrate points*, that's a totally different matter.[^postsImgs] But this ain't [*Life Magazine*](https://en.wikipedia.org/wiki/Life_(magazine))."
 
-[^postsImgs]: As of the day this was first posted, those posts with included images are: "[The client is too smart for you](/posts/2018/10/client-too-smart)"; "[Readable Web type, pretty please](/posts/2018/10/web-typography-part-1)"; "[A stacked deck](/posts/2018/10/web-typography-part-2)"; "[Blox sux](/posts/2019/01/blox-sux)"; "[iA for IO?](/posts/2019/02/ia-for-io)"; "[Why I left Ulysses](/posts/2019/04/why-left-ulysses)"; "[Ahoy, ’Mate](/posts/2019/06/ahoy-mate)"; "[Independence](/posts/2019/07/independence)"; and "[Roger, Copy](/posts/2019/07/roger-copy)."
+[^postsImgs]: As of the day this was first posted, those posts with included images are: "[The client is too smart for you](/posts/2018/10/client-too-smart)"; "[Readable web type, pretty please](/posts/2018/10/web-typography-part-1)"; "[A stacked deck](/posts/2018/10/web-typography-part-2)"; "[Blox sux](/posts/2019/01/blox-sux)"; "[iA for IO?](/posts/2019/02/ia-for-io)"; "[Why I left Ulysses](/posts/2019/04/why-left-ulysses)"; "[Ahoy, ’Mate](/posts/2019/06/ahoy-mate)"; "[Independence](/posts/2019/07/independence)"; and "[Roger, Copy](/posts/2019/07/roger-copy)."
 
 As a result, I created a new branch, retooled the site accordingly, and today published the redesigned, hero-image-less site you now see.
 

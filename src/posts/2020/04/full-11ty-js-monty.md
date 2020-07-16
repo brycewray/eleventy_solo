@@ -43,7 +43,7 @@ And, oddly enough: I was able to do so chiefly because of my experience with [Ga
 
 During the first run with *mostly* .11ty.js templating, I replaced [webmentions](https://css-tricks.com/indieweb-and-webmentions) by going back to [Talkyard](https://talkyard.io)-based commenting but, on returning (briefly) to all-Nunjucks templating, I just went without any comments-displaying method whatsoever.
 
-To be sure, it's not like this is a widely read site on which vast hordes of visitors breathlessly await comments. (For the sake of a suffering humanity, I'd hope there *is* no such site, for that matter.) Still, if you search the Web for any kind words about *not* providing some commenting in a blog or similar, personal site, you won't find many. So I decided any all-.11ty.js approach would have to allow for webmentions, too. Unfortunately, again: I could find no code in that respect.[^WMJS]
+To be sure, it's not like this is a widely read site on which vast hordes of visitors breathlessly await comments. (For the sake of a suffering humanity, I'd hope there *is* no such site, for that matter.) Still, if you search the web for any kind words about *not* providing some commenting in a blog or similar, personal site, you won't find many. So I decided any all-.11ty.js approach would have to allow for webmentions, too. Unfortunately, again: I could find no code in that respect.[^WMJS]
 
 [^WMJS]: At least, that was the case when I was doing this. I am sure there will be before long, if [Reuben Lillie has anything to say about it](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/issues/20).
 
@@ -91,7 +91,7 @@ He has rapidly become someone to watch in the Eleventy community, and a nicer an
 
 ### Max Böck and Sia Karamalegos
 
-Mr. Böck's "[Static Indieweb pt2: using Webmentions](https://mxb.dev/blog/using-webmentions-on-static-sites/)" and Ms. Karamalegos's "[An In-Depth Tutorial of Webmentions + Eleventy](https://sia.codes/posts/webmentions-eleventy-in-depth/)," the latter based on the former, were the original sources of the Nunjucks-based webmentions templates I began using near the end of 2019. Thus, it was only natural that I returned to these amazingly informative posts when I chose to make .11ty.js versions of that code.
+Mr. Böck's "[Static IndieWeb pt2: using Webmentions](https://mxb.dev/blog/using-webmentions-on-static-sites/)" and Ms. Karamalegos's "[An In-Depth Tutorial of Webmentions + Eleventy](https://sia.codes/posts/webmentions-eleventy-in-depth/)," the latter based on the former, were the original sources of the Nunjucks-based webmentions templates I began using near the end of 2019. Thus, it was only natural that I returned to these amazingly informative posts when I chose to make .11ty.js versions of that code.
 
 (Fortunately, I didn't have to bug them with questions online this time, as I did the first time around a few months back.)
 

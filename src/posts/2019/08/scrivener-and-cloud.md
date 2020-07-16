@@ -13,7 +13,7 @@ featured_image_alt: Scrivener logo and cloud computing icon
 featured_image_caption: "Images: Literature and Latte; Pixabay" # quotation marks to allow colon
 ---
 
-It can be hard on one's psyche to visit the comments sections of many tech-oriented Web sites, particularly when people are in a nasty mood about something, and *most* particularly when the trolls come out brandishing their typical "I-hate-this-and-Imma-gonna-tell-ya-why-for-the-millionth-time-with-what-I-consider-to-be-my-clever-wit" approach.
+It can be hard on one's psyche to visit the comments sections of many tech-oriented websites, particularly when people are in a nasty mood about something, and *most* particularly when the trolls come out brandishing their typical "I-hate-this-and-Imma-gonna-tell-ya-why-for-the-millionth-time-with-what-I-consider-to-be-my-clever-wit" approach.
 
 [MacRumors](https://macrumors.com), I'm looking at you, bud.
 

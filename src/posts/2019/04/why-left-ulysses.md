@@ -121,7 +121,7 @@ Had my trouble been a one-shot deal, an isolated incident, that would've been on
 
 Since sync&rsquo;ing is one of those cases where "[failure is not an option](https://en.wikipedia.org/wiki/Failure_Is_Not_an_Option)," I now had to decide whether to continue storing my work within this app which, heretofore, I'd trusted completely.
 
-And, in case you've decided I was being too hasty, that I was letting one odd occurrence and some random complaints on the Web sour me on a perfectly fine app: that Sunday afternoon wasn't the end of the trouble. I continued to suffer various types of a Ulysses/iCloud "[failure to communicate](https://www.americanrhetoric.com/MovieSpeeches/moviespeechcoolhandluke2.html)," and even lost some work as a result. Moreover, *none* of my other apps---most especially iA Writer, with its support for [Open in Place](https://developer.apple.com/document-based-apps/) as well as its fully transparent file storage in the Finder and the iOS Files app, as opposed to the workings of the obscurely located Ulysses Library[^Library]---had so much as a whisper of trouble dealing with iCloud.
+And, in case you've decided I was being too hasty, that I was letting one odd occurrence and some random complaints on the web sour me on a perfectly fine app: that Sunday afternoon wasn't the end of the trouble. I continued to suffer various types of a Ulysses/iCloud "[failure to communicate](https://www.americanrhetoric.com/MovieSpeeches/moviespeechcoolhandluke2.html)," and even lost some work as a result. Moreover, *none* of my other apps---most especially iA Writer, with its support for [Open in Place](https://developer.apple.com/document-based-apps/) as well as its fully transparent file storage in the Finder and the iOS Files app, as opposed to the workings of the obscurely located Ulysses Library[^Library]---had so much as a whisper of trouble dealing with iCloud.
 
 [^Library]: For further details on how and where the Ulysses Library stores files, see: "The Library, and File Management" in [this article](https://mariusmasalar.me/ulysses-vs-ia-writer-a-new-comparison-7015c899e883/) by Marius Masalar; and "One library" in [this article](https://chrisrosser.net/posts/2017/09/01/ulysses-review/) by Chris Rosser.
 
@@ -179,7 +179,7 @@ Incidentally: at one point during the last few weeks of agonizing over this, I f
 - *Firewall causing issues?* Nope.
 - *Restarted everything involved?* Yep &times; three (at least).
 - *Sure the sheets I want to sync are in the right place in Ulysses?* Definitely.
-- *Properly connected to the InterWebz?* Yep &times; three again.
+- *Properly connected to the Interwebz?* Yep &times; three again.
 - *Patient?* Yeah, but there's a limit, man.
 - *iCloud status good?* Yep.
 

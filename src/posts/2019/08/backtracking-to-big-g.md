@@ -57,7 +57,7 @@ First, yes, I made a coldly financial decision where [Netlify Analytics](https:/
 
 NA is New Shiny, completely tracking-code-free, and sure to improve as time goes on; but it costs nine bucks a month. If you start getting any serious traffic, it goes up from there.
 
-If I were monetizing this site, which I'm not (yet), nine bucks a month would be an easy decision. I've said before here that subscriptions do not faze me **if** I can see a good reason for them. But NA no longer met the smell test for my little place on the Web, especially since NA remains extremely limited in what it offers. I have no doubt it will get better, but [Google Analytics](https://marketingplatform.google.com/about/analytics/) blows it away and probably will continue to do so for a long time to come. Being a multi-jillion-dollar behemoth can make such things possible.
+If I were monetizing this site, which I'm not (yet), nine bucks a month would be an easy decision. I've said before here that subscriptions do not faze me **if** I can see a good reason for them. But NA no longer met the smell test for my little place on the web, especially since NA remains extremely limited in what it offers. I have no doubt it will get better, but [Google Analytics](https://marketingplatform.google.com/about/analytics/) blows it away and probably will continue to do so for a long time to come. Being a multi-jillion-dollar behemoth can make such things possible.
 
 The other consideration that NA doesn't meet is the obvious one---it's available only if you keep using Netlify as your site's host. While I have no immediate plans to change that, I prefer the flexibility of being able to make such a move if I so choose. GA can follow me wherever, whenever.
 

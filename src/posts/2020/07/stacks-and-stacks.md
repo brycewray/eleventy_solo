@@ -31,7 +31,7 @@ So, for your geeky pleasure, here goes nothing.
 
 2020-07-05: macOS, iOS.
 
-## Web site host
+## Website host
 
 2019-07-05: [Netlify](https://netlify.com).
 

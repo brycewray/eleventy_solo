@@ -9,13 +9,13 @@ date: 2020-04-05T18:45:00
 lastmod: 2020-05-31T22:30:00
 discussionId: "2020-04-different-modes-different-code"
 featured_image: halacious-tZc3vjPCk-Q-unsplash_5184x3456.jpg
-featured_image_alt: "Watercolor art from Web site design process"
+featured_image_alt: "Watercolor art from website design process"
 featured_image_caption: "Image: Halacious; Unsplash"
 ---
 
 As we all hunker down from [COVID-19](/posts/2020/03/coherence-covid-19), maintaining some degree of sanity occasionally requires one to divert one's mind from this thing. At least, that's true for me; and, yes, "sanity" is a relative term when applied to me, but that said&nbsp;.&nbsp;.&nbsp;.
 
-I like to look at other people's Web site code, partly out of geeky curiosity and partly in search of new and better ways of handling this site. A few days ago, I began considering a little project that might be both interesting to me and useful to others.
+I like to look at other people's website code, partly out of geeky curiosity and partly in search of new and better ways of handling this site. A few days ago, I began considering a little project that might be both interesting to me and useful to others.
 
 I still had the private repositories, or *repos*, from this site's time in the [Hugo](https://gohugo.io) and [Gatsby](https://gatsbyjs.org) [static site generators](https://staticgen.com) (SSGs), during last year's "[dance](/posts/2019/12/sorta-strange-ssg-trip)." Each was far from ideal, as is sadly true for the repo for this site. Still: what if, for the sake of other curious souls, I made those repos public?
 
@@ -126,7 +126,7 @@ Without my previous experience with Gatsby, as well as the [subsequent](/posts/2
 
 ## A glutton for punishment?
 
-I hope these will serve their intended purpose of helping others who are where I was nearly a year ago, trying to get past familiar code surroundings so they can determine better ways of handling their Web sites.
+I hope these will serve their intended purpose of helping others who are where I was nearly a year ago, trying to get past familiar code surroundings so they can determine better ways of handling their websites.
 
 And there may be more.
 

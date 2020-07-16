@@ -31,7 +31,7 @@ First, remember this sentence from near the end of that post:
 
 And I meant it.
 
-Then, in the process of learning about CSS Grid, I decided to read articles and view videos by several of its key advocates, most notably [Jen Simmons](http://jensimmons.com), [Rachel Andrew](https://rachelandrew.co.uk), and [Kevin Powell](https://www.kevinpowell.co). They’re widely known for their insights into Web design and development, including the need to keep learning new ways of doing things we Web-heads have been doing for a long, long time. Simmons’s [Layout Land videos](https://www.youtube.com/layoutland), in particular, helped me understand the basics of CSS Grid much more quickly than I think would’ve been possible otherwise.
+Then, in the process of learning about CSS Grid, I decided to read articles and view videos by several of its key advocates, most notably [Jen Simmons](http://jensimmons.com), [Rachel Andrew](https://rachelandrew.co.uk), and [Kevin Powell](https://www.kevinpowell.co). They’re widely known for their insights into web design and development, including the need to keep learning new ways of doing things we web-heads have been doing for a long, long time. Simmons’s [Layout Land videos](https://www.youtube.com/layoutland), in particular, helped me understand the basics of CSS Grid much more quickly than I think would’ve been possible otherwise.
 
 I thought over their points long and hard, and one key observation by Simmons from [this article](http://jensimmons.com/post/feb-28-2017/benefits-learning-how-code-layouts-css) hit home with me (to the extent that I thought, “Man, I wish I’d read this _before_ I wrote that post, especially the last part about hoping the next Bootstrap version will include CSS Grid”):
 

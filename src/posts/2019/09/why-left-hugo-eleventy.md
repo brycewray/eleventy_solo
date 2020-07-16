@@ -121,7 +121,7 @@ First hearing about it during Gatsby Experiment I, I'd been singularly impressed
 
 That last part rang especially true to me because, simply put, [frameworks come and go](https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f). What are the framework-centric SSGs---and the sites built on them---going to do when those frameworks suffer their inevitable replacement by The Next Kewl Thing?
 
-But the part that grabbed me more than anything else, and was indeed that "breath of fresh air" I'd [originally hoped Gatsby would be for me](/posts/2019/07/why-staying-with-hugo), was Eleventy's amazing flexibility. Not only does it you let choose from among multiple templating languages, but it also gives you lots of freedom in choosing the directory structure of the hosting repo and, in the end, the site that will go on the Web.
+But the part that grabbed me more than anything else, and was indeed that "breath of fresh air" I'd [originally hoped Gatsby would be for me](/posts/2019/07/why-staying-with-hugo), was Eleventy's amazing flexibility. Not only does it you let choose from among multiple templating languages, but it also gives you lots of freedom in choosing the directory structure of the hosting repo and, in the end, the site that will go on the web.
 
 In short: within reasonable limits, Eleventy lets you build the site in a way with which **you** are comfortable.
 
@@ -233,7 +233,7 @@ Although I've made this transition, the learning experience it made possible wil
 
 I fully intend to stay current with *both* of what I now believe are the two best SSGs out there, and thus will still keep one toe in the Hugo waters, too. I'm still building the site on both Eleventy and Hugo on my local Mac and then pushing to their respective repositories on Bitbucket, GitHub, and GitLab. From there, I trigger the build at Netlify from whichever repo is appropriate. Right now, that would be the Bitbucket version of what I call `eleventy_site_css-grid`.[^bitToGit]
 
-[^bitToGit]: Another transition may be in the works on that front, too; since back before Gatsby Experiment I, I've been considering switching the Web's "source of truth" for this site to either GitHub or GitLab. I can see good arguments for each, as well as for just sticking with Bitbucket, so this call remains in the air.
+[^bitToGit]: Another transition may be in the works on that front, too; since back before Gatsby Experiment I, I've been considering switching the web's "source of truth" for this site to either GitHub or GitLab. I can see good arguments for each, as well as for just sticking with Bitbucket, so this call remains in the air.
 
 Indeed, one part of the transition was to convert all my Hugo site's Markdown files so each file's front matter for each SSG's repo was interchangeable with its counterpart on the other SSG's repo. That saves some steps. There are still some things in some posts' main content that require specific handling for each SSG---especially when body-content images or code blocks are involved---but the posts' front matter and purely textual parts of their body copy are now totally portable.
 

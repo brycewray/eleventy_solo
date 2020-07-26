@@ -2,7 +2,7 @@
 layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Beginner’s luck"
-subtitle: "New Eleventy and Hugo starter repos"
+subtitle: "New Eleventy and Hugo starter sets"
 description: "Helping more people get going with two great SSGs."
 author: Bryce Wray
 date: 2020-07-27T21:30:00

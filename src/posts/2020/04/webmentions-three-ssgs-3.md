@@ -6,14 +6,16 @@ subtitle: "IndieWebbin’ in Hugo"
 description: "Part 3 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Hugo."
 author: Bryce Wray
 date: 2020-04-28T21:40:00
-lastmod: 2020-05-16T20:10:00
+lastmod: 2020-07-26T15:00:00
 discussionId: "2020-04-webmentions-three-ssgs-3"
 featured_image: marko-pekic-IpLa37Uj2Dw-unsplash_3542x2362.jpg
 featured_image_alt: "Communications concept - Red pay telephone booths"
 featured_image_caption: "Image: Marko Pekić; Unsplash"
 ---
 
-**Note**: This is Part 3 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2)), [Hugo](https://gohugo.io) (the subject of this part), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4)). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors' code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.{.yellowBox}
+**Original opening note**: This is Part 3 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2)), [Hugo](https://gohugo.io) (the subject of this part), and [Gatsby](https://gatsbyjs.org) (covered in detail in [Part 4](/posts/2020/04/webmentions-three-ssgs-4)). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors' code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.{.yellowBox}
+
+**Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.{.yellowBox}
 
 In the [introduction](/posts/2020/04/webmentions-three-ssgs-1) to this five-part series, I gave you a quick run-through about the [IndieWeb](https://indieweb.org) and the general setup of webmentions. In [Part 2](/posts/2020/04/webmentions-three-ssgs-2), the subject was how you implement webmentions specifically in the [Eleventy](https://11ty.dev) SSG. Now, here in Part 3, we'll talk about implementing them in the [Hugo](https://gohugo.io) SSG.
 
@@ -29,7 +31,7 @@ Fortunately, just as I'd already found ways to integrate JavaScript with the Hug
 
 There's plenty of [data-massaging capability built into Hugo](https://gohugo.io/templates/data-templates/), so I wasn't so worried about how I'd handle that end of the process. My concern was how I'd go out to webmention.io and *grab* the data in the first place.
 
-After I'd read a few articles and reviewed the associated code, I realized the best approach was, again, JavaScript-based. That ended up as [`/assets/js/webmentions.js`](https://github.com/brycewray/hugo_site_css-grid/blob/master-grid/assets/js/webmentions.js) which was based mostly on [Paul Kinlan](https://paul.kinlan.me/using-web-mentions-in-a-static-sitehugo/)'s work but also, to a limited extent, on the code by [Max Böck](https://mxb.dev/blog/using-webmentions-on-static-sites/) and [Sia Karamalegos](https://sia.codes/posts/webmentions-eleventy-in-depth/) that I used in the Eleventy repo.
+After I'd read a few articles and reviewed the associated code, I realized the best approach was, again, JavaScript-based. That ended up as [`/assets/js/webmentions.js`](https://github.com/brycewray/files-webmentions/blob/master/hugo_site_css-grid/assets/js/webmentions.js) which was based mostly on [Paul Kinlan](https://paul.kinlan.me/using-web-mentions-in-a-static-sitehugo/)'s work but also, to a limited extent, on the code by [Max Böck](https://mxb.dev/blog/using-webmentions-on-static-sites/) and [Sia Karamalegos](https://sia.codes/posts/webmentions-eleventy-in-depth/) that I used in the Eleventy repo.
 
 Kinlan's code took a different approach: rather than fetching and then aggregating all the site's currently available webmentions into one JSON file, it downloaded into `/data/` a separate JSON file of webmentions for *each page* that had received them. To keep the files straight, the code applied [MD5 hashing](https://en.wikipedia.org/wiki/MD5) to the URL for each page with webmentions, then gave that page's JSON file the same hashed name.
 
@@ -43,7 +45,7 @@ Fine, I wondered, but how to do this in Hugo? Yes, I already had the repo using 
 
 For a while, it looked as if the only working method would require including the token in plain sight in a `GET`-style query string: *e.g.*, something like `https://webmention.io/api/mentions.jf2?domain=brycewray.com&token=1234567890123`. Not a good idea, as you can imagine.
 
-Finally, after hours of sifting through similar issues reports from Hugo users, I found the answer: setting up the appropriate [`/package.json`](https://github.com/brycewray/hugo_site_css-grid/blob/master-grid/package.json)-based scripts to run `/assets/js/webmention.js` **after** a command that would first run `dotenv` and, thus, "force-feed" it the environment variable! For example, the `/package.json` line[^NPMRun] for fetching webmentions in development mode was:
+Finally, after hours of sifting through similar issues reports from Hugo users, I found the answer: setting up the appropriate [`/package.json`](https://github.com/brycewray/files-webmentions/blob/master/hugo_site_css-grid/package.json)-based scripts to run `/assets/js/webmention.js` **after** a command that would first run `dotenv` and, thus, "force-feed" it the environment variable! For example, the `/package.json` line[^NPMRun] for fetching webmentions in development mode was:
 
 [^NPMRun]: This is invoked by the `npm run start` or `npm run build` script, as appropriate for your use case, in conjunction with the necessary Hugo script.
 
@@ -56,19 +58,19 @@ Finally, after hours of sifting through similar issues reports from Hugo users, 
 
 ## Hugo: Displaying webmentions
 
-After that, the only major thing left was creating a Hugo "partial"---[`/layouts/partials/webmentions.html`](https://github.com/brycewray/hugo_site_css-grid/blob/master-grid/layouts/partials/webmentions.html)---which would make the data presentable. I relied heavily on the Eleventy [`/_data/webmentions.js`](https://github.com/brycewray/eleventy_bundler/blob/master/_data/webmentions.js) as my guide for writing the Go-flavor Hugo code to make this happen.
+After that, the only major thing left was creating a Hugo "partial"---[`/layouts/partials/webmentions.html`](https://github.com/brycewray/files-webmentions/blob/master/hugo_site_css-grid/layouts/partials/webmentions.html)---which would make the data presentable. I relied heavily on the Eleventy [`/_data/webmentions.js`](https://github.com/brycewray/files-webmentions/blob/master/eleventy_bundler/_data/webmentions.js) as my guide for writing the Go-flavor Hugo code to make this happen.
 
 I expected the biggest hassle in that final part of the "webmention-izing Hugo" project would be getting Hugo to recognize the MD5-hashed URLs of the respective JSON files. Not so. Fortunately, Hugo has [built-in support for MD5](https://gohugo.io/functions/md5/#readout). And, in the end, I actually appreciated the whole approach because it simplified the process of identifying *which* set of webmentions went with each respective web page.
 
 That left only:
 
-- Putting a call to that partial in the [`/layouts/posts/single.html`](https://github.com/brycewray/hugo_site_css-grid/blob/master-grid/layouts/posts/single.html) template.
+- Putting a call to that partial in the [`/layouts/posts/single.html`](https://github.com/brycewray/files-webmentions/blob/master/hugo_site_css-grid/layouts/posts/single.html) template.
 
-- Creating [`/layouts/partials/footer-wm.html`](https://github.com/brycewray/hugo_site_css-grid/blob/master-grid/layouts/partials/footer-wm.html), which was another footer partial like the original [`/layouts/partials/footer.html`](https://github.com/brycewray/hugo_site_css-grid/blob/master-grid/layouts/partials/footer.html) **except** that it included the necessary [microformats](https://indieweb.org/microformats) info for the site.
+- Creating [`/layouts/partials/footer-wm.html`](https://github.com/brycewray/files-webmentions/blob/master/hugo_site_css-grid/layouts/partials/footer-wm.html), which was another footer partial like the original [`/layouts/partials/footer.html`](https://github.com/brycewray/files-webmentions/blob/master/hugo_site_css-grid/layouts/partials/footer.html) **except** that it included the necessary [microformats](https://indieweb.org/microformats) info for the site.
 
-- Editing [`/layouts/default/baseof.html`](https://github.com/brycewray/hugo_site_css-grid/blob/master-grid/layouts/_default/baseof.html), the site's simplest but most important template, so that it would call to that webmentions-savvy footer partial on every page *except* for any pages within the paginated [posts list](/posts).
+- Editing [`/layouts/default/baseof.html`](https://github.com/brycewray/files-webmentions/blob/master/hugo_site_css-grid/layouts/_default/baseof.html), the site's simplest but most important template, so that it would call to that webmentions-savvy footer partial on every page *except* for any pages within the paginated [posts list](/posts).
 
-- As with the Eleventy repo, making appropriate edits to the webmentions.css file---in this case, [`/assets/css/webmentions.css`](https://github.com/brycewray/hugo_site_css-grid/blob/master-grid/assets/css/webmentions.css). In fact, the CSS was the same, so that was just a matter of copying the file from one repo's appropriate location to the other's.
+- As with the Eleventy repo, making appropriate edits to the webmentions.css file---in this case, [`/assets/css/webmentions.css`](https://github.com/brycewray/files-webmentions/blob/master/hugo_site_css-grid/assets/css/webmentions.css). In fact, the CSS was the same, so that was just a matter of copying the file from one repo's appropriate location to the other's.
 
 Done.
 

@@ -6,14 +6,16 @@ subtitle: "IndieWebbin’ in Gatsby"
 description: "Part 4 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Gatsby."
 author: Bryce Wray
 date: 2020-04-28T21:45:00
-lastmod: 2020-05-16T20:22:00
+lastmod: 2020-07-26T15:00:00
 discussionId: "2020-04-webmentions-three-ssgs-4"
 featured_image: jackrabbit-673965_3600x2400.jpg
 featured_image_alt: "Communications concept - A long-eared rabbit listening for something"
 featured_image_caption: "Image: “272447”; Pixabay"
 ---
 
-**Note**: This is Part 4 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2)), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3)), and [Gatsby](https://gatsbyjs.org) (covered in detail in this part). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors' code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.{.yellowBox}
+**Original opening note**: This is Part 4 of a five-part series about how you can set up [webmentions](https://indieweb.org/Webmention) in websites built by three different [static site generators](https://staticgen.com): [Eleventy](https://11ty.dev) (the subject of [Part 2](/posts/2020/04/webmentions-three-ssgs-2)), [Hugo](https://gohugo.io) (the subject of [Part 3](/posts/2020/04/webmentions-three-ssgs-3)), and [Gatsby](https://gatsbyjs.org) (covered in detail in this part). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors' code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.{.yellowBox}
+
+**Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.{.yellowBox}
 
 In the [introduction](/posts/2020/04/webmentions-three-ssgs-1) to this five-part series, I gave you a quick run-through about the [IndieWeb](https://indieweb.org) and the general setup of webmentions. In [Part 2](/posts/2020/04/webmentions-three-ssgs-2), the subject was how you implement webmentions specifically in the [Eleventy](https://11ty.dev) SSG. Then, in [Part 3](/posts/2020/04/webmentions-three-ssgs-3), I moved on to the subject of implementing them in the [Hugo](https://gohugo.io) SSG. Now, here in Part 4, it's time to look at doing the same thing in the [Gatsby](https://gatsbyjs.org) SSG.
 
@@ -29,7 +31,7 @@ I knew that [Chris Biscardi](https://www.christopherbiscardi.com/post/building-g
 
 Still, handling the webmention.io token as an [environment variable](https://en.wikipedia.org/wiki/Environment_variable) in Gatsby was tricky because I had to do two things to make the plugin send the appropriate token:
 
-- Instead of having just one `/.env` file, I had to have separate `/.env.development` and `/.env.production` files, which allowed me to specify in the plugin-specific code in [`/gatsby-config.js`](https://github.com/brycewray/gatsby_site_css-grid/blob/master/gatsby-config.js) that it should find the token in the [`process.env` global variable](https://codeburst.io/process-env-what-it-is-and-why-when-how-to-use-it-effectively-505d0b2831e7) that [Node JS](https://nodejs.org/) uses to determine the current working environment, development or production.[^RegularEnv] As with the standalone `/.env` file I mentioned earlier in the series, you should **not** source-control these files.
+- Instead of having just one `/.env` file, I had to have separate `/.env.development` and `/.env.production` files, which allowed me to specify in the plugin-specific code in [`/gatsby-config.js`](https://github.com/brycewray/files-webmentions/blob/master/gatsby_site_css-grid/gatsby-config.js) that it should find the token in the [`process.env` global variable](https://codeburst.io/process-env-what-it-is-and-why-when-how-to-use-it-effectively-505d0b2831e7) that [Node JS](https://nodejs.org/) uses to determine the current working environment, development or production.[^RegularEnv] As with the standalone `/.env` file I mentioned earlier in the series, you should **not** source-control these files.
 
 [^RegularEnv]: Just to be consistent with the other repos, I still put a [non-source-controlled](https://dev.to/somedood/please-dont-commit-env-3o9h) `/.env` file in the Gatsby repo, but I know Gatsby doesn't see it.
 
@@ -79,15 +81,15 @@ And, yeah, that's *extremely* offensive to the DRY Gods. They'll have to get ove
 
 Thus, you'll find the code that worked for the Gatsby repo in:
 
-- [`/gatsby-config.js`](https://github.com/brycewray/gatsby_site_css-grid/blob/master/gatsby-config.js)---Mostly for Chris Biscardi's `gatsby-plugin-webmention` plugin, but you should also note the `dotenv`-related code at the very top that works with the two separate `/.env.*` files. Without that, you ain't got no webmentions from webmention.io, period, end of story.
+- [`/gatsby-config.js`](https://github.com/brycewray/files-webmentions/blob/master/gatsby_site_css-grid/gatsby-config.js)---Mostly for Chris Biscardi's `gatsby-plugin-webmention` plugin, but you should also note the `dotenv`-related code at the very top that works with the two separate `/.env.*` files. Without that, you ain't got no webmentions from webmention.io, period, end of story.
 
-- [`/gatsby-node.js`](https://github.com/brycewray/gatsby_site_css-grid/blob/master/gatsby-node.js)---This added to the [PageContext](https://www.gatsbyjs.org/docs/creating-and-modifying-pages/#pass-context-to-pages) the variable `urlToCheck` for use by the GraphQL queries for webmentions. Until I got that in there, those queries were stumped. (Using `permalink` didn't work; as I learned on testing, it came back as `https://brycewray.com[objectObject]` or something like that, despite how it looked in that file. I'm sure I did something stupid to cause that but, as you've gathered by now, I'm past the point of caring about it.)
+- [`/gatsby-node.js`](https://github.com/brycewray/files-webmentions/blob/master/gatsby_site_css-grid/gatsby-node.js)---This added to the [PageContext](https://www.gatsbyjs.org/docs/creating-and-modifying-pages/#pass-context-to-pages) the variable `urlToCheck` for use by the GraphQL queries for webmentions. Until I got that in there, those queries were stumped. (Using `permalink` didn't work; as I learned on testing, it came back as `https://brycewray.com[objectObject]` or something like that, despite how it looked in that file. I'm sure I did something stupid to cause that but, as you've gathered by now, I'm past the point of caring about it.)
 
-- [`/src/templates/singlepost.js`](https://github.com/brycewray/gatsby_site_css-grid/blob/master/src/templates/singlepost.js)---This is the big enchilada with *all* the GraphQL queries and spaghetti that make the webmentions appear on posts for which webmention.io has received them.
+- [`/src/templates/singlepost.js`](https://github.com/brycewray/files-webmentions/blob/master/gatsby_site_css-grid/src/templates/singlepost.js)---This is the big enchilada with *all* the GraphQL queries and spaghetti that make the webmentions appear on posts for which webmention.io has received them.
 
-- [`/src/components/layout-home.js`](https://github.com/brycewray/gatsby_site_css-grid/blob/master/src/components/layout-home.js), [`/src/components/layout-about.js`](https://github.com/brycewray/gatsby_site_css-grid/blob/master/src/components/layout-about.js), and (again) `/src/templates/singlepost.js`---For the footer-based [microformats](https://indieweb.org/microformats) data that webmentions require. (In the first two, I just "hand-coded" the respective microformats stuff because each is used for only one page, either the [home page](/) or the ["About" page](/about); so that data won't change.)
+- [`/src/components/layout-home.js`](https://github.com/brycewray/files-webmentions/blob/master/gatsby_site_css-grid/src/components/layout-home.js), [`/src/components/layout-about.js`](https://github.com/brycewray/files-webmentions/blob/master/gatsby_site_css-grid/src/components/layout-about.js), and (again) `/src/templates/singlepost.js`---For the footer-based [microformats](https://indieweb.org/microformats) data that webmentions require. (In the first two, I just "hand-coded" the respective microformats stuff because each is used for only one page, either the [home page](/) or the ["About" page](/about); so that data won't change.)
 
-And, oh, don't forget [`/src/assets/css/webmentions.css`](https://github.com/brycewray/gatsby_site_css-grid/blob/master/src/assets/css/webmentions.css), which is identical to its counterparts in the other two repos.
+And, oh, don't forget [`/src/assets/css/webmentions.css`](https://github.com/brycewray/files-webmentions/blob/master/gatsby_site_css-grid/src/assets/css/webmentions.css), which is identical to its counterparts in the other two repos.
 
 ## The end is in sight
 

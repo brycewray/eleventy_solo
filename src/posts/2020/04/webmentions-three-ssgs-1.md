@@ -6,14 +6,16 @@ subtitle: "Getting started with IndieWebbin’ in general"
 description: "The intro to a five-part series about incorporating webmentions into three different static site generators (SSGs)."
 author: Bryce Wray
 date: 2020-04-28T21:30:00
-#lastmod: TBD
+lastmod: 2020-07-26T15:00:00
 discussionId: "2020-04-webmentions-three-ssgs-1"
 featured_image: group-chat-photoillustration-3354365_4928x2855.jpg
 featured_image_alt: "Photoillustration of a multi-participant web chat"
 featured_image_caption: "Image: Gerd Altmann; Pixabay"
 ---
 
-**Note**: This is the Introduction to a five-part series about how you can set up [webmentions](https://indieweb.org/webmention) in websites built by three different [static site generators](https://staticgen.com) (SSGs): [Eleventy](https://11ty.dev), [Hugo](https://gohugo.io), and [Gatsby](https://gatsbyjs.org). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors' code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.{.yellowBox}
+**Original opening note**: This is the Introduction to a five-part series about how you can set up [webmentions](https://indieweb.org/webmention) in websites built by three different [static site generators](https://staticgen.com) (SSGs): [Eleventy](https://11ty.dev), [Hugo](https://gohugo.io), and [Gatsby](https://gatsbyjs.org). In the [conclusion](/posts/2020/04/webmentions-three-ssgs-5), you'll find a bibliography of the best articles I found on the subject of this series. All of the articles link (even if only through tiny [GitHub](https://github.com) logos) to their authors' code. They were invaluable to this effort, and I encourage you to take particular notice of them and their authors.{.yellowBox}
+
+**Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.{.yellowBox}
 
 It's an [often-misattributed](https://www.artsy.net/article/artsy-editorial-four-iconic-quotes-artists) phrase: "Good artists copy; great artists steal." Well, in the case of your faithful correspondent, here, it's more a case of "Great coders code; mediocre coders borrow shamelessly." But, if I didn't, I couldn't keep this site going, so shameless I shall continue to be.
 
@@ -55,7 +57,7 @@ To facilitate the capture of webmentions for my site, I chose to use a combinati
 
 So that's the generic webmention-ization process I followed, *but* keep in mind that all it does is start fetching your webmentions for you out on webmention.io. The nitty-gritty yet to come is when *you* subsequently fetch them *from* webmention.io and make them actually appear on *your* site. How you can do it varies from SSG to SSG, hence this series.
 
-We'll start with Eleventy in [Part 2](/posts/2020/04/webmentions-three-ssgs-2), move on to Hugo in [Part 3](/posts/2020/04/webmentions/three-ssgs-3), and get to Gatsby in [Part 4](/posts/2020/04/webmentions-three-ssgs-4). That'll be followed in the conclusion, [Part 5](/posts/2020/04/webmentions-three-ssgs-5), with a wrap-up---**and** that previously referenced bibliography for the series.
+We'll start with Eleventy in [Part 2](/posts/2020/04/webmentions-three-ssgs-2), move on to Hugo in [Part 3](/posts/2020/04/webmentions-three-ssgs-3), and get to Gatsby in [Part 4](/posts/2020/04/webmentions-three-ssgs-4). That'll be followed in the conclusion, [Part 5](/posts/2020/04/webmentions-three-ssgs-5), with a wrap-up---**and** that previously referenced bibliography for the series.
 
 I'd urge you to read them in order so as to get the whole picture, **but** I surely understand you may want to read about only the SSG you're using. If so, maybe you could skim the other two and spend most of your time on the part that interests you most, but I still think it would be best to skim/read *in order*, if possible.
 

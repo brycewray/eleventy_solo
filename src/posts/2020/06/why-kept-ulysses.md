@@ -10,7 +10,8 @@ lastmod: 2020-06-20T14:45:00
 discussionId: "2020-06-why-kept-ulysses"
 featured_image: Ulysses-logo-over-Mac-keyboard_1280x720.jpg
 featured_image_alt: "Ulysses app’s butterfly-and-pen logo over a keyboard"
-featured_image_caption: "Ulysses logo (over my photo of a keyboard): Ulysses GmbH & Co."
+featured_image_caption: |
+  <span class="caption">Ulysses logo (over my photo of a keyboard): <a href="https://ulysses.app">Ulysses GmbH & Co.</a></span>
 ---
 
 Numbers don't lie. Well, at least *these* numbers don't.

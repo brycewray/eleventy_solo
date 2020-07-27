@@ -10,7 +10,8 @@ lastmod: 2020-06-20T14:45:00
 discussionId: "2019-02-ia-for-io"
 featured_image: notebook-933362_4752x3168.jpg
 featured_image_alt: Stylized photograph of notebook and, in blurry background, a pencil
-featured_image_caption: "Image: Tookapic; Pixabay" # quotation marks to allow colon
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/tookapic-1386459/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=933362">tookapic</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=933362">Pixabay</a></span>
 ---
 
 My comments at the end of my [previous post](/posts/2019/01/blox-sux) aside, I have to say [iA Writer](https://www.ia.net/writer) can be a halfway decent editor for [Markdown](https://daringfireball.net/projects/markdown/), after all.

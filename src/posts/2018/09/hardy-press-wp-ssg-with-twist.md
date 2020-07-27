@@ -10,7 +10,8 @@ lastmod: 2019-04-27T18:45:00
 discussionId: "2018-09-hardy-press-wp-ssg-with-twist"
 featured_image: wordpress-macbook-pro-923188_5472x3648.jpg
 featured_image_alt: WordPress administrative interface in use on a laptop computer
-featured_image_caption: "Image: Pixabay"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/StockSnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=923188">StockSnap</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=923188">Pixabay</a></span>
 ---
 
 While researching the static-site generator (SSG) scene for the first time in a while yesterday, I happened upon  [HardyPress](https://www.hardypress.com).

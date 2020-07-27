@@ -10,7 +10,8 @@ lastmod: 2020-01-01T14:39:00
 discussionId: "2019-03-mark-it-down"
 featured_image: swan-1639154_2816x1880.jpg
 featured_image_alt: A baby swan swimming
-featured_image_caption: "Image: AnnRos; Pixabay" # quotation marks to allow colon
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/AnnRos-614174/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1639154">Ann &mdash; please donate</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1639154">Pixabay</a></span>
 ---
 
 Before summer, 2015, if you'd asked me what Markdown was, I'd have said, "Cutting the price on a product, of course." And I wouldn't have been kidding, either.

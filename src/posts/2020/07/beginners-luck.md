@@ -10,7 +10,8 @@ date: 2020-07-27T21:30:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
 featured_image_alt: "Colorful toy alphabet blocks"
-featured_image_caption: "Image: Susan Holt Simpson; Unsplash"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://unsplash.com/@shs521?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Susan Holt Simpson</a>; <a href="https://unsplash.com/s/photos/toy-blocks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
 ---
 
 Rarely does a day go by that I don't read of yet another person deciding to move his or her website to one of the two [static site generators (SSGs)](https://staticgen.com) closest to my heart: [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).

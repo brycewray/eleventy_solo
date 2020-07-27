@@ -9,7 +9,8 @@ lastmod: 2020-06-20T14:45:00
 discussionId: "2019-04-why-left-ulysses"
 featured_image: hand-butterfly-3751159_6000x4000.jpg
 featured_image_alt: "Hand releases a butterfly (note: a butterfly is the Ulysses logo)"
-featured_image_caption: "Image: Gerd Altmann; Pixabay" # quotation marks to allow colon
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3751159">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3751159">Pixabay</a></span>
 oldComments: |
     <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
       <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>

@@ -10,7 +10,7 @@ lastmod: 2020-04-15T22:30:00
 discussionId: "2020-03-back-nunjucks-eleventy-site"
 featured_image: Nunjucks-template-screen-capture-2020-02_edit_1280x881.jpg
 featured_image_alt: "Nunjucks template file displayed in Visual Studio Code"
-#featured_image_caption: "Image: PublicDomainPictures; Pixabay"
+#featured_image_caption: "Image: [photographer]; [source site]"
 ---
 
 As even a casual perusal of some recent posts to this site could easily make clear, I have become a real fanboy for the [Eleventy](https://11ty.dev) [static site generator (SSG)](https://staticgen.com), which I use to create and maintain the site. It offers a tremendous number of advantages over the competiion, and one of those advantages is the simplicity of *templating*.

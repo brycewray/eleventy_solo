@@ -9,9 +9,11 @@ date: 2018-11-01T16:00:00
 lastmod: 2019-07-31T00:50:00
 discussionId: "2018-11-some-curmudgeonish-thoughts"
 featured_image: smilies-2912641_6016x4000.jpg
-featured_image_alt: Not-so-happy smiley-face pillow
-featured_image_caption: "Image: Alexas_Fotos; Pixabay" # quotation marks to allow colon
+featured_image_alt: Not-so-happy smiley-face ball
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/Alexas_Fotos-686414/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2912641">Alexas_Fotos</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2912641">Pixabay</a></span>
 ---
+
 Here are a few odds and ends—some a tad acerbic, some not so much. And I swear I’m not trying to sound like the late [Andy Rooney](https://www.biography.com/people/andy-rooney-9542557), or even a parody&nbsp;thereof.&nbsp;&nbsp;.&nbsp;.&nbsp;.
 
 <br />

@@ -10,7 +10,8 @@ lastmod: 2020-02-04T13:20:00
 discussionId: "2020-01-streamers-party"
 featured_image: streaming-tv-remote-control-3914155_7360x4912.jpg
 featured_image_alt: "A hand holding a remote control for streaming device"
-featured_image_caption: "Image: ncassullo; Pixabay"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/ncassullo-6121332/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3914155">ncassullo</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3914155">Pixabay</a></span>
 ---
 
 At long last, my household has [cut the cord](https://www.techhive.com/article/3346020/cord-cutting-a-beginners-guide.html). We be [streamers](https://www.digitaltrends.com/home-theater/how-to-quit-cable-for-online-streaming-video/).

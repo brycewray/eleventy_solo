@@ -10,7 +10,8 @@ lastmod: 2020-06-20T14:45:00
 discussionId: "2020-04-murdered-darlings"
 featured_image: candles-memorial-2905395_5472x3648.jpg
 featured_image_alt: "Candles lit in memoriam of the dead"
-featured_image_caption: "Image: Henryk Niestrój; Pixabay"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/Arcaion-2057886/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2905395">Henryk Niestrój</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2905395">Pixabay</a></span>
 ---
 
 **Update, 2020-06-20**: As is my wont, [I later had second thoughts about this](/posts/2020/06/why-kept-ulysses), but I'll leave this here for the sake of [transparency](/posts/2019/10/otoh).{.yellowBox}

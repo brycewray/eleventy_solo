@@ -10,7 +10,8 @@ lastmod: 2019-12-25T14:05:00
 discussionId: "2019-12-previous-next-eleventy"
 featured_image: sand-1522182_3216x2136.jpg
 featured_image_alt: "View from above of directional arrow in sand"
-featured_image_caption: "Image: Maret Hosemann; Pixabay"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/MIH83-464187/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1522182">Maret H.</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1522182">Pixabay</a></span>
 ---
 
 This one will be uncharacteristically short, you'll be happy to know. But I learned something yesterday that I just have to share with my fellow and sister [Eleventy](https://11ty.dev) aficionados out there.

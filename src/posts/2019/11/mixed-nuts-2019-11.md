@@ -10,7 +10,8 @@ lastmod: 2020-06-20T14:45:00
 discussionId: "2019-11-mixed-nuts-2019-11"
 featured_image: nuts-768243_5184x3456.jpg
 featured_image_alt: "Closeup view of mixed nuts"
-featured_image_caption: "Image: Okan Caliskan; Pixabay"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/Activedia-665768/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=768243">Okan Caliskan</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=768243">Pixabay</a></span>
 ---
 
 For decades, Dallas/Fort Worth-area newspaper readers got to enjoy content from the late [Blackie Sherrod](https://www.dallasnews.com/news/obituaries/2016/04/28/legendary-news-sportswriter-blackie-sherrod-dies-at-96/#). Perhaps his best-remembered output, although certainly only a small sample of his work, came in the form of a Sunday column he called "Scattershooting." Each edition thereof was---rather than the usual format and dedicated to just one subject---a collection of one- or two-sentence (mostly) sports-related opinions, reportage, *bon mots*, and just general Blackie-isms. He'd always begin each by saying something like: "Scattershooting while wondering whatever happened to *[formerly prominent person]* &nbsp;.&nbsp;.&nbsp;."

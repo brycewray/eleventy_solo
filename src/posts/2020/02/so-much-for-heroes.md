@@ -10,7 +10,8 @@ lastmod: 2020-05-21T01:50:00
 discussionId: "2020-02-so-much-for-heroes"
 featured_image: paint-splatter-2224800_3648x2736.jpg
 featured_image_alt: "Paint brushes and colorful, splattered paint"
-featured_image_caption: "Image: evondue; Pixabay"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/evondue-4996403/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2224800">evondue</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2224800">Pixabay</a></span>
 ---
 
 **Update, 2020-05-17**: As you can plainly see above, I decided later to [reinstate the hero images](/posts/2020/05/thousand-words-indeed). Nonetheless, I am leaving this in place for archival purposes as well as for the sake of [transparency](/posts/2019/10/otoh). In addition, you may find some value in the discussion herein concerning image processing.{.yellowBox}

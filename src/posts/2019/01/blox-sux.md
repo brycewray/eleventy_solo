@@ -10,7 +10,8 @@ lastmod: 2019-10-07T00:00:00
 discussionId: "2019-01-blox-sux"
 featured_image: lego-169603_4320x3240.jpg
 featured_image_alt: Lego blocks arranged stylistically
-featured_image_caption: "Image: M W; Pixabay" # quotation marks to allow colon
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/Efraimstochter-12351/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=169603">M W</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=169603">Pixabay</a></span>
 ---
 
 There’s an old saying to the effect that “a poor craftsman blames his tools.”

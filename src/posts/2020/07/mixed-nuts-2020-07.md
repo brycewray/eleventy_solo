@@ -10,7 +10,8 @@ date: 2020-07-09T21:40:00
 discussionId: "2020-07-mixed-nuts-2020-07"
 featured_image: bowl-of-nuts-3587842_5184x3888.jpg
 featured_image_alt: "A bowl containing mixed nuts"
-featured_image_caption: "Image: R391n4; Pixabay"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/R391n4-3182451/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3587842">R391n4</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3587842">Pixabay</a></span>
 ---
 
 It's true that it hasn't been all that long since the [most recent](/posts/2020/05/mixed-nuts-2020-05) edition of "Mixed Nuts," but you're here reading and I'm here tossing off drivel---and, well, that's a quorum, right?

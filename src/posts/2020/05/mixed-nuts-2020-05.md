@@ -10,7 +10,8 @@ lastmod: 2020-06-13T12:25:00
 discussionId: "2020-05-mixed-nuts-2020-05"
 featured_image: nuts-511492_4928x3264.jpg
 featured_image_alt: "A bowl contained mixed nuts, including hazelnuts and walnuts"
-featured_image_caption: "Image: Ina Hall; Pixabay"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/455992-455992/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=511492">Ina Hall</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=511492">Pixabay</a></span>
 ---
 
 The [last time](/posts/2020/02/mixed-nuts-february-2020) I put you through---ahem, I mean, *provided for you*---the periodical mixed-bag-of-observations I call "Mixed Nuts," it was February. We here in the United States were in a totally different state of existence.

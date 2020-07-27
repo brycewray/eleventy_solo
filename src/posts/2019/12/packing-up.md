@@ -10,7 +10,8 @@ lastmod: 2020-05-20T17:50:00
 discussionId: "2019-12-packing-up"
 featured_image: chain-11ty-webpack-3867751_1920x1080.jpg
 featured_image_alt: "Eleventy and webpack logos over a chain"
-featured_image_caption: "Images: 11ty.dev; webpack.js.org; Pixabay"
+featured_image_caption: |
+  <span class="caption">Images: <a href="https://11ty.dev">Eleventy site</a>; <a href="https://webpack.js.org">webpack site</a>; <a href="https://pixabay.com/users/Skitterphoto-324082/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3867751">Rudy and Peter Skitterians</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3867751">Pixabay</a></span>
 ---
 
 <div class="yellowBox">

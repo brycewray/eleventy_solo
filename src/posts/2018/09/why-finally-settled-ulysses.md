@@ -10,6 +10,7 @@ lastmod: 2020-06-20T14:45:00
 discussionId: "2018-09-why-finally-settled-ulysses"
 featured_image: Ulysses-Preferences-General-screen-shot-dark-mode_blk_bkgd_1280x720.jpg
 featured_image_alt: Screen capture - Ulysses app preferences window
+#featured_image_caption: My own screen capture, so no attribution needed
 ---
 
 As I write this in late September, 2018, it’s a little over a year since I began writing a novel I really, truly thought I’d have finished by now.

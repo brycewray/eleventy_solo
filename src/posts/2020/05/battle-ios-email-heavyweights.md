@@ -10,7 +10,8 @@ lastmod: 2020-05-16T17:15:00
 discussionId: "2020-05-battle-ios-email-heavyweights"
 featured_image: mail-old-mailboxes-1048452_3888x2592.jpg
 featured_image_alt: "Row of old mailboxes in apparently rural setting"
-featured_image_caption: "Image: Anne-Onyme; Pixabay"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/Anne-Onyme-1513318/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1048452">Anne-Onyme</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1048452">Pixabay</a></span>
 ---
 
 Nearly a year since my [first encounter](/posts/2019/06/ahoy-mate) with [MailMate](https://freron.com), a stupendously powerful macOS email client app for power users, I remain utterly amazed by all its capabilities.

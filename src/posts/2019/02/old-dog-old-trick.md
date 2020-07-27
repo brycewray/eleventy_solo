@@ -10,7 +10,8 @@ lastmod: 2019-11-08T16:00:00
 discussionId: "2019-02-old-dog-old-trick"
 featured_image: dog-2514968_1940x1293.jpg
 featured_image_alt: Face of an old dog
-featured_image_caption: "Image: Sergeljeanette; Pixabay" # quotation marks to allow colon
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/sergeljeanette-5925450/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2514968">sergeljeanette</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2514968">Pixabay</a></span>
 ---
 
 "What? You must be joking! *Darth Vader* was Luke's *father*?"

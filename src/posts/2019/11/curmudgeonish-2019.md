@@ -10,7 +10,8 @@ date: 2019-11-04T01:01:00
 discussionId: "2019-11-curmudgeonish-2019"
 featured_image: cat-4383134_3840x2400.jpg
 featured_image_alt: "Obviously angry cat"
-featured_image_caption: "Image: Mircea Lancu; Pixabay"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/MirceaIancu_CandidShots-11873433/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4383134">Mircea Iancu</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4383134">Pixabay</a></span>
 ---
 
 A little over a year ago, I decided to use this site to note some pet peeves. I entitled the resulting post "[Some curmudgeonish thoughts](/posts/2018/11/some-curmudgeonish-thoughts)."

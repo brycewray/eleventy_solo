@@ -10,7 +10,8 @@ lastmod: 2019-10-03T00:20:00
 discussionId: "2018-11-grid-locked-no-more"
 featured_image: railing-4274523_6000x4000.jpg
 featured_image_alt: Clear view of sky above fencing
-featured_image_caption: "Image: Analogicus; Pixabay" # quotation marks to allow colon
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/analogicus-8164369/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4274523">analogicus</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4274523">Pixabay</a></span>
 ---
 
 As [Emily Litella](https://en.wikipedia.org/wiki/Emily_Litella) said it so well: “Never mind.”

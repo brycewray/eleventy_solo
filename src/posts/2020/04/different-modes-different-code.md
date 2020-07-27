@@ -10,7 +10,8 @@ lastmod: 2020-05-31T22:30:00
 discussionId: "2020-04-different-modes-different-code"
 featured_image: halacious-tZc3vjPCk-Q-unsplash_5184x3456.jpg
 featured_image_alt: "Watercolor art from website design process"
-featured_image_caption: "Image: Halacious; Unsplash"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://unsplash.com/@halacious?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Halacious</a>; <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 As we all hunker down from [COVID-19](/posts/2020/03/coherence-covid-19), maintaining some degree of sanity occasionally requires one to divert one's mind from this thing. At least, that's true for me; and, yes, "sanity" is a relative term when applied to me, but that said&nbsp;.&nbsp;.&nbsp;.

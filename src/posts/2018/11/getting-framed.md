@@ -10,7 +10,8 @@ lastmod: 2020-01-10T19:45:00
 discussionId: "2018-11-getting-framed"
 featured_image: scaffolding-1617969_4907x3137.jpg
 featured_image_alt: Scaffolding for a building, with construction workers climbing and working within
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/AhmadArdity-3112014/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1617969">Ahmad Ardity</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1617969">Pixabay</a></span>
 ---
 
 In an ideal world, web developers would never use [CSS frameworks](https://www.keycdn.com/blog/front-end-frameworks). There would be ample time, patience, and money for building everything from scratch to suit every single site to a tee. All load times would be instantaneous, and all browsers would be compatible with whatever a web dev chose to do.

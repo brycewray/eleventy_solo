@@ -10,7 +10,8 @@ date: 2019-08-25T15:45:00
 discussionId: "2019-08-backtracking-to-big-g"
 featured_image: BW_shadow_of_G_on_gray_gradient_1280x720.jpg
 featured_image_alt: Google logo overshadowing this site’s logo
-featured_image_caption: "Google favicon image: Pixabay" # quotation marks to allow colon
+featured_image_caption: |
+  <span class="caption">Google favicon image: <a href="https://pixabay.com/users/WikimediaImages-1185597/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015752">WikimediaImages</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015752">Pixabay</a></span>
 ---
 
 “Your honor, we submit the following in evidence for today's proceedings. 

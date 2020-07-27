@@ -10,7 +10,8 @@ lastmod: 2020-05-22T21:45:00
 discussionId: "2020-03-some-siriusxm-thoughts"
 featured_image: audio-radio-station-3153963_5184x3456.jpg
 featured_image_alt: "Stylistic view from behind microphone in radio control room"
-featured_image_caption: "Image: Benjamin Hartwich; Pixabay"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/benjaminhartwich-3910743/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3153963">Benjamin Hartwich</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3153963">Pixabay</a></span>
 ---
 
 Perhaps the title for this post should've been "[Old geezer](/posts/2019/09/now-im-sixty-four) talks about satellite radio as if he's never had it before, which is appropriate because he *hasn't*." However, that seemed a bit much, its accuracy notwithstanding.

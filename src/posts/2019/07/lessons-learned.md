@@ -9,7 +9,8 @@ lastmod: 2019-12-18T00:50:00
 discussionId: "2019-07-lessons-learned"
 featured_image: binoculars-4143165_4000x2248.jpg
 featured_image_alt: A binocular telescope on a stand near a body of water
-featured_image_caption: "Image: Kisistvan77; Pixabay" # quotation marks to allow colon
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/kisistvan77-8062321/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4143165">kisistvan77</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4143165">Pixabay</a></span>
 oldComments: |
     <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
       <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>

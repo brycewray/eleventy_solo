@@ -10,7 +10,8 @@ date: 2019-05-10T12:20:00
 discussionId: "2019-05-the-holy-mail"
 featured_image: letterbox-1926493_4589x2648.jpg
 featured_image_alt: Old metal mailslot on bright red door
-featured_image_caption: "Image: Andrew Martin; Pixabay" # quotation marks to allow colon
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/aitoff-388338/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1926493">Andrew Martin</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1926493">Pixabay</a></span>
 ---
 
 Dr. McCoy said it so well in *Star Trek: The Motion Picture*: "I know geeks: they *love* to change things."

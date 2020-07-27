@@ -10,7 +10,8 @@ lastmod: 2019-07-30T01:55:00
 discussionId: "2019-04-publish-or-perish"
 featured_image: office-blogging-monochrome-381228_5184x3456.jpg
 featured_image_alt: Hand moving a computer mouse near a keyboard
-featured_image_caption: "Image: Pixabay" # quotation marks to allow colon
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=381228">Free-Photos</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=381228">Pixabay</a></span>
 oldComments: |
   <div class="border-t border-solid border-gray-900 dark:border-gray-100 block mt-8 mb-0 mr-auto ml-auto w-3/4 lg:w-1/2 xb:w-5/12 px-6">
       <h3 class="mt-2 mb-0 italic text-center text-3xl tracking-tight">Comments</h3>

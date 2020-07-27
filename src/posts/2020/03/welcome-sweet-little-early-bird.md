@@ -10,7 +10,7 @@ date: 2020-03-10T14:50:00
 discussionId: "2020-03-welcome-sweet-little-early-bird"
 featured_image: door-bear-for-newborn-Kennedy-Beck_edit_1280x720.jpg
 featured_image_alt: "Hospital room “door bear” to commemorate birth of Kennedy Beck"
-#featured_image_caption: "Image: rwelborn; Pixabay"
+#featured_image_caption: "Image: [photographer]; [source site]"
 ---
 
 This'll be short. It's just an update on some good news I'd previously mentioned.

@@ -10,7 +10,8 @@ lastmod: 2020-07-17T12:50:00
 discussionId: "2019-05-boxed-in"
 featured_image: kelly-sikkema-_JBGjZFFYRk-unsplash_5568x3712.jpg
 featured_image_alt: View downward into brown cardboard box with all flaps open
-featured_image_caption: "Image: Kelly Sikkema; Unsplash" # quotation marks to allow colon
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://unsplash.com/@kellysikkema?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kelly Sikkema</a>; <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 Constant reexamination is part of my daily life. It's an inescapable part of my Day Job, to be sure. It's part of why it takes me so long to write some things---the Work-in-Progress (WIP) being the most damnable example thereof.

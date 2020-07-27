@@ -10,7 +10,8 @@ date: 2019-10-21T00:00:00
 discussionId: "2019-10-picture-perfect"
 featured_image: camera-nikon-f-733546_2816x2112.jpg
 featured_image_alt: "Antique Nikon F camera in subdued light on a windowsill"
-featured_image_caption: "Image: Kelsey Burns; Pixabay"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/belseykurns-926746/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=733546">Kelsey Burns</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=733546">Pixabay</a></span>
 ---
 
 When I [was](/posts/2019/07/why-staying-with-hugo) [railing](/posts/2019/07/lessons-learned) [against](/posts/2019/09/why-left-hugo-eleventy) the [Gatsby](https://www.gatsbyjs.org) [static site generator](https://www.staticgen.com) (SSG)---that is, before I decided [yet again](/posts/2019/10/otoh) to give it a shot, which is continuing in the background now---one of the things I found most annoying was how it wouldn't let me put images just anywhere I pleased within the site's directory structure.

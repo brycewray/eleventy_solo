@@ -10,7 +10,8 @@ lastmod: 2020-02-03T20:23:00
 discussionId: "2019-07-roger-copy"
 featured_image: animals-geese-in-a-row-2364769_3648x2736.jpg
 featured_image_alt: Geese walking together in a row, illustrating synchronicity.
-featured_image_caption: "Image: Wolfgang Eckert; Pixabay" # quotation marks to allow colon
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/anaterate-2348028/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2364769">Wolfgang Eckert</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2364769">Pixabay</a></span>
 ---
 
 If this site had a horde of regular readers, there probably would be enough of you out there that, probability suggests, a tiny percentage could be expected to watch every change with eagle eyes.

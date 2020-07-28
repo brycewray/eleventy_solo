@@ -9,7 +9,7 @@ exports.render = function (data) {
   return `
 <main class="pt-12">
   <div class="background-hero-image-div">
-    ${stringtoRet(data.featured_image, data.featured_image_alt, "posts")}
+    ${stringtoRet(data.featured_image, data.featured_image_alt, data.featured_image_width, data.featured_image_height, "posts")}
     <div class="background-hero-title-block-fit">
       <div class="background-hero-title-text">
       <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl xb:text-8xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">${data.title}</h1>

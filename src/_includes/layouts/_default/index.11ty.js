@@ -8,7 +8,7 @@ exports.render = function (data) {
   return `
   <main>
     <div class="w-full height-hero pt-12">
-      ${stringtoRet(data.featured_image, data.featured_image_alt, "index")}
+      ${stringtoRet(data.featured_image, data.featured_image_alt, data.featured_image_width, data.featured_image_height, "index")}
     </div>
     ${
       (data.featured_image_caption)

@@ -40,9 +40,9 @@ But, rather than rant aimlessly, let me show you some examples of sins against e
 
 {% lazypicture "Typography-scr-cap-2-2018-10-16_1344x200.jpg", "Thin and dim text that is hard to read", 1344, 200 %}
 
-{% lazypicture "Typography-scr-cap-3-2018-10-16.jpg_1398x252", "More thin and dim text that is hard to read", 1398, 252 %}
+{% lazypicture "Typography-scr-cap-3-2018-10-16_1398x252.jpg", "More thin and dim text that is hard to read", 1398, 252 %}
 
-{% lazypicture "Typography-scr-cap-4-2018-10-16.jpg_1398x164", "Still more thin and dim text that is hard to read", 1398, 164 %}
+{% lazypicture "Typography-scr-cap-4-2018-10-16_1398x164.jpg", "Still more thin and dim text that is hard to read", 1398, 164 %}
 
 We can do better, friends.
 

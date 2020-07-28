@@ -190,6 +190,9 @@ article p, li {
 article img.containedImage {
   min-width: 100%;
   max-width: 100%;
+  width: 100%;
+  height: auto;
+  /* latter two for no-jank in Chrome and Firefox */
 }
 
 @media screen and (min-width: 769px) {

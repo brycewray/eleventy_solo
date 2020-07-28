@@ -132,7 +132,7 @@ h5, .h5, h6, .h6 {
 }
 
 .background-hero-image-div {
-  @apply relative overflow-hidden w-full;
+  @apply relative overflow-hidden w-full bg-black;
   /* Have to allow for mobile browsers' own "chrome"; can't go by Inspector simulations of smaller breakpoints */
   height: 80vh;
   max-height: 80vh;

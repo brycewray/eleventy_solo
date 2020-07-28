@@ -9,6 +9,8 @@ date: 2018-11-28T15:00:00
 lastmod: 2019-10-03T00:20:00
 discussionId: "2018-11-grid-locked-no-more"
 featured_image: railing-4274523_6000x4000.jpg
+featured_image_width: 6000
+featured_image_height: 4000
 featured_image_alt: Clear view of sky above fencing
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/analogicus-8164369/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4274523">analogicus</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4274523">Pixabay</a></span>

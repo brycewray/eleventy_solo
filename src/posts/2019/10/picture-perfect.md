@@ -9,6 +9,8 @@ date: 2019-10-21T00:00:00
 # lastmod: 2019-10-21T19:05:00 # commenting out because conversion to UTC makes date and lastmod the same date
 discussionId: "2019-10-picture-perfect"
 featured_image: camera-nikon-f-733546_2816x2112.jpg
+featured_image_width: 2816
+featured_image_height: 2112
 featured_image_alt: "Antique Nikon F camera in subdued light on a windowsill"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/belseykurns-926746/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=733546">Kelsey Burns</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=733546">Pixabay</a></span>

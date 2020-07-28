@@ -9,6 +9,8 @@ date: 2020-06-28T18:45:00
 lastmod: 2020-06-30T12:00:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
 featured_image: dominoes-4020617_4870x2672.jpg
+featured_image_width: 4870
+featured_image_height: 2672
 featured_image_alt: "A row of dominoes with a hand about to tip them over"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/SparrowsHome-4168069/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4020617">SparrowsHome</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4020617">Pixabay</a></span>

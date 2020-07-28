@@ -9,6 +9,8 @@ date: 2019-11-24T16:15:00
 lastmod: 2020-06-20T14:45:00
 discussionId: "2019-11-mixed-nuts-2019-11"
 featured_image: nuts-768243_5184x3456.jpg
+featured_image_width: 5184
+featured_image_height: 3456
 featured_image_alt: "Closeup view of mixed nuts"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Activedia-665768/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=768243">Okan Caliskan</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=768243">Pixabay</a></span>

@@ -9,6 +9,8 @@ date: 2018-09-15T13:28:17
 lastmod: 2019-04-27T18:45:00
 discussionId: "2018-09-hardy-press-wp-ssg-with-twist"
 featured_image: wordpress-macbook-pro-923188_5472x3648.jpg
+featured_image_width: 5472
+featured_image_height: 3648
 featured_image_alt: WordPress administrative interface in use on a laptop computer
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/StockSnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=923188">StockSnap</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=923188">Pixabay</a></span>

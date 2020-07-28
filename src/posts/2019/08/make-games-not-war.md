@@ -9,6 +9,8 @@ date: 2019-08-03T16:00:00
 lastmod: 2019-08-07T17:42:00
 discussionId: "2019-08-make-games-not-war"
 featured_image: stadium-seats-3310891_5472x3648.jpg
+featured_image_width: 5472
+featured_image_height: 3648
 featured_image_alt: Rows of empty seats in a sports stadium
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/4711018-4711018/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3310891">4711018</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3310891">Pixabay</a></span>

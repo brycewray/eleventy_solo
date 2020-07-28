@@ -9,6 +9,8 @@ date: 2020-03-15T20:35:00
 lastmod: 2020-05-22T21:45:00
 discussionId: "2020-03-some-siriusxm-thoughts"
 featured_image: audio-radio-station-3153963_5184x3456.jpg
+featured_image_width: 5184
+featured_image_height: 3456
 featured_image_alt: "Stylistic view from behind microphone in radio control room"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/benjaminhartwich-3910743/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3153963">Benjamin Hartwich</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3153963">Pixabay</a></span>

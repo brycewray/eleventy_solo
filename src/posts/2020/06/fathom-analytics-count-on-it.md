@@ -9,6 +9,8 @@ date: 2020-06-18T23:45:00
 #lastmod: TBD
 discussionId: "2020-06-fathom-analytics-count-on-it"
 featured_image: alexander-sinn-KgLtFCgfC28-unsplash_6024x4024.jpg
+featured_image_width: 6024
+featured_image_height: 4024
 featured_image_alt: "Concept image: Red heart shape superimposed over binary data on a computer display."
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@swimstaralex?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alexander Sinn</a>; <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
@@ -84,7 +86,7 @@ And, mind you, it doesn't hurt if it's also easy on the eyes. So, with that, lad
 
 ## Fathom Analytics: Checking the boxes
 
-{% lazypicture "fathom-analytics_1420x1025.jpg", "Screen capture from the Fathom Analytics “dashboard” on its live demo" %}
+{% lazypicture "fathom-analytics_1420x1025.jpg", "Screen capture from the Fathom Analytics “dashboard” on its live demo", 1420, 1025 %}
 
 Fathom Analytics does, indeed, present a nice picture, as this screen capture shows; you can also view a [live demo](https://app.usefathom.com/share/lsqyv/pjrvs). But what about the [features](https://usefathom.com/features) behind that pretty face?
 

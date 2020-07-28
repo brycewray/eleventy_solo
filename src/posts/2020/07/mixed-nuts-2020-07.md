@@ -9,6 +9,8 @@ date: 2020-07-09T21:40:00
 #lastmod: TBD
 discussionId: "2020-07-mixed-nuts-2020-07"
 featured_image: bowl-of-nuts-3587842_5184x3888.jpg
+featured_image_width: 5184
+featured_image_height: 3888
 featured_image_alt: "A bowl containing mixed nuts"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/R391n4-3182451/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3587842">R391n4</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3587842">Pixabay</a></span>

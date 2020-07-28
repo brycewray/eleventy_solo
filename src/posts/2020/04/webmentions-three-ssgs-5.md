@@ -9,6 +9,8 @@ date: 2020-04-28T21:50:00
 lastmod: 2020-07-26T15:00:00
 discussionId: "2020-04-webmentions-three-ssgs-5"
 featured_image: letters-pen-ink-paper-2111533_4608x3456.jpg
+featured_image_width: 4608
+featured_image_height: 3456
 featured_image_alt: "Writing concept - Fountain pen, white sheet of paper, open bottle of ink"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Bru-nO-1161770/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2111533">Bruno /Germany</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2111533">Pixabay</a></span>

@@ -9,6 +9,8 @@ date: 2020-04-05T18:45:00
 lastmod: 2020-05-31T22:30:00
 discussionId: "2020-04-different-modes-different-code"
 featured_image: halacious-tZc3vjPCk-Q-unsplash_5184x3456.jpg
+featured_image_width: 5184
+featured_image_height: 3456
 featured_image_alt: "Watercolor art from website design process"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@halacious?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Halacious</a>; <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>

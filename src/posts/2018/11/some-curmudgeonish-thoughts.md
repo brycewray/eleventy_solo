@@ -9,6 +9,8 @@ date: 2018-11-01T16:00:00
 lastmod: 2019-07-31T00:50:00
 discussionId: "2018-11-some-curmudgeonish-thoughts"
 featured_image: smilies-2912641_6016x4000.jpg
+featured_image_width: 6016
+featured_image_height: 4000
 featured_image_alt: Not-so-happy smiley-face ball
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Alexas_Fotos-686414/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2912641">Alexas_Fotos</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2912641">Pixabay</a></span>

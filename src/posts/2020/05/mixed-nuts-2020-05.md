@@ -9,6 +9,8 @@ date: 2020-05-16T22:40:00
 lastmod: 2020-06-13T12:25:00
 discussionId: "2020-05-mixed-nuts-2020-05"
 featured_image: nuts-511492_4928x3264.jpg
+featured_image_width: 4928
+featured_image_height: 3264
 featured_image_alt: "A bowl contained mixed nuts, including hazelnuts and walnuts"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/455992-455992/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=511492">Ina Hall</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=511492">Pixabay</a></span>

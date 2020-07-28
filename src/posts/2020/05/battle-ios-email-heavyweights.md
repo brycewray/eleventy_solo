@@ -9,6 +9,8 @@ date: 2020-05-14T22:45:00
 lastmod: 2020-05-16T17:15:00
 discussionId: "2020-05-battle-ios-email-heavyweights"
 featured_image: mail-old-mailboxes-1048452_3888x2592.jpg
+featured_image_width: 3888
+featured_image_height: 2592
 featured_image_alt: "Row of old mailboxes in apparently rural setting"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Anne-Onyme-1513318/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1048452">Anne-Onyme</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1048452">Pixabay</a></span>
@@ -60,7 +62,7 @@ Ladies and gentlemen, here's a look at **[AltaMail](https://mobile.eurosmartz.co
 
 ## AltaMail
 
-{% lazypicture "AltaMail-iPhone-dark--FavsInBox_edit_1125x2436.jpg", "AltaMail “Favorites” inbox view" %}
+{% lazypicture "AltaMail-iPhone-dark--FavsInBox_edit_1125x2436.jpg", "AltaMail “Favorites” inbox view", 1125, 2436 %}
 
 **Maker**: [EuroSmartz, Ltd](https://mobile.eurosmartz.com/).
 
@@ -74,7 +76,7 @@ Ladies and gentlemen, here's a look at **[AltaMail](https://mobile.eurosmartz.co
 
 ## Preside
 
-{% lazypicture "Preside-iPhone-dark--All-Inboxes-20200504-0951-1.jpg", "Preside “All Inboxes” view" %}
+{% lazypicture "Preside-iPhone-dark--All-Inboxes-20200504-0951-1_1125x2436.jpg", "Preside “All Inboxes” view", 1125, 2436 %}
 
 **Maker**: [GoodHumans](https://goodhumans.net/).
 
@@ -197,7 +199,7 @@ Despite my disagreement with how Preside handles (or *doesn't* handle) notificat
 
 [^confusing]: In fairness, I should note that one otherwise "extremely happy" Preside user said, "I&nbsp;.&nbsp;.&nbsp;. find the iPad version more confusing and less satisfying than the iPhone version. There are annoying differences between the two and no way to sync settings that I've found." By contrast, AltaMail *does* do a good job with inter-device sync; so, if that's highly important to you, it may be a better choice.
 
-{% lazypicture "Preside-iPad-light--Inboxes-20200514-0932_edit_2048x1536.jpg", "Preside, as it appears in “light mode” on the iPad" %}
+{% lazypicture "Preside-iPad-light--Inboxes-20200514-0932_edit_2048x1536.jpg", "Preside, as it appears in “light mode” on the iPad", 2048, 1536 %}
 
 Another thing that made Preside a superior choice for me is the sheer number of email views it gives you out of the box. For example, on the phone, I keep Preside set to show me *all* the emails I've received, regardless of accounts or folders (like the **All Messages** view in MailMate), over the last twenty-four hours. You can "hold your mouth right" and get that view from AltaMail, too, but I think Preside makes it much easier to achieve.
 

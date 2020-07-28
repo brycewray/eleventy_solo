@@ -9,6 +9,8 @@ date: 2020-07-27T21:30:00
 #lastmod: TBD
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
+featured_image_width: 4608
+featured_image_height: 3072
 featured_image_alt: "Colorful toy alphabet blocks"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@shs521?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Susan Holt Simpson</a>; <a href="https://unsplash.com/s/photos/toy-blocks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>

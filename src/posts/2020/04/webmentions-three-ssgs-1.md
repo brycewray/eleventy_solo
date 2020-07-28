@@ -9,6 +9,8 @@ date: 2020-04-28T21:30:00
 lastmod: 2020-07-26T15:00:00
 discussionId: "2020-04-webmentions-three-ssgs-1"
 featured_image: group-chat-photoillustration-3354365_4928x2855.jpg
+featured_image_width: 4928
+featured_image_height: 2855
 featured_image_alt: "Photoillustration of a multi-participant web chat"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3354365">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3354365">Pixabay</a></span>

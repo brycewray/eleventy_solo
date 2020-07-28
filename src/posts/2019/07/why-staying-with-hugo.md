@@ -9,6 +9,8 @@ date: 2019-07-15T01:45:00
 lastmod: 2019-12-18T00:50:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: hugo-logo_reflection_1280x720.jpg
+featured_image_width: 1280
+featured_image_height: 720
 featured_image_alt: Logo for the Hugo static site generator.
 featured_image_caption: |
   <span class="caption">Image: Hugo logo by Hugo creator Steve&nbsp;Francia, sourced&nbsp;from <a href="https://gohugo.io">Hugo&nbsp;website</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/">Affinity&nbsp;Designer</a>.</span>

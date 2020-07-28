@@ -9,6 +9,8 @@ date: 2020-07-02T22:05:00
 lastmod: 2020-07-03T15:30:00
 discussionId: "2020-07-goodbye-hello"
 featured_image: away-706464_4608x2592.jpg
+featured_image_width: 4608
+featured_image_height: 2592
 featured_image_alt: "An entrance to a pathway in a rural setting"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Gina_Janosch-782007/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Gina Janosch</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Pixabay</a></span>

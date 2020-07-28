@@ -9,6 +9,8 @@ date: 2018-09-22T16:04:36
 lastmod: 2020-06-20T14:45:00
 discussionId: "2018-09-why-finally-settled-ulysses"
 featured_image: Ulysses-Preferences-General-screen-shot-dark-mode_blk_bkgd_1280x720.jpg
+featured_image_width: 1280
+featured_image_height: 720
 featured_image_alt: Screen capture - Ulysses app preferences window
 #featured_image_caption: My own screen capture, so no attribution needed
 ---

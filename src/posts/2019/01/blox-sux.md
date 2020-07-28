@@ -9,6 +9,8 @@ date: 2019-01-19T15:25:00
 lastmod: 2019-10-07T00:00:00
 discussionId: "2019-01-blox-sux"
 featured_image: lego-169603_4320x3240.jpg
+featured_image_width: 4320
+featured_image_height: 3240
 featured_image_alt: Lego blocks arranged stylistically
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Efraimstochter-12351/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=169603">M W</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=169603">Pixabay</a></span>
@@ -35,7 +37,7 @@ That consideration aside, said Godforsaken Unidentified Page Builder, hereafter 
 - **Shortcode spray**—GUPB is one of those page builders that, if deactivated in favor of a better option, leaves behind a <em>\[bleep\]</em>ton of shortcode that is (a.)&nbsp;absolutely useless and (b.)&nbsp;a tedious chore to clean up. The following screen capture from [Pippin Williamson’s excellent “WordPress page builder plugins: A critical review”](https://pippinsplugins.com/wordpress-page-builder-plugins-critical-review/) is a perfect example, even though it shows only a  fraction of some of the shortcodes mess that’s really likely to result *(and, yeah, that is from GUPB, as it turns out; so, if you’re willing to do a little detective work and/or you simply know your page builder shortcodes when you see ’em, you now know which page builder is GUPB)*.
 <p style="height: 0; margin: 0;">&nbsp;</p><!-- Needed to get the image out from the list for formatting -->
 
-{% lazypicture "screen-cap-from-Pippin-Williamson-s-page-builders-review_986x482.jpg", "Screen capture showing shortcodes from a WordPress page builder" %}
+{% lazypicture "screen-cap-from-Pippin-Williamson-s-page-builders-review_986x482.jpg", "Screen capture showing shortcodes from a WordPress page builder", 986, 482 %}
 
 My having once specifically replaced GUPB in favor of another pagebuilder at a different company for precisely these reasons (well, except for code bloat, because they *all* do that) doesn’t make it any easier.
 

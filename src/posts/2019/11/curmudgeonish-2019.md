@@ -9,6 +9,8 @@ date: 2019-11-04T01:01:00
 #lastmod: t/k
 discussionId: "2019-11-curmudgeonish-2019"
 featured_image: cat-4383134_3840x2400.jpg
+featured_image_width: 3840
+featured_image_height: 2400
 featured_image_alt: "Obviously angry cat"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/MirceaIancu_CandidShots-11873433/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4383134">Mircea Iancu</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4383134">Pixabay</a></span>

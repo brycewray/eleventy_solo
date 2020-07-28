@@ -9,6 +9,8 @@ date: 2020-02-29T03:30:00
 lastmod: 2020-04-02T17:23:00
 discussionId: "2020-02-youtube-tv-rsns-flap"
 featured_image: globe-life-park-rangers-1402096_6000x4000.jpg
+featured_image_width: 6000
+featured_image_height: 4000
 featured_image_alt: "Baseball game at Globe Life Park, Arlington, Texas"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/rwelborn-2596238/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1402096">rwelborn</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1402096">Pixabay</a></span>

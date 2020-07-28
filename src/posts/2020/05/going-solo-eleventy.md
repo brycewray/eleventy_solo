@@ -9,6 +9,8 @@ date: 2020-05-09T14:45:00
 lastmod: 2020-05-26T19:15:00
 discussionId: "2020-05-going-solo-eleventy"
 featured_image: solo-flight-by-a-seagull-at-sunset-4238769_3225x2330.jpg
+featured_image_width: 3225
+featured_image_height: 2330
 featured_image_alt: "A seagull flying alone over water at sunset"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Stan-USA-11117099/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4238769">Stan Paregien</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4238769">Pixabay</a></span>

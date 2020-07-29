@@ -1,15 +1,12 @@
 /* 
 This shortcode takes the following form...
-  {% lazypicture url, alt, width, height [, temp] %}
+  {% respimg url, alt, width, height [, temp] %}
 ...with url in the form of (note NO leading or ending slash):
   filename.ext
 ...and 'temp[late]' optional in body copy. The template is used 
 to specify hero images on either the home page ('index') or 
 post pages ('posts'). Without this parameter, the `switch` 
 statement below defaults to body copy-style image-handling.
-
-The name 'lazypicture' (rather than 'lazy-picture') comes from the config 
-in .eleventy.js. ¯\_(ツ)_/¯
 */
 
 const respSizes = require(`../../../_data/siteparams.json`).respSizes

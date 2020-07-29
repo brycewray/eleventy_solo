@@ -9,6 +9,8 @@ date: 2020-07-09T21:40:00
 #lastmod: TBD
 discussionId: "2020-07-mixed-nuts-2020-07"
 featured_image: bowl-of-nuts-3587842_5184x3888.jpg
+featured_image_width: 5184
+featured_image_height: 3888
 featured_image_alt: "A bowl containing mixed nuts"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/R391n4-3182451/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3587842">R391n4</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3587842">Pixabay</a></span>
@@ -30,7 +32,7 @@ For all the hoo-rahing about the [$15/month price increase by YouTube TV](https:
 
 While I'm on the subject of "little birds": our new granddaughter, whom I [dubbed a "sweet little early bird"](/posts/2020/03/welcome-sweet-little-early-bird) upon her slightly premature birth back in March, is doing just fine. She's also quite popular with her family's pets, like John, the very protective dog shown here at her side a few weeks ago:
 
-{% lazypicture "2020-06-23_Kennedy-Beck_and_John-the-dog_3200x2400.jpg", "A baby, Kennedy Beck, with one of her family's dogs" %}
+{% lazypicture "2020-06-23_Kennedy-Beck_and_John-the-dog_3200x2400.jpg", "A baby, Kennedy Beck, with one of her family's dogs", 3200, 2400 %}
 
 *I recently managed to achieve a slight performance boost for this site by dropping [Google Fonts](https://fonts.google.com) and [Flying Pages](https://npmjs.com/package/flying-pages), a [preloader](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content) script. You may have better luck.*
 

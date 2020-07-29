@@ -9,6 +9,8 @@ date: 2018-10-17T19:40:00
 lastmod: 2019-04-12T01:33:00
 discussionId: "2018-10-web-typography-part-1"
 featured_image: letters-691842_2504x1676.jpg
+featured_image_width: 2504
+featured_image_height: 1676
 featured_image_alt: Letters for old-style typesetting
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=691842">Free-Photos</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=691842">Pixabay</a></span>
@@ -36,11 +38,11 @@ By “easily readable,” I mean:
 
 But, rather than rant aimlessly, let me show you some examples of sins against either or both of these principles of web typography. They were current as of when I originally posted this.
 
-{% lazypicture "Typography-scr-cap-2-2018-10-16.jpg", "Thin and dim text that is hard to read" %}
+{% lazypicture "Typography-scr-cap-2-2018-10-16_1344x200.jpg", "Thin and dim text that is hard to read", 1344, 200 %}
 
-{% lazypicture "Typography-scr-cap-3-2018-10-16.jpg", "More thin and dim text that is hard to read" %}
+{% lazypicture "Typography-scr-cap-3-2018-10-16_1398x252.jpg", "More thin and dim text that is hard to read", 1398, 252 %}
 
-{% lazypicture "Typography-scr-cap-4-2018-10-16.jpg", "Still more thin and dim text that is hard to read" %}
+{% lazypicture "Typography-scr-cap-4-2018-10-16_1398x164.jpg", "Still more thin and dim text that is hard to read", 1398, 164 %}
 
 We can do better, friends.
 

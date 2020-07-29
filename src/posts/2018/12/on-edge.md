@@ -9,6 +9,8 @@ date: 2018-12-07T19:35:00
 # lastmod
 discussionId: "2018-12-on-edge"
 featured_image: MS-Edge-logo-and-bkgd_1920x1080.jpg
+featured_image_width: 1920
+featured_image_height: 1080
 featured_image_alt: Logos for Microsoft Edge and Chromium
 featured_image_caption: |
   <span class="caption">Images: <a href="https://www.deviantart.com/">DeviantArt</a>; <a href="https://www.chromium.org/">The Chromium Projects</a></span>

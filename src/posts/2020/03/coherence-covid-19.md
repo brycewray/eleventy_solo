@@ -9,6 +9,8 @@ date: 2020-03-21T14:45:00
 #lastmod: TBD
 discussionId: "2020-03-coherence-covid-19"
 featured_image: wash-hands-covid-19-4968117_4032x3024.jpg
+featured_image_width: 4032
+featured_image_height: 3024
 featured_image_alt: "Hand-washing"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/thisispatrice-15738535/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4968117">thisispatrice</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4968117">Pixabay</a></span>

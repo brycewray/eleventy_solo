@@ -9,6 +9,8 @@ date: 2020-04-28T21:35:00
 lastmod: 2020-07-26T15:00:00
 discussionId: "2020-04-webmentions-three-ssgs-2"
 featured_image: pavan-trikutam-71CjSSB83Wo-unsplash_4401x2934.jpg
+featured_image_width: 4401
+featured_image_height: 2934
 featured_image_alt: "Communications concept - vintage pay telephones on a wall"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@ptrikutam?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pavan Trikutam</a>; <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>

@@ -9,6 +9,8 @@ date: 2020-07-05T15:40:00
 lastmod: 2020-07-07T13:40:00
 discussionId: "2020-07-stacks-and-stacks"
 featured_image: stones-stack-3841920_6000x4000.jpg
+featured_image_width: 6000
+featured_image_height: 4000
 featured_image_alt: "A stack of smooth stones on a beach near an ocean"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/fotoblend-87167/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3841920">Willfried Wende</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3841920">Pixabay</a></span>

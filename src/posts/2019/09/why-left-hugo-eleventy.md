@@ -9,6 +9,8 @@ date: 2019-09-08T15:00:00
 lastmod: 2019-12-18T00:50:00
 discussionId: "2019-09-why-left-hugo-eleventy"
 featured_image: detour-2496197_4912x3264.jpg
+featured_image_width: 4912
+featured_image_height: 3264
 featured_image_alt: "Orange road sign, “DETOUR AHEAD”"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/awsloley-3972173/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2496197">awsloley</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2496197">Pixabay</a></span>

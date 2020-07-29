@@ -9,6 +9,8 @@ date: 2020-02-09T22:05:00
 #lastmod: TBD
 discussionId: "2020-02-mixed-nuts-2020-02"
 featured_image: almond-21502_5000x3333.jpg
+featured_image_width: 5000
+featured_image_height: 3333
 featured_image_alt: "Almonds and other nuts in a store"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/PublicDomainPictures-14/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=21502">PublicDomainPictures</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=21502">Pixabay</a></span>

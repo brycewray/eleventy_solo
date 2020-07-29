@@ -9,6 +9,8 @@ date: 2019-03-09T04:08:00
 lastmod: 2020-01-01T14:39:00
 discussionId: "2019-03-mark-it-down"
 featured_image: swan-1639154_2816x1880.jpg
+featured_image_width: 2816
+featured_image_height: 1880
 featured_image_alt: A baby swan swimming
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/AnnRos-614174/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1639154">Ann &mdash; please donate</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1639154">Pixabay</a></span>

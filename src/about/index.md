@@ -7,6 +7,8 @@ date: 2018-09-14T20:00:00
 lastmod: 2020-07-27T17:55:00
 discussionId: "about"
 featured_image: question-mark-over-mac-keyboard-49958_1280x905.jpg
+featured_image_width: 1280
+featured_image_height: 905
 featured_image_alt: Stylistic image of question mark superimposed over computer keyboard
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Dalomo-5179/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=49958">Dalomo</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=49958">Pixabay</a></span>

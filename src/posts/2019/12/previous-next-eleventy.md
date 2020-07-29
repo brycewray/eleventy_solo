@@ -9,6 +9,8 @@ date: 2019-12-23T21:16:00
 lastmod: 2019-12-25T14:05:00
 discussionId: "2019-12-previous-next-eleventy"
 featured_image: sand-1522182_3216x2136.jpg
+featured_image_width: 3216
+featured_image_height: 2136
 featured_image_alt: "View from above of directional arrow in sand"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/MIH83-464187/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1522182">Maret H.</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1522182">Pixabay</a></span>

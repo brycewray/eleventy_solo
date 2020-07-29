@@ -9,6 +9,8 @@ date: 2019-08-18T19:15:00
 #lastmod:
 discussionId: "2019-08-scrivener-and-cloud"
 featured_image: scriv-and-cloud-from-3331240_1280x720.jpg
+featured_image_width: 1280
+featured_image_height: 720
 featured_image_alt: Scrivener logo and cloud computing icon
 featured_image_caption: |
   <span class="caption">Images: <a href="https://www.literatureandlatte.com">Literature and Latte</a>; <a href="https://pixabay.com/users/WikimediaImages-1185597/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015752">WikimediaImages</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015752">Pixabay</a></span>

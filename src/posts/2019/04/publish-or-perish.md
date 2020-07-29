@@ -9,6 +9,8 @@ date: 2019-04-12T00:00:00
 lastmod: 2019-07-30T01:55:00
 discussionId: "2019-04-publish-or-perish"
 featured_image: office-blogging-monochrome-381228_5184x3456.jpg
+featured_image_width: 5184
+featured_image_height: 3456
 featured_image_alt: Hand moving a computer mouse near a keyboard
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=381228">Free-Photos</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=381228">Pixabay</a></span>

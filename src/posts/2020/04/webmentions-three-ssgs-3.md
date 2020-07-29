@@ -9,6 +9,8 @@ date: 2020-04-28T21:40:00
 lastmod: 2020-07-26T15:00:00
 discussionId: "2020-04-webmentions-three-ssgs-3"
 featured_image: marko-pekic-IpLa37Uj2Dw-unsplash_3542x2362.jpg
+featured_image_width: 3542
+featured_image_height: 2362
 featured_image_alt: "Communications concept - Red pay telephone booths"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@floating_point?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Marko Pekić</a>; <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>

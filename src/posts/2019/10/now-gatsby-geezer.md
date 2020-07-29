@@ -9,6 +9,8 @@ date: 2019-10-27T15:00:00
 #lastmod: t/k
 discussionId: "2019-10-now-gatsby-geezer"
 featured_image: gatsby-monogram-puzzle-monochrome-1816470_1920x1080_darker.jpg
+featured_image_width: 1920
+featured_image_height: 1080
 featured_image_alt: "Gatsby monogram logo over monochrome photo of puzzle pieces"
 featured_image_caption: |
   <span class="caption">Images: <a href="https://gatsbyjs.org">Gatsby</a>; <a href="https://pixabay.com/users/LeoNeoBoy-2404531/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1816470">LeoNeoBoy</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1816470">Pixabay</a></span>

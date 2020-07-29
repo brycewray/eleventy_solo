@@ -9,6 +9,8 @@ date: 2019-07-06T15:38:00
 lastmod: 2020-05-17T21:15:00
 discussionId: "2019-07-independence"
 featured_image: 1984-07-11_01_retouched_1280x720.jpg
+featured_image_width: 1280
+featured_image_height: 720
 featured_image_alt: "Bryce Wray, in 1984, unwrapping his new Macintosh computer."
 featured_image_caption: |
   <span class="caption">July 11, 1984: A much younger and skinnier me eagerly unwraps my new &ldquo;Skinny&nbsp;Mac.&rdquo; (Photo&nbsp;by my overly tolerant&nbsp;spouse.)</span>

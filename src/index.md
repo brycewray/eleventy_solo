@@ -6,6 +6,8 @@ author: Bryce Wray
 date: 2018-09-15T02:00:00
 lastmod: 2020-07-17T00:30:00
 featured_image: typewriter-monochrome_2242164_6260x4374.jpg
+featured_image_width: 6260
+featured_image_height: 4374
 featured_image_alt: "Monochrome photo of hands typing on an old typewriter"
 featured_image_caption: |
   Image: <a href="https://pixabay.com/users/rawpixel-4283981/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2242164">rawpixel</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2242164">Pixabay</a>
@@ -17,7 +19,7 @@ Eons ago, when [the web was a new thing](http://info.cern.ch/hypertext/WWW/ThePr
 
 And, yes, I had one, back on what then was called [GTE.net](https://en.wikipedia.org/wiki/GTE). In fact, I was a "Charter Subscriber" to that ISP.
 
-{% lazypicture "gte-net_HTML_1997-04-17_crop_1280x715.jpg", "HTML code from a 1997 website" %}
+{% lazypicture "gte-net_HTML_1997-04-17_crop_1280x715.jpg", "HTML code from a 1997 website", 1280, 715 %}
 
 Yet, as that free-file-space thing gradually went away, so, too, did many personal sites---mine among them.
 

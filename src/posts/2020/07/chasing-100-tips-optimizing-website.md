@@ -9,6 +9,8 @@ date: 2020-07-17T00:30:00
 #lastmod: TBD
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 featured_image: tsvetoslav-hristov-QW-f6s9nFIs-unsplash_6036x4020.jpg
+featured_image_width: 6036
+featured_image_height: 4020
 featured_image_alt: "Sepia-tone photo of a stopwatch"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@tsvetoslav?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tsvetoslav Hristov</a>; <a href="https://unsplash.com/s/photos/tsvetoslav-hristov-stopwatch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
@@ -18,7 +20,7 @@ If you have your own website, chances are you like to make it work better for yo
 
 Of course, the Holy Grail looks like this:
 
-{% lazypicture "Lighthouse-CLI_2020-07-15-091833CDT_2268x492.jpg" "Screen capture from a Lighthouse CLI report showing perfect ”100” scores for “Performance,” “Accessibility,” “Best Practices,” and “SEO”" %}
+{% lazypicture "Lighthouse-CLI_2020-07-15-091833CDT_2268x492.png" "Screen capture from a Lighthouse CLI report showing perfect ”100” scores for “Performance,” “Accessibility,” “Best Practices,” and “SEO”", 2268, 492 %}
 
 That's an authentic screen capture from my home page's [Lighthouse](https://developers.google.com/web/tools/lighthouse) profile as delivered from the [Lighthouse CLI tool](https://github.com/GoogleChrome/lighthouse#using-the-node-cli): perfect "100" scores for Performance, Accessibility, Best Practices, and Search Engine Optimization (SEO).
 

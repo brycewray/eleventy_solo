@@ -9,6 +9,8 @@ date: 2019-05-10T12:20:00
 #lastmod
 discussionId: "2019-05-the-holy-mail"
 featured_image: letterbox-1926493_4589x2648.jpg
+featured_image_width: 4589
+featured_image_height: 2648
 featured_image_alt: Old metal mailslot on bright red door
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/aitoff-388338/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1926493">Andrew Martin</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1926493">Pixabay</a></span>

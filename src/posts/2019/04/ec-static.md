@@ -9,6 +9,8 @@ date: 2019-04-07T19:00:00
 lastmod: 2020-06-07T19:25:00
 discussionId: "2019-04-ec-static"
 featured_image: server-1235959_1980x1320.jpg
+featured_image_width: 1980
+featured_image_height: 1320
 featured_image_alt: Internet server
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/ColossusCloud-2086276/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1235959">Colossus Cloud</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1235959">Pixabay</a></span>

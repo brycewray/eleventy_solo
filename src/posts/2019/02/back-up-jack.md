@@ -9,6 +9,8 @@ date: 2019-02-23T18:45:00
 lastmod: 2020-05-21T01:46:00
 discussionId: "2019-02-back-up-jack"
 featured_image: binary-2688910_6000x3372.jpg
+featured_image_width: 6000
+featured_image_height: 3372
 featured_image_alt: Stylistic illustration of moving binary data
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2688910">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2688910">Pixabay</a></span>

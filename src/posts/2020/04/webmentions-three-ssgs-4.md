@@ -9,6 +9,8 @@ date: 2020-04-28T21:45:00
 lastmod: 2020-07-26T15:00:00
 discussionId: "2020-04-webmentions-three-ssgs-4"
 featured_image: jackrabbit-673965_3600x2400.jpg
+featured_image_width: 3600
+featured_image_height: 2400
 featured_image_alt: "Communications concept - A long-eared rabbit listening for something"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/skeeze-272447/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=673965">skeeze</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=673965">Pixabay</a></span>

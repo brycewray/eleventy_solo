@@ -38,7 +38,6 @@
     "babel-core": "^6.26.3",
     "babel-plugin-prismjs": "^2.0.1",
     "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.26.12",
     "cross-env": "^7.0.2",
     "cssnano": "^4.1.10",
     "debug": "^4.1.1",
@@ -51,7 +50,6 @@
     "glob": "^7.1.6",
     "glob-all": "^3.2.1",
     "inline-source-map": "^0.6.2",
-    "jimp": "^0.13.0",
     "lodash": "^4.17.19",
     "luxon": "^1.24.1",
     "markdown-it": "^10.0.0",
@@ -71,8 +69,7 @@
     "posthtml": "^0.13.1",
     "prismjs": "^1.20.0",
     "rss": "^1.2.2",
-    "sanitize-html": "^1.27.1",
-    "sharp": "^0.25.4"
+    "sanitize-html": "^1.27.1"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -80,13 +77,8 @@
     "dotenv": "^8.2.0",
     "get-json": "^1.0.1",
     "html-minifier": "^4.0.0",
-    "image-size": "^0.8.3",
-    "imagemin": "^7.0.1",
-    "imagemin-pngquant": "^9.0.0",
     "jsonfile": "^6.0.1",
     "junk": "^3.1.0",
-    "md5": "^2.2.1",
-    "node-dir": "^0.1.17",
     "postcss-clean": "^1.1.0",
     "postcss-import": "^12.0.1",
     "tailwindcss": "^1.6.0"

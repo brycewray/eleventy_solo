@@ -19,6 +19,10 @@ module.exports = function(eleventyConfig) {
       <meta property="og:title" content="${data.title} | ${data.siteparams.siteTitle}" />
       `
     }
+
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="preconnect" href="https://boa.brycewray.com">
+
     <!-- IndieWeb -->
     ${
       (data.title == "Home page")

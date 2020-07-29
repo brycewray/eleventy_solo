@@ -1,30 +1,24 @@
 /* 
 This shortcode takes the following form...
   {% lazypicture url, alt, width, height [, temp] %}
-...with url being in the form of (note NO leading slash):
-  v012345678912/filename.ext
-...and 'temp[late]' optional in body copy; the template is used to specify 
-hero images on either the home page ('index') or post pages ('posts'). 
-Without this parameter, the `switch` statement below defaults to 
-body copy-style image-handling.
+...with url in the form of (note NO leading or ending slash):
+  filename.ext
+...and 'temp[late]' optional in body copy. The template is used 
+to specify hero images on either the home page ('index') or 
+post pages ('posts'). Without this parameter, the `switch` 
+statement below defaults to body copy-style image-handling.
+
 The name 'lazypicture' (rather than 'lazy-picture') comes from the config 
 in .eleventy.js. ¯\_(ツ)_/¯
 */
 
-// const sizeOf = require('image-size')
 const respSizes = require(`../../../_data/siteparams.json`).respSizes
 var cloudiBase = 'https://res.cloudinary.com/brycewray-com/image/upload/'
 var LQIPpholder = 'f_auto,q_1,w_20/' // note ending slash
 var xFmPart1 = 'f_auto,q_60,w_'
 var xFmPart2 = ',x_0,z_1/' // note ending slash
-// const srcDir = 'src/images'
-// const fs = require('fs')
-// const cacheFile = '.base64imgs.json'
-// const jsonData = JSON.parse(fs.readFileSync(cacheFile))
  
 module.exports = (url, alt, width, height, tmpl) => {
-  // const fileSeek = jsonData.find(image => image.file === url)
-  // var base64Img = fileSeek.b64Res
   if (!tmpl) tmpl == "none"
 
   switch(tmpl) {

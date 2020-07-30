@@ -16,6 +16,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('robots.txt')
   eleventyConfig.addPassthroughCopy('favicon.ico')
+  eleventyConfig.addPassthroughCopy('browserconfig.xml')
   eleventyConfig.addPassthroughCopy('./src/assets/js')
   eleventyConfig.addPassthroughCopy('./src/images/icons')
 

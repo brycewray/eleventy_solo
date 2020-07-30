@@ -1,6 +1,7 @@
 const metadata = require('../../../_data/metadata.json')
 
 var analyticsCode = ``
+/*
 metadata.domain == "brycewray.com"
   ? analyticsCode = `
   <!-- Fathom - beautiful, simple website analytics -->
@@ -8,5 +9,5 @@ metadata.domain == "brycewray.com"
   <!-- / Fathom -->
   `
   : analyticsCode = ``
-
+*/
 module.exports = analyticsCode

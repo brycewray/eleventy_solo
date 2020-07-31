@@ -28,11 +28,11 @@ exports.render = function (data) {
           <h2 class="h4 not-italic tracking-tight"><a href="${post.url}">${post.data.title}</a></h2>
           <p class="font-bold text-base mt-2 mb-0 leading-5">${post.data.subtitle}</p>
           <p class="text-xs tracking-normal mt-0 mb-1">
-            Published: <time style="display: inline;" datetime="${this.pub_lastmod(post.date)}}">${this.pub_lastmod(post.date)}<span style="font-variant: small-caps;">&nbsp;utc</span></time>
+            Published: <time style="display: inline;" datetime="${this.pub_lastmod(post.date)}}">${this.pub_lastmod(post.date)}</time>
             ${
               post.data.lastmod
               ? `
-            <br />Last modified: <time style="display: inline;" datetime="${this.pub_lastmod(post.data.lastmod)}">${this.pub_lastmod(post.data.lastmod)}<span style="font-variant: small-caps;">&nbsp;utc</span></time>
+            <br />Last modified: <time style="display: inline;" datetime="${this.pub_lastmod(post.data.lastmod)}">${this.pub_lastmod(post.data.lastmod)}</time>
               `
               : ``
             }

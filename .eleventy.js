@@ -98,7 +98,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(ErrorOverlay)
  
   eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
-  eleventyConfig.addShortcode("respimg", require("./src/assets/utils/respimg.js"))
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {

@@ -6,7 +6,7 @@ subtitle: "Moving from Netlify to Vercel"
 description: "How this site gained a new home."
 author: Bryce Wray
 date: 2020-07-02T22:05:00
-lastmod: 2020-08-01T16:00:00
+lastmod: 2020-07-31T21:15:00
 discussionId: "2020-07-goodbye-hello"
 featured_image: away-706464_4608x2592.jpg
 featured_image_width: 4608
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Gina_Janosch-782007/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Gina Janosch</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Pixabay</a></span>
 ---
 
-***Note, 2020-08-01**: If you'd already read this before August 1, 2020, be sure to check the **Addendum** at the bottom for a major update. "Goodbye, hello," indeed.* {.yellowBox}
+***Note, 2020-07-31**: If you'd already read this before July 31, 2020, be sure to check the **Addendum** at the bottom for a major update. "Goodbye, hello," indeed.* {.yellowBox}
 
 Welcome to a story about an ending---and a beginning.
 
@@ -97,7 +97,7 @@ When compared to not only Netlify but also other vendors I tested by actually se
 
 [^fbBuild]: There's no way to compare this to how Firebase works, by the way, because you do its builds on a separate system---whether that's your own computer or, say, GitHub or GitLab.
 
-[^hiRes]: Indeed, I took advantage of Vercel's added oomph to raise the quality of the *original* images from which my build creates responsive images, after seeing [this Twitter conversation](https://twitter.com/jensimmons/status/1276187305401860097). That said, the [move to Cloudinary](/posts/2020/08/transformed) rendered that consideration moot, as the 2020-08-01 addendum to this post explains.
+[^hiRes]: Indeed, I took advantage of Vercel's added oomph to raise the quality of the *original* images from which my build creates responsive images, after seeing [this Twitter conversation](https://twitter.com/jensimmons/status/1276187305401860097). That said, the [move to Cloudinary](/posts/2020/07/transformed) rendered that consideration moot, as the 2020-07-31 addendum to this post explains.
 
 Finally, I simply preferred the Vercel DX, especially the developer UI, over that of either the increasingly cluttered Netlify or the getting-there-but-not-there-yet Render---not to mention the you-better-have-time-to-read-a-lot-of-docs Firebase.
 
@@ -125,9 +125,9 @@ And thank you, Vercel, for your warm welcome, and for the interesting journey on
 
 ----
 
-## Addendum, 2020-08-01
+## Addendum, 2020-07-31
 
-In case you haven't yet seen "[Transformed](/posts/2020/08/transformed)," I just finished moving virtually all my site's images to [Cloudinary](https://cloudinary.com). It turned out the lifting of this image-handling and -storing burden had one additional, nice side-benefit.
+In case you haven't yet seen "[Transformed](/posts/2020/07/transformed)," I just finished moving virtually all my site's images to [Cloudinary](https://cloudinary.com). It turned out the lifting of this image-handling and -storing burden had one additional, nice side-benefit.
 
 It let me **return to Netlify**, slightly over a month after leaving.
 
@@ -157,6 +157,6 @@ Once I did some appropriate code trims here and there to the test repo and ran s
 
 Of course, switching back from Vercel to Netlify involved some fiddling, [DNS](https://en.wikipedia.org/wiki/Domain_Name_System)-wise[^DNSSECoff], but it was worthwhile. (My domain's old DNS records from the first time around were still there in the account, so that helped a little.) And so, earlier today, this site came home to Netlify.
 
-[^DNSSECoff]: While switching from Netlify's domain name servers to Google's during the site move to Vercel, I'd also activated [DNS System Security Extensions (DNSSEC)](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions). When I first began to return the site to Netlify and point my domain to Netlify's name servers because [that apparently works best with its CDN](https://css-tricks.com/using-your-domain-with-a-netlify-hosted-site/), I found that I first had to *de*-activate DNSSEC---and, quoting [the appropriate Google Support page](https://support.google.com/domains/answer/6387342?hl=en): "When you turn on DNSSEC, it takes roughly 2 hours for DNSSEC to activate completely. When you turn it off, there's a delay of up to 2 **days** before deactivation." [Emphasis added.] As it turned out, it took *every bit* of two days. Lesson learned.
+[^DNSSECoff]: While switching from Netlify's domain name servers to Google's during the site move to Vercel, I'd also activated [DNS System Security Extensions (DNSSEC)](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions). When I first began to return the site to Netlify and point my domain to Netlify's name servers because [that apparently works best with its CDN](https://css-tricks.com/using-your-domain-with-a-netlify-hosted-site/), I found that I first had to *de*-activate DNSSEC---and, quoting [the appropriate Google Support page](https://support.google.com/domains/answer/6387342?hl=en): "When you turn on DNSSEC, it takes roughly 2 hours for DNSSEC to activate completely. When you turn it off, there's a delay of up to 2 **days** before deactivation." [Emphasis added.] As it turned out, it took a full day. Anyway, lesson learned.
 
 As a result, the post title---"Goodbye, hello"---turned out to be a little more nuanced than I'd originally intended. However things turned out, I am happy to be back within Netlify's "old" but comfy confines and no longer watching its bustling, friendly community from the outside, remembering all too fondly how nice it felt to be even an insignificant part of it.

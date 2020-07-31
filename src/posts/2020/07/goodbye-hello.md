@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Gina_Janosch-782007/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Gina Janosch</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Pixabay</a></span>
 ---
 
-**Note, 2020-08-01**: If you read this before August 1, 2020, be sure to go down to the **Addendum** at the bottom for a major update on this. "Goodbye, hello," indeed.{.yellowBox}
+***Note, 2020-08-01**: If you'd already read this before August 1, 2020, be sure to check the **Addendum** at the bottom for a major update. "Goodbye, hello," indeed.* {.yellowBox}
 
 Welcome to a story about an ending---and a beginning.
 
@@ -97,7 +97,7 @@ When compared to not only Netlify but also other vendors I tested by actually se
 
 [^fbBuild]: There's no way to compare this to how Firebase works, by the way, because you do its builds on a separate system---whether that's your own computer or, say, GitHub or GitLab.
 
-[^hiRes]: Indeed, I've taken advantage of Vercel's added oomph to raise the quality of the *original* images from which my build creates responsive images, after seeing [this Twitter conversation](https://twitter.com/jensimmons/status/1276187305401860097).
+[^hiRes]: Indeed, I took advantage of Vercel's added oomph to raise the quality of the *original* images from which my build creates responsive images, after seeing [this Twitter conversation](https://twitter.com/jensimmons/status/1276187305401860097). That said, the [move to Cloudinary](/posts/2020/08/transformed) rendered that consideration moot, as the 2020-08-01 addendum to this post explains.
 
 Finally, I simply preferred the Vercel DX, especially the developer UI, over that of either the increasingly cluttered Netlify or the getting-there-but-not-there-yet Render---not to mention the you-better-have-time-to-read-a-lot-of-docs Firebase.
 
@@ -135,11 +135,11 @@ Oh, don't get me wrong: I'm not disavowing anything I said in my praise of Verce
 
 After the move, despite the new host's technical advantages, I missed the Netlify community.
 
-Much like my warmth for the Eleventy community, I had felt part of a larger group while with Netlify. With Vercel, I gradually came to feel as if I were in a nice, new house with bigger, better, shinier everything, but it just didn't feel like home. (I know that's a weird analogy, given the relative youth of both companies, but that's just how it seemed to me.)
+Much like my warmth for the Eleventy community (a significant percentage of whose major players *work for* Netlify), I had felt part of a larger group while with Netlify. With Vercel, I gradually came to feel as if I'd moved to a nice, new house with bigger, better, shinier everything, but it just didn't feel like home. I know that's a weird analogy, given the relative youth of both companies, but that's just how it seemed to me.
 
 Here's a lame attempt to explain.
 
-A reporter covering the 1863 veterans' cemetery dedication where Abraham Lincoln delivered the Gettyburg Address likened the [two-hour speech preceding Lincoln's two-minute classic](https://www.businessinsider.com/edward-everett-also-spoke-at-gettysburg-convention-2013-11) to "Greek sculpture---beautiful, but cold as ice." Well, for reasons hard to put into words, I find that comment vaguely applicable to a comparison between Vercel and Netlify.
+A reporter covering the 1863 National Cemetery dedication where Abraham Lincoln delivered the Gettyburg Address likened the [two-hour speech preceding Lincoln's two-minute classic](https://www.businessinsider.com/edward-everett-also-spoke-at-gettysburg-convention-2013-11) to "Greek sculpture---beautiful, but cold as ice." Well, for reasons hard to put into words, I find that comment vaguely applicable to a comparison between Vercel and Netlify.
 
 Vercel's free tier is technically superior to Netlify's in most ways that matter but, at least for me, the experience just didn't have the same *feel*. Hey, I'm the guy who [brought back hero images](/posts/2020/05/thousand-words-indeed) simply because *I missed seeing them*, their technical and logistical "costs" notwithstanding; so would you expect any more of me?
 
@@ -159,6 +159,6 @@ Of course, switching back from Vercel to Netlify involved some fiddling, [DNS](h
 
 [^DNSSECoff]: While switching from Netlify's domain name servers to Google's during the site move to Vercel, I'd also activated [DNS System Security Extensions (DNSSEC)](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions). When I first began to return the site to Netlify and point my domain to Netlify's name servers because [that apparently works best with its CDN](https://css-tricks.com/using-your-domain-with-a-netlify-hosted-site/), I found that I first had to *de*-activate DNSSEC---and, quoting [the appropriate Google Support page](https://support.google.com/domains/answer/6387342?hl=en): "When you turn on DNSSEC, it takes roughly 2 hours for DNSSEC to activate completely. When you turn it off, there's a delay of up to 2 **days** before deactivation." [Emphasis added.] As it turned out, it took *every bit* of two days. Lesson learned.
 
-One thing I immediately regained was control over my site's time zone---in case you'd noticed recently, I switched all the posts' dates to [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time). It wasn't my choice, but simply a concession to the inability to "tell" Vercel to build my site using U.S. Central Time in its dates. Perhaps that's a minor thing, but it was important to me. It just seems weird to issue a post at 7:01 PM, my time, but be forced to give it the next day's date.
+One thing I immediately regained was control over my site's time zone. Perhaps you noticed that I recently switched all the posts' dates to [UTC](https://en.wikipedia.org/wiki/Coordinated_Universal_Time). It wasn't my choice, but simply a concession to the inability to "command" Vercel to build my site using U.S. Central Time in its dates. (With Netlify, you simply specify an environment variable of `TZ` with a value of `America/Chicago`. ) Perhaps that's a minor thing, but it was important to me. It just seems weird to issue a post at 7:01 PM, my time, but be forced to give it the next day's date.
 
-As a result of this move back to Netlify, the post title---"Goodbye, hello"---turned out to be a little more nuanced than I'd originally intended. However things turned out, I am happy to be back within Netlify's "old" but comfy confines and its bustling community.
+As a result of this move back to Netlify, the post title---"Goodbye, hello"---turned out to be a little more nuanced than I'd originally intended. However things turned out, I am happy to be back within Netlify's "old" but comfy confines and no longer watching its bustling, friendly community from the outside, remembering all too fondly how nice it felt to be even an insignificant part of it.

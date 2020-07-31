@@ -86,7 +86,7 @@ And, mind you, it doesn't hurt if it's also easy on the eyes. So, with that, lad
 
 ## Fathom Analytics: Checking the boxes
 
-{% respimg "fathom-analytics_1420x1025.jpg", "Screen capture from the Fathom Analytics “dashboard” on its live demo", 1420, 1025 %}
+{% lazypicture "fathom-analytics_1420x1025.jpg", "Screen capture from the Fathom Analytics “dashboard” on its live demo", 1420, 1025 %}
 
 Fathom Analytics does, indeed, present a nice picture, as this screen capture shows; you can also view a [live demo](https://app.usefathom.com/share/lsqyv/pjrvs). But what about the [features](https://usefathom.com/features) behind that pretty face?
 

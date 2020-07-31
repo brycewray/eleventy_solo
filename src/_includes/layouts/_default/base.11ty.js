@@ -8,6 +8,13 @@ module.exports = function (data) {
     ${data.content}
     ${this.siteFooter(data)}
     <script src="/assets/js/twitterMeta.min.js" defer></script>
+    <script src="/assets/js/lazyload.min.js"></script>
+    <script>
+      var lazyLoadInstance = new LazyLoad({
+        threshold: 150,
+        use_native: true,
+      })
+    </script>
   </body>
 </html>
   `

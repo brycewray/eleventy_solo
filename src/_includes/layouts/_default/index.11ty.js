@@ -1,4 +1,4 @@
-const stringtoRet = require('../../../assets/utils/respimg.js')
+const stringtoRet = require('../../../assets/utils/lazy-picture.js')
 
 exports.data = {
   layout: 'layouts/_default/base.11ty.js'

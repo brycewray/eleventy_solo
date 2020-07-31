@@ -3,7 +3,7 @@ layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Transformed"
 subtitle: "The move to Cloudinary"
-description: "Getting a big burden off my shoulders—and my site-build process."
+description: "Getting a big burden off my shoulders—and my site-build workflow."
 author: Bryce Wray
 date: 2020-08-01T11:30:00-05:00
 #lastmod: TBD
@@ -34,11 +34,11 @@ While I am *by no means* mechanical, I fully get how those who *are* can spend h
 
 You see, this is similar to how I feel when I have a challenge with the code behind this website. It can be aggravating getting to the solution but, truth be known, the journey there is (mostly) enjoyable.
 
-Such was the case, [earlier this year](/posts/2020/05/going-solo-eleventy), when I ended this site's five-month reliance on [webpack](https://webpack.js.org) in favor of letting [Eleventy](https://11ty.dev) carry the load alone. While, overall, this simplified things for me, it did require me to find a different way to process the site's images.
+Such was the case, [earlier this year](/posts/2020/05/going-solo-eleventy), when I ended this site's five-month reliance on [webpack](https://webpack.js.org) in favor of letting [Eleventy](https://11ty.dev) carry the load alone. While, overall, this simplified things for me, it did require me to find a different way to process the site's images, since webpack and some plugins were now to be relieved of such duties.
 
-At first, I tried some excellent Eleventy plugins, but found each didn't fit my particular setup for differing reasons. As what was intended at first as only an interim measure but soon became my go-to answer, I came up with a build-time script, `imgxfm.js`, which used the [Sharp](https://github.com/lovell/sharp) library (and, later in its brief life, the [pngquant](https://pngquant.org/) library) to handle image-processing duties.
+At first, I tried some excellent Eleventy plugins, but found each didn't fit my particular setup for differing reasons. As what was intended at first as only an interim measure but soon became my go-to answer, I came up with a build-time script, `imgxfm.js`, which used the [Sharp](https://github.com/lovell/sharp) library (and, later in the script's brief life, the [pngquant](https://pngquant.org/) library) to handle image-processing duties.
 
-When I first went with this method, the site wasn't using [hero images](https://en.wikipedia.org/wiki/Hero_image). Thus, the script, handling only the few images within my posts' body content, didn't take long to run each time I did a site build. Such had also been the case with the Eleventy/webpack setup, when webpack and some plugins were processing the images.
+When I first went with this method, the site wasn't using [hero images](https://www.optimizely.com/optimization-glossary/hero-image/). Thus, the script, handling only the relatively few images within my posts' body content, didn't take long to run each time I did a site build. Such had also been the case with the Eleventy/webpack setup.
 
 Things changed quite a bit once [I brought back hero images](/posts/2020/05/thousand-words-indeed) a couple of weeks later. Now, the build times fattened dramatically, and grew longer with each new post and its hero image---and, of course, these increasingly long builds were happening also on *local* builds while I was doing dev stuff. I spent plenty of time waiting through such builds, twiddling my metaphorical thumbs while listening to my iMac's fans kick up in protest.
 
@@ -46,7 +46,7 @@ As a result: not long after I brought back the hero images, I was beginning to e
 
 - [Using scripting](/posts/2020/06/o-say-can-you-ci-cd), specifically GitHub Actions, to cut the on-Netlify build times to only a few seconds each.
 
-- Subsequently just flat-out [moving the site's hosting](/posts/2020/07/goodbye-hello) from Netlify to [Vercel](https://vercel.com)---mostly because I preferred Vercel's superior performance and more generous free-tier build policy, but also in part because I wanted to revert to the script-free build process with which I'd become familiar through most of my time with Netlify.
+- Subsequently just flat-out [moving the site's hosting](/posts/2020/07/goodbye-hello) from Netlify to [Vercel](https://vercel.com)---mostly because I preferred Vercel's superior performance and more generous free-tier build policy, but also in part because I wanted to revert to the GitHub Actions-free build process with which I'd become familiar through most of my time with Netlify.
 
 While the build *limit* problem was solved, the build *length* problem was alive and well, and getting worse with each new post/image combo.
 
@@ -54,7 +54,7 @@ That's when I began to take a new look at Cloudinary.
 
 I say "new look" because, back in June, I'd spent the better part of a Sunday playing with Cloudinary's free tier and trying out various *transformations* (re-sizings, format changes, *etc*.)---but deciding against it after running into some (self-imposed, as in [PEBKAC](https://www.computerhope.com/jargon/p/pebkac.htm)) difficulties in early tests.
 
-Apart from those difficulties, one overarching concern I had about Cloudinary was whether I'd be able to stay within its free tier, given my large and growing supply of site images and the fact that *each* transformation of *each* image would be counted against the monthly 25-*credit* limit. I knew each transformation was only a tiny fraction of that limit and so the math didn't indicate I'd really have a problem, but my fear-of-the-unknown reaction remained. 
+Apart from those experiences, one overarching concern I had about Cloudinary was whether I'd be able to stay within its free tier, given my large and growing supply of site images and the fact that *each* transformation of *each* image would be counted against the monthly 25-*credit* limit. I knew each transformation was only a tiny fraction of that limit and so the math didn't indicate I'd really have a problem, but my fear-of-the-unknown reaction remained. 
 
 Fortunately, I got over it after viewing the Cloudinary tutorial video, "[Understanding Cloudinary's Transformation Quotas](https://www.youtube.com/watch?v=kkAk_5jQPFE)," which explains the whole thing quite well. And, indeed, once I tried again and spent a few *more* hours testing, I realized that my site's needs would easily fit within the Cloudinary free tier.
 
@@ -64,19 +64,19 @@ In my site's case, each image's Cloudinary URL assigns it a size and quality (co
 
 [^SVGandIcons]: All, that is, except the SVG icons which you see on each page and the `meta` images (*e.g.*, "favicons") required in each page's `head`. Each of the SVGs is actually inline code in the HTML, avoiding additional downloads; and all but one of the `meta` images are tiny little things, the one exception being a smaller and more compressed version of the "hands typing on a typewriter" photo from the home page. The latter is required for, among other things, social media posts about this site's content.
 
-## [Notes about Cloudinary and transformations]
+## Those transformations are real files
 
-If you have trouble understanding why Cloudinary counts transformations against the monthly credits, it's very simple---although, truthfully, I didn't get it until I watched several Cloudinary-produced videos and grasped exactly what's going on with each transformation.
+If you have trouble understanding why Cloudinary counts transformations against the monthly credits, it's very simple---although, truthfully, I didn't get it until I read some Cloudinary documentation and watched several Cloudinary-produced videos, after which I grasped exactly what's going on with each transformation.
 
 You see, each new transformation creates a *new file* that Cloudinary stores out on Amazon S3. So they're counting not your URL but *what* the URL creates.
 
 For example: if you have a file with a Cloudinary URL that ends with `f_auto,q_60,w_450/my_image.jpg`, that takes the original "my_image.jpg" file and creates a new file with these characteristics:
 
-- `f_auto`---The most efficient file format for each browser. WebP-savvy browsers get that format, JPEG 2000-savvy browsers get that one, the rest get the original format. Incidentally, this happens despite any extension you might put on the URL; so, just because the URL says it's `something.jpg` doesn't mean your browser really *handles* it as a JPEG file; only a view in the browser's Inspector will tell you for sure.
+- `f_auto`---The most efficient file format for each browser. WebP-savvy browsers get that format, JPEG 2000-savvy browsers get that one, and the rest get the original format. Incidentally, this happens despite any extension you might put on the URL; so, just because the URL says it's `something.jpg` doesn't mean your browser really *handles* it as a JPEG file; only a view in the browser's Inspector will tell you for sure.
 - `q_60`---Quality (*i.e.*, compression level) of 60%.
 - `w_450`---Width of 450 pixels. This capability makes it ultra-convenient to have my `respimg.js` shortcode alter this part of an image's URL programmatically, simplifying the responsive image `srcset`.
 
-You can put a [mind-blowing number of transformative actions into a single URL](https://cloudinary.com/documentation/image_transformation_reference). In fact, it's better to do it that way, rather than piecemeal; because, again, each URL creates a new file. Bunching them together means it can[^fileXfm] count as only *one* transformation. So it will behoove you, if you go with Cloudinary, to get into that habit up-front.
+You can put a [mind-blowing number of transformative actions into a single URL](https://cloudinary.com/documentation/image_transformation_reference). In fact, it's better to do it that way, rather than piecemeal; because, again, each URL creates a new file. Bunching them together means it can[^fileXfm] count as only *one* transformation. So it will behoove you, if you go with Cloudinary, to get into that habit early on.
 
 [^fileXfm]: One exception is that automatic transformations, especially `f_auto` with its multiple-format processing, can create more than one file and, thus, count as more than one transformation.
 

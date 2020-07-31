@@ -5,7 +5,7 @@ title: "Fathom Analytics: Count on it"
 subtitle: "A better way to analyze websites"
 description: "How to count visitors while protecting them—and yourself."
 author: Bryce Wray
-date: 2020-06-18T23:45:00
+date: 2020-06-18T18:45:00-05:00
 #lastmod: TBD
 discussionId: "2020-06-fathom-analytics-count-on-it"
 featured_image: alexander-sinn-KgLtFCgfC28-unsplash_6024x4024.jpg

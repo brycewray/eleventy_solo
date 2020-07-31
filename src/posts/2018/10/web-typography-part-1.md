@@ -5,8 +5,8 @@ title: Readable web text, pretty please
 subtitle: Part 1 of a two-part series on web typography
 description: Can we just agree that type on the web should be, y’know, readable?
 author: Bryce Wray
-date: 2018-10-17T19:40:00
-lastmod: 2019-04-12T01:33:00
+date: 2018-10-17T14:40:00-05:00
+lastmod: 2019-04-11T20:33:00-05:00
 discussionId: "2018-10-web-typography-part-1"
 featured_image: letters-691842_2504x1676.jpg
 featured_image_width: 2504

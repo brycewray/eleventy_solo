@@ -5,8 +5,8 @@ title: "Stacks and stacks"
 subtitle: "That was then, this is now"
 description: "Comparing the site’s “tech stacks,” one year apart."
 author: Bryce Wray
-date: 2020-07-05T15:40:00
-lastmod: 2020-07-07T13:40:00
+date: 2020-07-05T10:40:00-05:00
+lastmod: 2020-07-07T08:40:00-05:00
 discussionId: "2020-07-stacks-and-stacks"
 featured_image: stones-stack-3841920_6000x4000.jpg
 featured_image_width: 6000

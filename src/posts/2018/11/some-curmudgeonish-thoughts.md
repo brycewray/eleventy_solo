@@ -5,8 +5,8 @@ title: Some curmudgeonish thoughts
 subtitle: (with apologies to the late Andy Rooney)
 description: “Didja ever notice...?” Yes, I did. And here’s the result. 
 author: Bryce Wray
-date: 2018-11-01T16:00:00
-lastmod: 2019-07-31T00:50:00
+date: 2018-11-01T11:00:00-05:00
+lastmod: 2019-07-30T19:50:00-05:00
 discussionId: "2018-11-some-curmudgeonish-thoughts"
 featured_image: smilies-2912641_6016x4000.jpg
 featured_image_width: 6016

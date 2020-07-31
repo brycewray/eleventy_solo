@@ -5,7 +5,7 @@ title: Some curmudgeonish thoughts, 2019 edition
 subtitle: A few more things that irk me
 description: "Here’s a follow-up on last year’s list of items that stick in my craw."
 author: Bryce Wray
-date: 2019-11-04T01:01:00
+date: 2019-11-03T19:01:00-06:00
 #lastmod: t/k
 discussionId: "2019-11-curmudgeonish-2019"
 featured_image: cat-4383134_3840x2400.jpg

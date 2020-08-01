@@ -1,5 +1,7 @@
 # Repo for brycewray.com
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/46c7e1b0-f468-4c4b-a7bb-44d02955675c/deploy-status)](https://app.netlify.com/sites/brycewray-com/deploys)
+
 This is the repository from which the [Eleventy](https://11ty.dev)-generated version of [brycewray.com](https://brycewray.com) is built.
 
 For a **starter set** based on this repo’s design, please see [eleventy_solo_starter](https://github.com/brycewray/eleventy_solo_starter).

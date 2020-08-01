@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
 
     return `
     <header class="h-12 bg-blue-700 w-full fixed p-0 mt-0 z-50">
-      <p class="site-logo-holder"><a href="/" aria-label="This site's “BW” logo">${svgNavIcon}</a></span></p>
+      <p class="site-logo-holder ml-4 md:ml-8 lg:ml-12 xl:ml-16"><a href="/" aria-label="This site's “BW” logo">${svgNavIcon}</a></span></p>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
       <label for="nav-toggle" class="nav__icon" aria-hidden="true">
         Expand the menu

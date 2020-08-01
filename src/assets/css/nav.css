@@ -149,7 +149,7 @@ nav {
 }
 
 .site-logo-holder {
-  @apply mt-1 pt-1 ml-8 w-full;
+  @apply mt-1 pt-1 w-full;
   & a {
     @apply no-underline border-b-0;
   }

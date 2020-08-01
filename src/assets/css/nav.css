@@ -149,10 +149,9 @@ nav {
 }
 
 .site-logo-holder {
-  & img {
-    height: 18px;
-    width: 18px;
-    @apply mb-1;
+  @apply mt-1 pt-1 ml-8 w-full;
+  & a {
+    @apply no-underline border-b-0;
   }
 }
 /* === End of primary settings for larger screens === */

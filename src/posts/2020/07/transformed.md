@@ -6,7 +6,7 @@ subtitle: "The move to Cloudinary"
 description: "Getting a big burden off my shoulders—and my site-build workflow."
 author: Bryce Wray
 date: 2020-07-31T21:15:00
-lastmod: 2020-08-01T03:45:00
+lastmod: 2020-08-01T04:05:00
 discussionId: "2020-08-transformed"
 featured_image: cinema-film-images-photography-64154_2806x1984.jpg
 featured_image_width: 2806
@@ -74,9 +74,11 @@ You see, each new transformation creates a *new file* that Cloudinary stores out
 
 For example: if you have a file with a Cloudinary URL that ends with `f_auto,q_60,w_450/my_image.jpg`, that takes the original "my_image.jpg" file and creates a new file with these characteristics:
 
-- `f_auto`---The most efficient file format for each browser. WebP-savvy browsers get that format, JPEG 2000-savvy browsers get that one, and the rest get the original format. Incidentally, this happens despite any extension you might put on the URL; so, just because the URL says it's `something.jpg` doesn't mean your browser really *handles* it as a JPEG file; only a view in the browser's Inspector will tell you for sure.
+- `f_auto`---The most efficient file format for each browser. WebP-savvy browsers get that format, JPEG 2000-savvy browsers get that one, Internet Explorer[^IEcomp] and pre-Chromium Microsoft Edge get JPEG-XR, and the rest get the original format. Incidentally, this happens despite any extension you might put on the URL; so, just because the URL says it's `something.jpg` doesn't mean your browser really *handles* it as a JPEG file; only a view in the browser's Inspector will tell you for sure.
 - `q_60`---Quality (*i.e.*, compression level) of 60%.
 - `w_450`---Width of 450 pixels. This capability makes it ultra-convenient to have my `lazy-picture.js` shortcode alter this part of an image's URL programmatically, simplifying the responsive image `srcset`.
+
+[^IEcomp]: In all candor, however, I stopped worrying about Internet Explorer a few months ago, chiefly because of its ridiculously outdated CSS handling. You can certainly *read* my site's content in IE, but the hero images will look weird and columns will be wonky---and I can live with that. Life is too short to spend time agonizing over making things look normal on a browser so agonizingly behind the curve that [even its creators tell you to stop using it](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-perils-of-using-internet-explorer-as-your-default-browser/ba-p/331732). Besides, [Fathom Analytics](https://usefathom.com/ref/ZKHYWX) (affiliate link) tells me IE use among my visitors is virtually non-existent (under 0.05% this past month). **Good for you, visitors**!
 
 You can put a [mind-blowing number of transformative actions into a single URL](https://cloudinary.com/documentation/image_transformation_reference). In fact, it's better to do it that way, rather than piecemeal; because, again, each URL creates a new file. Bunching them together means it can[^fileXfm] count as only *one* transformation. So it will behoove you, if you go with Cloudinary, to get into that habit early on.
 

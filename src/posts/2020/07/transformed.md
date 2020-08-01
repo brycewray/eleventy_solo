@@ -6,7 +6,7 @@ subtitle: "The move to Cloudinary"
 description: "Getting a big burden off my shoulders—and my site-build workflow."
 author: Bryce Wray
 date: 2020-07-31T21:15:00
-#lastmod: TBD
+lastmod: 2020-08-01T03:45:00
 discussionId: "2020-08-transformed"
 featured_image: cinema-film-images-photography-64154_2806x1984.jpg
 featured_image_width: 2806
@@ -58,7 +58,7 @@ Apart from those experiences, one overarching concern I had about Cloudinary was
 
 Fortunately, I got over it after viewing the Cloudinary tutorial video, "[Understanding Cloudinary's Transformation Quotas](https://www.youtube.com/watch?v=kkAk_5jQPFE)," which explains the whole thing quite well. And, indeed, once I tried again and spent a few *more* hours testing, I realized that my site's needs would easily fit within the Cloudinary free tier.
 
-After I uploaded all the images[^SVGandIcons], which actually went pretty quickly, I retooled my long-standing `lazy-picture.js`[^Verlok] [shortcode](https://11ty.dev/docs/shortcodes) so that, rather than seeking out multiple *locally* processed images from the site's own storage, instead called the special *transformation URLs* the images have in Cloudinary.
+After I uploaded all the images[^SVGandIcons], which actually went pretty quickly, I retooled my long-standing `lazy-picture.js`[^Verlok] [shortcode](https://11ty.dev/docs/shortcodes) so that it would, rather than seeking out multiple *locally* processed images from the site's own storage, instead call the special *transformation URLs* the images have in Cloudinary.
 
 [^Verlok]: I would be remiss if I didn't mention the great extent to which `lazy-picture.js` depends on the excellent [LazyLoad](https://github.com/verlok/vanilla-lazyload) by [Andrea Verlicchi](https://www.andreaverlicchi.eu/).
 

@@ -6,7 +6,7 @@ subtitle: "Pointers about performance, and then some"
 description: "It takes work, but making your website better is worth it."
 author: Bryce Wray
 date: 2020-07-17T01:30:00
-lastmod: 2020-08-01T16:45:00
+#lastmod: TBD
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 featured_image: tsvetoslav-hristov-QW-f6s9nFIs-unsplash_6036x4020.jpg
 featured_image_width: 6036
@@ -15,8 +15,6 @@ featured_image_alt: "Sepia-tone photo of a stopwatch"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@tsvetoslav?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tsvetoslav Hristov</a>; <a href="https://unsplash.com/s/photos/tsvetoslav-hristov-stopwatch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
-
-***Update, 2020-08-01**: As I will explain more fully in the appropriate section herein, I posted this prior to my decision, about two weeks later, that using web "fonts" was worth the tiny, but measurable, performance hit they can impose. (The screen capture below was from **before** that change, when the site was still using system "fonts.")* {.yellowBox}
 
 If you have your own website, chances are you like to make it work better for your visitors and, yes, show up higher in search engine ratings. Let's talk about how you can do that.
 
@@ -61,8 +59,6 @@ Diets aren't fun, and they suck even more when you're hungry. Because of my love
 But I don't argue with the data, and one test after another has shown me web "fonts" slow down my site---not a lot, to be sure, but enough to matter.
 
 That's also turned out to be the case when I provide them "locally," as opposed to pulling them directly off (*e.g.*) [Google Fonts](https://fonts.google.com), even after trying a [variety](https://csswizardry.com/2020/05/the-fastest-google-fonts/) of [excellent](https://www.reich-consulting.net/web-development/loading-web-fonts-without-performance-penalty-from-lighthouse/) [advice](https://www.filamentgroup.com/lab/load-css-simpler/) from very smart folks. Consequently, I go with system "fonts," however much I'd like to use [certain](https://fonts.google.com/specimen/Public+Sans?vfonly) [typefaces](https://fonts.google.com/specimen/Vollkorn?vfonly) I admire.
-
-**Update, 2020-08-01**: Indeed, a couple of weeks later, I realized I'd rather take a tiny "hit" on the Lighthouse Performance score rather than *not* have those typefaces I like so much---so they're back. Oddly, this decision came in part after I realized I'd willingly risk losing a Lighthouse point or two by [off-loading my images-handling hassles](/posts/2020/07/transformed) to [Cloudinary](https://cloudinary.com).{.yellowBox}
 
 If your response is "Damn the performance hit, full speed ahead with Google Fonts":
 

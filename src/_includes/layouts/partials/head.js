@@ -20,10 +20,11 @@ module.exports = function(eleventyConfig) {
       `
     }
 
-    <link rel="preconnect" href="https://res.cloudinary.com">
-    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://res.cloudinary.com" />
+    <link rel="preconnect" href="https://duckduckgo.com" />
+    <link rel="preconnect" href="//fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://boa.brycewray.com">
+    <link rel="preconnect" href="https://boa.brycewray.com" />
 
     <!-- IndieWeb -->
     ${

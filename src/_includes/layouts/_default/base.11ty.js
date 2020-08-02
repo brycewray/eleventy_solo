@@ -6,6 +6,7 @@ module.exports = function (data) {
   <body>
     ${this.siteHeader(data)}
     ${data.content}
+    ${this.search(data)}
     ${this.siteFooter(data)}
     <script src="/assets/js/twitterMeta.min.js" defer></script>
     <script src="/assets/js/lazyload.min.js"></script>

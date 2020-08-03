@@ -1,15 +1,18 @@
 const analyticsCode = require('../../../assets/utils/analytics.js')
 let bodyName = 'Public+Sans'
 let codeName = 'Roboto+Mono'
+let socialImg = `https://res.cloudinary.com/brycewray-com/image/upload`
+socialImg += `c_fill,w_1024,h_512,q_auto,f_auto,x_0,z_1.0/`
+let fallbackImg = `typewriter-monochrome_2242164_6260x4374.jpg`
 
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addShortcode('headTag', function(data) {
-
+    
     return `
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=10"><!-- due to IE 11 issue with TWCSS -->
-    <meta name="generator" content="Eleventy - 11ty - https://11ty.dev - v${require(`@11ty/eleventy/package.json`).version}" />        
+    <meta name="generator" content="Eleventy - 11ty - https://11ty.dev - v${require(`@11ty/eleventy/package.json`).version}" />  
     ${
       (data.title == "Home page")
       ? `
@@ -37,33 +40,27 @@ module.exports = function(eleventyConfig) {
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:image" content="${data.featured_image
+      ? `${socialImg + data.featured_image}`
+      : `${socialImg + fallbackImg}`
+    }" />
 
-    <meta property="og:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720.jpg" />
-    ${
-      (data.title == "Home page")
-      ? `
-      <meta name="description" content="${data.siteparams.siteDescription}" />
-      <meta property="og:description" content="${data.siteparams.siteDescription}" />
-      `
-      : (data.description != "")
-        ? `
-      <meta name="description" content="${data.description}">
-        `
-      : ``
-    }
-    ${
-      (data.page.url !== null)
-      ? `
-      <meta property="og:url" content="${data.siteparams.siteURLforOG}${data.page.url}" />
-      `
-      : `<meta property="og:url" content="${data.siteparams.siteURLforOG}" />`
-    }
+    <meta name="description" content="${data.description
+      ? `${data.description}`
+      : `${data.siteparams.siteDescription}`
+    }" />
+
+    <meta property="og:url" content="${data.page.url
+      ? `${data.page.url}`
+      : `${data.siteparams.siteURLforOG}`
+    }" />
 
     <!-- Twitter meta -->
     <meta name="twitter:site" content="@BryceWrayTX">
     <meta name="twitter:creator" content="@BryceWrayTX">
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720.jpg" />
+    <meta name="twitter:image" content="${fallbackImg}" />
     ${
       data.title !== "Home page"
       ? `

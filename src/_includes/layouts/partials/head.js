@@ -114,7 +114,6 @@ module.exports = function(eleventyConfig) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://res.cloudinary.com" />
     <link rel="preconnect" href="https://duckduckgo.com" crossorigin />
-    <link rel="preload" href="https://cdn.usefathom.com/script.js" as="script" />
 
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=${bodyName}:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=${codeName}:ital@0;1&display=swap" />

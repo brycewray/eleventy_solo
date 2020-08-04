@@ -60,18 +60,21 @@ module.exports = function(eleventyConfig) {
     <meta name="twitter:site" content="@BryceWrayTX">
     <meta name="twitter:creator" content="@BryceWrayTX">
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="${fallbackImg}" />
-    ${
-      data.title !== "Home page"
-      ? `
-      <meta name="twitter:description" content="${data.description}" />
-      <meta name="twitter:title" content="${data.title}" />
-      `
-      : `
-      <meta name="twitter:description" content="${data.siteparams.siteDescription}" />
-      <meta name="twitter:title" content="${data.siteparams.siteTitle}" />
-      `
-    }
+    <meta name="twitter:image" content="${data.featured_image
+      ? `${socialImg + data.featured_image}`
+      : `${socialImg + fallbackImg}`
+    }" />
+
+    <meta name="twitter:description" content="${data.description
+      ? `${data.description}`
+      : `${data.siteparams.siteDescription}`
+    }" />
+
+    <meta name="twitter:title" content="${data.title
+      ? `${data.title}`
+      : `${data.siteparams.siteTitle}`   
+    }" />
+
 
     <!-- **** BEGINNING, favicons **** -->
 

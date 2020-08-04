@@ -7,7 +7,7 @@ description: "Getting a big burden off my shoulders—and my site-build workflow
 author: Bryce Wray
 date: 2020-07-31T21:15:00
 lastmod: 2020-08-01T04:05:00
-discussionId: "2020-08-transformed"
+discussionId: "2020-07-transformed"
 featured_image: cinema-film-images-photography-64154_2806x1984.jpg
 featured_image_width: 2806
 featured_image_height: 1984

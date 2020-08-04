@@ -1,10 +1,10 @@
 ---
 layout: layouts/privacy/privacy.11ty.js
 title: "Privacy policy"
-description: "How we protect you on this site"
+description: "How my vendors and I protect you on this site"
 author: Bryce Wray
 date: 2020-08-02T14:00:00
-lastmod: 2020-08-03T19:30:00
+lastmod: 2020-08-04T01:30:00
 #featured_image:
 #featured_image_width:
 #featured_image_height:

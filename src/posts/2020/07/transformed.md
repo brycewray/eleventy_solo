@@ -6,7 +6,7 @@ subtitle: "The move to Cloudinary"
 description: "Getting a big burden off my shoulders—and my site-build workflow."
 author: Bryce Wray
 date: 2020-07-31T21:15:00
-lastmod: 2020-08-01T04:05:00
+lastmod: 2020-08-05T00:15:00
 discussionId: "2020-07-transformed"
 featured_image: cinema-film-images-photography-64154_2806x1984.jpg
 featured_image_width: 2806
@@ -15,6 +15,8 @@ featured_image_alt: "Strips of photographic film positives with colorful landsca
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=64154">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=64154">Pixabay</a></span>
 ---
+
+**Update, 2020-08-05**: If what you see herein makes you want to try Cloudinary, I request that you use [this invitation link](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu). **Full disclosure**: I will receive additional Cloudinary credits for each person who uses that link and subsequently enrolls with Cloudinary, even if only for the same ultra-generous free tier I describe in this post. Thanks in advance! *(The opinions herein are strictly my own and I was not compensated for them; the Cloudinary team provided this link to me **after** seeing what I'd already written.)* {.yellowBox}
 
 This is about what one might call a transformative process.
 
@@ -90,6 +92,6 @@ The upshot of all this is that I deliver the same images as before---with better
 
 ## Trading points for pics?
 
-Did I give up some speed, [some performance](/posts/2020/07/chasing-100-tips-optimizing-website), in adopting Cloudinary? Well, maybe some, depending on the point from which the site is being tested---but keep in mind that Cloudinary-hosted assets are delivered via the well-named [Fastly CDN](https://fastly.com), and its caching helps assure that, once the file has been seen *somewhere* within a region, it's likely the CDN will deliver it ultra-quickly.
+Did I give up some speed, [some performance](/posts/2020/07/chasing-100-tips-optimizing-website), in adopting Cloudinary? Well, maybe some, depending on the point from which the site is being tested---but keep in mind that Cloudinary-hosted assets are delivered via the aptly named [Fastly CDN](https://fastly.com), and its caching helps assure that, once the file has been seen *somewhere* within a region, it's likely the CDN will deliver it ultra-quickly.
 
-I am willing to give up a point or two off my performance scores. The relief I feel in *not* having to manage those images, *not* having to do *local builds* of those images, and *not* having to worry about how long my build times will be six months or a year or two years from now---believe me, it's worth it.
+I am willing to give up a few points off my performance scores. The relief I feel in *not* having to manage those images, *not* having to do *local builds* of those images, and *not* having to worry about how long my build times will be six months or a year or two years from now---believe me, it's worth it.

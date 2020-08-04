@@ -102,6 +102,7 @@ module.exports = function(eleventyConfig) {
     <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/image/icons/apple-icon-1024x1024.png">
 
     <!-- Android -->
     <link rel="shortcut icon" sizes="196x196" href="/images/icons/favicon-196x196.png">

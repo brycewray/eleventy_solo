@@ -6,7 +6,7 @@ subtitle: "Taking a course of lesser resistance"
 description: "Why I’ve decided for now to backtrack from JavaScript-only templating in Eleventy."
 author: Bryce Wray
 date: 2020-03-22T19:30:00
-lastmod: 2020-04-15T22:30:00
+lastmod: 2020-08-04T11:57:00
 discussionId: "2020-03-back-nunjucks-eleventy-site"
 featured_image: Nunjucks-template-screen-capture-2020-02_edit_1280x881.jpg
 featured_image_width: 1280
@@ -15,7 +15,7 @@ featured_image_alt: "Nunjucks template file displayed in Visual Studio Code"
 #featured_image_caption: This was my own screen capture
 ---
 
-As even a casual perusal of some recent posts to this site could easily make clear, I have become a real fanboy for the [Eleventy](https://11ty.dev) [static site generator (SSG)](https://staticgen.com), which I use to create and maintain the site. It offers a tremendous number of advantages over the competiion, and one of those advantages is the simplicity of *templating*.
+As even a casual perusal of some recent posts to this site could easily make clear, I have become a real fanboy for the [Eleventy](https://11ty.dev) [static site generator (SSG)](https://staticgen.com), which I use to create and maintain the site. It offers a tremendous number of advantages over the competition, and one of those advantages is the simplicity of *templating*.
 
 For those of you who have no clue what that means and/or why you should give a rip, here's an extremely simplified explanation.
 

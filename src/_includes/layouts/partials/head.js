@@ -51,6 +51,11 @@ module.exports = function(eleventyConfig) {
       : `${data.siteparams.siteDescription}`
     }" />
 
+    <meta name="og:description" content="${data.description
+      ? `${data.description}`
+      : `${data.siteparams.siteDescription}`
+    }" />
+
     <meta property="og:url" content="${data.page.url
       ? `${data.page.url}`
       : `${data.siteparams.siteURLforOG}`

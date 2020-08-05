@@ -2,7 +2,7 @@ const analyticsCode = require('../../../assets/utils/analytics.js')
 let bodyName = 'Public+Sans'
 let codeName = 'Roboto+Mono'
 let socialImg = `https://res.cloudinary.com/brycewray-com/image/upload`
-socialImg += `c_fill,w_1024,h_512,q_auto,f_auto,x_0,z_1.0/`
+socialImg += `c_fill,w_1024,h_512,q_auto,f_auto,x_0,z_1/`
 let fallbackImg = `typewriter-monochrome_2242164_6260x4374.jpg`
 
 module.exports = function(eleventyConfig) {

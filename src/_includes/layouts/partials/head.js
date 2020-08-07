@@ -1,6 +1,4 @@
 const analyticsCode = require('../../../assets/utils/analytics.js')
-let bodyName = 'Public+Sans'
-let codeName = 'Roboto+Mono'
 let socialImg = `https://res.cloudinary.com/brycewray-com/image/upload/`
 socialImg += `c_fill,w_1024,h_512,q_auto,f_auto,x_0,z_1/`
 let fallbackImg = `typewriter-monochrome_2242164_6260x4374.jpg`
@@ -116,22 +114,13 @@ module.exports = function(eleventyConfig) {
 
     <!-- **** CONCLUSION, favicons **** -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://res.cloudinary.com" />
     <link rel="preconnect" href="https://duckduckgo.com" crossorigin />
-
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=${bodyName}:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=${codeName}:ital@0;1&display=swap" />
-    <link href="https://fonts.googleapis.com/css2?family=${bodyName}:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
-    <link href="https://fonts.googleapis.com/css2?family=${codeName}:ital@0;1&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <link rel="preload" as="style" href="/css/index.css" />
     <link rel="stylesheet" href="/css/index.css" type="text/css" />
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}.notInIE{display: none;}}</style>
 
     <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=${bodyName}:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css2?family=${codeName}:ital@0;1&display=swap" rel="stylesheet">
       <!-- Dark mode for Twitter items if browser blocks JS at bottom; it’s debatable whether it’s needed since non-JS Twitter is pretty spare and mostly adheres to other CSS, but we’ll do it just to be consistent -->
       <meta name="twitter:widgets:theme" content="dark">
       <meta name="twitter:widgets:link-color" content="#00bbff">

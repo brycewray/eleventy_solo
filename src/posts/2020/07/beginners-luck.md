@@ -6,7 +6,7 @@ subtitle: "New Eleventy and Hugo starter sets"
 description: "Helping more people get going with two great SSGs."
 author: Bryce Wray
 date: 2020-07-27T21:30:00
-#lastmod: TBD
+lastmod: 2020-08-07T14:40:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
 featured_image_width: 4608
@@ -73,3 +73,5 @@ I did *try* to create one but, as has been my usual experience with Gatsby (as r
 Gatsby isn't the only SSG blessed with numerous starter sets out there for your learning pleasure. There are [tons for the considerably more venerable Hugo](https://gohugo.io/showcase/), and [a decent and growing number for the much younger Eleventy](https://www.11ty.dev/docs/starter/).
 
 In any event, I hope that my new little efforts in this regard will help anyone who, as was true for me not all that long ago, is trying to find the path to a better website-management experience that I believe either Eleventy or Hugo will provide.
+
+**Update, 2020-08-07**: Each starter set now has its own online demo on Netlify, linked from its repo.{.yellowBox}

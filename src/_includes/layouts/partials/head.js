@@ -116,6 +116,7 @@ module.exports = function(eleventyConfig) {
 
     <link rel="preconnect" href="https://res.cloudinary.com" />
     <link rel="preconnect" href="https://duckduckgo.com" crossorigin />
+    
     <link rel="preload" as="style" href="/css/index.css" />
     <link rel="stylesheet" href="/css/index.css" type="text/css" />
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}.notInIE{display: none;}}</style>

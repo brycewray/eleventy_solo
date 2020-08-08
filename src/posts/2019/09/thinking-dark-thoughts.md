@@ -5,7 +5,7 @@ title: Thinking dark thoughts
 subtitle: How to keep up with a growing trend
 description: "As Dark Mode grows in use, it’s easy to make your site dark-friendly."
 date: 2019-09-29T15:08:00
-lastmod: 2019-11-09T16:00:00
+lastmod: 2020-08-08T19:15:00
 discussionId: "2019-09-thinking-dark-thoughts"
 featured_image: sunset-1090164_4608x3456.jpg
 featured_image_width: 4608
@@ -85,6 +85,8 @@ Yes, that can be tedious, particularly if you haven't yet done code blocks with 
 ### External iframes
 
 And then there are those third-party [iframes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) you can't control, at least not all that well.
+
+**Note, 2020-08-08**: The following explanation was from before I stopped embedding third-party content, such as from Twitter, as a result of this site's belatedly adopted [privacy policy](/privacy).{.yellowBox}
 
 In my site's case, [Twitter](https://twitter.com) is the chief offender. Dark Mode and the default white Twitter background do not play nicely together. So I followed [Twitter's dev docs](https://developer.twitter.com/en/docs) and, through JavaScript-adjusted `<meta>` tags, told my site's embedded Twitter content to "listen" to the user's Dark Mode/Light Mode setting and change accordingly.[^noscript]
 

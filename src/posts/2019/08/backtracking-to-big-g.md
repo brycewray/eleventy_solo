@@ -18,29 +18,31 @@ featured_image_caption: |
 
 “Your honor, we submit the following in evidence for today's proceedings. 
 
-"Initially, the defendant made the following assertions:"
+"Initially, the defendant made the following[^privacy] assertions:"
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Can’t totally divorce Google from my life but am doing what I can. Recently dumped a largely ignored Gmail account; and now have shifted all my devices’ and browsers’ default search to <a href="https://twitter.com/DuckDuckGo?ref_src=twsrc%5Etfw">@DuckDuckGo</a>. <a href="https://twitter.com/hashtag/UnGoogle?src=hash&amp;ref_src=twsrc%5Etfw">#UnGoogle</a></p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1140023324988313601?ref_src=twsrc%5Etfw">June 15, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+[^privacy]: The embedded tweets that formerly were in this section on the page are now just linked and identified, due to the site's belatedly adopted [privacy policy](/privacy).
+
+> Can’t totally divorce Google from my life but am doing what I can. Recently dumped a largely ignored Gmail account; and now have shifted all my devices’ and browsers’ default search to <a href="https://twitter.com/DuckDuckGo?ref_src=twsrc%5Etfw">@DuckDuckGo</a>. <a href="https://twitter.com/hashtag/UnGoogle?src=hash&amp;ref_src=twsrc%5Etfw">#UnGoogle</a>---[Bryce Wray (@BryceWrayTX) <a href="">June 15, 2019](https://twitter.com/BryceWrayTX/status/1140023324988313601?ref_src=twsrc%5Etfw)
 
 ".&nbsp;.&nbsp;. and .&nbsp;.&nbsp;."
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Deleted my personal Google account today. We still have a couple accounts in the family for necessity (contacts, access to a gifted Google Home Mini, etc.), but the main one is gone. Facebook last fall, Google now. The disengagement continues.</p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1142915419784863745?ref_src=twsrc%5Etfw">June 23, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+> Deleted my personal Google account today. We still have a couple accounts in the family for necessity (contacts, access to a gifted Google Home Mini, etc.), but the main one is gone. Facebook last fall, Google now. The disengagement continues.---[Bryce Wray (@BryceWrayTX) June 23, 2019](https://twitter.com/BryceWrayTX/status/1142915419784863745?ref_src=twsrc%5Etfw)
 
 ".&nbsp;.&nbsp;. followed a few weeks later by .&nbsp;.&nbsp;."
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just started using this on my site. Interesting stuff so far, and I love how it requires ZERO tracking code. <br><br>Netlify Analytics | Netlify <a href="https://t.co/RXBMHpqW3e">https://t.co/RXBMHpqW3e</a></p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1150108543208579072?ref_src=twsrc%5Etfw">July 13, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+> Just started using this on my site. Interesting stuff so far, and I love how it requires ZERO tracking code. <br /><br />Netlify Analytics | Netlify<br /><br /><a href="https://t.co/RXBMHpqW3e">https://t.co/RXBMHpqW3e</a>---[Bryce Wray (@BryceWrayTX) July 13, 2019](https://twitter.com/BryceWrayTX/status/1150108543208579072?ref_src=twsrc%5Etfw)
 
 "Unfortunately, your honor, this seemingly noble and well-intentioned course of action was derailed yesterday, as shown here&nbsp;.&nbsp;.&nbsp;."
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Full disclosure: I dumped my long-standing <a href="https://twitter.com/Google?ref_src=twsrc%5Etfw">@Google</a> account recently, but found the resulting inconveniences greater than I’d anticipated, so have created another one. <a href="https://twitter.com/hashtag/PragmaticButNotProud?src=hash&amp;ref_src=twsrc%5Etfw">#PragmaticButNotProud</a></p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1165327910078681088?ref_src=twsrc%5Etfw">August 24, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+> Full disclosure: I dumped my long-standing <a href="https://twitter.com/Google?ref_src=twsrc%5Etfw">@Google</a> account recently, but found the resulting inconveniences greater than I’d anticipated, so have created another one. <a href="https://twitter.com/hashtag/PragmaticButNotProud?src=hash&amp;ref_src=twsrc%5Etfw">#PragmaticButNotProud</a>---[Bryce Wray (@BryceWrayTX) August 24, 2019](https://twitter.com/BryceWrayTX/status/1165327910078681088?ref_src=twsrc%5Etfw)
 
 ".&nbsp;.&nbsp;. and here .&nbsp;.&nbsp;."
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">…one of those inconveniences being that I still have a Chromebook which, on occasion, is helpful for testing things—and, while you can use it as a “guest,&quot; that’s not ideal (by design, of course).</p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1165328656392232960?ref_src=twsrc%5Etfw">August 24, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+>...one of those inconveniences being that I still have a Chromebook which, on occasion, is helpful for testing things—and, while you can use it as a "guest," that’s not ideal (by design, of course).---[Bryce Wray (@BryceWrayTX) August 24, 2019](https://twitter.com/BryceWrayTX/status/1165328656392232960?ref_src=twsrc%5Etfw)
 
 ".&nbsp;.&nbsp;. and here .&nbsp;.&nbsp;."
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Reactivated Google Analytics on my site. Debating whether to keep the new Netlify Analytics — former brings in massive data and has a free tier, latter is rudimentary yet has no free tier. Site brings in no $$. Guess I know which way I’ll end up, but not thrilled about it.</p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1165357162551545857?ref_src=twsrc%5Etfw">August 24, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+> Reactivated Google Analytics on my site. Debating whether to keep the new Netlify Analytics --- former brings in massive data and has a free tier, latter is rudimentary yet has no free tier. Site brings in no $$. Guess I know which way I’ll end up, but not thrilled about it.---[Bryce Wray (@BryceWrayTX) August 24, 2019](https://twitter.com/BryceWrayTX/status/1165357162551545857?ref_src=twsrc%5Etfw)
 
 “---and, as the defendant surmised in this most recent exhibit before the court, he did indeed end up stopping the usage of the tracking-free alternative, thus compounding his crime by no longer supporting it at the same time he was returning the Evil G Empire's tracking code to its former access to his site and its visitors.
 

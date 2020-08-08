@@ -6,7 +6,7 @@ subtitle: "Pointers about performance, and then some"
 description: "It takes work, but making your website better is worth it."
 author: Bryce Wray
 date: 2020-07-17T01:30:00
-lastmod: 2020-08-02T17:50:00
+lastmod: 2020-08-08T19:15:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 featured_image: tsvetoslav-hristov-QW-f6s9nFIs-unsplash_6036x4020.jpg
 featured_image_width: 6036
@@ -64,12 +64,12 @@ That's also turned out to be the case when I provide them "locally," as opposed 
 
 **Update, 2020-08-02**: Indeed, a couple of weeks later, I realized I'd rather take a small "hit" on the Lighthouse Performance score rather than *not* have those typefaces I like so much---so they're back. Oddly, this decision came in part after I realized I'd willingly risk losing some other Lighthouse points by [off-loading my images-handling hassles](/posts/2020/07/transformed) to [Cloudinary](https://cloudinary.com).{.yellowBox}
 
+**Update, 2020-08-08**: I've stricken through the first of the hints below for reasons I explain in [another post](/posts/2020/08/google-fonts-privacy).{.yellowBox}
+
 If your response is "Damn the performance hit, full speed ahead with Google Fonts":
 
-- **Don't load them locally**. When you load them off Google Fonts, they come with "secret sauce" to optimize them for each visitor's individual browser and device.[^gFonts] Also, the code behind that "secret sauce" changes without much warning; do you really want to monitor it yourself all the time and keep updating your local installation of the Google Fonts content? It's easier to get it straight from the horse's ultra-fast CDN.
+- ~~**Don't load them locally**. When you load them off Google Fonts, they come with "secret sauce" to optimize them for each visitor's individual browser and device. Also, the code behind that "secret sauce" changes without much warning; do you really want to monitor it yourself all the time and keep updating your local installation of the Google Fonts content? It's easier to get it straight from the horse's ultra-fast CDN.~~
 - **Go with [variable "fonts"](https://web.dev/variable-fonts/) where possible**. I say "where possible" because there remain only a limited (but growing) number of [variable typefaces in Google Fonts](https://fonts.google.com/?vfonly), which means your typeface choice may not be available at the moment. Where variable "fonts" shine is when you want to use numerous weights and styles of a typeface. With older non-variable "fonts," that means one additional download per weight or style; but a variable typeface does all that good stuff with just one download. By the same token, you probably *don't* need a variable "font" if you're using only one style or one weight, much as you don't need a Ferrari to go to the grocery store.
-
-[^gFonts]: Although [this article](https://www.tunetheweb.com/blog/should-you-self-host-google-fonts/) primarily pushes **for** locally hosting Google Fonts content, it simultaneously does a great job of explaining the technical advantages of Google Fonts as the delivery method.
 
 ## Accessibility
 

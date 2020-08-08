@@ -6,7 +6,7 @@ subtitle: An “interesting” learning experience
 description: After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo.
 author: Bryce Wray
 date: 2019-07-15T01:45:00
-lastmod: 2019-12-18T00:50:00
+lastmod: 2020-08-08T19:15:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: hugo-logo_reflection_1280x720.jpg
 featured_image_width: 1280
@@ -273,7 +273,9 @@ Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 
 [^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) "liked" that tweet.
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Will have more to say about this in a future post, butl am keeping <a href="https://t.co/QPSmjqXwft">https://t.co/QPSmjqXwft</a> firmly within <a href="https://twitter.com/GoHugoIO?ref_src=twsrc%5Etfw">@GoHugoIO</a> after three weekends’ worth of experimentation with <a href="https://twitter.com/gatsbyjs?ref_src=twsrc%5Etfw">@gatsbyjs</a> and some other kewl kids. <a href="https://twitter.com/hashtag/StayWithTheBest?src=hash&amp;ref_src=twsrc%5Etfw">#StayWithTheBest</a></p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1150104013871955971?ref_src=twsrc%5Etfw">July 13, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+> Will have more to say about this in a future post, but am keeping brycewray.com firmly within <a href="https://twitter.com/GoHugoIO?ref_src=twsrc%5Etfw">@GoHugoIO</a> after three weekends’ worth of experimentation with <a href="https://twitter.com/gatsbyjs?ref_src=twsrc%5Etfw">@gatsbyjs</a> and some other kewl kids. <a href="https://twitter.com/hashtag/StayWithTheBest?src=hash&amp;ref_src=twsrc%5Etfw">#StayWithTheBest</a>---[Bryce Wray (@BryceWrayTX) July 13, 2019](https://twitter.com/BryceWrayTX/status/1150104013871955971?ref_src=twsrc%5Etfw)[^privacy]
+
+[^privacy]: The embedded tweet that formerly was in this spot on the page is now just linked and identified, due to the site's belatedly adopted [privacy policy](/privacy). 
 
 ## "Interesting," indeed
 

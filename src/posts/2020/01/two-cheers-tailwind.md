@@ -19,9 +19,11 @@ featured_image_caption: |
 ***Update, 2020-05-09***:<br />
 Although it was clear from this take---and what I added at the bottom---that I wasn't crazy about the subject of this post, I later changed my mind and reinstated it, as explained [here](/posts/2020/05/going-solo-eleventy). Still, am leaving this post in place for archival purposes and the sake of [transparency](/posts/2019/10/otoh).{.yellowBox}
 
-A couple of weekends ago, I tweeted a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year's, so I figured I'd be fortunate if I got a handful of responses.
+A couple of weekends ago, I tweeted[^privacy] a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year's, so I figured I'd be fortunate if I got a handful of responses.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Reading about <a href="https://twitter.com/tailwindcss?ref_src=twsrc%5Etfw">@tailwindcss</a> and other <a href="https://twitter.com/hashtag/atomicCSS?src=hash&amp;ref_src=twsrc%5Etfw">#atomicCSS</a> approaches (<a href="https://twitter.com/tachyons_css?ref_src=twsrc%5Etfw">@tachyons_css</a>, <a href="https://twitter.com/basscss?ref_src=twsrc%5Etfw">@basscss</a> , etc.). They seem aimed at the multi-project, multi-dev use case. But what if it’s just one personal website with one maintainer (HTML and CSS)? Worth it then?</p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1210975092999704578?ref_src=twsrc%5Etfw">December 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+[^privacy]: The embedded tweets that formerly were in this spot on the page are now just linked and identified, due to the site's belatedly adopted [privacy policy](/privacy).
+
+> Reading about <a href="https://twitter.com/tailwindcss?ref_src=twsrc%5Etfw">@tailwindcss</a> and other <a href="https://twitter.com/hashtag/atomicCSS?src=hash&amp;ref_src=twsrc%5Etfw">#atomicCSS</a> approaches (<a href="https://twitter.com/tachyons_css?ref_src=twsrc%5Etfw">@tachyons_css</a>, <a href="https://twitter.com/basscss?ref_src=twsrc%5Etfw">@basscss</a> , etc.). They seem aimed at the multi-project, multi-dev use case. But what if it’s just one personal website with one maintainer (HTML and CSS)? Worth it then?---[Bryce Wray (@BryceWrayTX) December 28, 2019](https://twitter.com/BryceWrayTX/status/1210975092999704578?ref_src=twsrc%5Etfw)
 
 Then it got retweeted by the [Tailwind CSS](https://tailwindcss.com) [Twitter account](https://twitter.com/tailwindcss) and, well, my phone was pretty actively "bink"-ing at me for a few hours thereafter.
 
@@ -31,7 +33,7 @@ Tens of thousands of "[impressions](https://help.twitter.com/en/managing-your-ac
 
 So I spent my spare time during the next few days doing precisely that on a branch of my site and, during the first afternoon of 2020, merged that branch into `Master` and pushed it to Netlify:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Another holiday, another site spruce-up. Decided to go the <a href="https://twitter.com/tailwindcss?ref_src=twsrc%5Etfw">@tailwindcss</a> route, as recommended by so many this past weekend — and, while at it, also made long-overdue changes to improve readability (I hope). Opinions welcome. Be nice. 😄<a href="https://t.co/wB96VIVOLn">https://t.co/wB96VIVOLn</a></p>&mdash; Bryce Wray (@BryceWrayTX) <a href="https://twitter.com/BryceWrayTX/status/1212496201385418753?ref_src=twsrc%5Etfw">January 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+> Another holiday, another site spruce-up. Decided to go the <a href="https://twitter.com/tailwindcss?ref_src=twsrc%5Etfw">@tailwindcss</a> route, as recommended by so many this past weekend — and, while at it, also made long-overdue changes to improve readability (I hope). Opinions welcome. Be nice. 😄---[Bryce Wray (@BryceWrayTX) January 1, 2020](https://twitter.com/BryceWrayTX/status/1212496201385418753?ref_src=twsrc%5Etfw)
 
 ## Not a purist
 

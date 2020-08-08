@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@tsvetoslav?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tsvetoslav Hristov</a>; <a href="https://unsplash.com/s/photos/tsvetoslav-hristov-stopwatch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-***Update, 2020-08-02**: As I will explain more fully in the appropriate section herein, I posted this prior to my decision, about two weeks later, that using web "fonts" was worth the small, but measurable, performance hit they can impose. (The screen capture below was from **before** that change, when the site was still using system "fonts" and before it began using Cloudinary.)* {.yellowBox}
+***Update, 2020-08-08**: The screen capture below was from **before** this site [began using Cloudinary](/posts/2020/07/transformed), which had some minor effects on performance but I found those a perfectly acceptable price to pay for the convenience it provided.* {.yellowBox}
 
 If you have your own website, chances are you like to make it work better for your visitors and, yes, show up higher in search engine ratings. Let's talk about how you can do that.
 
@@ -62,14 +62,12 @@ But I don't argue with the data, and one test after another has shown me web "fo
 
 That's also turned out to be the case when I provide them "locally," as opposed to pulling them directly off (*e.g.*) [Google Fonts](https://fonts.google.com), even after trying a [variety](https://csswizardry.com/2020/05/the-fastest-google-fonts/) of [excellent](https://www.reich-consulting.net/web-development/loading-web-fonts-without-performance-penalty-from-lighthouse/) [advice](https://www.filamentgroup.com/lab/load-css-simpler/) from very smart folks. Consequently, I go with system "fonts," however much I'd like to use [certain](https://fonts.google.com/specimen/Public+Sans?vfonly) [typefaces](https://fonts.google.com/specimen/Vollkorn?vfonly) I admire.
 
-**Update, 2020-08-02**: Indeed, a couple of weeks later, I realized I'd rather take a small "hit" on the Lighthouse Performance score rather than *not* have those typefaces I like so much---so they're back. Oddly, this decision came in part after I realized I'd willingly risk losing some other Lighthouse points by [off-loading my images-handling hassles](/posts/2020/07/transformed) to [Cloudinary](https://cloudinary.com).{.yellowBox}
+**Update, 2020-08-08**: I've stricken through the remainder of this section, below, for reasons I explain in [another post](/posts/2020/08/google-fonts-privacy) about the privacy violations involved with using Google Fonts typefaces if they're served *from* Google.{.yellowBox}
 
-**Update, 2020-08-08**: I've stricken through the first of the hints below for reasons I explain in [another post](/posts/2020/08/google-fonts-privacy).{.yellowBox}
-
-If your response is "Damn the performance hit, full speed ahead with Google Fonts":
+~~If your response is "Damn the performance hit, full speed ahead with Google Fonts":~~
 
 - ~~**Don't load them locally**. When you load them off Google Fonts, they come with "secret sauce" to optimize them for each visitor's individual browser and device. Also, the code behind that "secret sauce" changes without much warning; do you really want to monitor it yourself all the time and keep updating your local installation of the Google Fonts content? It's easier to get it straight from the horse's ultra-fast CDN.~~
-- **Go with [variable "fonts"](https://web.dev/variable-fonts/) where possible**. I say "where possible" because there remain only a limited (but growing) number of [variable typefaces in Google Fonts](https://fonts.google.com/?vfonly), which means your typeface choice may not be available at the moment. Where variable "fonts" shine is when you want to use numerous weights and styles of a typeface. With older non-variable "fonts," that means one additional download per weight or style; but a variable typeface does all that good stuff with just one download. By the same token, you probably *don't* need a variable "font" if you're using only one style or one weight, much as you don't need a Ferrari to go to the grocery store.
+- ~~**Go with** [**variable "fonts"**](https://web.dev/variable-fonts/) **where possible**. I say "where possible" because there remain only a limited (but growing) number of [variable typefaces in Google Fonts](https://fonts.google.com/?vfonly), which means your typeface choice may not be available at the moment. Where variable "fonts" shine is when you want to use numerous weights and styles of a typeface. With older non-variable "fonts," that means one additional download per weight or style; but a variable typeface does all that good stuff with just one download. By the same token, you probably *don't* need a variable "font" if you're using only one style or one weight, much as you don't need a Ferrari to go to the grocery store.~~
 
 ## Accessibility
 

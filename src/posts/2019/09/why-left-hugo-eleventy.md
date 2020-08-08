@@ -216,7 +216,9 @@ I am sure that Gatsby and React adherents will hee-haw at the thought that littl
 
 ### It's pretty fast
 
-It doesn't build a site as quickly as Hugo---nothing beats Hugo on that score---but Eleventy's build times are impressive enough for me, and I expect this aspect will improve in time, [much as it did for Gatsby in going from v1 to v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
+It doesn't build a site as quickly as Hugo---nothing beats Hugo on that score---but Eleventy's build times are impressive enough for me, and I expect this aspect will improve in time, [much as it did for Gatsby in going from v1 to v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).[^privacy]
+
+[^privacy]: The embedded tweets that formerly were in this part on the page are now just linked and identified, due to the site's belatedly adopted [privacy policy](/privacy).
 
 While we're on the subject of speed: while I was working on this post, I saw these Leatherman tweets from, respectively, his personal account and the Eleventy account:
 
@@ -224,7 +226,7 @@ While we're on the subject of speed: while I was working on this post, I saw the
 
 React. Hmm. Wonder whom he might be zinging there?
 
-> Eleventy seems to handle this 30MB twitter archive JSON and output 27500 files from a single pagination template. 😅 <a href="https://t.co/VTAcXU53be">pic.twitter.com/VTAcXU53be</a>---[Eleventy (@eleven_ty) <a href="">September 7, 2019](https://twitter.com/eleven_ty/status/1170187490952712192?ref_src=twsrc%5Etfw)
+> Eleventy seems to handle this 30MB twitter archive JSON and output 27500 files from a single pagination template. 😅---[Eleventy (@eleven_ty) <a href="">September 7, 2019](https://twitter.com/eleven_ty/status/1170187490952712192?ref_src=twsrc%5Etfw)
 
 Good job, sir. In the case of that last tweet in particular: given the Gatsby team's continual boasting about how they can handle massive amounts of data with ease, I hope you're making them sweat, even if just a little.[^tweetEase]
 

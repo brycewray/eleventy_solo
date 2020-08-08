@@ -273,7 +273,7 @@ Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 
 [^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) "liked" that tweet.
 
-> Will have more to say about this in a future post, but am keeping brycewray.com firmly within <a href="https://twitter.com/GoHugoIO?ref_src=twsrc%5Etfw">@GoHugoIO</a> after three weekends’ worth of experimentation with <a href="https://twitter.com/gatsbyjs?ref_src=twsrc%5Etfw">@gatsbyjs</a> and some other kewl kids. <a href="https://twitter.com/hashtag/StayWithTheBest?src=hash&amp;ref_src=twsrc%5Etfw">#StayWithTheBest</a>---[Bryce Wray (@BryceWrayTX) July 13, 2019](https://twitter.com/BryceWrayTX/status/1150104013871955971?ref_src=twsrc%5Etfw)[^privacy]
+> Will have more to say about this in a future post, but am keeping brycewray.com firmly within <a href="https://twitter.com/GoHugoIO?ref_src=twsrc%5Etfw">@GoHugoIO</a> after three weekends’ worth of experimentation with <a href="https://twitter.com/gatsbyjs?ref_src=twsrc%5Etfw">@gatsbyjs</a> and some other kewl kids. #StayWithTheBest---[Bryce Wray (@BryceWrayTX) July 13, 2019](https://twitter.com/BryceWrayTX/status/1150104013871955971?ref_src=twsrc%5Etfw)[^privacy]
 
 [^privacy]: The embedded tweet that formerly was in this spot on the page is now just linked and identified, due to the site's belatedly adopted [privacy policy](/privacy). 
 

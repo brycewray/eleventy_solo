@@ -67,7 +67,7 @@
     "postcss-partial-import": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
     "posthtml": "^0.13.1",
-    "prismjs": "^1.20.0",
+    "prismjs": "^1.21.0",
     "rss": "^1.2.2",
     "sanitize-html": "^1.27.2"
   },

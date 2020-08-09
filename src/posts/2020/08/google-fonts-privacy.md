@@ -5,8 +5,8 @@ title: "Google Fonts and privacy"
 subtitle: "It’s about more than trust"
 description: "Explaining changes I’ve made to this site because of its new privacy policy."
 author: Bryce Wray
-date: 2020-08-08T19:15:00
-# lastmod: TBD
+date: 2020-08-08T19:35:00
+lastmod: 2020-08-09T13:45:00
 discussionId: "2020-08-google-fonts-privacy"
 featured_image: morning-brew-5UEoA5JB6VE-unsplash_3000x2000.jpg
 featured_image_width: 3000
@@ -71,11 +71,13 @@ That's a GDPR violation.
 
 Why? Because you're *not* given the chance to consent to that practice (unlike the aforementioned popups about cookies). Thus, it's not enough to follow the later example of other sites and simply add a privacy notice someplace saying, "Yeah, we get our typefaces served by Google, and your IP address goes back to Google, and that's how it is, Jack." *You have to ask the user for permission.*
 
-While there probably are ways to do that when one has total control of the server---*i.e.*, serve the typefaces from Google only after getting the user to click on an "I consent"-style link or button---it's not something I can do from my [Jamstack](https://jamstack.wtf) site, at least as far as I know.
+While there probably are ways to do that when one has total control of the server---*e.g.*, by serving the typefaces from Google only after getting the user to click on an "I consent"-style link or button---it's not something I can do from my [Jamstack](https://jamstack.wtf) site, at least as far as I know.
 
 Moreover, I wouldn't *want* to do that. I'm annoyed whenever I encounter all this permissions-requesting stuff on one site after another, and I don't want to put my visitors through it.
 
-So, yesterday, I began serving the typefaces "locally," after obtaining them from [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts). Because Google updates them frequently, I will have to monitor their versions and keep my "local" copies straight, but I'm perfectly willing to do that. For now, at least, this method precludes the use of the [variable fonts as served by Google](https://css-tricks.com/google-fonts-variable-fonts/), but I'll live with that---as long as I can keep my site from tracking you to even the limited extent that Google-served typefaces apparently do. 
+So, yesterday, I began serving my chosen Google Fonts typefaces "locally," after obtaining them from [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts).[^2] Because Google updates them frequently, I will have to monitor their versions and keep my "local" copies straight, but I'm perfectly willing to do so. Also, this method precludes using the [variable "fonts" as served by Google](https://css-tricks.com/google-fonts-variable-fonts/)---at least, unless/until google-webfonts-helper starts including them---but I can live with that, too, as long as I can keep my site from helping Google track you to even the limited extent that Google-served typefaces apparently do.
+
+**Note, 2020-08-09**: This page originally mentioned my eschewing the "locally" served typefaces in favor of reverting to the "system fonts stack," but after sleeping on that choice I decided, nah, I prefer *this* look-and-feel, and its uniform appearance on all browsers, OSs, and devices; so it's back.{.yellowBox}
 
 ## A little more cleaning-up
 
@@ -106,3 +108,5 @@ Even if you're not and never will be an EU citizen, your privacy deserves protec
 ***Totally unrelated additional note:*** *Contrary to what I'd thought at the end of my [last post](/posts/2020/08/posting-with-ulysses), I did this one in [Ulysses](https://ulysses.app), too. Who'd-a thunk it?*
 
 [^1]:	Of course, that doesn't necessarily identify you, especially if---as is true for most users---your device receives its IP address via [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol). Nonetheless, it would at least narrow it down. And, equally of course, it absolutely *does* identify a device which has a *[static](https://whatismyipaddress.com/dynamic-static)* IP address.
+
+[^2]:	Had I continued serving those typefaces that way, I'd have had to monitor their versions and keep my "local" copies straight, because Google is always updating them. This method also, much to my geeky displeasure, would've precluded the use of the interesting and often more efficient [variable fonts as served by Google](https://css-tricks.com/google-fonts-variable-fonts/).

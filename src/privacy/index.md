@@ -4,7 +4,7 @@ title: "Privacy policy"
 description: "How my vendors and I protect you on this site"
 author: Bryce Wray
 date: 2020-08-02T14:00:00
-lastmod: 2020-08-08T19:15:00
+lastmod: 2020-08-09T17:00:00
 #featured_image:
 #featured_image_width:
 #featured_image_height:
@@ -28,7 +28,7 @@ That same email address is also where to send any questions about other privacy-
 
 ### Google Analytics
 
-Data collected through my former use of [Google Analytics](https://analytics.google.com) is being deleted by my request---expected completion date is 2020-08-09 (originally believed to be 2020-08-07), according to Google. Even when the data was active, I never used it to identify any individual.
+Data collected through my former use of [Google Analytics](https://analytics.google.com) was deleted by my request on 2020-08-09. Even when the data was active, I never used it to identify any individual.
 
 ### Google Fonts
 

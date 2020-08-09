@@ -17,6 +17,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('browserconfig.xml')
   eleventyConfig.addPassthroughCopy('favicon.ico')
   eleventyConfig.addPassthroughCopy('robots.txt')
+  eleventyConfig.addPassthroughCopy('./src/assets/fonts')
   eleventyConfig.addPassthroughCopy('./src/assets/js')
   eleventyConfig.addPassthroughCopy('./src/images') // not just icons due to that one OG image
 

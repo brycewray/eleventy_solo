@@ -6,6 +6,7 @@
 @tailwind base;
 
 body {
+  @apply font-body; /* assigned in tailwind.config.js */
   font-feature-settings: "liga" 1;
 }
 
@@ -16,7 +17,7 @@ p, li {
 
 pre, code {
   font-feature-settings: normal;
-  @apply text-base;
+  @apply font-codefont; /* assigned in tailwind.config.js */
 }
 
 .navWhite, .navWhite:visited {

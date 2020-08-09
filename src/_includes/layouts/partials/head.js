@@ -119,8 +119,6 @@ module.exports = function(eleventyConfig) {
 
     <link rel="preload" as="font" href="/assets/fonts/public-sans-20200809-vf-italic-latin.woff2" crossorigin />
     <link rel="preload" as="font" href="/assets/fonts/public-sans-20200809-vf-roman-latin.woff2" crossorigin />
-    <link rel="preload" as="font" href="/assets/fonts/roboto-mono-20200809-vf-italic-latin.woff2" crossorigin />
-    <link rel="preload" as="font" href="/assets/fonts/roboto-mono-20200809-vf-roman-latin.woff2" crossorigin />
     <link rel="preload" as="style" href="/css/index.css" />
     <link rel="stylesheet" href="/css/index.css" type="text/css" />
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}.notInIE{display: none;}}</style>

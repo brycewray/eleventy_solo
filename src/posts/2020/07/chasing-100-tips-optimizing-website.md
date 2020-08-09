@@ -16,7 +16,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@tsvetoslav?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tsvetoslav Hristov</a>; <a href="https://unsplash.com/s/photos/tsvetoslav-hristov-stopwatch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-***Update, 2020-08-08**: The screen capture below was from **before** this site [began using Cloudinary](/posts/2020/07/transformed), which had some minor effects on performance but I found those a perfectly acceptable price to pay for the convenience it provided.* {.yellowBox}
+***Update, 2020-08-09**: As I will explain more fully herein, I posted this prior to my subsequent decisions to use non-system typefaces---[but **not** served from Google](/posts/2020/08/google-fonts-privacy)---and [hand off the site's image-handling to Cloudinary](/posts/2020/07/transformed). To me, each was more than worth the performance hit. (The screen capture below was from **before** those changes.)* {.yellowBox}
+
 
 If you have your own website, chances are you like to make it work better for your visitors and, yes, show up higher in search engine ratings. Let's talk about how you can do that.
 

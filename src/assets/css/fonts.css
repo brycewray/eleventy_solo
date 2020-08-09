@@ -1,72 +1,83 @@
-/* public-sans-regular - latin */
-@font-face {
-  font-family: 'Public Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local(''),
-       url('../assets/fonts/public-sans-v4-latin-regular.woff2') format('woff2');
-}
-/* public-sans-700 - latin */
-@font-face {
-  font-family: 'Public Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local(''),
-       url('../assets/fonts/public-sans-v4-latin-700.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* public-sans-italic - latin */
+/* === Public Sans, VF === */
+/* latin */
 @font-face {
   font-family: 'Public Sans';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('../assets/fonts/public-sans-v4-latin-italic.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../assets/fonts/public-sans-20200809-vf-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* public-sans-700italic - latin */
+/* latin */
 @font-face {
   font-family: 'Public Sans';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
   src: local(''),
-       url('../assets/fonts/public-sans-v4-latin-700italic.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../assets/fonts/public-sans-20200809-vf-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* roboto-mono-regular - latin */
+/* latin */
 @font-face {
-  font-family: 'Roboto Mono';
+  font-family: 'Public Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('../assets/fonts/roboto-mono-v12-latin-regular.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../assets/fonts/public-sans-20200809-vf-roman-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* roboto-mono-700 - latin */
+/* latin */
 @font-face {
-  font-family: 'Roboto Mono';
+  font-family: 'Public Sans';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: local(''),
-       url('../assets/fonts/roboto-mono-v12-latin-700.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../assets/fonts/public-sans-20200809-vf-roman-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* roboto-mono-italic - latin */
+
+/* === Roboto Mono, VF === */
+/* latin */
 @font-face {
   font-family: 'Roboto Mono';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
   src: local(''),
-       url('../assets/fonts/roboto-mono-v12-latin-italic.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../assets/fonts/roboto-mono-20200809-vf-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-/* roboto-mono-700italic - latin */
+/* latin */
 @font-face {
   font-family: 'Roboto Mono';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
   src: local(''),
-       url('../assets/fonts/roboto-mono-v12-latin-700italic.woff2') format('woff2'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('../assets/fonts/roboto-mono-20200809-vf-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(''),
+       url('../assets/fonts/roboto-mono-20200809-vf-roman-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(''),
+       url('../assets/fonts/roboto-mono-20200809-vf-roman-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }

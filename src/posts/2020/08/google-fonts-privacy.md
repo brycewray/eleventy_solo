@@ -6,7 +6,7 @@ subtitle: "It’s about more than trust"
 description: "Explaining changes I’ve made to this site because of its new privacy policy."
 author: Bryce Wray
 date: 2020-08-08T19:35:00
-# lastmod: TBD
+lastmod: 2020-08-09T16:00:00
 discussionId: "2020-08-google-fonts-privacy"
 featured_image: morning-brew-5UEoA5JB6VE-unsplash_3000x2000.jpg
 featured_image_width: 3000
@@ -71,11 +71,15 @@ That's a GDPR violation.
 
 Why? Because you're *not* given the chance to consent to that practice (unlike the aforementioned popups about cookies). Thus, it's not enough to follow the later example of other sites and simply add a privacy notice someplace saying, "Yeah, we get our typefaces served by Google, and your IP address goes back to Google, and that's how it is, Jack." *You have to ask the user for permission.*
 
-While there probably are ways to do that when one has total control of the server---*i.e.*, serve the typefaces from Google only after getting the user to click on an "I consent"-style link or button---it's not something I can do from my [Jamstack](https://jamstack.wtf) site, at least as far as I know.
+While there probably are ways to do that when one has total control of the server---*e.g.*, by serving the typefaces from Google only after getting the user to click on an "I consent"-style link or button---it's not something I can do from my [Jamstack](https://jamstack.wtf) site, at least as far as I know.
 
 Moreover, I wouldn't *want* to do that. I'm annoyed whenever I encounter all this permissions-requesting stuff on one site after another, and I don't want to put my visitors through it.
 
-So, yesterday, I began serving my chosen Google Fonts typefaces "locally," after obtaining them from [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts).[^2] However, for a variety of reasons (some technical, some personal), I later decided to revert to the "[system fonts stack](/posts/2018/10/web-typography-part-2)," as you can see. 
+So, yesterday, I began serving my chosen Google Fonts typefaces "locally." I initially obtained them from [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts), but using those precludes using [variable "fonts"](https://css-tricks.com/google-fonts-variable-fonts/), as I prefer; so I had to jump through a few hoops to obtain those variable fonts---yes, from Google---and "locally" provide them. (I may explain the procedure in a future post.)
+
+Anyway: because Google updates Google Fonts typefaces frequently, I will have to monitor their versions and keep my "local" copies straight. That's fine. I get to keep the site's typography as I want, while keeping the site from helping Google track you to even the limited extent that Google-served typefaces apparently do.
+
+**Note, 2020-08-09**: This page originally mentioned my eschewing the "locally" served typefaces in favor of reverting to the "system fonts stack," but after sleeping on that choice I decided, nah, I prefer *this* look-and-feel, and its uniform appearance on all browsers, OSs, and devices; so it's back.{.yellowBox}
 
 ## A little more cleaning-up
 

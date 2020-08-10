@@ -5,7 +5,7 @@ title: "Good stuff without Google"
 subtitle: "Yes to variable typefaces, no to tracking"
 description: "How your website can still have the coolness of variable typefaces, but without Google’s tracking."
 author: Bryce Wray
-date: 2020-08-10T00:15:00
+date: 2020-08-10T01:05:00
 #lastmod
 discussionId: "2020-08-good-stuff-without-google"
 featured_image: printing-plate-typography-1030849_5122x3414.jpg

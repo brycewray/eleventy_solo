@@ -6,7 +6,7 @@ subtitle: Considering MailMate
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
 author: Bryce Wray
 date: 2019-06-09T01:25:00
-lastmod: 2020-08-08T19:15:00
+lastmod: 2020-08-11T01:15:00
 discussionId: "2019-06-ahoy-mate"
 featured_image: MailMate_screen_cap_1619x720.jpg
 featured_image_width: 1619
@@ -106,7 +106,7 @@ Well, MailMate makes it much easier to set up those provider rules because it tr
 
 If you've got time and you're feeling a little adventurous, MailMate's [hidden preferences](https://manual.mailmate-app.com/hidden_preferences) allow numerous options for customization to an amazing degree. In this, one relatively pedestrian capability that appeals to my [typography-obsessed](/posts/2018/10/web-typography-part-1) [brain](/posts/2018/10/web-typography-part-2) is the ability to set the default CSS which controls how unformatted emails appear, especially since that constitutes a lot of the [old emails I recently imported from an ancient PC](https://www.linkedin.com/feed/update/urn:li:activity:6543149472082386944).
 
-You can customize various aspects of the display, such as the "font" size and leading of a column listing emails---although you can't add any text preview to the columnar view, as is commonly available in most other mail clients. It's something Dr. Nielsen [mentioned](https://blog.freron.com/2017/personalized_subscriber_emails/) as a "I'd-like-to-do-this-but" item over two years ago, and there it sits, still undone; but it's a minor nit.
+You can customize various aspects of the display, such as the font size and leading of a column listing emails---although you can't add any text preview to the columnar view, as is commonly available in most other mail clients. It's something Dr. Nielsen [mentioned](https://blog.freron.com/2017/personalized_subscriber_emails/) as a "I'd-like-to-do-this-but" item over two years ago, and there it sits, still undone; but it's a minor nit.
 
 ## Still thinkin'&nbsp;.&nbsp;.&nbsp;.
 

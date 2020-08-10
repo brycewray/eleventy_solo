@@ -6,7 +6,7 @@ subtitle: "It’s about more than trust"
 description: "Explaining changes I’ve made to this site because of its new privacy policy."
 author: Bryce Wray
 date: 2020-08-08T19:35:00
-lastmod: 2020-08-10T01:05:00
+lastmod: 2020-08-11T01:05:00
 discussionId: "2020-08-google-fonts-privacy"
 featured_image: morning-brew-5UEoA5JB6VE-unsplash_3000x2000.jpg
 featured_image_width: 3000
@@ -20,9 +20,9 @@ This began as a very different post. Then I did some research that changed my mi
 
 It all started innocently enough last Sunday, when I decided to post this site's first-ever [privacy policy](/privacy). It started out as a very short statement of how this site **doesn't track you**. I felt that to be a safe position, particularly since I recently [adopted Fathom Analytics](/posts/2020/06/fathom-analytics-count-on-it) in no small part because of its privacy-protecting, cookie-less orientation.
 
-But later in the week, things got more complicated. You see, I had reinstated [Google Fonts](https://fonts.google.com) because, well, I just preferred how my site looked with web "[fonts](/posts/2018/10/web-typography-part-2)" than without it. I figured I didn't have to think about it any longer.
+But later in the week, things got more complicated. You see, I had reinstated [Google Fonts](https://fonts.google.com) because, well, I just preferred how my site looked with web fonts than without it. I figured I didn't have to think about it any longer.
 
-That was *before* I learned that my bent toward privacy protection didn't square with the use of Google Fonts---*i.e.*, if you're serving those "fonts" *from* Google (as I was doing) rather than their being self-hosted.
+That was *before* I learned that my bent toward privacy protection didn't square with the use of Google Fonts---*i.e.*, if you're serving those fonts *from* Google (as I was doing) rather than their being self-hosted.
 
 As I'd mentioned in [a recent post](/posts/2020/07/chasing-100-tips-optimizing-website), there was a technical reason why I was letting Google serve the typefaces rather than handling it through self-hosting, even though the former can cause performance issues:
 
@@ -75,7 +75,7 @@ While there probably are ways to do that when one has total control of the serve
 
 Moreover, I wouldn't *want* to do that. I'm annoyed whenever I encounter all this permissions-requesting stuff on one site after another, and I don't want to put my visitors through it.
 
-So, yesterday, I began serving my chosen Google Fonts typefaces "locally." I initially obtained them from [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts), but using those precludes using [variable "fonts"](https://css-tricks.com/google-fonts-variable-fonts/), as I prefer; so I had to jump through a few hoops to obtain those variable fonts---yes, from Google---and "locally" provide them. (I explain the procedure in "[Good stuff without Google](/posts/2020/08/good-stuff-without-google).")
+So, yesterday, I began serving my chosen Google Fonts typefaces "locally." I initially obtained them from [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts), but using those precludes using [variable fonts](https://css-tricks.com/google-fonts-variable-fonts/), as I prefer; so I had to jump through a few hoops to obtain those variable fonts---yes, from Google---and "locally" provide them. (I explain the procedure in "[Good stuff without Google](/posts/2020/08/good-stuff-without-google).")
 
 Anyway: because Google updates Google Fonts typefaces frequently, I will have to monitor their versions and keep my "local" copies straight. That's fine. I get to keep the site's typography as I want, while keeping the site from helping Google track you to even the limited extent that Google-served typefaces apparently do.
 

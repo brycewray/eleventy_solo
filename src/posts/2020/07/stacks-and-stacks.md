@@ -6,7 +6,7 @@ subtitle: "That was then, this is now"
 description: "Comparing the site’s “tech stacks,” one year apart."
 author: Bryce Wray
 date: 2020-07-05T15:40:00
-lastmod: 2020-07-07T13:40:00
+lastmod: 2020-08-11T01:15:00
 discussionId: "2020-07-stacks-and-stacks"
 featured_image: stones-stack-3841920_6000x4000.jpg
 featured_image_width: 6000
@@ -136,9 +136,9 @@ So, for your geeky pleasure, here goes nothing.
 
 ## Site typography
 
-2019-07-05: System “fonts.”
+2019-07-05: System fonts.
 
-2020-07-05: *Same*. I did, however, spend about half of the year between these two configs using either (a.) "fonts" imported via the [npm Typefaces package](https://npmjs.com/package/typefaces/) or (b.) [Google Fonts](https://fonts.google.com/)-provided typefaces. I finally decided a couple of days ago to revert to [only system "fonts"](/posts/2018/10/web-typography-part-2) after tiring of trying to compensate for the minor, but notable, performance hits that the other typefaces' delivery methods imposed.[^zachFonts]
+2020-07-05: *Same*. I did, however, spend about half of the year between these two configs using either (a.) fonts imported via the [npm Typefaces package](https://npmjs.com/package/typefaces/) or (b.) [Google Fonts](https://fonts.google.com/)-provided typefaces. I finally decided a couple of days ago to revert to [only system fonts](/posts/2018/10/web-typography-part-2) after tiring of trying to compensate for the minor, but notable, performance hits that the other typefaces' delivery methods imposed.[^zachFonts]
 
 [^zachFonts]: I *am* aware there are ways to handle that, as [Zach Leatherman explained so well](https://www.zachleat.com/web/comprehensive-webfonts/) in 2016, but he obviously is ’waaaay smarter than I am and I don't have either the knowledge or guts to give the recommended methods a try. Maybe someday, but not now.
 

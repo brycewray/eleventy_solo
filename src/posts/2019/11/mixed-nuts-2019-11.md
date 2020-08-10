@@ -6,7 +6,7 @@ subtitle: In a nutshell, odds and ends
 description: "Observations worth exactly what you’re paying for them."
 author: Bryce Wray
 date: 2019-11-24T16:15:00
-lastmod: 2020-06-20T14:45:00
+lastmod: 2020-08-11T01:15:00
 discussionId: "2019-11-mixed-nuts-2019-11"
 featured_image: nuts-768243_5184x3456.jpg
 featured_image_width: 5184
@@ -43,7 +43,7 @@ In September's "[Now I'm sixty-four](/posts/2019/09/now-im-sixty-four)," I refer
 
 WordPress has its purposes, as do all things, but don't kid yourself into thinking you're a web developer if that's all you can use. So can a reasonably motivated nine-year-old.
 
-*Want to use web "fonts" in your webpack-built app/site? Check out [Typefaces](https://github.com/kyleamathews/typefaces). Can't be much easier.*
+*Want to use web fonts in your webpack-built app/site? Check out [Typefaces](https://github.com/kyleamathews/typefaces). Can't be much easier.*
 
 There must be times when the wonderful folks at Literature and Latte wish they could go back in time and never make either Windows or iOS versions of Scrivener. Money aside, some things are simply not worth the angst.
 

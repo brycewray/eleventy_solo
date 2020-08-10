@@ -6,7 +6,7 @@ subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray
 date: 2020-01-12T17:00:00
-lastmod: 2020-07-12T15:00:00
+lastmod: 2020-08-11T01:15:00
 discussionId: "2020-01-two-cheers-tailwind"
 featured_image: CSS-code-1797778_1971x1306.jpg
 featured_image_width: 1971
@@ -86,7 +86,7 @@ What I'm saying, then, is that any concerns I have about this approach definitel
 
 I guess what still mainly bugs me is the whole idea of whether, specifically for an [SSG](https://staticgen.com)-built site like mine that depends so heavily on a small number of [templates](https://www.11ty.dev/docs/templates/), I might not be better off just going back to a less utilitarian method. Am I really gaining anything from this build-the-appearance-one-Lego-block-at-a-time approach? Would I be wiser just to revert to the way I was doing it before?
 
-By the way: no matter which way I go, a reversion to my previous workflow probably *wouldn't* mean going back to SASS/SCSS, which I jettisoned in the transition to utility-first. To learn how to use Tailwind CSS, I also had to learn about using [PostCSS](https://postcss.org). It's clear that, even I do go back to a less utilitarian approach, PostCSS and its [plugins](https://www.postcss.parts) can do everything, and more, for which I used SASS/SCSS. In fact, what PostCSS enables is pretty frickin' amazing. Just being able to take what starts out in dev mode as 2.4&nbsp;**MB** of CSS (some of which is related to using web "fonts," I should note in all fairness) and end up with it in production mode at only about 7&nbsp;**K** is impressive, to put it mildly.
+By the way: no matter which way I go, a reversion to my previous workflow probably *wouldn't* mean going back to SASS/SCSS, which I jettisoned in the transition to utility-first. To learn how to use Tailwind CSS, I also had to learn about using [PostCSS](https://postcss.org). It's clear that, even I do go back to a less utilitarian approach, PostCSS and its [plugins](https://www.postcss.parts) can do everything, and more, for which I used SASS/SCSS. In fact, what PostCSS enables is pretty frickin' amazing. Just being able to take what starts out in dev mode as 2.4&nbsp;**MB** of CSS (some of which is related to using web fonts, I should note in all fairness) and end up with it in production mode at only about 7&nbsp;**K** is impressive, to put it mildly.
 
 ## We Shall See<sup style="font-size: 0.5em; font-weight: normal; vertical-align: baseline; position: relative; top: -1.1em; margin-right: -1em;">&trade;</sup>---as usual
 

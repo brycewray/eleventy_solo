@@ -6,7 +6,7 @@ subtitle: "Pointers about performance, and then some"
 description: "It takes work, but making your website better is worth it."
 author: Bryce Wray
 date: 2020-07-17T01:30:00
-lastmod: 2020-08-08T19:15:00
+lastmod: 2020-08-11T01:15:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 featured_image: tsvetoslav-hristov-QW-f6s9nFIs-unsplash_6036x4020.jpg
 featured_image_width: 6036
@@ -55,20 +55,20 @@ As children, we all were taught to share, but forget that noble sentiment when i
 
 When your site is one of hundreds, even thousands, of accounts sharing space on one box, that's never going to be good for your site's performance. You start with having only a tiny fraction of the server's "horsepower" (computing cores, drive space, and RAM) on which to rely. The situation becomes dramatically worse if one of those accounts suddenly experiences upward spikes in traffic: all the accounts on that server (even the one *with* the spikes) will suffer.
 
-### Web "fonts": Pretty, but&nbsp;.&nbsp;.&nbsp;.
+### Web fonts: Pretty, but&nbsp;.&nbsp;.&nbsp;.
 
-Diets aren't fun, and they suck even more when you're hungry. Because of my love of the distinctiveness that well-chosen web "fonts" can give a site, the question of whether to have them or [stick with the system "fonts" stack](/posts/2018/10/web-typography-part-2) is a hard one for me to debate.
+Diets aren't fun, and they suck even more when you're hungry. Because of my love of the distinctiveness that well-chosen web fonts can give a site, the question of whether to have them or [stick with the system fonts stack](/posts/2018/10/web-typography-part-2) is a hard one for me to debate.
 
-But I don't argue with the data, and one test after another has shown me web "fonts" slow down my site---not a lot, to be sure, but enough to matter.
+But I don't argue with the data, and one test after another has shown me web fonts slow down my site---not a lot, to be sure, but enough to matter.
 
-That's also turned out to be the case when I provide them "locally," as opposed to pulling them directly off (*e.g.*) [Google Fonts](https://fonts.google.com), even after trying a [variety](https://csswizardry.com/2020/05/the-fastest-google-fonts/) of [excellent](https://www.reich-consulting.net/web-development/loading-web-fonts-without-performance-penalty-from-lighthouse/) [advice](https://www.filamentgroup.com/lab/load-css-simpler/) from very smart folks. Consequently, I go with system "fonts," however much I'd like to use [certain](https://fonts.google.com/specimen/Public+Sans?vfonly) [typefaces](https://fonts.google.com/specimen/Vollkorn?vfonly) I admire.
+That's also turned out to be the case when I provide them "locally," as opposed to pulling them directly off (*e.g.*) [Google Fonts](https://fonts.google.com), even after trying a [variety](https://csswizardry.com/2020/05/the-fastest-google-fonts/) of [excellent](https://www.reich-consulting.net/web-development/loading-web-fonts-without-performance-penalty-from-lighthouse/) [advice](https://www.filamentgroup.com/lab/load-css-simpler/) from very smart folks. Consequently, I go with system fonts, however much I'd like to use [certain](https://fonts.google.com/specimen/Public+Sans?vfonly) [typefaces](https://fonts.google.com/specimen/Vollkorn?vfonly) I admire.
 
 **Update, 2020-08-08**: I've stricken through the remainder of this section, below, for reasons I explain in [another post](/posts/2020/08/google-fonts-privacy) about the privacy violations involved with using Google Fonts typefaces if they're served *from* Google.{.yellowBox}
 
 ~~If your response is "Damn the performance hit, full speed ahead with Google Fonts":~~
 
 - ~~**Don't load them locally**. When you load them off Google Fonts, they come with "secret sauce" to optimize them for each visitor's individual browser and device. Also, the code behind that "secret sauce" changes without much warning; do you really want to monitor it yourself all the time and keep updating your local installation of the Google Fonts content? It's easier to get it straight from the horse's ultra-fast CDN.~~
-- ~~**Go with** [**variable "fonts"**](https://web.dev/variable-fonts/) **where possible**. I say "where possible" because there remain only a limited (but growing) number of [variable typefaces in Google Fonts](https://fonts.google.com/?vfonly), which means your typeface choice may not be available at the moment. Where variable "fonts" shine is when you want to use numerous weights and styles of a typeface. With older non-variable "fonts," that means one additional download per weight or style; but a variable typeface does all that good stuff with just one download. By the same token, you probably *don't* need a variable "font" if you're using only one style or one weight, much as you don't need a Ferrari to go to the grocery store.~~
+- ~~**Go with** [**variable fonts**](https://web.dev/variable-fonts/) **where possible**. I say "where possible" because there remain only a limited (but growing) number of [variable typefaces in Google Fonts](https://fonts.google.com/?vfonly), which means your typeface choice may not be available at the moment. Where variable fonts shine is when you want to use numerous weights and styles of a typeface. With older non-variable fonts, that means one additional download per weight or style; but a variable typeface does all that good stuff with just one download. By the same token, you probably *don't* need a variable font if you're using only one style or one weight, much as you don't need a Ferrari to go to the grocery store.~~
 
 ## Accessibility
 

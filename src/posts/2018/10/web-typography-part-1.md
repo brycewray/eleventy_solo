@@ -6,7 +6,7 @@ subtitle: Part 1 of a two-part series on web typography
 description: Can we just agree that type on the web should be, y’know, readable?
 author: Bryce Wray
 date: 2018-10-17T19:40:00
-lastmod: 2019-04-12T01:33:00
+lastmod: 2020-08-11T01:15:00
 discussionId: "2018-10-web-typography-part-1"
 featured_image: letters-691842_2504x1676.jpg
 featured_image_width: 2504
@@ -32,7 +32,7 @@ By “easily readable,” I mean:
 	I don’t mean stark black on stark white, or vice versa, because that’s _too_ much contrast on a display—especially on a super-high-contrast [OLED](https://en.wikipedia.org/wiki/OLED) display such as is becoming _de rigueur_ for [smartphones](https://www.oled-info.com/oled_devices/mobile_phones). UI experts have told me they suggest a combination of #333 (really dark gray) on \#fff (white). That’s what I have on this site, except for headlines and the nav menu.    
 	So, no, having a substantial part of your page’s body text appear as light-to-medium gray on white (or, worse, dark gray on black) isn’t a good idea. By the way, the same is true for link text, particularly if you don’t underline links (which I formerly didn't because I thought it was too 1990's-ish, but changed my mind after learning about the [difficulty that non-underlined links can cause, especially for the visually impaired](https://webaim.org/techniques/hypertext/link_text)). Link text should be a **different** color from your body text and **not** some color that melts into the background. Don’t make me come over there and lecture you about [“mystery meat” navigation](http://www.webpagesthatsuck.com/mysterymeatnavigation.html).     
 	However, there’s more to this.
-- **It should have sufficient width**.—With the ready availability of web “fonts” (a separate subject which I’ll address in Part 2), many website designers want to use some of the slick, ultra-thin type they’ve seen, or implemented, in video or print. And, again, that’s fine in sufficiently large **headline** text. But I draw the line on body text for a web page; that’s no place for super-thin type. Indeed, it’s yet another barrier to sufficient contrast.
+- **It should have sufficient width**.—With the ready availability of web fonts (a separate subject which I’ll address in Part 2), many website designers want to use some of the slick, ultra-thin type they’ve seen, or implemented, in video or print. And, again, that’s fine in sufficiently large **headline** text. But I draw the line on body text for a web page; that’s no place for super-thin type. Indeed, it’s yet another barrier to sufficient contrast.
 
 ## Now that’s (not) what I’m talkin’ about
 

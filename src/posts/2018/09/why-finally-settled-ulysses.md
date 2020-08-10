@@ -6,7 +6,7 @@ subtitle: The write stuff (sorry)
 description: How I came to realize why one particular creative writing app was a better fit for me as compared to its chief rival.
 author: Bryce Wray
 date: 2018-09-22T16:04:36
-lastmod: 2020-06-20T14:45:00
+lastmod: 2020-08-11T01:15:00
 discussionId: "2018-09-why-finally-settled-ulysses"
 featured_image: Ulysses-Preferences-General-screen-shot-dark-mode_blk_bkgd_1280x720.jpg
 featured_image_width: 1280
@@ -55,7 +55,7 @@ It turns out that this predilection toward how it looks also has a positive, *if
 
 In any event, the ease with which typographical concerns can play _Squirrel!_ with my fragile attention span pretty well leaves me with Ulysses rather than Scrivener.
 
-And, yes, you can customize the Scrivener appearance quite a bit to make it less distracting. I definitely tried. But there’s one key problem in how Scrivener does things for which I can’t compensate successfully: it’s an [RTF](https://en.wikipedia.org/wiki/Rich_Text_Format) app, not a plain-text app. When it shows you a “font,” it’s _really_ using that “font”; while, when Ulysses shows you a “font,” it’s just a pretend thing—_e.g._, “Today, I feel like writing in the Apple system ‘font’ (or Times, or Hoefler Text, or iA Writer Duospace). Bingo.”
+And, yes, you can customize the Scrivener appearance quite a bit to make it less distracting. I definitely tried. But there’s one key problem in how Scrivener does things for which I can’t compensate successfully: it’s an [RTF](https://en.wikipedia.org/wiki/Rich_Text_Format) app, not a plain-text app. When it shows you a font, it’s _really_ using that font; while, when Ulysses shows you a font, it’s just a pretend thing—_e.g._, “Today, I feel like writing in the Apple system font (or Times, or Hoefler Text, or iA Writer Duospace). Bingo.”
 
 So what? Well, in an RTF app like Scrivener, there is no easy way to switch that view because it’s _not_ a “view,” it’s the real thing. In Ulysses, it is just a view. Put it this way: if you decide you want to go out with purple hair today, you can either dye your hair purple or just wear a purple wig. Guess which is a bigger deal.
 

@@ -3,10 +3,10 @@ layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: A stacked deck
 subtitle: Part 2 of a two-part series on web typography
-description: Making the case for a system “fonts” approach to the typography on web sites.
+description: Making the case for a system fonts approach to the typography on web sites.
 author: Bryce Wray
 date: 2018-10-25T12:40:00
-lastmod: 2020-08-02T17:50:00
+lastmod: 2020-08-11T01:15:00
 discussionId: "2018-10-web-typography-part-2"
 featured_image: computer-1869236_3264x2448.jpg
 featured_image_width: 3264
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1869236">Pexels</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1869236">Pixabay</a></span>
 ---
 
-**Update, 2020-08-02**: Although the system "fonts" approach I describe in this post is still quite sensible in many cases, I later decided I preferred to give the site a standard appearance for all devices and OSs, and [still another later decision](/posts/2020/07/transformed) made me realize that personal preferences and convenience are worth the resulting potential drop in performance scores.{.yellowBox}
+**Update, 2020-08-02**: Although the system fonts approach I describe in this post is still quite sensible in many cases, I later decided I preferred to give the site a standard appearance for all devices and OSs, and [still another later decision](/posts/2020/07/transformed) made me realize that personal preferences and convenience are worth the resulting potential drop in performance scores.{.yellowBox}
 
 In [Part 1](/posts/2018/10/web-typography-part-1/) of this two-part series, I posited that body text on websites should, y’know, be _readable_. O&nbsp;M&nbsp;G. Here, in the conclusion, I’ll explain the typographical choices on _this_ site.
 
@@ -26,15 +26,17 @@ _**Note**: For those teeming masses who had already read this deathless prose be
 
 ----
 
-First, this nerdish note: you’ll see me referring herein to _typefaces_ rather than _fonts_. That said, if we were just sitting around having the kind of chat about on-screen typography that people do every day (normal people do that, right? Right?), I would probably slip and call them “fonts,” as well.[^1] It’s more commonly understood and, besides, we’re all accustomed to how our apps’ menus call them “fonts” rather than “typefaces.” That convention that dates back at least to 1984 and the original Mac. However, as Wikipedia says:
+First, this nerdish note: until an update to this post nearly two years after I first wrote it, you’d have seen me referring in not only this post but also all other posts on this site to _typefaces_ rather than _fonts_---and then putting _fonts_ always in quotation marks. However, it became awkward-looking to keep  quotation marks around _fonts_ every time I used the word. Besides, if we were just sitting around having the kind of chat about on-screen typography that people do every day (normal people do that, right? Right?), I'd often slip and call them _fonts_, too. It’s more commonly understood and, besides, we’re all accustomed to how our apps’ menus call them _fonts_ rather than _typefaces_. That convention that dates back at least to 1984 and the original Mac. In my defense, though (even as I concede), to quote Wikipedia:
 
-> The term _typeface_ is frequently confused with the term _font_. Before the advent of digital typography and desktop publishing, the two terms had more clearly understood meanings.[^2]
+> The term _typeface_ is frequently confused with the term _font_. Before the advent of digital typography and desktop publishing, the two terms had more clearly understood meanings.[^1]
 
-So, with that understood, let’s get on with it.
+But I finally acquiesced. *Fonts* (without quotation marks) it is. Oh, well.
+
+Anyway, with that understood, let’s get on with it.
 
 ## A simpler—and duller—time
 
-The early years of the web involved considerable limitations where web pages’ body type was concerned. Any text needing more than a [small collection of “safe” system “fonts”](http://web.mit.edu/jmorzins/www/fonts.html) usually was a graphic rather than true text. That became a major no-no once [search engine optimization (SEO)](https://moz.com/beginners-guide-to-seo) became a critical feature, because search engines can’t read graphics as text; but it wasn’t such a show-stopper back then, when the web search industry [now dominated by Google](http://www.visualcapitalist.com/this-chart-reveals-googles-true-dominance-over-the-web/) was [in its infancy](http://www.thehistoryofseo.com/The-Industry/Short_History_of_Early_Search_Engines.aspx). As a result, you tended to see a lot of graphics-posing-as-text when designers wanted their pages to stand out typographically. Here’s an example from the Apple website as it appeared on November 16, 1999, courtesy of the [Internet Archive](https://archive.org):
+The early years of the web involved considerable limitations where web pages’ body type was concerned. Any text needing more than a [small collection of “safe” system fonts](http://web.mit.edu/jmorzins/www/fonts.html) usually was a graphic rather than true text. That became a major no-no once [search engine optimization (SEO)](https://moz.com/beginners-guide-to-seo) became a critical feature, because search engines can’t read graphics as text; but it wasn’t such a show-stopper back then, when the web search industry [now dominated by Google](http://www.visualcapitalist.com/this-chart-reveals-googles-true-dominance-over-the-web/) was [in its infancy](http://www.thehistoryofseo.com/The-Industry/Short_History_of_Early_Search_Engines.aspx). As a result, you tended to see a lot of graphics-posing-as-text when designers wanted their pages to stand out typographically. Here’s an example from the Apple website as it appeared on November 16, 1999, courtesy of the [Internet Archive](https://archive.org):
 
 {% lazypicture "Early-Web-font-grfx-1-2018-10-16_1218x1296.jpg", "Image from Apple website in 1999 showing graphic elements as text", 1218, 1296 %}
 
@@ -42,8 +44,8 @@ The only “real” text in this view was the timestamp, on the right side under
 
 In that era, the graphics-as-text approach was a technological necessity for two reasons:
 
-1. There was no standard way to deliver web “fonts” automatically, nor was it always easy to detect which computer platform and which browser were displaying the text; so it was necessary to use only those “fonts” you could be sure would be on any computer capable of running a web browser. (At least back then, you could assume they _were_ computers, since this was well before web-capable phones and tablets appeared.) So, yes, people saw a lot of Times New Roman, Arial, Tahoma, Verdana, and the like.
-2. If there _had_ been the means to deliver such “fonts,” the slow Internet connections of that era would’ve made their use unpopular. Even today, there can be some delivery issues with web “fonts” that require [effective mitigation](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization#optimizing_loading_and_rendering).
+1. There was no standard way to deliver web fonts automatically, nor was it always easy to detect which computer platform and which browser were displaying the text; so it was necessary to use only those fonts you could be sure would be on any computer capable of running a web browser. (At least back then, you could assume they _were_ computers, since this was well before web-capable phones and tablets appeared.) So, yes, people saw a lot of Times New Roman, Arial, Tahoma, Verdana, and the like.
+2. If there _had_ been the means to deliver such fonts, the slow Internet connections of that era would’ve made their use unpopular. Even today, there can be some delivery issues with web fonts that require [effective mitigation](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization#optimizing_loading_and_rendering).
 
 .&nbsp;.&nbsp;.&nbsp;And that, conveniently enough, brings me to my next point.
 
@@ -53,7 +55,7 @@ As I write this in late 2018, it’s long been common to go from one site to ano
 
 So what possibly could be wrong with that?
 
-Well, there’s this thing called speed. Google giveth with Google Fonts, and Google taketh away with the added lag downloadable “fonts” can induce. The same is true for paid “font” platforms like [Adobe Fonts](https://fonts.adobe.com) (branded until recently as TypeKit). It gets even worse if people go really crazy with not only different typefaces but also numerous _weights_ and _styles_ thereof. _Each_ downloaded typographical variation adds a certain amount of delay to the rendering of the web page involved. As a result, the more variety you add through downloadable “fonts,” the more slowly your page will load.
+Well, there’s this thing called speed. Google giveth with Google Fonts, and Google taketh away with the added lag downloadable fonts can induce. The same is true for paid font platforms like [Adobe Fonts](https://fonts.adobe.com) (branded until recently as TypeKit). It gets even worse if people go really crazy with not only different typefaces but also numerous _weights_ and _styles_ thereof. _Each_ downloaded typographical variation adds a certain amount of delay to the rendering of the web page involved. As a result, the more variety you add through downloadable fonts, the more slowly your page will load.
 
 And, guess who dings a page’s search results downward if the page is comparatively slower than another page with roughly equal “search juice”? Yep, Google.
 
@@ -97,7 +99,7 @@ In case you aren’t familiar with all of these, here you go (all except the gen
 <tr><td class="td30">Lucida Grande</td><td class="ctr td70"><img data-src="https://res.cloudinary.com/brycewray-com/image/upload/v1595899295/Sys_font_stack_Lucida_Grande_680x104.png" class="lazy" loading="lazy" alt="Lucida Grande typeface" /></td></tr>
 </table>
 
-The easiest way[^3] to implement this “system fonts stack” throughout your site is assigning the following CSS to the `<html>` tag (or `<body>` tag, if you prefer):
+The easiest way[^2] to implement this “system fonts stack” throughout your site is assigning the following CSS to the `<html>` tag (or `<body>` tag, if you prefer):
 
 ```css
 font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Tahoma, Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Lucida Grande", sans-serif;
@@ -119,7 +121,7 @@ However, if your primary mission with your website to ensure not just the best r
 
 A few days after I began writing this, I converted the site over to [Bootstrap 4](https://getbootstrap.com)-based CSS, whereupon I found that the Bootstrap folks had made [their own choices](https://getbootstrap.com/docs/4.1/content/reboot/#native-font-stack) about the nature of the aforementioned “system fonts stack.” They made it much simpler:
 
-- The Apple system “font” indicators mentioned above.
+- The Apple system font indicators mentioned above.
 - Segoe UI.
 - Roboto.
 - .&nbsp;.&nbsp;.&nbsp; after which it’s just a fallback to Helvetica Neue, Arial, and sans-serif, followed by some emoji-handling and symbol-handling.
@@ -128,8 +130,6 @@ A few days after I began writing this, I converted the site over to [Bootstrap 4
 
 At first, I was sufficiently unimpressed with this simplification that I overrode it in my site-wide CSS with the more comprehensive “system fonts stack” I mentioned above. However, after some experimentation with how the Bootstrap 4 version looked in certain Linux distributions as compared to what I was using, I decided I preferred Bootstrap’s way, after all, and changed my CSS accordingly. The vast majority of you, covered by the first three entries, will never know the difference; but, on a few odd combinations of OS and devices, the Bootstrap version is better. Lesson learned; _mea&nbsp;culpa_.
 
-[^1]:	As, indeed, I did in my earlier post, “[Why I finally settled on Ulysses](/posts/2018/09/why-finally-settled-ulysses),” when referring to the available selections.
+[^1]:	“[Typeface](https://en.wikipedia.org/wiki/Typeface),” Wikipedia, retrieved 2018-10-22.
 
-[^2]:	“[Typeface](https://en.wikipedia.org/wiki/Typeface),” Wikipedia, retrieved 2018-10-22.
-
-[^3]:	Unless you’re using WordPress and the GeneratePress theme, in which case you can follow [Brian Jackson’s advice](https://woorkup.com/system-font/).
+[^2]:	Unless you’re using WordPress and the GeneratePress theme, in which case you can follow [Brian Jackson’s advice](https://woorkup.com/system-font/).

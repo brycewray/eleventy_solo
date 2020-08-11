@@ -15,7 +15,7 @@ in .eleventy.js. ¯\_(ツ)_/¯
 const respSizes = require(`../../../_data/siteparams.json`).respSizes
 var cloudiBase = 'https://res.cloudinary.com/brycewray-com/image/upload/'
 var LQIPpholder = 'f_auto,q_1,w_20/' // note ending slash
-var xFmPart1 = 'f_auto,q_60,w_'
+var xFmPart1 = 'f_auto,q_auto,w_'
 var xFmPart2 = ',x_0,z_1/' // note ending slash
  
 module.exports = (url, alt, width, height, tmpl) => {

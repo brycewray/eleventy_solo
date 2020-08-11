@@ -6,7 +6,7 @@ subtitle: "Yes to variable typefaces, no to tracking"
 description: "How your website can still have the coolness of variable typefaces, but without Google’s tracking."
 author: Bryce Wray
 date: 2020-08-10T01:05:00
-lastmod: 2020-08-11T01:05:00
+lastmod: 2020-08-11T17:40:00
 discussionId: "2020-08-good-stuff-without-google"
 featured_image: printing-plate-typography-1030849_5122x3414.jpg
 featured_image_width: 5122
@@ -180,7 +180,7 @@ You probably don't need the `latin-extended` character sets (you already know if
 	- public-sans-20200809-vf-italic-latin.woff2
 	- public-sans-20200809-vf-roman-latin.woff2---I'm old-school and tend to call regular typefaces "Roman," even though that's actually correct only for serif faces.
 11. Now, put the renamed .woff2 files in whatever location is appropriate for your website's setup, and do the normal setup you'd do to make "local" fonts work.  
-	For the CSS part of it, you can refer to that CSS you copied earlier, but **be sure** to change the URL to **yours** or you'll be serving from Google! Also, add the `local('')` indicator so it'll work. For example, on my site, you'd see the following for the Public Sans italic regular-weight file:
+	For the CSS part of it, you can refer to that CSS you copied earlier, but **be sure** to change the URL to **yours** or you'll be serving from Google! For example, on my site, you'd see the following for the Public Sans italic regular-weight file:
 
 ```css
 /* latin */
@@ -189,8 +189,7 @@ You probably don't need the `latin-extended` character sets (you already know if
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: local(''),
-       url('../assets/fonts/public-sans-20200809-vf-italic-latin.woff2') format('woff2');
+  src: url('../assets/fonts/public-sans-20200809-vf-italic-latin.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 ```

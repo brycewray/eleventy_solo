@@ -17,7 +17,7 @@ p, li {
 
 pre, code {
   font-feature-settings: normal;
-  @apply font-codefont; /* assigned in tailwind.config.js */
+  @apply text-base;
 }
 
 .navWhite, .navWhite:visited {

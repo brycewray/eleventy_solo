@@ -15,7 +15,6 @@ module.exports = {
     },
     fontFamily: {
       body: ['Public Sans', 'sans-serif'],
-      codefont: ['Roboto Mono', 'monospace'],
     },
     extend: {
       screens: {

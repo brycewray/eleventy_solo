@@ -6,7 +6,6 @@ module.exports = function (data) {
   <body>
     ${this.siteHeader(data)}
     ${data.content}
-    ${this.search(data)}
     ${this.siteFooter(data)}
   </body>
 </html>

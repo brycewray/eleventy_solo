@@ -6,7 +6,7 @@ subtitle: "Recapping “the dance” and what it taught me"
 description: "The changes I made to brycewray.com this past year, and what I learned along the way."
 author: Bryce Wray
 date: 2019-12-27T20:42:40
-lastmod: 2020-02-20T01:57:00
+lastmod: 2020-08-13T20:27:00
 discussionId: "2019-12-sorta-strange-ssg-trip"
 featured_image: alarm-clock-4711181_3648x2432.jpg
 featured_image_width: 3648
@@ -60,7 +60,7 @@ First, lest we forget, there were several months *before* I embarked on "the dan
 
 ### June
 
-- **[Ahoy, ’Mate](/posts/2019/06/ahoy-mate)**---My geeky curiosity aroused by [MailMate](https://freron.com), I gave it a tryout and was soon not only a user but a patron. (Although I later gave it up briefly after determining that it was just *too much* app for my pedestrian needs, I have since returned to it, especially because of the [various](https://www.macrumors.com/2019/10/12/apple-mail-data-loss-macos-catalina/) [oddities](https://appletoolbox.com/mail-not-working-in-macos-catalina-how-to-fix/) involved in Apple Mail in macOS Catalina as of this writing, although they seem to be getting resolved---slowly.
+- **[Ahoy, ’Mate](/posts/2019/06/ahoy-mate)**---My geeky curiosity aroused by [MailMate](https://freron.com), I gave it a tryout and was soon not only a user but a patron. (Although I later gave it up briefly after determining that it was just *too much* app for my pedestrian needs, I have since returned to it, especially because of the [various](https://www.macrumors.com/2019/10/12/apple-mail-data-loss-macos-catalina/) [oddities](https://appletoolbox.com/mail-not-working-in-macos-catalina-how-to-fix/) involved in Apple Mail in macOS Catalina as of this writing, although they seem to be getting resolved---slowly.)
 
 . . . and so much for the seemingly peaceful first half of 2019. In truth, however, I was looking into making a change in this site. *Dum dum* ***duhhhhm***---that's right, kids, here we go into the months involving "the dance"! Hold onto your gizzards.
 

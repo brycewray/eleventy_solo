@@ -4,7 +4,7 @@ title: "Privacy policy"
 description: "How my vendors and I protect you on this site"
 author: Bryce Wray
 date: 2020-08-02T14:00:00
-lastmod: 2020-08-09T17:00:00
+lastmod: 2020-08-13T18:05:00
 #featured_image:
 #featured_image_width:
 #featured_image_height:
@@ -16,7 +16,7 @@ I could've done this with some long, drawn-out legalese borrowed from a website 
 
 My site and I **don't** store your personal information---but, just in case I need to be clearer:
 
-- This site **does NOT** store your personal information **in any way**. Period. That's thanks in part to its use of [Fathom Analytics](https://fathomanalytics.com) for analytics and [DuckDuckGo](https://duckduckgo.com) for site search. 
+- This site **does NOT** store your personal information **in any way**. Period. That's thanks in part to its use of [Fathom Analytics](https://fathomanalytics.com) for analytics. 
 
 - The webmentions or other third-party comments that appear on certain pages occur only because the persons leaving them chose to do so in a public setting online. Such persons may at any time request deletion from this site of their third-party content, by sending an email to bw@brycewray.com.[^tweets]
 

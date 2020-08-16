@@ -12,8 +12,8 @@ exports.render = function (data) {
     ${stringtoRet(data.featured_image, data.featured_image_alt, data.featured_image_width, data.featured_image_height, "posts")}
     <div class="background-hero-title-block-fit">
       <div class="background-hero-title-text">
-      <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl xb:text-8xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">${data.title}</h1>
-      <h2 class="italic text-center text-2xl md:text-left md:text-3xl lg:text-5xl xb:text-6xl leading-tight tracking-tight px-6 md:px-0 text-white">
+        <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl xb:text-8xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">${data.title}</h1>
+        <h2 class="italic text-center text-2xl md:text-left md:text-3xl lg:text-5xl xb:text-6xl leading-tight tracking-tight px-6 md:px-0 text-white">
           ${
             data.subtitle
               ? data.subtitle
@@ -24,18 +24,18 @@ exports.render = function (data) {
         <p class="text-sm md:text-base xb:text-lg text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
           <span style="font-variant: small-caps;">published:</span>&nbsp; <strong>${this.pub_lastmod(data.page.date)}</strong><span style="font-variant: small-caps;">&nbsp;utc</span><br />
           <span class="text-xs md:text-sm">
-          ${
-            data.lastmod !== null && data.lastmod !== undefined
-            ? `<span style="font-variant: small-caps;">last modified:</span>&nbsp;${this.pub_lastmod(data.lastmod)}<span style="font-variant: small-caps;">&nbsp;utc</span>`
-            : `&nbsp;`
-          }
+            ${
+              data.lastmod !== null && data.lastmod !== undefined
+              ? `<span style="font-variant: small-caps;">last modified:</span>&nbsp;${this.pub_lastmod(data.lastmod)}<span style="font-variant: small-caps;">&nbsp;utc</span>`
+              : `&nbsp;`
+            }
           </span>
         </p>
         <p class="text-center text-white text-xs mt-4 mb-0 md:mb-1 pb-1">
-        ${data.featured_image_caption
-          ? `${data.featured_image_caption}`
-          : `&nbsp;`
-        }
+          ${data.featured_image_caption
+            ? `${data.featured_image_caption}`
+            : `&nbsp;`
+          }
         </p>
       </div>
     </div>

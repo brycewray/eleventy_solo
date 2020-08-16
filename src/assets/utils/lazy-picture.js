@@ -16,25 +16,26 @@ const respSizes = require(`../../../_data/siteparams.json`).respSizes
 var cloudiBase = 'https://res.cloudinary.com/brycewray-com/image/upload/'
 var xFmPart1 = 'f_auto,q_auto:eco,w_'
 var xFmPart2 = ',x_0,z_1/' // note ending slash
- 
+var itemName, imgClass, nscClass, dataSzes
+
 module.exports = (url, alt, width, height, tmpl) => {
   if (!tmpl) tmpl == "none"
 
   switch(tmpl) {
     case 'index':
-      divClass = `h-full gradient-titles`
+      itemName = `index`
       imgClass = `object-cover object-center h-full w-full containedImage`
       nscClass = `imgCover hero`
       dataSzes = `100vw`
       break
     case 'posts':
-      divClass = `h-full gradient-titles`
+      itemName = `posts`
       imgClass = `imgCover hero`
       nscClass = `imgCover`
       dataSzes = `100vw`
       break
     default:
-      divClass = `relative`
+      itemName = `default`
       imgClass = `containedImage`
       nscClass = `containedImage`
       dataSzes = `(min-width: 1024px) 25vw, 100vw`
@@ -52,7 +53,7 @@ module.exports = (url, alt, width, height, tmpl) => {
   })
   stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2)
   stringtoRet += `" alt="${alt}" width="${width}" height="${height}"`
-  if (divClass !== "h-full") {
+  if (itemName == "default") {
     stringtoRet += ` loading="lazy"` // not good for above-the-fold images
   }
   stringtoRet +=` sizes="${dataSzes}" />

@@ -7,6 +7,13 @@ module.exports = function (data) {
     ${this.siteHeader(data)}
     ${data.content}
     ${this.siteFooter(data)}
+    <script src="/assets/js/lazyload.min.js"></script>
+    <script>
+      var lazyLoadInstance = new LazyLoad({
+        threshold: 150,
+        use_native: true,
+      })
+    </script>
   </body>
 </html>
   `

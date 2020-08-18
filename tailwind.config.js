@@ -25,7 +25,7 @@ module.exports = {
           'raw': '(prefers-color-scheme: dark)',
         },
       },
-      fontSize: {
+      fontSize: { // these will cease to be relevant with TWCSS 2.0, which will add 7xl, 8xl, **and** 9xl
         '7xl': '4.5rem',
         '8xl': '5rem',
       },

@@ -43,14 +43,14 @@
     "debug": "^4.1.1",
     "del": "^5.1.0",
     "eleventy-plugin-error-overlay": "^0.1.2",
-    "eleventy-plugin-youtube-embed": "^1.4.3",
+    "eleventy-plugin-youtube-embed": "^1.4.4",
     "eleventy-rss-helper": "^1.2.1",
     "fibers": "^5.0.0",
     "from-env": "^1.1.4",
     "glob": "^7.1.6",
     "glob-all": "^3.2.1",
     "inline-source-map": "^0.6.2",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.20",
     "luxon": "^1.24.1",
     "markdown-it": "^10.0.0",
     "markdown-it-attrs": "^3.0.3",
@@ -66,10 +66,10 @@
     "postcss-nesting": "^7.0.1",
     "postcss-partial-import": "^4.1.0",
     "postcss-preset-env": "^6.7.0",
-    "posthtml": "^0.13.1",
+    "posthtml": "^0.13.2",
     "prismjs": "^1.21.0",
     "rss": "^1.2.2",
-    "sanitize-html": "^1.27.2"
+    "sanitize-html": "^1.27.3"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -81,6 +81,6 @@
     "junk": "^3.1.0",
     "postcss-clean": "^1.1.0",
     "postcss-import": "^12.0.1",
-    "tailwindcss": "^1.6.2"
+    "tailwindcss": "^1.7.0"
   }
 }

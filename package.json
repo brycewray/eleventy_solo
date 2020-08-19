@@ -81,6 +81,6 @@
     "junk": "^3.1.0",
     "postcss-clean": "^1.1.0",
     "postcss-import": "^12.0.1",
-    "tailwindcss": "^1.7.0"
+    "tailwindcss": "^1.7.1"
   }
 }

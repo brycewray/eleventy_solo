@@ -171,6 +171,13 @@ h5, .h5, h6, .h6 {
   }
 
   .background-hero-image-div {
+    height: 90vh;
+    max-height: 90vh;
+  }
+}
+
+@media screen and (min-width: 1367px) {
+  .background-hero-image-div {
     height: 95vh;
     max-height: 95vh;
   }

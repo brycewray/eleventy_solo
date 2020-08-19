@@ -165,18 +165,11 @@ h5, .h5, h6, .h6 {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .background-hero-title-block-fit {
     @apply px-16;
   }
 
-  .background-hero-image-div {
-    height: 90vh;
-    max-height: 90vh;
-  }
-}
-
-@media screen and (min-width: 1367px) {
   .background-hero-image-div {
     height: 95vh;
     max-height: 95vh;

@@ -6,7 +6,7 @@ subtitle: "The move to Cloudinary"
 description: "Getting a big burden off my shoulders—and my site-build workflow."
 author: Bryce Wray
 date: 2020-07-31T21:15:00
-lastmod: 2020-08-05T00:15:00
+lastmod: 2020-08-21T21:30:00
 discussionId: "2020-07-transformed"
 featured_image: cinema-film-images-photography-64154_2806x1984.jpg
 featured_image_width: 2806
@@ -25,8 +25,6 @@ Until just a few days ago, any image you saw anywhere on this site was coming to
 But all that's changed.
 
 I've followed plenty of good advice on the web and offloaded my images to [Cloudinary](https://cloudinary.com). And, by "offloaded," I don't mean just the *storage* of the images themselves; I also mean all the [optimizing](https://dev.to/giladmaayan/how-to-optimize-images-for-the-web-without-losing-quality-g2a) that they require.
-
-*(In addition to freeing me up from the hassles of all that, handing off my image woes to Cloudinary also allowed me to do something totally unrelated but equally appreciated. For more on that, see my 2020-07-31 addendum to "[Goodbye, hello](/posts/2020/07/goodbye-hello).")*
 
 # How we got here
 

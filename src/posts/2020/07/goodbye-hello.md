@@ -6,7 +6,7 @@ subtitle: "Moving from Netlify to Vercel"
 description: "How this site gained a new home."
 author: Bryce Wray
 date: 2020-07-02T22:05:00
-lastmod: 2020-07-31T21:15:00
+lastmod: 2020-08-21T21:30:00
 discussionId: "2020-07-goodbye-hello"
 featured_image: away-706464_4608x2592.jpg
 featured_image_width: 4608
@@ -15,6 +15,8 @@ featured_image_alt: "An entrance to a pathway in a rural setting"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Gina_Janosch-782007/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Gina Janosch</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Pixabay</a></span>
 ---
+
+***Note: 2020-08-21**: There's now more to the **Addendum**---essentially, reverting the reversion, if you get that.* {.yellowBox}
 
 ***Note, 2020-07-31**: If you'd already read this before July 31, 2020, be sure to check the **Addendum** at the bottom for a major update. "Goodbye, hello," indeed.* {.yellowBox}
 
@@ -127,6 +129,8 @@ And thank you, Vercel, for your warm welcome, and for the interesting journey on
 
 ## Addendum, 2020-07-31
 
+***Note, 2020-08-21**:And please note there's an addendum **to** this addendum, down below.* {.yellowBox}
+
 In case you haven't yet seen "[Transformed](/posts/2020/07/transformed)," I just finished moving virtually all my site's images to [Cloudinary](https://cloudinary.com). It turned out the lifting of this image-handling and -storing burden had one additional, nice side-benefit.
 
 It let me **return to Netlify**, slightly over a month after leaving.
@@ -160,3 +164,23 @@ Of course, switching back from Vercel to Netlify involved some fiddling, [DNS](h
 [^DNSSECoff]: While switching from Netlify's domain name servers to Google's during the site move to Vercel, I'd also activated [DNS System Security Extensions (DNSSEC)](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions). When I first began to return the site to Netlify and point my domain to Netlify's name servers because [that apparently works best with its CDN](https://css-tricks.com/using-your-domain-with-a-netlify-hosted-site/), I found that I first had to *de*-activate DNSSEC---and, quoting [the appropriate Google Support page](https://support.google.com/domains/answer/6387342?hl=en): "When you turn on DNSSEC, it takes roughly 2 hours for DNSSEC to activate completely. When you turn it off, there's a delay of up to 2 **days** before deactivation." [Emphasis added.] As it turned out, it took a full day. Anyway, lesson learned.
 
 As a result, the post title---"Goodbye, hello"---turned out to be a little more nuanced than I'd originally intended. However things turned out, I am happy to be back within Netlify's "old" but comfy confines and no longer watching its bustling, friendly community from the outside, remembering all too fondly how nice it felt to be even an insignificant part of it.
+
+----
+
+## Further addendum, 2020-08-21
+
+That's nice and all, but&nbsp;.&nbsp;.&nbsp;.
+
+.&nbsp;.&nbsp;.&nbsp;I undid the undoing today and **returned** the site to Vercel.[^fastReturn]
+
+[^fastReturn]: Since I was going back off Netlify DNS to Google DNS, the return was stunningly quicker than the earlier move the other way---as in, minutes rather than hours.
+
+Why?
+
+- It's not exactly a "need for speed" thing, but I'm impressed by how considerably Vercel has [amped up its Edge Network infrastructure in recent weeks](https://vercel.com/blog/new-edge-dev-infrastructure). And, unlike Netlify's free tier, Vercel's free tier gives cheapos such as Yours Truly the full advantage of top-tier performance. I don't know **why** but, hey, gift horses' mouths and all that stuff.
+
+- By contrast, the performance of Netlify's free tier seems to be dragging even more lately---particularly in the [TTFB](https://en.wikipedia.org/wiki/Time_to_first_byte) category. ([Waterfalls, waterfalls, waterfalls](https://web.dev/identify-resources-via-network-panel/).) That said,I can certainly understand if Netlify chooses not to put significant resources toward the freebie level. It's all business, of course. Fair enough.
+
+- There's also the simple fact that I admire the opinions of the extremely smart guys who run Fathom Analytics, who are [moving their site to Vercel later this year](https://usefathom.com/blog/tech-stack). Learning that (which was after I'd moved back to Netlify, in my own defense) probably was the first thing that got me to re-thinking my re-think, if you will.
+
+So we'll see if I stick around this time. I hope this is not going to be the site-hosting equivalent of [last year's SSG "dance."](/posts/2019/12/sorta-strange-ssg-trip) And, if you're one of my few but highly appreciated regular visitors, I'm sure you share that hope.

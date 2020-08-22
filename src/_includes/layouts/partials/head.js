@@ -84,7 +84,6 @@ module.exports = function(eleventyConfig) {
     <!-- generics -->
     <link rel="icon" type="image/png" href="/images/icons/favicon-16x16_minimal.png" sizes="16x16">
     <!--
-    <link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/images/icons/favicon-96x96.png" sizes="96x96">
     -->
@@ -94,7 +93,7 @@ module.exports = function(eleventyConfig) {
     <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="167x167" href="/images/icons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="/image/icons/apple-icon-1024x1024.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/icons/apple-icon-1024x1024.png">
 
     <!-- Android -->
     <link rel="shortcut icon" sizes="196x196" href="/images/icons/favicon-196x196.png">

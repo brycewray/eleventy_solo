@@ -12,5 +12,5 @@ I initially chose to build this site with [Nunjucks](https://mozilla.github.io/n
 
 - Eleventy, of course, outfitted with a number of plugins that are probably self-explanatory once you see them in `package.json`.
 - [PostCSS](https://postcss.org) and [Tailwind CSS](https://tailwindcss.com).
-- [Cloudinary](https://www.cloudinary.com)’s free tier for handling the site’s images and working with [LazyLoad](https://github.com/verlok/lazyload) (sometimes called &ldquo;vanilla-lazyload&rdquo;) and my `lazypicture` shortcode to make them [responsive](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images).
+- [Cloudinary](https://www.cloudinary.com)’s free tier for handling the site’s images, controlling their sizes, and working with my `lazypicture` shortcode to make them [responsive](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images).
 - [svrx](https://svrx.io)&mdash;Although Eleventy comes with [Browsersync](https://browsersync.io) for Eleventy-only use, I use a separate Svrx instance so I can config it more to my wishes, particularly for the `testbuild` script in `package.json`. If you don&rsquo;t want or need to do it that way, Eleventy also allows you to [customize its own Browsersync instance](https://11ty.dev/docs/config/#override-browsersync-server-options).

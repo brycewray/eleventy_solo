@@ -6,7 +6,7 @@ subtitle: "A way around the Netlify build limit"
 description: "How you can stay within the free tier."
 author: Bryce Wray
 date: 2020-06-28T18:45:00
-lastmod: 2020-06-30T12:00:00
+lastmod: 2020-08-30T20:35:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
 featured_image: dominoes-4020617_4870x2672.jpg
 featured_image_width: 4870
@@ -43,6 +43,8 @@ For the sake of not only including responsive images but also giving different b
 You can do that through the right mix of plugins, but the quickest solution that would do everything I wanted---generating all the correct formats for different browsers, providing [LQIP](https://www.guypo.com/introducing-lqip-low-quality-image-placeholders) placeholders, and processing the images for maximum delivery efficiency---was my own [sharp](https://github.com/lovell/sharp)-powered [`imgxfm.js` build-time script](/posts/2020/05/going-solo-eleventy/).
 
 Image processing during each build takes precious seconds (in my site's case, quite a few of them) so, regardless of whether your image processing approach is plugins-only, bespoke-only, or a mixture of the two, this will ramp up your build times.
+
+**Note, 2020-08-30**: I later solved *this* issue by [handing off image processing](/posts/2020/07/transformed) to [Cloudinary](https://cloudinary.com).{.yellowBox}
 
 ### Webmentions
 

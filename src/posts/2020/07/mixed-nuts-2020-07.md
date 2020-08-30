@@ -6,7 +6,7 @@ subtitle: "Random thoughts “R” us"
 description: "Another successful lowering of the bar where observations’ cleverness is concerned."
 author: Bryce Wray
 date: 2020-07-09T21:40:00
-#lastmod: TBD
+lastmod: 2020-08-30T20:40:00
 discussionId: "2020-07-mixed-nuts-2020-07"
 featured_image: bowl-of-nuts-3587842_5184x3888.jpg
 featured_image_width: 5184
@@ -34,7 +34,7 @@ While I'm on the subject of "little birds": our new granddaughter, whom I [dubbe
 
 {% lazypicture "2020-06-23_Kennedy-Beck_and_John-the-dog_3200x2400.jpg", "A baby, Kennedy Beck, with one of her family's dogs", 3200, 2400 %}
 
-*I recently managed to achieve a slight performance boost for this site by dropping [Google Fonts](https://fonts.google.com) and [Flying Pages](https://npmjs.com/package/flying-pages), a [preloader](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content) script. You may have better luck.*
+*I recently managed to achieve a slight performance boost for this site by dropping [Google Fonts](https://fonts.google.com) and [Flying Pages](https://npmjs.com/package/flying-pages), a [preloader](https://developer.mozilla.org/en-US/docs/Web/HTML/Preloading_content) script. You may have better luck. (**Note, 2020-08-30**: Check "[Google Fonts and privacy](/posts/2020/08/google-fonts-privacy)" and "[Good stuff without Google](/posts/2020/08/good-stuff-without-google)" for more on the web fonts front where this site is concerned.)*
 
 If you want an interesting and, yes, cool way to test **your** site's get-up-and-go, check out [this article](https://www.zachleat.com/web/speedlify/) by [Eleventy](https://11ty.dev) creator Zach Leatherman about his new tool, [Speedlify](https://github.com/zachleat/speedlify). He even makes it easy to publish a Speedlify instance on [Netlify](https://netlify.com) for automated testing, if you prefer not to do it manually (and/or leave it running all the time) on your local computer.
 

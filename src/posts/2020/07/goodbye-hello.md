@@ -6,7 +6,7 @@ subtitle: "Moving from Netlify to Vercel"
 description: "How this site gained a new home."
 author: Bryce Wray
 date: 2020-07-02T22:05:00
-lastmod: 2020-08-21T21:30:00
+lastmod: 2020-08-30T20:35:00
 discussionId: "2020-07-goodbye-hello"
 featured_image: away-706464_4608x2592.jpg
 featured_image_width: 4608
@@ -16,9 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Gina_Janosch-782007/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Gina Janosch</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=706464">Pixabay</a></span>
 ---
 
-***Note: 2020-08-21**: There's now more to the **Addendum**---essentially, reverting the reversion, if you get that.* {.yellowBox}
-
-***Note, 2020-07-31**: If you'd already read this before July 31, 2020, be sure to check the **Addendum** at the bottom for a major update. "Goodbye, hello," indeed.* {.yellowBox}
+***Note, 2020-08-21**: Be sure to check the **multiple addenda** at the end, as this story changed multiple times after I initially posted it on 2020-07-02.* {.yellowBox}
 
 Welcome to a story about an ending---and a beginning.
 
@@ -129,7 +127,7 @@ And thank you, Vercel, for your warm welcome, and for the interesting journey on
 
 ## Addendum, 2020-07-31
 
-***Note, 2020-08-21**:And please note there's an addendum **to** this addendum, down below.* {.yellowBox}
+***Note, 2020-08-21**: And please note there's an addendum **to** this addendum, down below.* {.yellowBox}
 
 In case you haven't yet seen "[Transformed](/posts/2020/07/transformed)," I just finished moving virtually all my site's images to [Cloudinary](https://cloudinary.com). It turned out the lifting of this image-handling and -storing burden had one additional, nice side-benefit.
 

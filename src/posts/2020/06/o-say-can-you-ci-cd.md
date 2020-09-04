@@ -6,7 +6,7 @@ subtitle: "A way around the Netlify build limit"
 description: "How you can stay within the free tier."
 author: Bryce Wray
 date: 2020-06-28T18:45:00
-lastmod: 2020-08-30T20:35:00
+lastmod: 2020-09-04T11:30:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
 featured_image: dominoes-4020617_4870x2672.jpg
 featured_image_width: 4870
@@ -207,7 +207,9 @@ Finally: you may wonder, hey, what if the Netlify folks learn you're doing this?
 
 ### GitLab CI/CD
 
-I told you GitHub haters I'd have an alternative, so here it is. Fact is, GitLab was doing CI/CD years before GitHub Actions existed, so there's a GitLab way to do this, too. Compared to GitHub's free-tier build limits (unlimited monthly minutes for a public repo and 2,000 monthly minutes for a private repo, as noted earlier), GitLab provides [2,000 "pipeline" minutes per month](https://about.gitlab.com/releases/2020/03/18/ci-minutes-for-free-users/).
+I told you GitHub haters I'd have an alternative, so here it is. Fact is, GitLab was doing CI/CD years before GitHub Actions existed, so there's a GitLab way to do this, too.
+
+Compared to GitHub's free-tier build limits (unlimited monthly minutes for a public repo and 2,000 monthly minutes for a private repo, as noted earlier), GitLab provides 2,000 "pipeline" minutes per month, but [this drops to 400 minutes a month as of October&nbsp;1, 2020](https://about.gitlab.com/releases/2020/09/01/ci-minutes-update-free-users/), making it not much more helpful than the Netlify 300-minute monthly limit. Still, I'll include the instructions for using GitLab CI/CD if you want to go that route. After all, 100 extra minutes likely is more than enough for you.
 
 Your `.gitlab-ci.yml` file should be in the top level of your repo:
 

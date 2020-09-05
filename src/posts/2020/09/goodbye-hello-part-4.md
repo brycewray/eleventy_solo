@@ -6,7 +6,7 @@ subtitle: "The future is now, so to Render we go"
 description: "My curiosity overcomes me and, yet again, I move the site."
 author: Bryce Wray
 date: 2020-09-05T14:00:00
-#lastmod
+#lastmod: Changed but same day -- 2020-09-05T18:15:00
 discussionId: "2020-09-goodbye-hello-4"
 featured_image: jeremy-thomas-E0AHdsENmDg-unsplash_5005x3417.jpg
 featured_image_width: 5005
@@ -26,7 +26,7 @@ All the while, as you could probably tell in the first "Goodbye and hello," I wa
 
 For a while, that was true.
 
-Still, throughout all the gyrations among these hosts, I'd never quite gotten past the idea that Render was special---a vendor with a bright future, and something I needed to keep watching. I found myself drawn to at least daily checks of the [Render Slack channel](https://render-community.slack.com/join/shared_invite/zt-fs26mwq8-P98fMK7axMHNny54c_yzcg#/), where Render techs---and, surprisingly often, even Render CEO/Founder Anurag Goel himself---provided help to not only Render users (both free-tier and paying) but also those simply seeking more info about Render.
+Still, throughout all the gyrations among these hosts, I'd never quite gotten past the idea that Render was special---a vendor with a bright future, and something I needed to keep watching. I found myself drawn to at least daily checks of the [Render Slack community](https://render-community.slack.com/join/shared_invite/zt-fs26mwq8-P98fMK7axMHNny54c_yzcg#/), where Render techs---and, surprisingly often, even Render CEO/Founder Anurag Goel himself---provided help to not only Render users (both free-tier and paying) but also those simply seeking more info about Render.
 
 ## All hands: prepare to jump (again)
 

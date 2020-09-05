@@ -6,7 +6,7 @@ subtitle: "A way around the Netlify build limit"
 description: "How you can stay within the free tier."
 author: Bryce Wray
 date: 2020-06-28T18:45:00
-lastmod: 2020-09-04T11:30:00
+lastmod: 2020-09-05T17:45:00
 discussionId: "2020-06-o-say-can-you-ci-cd"
 featured_image: dominoes-4020617_4870x2672.jpg
 featured_image_width: 4870
@@ -251,11 +251,9 @@ There's no cron job set up here, as in the GitHub Actions file; that's because, 
 
 ### Bitbucket?
 
-Perhaps you prefer Bitbucket over either GitHub or GitLab, and are wondering where all this "fun" is for you, too. Well, yes, there's a Bitbucket CI/CD setup, [Bitbucket Pipelines](https://bitbucket.org/product/features/pipelines). However, Bitbucket's limit for free users is normally even more austere than Netlify's: *fifty* build minutes per month.
+Perhaps you prefer Bitbucket over either GitHub or GitLab, and are wondering where all this "fun" is for you, too. Well, yes, there's a Bitbucket CI/CD setup, [Bitbucket Pipelines](https://bitbucket.org/product/features/pipelines). However, Bitbucket's limit for free users is normally even more austere than Netlify's: *fifty* build minutes per month, as shown in this [pricing page](https://bitbucket.org/product/pricing).
 
-Bitbucket temporarily [altered that](https://bitbucket.org/blog/limited-time-offers) to *500* minutes per month, but it's supposed to expire June 30, 2020. Given that Bitbucket's two main competitors are in the 2,000-per-month range, maybe this promotion will get extended.
-
-Still&nbsp;.&nbsp;.&nbsp;. if you want me to provide similar information for Bitbucket, too, let me know via [Twitter](https://twitter.com/BryceWrayTX) or [Mastodon](https://mastodon.technology/@BryceWrayTX) and I'll either update this post or write a follow-up. I am nothing if not accommodating to you, my few-but-beloved readers.
+Still&nbsp;.&nbsp;.&nbsp;. if you want me to provide similar information for Bitbucket, too, let me know via [Twitter](https://twitter.com/BryceWrayTX) and I'll either update this post or write a follow-up. I am nothing if not accommodating to you, my few-but-beloved readers.
 
 ## Letting freedom ring
 

@@ -74,7 +74,7 @@ So, with all that understood, here we go.
 10. Click **Options**.
 11. Uncheck the checkbox next to **Desktop &amp; Documents Folders**, so that the window looks like this (your list of apps will vary, of course, but the top one is all that concerns us here):
 
-{% lazypicture "iCloud-Drive-Desktop-Documents_1336x990.png", 1336, 990, "The iCloud Drive settings for macOS Catalina as of August, 2020" %}
+{% lazypicture "iCloud-Drive-Desktop-Documents_1336x990.png", "The iCloud Drive settings for macOS Catalina as of August, 2020", 1336, 990 %}
 
 All done!
 

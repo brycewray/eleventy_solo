@@ -6,7 +6,7 @@ subtitle: "Filling it out in triplicate"
 description: "I tread familiar ground as I provide versions of this site in its two previous SSGs."
 author: Bryce Wray
 date: 2020-04-05T18:45:00
-lastmod: 2020-05-31T22:30:00
+lastmod: 2020-09-07T15:55:00
 discussionId: "2020-04-different-modes-different-code"
 featured_image: halacious-tZc3vjPCk-Q-unsplash_5184x3456.jpg
 featured_image_width: 5184
@@ -141,4 +141,4 @@ Since [it looks as if we'll be here a while](https://www.vox.com/future-perfect/
 
 <br />
 
-***Update, 2020-05-31***: I later decided to limit the Hugo and Gatsby repos to just a sampling of the posts, especially given the [restoration of hero images](.posts/2020/05/thousand-words-indeed). While this obviously will save me work (and a modicum of sanity), the truth is that it also probably makes each repo **more** valuable to those who simply want to learn how to do a few things here and there, rather than having to download a ton of other posts and images.{.yellowBox}
+***Update, 2020-05-31***: I later decided to limit the Hugo and Gatsby repos to just a sampling of the posts, especially given the [restoration of hero images](/posts/2020/05/thousand-words-indeed). While this obviously will save me work (and a modicum of sanity), the truth is that it also probably makes each repo **more** valuable to those who simply want to learn how to do a few things here and there, rather than having to download a ton of other posts and images.{.yellowBox}

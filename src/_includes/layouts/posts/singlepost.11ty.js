@@ -34,16 +34,6 @@ exports.render = function (data) {
       ${data.content}
     </article>
   </div>
-
-  ${data.title != "Home page" && data.title != "Posts" && data.title != "The obligatory About Me page"
-    ? `
-      ${data.oldComments
-        ? data.oldComments
-        : ``
-      }
-      ${this.webmentionList(data)}`
-    : ``
-  }
   
   ${data.title != "The obligatory About Me page"
     ? `<div class="w-full px-8 md:px-0 bg-blue-700 align-middle mt-10 mb-10">

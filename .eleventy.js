@@ -1,8 +1,7 @@
 const { DateTime } = require('luxon')
 const htmlmin = require('html-minifier')
 const ofotigrid = require('./src/_includes/ofotigrid.js')
-const sanitizeHTML = require('sanitize-html')
-const filters = require('./src/assets/utils/filters.js')
+// const sanitizeHTML = require('sanitize-html')
 const ErrorOverlay = require('eleventy-plugin-error-overlay')
 
 module.exports = function (eleventyConfig) {
@@ -111,66 +110,6 @@ module.exports = function (eleventyConfig) {
     }
     return content
   })
-
-  /* === START, webmentions stuff === */
-  // https://mxb.dev/blog/using-webmentions-on-static-sites/
-  // https://sia.codes/posts/webmentions-eleventy-in-depth/
-  
-  // Get the first `n` elements of a collection.
-  eleventyConfig.addFilter('head', (array, n) => {
-    if (n < 0) {
-      return array.slice(n)
-    }
-    return array.slice(0, n)
-  })
-
-  
-  // Webmentions Filter
-  eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url) => {
-    const allowedTypes = [
-      'like-of',
-      'mention-of',
-      'in-reply-to',
-      'repost-of',
-      'bookmark-of'
-    ]
-
-    const orderByDate = (a, b) =>
-      new Date(a.published) - new Date(b.published)
-
-    const clean = content =>
-      sanitizeHTML(content, {
-        allowedTags: [
-          'b',
-          'i',
-          'em',
-          'strong',
-          'a'],
-        allowedAttributes: {
-          a: [
-            'href'
-          ]
-        }
-      })
-
-    return webmentions
-      .filter(entry => entry['wm-target'] === url)
-      .filter(entry => allowedTypes.includes(entry['wm-property']))
-      .sort(orderByDate)/*
-      .filter(entry => !!entry.content)
-      .map(entry => {
-        const { html, text } = entry.content
-        entry.content.value = html ? clean(html) : clean(text)
-        return entry
-      })*/
-  })
-
-  // next is based on the 'const filters' line at the top
-  Object.keys(filters).forEach(filterName => {
-    eleventyConfig.addFilter(filterName, filters[filterName])
-  })
-
-  /* === END, webmentions stuff === */
 
   /* === START, prev/next posts stuff === */
   // https://github.com/11ty/eleventy/issues/529#issuecomment-568257426

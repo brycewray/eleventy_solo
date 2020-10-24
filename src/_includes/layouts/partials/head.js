@@ -120,6 +120,7 @@ module.exports = function(eleventyConfig) {
     </noscript>
 
     ${analyticsCode}
+    
   </head>
     `
 

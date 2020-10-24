@@ -3,7 +3,7 @@ CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/W
 */
 
 .nav__item {
-  @apply p-0 m-0;
+  @apply font-sans p-0 m-0;
 
   & a {
     @apply block py-1 px-4 mb-1 text-white no-underline transition-opacity duration-500 ease-linear;
@@ -20,7 +20,9 @@ CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/W
 
 @media (min-width: 900px) {
   .nav__item {
-    @apply text-xs inline-block;
+    @apply font-bold lowercase text-xs inline-block;
+    font-variant: small-caps;
+    letter-spacing: 0.15rem;
     & a {
       @apply inline-block pt-1 pb-0 no-underline
     }

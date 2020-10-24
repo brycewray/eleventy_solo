@@ -43,7 +43,7 @@ exports.render = function (data) {
         <div>          
           <h2 class="text-xl mb-1 leading-tight tracking-tight"><a href="${post.url}">${post.data.title}</a><br />
           <span class="text-base tracking-tight">${post.data.subtitle}</span></h2>
-          <p class="text-sm dateInfo" style="margin-top: 0;">
+          <p class="font-sans text-sm dateInfo" style="margin-top: 0;">
             Published: <time style="display: inline;" datetime="${this.pub_lastmod(post.date)}}">${this.pub_lastmod(post.date)}<span style="font-variant: small-caps;">&nbsp;utc</span></time>
             ${
               post.data.lastmod
@@ -51,7 +51,7 @@ exports.render = function (data) {
               : ``
             }
           </p>
-          <p class="text-sm mt-2 mb-10">
+          <p class="font-sans text-sm mt-2 mb-10">
             ${post.data.description}
           </p>
         </div>

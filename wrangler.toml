@@ -1,6 +1,10 @@
 name = "eleventy_solo"
 type = "webpack"
-account_id = ""
-workers_dev = true
-route = ""
-zone_id = ""
+account_id = "3ab8adf13ad39f3bd4fe2361a146f6a9"
+workers_dev = false
+zone_id = "bf0dc072a97e8c151930e56a5d0ed5bf"
+route = "brycewray.com/*"
+
+[site]
+bucket = "./_site"
+entry-point = "workers-site"

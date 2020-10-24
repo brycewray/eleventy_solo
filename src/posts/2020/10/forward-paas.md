@@ -6,7 +6,7 @@ subtitle: "Trying Cloudflare Workers and KV storage"
 description: "How I’m testing the waters on an up-and-coming platform-as-a-service (PaaS) offering."
 author: Bryce Wray
 date: 2020-10-11T18:20:00
-lastmod: 2020-10-22T18:15:00
+lastmod: 2020-10-24T18:23:00
 #draft: true
 discussionId: "2020-10-forward-paas"
 featured_image: jj-ying-8bghKxNU1j0-unsplash_4032x3024.jpg
@@ -31,7 +31,7 @@ It’s important to note that, while a Cloudflare Worker is free, using KV to st
 
 With the three hosts I described in “[A normal person’s guide to static website hosting](/posts/2020/09/normal-persons-guide-static-website-hosting),” deploying content is as simple and quick as pushing a commit to your chosen online repository. With Cloudflare Workers, you have to use Cloudflare’s `wrangler` command-line interface (CLI) tools (which I’d compare favorably to [Firebase](https://firebase.google.com)’s CLI tools). I’m currently mitigating this through a [GitHub Action](https://github.com/features/actions),  an approach similar to what I described in “[O say can you CI/CD?](/posts/2020/06/o-say-can-you-ci-cd)” and “[Ignition sequence start](/posts/2020/09/ignition-sequence-start)”; but none of this is for normal, non-nerdy folks.
 
-(For those who care: the GitHub Action is at the end of this post.)
+(For those who care: the GitHub Action is at the end of this post. The one shown is for using the [Hugo](https://gohugo.io) static site generator, which is what the site was using as of this site's original publication.)
 
 There’s another minor issue, but it’s also fairly easily resolved although it took me several days to find the answer, eventually with help from two extremely kind gentlemen. (Thanks again, [Kenton Varda](https://stackoverflow.com/users/2686899/kenton-varda) and [Brian Li](https://brianli.com/)!) Here’s the deal: if you put a *regular* site behind Cloudflare, the service automatically caches the usual static assets (in my site’s case, CSS and font files, since [Cloudinary](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu) [handles nearly all of the images](/posts/2020/07/transformed)) so they’ll load faster after the first time. But, [with a Cloudflare Workers site, it doesn’t work that way *by default*](https://stackoverflow.com/questions/64254291/cache-control-headers-in-a-cloudflare-workers-site), so you have to add a little JavaScript to make it happen.[^2] Again, it’s not for non-nerds, at least not right now.
 

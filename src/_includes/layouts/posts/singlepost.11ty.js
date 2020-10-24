@@ -34,6 +34,27 @@ exports.render = function (data) {
       ${data.content}
     </article>
   </div>
+
+  ${data.title != "Home page" && data.title != "Posts" && data.title != "The obligatory About Me page"
+    ? `
+      <div class="container-comments">
+      <script src="https://cdn.fastcomments.com/js/embed.min.js"></script>
+      <div id="fastcomments-widget"></div>
+        <script>
+            (function () {
+                var url = window.location.href;
+                if (url.substr(-1) === '/') {
+                    url = url.substr(0, url.length - 1);
+                }
+                window.FastCommentsUI(document.getElementById('fastcomments-widget'), {
+                    tenantId: 'V9knlcOKk',
+                    urlId: url
+                });
+            })();
+        </script>
+      </div>`
+    : ``
+  }
   
   ${data.title != "The obligatory About Me page"
     ? `<div class="font-sans w-full px-8 md:px-0 bg-blue-700 align-middle mt-10 mb-10">

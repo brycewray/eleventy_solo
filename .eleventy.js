@@ -9,8 +9,6 @@ module.exports = function (eleventyConfig) {
   // theming -- based on Reuben Lillie's code (https://gitlab.com/reubenlillie/reubenlillie.com/)
   ofotigrid(eleventyConfig)
 
-  // Filters for webmentions are added **IN THAT SECTION BELOW!!**
-
   eleventyConfig.setQuietMode(true)
 
   eleventyConfig.addPassthroughCopy('browserconfig.xml')

@@ -28,7 +28,7 @@
     "maintained node versions"
   ],
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
@@ -80,6 +80,6 @@
     "junk": "^3.1.0",
     "postcss-clean": "^1.1.0",
     "postcss-import": "^12.0.1",
-    "tailwindcss": "^1.9.5"
+    "tailwindcss": "^1.9.6"
   }
 }

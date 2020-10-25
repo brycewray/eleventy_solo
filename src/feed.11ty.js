@@ -1,5 +1,10 @@
 const createRssFeed = require('eleventy-rss-helper')
-const permalink = '/feed.xml'
+const permalink = '/index.xml'
+/*
+  The feed permalink previously was feed.xml, but index.xml makes it compatible with 
+  Hugo's fixed setting for those times when we switch SSGs and, thus, doesn't break it
+  for forexisting subscribers.
+*/
  
 module.exports = createRssFeed({
   permalink,

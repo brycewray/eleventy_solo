@@ -3,15 +3,15 @@ name: CI-Eleventy-site-to-Cloudflare-Workers
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
-      - name: Checkout master branch
-        uses: actions/checkout@master
+      - name: Checkout main branch
+        uses: actions/checkout@v2
       - name: Use Node.js
         uses: actions/setup-node@v1
         with: 

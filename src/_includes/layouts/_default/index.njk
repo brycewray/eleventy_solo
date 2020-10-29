@@ -5,41 +5,55 @@ layout: layouts/_default/base.njk
 
 <main>
 
-  <div class="hero-home">
-    <picture>
-      <source srcset="/images/{{featured_image_base}}-300.webp 300w, /images/{{featured_image_base}}-600.webp 600w, /images/{{featured_image_base}}-{{featured_image_width}}.webp {{featured_image_width}}w" class="imgCover" type="image/webp" />
-      <source srcset="/images/{{featured_image_base}}-300.{{featured_image_ext}} 300w, /images/{{featured_image_base}}-600.{{featured_image_ext}} 600w, /images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}} {{featured_image_width}}w" class="imgCover" type="image/{{featured_image_ext}}" />
-      <img src="/images/{{featured_image_base}}-{{featured_image_width}}.{{featured_image_ext}}" alt="{{featured_image_alt}}" class="imgCover" />
-    </picture>
+  <div class="w-full height-hero">
+    <div class='h-full gradient-titles'>
+      <img
+        class='object-cover object-center h-full w-full containedImage' 
+        src='https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_600,x_0,z_1/{{ featured_image }}' 
+        srcset='{% if featured_image_width >= 300 %}https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_300,x_0,z_1/{{ featured_image }} 300w{% endif %}{% if featured_image_width >= 450 %}, https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_450,x_0,z_1/{{ featured_image }} 450w{% endif %}{% if featured_image_width >= 600 %}, https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_600,x_0,z_1/{{ featured_image }} 600w{% endif %}{% if featured_image_width >= 750 %}, https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_750,x_0,z_1/{{ featured_image }} 750w{% endif %}{% if featured_image_width >= 900 %}, https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_900,x_0,z_1/{{ featured_image }} 900w{% endif %}{% if featured_image_width >= 1050 %}, https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_1050,x_0,z_1/{{ featured_image }} 1050w{% endif %}{% if featured_image_width >= 1200 %}, https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_1200,x_0,z_1/{{ featured_image }} 1200w{% endif %}{% if featured_image_width >= 1350 %}, https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_1350,x_0,z_1/{{ featured_image }} 1350w{% endif %}{% if featured_image_width >= 1500 %}, https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_1500,x_0,z_1/{{ featured_image }} 1500w{% endif %}' 
+        alt='{{ featured_image_alt }}' 
+        width='{{ featured_image_width }}' 
+        height='{{ featured_image_height }}' 
+        sizes="100vw"
+      />
+      <noscript>
+        <img
+          class="imgCover hero" 
+          src="https://res.cloudinary.com/brycewray-com/image/upload/f_auto,q_auto:eco,w_300,x_0,z_1/{{ featured_image }}" 
+          alt="{{ featured_image_alt }}" 
+        />
+      </noscript>
+    </div>
   </div>
   {% if featured_image_caption %}
-    <p class="legal ctr text-muted" style="margin-top: 0.5em;">{{ featured_image_caption }}<span class="IEonly"> &bull; <em>(May appear distorted in obsolete browsers.)</em></span></p>
+  <p class="font-sans text-center text-xs tracking-normal mt-1">{{ featured_image_caption | safe }}</p>
   {% endif %}
 
-  <div class="container-home">
-    <div class="column-home-1">
+
+  <div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 lg:w-5/6 mr-auto ml-auto">
+    <div class="col-span-3 home-colOne">
       {{ content | safe }}
     </div>
-    <div class="column-home-2">
-      <h2 class="h1 topofHome" style="margin-bottom: 0.5em;"><a href="/posts/">Posts</a></h2>
+    <div class="col-span-2 border-black border-t lg:border-0 pt-4 lg:pt-0">
+      <h2 class="h1 mb-4">Recent <a href="/posts/">posts</a></h2>
       {% for post in collections.post | reverse %}
         {% if loop.index0 < 7 %}	
         <div>
-          <h2 class="h5"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-          <p class="h5"><em>{{ post.data.subtitle }}</em></p>
-          <p class="legal text-muted" style="margin-top: 0;">
+          <h2 class="h4 not-italic tracking-tight"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+          <p class="font-sans font-bold text-base mt-1 mb-0 leading-5">{{ post.data.subtitle }}</p>
+          <p class="font-sans text-xs tracking-normal mt-1 mb-0">
             <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
             {% if post.data.lastmod %}
             &nbsp;&bull;&nbsp;&nbsp;Last modified: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>
             {% endif %}
           </p>
-          <p class="pokey text-body" style="margin-top: 0.5em; margin-bottom: 1.5em;">
+          <p class="font-sans text-sm mt-1 mb-4">
             {{ post.data.description }}
           </p>
         </div>
         {% endif %}
       {% endfor %}
-      <p><a href="/posts/"><strong>All {{ collections.post.length }} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
+      <p class="font-sans"><a href="/posts/"><strong>All {{ collections.post.length }} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
       <!-- Twitter timeline used to go here -->
     </div>
   </div>

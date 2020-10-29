@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: "Why I kept Ulysses"
 subtitle: "Wanting to write more than nerdy stuff"

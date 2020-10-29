@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: "Sorta StranGe (SSG) trip"
 subtitle: "Recapping “the dance” and what it taught me"

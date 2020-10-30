@@ -4,6 +4,10 @@
 /* purgecss start ignore */
 @tailwind base;
 
+main {
+  padding-top: 3rem; /* needed in Eleventy repo; handled elsewhere in Hugo repo */
+}
+
 body {
   @apply font-serif;
   font-feature-settings: "liga" 1;

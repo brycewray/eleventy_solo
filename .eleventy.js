@@ -4,6 +4,7 @@ const htmlmin = require('html-minifier')
 // const sanitizeHTML = require('sanitize-html')
 const ErrorOverlay = require('eleventy-plugin-error-overlay')
 const pluginRss = require("@11ty/eleventy-plugin-rss")
+const svgContents = require("eleventy-plugin-svg-contents")
 
 module.exports = function (eleventyConfig) {
 
@@ -11,6 +12,8 @@ module.exports = function (eleventyConfig) {
   // ofotigrid(eleventyConfig)
 
   eleventyConfig.addPlugin(pluginRss)
+
+  eleventyConfig.addPlugin(svgContents)
 
   eleventyConfig.setQuietMode(true)
 

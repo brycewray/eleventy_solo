@@ -11,7 +11,7 @@ jobs:
     name: Deploy
     steps:
       - name: Checkout default branch
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
       - name: Use Node.js
         uses: actions/setup-node@v1
         with: 

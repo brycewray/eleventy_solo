@@ -6,7 +6,7 @@ subtitle: "Trying Cloudflare Workers and KV storage"
 description: "How I’m testing the waters on an up-and-coming platform-as-a-service (PaaS) offering."
 author: Bryce Wray
 date: 2020-10-11T18:20:00
-lastmod: 2020-10-24T18:23:00
+lastmod: 2020-10-26T21:05:00
 #draft: true
 discussionId: "2020-10-forward-paas"
 featured_image: jj-ying-8bghKxNU1j0-unsplash_4032x3024.jpg
@@ -52,7 +52,7 @@ name: CI-Hugo-site-to-Cloudflare-Workers
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
   HUGO_VERSION: 0.76.5 #steps below will pick extended version
@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
-      - name: Checkout master branch
+      - name: Checkout default branch
         uses: actions/checkout@master
       - name: Download Hugo v${{ env.HUGO_VERSION }} Linux x64
         run: "wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb"

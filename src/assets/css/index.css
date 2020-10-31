@@ -1,7 +1,6 @@
+/* purgecss start ignore */
 @import 'nav.css';
 @import 'prismjs.css';
-
-/* purgecss start ignore */
 @tailwind base;
 
 main {

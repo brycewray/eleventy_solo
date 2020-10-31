@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: "Ignition sequence start"
 subtitle: "A GitHub Action to deploy a Hugo site to Firebase Hosting"

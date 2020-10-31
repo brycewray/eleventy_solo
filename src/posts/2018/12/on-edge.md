@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: On Edge
 subtitle: Ch-ch-ch-ch-Chromium

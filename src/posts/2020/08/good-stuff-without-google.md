@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: "Good stuff without Google"
 subtitle: "Yes to variable typefaces, no to tracking"

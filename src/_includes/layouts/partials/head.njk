@@ -1,5 +1,12 @@
+{% set cloudiBase = "https://res.cloudinary.com/brycewray-com/image/upload/" %}
+{% set xFmPart1 = "c_fill,w_1024,h_512," %}
+{% set xFmPart2 = "q_auto,f_auto,x_0,z_1/" %}
+{% set fallbackImg = "typewriter-monochrome_2242164_6260x4374.jpg" %}
+{% set eleventyVer = "0.11.1" %}<!-- as opposed to manual hit of JSON file -->
+
   <head>
-    <meta name="generator" content="Eleventy - https://11ty.dev" />
+    <meta http-equiv="X-UA-Compatible" content="IE=10"><!-- due to IE 11 issue with TWCSS -->
+    <meta name="generator" content="Eleventy - https://11ty.dev -v{{ eleventyVer }}" />
         
     {% if title == "Home page" %}
       <title>{{ siteparams.siteTitle }}</title>
@@ -13,22 +20,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720-1280.jpg" />
+    <meta property="og:image" content="{{ cloudiBase }}{{ xFmPart1 }}{{ xFmPart2 }}{% if featured_image %}{{ featured_image }}{% else %}{{ fallbackImg }}{% endif %}" />
 
     {% if title == "Home page" %}
-      <meta name="description" content="{{ siteparams.siteDescription }}">
+      <meta name="description" content="{{ siteparams.siteDescription }}" />
       <meta property="og:description" content="{{ siteparams.siteDescription }}" />
-    {% elseif description != "" %}
-      <meta name="description" content="{{ description }}">
+      <meta property="og:url" content = "{{ siteparams.siteBaseURL }}" />
+      <link rel="canonical" href="{{ siteparams.siteBaseURL }}" />
+    {% else %}
+      <meta name="description" content="{{ description }}" />
+      <meta property="og:description" content="{{ description }}" />
+      <meta property="og:url" content="https://brycewray.com{{ page.url }}" />
+      <link rel="canonical" href="https://brycewray.com{{ page.url }}" />
     {% endif %}
-
-    <meta property="og:url" content="https://brycewray.com{{ page.url }}" />        
 
     <!-- Twitter meta -->
     <meta name="twitter:site" content="@BryceWrayTX">
     <meta name="twitter:creator" content="@BryceWrayTX">
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://brycewray.com/images/typewriter-monochrome_2242164_1280x720-1280.jpg" />
+    <meta name="twitter:image" content="{{ cloudiBase }}{{ xFmPart1 }}{{ xFmPart2 }}{% if featured_image %}{{ featured_image }}{% else %}{{ fallbackImg }}{% endif %}" />
     {% if title != "Home page" %}
       <meta name="twitter:description" content="{{ description }}" />
       <meta name="twitter:title" content="{{ title }}" />
@@ -37,29 +47,41 @@
       <meta name="twitter:title" content="{{ siteparams.siteTitle }}" />
     {% endif %}
 
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57-57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60-60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72-72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76-76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114-114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120-120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144-144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180-180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96-96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-16.png">
-    <meta name="msapplication-TileImage" content="/images/ms-icon-144x144-144.png">
+    <!-- **** BEGINNING, favicons **** -->
+
+    <!-- generics -->
+    <link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16">
+    <!--
+    <link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/icons/favicon-96x96.png" sizes="96x96">
+    -->
+
+    <!-- iOS -->
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/images/icons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="/images/icons/apple-icon-1024x1024.png">
+
+    <!-- Android -->
+    <link rel="shortcut icon" sizes="196x196" href="/images/icons/favicon-196x196.png">
+
+    <!-- Windows 8, IE 10 -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+
+    <!-- Windows 8.1 and up, IE 11 -->
+    <meta name="msapplication-config" content="/browserconfig.xml">
+
+    <!-- **** CONCLUSION, favicons **** -->
+
+    <link rel="preconnect" href="https://res.cloudinary.com" />
 
     <link rel="stylesheet" href="/css/index.css" type="text/css">
+    <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}}</style>
     <noscript><style>.lazyload {display: none !important;}</style></noscript>
 
-    <noscript>
-      <!-- Dark mode for Twitter items if browser blocks JS at bottom; it’s debatable whether it’s needed since non-JS Twitter is pretty spare and mostly adheres to other CSS, but we’ll do it just to be consistent -->
-      <meta name="twitter:widgets:theme" content="dark">
-      <meta name="twitter:widgets:link-color" content="#00bbff">
-    </noscript>
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://boa.brycewray.com/script.js" site="CSERHYIA" excluded-domains="localhost" defer></script>
+    <!-- / Fathom -->
   </head>

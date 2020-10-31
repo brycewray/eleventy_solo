@@ -63,7 +63,7 @@ jobs:
     name: Deploy
     steps:
       - name: Checkout default branch
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
       - name: Download Hugo v${{ env.HUGO_VERSION }} Linux x64
         run: "wget https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb -O hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb"
       - name: Install Hugo

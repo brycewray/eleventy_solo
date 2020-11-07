@@ -4,32 +4,24 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T14:00:00
-lastmod: 2020-10-24T18:20:00
-#featured_image:
-#featured_image_width:
-#featured_image_height:
-#featured_image_alt:
-#featured_image_caption:
+lastmod: 2020-10-30T15:02:00
 ---
-
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
 ## Notes about external services
 
-### Analytics
-
-#### Fathom Analytics
-
-This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, “[Fathom Analytics: Count on it](/posts/2020/06/fathom-analytics-count-on-it).”
-
-#### Cloudflare Browser Insights
+### Cloudflare Browser Insights
 
 This site’s traffic goes through [Cloudflare](https://cloudflare.com) and is configured to use its Browser Insights tool. Cloudflare says Browser Insights “collects the bare minimum amount of information, timing metrics, to show customers how their websites perform” and that “Cloudflare does not track individual end-users *[sic]* across our customers’ Internet properties.” For more details, see [this Cloudflare support article](https://support.cloudflare.com/hc/en-us/articles/360033929991-Cloudflare-Browser-Insights) and the Cloudflare blog post, “[Introducing Browser Insights](https://blog.cloudflare.com/introducing-browser-insights/).”
 
 ### FastComments
 
-This site uses [FastComments](https://fastcomments.com) for commenting (currently on a trial basis, which is due to expire November 10, 2020). For more details, please refer to the [FastComments privacy policy](https://fastcomments.com/privacy-policy).
+This site uses [FastComments](https://fastcomments.com) for commenting. For more details, please refer to the [FastComments privacy policy](https://fastcomments.com/privacy-policy).
+
+### Fathom Analytics
+
+This site uses [Fathom Analytics](https://usefathom.com), which [does not store your personal data in any way](https://usefathom.com/blog/anonymization). Please refer also to my article, “[Fathom Analytics: Count on it](/posts/2020/06/fathom-analytics-count-on-it).”
 
 ### Google Fonts
 

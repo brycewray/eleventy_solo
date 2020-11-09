@@ -65,3 +65,5 @@ arraytest.js
 .firebaserc
 .Ulysses*.plist
 ztest.js
+
+_data/manifest.json

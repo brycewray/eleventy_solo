@@ -62,6 +62,7 @@
     "postcss": "^7.0.35",
     "postcss-cli": "^7.1.2",
     "postcss-css-variables": "^0.17.0",
+    "postcss-hash": "^2.0.0",
     "postcss-nesting": "^7.0.1",
     "postcss-partial-import": "^4.1.0",
     "postcss-preset-env": "^6.7.0",

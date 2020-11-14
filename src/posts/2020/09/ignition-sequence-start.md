@@ -6,7 +6,7 @@ subtitle: "GitHub Actions to deploy to Firebase Hosting"
 description: "Missing that easy workflow you get with other hosts? This script is for you."
 author: Bryce Wray
 date: 2020-09-27T13:05:00
-lastmod: 2020-10-31T16:05:00
+lastmod: 2020-11-14T15:45:00
 #draft: true
 discussionId: "2020-09-ignition-sequence-start"
 featured_image: spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg
@@ -78,6 +78,8 @@ jobs:
 
 ## For Eleventy
 
+**Note**: Other than obviously not downloading and installing Hugo, this one for Eleventy also was different because, in the `Deploy to Firebase` section, I had to add `npx firebase use default` to make this work with the project, for some reason I don't understand.{.yellowBox}
+
 {% raw %}
 
 ```yaml
@@ -102,7 +104,7 @@ jobs:
       - name: Install Firebase Tools
         run: npm install firebase-tools
       - name: Deploy to Firebase
-        run: npx firebase deploy
+        run: npx firebase use default && npx firebase deploy
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
           # Other args should come from .firebaserc and firebase.json

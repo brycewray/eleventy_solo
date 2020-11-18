@@ -4,8 +4,8 @@ title: "Using PostCSS for cache-busting in Eleventy"
 subtitle: "Fun with—and without—asset pipelines"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
-date: 2020-11-10T22:30:00 #4:30 PM CST
-#lastmod
+date: 2020-11-10T22:30:00
+lastmod: 2020-11-18T06:00:00 # midnight CST
 draft: false
 discussionId: "2020-11-using-postcss-cache-busting-eleventy"
 featured_image: jilbert-ebrahimi-pVEcNabAg9o-unsplash_4608x3072.jpg
@@ -76,7 +76,7 @@ Some of you will recall I did use webpack with Eleventy for a while, [as I menti
 
 While I still think that was a better choice, and it became even wiser once I [stopped doing local image processing](/posts/2020/07/transformed), I briefly experimented with webpack once again on returning to Eleventy, as I tried to solve the cache-busting conundrum. Sadly, in my local testing, it turned out a *lot* had changed with webpack and its numerous dependencies and applicable plugins in just the last few months. I ran into enough errors, incompatibilities, and just general SNAFUs to make me run in terror from the whole thing.
 
-I considered some of the other tools, too (after all, I’d already used Gulp during my [original tryout](/posts/2019/09/why-left-hugo-eleventy) of Eleventy), but what I learned from a number of articles and forum comments indicated that, similarly, those tools weren’t worth the trouble—especially for *just* cache-busting my CSS. After all, that’s like using a nuclear weapon to kill a gnat.
+I considered some of the other tools, too (after all, I’d already used Gulp during my [original tryout](/posts/2019/09/why-left-hugo-eleventy) of Eleventy), but what I learned from a number of articles and forum comments indicated that, similarly, those tools weren’t worth the trouble—especially for *just* cache-busting my CSS. That’s like using a nuclear weapon to kill a gnat.
 
 ### PostCSS Hash rides to the rescue
 
@@ -116,7 +116,7 @@ module.exports = {
 {% endraw %}
 
 Before I get to the `manifest`  option of the `postcss-hash` part, I’ll note that:
-- I didn’t set the hashing `algorithm`, so it keeps the default of [MD5](https://searchsecurity.techtarget.com/definition/MD5), which is the same as in Hugo’s fingerprinting. The documentation specifies a few other options you can set, but I find MD5 to be just fine.
+- I didn’t set the hashing `algorithm`, so it keeps the default of [MD5](https://searchsecurity.techtarget.com/definition/MD5) (Hugo’s default is [SHA-256](https://en.wikipedia.org/wiki/SHA-2)). The documentation specifies a few other options you can set, but I find MD5 to be just fine.
 - I chose to set `trim` at `20` (the default is `10`) so this plugin would give a slightly longer (and, thus, more distinct) hash “tail” to the CSS file’s generated name. And, speaking of the name&nbsp;.&nbsp;.&nbsp;.
 - The `name` setting makes sure that the generated CSS file comes out looking like, for example, `index-a1ee6657944e0c6d4080.css`. The default setting separates the original name, such as `index`, from the hash with a dot rather than a dash, and I just prefer the dash to the dot for this.
 

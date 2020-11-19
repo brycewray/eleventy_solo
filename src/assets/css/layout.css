@@ -94,7 +94,7 @@ a.navborderless {
 }
 
 .dateInfo {
-  @apply text-gray-700 dark:text-gray-500;
+  @apply text-gray-700 dark:text-gray-400;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -310,7 +310,7 @@ table.noborders td.td30 {
 }
 
 blockquote {
-  @apply px-6 text-gray-700 dark:text-gray-500;
+  @apply px-6 text-gray-700 dark:text-gray-400;
 }
 
 /* start, footnotes */

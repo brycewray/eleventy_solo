@@ -32,6 +32,13 @@ layout: layouts/_default/base.njk
 
   <div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 lg:w-5/6 mr-auto ml-auto">
     <div class="col-span-3 home-colOne">
+      <h1>Welcome.</h1>
+      <p class="font-sans text-xs tracking-normal mt-1 mb-0 dateInfo" style="line-height: 1.5 !important;">
+        Published: <time style="display: inline;" datetime="{{ page.date | htmlDateString }}">{{ page.date | htmlDateString }}</time>
+        {% if lastmod %}
+        <br />Last modified: <time style="display: inline;" datetime="{{ page.date | htmlDateString }}">{{ lastmod | htmlDateString }}</time>
+        {% endif %}
+      </p>
       {{ content | safe }}
     </div>
     <div class="col-span-2 border-black border-t lg:border-0 pt-4 lg:pt-0">
@@ -41,7 +48,7 @@ layout: layouts/_default/base.njk
         <div>
           <h2 class="h4 not-italic tracking-tight"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
           <p class="font-sans font-bold text-base mt-1 mb-0 leading-5">{{ post.data.subtitle }}</p>
-          <p class="font-sans text-xs tracking-normal mt-1 mb-0">
+          <p class="font-sans text-xs tracking-normal mt-1 mb-0 dateInfo">
             Published: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
             {% if post.data.lastmod %}
             <br />Last modified: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>

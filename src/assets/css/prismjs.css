@@ -6,54 +6,34 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  * @author Rose Pritchard
  */
 code {
-  background: #dfefff;
- }
-
- @media (prefers-color-scheme: dark) {
-  code {
-    background: #0e2e3e;
-  }
+  @apply bg-gray-200 dark:bg-gray-800;
  }
  
  code[class*="language-"],
  pre[class*="language-"] {
-   color: #ccc;
-   background: none;
-   text-align: left;
-   white-space: pre;
+   @apply text-gray-100 bg-transparent whitespace-pre text-left break-normal leading-normal;
    word-spacing: normal;
-   word-break: normal;
    word-wrap: normal;
-   line-height: 1.5;
- 
-   -moz-tab-size: 4;
-   -o-tab-size: 4;
-   tab-size: 4;
- 
-   -webkit-hyphens: none;
-   -moz-hyphens: none;
-   -ms-hyphens: none;
+   tab-size: 4; 
    hyphens: none;
  
  }
  
  /* Code blocks */
  pre[class*="language-"] {
-   padding: 1em;
-   margin: .5em 0;
-   overflow: auto;
+  @apply p-4 my-2 mx-0 overflow-auto;
  }
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
-   background: #2d2d2d;
+  @apply bg-gray-800;
  }
  
  /* Inline code */
  :not(pre) > code[class*="language-"] {
    padding: .1em;
    border-radius: .3em;
-   white-space: normal;
+   @apply whitespace-normal;
  }
  
  .token.comment,
@@ -61,11 +41,11 @@ code {
  .token.prolog,
  .token.doctype,
  .token.cdata {
-   color: #999;
+   @apply text-gray-400;
  }
  
  .token.punctuation {
-   color: #ccc;
+   @apply text-gray-300;
  }
  
  .token.tag,
@@ -116,10 +96,10 @@ code {
  
  .token.important,
  .token.bold {
-   font-weight: bold;
+   font-weight: bold; /* TWCSS 2.0 wouldn't allow '@apply bold' here */
  }
  .token.italic {
-   font-style: italic;
+   font-style: italic; /* TWCSS 2.0 wouldn't allow '@apply italic' here */
  }
  
  .token.entity {
@@ -131,32 +111,31 @@ code {
  }
  
  div.code-toolbar {
-   position: relative;
+   @apply relative;
  }
  
  div.code-toolbar > .toolbar {
-   position: absolute;
+  @apply absolute opacity-100;
    top: .3em;
    right: .2em;
-   opacity: 1;
  }
  
  div.code-toolbar:hover > .toolbar {
-   opacity: 1;
+   @apply opacity-100;
  }
  
  /* Separate line b/c rules are thrown out if selector is invalid.
     IE11 and old Edge versions don't support :focus-within. */
  div.code-toolbar:focus-within > .toolbar {
-   opacity: 1;
+  @apply opacity-100;
  }
  
  div.code-toolbar > .toolbar .toolbar-item {
-   display: inline-block;
+   @apply inline-block;
  }
 
  div.code-toolbar > .toolbar .toolbar-item span {
-   color: #fff;
+   @apply text-white;
  }
  
  div.code-toolbar > .toolbar a {
@@ -164,28 +143,19 @@ code {
  }
  
  div.code-toolbar > .toolbar button {
-   background: none;
-   border: 0;
+  @apply bg-transparent border-0 leading-normal overflow-visible p-0;
    color: inherit;
    font: inherit;
-   line-height: normal;
-   overflow: visible;
-   padding: 0;
    user-select: none; /* for button */
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
  }
  
  div.code-toolbar > .toolbar a,
  div.code-toolbar > .toolbar button,
  div.code-toolbar > .toolbar span {
-   background: #000;
+  @apply bg-black text-white py-0 px-2;
    border-radius: .5em;
    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
-   color: #fff; /* was #bbb */
    font-size: .8em;
-   padding: 0 .5em;
  }
  
  div.code-toolbar > .toolbar a:hover,
@@ -194,6 +164,6 @@ code {
  div.code-toolbar > .toolbar button:focus,
  div.code-toolbar > .toolbar span:hover,
  div.code-toolbar > .toolbar span:focus {
-   color: inherit;
-   text-decoration: none;
+  @apply no-underline; 
+  color: inherit;
  }

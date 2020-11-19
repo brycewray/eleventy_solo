@@ -5,7 +5,7 @@ subtitle: "Fun with—and without—asset pipelines"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
 date: 2020-11-10T22:30:00
-lastmod: 2020-11-18T06:00:00 # midnight CST
+lastmod: 2020-11-19T21:50:00
 draft: false
 discussionId: "2020-11-using-postcss-cache-busting-eleventy"
 featured_image: jilbert-ebrahimi-pVEcNabAg9o-unsplash_4608x3072.jpg
@@ -28,7 +28,7 @@ First, the problem.
 
 Each time you visit a web page, its server sends your browser *requests* to download various items to your device for displaying the page. In addition to the [HTML](https://en.wikipedia.org/wiki/HTML), which could be different every time for some sites, the list includes so-called *static assets*—image files and other usually unchanging things—which are *not* expected to change all that often as long as their filenames remain the same. This is especially relevant in the case of [CSS](https://en.wikipedia.org/wiki/CSS), since it’s common for at least some of the same CSS file(s) to be in play on multiple pages on a site.
 
-That’s why browsers typically are instructed to *cache* static assets, including CSS files. This means that a site’s web server tells a browser to store *local* copies of such files so it’ll use them as instantaneously as possible, leaving only the truly updated stuff, like the usually uncached HTML, for an actual download. After all, there’s no point in making your browser download the same thing as you go from one page to another, or something that hasn’t changed since the last time you visited the site. That simply slows down the process and downgrades your experience with the site. [^2]
+That’s why browsers typically are instructed to *cache* static assets, including CSS files. This means that a site’s web server tells a browser to store *local* copies of such files so it’ll use them as instantaneously as possible, leaving only the truly updated stuff, like the usually uncached HTML, for an actual download. After all, there’s no point in making your browser download the same thing as you go from one page to another, or something that hasn’t changed since the last time you visited the site. That simply slows down the process and downgrades your experience with the site.[^2]
 
 Sounds great, right? Ahh, not so fast.
 
@@ -80,7 +80,7 @@ I considered some of the other tools, too (after all, I’d already used Gulp du
 
 ### PostCSS Hash rides to the rescue
 
-For days, I wracked my brain about it. Then, finally, I had an “Aha” moment, as I wondered: *Since I’m already using PostCSS to make Tailwind work (and would probably be using it even if I *weren’t* using Tailwind), is there a way to use PostCSS for this?*
+For days, I wracked my brain about it. Then, finally, I had an “Aha” moment, as I wondered: *Since I’m already using PostCSS to make Tailwind work (and would probably be using it even if I* weren’t *(using Tailwind), is there a way to use PostCSS for this?*
 
 Bingo.
 

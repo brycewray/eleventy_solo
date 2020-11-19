@@ -5,7 +5,7 @@ subtitle: "Another set of odd-servations"
 description: "Follow my erratic mind, if you dare, as it proves anew that it deserves that adjective."
 author: Bryce Wray
 date: 2020-11-07T16:10:00
-lastmod: 2020-11-17T16:25:00
+lastmod: 2020-11-19T16:36:00
 draft: false
 discussionId: "2020-11-mixed-nuts-2020-11"
 featured_image: usman-yousaf-qHETVV5u7Wk-unsplash_5184x3456.jpg
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@usmanyousaf?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Usman Yousaf</a>; <a href="https://unsplash.com/s/photos/mixed-nuts?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-Given the course of recent events in our storm-tossed existence, both here in the United States and elsewhere, it seems a good time to whip out another set of those miscellaneous observations I typically call “mixed nuts” (most recent such assortment was [this example](/posts/2020/09/mixed-nuts-september-2020))&nbsp;.&nbsp;.&nbsp;.
+Given the course of recent events in our storm-tossed existence, both here in the United States and elsewhere, it seems a good time to whip out another set of those miscellaneous observations I typically call “mixed nuts” (most recent such assortment was [this example](/posts/2020/09/mixed-nuts-2020-09))&nbsp;.&nbsp;.&nbsp;.
 
 ---- 
 

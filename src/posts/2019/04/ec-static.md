@@ -6,7 +6,7 @@ subtitle: How to go Hugo
 description: "Some tips for ordinary non-geeks on using the Hugo static site generator to create and maintain their own websites."
 author: Bryce Wray
 date: 2019-04-07T19:00:00
-lastmod: 2020-06-07T19:25:00
+lastmod: 2020-11-19T02:40:00
 discussionId: "2019-04-ec-static"
 featured_image: server-1235959_1980x1320.jpg
 featured_image_width: 1980
@@ -164,7 +164,7 @@ You'll see that it already has one post listed, *my-first-post*, from what you d
 
 The ```content``` part doesn't appear in the URL, since---again---the *content* subdirectory is the top level of the site.[^urlinfo]
 
-[^urlinfo]: The ```http://localhost:1313``` URL will work only on that system, since ```localhost``` means, well, just what it says. In time, you may want to see and test the site on other devices on your local wi-fi or Ethernet-connected network. If so, the [command to use](https://discourse.gohugo.io/t/hugo-server-only-serves-to-host-computer/5664/6), instead, is (*not* including the "drafts" stipulation here, since by the time you get to using this your knowledge will have advanced to the point where you'll probably no longer need the "drafts" thing): ```hugo server --bind=```**$IPADDRESS**``` --baseURL=```**$IPADDRESS**```:1313``` ---where **$IPADDRESS** represents the local IP address for the system where you're running the Hugo server. Then, on the other devices, you could visit `http://`**$IPADDRESS**`:1313`  to view the locally hosted site. If you're not comfortable figuring out your system's locally assigned IP address, just stick with viewing it only on the same system for now; it's not that critical, especially with nearly every modern browser possessing responsiveness emulation modes so you can see pretty clearly how a page will look on other devices.
+[^urlinfo]: The ```http://localhost:1313``` URL will work only on that system, since ```localhost``` means, well, just what it says. In time, you may want to see and test the site on other devices on your local wi-fi or Ethernet-connected network. If so, the [command to use](https://discourse.gohugo.io/t/hugo-server-only-serves-to-host-computer/5664/6), instead, is (*not* including the "drafts" stipulation here, since by the time you get to using this your knowledge will have advanced to the point where you'll probably no longer need the "drafts" thing): `hugo server --bind=$IP--baseURL=$IP:1313`---where **$IP** represents the local IP address for the system where you're running the Hugo server. Then, on the other devices, you could visit `http://$IP:1313` to view the locally hosted site. If you're not comfortable figuring out your system's locally assigned IP address, just stick with viewing it only on the same system for now; it's not that critical, especially with nearly every modern browser possessing responsiveness emulation modes so you can see pretty clearly how a page will look on other devices.
 
 ### STEP 6: Publish the site to the web.
 

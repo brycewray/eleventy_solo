@@ -1,10 +1,8 @@
 /*! purgecss start ignore */
 @import 'nav.css';
 @import 'prismjs.css';
+@import 'tailwindcss/base';
 @import 'layout.css';
-
-@import "tailwindcss/base";
-@import "tailwindcss/components";
+@import 'tailwindcss/components';
 /*! purgecss end ignore */
-
-@import "tailwindcss/utilities";
+@import 'tailwindcss/utilities';

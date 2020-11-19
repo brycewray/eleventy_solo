@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: {
     content: [
@@ -9,6 +11,11 @@ module.exports = {
   darkMode: 'media',
   theme: {
     colors: {
+      transparent: 'transparent',
+      white: '#ffffff',
+      black: '#000000',
+      gray: colors.gray,
+      yellow: colors.yellow,
       blue: {
         '100': '#bbeeff',
         '200': '#00aaff',
@@ -21,17 +28,6 @@ module.exports = {
         '900': '#000066',
       },
     },
-    backgroundImage: {
-      'gradient-to-t': 'linear-gradient(to top, var(--gradient-color-stops))',
-      'gradient-to-tr': 'linear-gradient(to top right, var(--gradient-color-stops))',
-      'gradient-to-r': 'linear-gradient(to right, var(--gradient-color-stops))',
-      'gradient-to-br': 'linear-gradient(to bottom right, var(--gradient-color-stops))',
-      'gradient-to-b': 'linear-gradient(to bottom, var(--gradient-color-stops))',
-      'gradient-to-bl': 'linear-gradient(to bottom left, var(--gradient-color-stops))',
-      'gradient-to-l': 'linear-gradient(to left, var(--gradient-color-stops))',
-      'gradient-to-tl': 'linear-gradient(to top left, var(--gradient-color-stops))',
-    },
-    gradientColorStops: (theme) => theme('colors'),
   },
   variants: {},
   plugins: [], // if we add forms, do it here

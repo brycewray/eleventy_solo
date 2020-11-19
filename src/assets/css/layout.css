@@ -70,11 +70,11 @@ span.caption a:focus, span.caption a:hover, span caption a:active {
 }
 
 a {
-  @apply text-blue-500 dark:text-blue-200 dark:border-b dark:border-blue-200;
+  @apply text-blue-500 dark:text-blue-200 dark:border-blue-200;
 }
 
 a:focus, a:hover, a:active {
-  @apply text-blue-800 border-b border-blue-500;
+  @apply text-blue-800 border-blue-500;
 }
 
 a:hover {
@@ -106,15 +106,15 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  @apply text-3xl;
+  @apply text-4xl;
 }
 
 h3, .h3 {
-  @apply text-2xl italic;
+  @apply text-3xl italic;
 }
 
 h4, .h4 {
-  @apply text-xl;
+  @apply text-2xl;
 }
 
 h5, .h5, h6, .h6 {
@@ -192,7 +192,7 @@ article h1, article h2, article h3, article h4 {
 }
 
 article p, li {
-  @apply text-lg leading-relaxed mt-6 mb-6;
+  @apply text-lg mt-6 mb-6 leading-relaxed;
 }
 
 article img.containedImage {
@@ -217,18 +217,18 @@ article img.containedImage {
 
 @media screen and (min-width: 769px) {
   article p, li {
-    @apply text-xl;
+    @apply text-xl leading-relaxed;
   }
 }
 
 @media screen and (min-width: 1920px) {
   article p, li {
-    @apply text-2xl;
+    @apply text-2xl leading-relaxed;
   }
 }
 
 .yellowBox {
-  @apply font-sans bg-yellow-300 border border-gray-900 border-solid mx-auto my-2 w-full px-6 py-2 dark:bg-gray-900 dark:border-gray-500;
+  @apply font-sans bg-yellow-200 border border-gray-900 border-solid mx-auto my-2 w-full px-6 py-2 dark:bg-gray-800 dark:border-gray-500;
 }
 
 .yellowbox p { 
@@ -350,7 +350,7 @@ hr {
 }
 
 footer {
-  @apply font-sans dark:bg-gradient-to-t dark:from-blue-700;
+  @apply font-sans bg-gradient-to-t from-transparent dark:from-blue-700;
 }
 
 .lazypicturecaption {

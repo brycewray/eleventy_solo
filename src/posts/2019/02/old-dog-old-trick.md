@@ -30,7 +30,7 @@ Only thing is, it's nothing new. Holy cow, it's been out there for years. Yet I 
 
 So, I'm both relieved to know it and embarrassed that I didn't. Let me tell you what happened.
 
-## Wresting victory from the jaws .&nbsp;.&nbsp;.
+## Wresting victory from the&nbsp;jaws&nbsp;.&nbsp;.&nbsp;.
 
 Remember that wretched excuse for a WordPress page builder against which [I inveighed](/posts/2019/01/blox-sux/)? Well, I have managed to convince the appropriate folks that we should yank it from my employer's growing number of websites as the opportunities present themselves. Yay. Of course, that'll be a while, because we're talking about production sites that serve many thousands of people a day, and one mustn't throw the proverbial monkey wrench into that functionality. But the path has been laid out. We will get there. Again, yay.
 

@@ -16,7 +16,9 @@ module.exports = {
       black: '#000000',
       gray: colors.gray,
       yellow: colors.yellow,
+      green: colors.green,
       blue: {
+        '50': '#eff6ff',
         '100': '#bbeeff',
         '200': '#00aaff',
         '300': '#0088ff',
@@ -28,6 +30,11 @@ module.exports = {
         '900': '#000066',
       },
     },
+    fontFamily: {
+      'sans': ['ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', '"Noto Sans"', 'sans-serif', '"Apple Color Emoji"', '"Segoe UI Emoji"', '"Segoe UI Symbol"', '"Noto Color Emoji"'],
+      'serif': ['Georgia', 'ui-serif', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      'mono': ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+    }
   },
   variants: {},
   plugins: [], // if we add forms, do it here

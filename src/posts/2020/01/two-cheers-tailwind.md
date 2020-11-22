@@ -6,7 +6,7 @@ subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray
 date: 2020-01-12T17:00:00
-lastmod: 2020-09-07T15:45:00
+lastmod: 2020-11-22T16:35:00
 discussionId: "2020-01-two-cheers-tailwind"
 featured_image: CSS-code-1797778_1971x1306.jpg
 featured_image_width: 1971
@@ -19,11 +19,11 @@ featured_image_caption: |
 <div class="yellowBox"><p><strong>Update, 2020-05-09</strong>:<br />
 Although it was clear from this take&mdash;and what I added at the bottom&mdash;that I wasn&rsquo;t crazy about the subject of this post, I later changed my mind and reinstated it, as explained in &ldquo;<a href="/posts/2020/05/going-solo-eleventy">Going solo with Eleventy</a>.&rdquo; Still, am leaving this post in place for archival purposes and the sake of <a href="/posts/2019/10/otoh">transparency</a>.</p></div>
 
-A couple of weekends ago, I tweeted[^privacy] a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year’s, so I figured I’d be fortunate if I got a handful of responses.
+A couple of weekends ago, I tweeted a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year’s, so I figured I’d be fortunate if I got a handful of responses.
 
-[^privacy]: The embedded tweets that formerly were in this spot on the page are now just linked and identified, due to the site’s belatedly adopted [privacy policy](/privacy).
+{% twitscrn "Twitter_1210975092999704578.png", "Tweet by @BryceWrayTX, 2019-12-28: Reading about @tailwindcss and other #atomicCSS approaches (@tachyons_css, @basscss , etc.). They seem aimed at the multi-project, multi-dev use case. But what if it’s just one personal website with one maintainer (HTML and CSS)? Worth it then?", 1182, 516, "https://twitter.com/BryceWrayTX/status/1210975092999704578" %}
 
-> Reading about <a href="https://twitter.com/tailwindcss?ref_src=twsrc%5Etfw">@tailwindcss</a> and other <a href="https://twitter.com/hashtag/atomicCSS?src=hash&amp;ref_src=twsrc%5Etfw">#atomicCSS</a> approaches (<a href="https://twitter.com/tachyons_css?ref_src=twsrc%5Etfw">@tachyons_css</a>, <a href="https://twitter.com/basscss?ref_src=twsrc%5Etfw">@basscss</a> , etc.). They seem aimed at the multi-project, multi-dev use case. But what if it’s just one personal website with one maintainer (HTML and CSS)? Worth it then?—[Bryce Wray (@BryceWrayTX) December 28, 2019](https://twitter.com/BryceWrayTX/status/1210975092999704578?ref_src=twsrc%5Etfw)
+> —[Bryce Wray (@BryceWrayTX) December 28, 2019]()
 
 Then it got retweeted by the [Tailwind CSS](https://tailwindcss.com) [Twitter account](https://twitter.com/tailwindcss) and, well, my phone was pretty actively “bink”-ing at me for a few hours thereafter.
 
@@ -33,7 +33,7 @@ Tens of thousands of “[impressions](https://help.twitter.com/en/managing-your-
 
 So I spent my spare time during the next few days doing precisely that on a branch of my site and, during the first afternoon of 2020, merged that branch into `Master` and pushed it to Netlify:
 
-> Another holiday, another site spruce-up. Decided to go the <a href="https://twitter.com/tailwindcss?ref_src=twsrc%5Etfw">@tailwindcss</a> route, as recommended by so many this past weekend — and, while at it, also made long-overdue changes to improve readability (I hope). Opinions welcome. Be nice. 😄—[Bryce Wray (@BryceWrayTX) January 1, 2020](https://twitter.com/BryceWrayTX/status/1212496201385418753?ref_src=twsrc%5Etfw)
+{% twitscrn "Twitter_1212496201385418753.png", "Tweet by @BryceWrayTX, 2020-01-01: Another holiday, another site spruce-up. Decided to go the @tailwindcss route, as recommended by so many this past weekend — and, while at it, also made long-overdue changes to improve readability (I hope). Opinions welcome. Be nice. 😄", 1182, 636, "https://twitter.com/BryceWrayTX/status/1212496201385418753" %}
 
 ## Not a purist
 

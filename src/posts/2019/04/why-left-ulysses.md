@@ -5,7 +5,7 @@ subtitle: iA Writer wins—for now
 description: "Why, just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
 author: Bryce Wray
 date: 2019-04-20T16:17:00
-lastmod: 2020-08-08T19:15:00
+lastmod: 2020-11-21T23:20:00
 discussionId: "2019-04-why-left-ulysses"
 featured_image: hand-butterfly-3751159_6000x4000.jpg
 featured_image_width: 6000
@@ -152,9 +152,7 @@ Yet another nail in the Ulysses sub's coffin.
 
 But it was hard to let go. Even as late as a couple of weeks ago, I found myself posting this on Twitter:
 
-> I may be crazy, but have been stress-testing Ulysses and am giving it one more chance **not** to eat my stuff before I pull the plug on my subscription (ends in late May). It’s hard to quit an app that makes writing such a pleasure, even one with known issues. #DontFailMeNowBigU---[Bryce Wray (@BryceWrayTX) April 5, 2019](https://twitter.com/BryceWrayTX/status/1114140807764893696?ref_src=twsrc%5Etfw)[^privacy]
-
-[^privacy]: The embedded tweet that formerly was in this spot on the page is now just linked and identified, due to the site's belatedly adopted [privacy policy](/privacy).
+{% twitscrn "Twitter_1114140807764893696.png", "Tweet by @BryceWrayTX, 2019-04-05: I may be crazy, but have been stress-testing Ulysses and am giving it one more chance **not** to eat my stuff before I pull the plug on my subscription (ends in late May). It’s hard to quit an app that makes writing such a pleasure, even one with known issues. #DontFailMeNowBigU", 1182, 578, "https://twitter.com/BryceWrayTX/status/1114140807764893696" %}
 
 And, almost as if it had gotten the message, Ulysses was good as gold across my devices---until this morning.
 

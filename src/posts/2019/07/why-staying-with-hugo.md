@@ -6,7 +6,7 @@ subtitle: An “interesting” learning experience
 description: After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo.
 author: Bryce Wray
 date: 2019-07-15T01:45:00
-lastmod: 2020-09-27T15:20:00
+lastmod: 2020-11-22T15:50:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: hugo-logo_reflection_1280x720.jpg
 featured_image_width: 1280
@@ -273,9 +273,7 @@ Early that afternoon, my mind finally at rest about it all, I tweeted:[^BEP]
 
 [^BEP]: I confess to being extremely pleased that, later that afternoon, none other than [@bepsays](https://twitter.com/bepsays) himself (Bjørn Erik Pedersen, the lead developer of Hugo) “liked” that tweet.
 
-> Will have more to say about this in a future post, but am keeping brycewray.com firmly within <a href="https://twitter.com/GoHugoIO?ref_src=twsrc%5Etfw">@GoHugoIO</a> after three weekends’ worth of experimentation with <a href="https://twitter.com/gatsbyjs?ref_src=twsrc%5Etfw">@gatsbyjs</a> and some other kewl kids. #StayWithTheBest—[Bryce Wray (@BryceWrayTX) July 13, 2019](https://twitter.com/BryceWrayTX/status/1150104013871955971?ref_src=twsrc%5Etfw)[^privacy]
-
-[^privacy]: The embedded tweet that formerly was in this spot on the page is now just linked and identified, due to the site's belatedly adopted [privacy policy](/privacy). 
+{% twitscrn "Twitter_1150104013871955971.png", "Tweet by @BryceWrayTX, 2019-07-13: Will have more to say about this in a future post, but am keeping brycewray.com firmly within @GoHugoIO after three weekends’ worth of experimentation with @gatsbyjs and some other kewl kids. #StayWithTheBest", 1182, 1234, "https://twitter.com/BryceWrayTX/status/1150104013871955971" %}
 
 ## “Interesting,” indeed
 

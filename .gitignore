@@ -65,3 +65,6 @@ arraytest.js
 .firebaserc
 .Ulysses*.plist
 ztest.js
+
+gh-pages
+gh-pages.pub

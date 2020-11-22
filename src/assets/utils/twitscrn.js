@@ -10,7 +10,7 @@ var xFmPart1 = 'f_auto,q_auto:best,w_'
 var xFmPart2 = ',x_0,z_1/' // note ending slash
  
 module.exports = (imageUrl, alt, width, height, twitterUrl) => {
-  divClass = `relative`
+  divClass = `relative mb-2 p-4 bg-white border-2 border-gray-400 rounded md:rounded-md lg:rounded-lg xl:rounded-xl`
   imgClass = `containedImage lazy`
   nscClass = `containedImage`
   dataSzes = `(min-width: 1024px) 25vw, 100vw`
@@ -18,7 +18,7 @@ module.exports = (imageUrl, alt, width, height, twitterUrl) => {
   var separator = ', '
 
   var stringtoRet = ``
-  stringtoRet = `<div class="${divClass}" style="background-image: url(${cloudiBase + LQIPpholder + imageUrl}); background-position: center; background-repeat: no-repeat; background-size: cover;">
+  stringtoRet = `<div class="${divClass}">
   <a href="${twitterUrl}" target="_blank" rel="noopener"><img class="${imgClass}" data-src="${cloudiBase + xFmPart1 + "600" + xFmPart2 + imageUrl}" data-srcset="`
   respSizes.forEach(size => {
     if (size <= width) {

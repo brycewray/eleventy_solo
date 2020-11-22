@@ -102,6 +102,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(ErrorOverlay)
  
   eleventyConfig.addShortcode("lazypicture", require("./src/assets/utils/lazy-picture.js"))
+  eleventyConfig.addShortcode("twitscrn", require("./src/assets/utils/twitscrn.js"))
 
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if( outputPath.endsWith(".html") ) {

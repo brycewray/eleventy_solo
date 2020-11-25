@@ -7,7 +7,7 @@ author: Bryce Wray
 date: 2020-11-25T22:30:00 # 4:30 PM CST Wed., Nov. 25
 #lastmod:
 #draft: false
-discussionId: "2020-11-two-more-hosts-consider-not"
+discussionId: "2020-11-fast-but-flawed"
 featured_image: jack-van-der-spoel-dgCBjYHZ0kc-unsplash_5472x3648.jpg
 featured_image_width: 5472
 featured_image_height: 3648

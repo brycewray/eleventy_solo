@@ -1,6 +1,6 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
-title: "Curmudgeonish thoughts for 2020"
+title: "Curmudgeonish thoughts for 2020"
 subtitle: "The third annual rant"
 description: "Pet peeves seem tiny at a time like this, but I have them nonetheless."
 author: Bryce Wray

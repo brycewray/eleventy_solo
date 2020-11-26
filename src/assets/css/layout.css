@@ -211,7 +211,7 @@ article img.containedImage {
 }
 
 .yellowBox {
-  @apply font-sans bg-yellow-200 border border-gray-900 border-solid mx-auto my-2 w-full px-6 py-2 dark:bg-gray-800 dark:border-gray-500;
+  @apply font-sans bg-yellow-200 border border-gray-900 border-solid mx-auto my-8 w-full p-8 dark:bg-gray-800 dark:border-gray-500;
 }
 
 .yellowbox p { 

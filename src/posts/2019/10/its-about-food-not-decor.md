@@ -16,9 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/MikeGoad-29415/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4162348">Mike Goad</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4162348">Pixabay</a></span>
 ---
 
-<div class="border-black border-solid yellowBox">
-	<p><strong>Note</strong>: You formerly may have been redirected here because I deleted multiple posts I&rsquo;ll be discussing herein—including <em>why</em> I deleted them. However, I <a href="/posts/2019/10/otoh">later decided</a> that had been a bad idea, so they’re back. If you&rsquo;ll read that post to which I just linked, you&rsquo;ll know why you shouldn&rsquo;t either worry about, or take much heart in (as the case may be), my comments below regarding <em>not</em> writing about my SSG stuff going forward&mdash;since that, too, was a bad idea, Flavio Copes&rsquo;s wisdom quoted below and <a href="/posts/2019/09/back-with-hugo">previously</a> notwithstanding.</p>
-</div>
+**Note**: You formerly may have been redirected here because I deleted multiple posts I’ll be discussing herein—including *why* I deleted them. However, I [later decided](/posts/2019/10/otoh) that had been a bad idea, so they’re back. If you’ll read that post to which I just linked, you’ll know why you shouldn’t either worry about, or take much heart in (as the case may be), my comments below regarding *not* writing about my SSG stuff going forward—since that, too, was a bad idea, Flavio Copes’s wisdom quoted below and [previously](/posts/2019/09/back-with-hugo) notwithstanding.{.yellowBox}
 
 Keeping this brief, for once&nbsp;.&nbsp;.&nbsp;.
 

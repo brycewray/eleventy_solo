@@ -20,7 +20,7 @@ featured_image_caption: |
 
 **Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.{.yellowBox}
 
-<div class="yellowBox"><p><strong>Added note, 2020-09-16</strong>: The site no longer uses webmentions.</p></div>
+**Added note, 2020-09-16**: The site no longer uses webmentions.{.yellowBox}
 
 Having covered the purpose of this series, the [IndieWeb](https://indieweb.org), and the general setup of webmentions in this series' [introduction](/posts/2020/04/webmentions-three-ssgs-1), we'll now get into details about implementing them in the [Eleventy](https://11ty.dev) SSG.
 

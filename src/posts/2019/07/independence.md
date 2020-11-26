@@ -20,9 +20,7 @@ This most recent Fourth of July was the 243rd anniversary of the *signing* of th
 
 It also was the thirty-fifth anniversary of my first encounter with a Mac.
 
-<br />
-<hr />
-<br />
+----
 
 It was the night of July 4, 1984.
 

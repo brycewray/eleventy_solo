@@ -30,8 +30,7 @@ What follows, then, is loosely based on the "Scattershooting" motif. For now, le
 
 So, let's sample some mixed nuts for November, 2019&nbsp;.&nbsp;.&nbsp;.
 
-<hr />
-<br />
+----
 
 The open-office concept is simply a way for businesses to cram more people into less, and therefore cheaper, real estate. However, on the bright side: it helps sell a metric [bleep]-ton of wireless headphones.
 

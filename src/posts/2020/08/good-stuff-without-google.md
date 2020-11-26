@@ -6,7 +6,7 @@ subtitle: "Yes to variable typefaces, no to tracking"
 description: "How your website can still have the coolness of variable typefaces, but without Google’s tracking."
 author: Bryce Wray
 date: 2020-08-10T01:05:00
-lastmod: 2020-10-22T15:30:00
+lastmod: 2020-11-26T15:25:00
 discussionId: "2020-08-good-stuff-without-google"
 featured_image: printing-plate-typography-1030849_5122x3414.jpg
 featured_image_width: 5122
@@ -30,13 +30,15 @@ But, hey, I’m here to help.
 
 Let me begin by giving you a brief intro to variable fonts.[^1]
 
-First, the web fonts you’ve typically known all these years are called *static* fonts. As that name implies, the file for each static font produces a fixed *weight*, *width*, and/or *style*. Let’s say your site is using the Public Sans typeface, and a site page includes the following text and formatting:
+First, the web fonts you’ve typically known all these years are called *static* fonts. As that name implies, the file for each static font produces a fixed *weight*, *width*, and/or *style*. Let’s say your site is using a non-system typeface for the body text, and a site page includes the following text and formatting:
 
 <p class="text-4xl text-center"><strong><em>Hello</em></strong>, how <em>are</em> <strong>you</strong>?</p>
 
-That would require the visitor’s browser to access *four* Public Sans font files: one for the boldfaced regular “you”; another for the non-bold regular “how” and question mark; a third for the boldfaced/italicized “Hello”; and a fourth for the non-boldfaced italicized “are.”
+That would require the visitor’s browser to access *four* font files: one for the boldfaced regular “you”; another for the non-bold regular “how” and question mark; a third for the boldfaced/italicized “Hello”; and a fourth for the non-boldfaced italicized “are.”
 
-On the other hand, a *variable* font file can be used to provide a wide range of, as the name implies, **variations**. For the same example above, only two Public Sans *variable* font files would be necessary: one regular that handles the “how,” the “you,” and the question mark; and one italicized that handles both the “Hello” and the “are.” And, if you don’t care about true italics *vs.* simply slanting or *obliquing*—which I do—you even could use just one file to obtain that pseudo-styling.
+On the other hand, a *variable* font file can be used to provide a wide range of, as the name implies, **variations**. For the same example above, only two *variable* font files would be necessary: one regular that handles the “how,” the “you,” and the question mark; and one italicized that handles both the “Hello” and the “are.” And, if you don’t care about true italics *vs.* simply slanting or *obliquing*—which I do—you even could use just one file to obtain that pseudo-styling.[^InterOblique]
+
+[^InterOblique]: Given my own experience trying this, I suggest against it because it can get hairy supporting it properly on a cross-browsers basis. I found this especially true for [Inter](https://rsms.me/inter) in both Firefox and Safari---which was sad, because Inter is a justifiably popular font.
 
 There are drawbacks, of course. Precisely *because* it contains more variations in its code, a variable font file is considerably larger than a static font file for the same typeface. My site’s styling makes heavy use of all four of the major combinations—regular, italic, bold regular, and bold italic—so for me it makes sense to use variable fonts; but, if your site doesn’t do so, you’re probably just as well off with static fonts. Just keep variable fonts in mind for situations that require them.
 

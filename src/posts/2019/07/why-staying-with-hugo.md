@@ -37,9 +37,7 @@ oldComments: |
     </div>
 ---
 
-<div class="border-black border-solid yellowBox">
-	<p><strong>Note</strong>: To put it simply, <a href="/posts/2019/09/why-left-hugo-eleventy">things</a> <a href="/posts/2019/09/back-with-hugo">have</a> <a href="/posts/2019/10/its-about-food-not-decor">changed</a> <a href="/posts/2019/10/now-gatsby-geezer">multiple</a> <a href="/posts/2020/09/ignition-sequence-start">times</a> since this post, but it reflects my thinking at the time and also provides what I hope are some useful <em>caveats</em>, so <a href="/posts/2019/10/otoh">here it shall&nbsp;stay</a>.</p>
-</div>
+**Note**: To put it simply, [things](/posts/2019/09/why-left-hugo-eleventy) [have](/posts/2019/09/back-with-hugo) [changed](/posts/2019/10/its-about-food-not-decor) [multiple](/posts/2019/10/now-gatsby-geezer) [times](/posts/2020/09/ignition-sequence-start) since this post, but it reflects my thinking at the time and also provides what I hope are some useful *caveats*, so [here it shall stay](/posts/2019/10/otoh).{.yellowBox}
 
 If you've been sufficiently masochistic to read through most of my other [posts](/posts) up to this point, it's probably become pretty clear—and I've even said as much—that I tend to have a problem avoiding New Shiny Things where tech is concerned.
 

@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@tsvetoslav?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tsvetoslav Hristov</a>; <a href="https://unsplash.com/s/photos/tsvetoslav-hristov-stopwatch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-<div class="yellowBox"><p><strong>Update, 2020-10-22</strong>: I posted this prior to my subsequent decision to <a href="/posts/2020/07/transformed">hand off the site&rsquo;s image-handling to Cloudinary</a>. To me, it was more than worth the performance hit. <em>(The screen capture below was from <strong>before</strong> those changes.)</em></p></div>
+**Update, 2020-10-22**: I posted this prior to my subsequent decision to [hand off the site's image-handling to Cloudinary](/posts/2020/07/transformed). To me, it was more than worth the performance hit. *(The screen capture below was from **before** those changes.)* {.yellowBox}
 
 If you have your own website, chances are you like to make it work better for your visitors and, yes, show up higher in search engine ratings. Let's talk about how you can do that.
 

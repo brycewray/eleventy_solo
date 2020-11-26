@@ -16,8 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/WojciechKrakowiak-722397/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1797778">Wojciech Krakowiak</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1797778">Pixabay</a></span>
 ---
 
-<div class="yellowBox"><p><strong>Update, 2020-05-09</strong>:<br />
-Although it was clear from this take&mdash;and what I added at the bottom&mdash;that I wasn&rsquo;t crazy about the subject of this post, I later changed my mind and reinstated it, as explained in &ldquo;<a href="/posts/2020/05/going-solo-eleventy">Going solo with Eleventy</a>.&rdquo; Still, am leaving this post in place for archival purposes and the sake of <a href="/posts/2019/10/otoh">transparency</a>.</p></div>
+**Update, 2020-05-09**: Although it was clear from this take---and what I added at the bottom---that I wasn't crazy about the subject of this post, I later changed my mind and reinstated it, as explained in "[Going solo with Eleventy](/posts/2020/05/going-solo-eleventy)." Still, am leaving this post in place for archival purposes and the sake of [transparency](/posts/2019/10/otoh).{.yellowBox}
 
 A couple of weekends ago, I tweeted a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year’s, so I figured I’d be fortunate if I got a handful of responses.
 
@@ -86,7 +85,7 @@ I guess what still mainly bugs me is the whole idea of whether, specifically for
 
 By the way: no matter which way I go, a reversion to my previous workflow probably *wouldn’t* mean going back to SASS/SCSS, which I jettisoned in the transition to utility-first. To learn how to use Tailwind CSS, I also had to learn about using [PostCSS](https://postcss.org). It’s clear that, even I do go back to a less utilitarian approach, PostCSS and its [plugins](https://www.postcss.parts) can do everything, and more, for which I used SASS/SCSS. In fact, what PostCSS enables is pretty frickin’ amazing. Just being able to take what starts out in dev mode as 2.4&nbsp;**MB** of CSS (some of which is related to using web fonts, I should note in all fairness) and end up with it in production mode at only about 7&nbsp;**K** is impressive, to put it mildly.
 
-## We Shall See<sup style="font-size: 0.5em; font-weight: normal; vertical-align: baseline; position: relative; top: -1.1em; margin-right: -1em;">&trade;</sup>—as usual
+## We Shall See<sup style="font-size: 0.5em; font-weight: normal; vertical-align: baseline; position: relative; top: -1rem; margin-right: -0.85rem;">&trade;</sup>---as usual
 
 As I observed near the end of my [last post](/posts/2019/12/sorta-strange-ssg-trip), this site’s [Eleventy](https://11ty.dev)/[webpack](https://webpack.js.org) combo gives me a solid foundation on which to build. And, on the subject I’ve discussed here today, it further shows how easily I can try new stuff.
 

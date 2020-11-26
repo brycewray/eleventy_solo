@@ -20,7 +20,7 @@ featured_image_caption: |
 
 **Added note, 2020-07-26**: I have now archived the various configuration files linked within this series within a [GitHub repo](https://github.com/brycewray/files-webmentions) of their own and changed the links accordingly, so as to make them immune to ongoing changes in the repos originally linked from this series.{.yellowBox}
 
-<div class="yellowBox"><p><strong>Added note, 2020-09-16</strong>: The site no longer uses webmentions.</p></div>
+**Added note, 2020-09-16**: The site no longer uses webmentions.{.yellowBox}
 
 In the [introduction](/posts/2020/04/webmentions-three-ssgs-1) to this five-part series, I gave you a quick run-through about the [IndieWeb](https://indieweb.org) and the general setup of webmentions. In [Part 2](/posts/2020/04/webmentions-three-ssgs-2), the subject was how you implement webmentions specifically in the [Eleventy](https://11ty.dev) SSG. Then, in [Part 3](/posts/2020/04/webmentions-three-ssgs-3), I moved on to the subject of implementing them in the [Hugo](https://gohugo.io) SSG. Now, here in Part 4, it's time to look at doing the same thing in the [Gatsby](https://gatsbyjs.org) SSG.
 

@@ -115,7 +115,7 @@ If you, or Those Who Tell You How to Design, are dead-set on having all your sit
 
 However, if your primary mission with your website to ensure not just the best readability but also the fastest possible loading speed, using a “system fonts stack” is an easily implemented way to help achieve that.
 
-<hr style="border: 1px solid #666;" />
+----
 
 ### _Major change, November 9, 2018_
 

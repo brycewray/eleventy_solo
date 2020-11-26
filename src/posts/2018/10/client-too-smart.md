@@ -6,7 +6,7 @@ subtitle: The email client, that is
 description: Pretty emails don’t work so well in an Outlook-centric business world.
 author: Bryce Wray
 date: 2018-10-11T20:30:00
-lastmod: 2020-01-31T16:30:00
+lastmod: 2020-11-26T14:10:00
 discussionId: "2018-10-client-too-smart"
 featured_image: letters-envelope-on-color-strips-4029672_5376x3648.jpg
 featured_image_width: 5376
@@ -56,6 +56,6 @@ So, in the end, what you really want is to send a brief, crisply written email t
 
 And then it won’t matter how smart the email client is.
 
-<p>&nbsp;</p>
+<br />
 
-**Note**: The icons shown in the first graphic were originally designed by [Sergey Ershov](https://www.iconfinder.com/Fishmoby) and are under the [Creative Commons license (Attribution 3.0 Unported)](https://creativecommons.org/licenses/by/3.0/). That licensing requires me to indicate any changes I made, which were edits of the SVG originals for size and stroke color.
+**Note**: The icons shown in the first graphic were originally designed by [Sergey Ershov](https://www.iconfinder.com/Fishmoby) and are under the [Creative Commons license (Attribution 3.0 Unported)](https://creativecommons.org/licenses/by/3.0/). That licensing requires me to indicate any changes I made, which were edits of the SVG originals for size and stroke color.{.yellowBox}

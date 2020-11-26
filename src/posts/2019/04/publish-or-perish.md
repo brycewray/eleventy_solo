@@ -114,7 +114,7 @@ Once you've made this change with the domain provider, it will start world-wide 
 
 So, once all this is done, how do you update your site in the future when you change an existing post or write a new one? Simple, actually. Your Bitbucket remote repo is connected to the Netlify-based site, so all you have to do is commit any local changes to your local repo and push the commit to the remote repo. Within a few seconds after Netlify "sees" the push, it'll start updating your site with its own Hugo server setup---and, because Hugo's server is **so** fast, your site updates should be out there for the world to see in a minute or two, at the very most.
 
-<hr />
+----
 
 Once more, I apologize for the length of this, especially when combined with its [predecessor](/posts/2019/04/ec-static). I am sure you can find better how-to-SSG guides out there, and I encourage you to search for and find the one that works best with your learning methods[^visual] and knowledge level.
 

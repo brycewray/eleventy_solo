@@ -16,10 +16,7 @@ featured_image_caption: |
   <span class="caption">Images: <a href="https://11ty.dev">Eleventy site</a>; <a href="https://webpack.js.org">webpack site</a>; <a href="https://pixabay.com/users/Skitterphoto-324082/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3867751">Rudy and Peter Skitterians</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3867751">Pixabay</a></span>
 ---
 
-<div class="yellowBox">
-	<p><em><strong>Update, 2020-05-09</strong>:</em><br />
-	A few months later, I went with an Eleventy-only setup after <a href="/posts/2020/05/going-solo-eleventy">deciding</a> it would be just fine, after all. Still, I&rsquo;ll leave this and other, related posts in place for archival purposes and the sake of <a href="posts/2019/10/otoh">transparency</a>.</p>
-</div>
+**Update, 2020-05-09**: A few months later, I went with an Eleventy-only setup after [deciding](/posts/2020/05/going-solo-eleventy) it would be just fine, after all. Still, I’ll leave this and other, related posts in place for archival purposes and the sake of [transparency](posts/2019/10/otoh).{.yellowBox}
 
 It's that time again, [static site generator](https://staticgen.com) (SSG) nerdiness fans. Yes, that's right, it's time for me to geek out about another change to this site.
 

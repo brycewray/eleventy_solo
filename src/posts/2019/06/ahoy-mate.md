@@ -114,7 +114,7 @@ I began the 30-day trial of MailMate prior to Apple's WWDC 2019, curious as to w
 
 However, the answers were "No" and "No." The [changes in Apple Mail in Catalina](https://www.apple.com/macos/catalina-preview/features/) are welcome, yet of minimal impact. So I'm still thinkin'. I'll keep you advised as to how I&nbsp;land.
 
-<hr />
+----
 
 ### Update, 2019-06-11
 

@@ -5,7 +5,7 @@ subtitle: "Fun with—and without—asset pipelines"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
 date: 2020-11-10T22:30:00
-lastmod: 2020-11-19T21:50:00
+lastmod: 2020-11-27T01:50:00
 draft: false
 discussionId: "2020-11-using-postcss-cache-busting-eleventy"
 featured_image: jilbert-ebrahimi-pVEcNabAg9o-unsplash_4608x3072.jpg
@@ -80,7 +80,7 @@ I considered some of the other tools, too (after all, I’d already used Gulp du
 
 ### PostCSS Hash rides to the rescue
 
-For days, I wracked my brain about it. Then, finally, I had an “Aha” moment, as I wondered: *Since I’m already using PostCSS to make Tailwind work (and would probably be using it even if I* weren’t *(using Tailwind), is there a way to use PostCSS for this?*
+For days, I wracked my brain about it. Then, finally, I had an “Aha” moment, as I wondered: *Since I’m already using PostCSS to make Tailwind work (and would probably be using it even if I* weren’t *using Tailwind), is there a way to use PostCSS for this?*
 
 Bingo.
 

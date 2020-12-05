@@ -79,7 +79,7 @@ So, yesterday, I began serving my chosen Google Fonts typefaces “locally.” I
 
 Anyway: because Google updates Google Fonts typefaces frequently, I will have to monitor their versions and keep my “local “ copies straight. That’s fine. I get to keep the site’s typography as I want, while keeping the site from helping Google track you to even the limited extent that Google-served typefaces apparently do.
 
-**Note, 2020-10-22**: I have since reverted to the "[system fonts stack](/posts/2018/10/web-typography-part-2")."{.yellowBox}
+**Note, 2020-10-22**: I have since reverted to the "[system fonts stack](/posts/2018/10/web-typography-part-2)."{.yellowBox}
 
 ## A little more cleaning-up
 

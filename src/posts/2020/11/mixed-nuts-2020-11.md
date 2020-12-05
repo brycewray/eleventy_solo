@@ -5,7 +5,7 @@ subtitle: "Another set of odd-servations"
 description: "Follow my erratic mind, if you dare, as it proves anew that it deserves that adjective."
 author: Bryce Wray
 date: 2020-11-07T16:10:00
-lastmod: 2020-11-19T16:36:00
+lastmod: 2020-12-05T16:00:00
 draft: false
 discussionId: "2020-11-mixed-nuts-2020-11"
 featured_image: usman-yousaf-qHETVV5u7Wk-unsplash_5184x3456.jpg
@@ -36,4 +36,4 @@ While writing a few days ago in [Ulysses](https://ulysses.app), I suddenly found
 
 [^2]:	By “automatic” host, I mean one that deploys your website every time you push a change to the site’s remote repository. By contrast, you have to set up your own continuous deployment—*e.g.*, a [GitHub Action](https://github.com/features/actions/)—to deploy a [Firebase](https://firebase.google.com) site or a [Cloudflare Workers site](https://workers.cloudflare.com) that way.
 
-[^3]: See the 2020-11-17 note I added to the "[Forward PaaS](/posts/2020/10/forward-paas)" post for an update on a new free tier of interest, along with my recommendation that you *still* stick with the paid tier.
+[^3]: See the 2020-12-05 note I added to the "[Forward PaaS](/posts/2020/10/forward-paas)" post for an update on a new **free** tier of interest.

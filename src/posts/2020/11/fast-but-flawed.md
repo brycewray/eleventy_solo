@@ -5,7 +5,7 @@ subtitle: "Two more static website hosts to consider (maybe)"
 description: "These can give you great performance, but there’s a catch."
 author: Bryce Wray
 date: 2020-11-25T22:30:00 # 4:30 PM CST Wed., Nov. 25
-#lastmod:
+lastmod: 2020-12-05T16:00:00
 #draft: false
 discussionId: "2020-11-fast-but-flawed"
 featured_image: jack-van-der-spoel-dgCBjYHZ0kc-unsplash_5472x3648.jpg
@@ -16,7 +16,9 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@doctor_punk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jack van der Spoel</a>; <a href="https://unsplash.com/s/photos/web-server?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-In "[Forward PaaS](/posts/2020/10/forward-paas)," I told you about [Cloudflare](https://cloudflare.com)'s [Platform-as-a-Service](https://en.wikipedia.org/wiki/Platform_as_a_service) (PaaS) offering, [Cloudflare Workers combined with KV storage](https://www.cloudflare.com/products/workers-kv/), and some of its aspects that intrigued me. In the end, its only real drawback is that, unlike many [other options](/posts/2020/09/normal-persons-guide-static-website-hosting) for hosting one's static website, an optimal use thereof isn't completely free. Five bucks a month for the Workers Unbundled plan is no bank-breaker; still, as the man says, "Cheap is good, but free is better."
+In "[Forward PaaS](/posts/2020/10/forward-paas)," I told you about [Cloudflare](https://cloudflare.com)'s [Platform-as-a-Service](https://en.wikipedia.org/wiki/Platform_as_a_service) (PaaS) offering, [Cloudflare Workers combined with KV storage](https://www.cloudflare.com/products/workers-kv/), and some of its aspects that intrigued me. In the end, its only real drawback is that, unlike many [other options](/posts/2020/09/normal-persons-guide-static-website-hosting) for hosting one's static website, an optimal use thereof isn't completely free. Five bucks a month for the Workers Unbundled plan is no bank-breaker; still, as the man says, "Cheap is good, but free is better."[^CFWfreetier]
+
+[^CFWfreetier]: See the 2020-12-05 note I added to the "[Forward PaaS](/posts/2020/10/forward-paas)" post for an update on a new **free** tier of interest.
 
 That's why I thought I would write this little piece about two other free hosting options for your additional consideration. One has been around for over a decade, while the other emerged in only the last couple of months. While both offer great performance despite being free, they also share one singular disadvantage that *might* dissuade you from considering them.
 

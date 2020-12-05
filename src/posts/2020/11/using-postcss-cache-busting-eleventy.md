@@ -5,7 +5,7 @@ subtitle: "Fun with—and without—asset pipelines"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
 date: 2020-11-10T22:30:00
-lastmod: 2020-11-27T01:50:00
+lastmod: 2020-12-05T17:55:00
 draft: false
 discussionId: "2020-11-using-postcss-cache-busting-eleventy"
 featured_image: jilbert-ebrahimi-pVEcNabAg9o-unsplash_4608x3072.jpg
@@ -124,7 +124,7 @@ Those settings really don’t matter; the defaults would work fine. **But**  the
 
 Simply put, you want to specify the location for the manifest file (`manifest.json` in this example) so your Eleventy templates can “find” it and obtain the right CSS filename. Otherwise, if you have your templates “looking for” `index.css` but the plugin has changed the real file name to a hashed version, that ain’t gonna fly.
 
-That means, for Eleventy purposes, it’s critical to put this manifest file where the template **can** find it. If you *don’t* specify the location, PostCSS Hash by default will put it in `manifest.json` at the project’s top level; but the **best** place to put it is within the Eleventy project’s *global data directory* ([specified](https://www.11ty.dev/docs/config/#directory-for-global-data-files) in its `.eleventy.js` configuration file) and defaulting to a `_data` directory in the project’s top level). Once you do that, it’s super-easy to point the template to it, because *Eleventy makes that directory’s contents available to your entire site*.
+That means, for Eleventy purposes, it’s critical to put this manifest file where the template **can** find it. If you *don’t* specify the location, PostCSS Hash by default will put it in `manifest.json` at the project’s top level; but the **best** place to put it is within the Eleventy project’s *global data directory* ([specified](https://www.11ty.dev/docs/config/#directory-for-global-data-files) in its `.eleventy.js` configuration file and defaulting to a `_data` directory in the project’s top level). Once you do that, it’s super-easy to point the template to it, because *Eleventy makes that directory’s contents available to your entire site*.
 
 In my site’s case, I use the `head.njk` “partial” to give this entire site its `<head>` content, so I can finish this very easily:
 

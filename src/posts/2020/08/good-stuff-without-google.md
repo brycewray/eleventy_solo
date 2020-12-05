@@ -6,7 +6,7 @@ subtitle: "Yes to variable typefaces, no to tracking"
 description: "How your website can still have the coolness of variable typefaces, but without Google’s tracking."
 author: Bryce Wray
 date: 2020-08-10T01:05:00
-lastmod: 2020-11-26T15:25:00
+lastmod: 2020-12-05T14:33:00
 discussionId: "2020-08-good-stuff-without-google"
 featured_image: printing-plate-typography-1030849_5122x3414.jpg
 featured_image_width: 5122
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1030849">Free-Photos</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1030849">Pixabay</a></span>
 ---
 
-Early in this site’s history, I issued a post in [two](/posts/2018/10/web-typography-part-1) [parts](/posts/2018/10/web-typography-part-2) about web typography, a subject near and dear to my geeky heart. In the second part, I gave the reasons for styling your website with the so-called “system font stack”—a set of fonts of which at least one is almost certain to be native on a current device, thus assuring faster rendering of your site’s textual content than if you force it to download other fonts.
+Early in this site’s history, I issued a post in [two](/posts/2018/10/web-typography-part-1) [parts](/posts/2018/10/web-typography-part-2) about web typography, a subject near and dear to my geeky heart. In the second part, I gave the reasons for styling your website with the so-called “system fonts stack”—a set of fonts of which at least one is almost certain to be native on a current device, thus assuring faster rendering of your site’s textual content than if you force it to download other fonts.
 
 That said: if you’re willing to give up some [performance points](/posts/2020/07/chasing-100-tips-optimizing-website), your site can gain a bit greater visual distinctiveness through the use of those other fonts, especially since there are so many cool, free typefaces out there for the grabbing and simple installation. [Google Fonts](https://fonts.google.com) is the source that comes most readily to mind, I’m sure.
 

@@ -5,7 +5,7 @@ subtitle: "Two more static website hosts to consider (maybe)"
 description: "These can give you great performance, but there’s a catch."
 author: Bryce Wray
 date: 2020-11-25T22:30:00 # 4:30 PM CST Wed., Nov. 25
-lastmod: 2020-12-06T16:10:00
+lastmod: 2020-12-06T16:15:00
 #draft: false
 discussionId: "2020-11-fast-but-flawed"
 featured_image: jack-van-der-spoel-dgCBjYHZ0kc-unsplash_5472x3648.jpg
@@ -18,7 +18,7 @@ featured_image_caption: |
 
 In "[Forward PaaS](/posts/2020/10/forward-paas)," I told you about [Cloudflare](https://cloudflare.com)'s [Platform-as-a-Service](https://en.wikipedia.org/wiki/Platform_as_a_service) (PaaS) offering, [Cloudflare Workers combined with KV storage](https://www.cloudflare.com/products/workers-kv/), and some of its aspects that intrigued me. In the end, its only real drawback is that, unlike many [other options](/posts/2020/09/normal-persons-guide-static-website-hosting) for hosting one's static website, an optimal use thereof isn't completely free. Five bucks a month for the Workers Unbundled plan is no bank-breaker; still, as the man says, "Cheap is good, but free is better."
 
-**Update, 2020-12-06**: Today, I updated the "[Forward PaaS](/posts/2020/10/forward-paas)" post because of a **free** tier for Cloudflare Workers KV storage---the existence and performance of which completely eliminated any remaining reluctance I had about that solution. Nonetheless, I'm leaving this post here just in case its information would be of use, and also for the sake of [transparency](/posts/2019/10/otoh).{.yellowBox}
+**Update, 2020-12-06**: Today, I updated the "[Forward PaaS](/posts/2020/10/forward-paas)" post because of the subsequent announcement of a **free** tier for Cloudflare Workers KV storage---the existence and performance of which completely eliminated any remaining reluctance I had about that solution. Nonetheless, I'm leaving this post here just in case its information would be of use, and also for the sake of [transparency](/posts/2019/10/otoh).{.yellowBox}
 
 That's why I thought I would write this little piece about two other free hosting options for your additional consideration. One has been around for over a decade, while the other emerged in only the last couple of months. While both offer great performance despite being free, they also share one singular disadvantage that *might* dissuade you from considering them.
 

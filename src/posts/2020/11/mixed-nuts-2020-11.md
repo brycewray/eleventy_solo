@@ -5,7 +5,7 @@ subtitle: "Another set of odd-servations"
 description: "Follow my erratic mind, if you dare, as it proves anew that it deserves that adjective."
 author: Bryce Wray
 date: 2020-11-07T16:10:00
-lastmod: 2020-12-07T19:20:00
+lastmod: 2020-12-08T16:20:00
 draft: false
 discussionId: "2020-11-mixed-nuts-2020-11"
 featured_image: usman-yousaf-qHETVV5u7Wk-unsplash_5184x3456.jpg
@@ -32,7 +32,7 @@ While writing a few days ago in [Ulysses](https://ulysses.app), I suddenly found
 
 *My “lurch” among [Jamstack](https://jamstack.wtf)-savvy website hosts [over](/posts/2020/07/goodbye-hello) [the](/posts/2020/07/goodbye-hello-part-2) [last](/posts/2020/08/goodbye-hello-part-3) [few](/posts/2020/09/goodbye-hello-part-4) [months](/posts/2020/09/goodbye-hello-part-5) makes it clear that, of the “automatic” hosts[^2], [Vercel](https://vercel.com)’s free tier has by far the best combination of superior worldwide performance (especially because of the [recent enhancements](https://vercel.com/blog/new-edge-dev-infrastructure) to its [Edge Network](https://vercel.com/docs/edge-network/overview)) and clean, no-fuss maintenance. That said, my [experiment](/posts/2020/10/forward-paas) with [Cloudflare Workers sites](https://workers.cloudflare.com) and [Workers KV storage](https://developers.cloudflare.com/workers/learning/how-kv-works) was extremely interesting from a geekiness standpoint and, were I to drop Vercel for some reason, a Cloudflare Workers site—although **not** free—would be the very close second choice.*
 
-**Update, 2020-12-06**: Cloudflare's subsequent announcement of a **free** tier for Cloudflare Workers KV storage followed by my successful test of that tier's performance changed the whole equation, as explained in the updates I made today to "[Forward PaaS](/posts/2020/10/forward-paas)." {.yellowBox}
+**Update**: Cloudflare's subsequent announcement of a **free** tier for Cloudflare Workers KV storage followed by my successful test of that tier's performance changed the whole equation, as explained in the updates I've since made to "[Forward PaaS](/posts/2020/10/forward-paas)." {.yellowBox}
 
 [^1]:	If you think HOAs don’t often get sued, you’re kidding yourself.
 

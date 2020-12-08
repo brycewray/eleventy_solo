@@ -6,7 +6,7 @@ subtitle: "Trying Cloudflare Workers and KV storage"
 description: "How I’m testing the waters on an up-and-coming platform-as-a-service (PaaS) offering."
 author: Bryce Wray
 date: 2020-10-11T18:20:00
-lastmod: 2020-12-06T16:00:00
+lastmod: 2020-12-08T16:15:00
 discussionId: "2020-10-forward-paas"
 featured_image: jj-ying-8bghKxNU1j0-unsplash_4032x3024.jpg
 featured_image_width: 4032
@@ -29,6 +29,8 @@ A year later, Cloudflare [introduced Workers KV](https://blog.cloudflare.com/int
 A Cloudflare Worker is free; but, when I originally published this post, using KV to store your website files [cost at least $5/month for a Workers Unlimited Plan](https://workers.cloudflare.com/#plans). (By “at least,” I mean you have to stay within certain bandwidth limits. Your site probably wouldn’t exceed them but, in case it ever gets a burst of viral popularity one day, you'd want to keep these limits in mind.) Then, in a [blog post](https://blog.cloudflare.com/workers-kv-free-tier/) issued on November 16, 2020, Cloudflare announced a new **free tier** for KV storage which, even better, increased the size limit on each KV storage value from 10&nbsp;MB to 25&nbsp;MB. This appeared to change the ballgame where hobbyists' use of Workers sites is concerned.
 
 That said, I was initially concerned that the free tier might come up short compared to the Workers Unlimited Plan because the former still lacked a key performance capability---specifically, lower first-hit latency---that's included with the latter. However, I've since tested the free tier, and the results suggest the difference is negligible for a static site like this one, so I now *think* that shouldn't be a problem. In addition: just for messing around with a Workers site so you can see how it all works before you go all-in, the free plan is a great new option.
+
+**Important**: Still, be sure that you test this fairly extensively with lots of changes before you commit your site to it, because this can result in more "requests" in a given amount of time than the free tier allows.{.yellowBox}
 
 With the three hosts I described in “[A normal person’s guide to static website hosting](/posts/2020/09/normal-persons-guide-static-website-hosting),” deploying content is as simple and quick as pushing a commit to your chosen online repository. With Cloudflare Workers, you have to use Cloudflare’s `wrangler` command-line interface (CLI) tools (which I’d compare favorably to [Firebase](https://firebase.google.com)’s CLI tools). I’m currently mitigating this through a [GitHub Action](https://github.com/features/actions),  an approach similar to what I described in “[O say can you CI/CD?](/posts/2020/06/o-say-can-you-ci-cd)” and “[Ignition sequence start](/posts/2020/09/ignition-sequence-start)”; but none of this is for normal, non-nerdy folks.
 

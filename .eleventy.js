@@ -25,6 +25,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/assets/svg')
   eleventyConfig.addPassthroughCopy('./src/images') // not just icons due to that one OG image
 
+  // https://rob.cogit8.org/posts/2020-10-28-simple-11ty-cache-busting/
+  eleventyConfig.addFilter("bust", (url) => {
+    const [urlPart, paramPart] = url.split("?")
+    const params = new URLSearchParams(paramPart || "")
+    params.set("v", DateTime.local().toFormat("X"))
+    return `${urlPart}?${params}`
+  })
+
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy")
   })

@@ -3,7 +3,7 @@ main {
 }
 
 html, body {
-  @apply dark:bg-black;
+  @apply text-gray-900 dark:bg-black;
 }
 
 body {

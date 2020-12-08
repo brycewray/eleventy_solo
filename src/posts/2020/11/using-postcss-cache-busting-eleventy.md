@@ -5,7 +5,7 @@ subtitle: "Fun with—and without—asset pipelines"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
 date: 2020-11-10T22:30:00
-lastmod: 2020-12-08T15:40:00
+lastmod: 2020-12-08T15:55:00
 draft: false
 discussionId: "2020-11-using-postcss-cache-busting-eleventy"
 featured_image: jilbert-ebrahimi-pVEcNabAg9o-unsplash_4608x3072.jpg
@@ -104,20 +104,20 @@ module.exports = {
   plugins: [
     require('postcss-import'),
     require('tailwindcss'),
-    require('postcss-preset-env')({ stage: 1 }),
-    require('postcss-clean'),
     require('postcss-hash')({
       // algorithm: "sha512", // default = "md5"
       trim: 20,
       manifest: './_data/manifest.json',
       name: ({dir, name, hash, ext}) => path.join(dir, name + '-' + hash + ext)
     }),
+    require('postcss-preset-env')({ stage: 1 }),
+    require('postcss-clean'),
   ],
 }
 ```
 {% endraw %}
 
-**Additional step, 2020-12-08**: Be sure to put the `postcss-hash` part **last** in your `plugins` array, as shown here; otherwise, it won't work as described herein. **Also**, be sure that, in your build process, PostCSS runs **before** your SSG, or weird things can happen in the end. Sadly, I know whereof I speak.{.yellowBox}
+**Additional step, 2020-12-08**: I strongly suggest you experiment, locally, with the order in which you put `postcss-hash` part **last** in your `plugins` array, to make sure it works as described herein and **doesn't** foul up your build process. Otherwise, weird things can happen in the end. Sadly, I know whereof I speak.{.yellowBox}
 
 Before I get to the `manifest`  option of the `postcss-hash` part, I’ll note that:
 - I didn’t set the hashing `algorithm`, so it keeps the default of [MD5](https://searchsecurity.techtarget.com/definition/MD5) (Hugo’s default is [SHA-256](https://en.wikipedia.org/wiki/SHA-2)). The documentation specifies a few other options you can set, but I find MD5 to be just fine.

@@ -5,7 +5,7 @@ subtitle: "Fun with—and without—asset pipelines"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
 date: 2020-11-10T22:30:00
-lastmod: 2020-12-05T17:55:00
+lastmod: 2020-12-08T15:40:00
 draft: false
 discussionId: "2020-11-using-postcss-cache-busting-eleventy"
 featured_image: jilbert-ebrahimi-pVEcNabAg9o-unsplash_4608x3072.jpg
@@ -15,6 +15,8 @@ featured_image_alt: "Monochrome image of a pane of glass out of which a hole has
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@jilburr?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jilbert Ebrahimi</a>; <a href="https://unsplash.com/s/photos/broken-glass?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
+
+**Important note, 2020-12-08**: If you previously read this, please note the **additional information** (also yellow-boxed) I added today in the instructions.{.yellowBox}
 
 Just when I thought I’d finished last year’s “[dance](/posts/2019/12/sorta-strange-ssg-trip)” among [static site generators](https://jamstack.org/generators/) (SSGs), it recently rose from the grave like a hockey-mask-wearing killer from a horror flick.
 
@@ -92,7 +94,7 @@ So, now, let me tell you fellow and sister Eleventy users how easy it is, with t
 
 First, access your chosen command line interface (such as the macOS Terminal app) and install the plugin within your Eleventy project directory. If you use [npm](https://npmjs.com), the command to enter is `npm i postcss-hash --save-dev`; if you use [Yarn](https://yarnpkg.com), it’s `yarn add postcss-hash --dev `.
 
-Then, add the plugin to your `postcss.config.js` file. If you’re happy to go with the defaults, that’s as simple as adding `require('postcss-hash')` within your `plugins` object—**but**, for an Eleventy site, you **must** specify the location of the *[manifest](https://en.wikipedia.org/wiki/Manifest_file)* that it produces. I’ll explain why in a moment.[^5] In addition, there are other available options. For example, here’s my entire `postcss.config.js` file as of this post’s original writing:
+Then, add the plugin to your `postcss.config.js` file. If you’re happy to go with the defaults, that’s as simple as adding `require('postcss-hash')` within your `plugins` object—**but**, for an Eleventy site, you **must** specify the location of the *[manifest](https://en.wikipedia.org/wiki/Manifest_file)* that it produces. I’ll explain why in a moment.[^5] In addition, there are other available options. For example, here’s my entire `postcss.config.js` file as of this post’s 2020-12-07 update:
 
 {% raw %}
 ```js
@@ -100,20 +102,22 @@ const path = require('path')
 
 module.exports = {
   plugins: [
+    require('postcss-import'),
+    require('tailwindcss'),
+    require('postcss-preset-env')({ stage: 1 }),
+    require('postcss-clean'),
     require('postcss-hash')({
       // algorithm: "sha512", // default = "md5"
       trim: 20,
       manifest: './_data/manifest.json',
       name: ({dir, name, hash, ext}) => path.join(dir, name + '-' + hash + ext)
     }),
-    require('postcss-import'),
-    require('tailwindcss'),
-    require('postcss-preset-env')({ stage: 1 }),
-    require('postcss-clean'),
   ],
 }
 ```
 {% endraw %}
+
+**Additional step, 2020-12-08**: Be sure to put the `postcss-hash` part **last** in your `plugins` array, as shown here; otherwise, it won't work as described herein. **Also**, be sure that, in your build process, PostCSS runs **before** your SSG, or weird things can happen in the end. Sadly, I know whereof I speak.{.yellowBox}
 
 Before I get to the `manifest`  option of the `postcss-hash` part, I’ll note that:
 - I didn’t set the hashing `algorithm`, so it keeps the default of [MD5](https://searchsecurity.techtarget.com/definition/MD5) (Hugo’s default is [SHA-256](https://en.wikipedia.org/wiki/SHA-2)). The documentation specifies a few other options you can set, but I find MD5 to be just fine.

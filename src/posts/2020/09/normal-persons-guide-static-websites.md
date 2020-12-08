@@ -50,7 +50,7 @@ Then, the static site, with content already in place for you to see:
 
 <p class="lazypicturecaption">Images used to build these diagrams (all&nbsp;sourced from&nbsp;<a href="https://pixabay.com">Pixabay</a>): <a href="https://pixabay.com/users/FiveFlowersForFamilyFirst-552028/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2243898">FiveFlowersForFamilyFirst</a>; <a href="https://pixabay.com/users/Clker-Free-Vector-Images-3736/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=41259">Clker-Free-Vector-Images</a>; <a href="https://pixabay.com/users/200degrees-2051452/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1745473">200&nbsp;Degrees</a>; and <a href="https://pixabay.com/users/MTZD-1593970/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2488093">Mateusz&nbsp;Zdrzałek</a>.</p>
 
-With no reason to wait on a database to generate the content (all the aforementioned security concerns aside), the static site downloads more swiftly. All other things being equal—content, server, connectivity, browser, and computer— it always will.
+With no reason to wait on a database to generate the content (all the aforementioned security concerns aside), the static site downloads more swiftly. All other things being equal—content, server, connectivity, browser, and computer—it always will.
 
 But does having a static site mean you have to write, or hire somebody to write, all that code that makes such a site work?
 

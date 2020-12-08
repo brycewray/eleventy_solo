@@ -5,7 +5,7 @@ subtitle: "Fun with—and without—asset pipelines"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
 date: 2020-11-10T22:30:00
-lastmod: 2020-12-08T15:55:00
+lastmod: 2020-12-08T22:10:00
 draft: false
 discussionId: "2020-11-using-postcss-cache-busting-eleventy"
 featured_image: jilbert-ebrahimi-pVEcNabAg9o-unsplash_4608x3072.jpg
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@jilburr?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jilbert Ebrahimi</a>; <a href="https://unsplash.com/s/photos/broken-glass?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-**Important note, 2020-12-08**: If you previously read this, please note the **additional information** (also yellow-boxed) I added today in the instructions.{.yellowBox}
+**Important note, 2020-12-08**: Since I initially published this, I have run into significant build-time problems with the method described herein, despite its appearing to work just fine locally. In the meantime, I am going to resort to the method described in "[Simple 11ty cache busting](https://rob.cogit8.org/posts/2020-10-28-simple-11ty-cache-busting/)" by Rob Hudson; I also reluctantly recommend that you **not** follow the specific instructions in my article below. I will keep it here for informational purposes (at least, in understanding the importance of cache-busting) and for the sake of [transparency](/posts/2019/10/otoh). Finally: if/when I find a solution to the problems I found, I'll update this one again and, perhaps, write an additional article with my findings. I apologize to anyone who's run into trouble based on these recommendations!{.yellowBox}
 
 Just when I thought I’d finished last year’s “[dance](/posts/2019/12/sorta-strange-ssg-trip)” among [static site generators](https://jamstack.org/generators/) (SSGs), it recently rose from the grave like a hockey-mask-wearing killer from a horror flick.
 
@@ -102,22 +102,20 @@ const path = require('path')
 
 module.exports = {
   plugins: [
-    require('postcss-import'),
-    require('tailwindcss'),
     require('postcss-hash')({
       // algorithm: "sha512", // default = "md5"
       trim: 20,
       manifest: './_data/manifest.json',
       name: ({dir, name, hash, ext}) => path.join(dir, name + '-' + hash + ext)
     }),
+    require('postcss-import'),
+    require('tailwindcss'),
     require('postcss-preset-env')({ stage: 1 }),
     require('postcss-clean'),
   ],
 }
 ```
 {% endraw %}
-
-**Additional step, 2020-12-08**: I strongly suggest you experiment, locally, with the order in which you put `postcss-hash` part **last** in your `plugins` array, to make sure it works as described herein and **doesn't** foul up your build process. Otherwise, weird things can happen in the end. Sadly, I know whereof I speak.{.yellowBox}
 
 Before I get to the `manifest`  option of the `postcss-hash` part, I’ll note that:
 - I didn’t set the hashing `algorithm`, so it keeps the default of [MD5](https://searchsecurity.techtarget.com/definition/MD5) (Hugo’s default is [SHA-256](https://en.wikipedia.org/wiki/SHA-2)). The documentation specifies a few other options you can set, but I find MD5 to be just fine.

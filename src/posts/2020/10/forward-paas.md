@@ -6,7 +6,7 @@ subtitle: "Trying Cloudflare Workers and KV storage"
 description: "How I’m testing the waters on an up-and-coming platform-as-a-service (PaaS) offering."
 author: Bryce Wray
 date: 2020-10-11T18:20:00
-lastmod: 2020-12-08T16:15:00
+lastmod: 2020-12-08T22:20:00
 discussionId: "2020-10-forward-paas"
 featured_image: jj-ying-8bghKxNU1j0-unsplash_4032x3024.jpg
 featured_image_width: 4032
@@ -37,16 +37,6 @@ With the three hosts I described in “[A normal person’s guide to static webs
 (For those who care: the GitHub Action is at the end of this post. In fact, I provided two: one for the [Hugo](https://gohugo.io) static site generator (SSG), and one for the [Eleventy](https://11ty.dev) SSG.)
 
 There’s another minor issue, but it’s also fairly easily resolved although it took me several days to find the answer, eventually with help from two extremely kind gentlemen. (Thanks again, [Kenton Varda](https://stackoverflow.com/users/2686899/kenton-varda) and [Brian Li](https://brianli.com/)!) Here’s the deal: if you put a *regular* site behind Cloudflare, the service automatically caches the usual static assets (in my site’s case, CSS and font files, since [Cloudinary](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu) [handles nearly all of the images](/posts/2020/07/transformed)) so they’ll load faster after the first time. But, [with a Cloudflare Workers site, it doesn’t work that way *by default*](https://stackoverflow.com/questions/64254291/cache-control-headers-in-a-cloudflare-workers-site), so you have to add a little JavaScript to the Worker's `index.js` file to make it happen. Again, it’s not for non-nerds, at least not right now.
-
-## Stay tuned
-
-*(Updated 2020-12-06)*
-
-Since I wasn’t quite sure upfront how this would work for me, I bought only one month of the Workers Unbundled plan (before the announcement of the free tier) to give the whole thing a spin. The performance numbers, both on this site and a special testing-only site I have on multiple hosting vendors, were impressive. Once the free tier came about and I was able to confirm its suitability, that eliminated my last qualm about making this a Cloudflare Workers KV site. As I explained to someone via email a few weeks ago, *before* the announcement of the free tier:
-
-> I believe right now I’ve found a pretty good solution in the combination of Cloudflare Workers and the KV storage; the main thing I have to decide is whether I want to continue to pay five dollars a month for it. So far, I’m justifying that expense plus the five-a-month for FastComments and the 14-a-month for Fathom Analytics (although the latter is reduced by a small number of affiliate earnings) by telling myself, “Well, other guys have hobbies that cost a lot more a month than this,” but we’ll see if my credit card and I can continue to run with that. The fallback host choice is still Vercel, since its free tier is so “performant,” as the Kewl Kids say these days, but it’s hard to ignore that Cloudflare’s *[point of presence (POP)]* count vastly outdoes that of Vercel’s. Therefore, as long as I have readers in as many parts of the globe as the analytics keep telling me I do, I feel obligated to put the content out there in a way that makes their experience as pleasant (or, at least, as non-laggy) as possible.
-
-So, once it was clear the free tier worked well enough for my purposes, that made my decision pretty easy.
 
 ---- 
 

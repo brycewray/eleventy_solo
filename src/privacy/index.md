@@ -4,16 +4,12 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T14:00:00
-lastmod: 2020-12-09T16:15:00
+lastmod: 2020-12-09T16:32:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
 ## Notes about external services
-
-### Cloudflare Web Analytics
-
-At least for testing purposes, this site uses Cloudflare Web Analytics, which [Cloudflare claims](https://blog.cloudflare.com/privacy-first-web-analytics/) doesn’t track individual users and doesn’t leave cookies.
 
 ### FastComments
 

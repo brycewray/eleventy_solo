@@ -1,4 +1,4 @@
-// Detect when any CSS files change by adding their timestamps (integers only)
+// Detect when any CSS files change
 
 const fs = require('fs')
 const md5 = require('md5')
@@ -9,16 +9,13 @@ cssFiles = globAll.sync([
   'src/assets/css/*.css'
 ])
 
-var cssTotal = 0
 var cssMd5Total = 0
 var cssContent = ''
 
 for(i=0; i<cssFiles.length; i++) {
-  cssTotal += parseInt((fs.statSync(cssFiles[i])).mtimeMs)
   cssContent += (fs.readFileSync(cssFiles[i]))
 }
 cssMd5Total = md5(cssContent)
-console.log(`CSS hash = `, cssTotal)
 console.log(`CSS MD5 result =`, cssMd5Total)
 
 var jsonValue = `{

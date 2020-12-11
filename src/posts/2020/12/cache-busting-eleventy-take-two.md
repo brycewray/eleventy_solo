@@ -4,7 +4,7 @@ title: "Cache-busting in Eleventy, take two"
 subtitle: "This time, a solution that really (?) works"
 description: "Sometimes, semi-bespoke is best."
 author: Bryce Wray
-date: 2020-12-11T22:30:00 # 4:30 PM CST
+date: 2020-12-11T22:55:00
 #lastmod
 draft: false
 discussionId: "2020-12-cache-busting-eleventy-take-two"
@@ -117,7 +117,7 @@ In the starter set repo, the files of note are:
 	- `prod:postcss`
 	- `testbuild`
 	- `testProd:postcss`
-- `/src/_includes/partials/head.njk`, the partial template which "tells" the site to use the hashed name when referring to the CSS file.
+- `/src/_includes/partials/head.js`, the partial template which "tells" the site to use the hashed name when referring to the CSS file. (On this site's repo, by comparison, I use Nunjucks templating so the corresponding template is called `head.njk`.)
 
 In the three `package.json` scripts whose names end with `postcss`, the key part for each is: \
 `postcss src/assets/css/index.css -o _site/css/$(cat csshash)`\

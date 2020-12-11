@@ -5,7 +5,7 @@ subtitle: "Fun with—and without—asset pipelines"
 description: "Optimizing how browsers handle your site’s CSS, and why you should care about that."
 author: Bryce Wray
 date: 2020-11-10T22:30:00
-lastmod: 2020-12-08T22:10:00
+lastmod: 2020-12-11T22:30:00 # 4:30 PM CST
 draft: false
 discussionId: "2020-11-using-postcss-cache-busting-eleventy"
 featured_image: jilbert-ebrahimi-pVEcNabAg9o-unsplash_4608x3072.jpg
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@jilburr?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jilbert Ebrahimi</a>; <a href="https://unsplash.com/s/photos/broken-glass?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 ---
 
-**Important note, 2020-12-08**: Since I initially published this, I have run into significant build-time problems with the method described herein, despite its appearing to work just fine locally. In the meantime, I am going to resort to the method described in "[Simple 11ty cache busting](https://rob.cogit8.org/posts/2020-10-28-simple-11ty-cache-busting/)" by Rob Hudson; I also reluctantly recommend that you **not** follow the specific instructions in my article below. I will keep it here for informational purposes (at least, in understanding the importance of cache-busting) and for the sake of [transparency](/posts/2019/10/otoh). Finally: if/when I find a solution to the problems I found, I'll update this one again and, perhaps, write an additional article with my findings. I apologize to anyone who's run into trouble based on these recommendations!{.yellowBox}
+**Important note, 2020-12-11**: After I initially published this, I ran into significant build-time problems with the method described herein, despite its first appearing to work just fine both locally and online. I briefly resorted to the method described in "[Simple 11ty cache busting](https://rob.cogit8.org/posts/2020-10-28-simple-11ty-cache-busting/)" by Rob Hudson before I found another solution, which I explain in "[Cache-busting in Eleventy, take two](/posts/2020/12/cache-busting-eleventy-take-two)." I reluctantly recommend that you **not** follow the specific instructions in the article below. I will keep it here for informational purposes (at least, in understanding the importance of cache-busting) and for the sake of [transparency](/posts/2019/10/otoh). **My apologies** to anyone who's run into trouble based on these recommendations as they originally appeared!{.yellowBox}
 
 Just when I thought I’d finished last year’s “[dance](/posts/2019/12/sorta-strange-ssg-trip)” among [static site generators](https://jamstack.org/generators/) (SSGs), it recently rose from the grave like a hockey-mask-wearing killer from a horror flick.
 
@@ -94,7 +94,7 @@ So, now, let me tell you fellow and sister Eleventy users how easy it is, with t
 
 First, access your chosen command line interface (such as the macOS Terminal app) and install the plugin within your Eleventy project directory. If you use [npm](https://npmjs.com), the command to enter is `npm i postcss-hash --save-dev`; if you use [Yarn](https://yarnpkg.com), it’s `yarn add postcss-hash --dev `.
 
-Then, add the plugin to your `postcss.config.js` file. If you’re happy to go with the defaults, that’s as simple as adding `require('postcss-hash')` within your `plugins` object—**but**, for an Eleventy site, you **must** specify the location of the *[manifest](https://en.wikipedia.org/wiki/Manifest_file)* that it produces. I’ll explain why in a moment.[^5] In addition, there are other available options. For example, here’s my entire `postcss.config.js` file as of this post’s 2020-12-07 update:
+Then, add the plugin to your `postcss.config.js` file. If you’re happy to go with the defaults, that’s as simple as adding `require('postcss-hash')` within your `plugins` object—**but**, for an Eleventy site, you **must** specify the location of the *[manifest](https://en.wikipedia.org/wiki/Manifest_file)* that it produces. I’ll explain why in a moment.[^5] In addition, there are other available options. For example, here’s my entire `postcss.config.js` file as of this writing:
 
 {% raw %}
 ```js

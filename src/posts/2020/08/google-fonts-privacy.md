@@ -6,7 +6,7 @@ subtitle: "It’s about more than trust"
 description: "Explaining changes I’ve made to this site because of its new privacy policy."
 author: Bryce Wray
 date: 2020-08-08T19:35:00
-lastmod: 2020-12-05T14:33:00
+lastmod: 2020-12-13T18:35:00
 discussionId: "2020-08-google-fonts-privacy"
 featured_image: morning-brew-5UEoA5JB6VE-unsplash_3000x2000.jpg
 featured_image_width: 3000
@@ -78,8 +78,6 @@ Moreover, I wouldn’t *want* to do that. I’m annoyed whenever I encounter all
 So, yesterday, I began serving my chosen Google Fonts typefaces “locally.” I initially obtained them from [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts), but using those precludes using [variable fonts](https://css-tricks.com/google-fonts-variable-fonts/), as I prefer; so I had to jump through a few hoops to obtain those variable fonts—yes, from Google—and “locally” provide them. (I explain the procedure in “[Good stuff without Google](/posts/2020/08/good-stuff-without-google).”)
 
 Anyway: because Google updates Google Fonts typefaces frequently, I will have to monitor their versions and keep my “local “ copies straight. That’s fine. I get to keep the site’s typography as I want, while keeping the site from helping Google track you to even the limited extent that Google-served typefaces apparently do.
-
-**Note, 2020-10-22**: I have since reverted to the "[system fonts stack](/posts/2018/10/web-typography-part-2)."{.yellowBox}
 
 ## A little more cleaning-up
 

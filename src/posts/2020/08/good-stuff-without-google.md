@@ -6,7 +6,7 @@ subtitle: "Yes to variable typefaces, no to tracking"
 description: "How your website can still have the coolness of variable typefaces, but without Google’s tracking."
 author: Bryce Wray
 date: 2020-08-10T01:05:00
-lastmod: 2020-12-05T14:33:00
+lastmod: 2020-12-13T18:35:00
 discussionId: "2020-08-good-stuff-without-google"
 featured_image: printing-plate-typography-1030849_5122x3414.jpg
 featured_image_width: 5122
@@ -38,7 +38,7 @@ That would require the visitor’s browser to access *four* font files: one for 
 
 On the other hand, a *variable* font file can be used to provide a wide range of, as the name implies, **variations**. For the same example above, only two *variable* font files would be necessary: one regular that handles the “how,” the “you,” and the question mark; and one italicized that handles both the “Hello” and the “are.” And, if you don’t care about true italics *vs.* simply slanting or *obliquing*—which I do—you even could use just one file to obtain that pseudo-styling.[^InterOblique]
 
-[^InterOblique]: Given my own experience trying this, I suggest against it because it can get hairy supporting it properly on a cross-browsers basis. I found this especially true for [Inter](https://rsms.me/inter) in both Firefox and Safari---which was sad, because Inter is a justifiably popular font.
+[^InterOblique]: Given my own experience trying this, I suggest against it because it can get hairy supporting it properly on a cross-browsers basis. I've found this especially true for [Inter](https://rsms.me/inter) in both Firefox and Safari---which is sad, because Inter is a justifiably popular font.
 
 There are drawbacks, of course. Precisely *because* it contains more variations in its code, a variable font file is considerably larger than a static font file for the same typeface. My site’s styling makes heavy use of all four of the major combinations—regular, italic, bold regular, and bold italic—so for me it makes sense to use variable fonts; but, if your site doesn’t do so, you’re probably just as well off with static fonts. Just keep variable fonts in mind for situations that require them.
 

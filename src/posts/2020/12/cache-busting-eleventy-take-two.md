@@ -5,7 +5,7 @@ subtitle: "This time, a solution that really (?) works"
 description: "Sometimes, semi-bespoke is best."
 author: Bryce Wray
 date: 2020-12-11T22:55:00
-#lastmod
+lastmod: 2020-12-13T18:45:00
 draft: false
 discussionId: "2020-12-cache-busting-eleventy-take-two"
 featured_image: broken-glass-549087_4000x3000.jpg
@@ -34,11 +34,12 @@ Before I get into how I discovered what was wrong with the info I'd previously p
 
 While you certainly *can* do everything for your site with just one original CSS file, I tend to break my CSS into multiple files (for example, `prismjs.css` is dedicated to formatting code blocks) and then use PostCSS to *import* and *combine* them into one final file for the site to use. It not only makes it easier to organize styles; it also is the approach [recommended](https://tailwindcss.com/docs/using-with-preprocessors#build-time-imports) in [Tailwind CSS](https://tailwindcss.com)'s documentation. Thus, my repo's `/src/assets/css/index.css` file currently[^fontsCSS] looks like this:
 
-[^fontsCSS]: The only exception is that, during those times when the site is using fonts that aren't part of the [system fonts stack](/posts/2018/10/web-typography-part-2), the first `@import` statement is `@import 'fonts.css'` (but **after** the `/*! purgecss start ignore */` line, as you'll understand if you're a Tailwind user).
+[^fontsCSS]: The only exception is that, during those times when the site is using the [system fonts stack](/posts/2018/10/web-typography-part-2) rather than any web fonts, the `@import 'fonts.css'` statement isn't there.
 
 {% raw %}
 ```css
 /*! purgecss start ignore */
+@import 'fonts.css';
 @import 'nav.css';
 @import 'prismjs.css';
 @import 'tailwindcss/base';

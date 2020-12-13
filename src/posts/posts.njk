@@ -43,13 +43,13 @@ pagination:
         <div>          
           <h2 class="text-xl mb-1 leading-tight tracking-tight"><a href="{{ post.url }}">{{ post.data.title }}</a><br />
           <span class="text-base tracking-tight">{{ post.data.subtitle }}</span></h2>
-          <p class="font-sans text-xs dateInfo" style="margin-top: 0;">
+          <p class="text-xs dateInfo" style="margin-top: 0;">
             Published: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
             {% if post.data.lastmod %}
             <br />Last modified: <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>
             {% endif %}
           </p>
-          <p class="font-sans text-sm mt-2 mb-10">
+          <p class="text-sm mt-2 mb-10">
             {{ post.data.description }}
           </p>
         </div>

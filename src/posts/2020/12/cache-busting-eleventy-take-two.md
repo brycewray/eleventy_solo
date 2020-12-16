@@ -5,7 +5,7 @@ subtitle: "This time, a solution that really (?) works"
 description: "Sometimes, semi-bespoke is best."
 author: Bryce Wray
 date: 2020-12-11T22:55:00
-lastmod: 2020-12-13T18:45:00
+lastmod: 2020-12-16T19:25:00
 draft: false
 discussionId: "2020-12-cache-busting-eleventy-take-two"
 featured_image: broken-glass-549087_4000x3000.jpg
@@ -127,3 +127,5 @@ In the three `package.json` scripts whose names end with `postcss`, the key part
 I hope that this solution, and this description of how I got to it, will at least somewhat make up for my unwittingly leading you down a primrose path in the previous article about this subject.
 
 Happy cache-busting---for real this time, I hope.
+
+**Note, 2020-12-16**: If you use [Netlify](https://netlify.app), be sure you **turn off** its post-processing of your CSS, which I've found can bollix up this method. *(My repos' code already handles such processing anyway.)* You can do it either through the Netlify GUI (**Build &amp; deploy** &gt; **Post processing** &gt; **Asset optimization**) or through use of an appropriately configured top-level `netlify.toml` file such as what I've now added to the starter set. Whether other hosts' settings would be similarly disruptive, I can't say; the only ones on which I've tested this method so far are [Cloudflare Workers](https://workers.cloudflare.com), Netlify, and [Vercel](https://vercel.com).{.yellowBox}

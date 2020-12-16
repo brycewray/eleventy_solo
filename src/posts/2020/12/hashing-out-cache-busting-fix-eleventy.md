@@ -5,7 +5,7 @@ subtitle: "Digging further under the hood"
 description: "Some of the code behind my previous post."
 author: Bryce Wray
 date: 2020-12-15T23:00:00
-#lastmod: TBD
+lastmod: 2020-12-16T12:30:00
 draft: false
 discussionId: "2020-12-hashing-out-cache-busting-fix-eleventy"
 featured_image: csshash-js_in_Nova_2786x1650.png
@@ -133,7 +133,7 @@ From there, the focus shifts to the scripts in the project's `package.json` file
 
 To be specific:
 
-- `hasher` runs that `cssdate.js` file we just covered. As you can see, `hasher` is part of the `start`, `build`, and `testProd` scripts.
+- `hasher` runs that `cssdate.js` file we just covered. As you can see, `hasher` is part of the `start`, `build`, and `testbuild` scripts.
 - Each of the scripts ending in `:postcss` (which one gets run depends on whether I run `start`, `testbuild`, or `build`) invokes the [postcss-cli](https://npmjs.com/package/postcss-cli) package to:
 	- Read and process the `index.css` file (which, remember, includes all those `@import`s).
 	- Write the resulting CSS to the `_site/css/` output folder (`_site` is the default folder where an Eleventy site exists when built) and name the file whatever is the content of that `csshash` text file that `cssdate.js` wrote to the project's top level.

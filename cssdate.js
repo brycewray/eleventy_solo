@@ -1,4 +1,5 @@
 // Detect when any CSS files change
+// Should've been named csshash.js, but it's a long story...
 
 const fs = require('fs')
 const md5 = require('md5')

@@ -66,6 +66,8 @@ arraytest.js
 .Ulysses*.plist
 ztest.js
 
+.vscode
+
 gh-pages
 gh-pages.pub
 .nova

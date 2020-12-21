@@ -13,6 +13,14 @@
   }
 }
 
+ul li li {
+  list-style-type: circle;
+}
+
+ul li li li {
+  list-style-type: square;
+}
+
 main {
   @apply pt-12; /* needed in Eleventy repo; handled elsewhere in Hugo repo */
 }

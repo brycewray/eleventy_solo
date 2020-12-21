@@ -1,7 +1,7 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
 title: "Gems in the rough"
-subtitle: "A few little quick suggestions for your static website"
+subtitle: "A few suggestions for your static website"
 description: "I learned these the hard way; perhaps you won’t have to do the same."
 author: Bryce Wray
 date: 2020-12-21T18:10:00

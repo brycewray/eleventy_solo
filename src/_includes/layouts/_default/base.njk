@@ -5,15 +5,6 @@
     {% include 'layouts/partials/header.njk' %}
     {{ content | safe }}
     {% include 'layouts/partials/footer.njk' %}
-    <script>
-      window.FPConfig = {
-        // delay: 0, // default 0
-        // ignoreKeywords: ['/about', '/posts', '/privacy'],
-        maxRPS: 0, // default 3
-        hoverDelay: 25, // default 50
-      }
-    </script>
-    <script src="/assets/js/flying-pages_2-1-2.min.js" defer></script>
     <script src="/assets/js/lazyload_17-3-0.min.js"></script>
     <script>
       var lazyLoadInstance = new LazyLoad({

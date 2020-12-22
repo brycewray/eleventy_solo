@@ -4,7 +4,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T14:00:00
-lastmod: 2020-12-12T19:25:00
+lastmod: 2020-12-22T18:55:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -28,6 +28,10 @@ This site uses [Fathom Analytics](https://usefathom.com), which [does not store 
 When I learned that the use of [Google Fonts](https://fonts.google.com) *served from* Google transmit a visitor's apparently **not** anonymized IP address[^Issue1495] to Google, I quit using this product (and suggesting to others that they use it) and, instead, served from my own site any typefaces that aren’t part of the so-called “[system fonts stack](/posts/2018/10/web-typography-part-2).”
 
 [^Issue1495]: For the discussion that convinced me to go this route after my initial skepticism about its necessity, see the Google Fonts GitHub issue, “[GDPR compliance](https://github.com/google/fonts/issues/1495).”
+
+### Panelbear
+
+This site is currently using [Panelbear](https://panelbear.com)'s analytics product, which [does not store your personal data in any way](https://panelbear.com/docs/what-we-collect/).
 
 ## Other considerations
 

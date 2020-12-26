@@ -4,8 +4,8 @@ title: "Fast but flawed"
 subtitle: "Two more static website hosts to consider (maybe)"
 description: "These can give you great performance, but there’s a catch."
 author: Bryce Wray
-date: 2020-11-25T22:30:00 # 4:30 PM CST Wed., Nov. 25
-lastmod: 2020-12-12T19:15:00
+date: 2020-11-25T16:30:00-06:00
+lastmod: 2020-12-12T13:15:00-06:00
 #draft: false
 discussionId: "2020-11-fast-but-flawed"
 featured_image: jack-van-der-spoel-dgCBjYHZ0kc-unsplash_5472x3648.jpg

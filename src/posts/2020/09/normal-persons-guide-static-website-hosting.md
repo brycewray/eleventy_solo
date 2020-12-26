@@ -5,8 +5,8 @@ title: "A normal person’s guide to static website hosting"
 subtitle: "Where your site should “live”"
 description: "After suggesting how a non-geek could most easily have a website, I now offer thoughts on the site’s hosting."
 author: Bryce Wray
-date: 2020-09-26T18:55:00
-lastmod: 2020-10-01T11:45:00
+date: 2020-09-26T13:55:00-05:00
+lastmod: 2020-10-01T06:45:00-05:00
 #draft: true
 discussionId: "2020-09-normal-persons-guide-static-website-hosting"
 featured_image: tim-mossholder-GOMhuCj-O9w-unsplash_9000x6000.jpg

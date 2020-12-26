@@ -3,8 +3,8 @@ layout: layouts/posts/singlepostherofit.njk
 title: The obligatory About Me page
 description: Not a bio (you’d fall asleep), but just a few explanatory observations.
 author: Bryce Wray
-date: 2018-09-14T20:00:00
-lastmod: 2020-09-27T09:57:00
+date: 2018-09-14T15:00:00-05:00
+lastmod: 2020-09-27T04:57:00-05:00
 discussionId: "about"
 featured_image: question-mark-over-mac-keyboard-49958_1280x905.jpg
 featured_image_width: 1280

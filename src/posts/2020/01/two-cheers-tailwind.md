@@ -5,8 +5,8 @@ title: "Two cheers for Tailwind"
 subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray
-date: 2020-01-12T17:00:00
-lastmod: 2020-11-22T16:35:00
+date: 2020-01-12T11:00:00-06:00
+lastmod: 2020-11-22T10:35:00-06:00
 discussionId: "2020-01-two-cheers-tailwind"
 featured_image: CSS-code-1797778_1971x1306.jpg
 featured_image_width: 1971

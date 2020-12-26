@@ -3,8 +3,8 @@ layout: layouts/_default/index.njk
 title: "Home page"
 description: "brycewray.com: Opinions, observations, nerdiness, miscellany." # quotation marks to allow colon
 author: Bryce Wray
-date: 2018-09-15T02:00:00
-lastmod: 2020-07-17T00:30:00
+date: 2018-09-15T21:00:00-05:00
+lastmod: 2020-07-16T19:30:00-05:00
 featured_image: typewriter-monochrome_2242164_6260x4374.jpg
 featured_image_width: 6260
 featured_image_height: 4374

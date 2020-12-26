@@ -4,8 +4,8 @@ title: "Hashing out a cache-busting fix for Eleventy"
 subtitle: "Digging further under the hood"
 description: "Some of the code behind my previous post."
 author: Bryce Wray
-date: 2020-12-15T23:00:00
-lastmod: 2020-12-17T12:50:00
+date: 2020-12-15T17:00:00-06:00
+lastmod: 2020-12-17T06:50:00-06:00
 draft: false
 discussionId: "2020-12-hashing-out-cache-busting-fix-eleventy"
 featured_image: csshash-js_in_Nova_2786x1650.png

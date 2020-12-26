@@ -5,7 +5,7 @@ title: "Conversation piece"
 subtitle: "Commenting options for your static website"
 description: "Here are several ways you can hear from your visitors."
 author: Bryce Wray
-date: 2020-10-13T21:30:00
+date: 2020-10-13T16:30:00-05:00
 #lastmod
 #draft: true
 discussionId: "2020-10-conversation-piece"

@@ -5,8 +5,8 @@ title: "Ignition sequence start"
 subtitle: "GitHub Actions to deploy to Firebase Hosting"
 description: "Missing that easy workflow you get with other hosts? This script is for you."
 author: Bryce Wray
-date: 2020-09-27T13:05:00
-lastmod: 2020-11-27T17:32:00
+date: 2020-09-27T08:05:00-05:00
+lastmod: 2020-11-27T11:32:00-06:00
 #draft: true
 discussionId: "2020-09-ignition-sequence-start"
 featured_image: spacex-OHOU-5UVIYQ-unsplash_3000x2000.jpg

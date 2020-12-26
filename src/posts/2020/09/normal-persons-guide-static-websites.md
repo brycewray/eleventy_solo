@@ -5,8 +5,8 @@ title: "A normal person’s guide to static websites"
 subtitle: "Advice from a semi-normal old web geek"
 description: "Want to have a website of your own but having trouble figuring out how to proceed? Here’s some help."
 author: Bryce Wray
-date: 2020-09-22T21:35:00
-lastmod: 2020-09-25T14:33:00
+date: 2020-09-22T16:35:00-05:00
+lastmod: 2020-09-25T09:33:00-05:00
 #draft: true
 discussionId: "2020-09-normal-persons-guide-static-websites"
 featured_image: christina-wocintechchat-com-EkeThvO9VfM-unsplash_6016x4016.jpg

@@ -5,8 +5,8 @@ title: "The full .11ty.js monty"
 subtitle: "Going all-JavaScript with my Eleventy site"
 description: "Once again, I can’t resist a nerdy challenge."
 author: Bryce Wray
-date: 2020-04-15T22:30:00
-lastmod: 2020-11-07T15:38:00
+date: 2020-04-15T17:30:00-05:00
+lastmod: 2020-11-07T09:38:00-06:00
 discussionId: "2020-04-full-11ty-js-monty"
 featured_image: puzzle-completion-654962_5184x3888.jpg
 featured_image_width: 5184

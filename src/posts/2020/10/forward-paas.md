@@ -5,8 +5,8 @@ title: "Forward PaaS"
 subtitle: "Trying Cloudflare Workers and KV storage"
 description: "How I’m testing the waters on an up-and-coming platform-as-a-service (PaaS) offering."
 author: Bryce Wray
-date: 2020-10-11T18:20:00
-lastmod: 2020-12-12T19:15:00
+date: 2020-10-11T13:20:00-05:00
+lastmod: 2020-12-12T13:15:00-06:00
 discussionId: "2020-10-forward-paas"
 featured_image: jj-ying-8bghKxNU1j0-unsplash_4032x3024.jpg
 featured_image_width: 4032

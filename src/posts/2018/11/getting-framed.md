@@ -5,8 +5,8 @@ title: Getting framed
 subtitle: Why I still use Bootstrap
 description: "Reasons why one might still want to use a CSS framework."
 author: Bryce Wray
-date: 2018-11-14T15:15:00
-lastmod: 2020-11-26T14:05:00
+date: 2018-11-14T09:15:00-06:00
+lastmod: 2020-11-26T09:05:00-05:00
 discussionId: "2018-11-getting-framed"
 featured_image: ricardo-gomez-angel-7bzbyafVTYg-unsplash_2859x1888.jpg
 featured_image_width: 2859

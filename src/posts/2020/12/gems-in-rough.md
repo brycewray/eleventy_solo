@@ -4,8 +4,8 @@ title: "Gems in the rough"
 subtitle: "A few suggestions for your static website"
 description: "I learned these the hard way; perhaps you won’t have to do the same."
 author: Bryce Wray
-date: 2020-12-21T18:10:00
-lastmod: 2020-12-22T18:50:00
+date: 2020-12-21T12:10:00-06:00
+lastmod: 2020-12-22T13:50:00-06:00
 #draft: false
 discussionId: "2020-12-gems-in-rough"
 featured_image: gems-836763_5184x3456.jpg

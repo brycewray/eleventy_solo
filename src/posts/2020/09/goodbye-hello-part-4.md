@@ -5,8 +5,8 @@ title: "Goodbye and hello • Part 4"
 subtitle: "The future is now, so to Render we go"
 description: "My curiosity overcomes me and, yet again, I move the site."
 author: Bryce Wray
-date: 2020-09-05T14:00:00
-lastmod: 2020-09-22T22:30:00
+date: 2020-09-05T09:00:00-05:00
+lastmod: 2020-09-22T17:30:00-05:00
 discussionId: "2020-09-goodbye-hello-4"
 featured_image: jeremy-thomas-E0AHdsENmDg-unsplash_5005x3417.jpg
 featured_image_width: 5005

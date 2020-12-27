@@ -6,6 +6,7 @@ const md5 = require('md5')
 const globAll = require('glob-all')
 const DATAFILE = '_data/csshash.json'
 const PCSSFILE = 'csshash'
+const YEARFILE = '_data/year.json'
 cssFiles = globAll.sync([
   'src/assets/css/*.css'
 ])
@@ -23,6 +24,11 @@ var jsonValue = `{
   "index.css": "index-${cssMd5Total}.css"
 }`
 fs.writeFileSync(DATAFILE, jsonValue)
+
+var yearValue = `{
+  "copyrightYear": "${new Date().getFullYear()}"
+}`
+fs.writeFileSync(YEARFILE, yearValue)
 
 var txtValue = `index-${cssMd5Total}.css`
 fs.writeFileSync(PCSSFILE, txtValue)

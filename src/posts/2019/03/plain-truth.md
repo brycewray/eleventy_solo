@@ -1,17 +1,17 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
 tags: post
-title: Plain truth 
-subtitle: On permanence
+title: "Plain truth"
+subtitle: "On permanence"
 description: "Prose needn’t be deathless to survive."
 author: Bryce Wray
 date: 2019-03-02T16:00:00-06:00
 lastmod: 2020-01-31T14:13:00-06:00
 discussionId: "2019-03-plain-truth"
-featured_image: typewriter-1031024_5184x3456.jpg
+featured_image: "typewriter-1031024_5184x3456.jpg"
 featured_image_width: 5184
 featured_image_height: 3456
-featured_image_alt: A very old Royal-brand typewriter
+featured_image_alt: "A very old Royal-brand typewriter"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1031024">Free-Photos</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1031024">Pixabay</a></span>
 ---

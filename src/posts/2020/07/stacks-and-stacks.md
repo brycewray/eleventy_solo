@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-07-05T10:40:00-05:00
 lastmod: 2020-08-10T20:15:00-05:00
 discussionId: "2020-07-stacks-and-stacks"
-featured_image: stones-stack-3841920_6000x4000.jpg
+featured_image: "stones-stack-3841920_6000x4000.jpg"
 featured_image_width: 6000
 featured_image_height: 4000
 featured_image_alt: "A stack of smooth stones on a beach near an ocean"

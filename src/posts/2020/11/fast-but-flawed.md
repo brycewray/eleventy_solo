@@ -8,7 +8,7 @@ date: 2020-11-25T16:30:00-06:00
 lastmod: 2020-12-12T13:15:00-06:00
 #draft: false
 discussionId: "2020-11-fast-but-flawed"
-featured_image: jack-van-der-spoel-dgCBjYHZ0kc-unsplash_5472x3648.jpg
+featured_image: "jack-van-der-spoel-dgCBjYHZ0kc-unsplash_5472x3648.jpg"
 featured_image_width: 5472
 featured_image_height: 3648
 featured_image_alt: "Closeup of spider web in a flower garden"

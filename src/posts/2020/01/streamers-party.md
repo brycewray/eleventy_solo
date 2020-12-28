@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-01-18T21:20:00-06:00
 lastmod: 2020-02-04T07:20:00-06:00
 discussionId: "2020-01-streamers-party"
-featured_image: streaming-tv-remote-control-3914155_7360x4912.jpg
+featured_image: "streaming-tv-remote-control-3914155_7360x4912.jpg"
 featured_image_width: 7360
 featured_image_height: 4912
 featured_image_alt: "A hand holding a remote control for streaming device"

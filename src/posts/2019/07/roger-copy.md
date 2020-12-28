@@ -1,17 +1,17 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
 tags: post
-title: Roger, Copy
-subtitle: Keeping my .git together with Working Copy
+title: "Roger, Copy"
+subtitle: "Keeping my .git together with Working Copy"
 description: "How I now keep my site files “synced” across my devices—via Git and Working Copy."
 author: Bryce Wray
 date: 2019-07-27T06:38:00-05:00
 lastmod: 2020-02-03T14:23:00-06:00
 discussionId: "2019-07-roger-copy"
-featured_image: animals-geese-in-a-row-2364769_3648x2736.jpg
+featured_image: "animals-geese-in-a-row-2364769_3648x2736.jpg"
 featured_image_width: 3648
 featured_image_height: 2736
-featured_image_alt: Geese walking together in a row, illustrating synchronicity.
+featured_image_alt: "Geese walking together in a row, illustrating synchronicity."
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/anaterate-2348028/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2364769">Wolfgang Eckert</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2364769">Pixabay</a></span>
 ---

@@ -8,7 +8,7 @@ date: 2020-11-20T16:25:00-06:00
 #lastmod:
 #draft: false
 discussionId: "2020-11-what-apple-silicon-means-web-developers"
-featured_image: Apple_new-macbookpro-wallpaper-screen_11102020_1984x1118.jpg
+featured_image: "Apple_new-macbookpro-wallpaper-screen_11102020_1984x1118.jpg"
 featured_image_width: 1984
 featured_image_height: 1118
 featured_image_alt: "Partially opened MacBook Pro laptop"

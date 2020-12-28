@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-03-22T14:30:00-05:00
 lastmod: 2020-08-04T06:57:00-05:00
 discussionId: "2020-03-back-nunjucks-eleventy-site"
-featured_image: Nunjucks-template-screen-capture-2020-02_edit_1280x881.jpg
+featured_image: "Nunjucks-template-screen-capture-2020-02_edit_1280x881.jpg"
 featured_image_width: 1280
 featured_image_height: 881
 featured_image_alt: "Nunjucks template file displayed in Visual Studio Code"

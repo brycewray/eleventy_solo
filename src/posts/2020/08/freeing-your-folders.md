@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-08-16T14:35:00-05:00
 #lastmod
 discussionId: "2020-08-freeing-your-folders"
-featured_image: collector-old-folders-3930337_7360x4912.jpg
+featured_image: "collector-old-folders-3930337_7360x4912.jpg"
 featured_image_width: 7360
 featured_image_height: 4912
 featured_image_alt: "Worn and stained paper folders in an office desk drawer"

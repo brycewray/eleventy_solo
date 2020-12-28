@@ -1,14 +1,14 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
 tags: post
-title: "Webmentions in three SSGs: Part 1"
+title: "Webmentions in three SSGs: Part 1"
 subtitle: "Getting started with IndieWebbin’ in general"
 description: "The intro to a five-part series about incorporating webmentions into three different static site generators (SSGs)."
 author: Bryce Wray
 date: 2020-04-28T16:30:00-05:00
 lastmod: 2020-09-16T10:00:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-1"
-featured_image: group-chat-photoillustration-3354365_4928x2855.jpg
+featured_image: "group-chat-photoillustration-3354365_4928x2855.jpg"
 featured_image_width: 4928
 featured_image_height: 2855
 featured_image_alt: "Photoillustration of a multi-participant web chat"

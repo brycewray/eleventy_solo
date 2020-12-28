@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-07-09T16:40:00-05:00
 lastmod: 2020-08-30T15:40:00-05:00
 discussionId: "2020-07-mixed-nuts-2020-07"
-featured_image: bowl-of-nuts-3587842_5184x3888.jpg
+featured_image: "bowl-of-nuts-3587842_5184x3888.jpg"
 featured_image_width: 5184
 featured_image_height: 3888
 featured_image_alt: "A bowl containing mixed nuts"

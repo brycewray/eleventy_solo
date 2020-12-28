@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-05-09T09:45:00-05:00
 lastmod: 2020-05-26T14:15:00-05:00
 discussionId: "2020-05-going-solo-eleventy"
-featured_image: solo-flight-by-a-seagull-at-sunset-4238769_3225x2330.jpg
+featured_image: "solo-flight-by-a-seagull-at-sunset-4238769_3225x2330.jpg"
 featured_image_width: 3225
 featured_image_height: 2330
 featured_image_alt: "A seagull flying alone over water at sunset"

@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-02-09T16:05:00-06:00
 #lastmod: TBD
 discussionId: "2020-02-mixed-nuts-2020-02"
-featured_image: almond-21502_5000x3333.jpg
+featured_image: "almond-21502_5000x3333.jpg"
 featured_image_width: 5000
 featured_image_height: 3333
 featured_image_alt: "Almonds and other nuts in a store"

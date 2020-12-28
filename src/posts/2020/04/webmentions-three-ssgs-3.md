@@ -1,14 +1,14 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
 tags: post
-title: "Webmentions in three SSGs: Part 3"
+title: "Webmentions in three SSGs: Part 3"
 subtitle: "IndieWebbin’ in Hugo"
 description: "Part 3 of a five-part series about incorporating the IndieWeb into three different static site generators (SSGs)—in this case, Hugo."
 author: Bryce Wray
 date: 2020-04-28T16:40:00-05:00
 lastmod: 2020-09-16T10:00:00-05:00
 discussionId: "2020-04-webmentions-three-ssgs-3"
-featured_image: marko-pekic-IpLa37Uj2Dw-unsplash_3542x2362.jpg
+featured_image: "marko-pekic-IpLa37Uj2Dw-unsplash_3542x2362.jpg"
 featured_image_width: 3542
 featured_image_height: 2362
 featured_image_alt: "Communications concept - Red pay telephone booths"

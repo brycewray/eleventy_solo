@@ -1,14 +1,14 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
 tags: post
-title: Mixed nuts • November, 2019
-subtitle: In a nutshell, odds and ends
+title: "Mixed nuts • November, 2019"
+subtitle: "In a nutshell, odds and ends"
 description: "Observations worth exactly what you’re paying for them."
 author: Bryce Wray
 date: 2019-11-24T10:15:00-06:00
 lastmod: 2020-08-10T20:15:00-05:00
 discussionId: "2019-11-mixed-nuts-2019-11"
-featured_image: nuts-768243_5184x3456.jpg
+featured_image: "nuts-768243_5184x3456.jpg"
 featured_image_width: 5184
 featured_image_height: 3456
 featured_image_alt: "Closeup view of mixed nuts"

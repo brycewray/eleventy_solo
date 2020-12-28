@@ -8,7 +8,7 @@ date: 2020-12-11T16:55:00-06:00
 lastmod: 2020-12-17T06:50:00-06:00
 draft: false
 discussionId: "2020-12-cache-busting-eleventy-take-two"
-featured_image: broken-glass-549087_4000x3000.jpg
+featured_image: "broken-glass-549087_4000x3000.jpg"
 featured_image_width: 4000
 featured_image_height: 3000
 featured_image_alt: "Broken window pane with sunlight shining through hole in glass"

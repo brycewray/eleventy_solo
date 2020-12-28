@@ -1,13 +1,13 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
-title: Why I left Ulysses 
-subtitle: iA Writer wins—for now
+title: "Why I left Ulysses"
+subtitle: "iA Writer wins—for now"
 description: "Why, just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
 author: Bryce Wray
 date: 2019-04-20T11:17:00-05:00
 lastmod: 2020-11-26T08:20:00-06:00
 discussionId: "2019-04-why-left-ulysses"
-featured_image: hand-butterfly-3751159_6000x4000.jpg
+featured_image: "hand-butterfly-3751159_6000x4000.jpg"
 featured_image_width: 6000
 featured_image_height: 4000
 featured_image_alt: "Hand releases a butterfly (note: a butterfly is the Ulysses logo)"
@@ -27,9 +27,9 @@ oldComments: |
     </div>
 ---
 
-**Note, 2019-05-04**: In case you’ve already read this, be advised I’ve learned some additional information since the original post (2019-04-20) which doesn’t truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see “[Boxed in](/posts/2019/05/boxed-in).”{.yellowBox}
+**Note, 2019-05-04**: In case you've already read this, be advised I've learned some additional information since the original post (2019-04-20) which doesn't truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see "[Boxed in](/posts/2019/05/boxed-in)."{.yellowBox}
 
-**Note, 2019-10-11**: I originally deleted this post after writing “Boxed in”, but [later decided](/posts/2019/10/otoh) that had been a bad idea, so it’s now back.{.yellowBox}
+**Note, 2019-10-11**: I originally deleted this post after writing "Boxed in", but [later decided](/posts/2019/10/otoh) that had been a bad idea, so it's now back.{.yellowBox}
 
 I quit using [Ulysses](https://ulysses.app) today.
 
@@ -63,7 +63,7 @@ I've mentioned from [time](/posts/2019/01/blox-sux/) [to](/posts/2019/02/ia-for-
 
 {% lazypicture "Ulysses_export_to_Markdown_750x528.jpg", "Screen capture of Quick Export feature of Ulysses app", 750, 528 %}
 
-<p class="lazypicturecaption">Ulysses’s Quick Export feature: the only way you can derive a true, standalone, visible Markdown&nbsp;file from one of its native, proprietary-format&nbsp;files.</p>
+Ulysses's Quick Export feature: the only way you can derive a true, standalone, visible Markdown&nbsp;file from one of its native, proprietary-format&nbsp;files.{.lazypicturecaption}
 
 [^preview]: Sometimes there are disparities between the original Markdown files and how they translate to HTML, so it's best to catch those in a local instance before you publish to the real site, and thus I was having to do that "dance" quite often during the editing process.
 
@@ -91,7 +91,7 @@ Sync was stuck on my Mac's installation of Ulysses, and had been that way for da
 
 {% lazypicture "iCloud_sync-save_icon_in_Ulysses_634x265.jpg", "[Screen capture from Ulysses showing iCloud icon, indicating ongoing sync", 634, 265 %}
 
-<p class="lazypicturecaption">When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn&rsquo;t change, even though you edited this file days ago on another device—Houston, we have an iCloud&nbsp;sync&nbsp;problem.</p>
+When this little cloud icon (highlighted in the yellow circle) just sits and sits and sits in the Ulysses sheet synopsis and the timestamp doesn't change, even though you edited this file days ago on another device---Houston, we have an iCloud&nbsp;sync&nbsp;problem.{.lazypicturecaption}
 
 Yet, other apps seemed to be doing fine and there were no signs of trouble in the Mac Finder or even iCloud itself, according to [Apple's status page](https://www.apple.com/support/systemstatus/).
 
@@ -151,7 +151,7 @@ Yet another nail in the Ulysses sub's coffin.
 
 But it was hard to let go. Even as late as a couple of weeks ago, I found myself posting this on Twitter:
 
-{% twitscrn "Twitter_1114140807764893696.png", "Tweet by @BryceWrayTX, 2019-04-05: I may be crazy, but have been stress-testing Ulysses and am giving it one more chance **not** to eat my stuff before I pull the plug on my subscription (ends in late May). It’s hard to quit an app that makes writing such a pleasure, even one with known issues. #DontFailMeNowBigU", 1182, 578, "https://twitter.com/BryceWrayTX/status/1114140807764893696" %}
+{% twitscrn "Twitter_1114140807764893696.png", "Tweet by @BryceWrayTX, 2019-04-05: I may be crazy, but have been stress-testing Ulysses and am giving it one more chance **not** to eat my stuff before I pull the plug on my subscription (ends in late May). It's hard to quit an app that makes writing such a pleasure, even one with known issues. #DontFailMeNowBigU", 1182, 578, "https://twitter.com/BryceWrayTX/status/1114140807764893696" %}
 
 And, almost as if it had gotten the message, Ulysses was good as gold across my devices---until this morning.
 
@@ -187,7 +187,7 @@ However, that was probably just how my wandering mind took them; because, by the
 
 {% lazypicture "iA_Writer_on_why-left-ulysses_post_cropped_1272x620.jpg", "Screen capture from iA Writer app", 1272, 620 %}
 
-<p class="lazypicturecaption">Ladies and gentlemen, the winner (for now): iA&nbsp;Writer.</p>
+Ladies and gentlemen, the winner (for now): iA&nbsp;Writer.{.lazypicturecaption}
 
 *For now*, iA Writer is the winner for my heart and mind when it comes to picking a writing app. I use it to write both the WIP and posts like this one, and I like it more every day. I share the feelings of those who say it actually makes them want to write something just so they can use it, especially its iOS version, which I prefer greatly to those for Scrivener and Ulysses[^scrolling_iAW]---and that's high praise, because each of those is outstanding in its own way.
 

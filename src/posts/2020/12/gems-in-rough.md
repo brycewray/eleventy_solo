@@ -8,7 +8,7 @@ date: 2020-12-21T12:10:00-06:00
 lastmod: 2020-12-22T13:50:00-06:00
 #draft: false
 discussionId: "2020-12-gems-in-rough"
-featured_image: gems-836763_5184x3456.jpg
+featured_image: "gems-836763_5184x3456.jpg"
 featured_image_width: 5184
 featured_image_height: 3456
 featured_image_alt: "Colorful gemstones"

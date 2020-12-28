@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-04-22T19:30:00-05:00
 lastmod: 2020-06-20T09:45:00-05:00
 discussionId: "2020-04-murdered-darlings"
-featured_image: candles-memorial-2905395_5472x3648.jpg
+featured_image: "candles-memorial-2905395_5472x3648.jpg"
 featured_image_width: 5472
 featured_image_height: 3648
 featured_image_alt: "Candles lit in memoriam of the dead"

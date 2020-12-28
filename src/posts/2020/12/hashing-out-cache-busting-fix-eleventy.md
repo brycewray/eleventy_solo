@@ -8,7 +8,7 @@ date: 2020-12-15T17:00:00-06:00
 lastmod: 2020-12-17T06:50:00-06:00
 draft: false
 discussionId: "2020-12-hashing-out-cache-busting-fix-eleventy"
-featured_image: csshash-js_in_Nova_2786x1650.png
+featured_image: "csshash-js_in_Nova_2786x1650.png"
 featured_image_width: 2786
 featured_image_height: 1650
 featured_image_alt: "Screen capture of JavaScript file in the Nova code editor"

@@ -1,17 +1,17 @@
 ---
 layout: layouts/posts/singlepostherofit.njk
 tags: post
-title: Publish or perish 
-subtitle: Going live with your Hugo site
-description: In a previous post, I told you how to create a Hugo-based site; now, here’s how to publish it—for free.
+title: "Publish or perish"
+subtitle: "Going live with your Hugo site"
+description: "In a previous post, I told you how to create a Hugo-based site; now, here’s how to publish it—for free."
 author: Bryce Wray
 date: 2019-04-11T19:00:00-05:00
 lastmod: 2019-07-29T20:55:00-05:00
 discussionId: "2019-04-publish-or-perish"
-featured_image: office-blogging-monochrome-381228_5184x3456.jpg
+featured_image: "office-blogging-monochrome-381228_5184x3456.jpg"
 featured_image_width: 5184
 featured_image_height: 3456
-featured_image_alt: Hand moving a computer mouse near a keyboard
+featured_image_alt: "Hand moving a computer mouse near a keyboard"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=381228">Free-Photos</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=381228">Pixabay</a></span>
 oldComments: |

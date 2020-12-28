@@ -8,7 +8,7 @@ author: Bryce Wray
 date: 2020-07-16T20:30:00-05:00
 lastmod: 2020-10-15T10:20:00-05:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
-featured_image: tsvetoslav-hristov-QW-f6s9nFIs-unsplash_6036x4020.jpg
+featured_image: "tsvetoslav-hristov-QW-f6s9nFIs-unsplash_6036x4020.jpg"
 featured_image_width: 6036
 featured_image_height: 4020
 featured_image_alt: "Sepia-tone photo of a stopwatch"

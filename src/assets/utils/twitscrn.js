@@ -34,10 +34,10 @@ module.exports = (imageUrl, alt, width, height, twitterUrl) => {
   }
   */
   stringtoRet +=` sizes="${dataSzes}" /></a>
-  </div>
   <noscript>
     <a href="${twitterUrl}" target="_blank" rel="noopener"><img class="${nscClass}" src="${cloudiBase + xFmPart1 + "300" + xFmPart2 + imageUrl}" alt="${alt}" /></a>
-  </noscript>`
+  </noscript>
+  </div>`
 
   return stringtoRet
 }

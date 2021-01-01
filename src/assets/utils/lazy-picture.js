@@ -25,13 +25,13 @@ module.exports = (url, alt, width, height, tmpl) => {
     case 'index':
       divClass = `h-full`
       imgClass = `object-cover object-center h-full w-full containedImage lazy`
-      nscClass = `imgCover hero`
+      nscClass = `object-cover object-center h-full w-full containedImage`
       dataSzes = `100vw`
       break
     case 'posts':
       divClass = `h-full`
       imgClass = `imgCover hero lazy`
-      nscClass = `imgCover`
+      nscClass = `imgCover hero`
       dataSzes = `100vw`
       break
     default:
@@ -60,10 +60,10 @@ module.exports = (url, alt, width, height, tmpl) => {
   }
   */
   stringtoRet +=` sizes="${dataSzes}" />
-  </div>
   <noscript>
     <img class="${nscClass}" src="${cloudiBase + xFmPart1 + "300" + xFmPart2 + url}" alt="${alt}" />
-  </noscript>`
+  </noscript>
+  </div>`
 
   return stringtoRet
 }

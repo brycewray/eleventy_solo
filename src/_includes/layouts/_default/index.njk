@@ -16,7 +16,7 @@ layout: layouts/_default/base.njk
   <div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 lg:w-5/6 mr-auto ml-auto">
     <div class="col-span-3 home-colOne">
       <h1>Welcome.</h1>
-      <p class="text-xs tracking-normal mt-1 mb-0 dateInfo" style="line-height: 1.5 !important;">
+      <p class="font-sans text-xs tracking-normal mt-1 mb-0 dateInfo" style="line-height: 1.5 !important;">
         Published: <time style="display: inline;" datetime="{{ page.date | htmlDateString }}">{{ page.date | htmlDateString }}</time>
         {% if lastmod %}
         <br />Last modified: <time style="display: inline;" datetime="{{ page.date | htmlDateString }}">{{ lastmod | htmlDateString }}</time>

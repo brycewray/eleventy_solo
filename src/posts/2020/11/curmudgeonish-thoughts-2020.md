@@ -50,7 +50,7 @@ Y'know, when I was growing up, y'know, we heard over and over again that, y'know
 
 Then, one night during my daughter's pre-driving-age teen years, I found myself having to listen to a carful of girls on the way to a birthday party as they all seemed to compete for the right to say, "I can say the word *like* the most often in a sentence." Still, as I gritted my teeth during that seemingly interminable experience, I told myself, *Ah, well, at least when they grow up, they'll know better and stop that.*
 
-Oh, thou foolish man: didst thou not conceive that their entire generation not only might *not* ever stop it but, indeed, might *double down* on it? Now, whenever I tune in an **un**scripted riff on YouTube (as I am wont to do at times), the "like"s are flying rapidly and furiously among the Gen-Xers and millennials, mainly software developers, whose videos I typically frequent:
+Oh, thou foolish man: didst thou not conceive that their entire generation not only might *not* ever stop it but, indeed, might *double down* on it? Now, whenever I tune in an **un**scripted riff on YouTube (as I am wont to do at times), the “like”s are flying rapidly and furiously among the Gen-Xers and millennials, mainly software developers, whose videos I typically frequent:
 
 > "Whenever I, like, decide I'm gonna, like, try this code or that code and, like, do some, like, breaking changes, I, like, think, like, what would I do if, like, y'know *[yeah, that's still around, too]*, I was a developer out there and, like, somebody did that to me?"
 

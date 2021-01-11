@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Two, but not terrible"
 subtitle: "Dual candles on the site’s cake"

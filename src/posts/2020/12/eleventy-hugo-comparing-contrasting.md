@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepostherofit.11ty.js
 title: "Eleventy and Hugo: Comparing and contrasting"
 subtitle: "You can’t always get what you want, but . . ."
 description: "Trying to choose between the two best static site generators? See if these points address your personal hot buttons."
@@ -48,7 +48,7 @@ You write your main content in [Markdown](https://daringfireball.net/projects/ma
 
 ```md
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Two, but not terrible"
 subtitle: "Dual candles on the site’s cake"

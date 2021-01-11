@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepostherofit.11ty.js
 title: "What Apple Silicon means for web developers"
 subtitle: "The Mac’s new world is amazing, but . . ."
 description: "As Apple takes the Mac to the final frontier, here’s what web devs should consider."

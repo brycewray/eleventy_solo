@@ -1,11 +1,12 @@
 const { DateTime } = require("luxon")
 const htmlmin = require("html-minifier")
+const ofotigrid = require('./src/_includes/ofotigrid.js')
 const ErrorOverlay = require("eleventy-plugin-error-overlay")
-const pluginRss = require("@11ty/eleventy-plugin-rss")
 const svgContents = require("eleventy-plugin-svg-contents")
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(pluginRss)
+  // theming -- based on Reuben Lillie's code (https://gitlab.com/reubenlillie/reubenlillie.com/)
+  ofotigrid(eleventyConfig)
 
   eleventyConfig.addPlugin(svgContents)
 
@@ -46,14 +47,15 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addFilter("pub_lastmod", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+    return DateTime.fromJSDate(dateObj, { zone: "America/Chicago" }).toFormat(
       "MMMM d, yyyy"
     )
   })
 
+  // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
   eleventyConfig.addLayoutAlias(
-    "posts",
-    "src/_includes/layouts/posts/singlepost.njk"
+    "posts", 
+    "src/_includes/layouts/posts/singlepost.11ty.js"
   )
 
   /* Markdown plugins */
@@ -141,7 +143,12 @@ module.exports = function (eleventyConfig) {
       data: "../_data",
       includes: "_includes",
     },
-    templateFormats: ["html", "md", "njk", "11ty.js"],
+    templateFormats: [
+      "html", 
+      "md", 
+      "njk", 
+      "11ty.js"
+    ],
     passthroughFileCopy: true,
   }
 }

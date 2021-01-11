@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepostherofit.11ty.js
 title: "Curmudgeonish thoughts for 2020"
 subtitle: "The third annual rant"
 description: "Pet peeves seem tiny at a time like this, but I have them nonetheless."

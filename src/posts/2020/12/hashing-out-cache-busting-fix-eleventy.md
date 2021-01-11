@@ -5,7 +5,7 @@ subtitle: "Digging further under the hood"
 description: "Some of the code behind my previous post."
 author: Bryce Wray
 date: 2020-12-15T17:00:00-06:00
-lastmod: 2020-12-17T06:50:00-06:00
+lastmod: 2021-01-11T12:25:00-06:00
 draft: false
 discussionId: "2020-12-hashing-out-cache-busting-fix-eleventy"
 featured_image: "csshash-js_in_Nova_2786x1650.png"
@@ -34,7 +34,7 @@ Before I give you the actual code, here's what we're doing, as noted in "Cache-b
 2. Create an [MD5](https://en.wikipedia.org/wiki/MD5) hash of the concatenated content. This hash will be appended to the name of the site's final CSS file at build time.
 3. Write two files out to the project: (a.) a JSON file in the `_data` directory which will "tell" the [Eleventy data cascade](https://www.11ty.dev/docs/data-cascade/) the name of the final CSS file; and (b.) a text file in the root directory which feeds the CSS file name to the PostCSS file-output command in the `package.json` scripts.
 4. Use that PostCSS command to write the appropriately named CSS file to the `_site` folder which the host uses to build the site.
-5. Use the site's `head` partial template (`head.njk` in this site's repository, or `head.js` in the starter site repo) to tell each page on the site to refer to the CSS file by that special file name.
+5. Use the site's `head` partial template (`head.js`) to tell each page on the site to refer to the CSS file by that special file name.
 
 ## The starting CSS
 
@@ -140,18 +140,7 @@ To be specific:
 
 ## The head template
 
-That leaves only setting the appropriate Eleventy template---either `head.njk` in this site or `head.js` in the starter site---to call the CSS file by the hash-enriched name, the *value* of which it reads by addressing the `index.css` *key* in that one object in `_data/csshash.json`.
-
-In `head.njk`:
-
-{% raw %}
-```html
-<link rel="preload" href="/css/{{ csshash['index.css'] }}" as="style" />
-<link rel="stylesheet" href="/css/{{ csshash['index.css'] }}" type="text/css" />
-```
-{% endraw %}
-
-In `head.js`:
+That leaves only setting the Eleventy `head.js` template to call the CSS file by the hash-enriched name, the *value* of which it reads by addressing the `index.css` *key* in that one object in `_data/csshash.json`.
 
 {% raw %}
 ```js

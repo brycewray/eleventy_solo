@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepostherofit.11ty.js
 title: "Lessons learned"
 tags: post
 subtitle: "What I found while trying other SSGs"

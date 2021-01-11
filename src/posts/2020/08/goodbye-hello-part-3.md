@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepostherofit.11ty.js
 tags: post
 title: "Goodbye and hello • Part 3"
 subtitle: "Performance is a heckuva drug"

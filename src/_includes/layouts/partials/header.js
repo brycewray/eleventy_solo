@@ -1,8 +1,15 @@
+const { svgNavIcon } = require( '../../../assets/svg/svgs.js')
+
+module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addShortcode('siteHeader', function() {
+
+    return `
     <header class="h-12 bg-blue-700 w-full fixed p-0 mt-0 z-50">
-      <p class="site-logo-holder ml-4 md:ml-8 lg:ml-12 xl:ml-16"><a href="/" aria-label="This site's “BW” logo">{{ '/src/assets/svg/svgNavIcon.svg' | svgContents | safe }}</a></span></p>
+      <p class="site-logo-holder ml-4 md:ml-8 lg:ml-12 xl:ml-16"><a href="/" aria-label="This site's “BW” logo">${svgNavIcon}</a></span></p>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
       <label for="nav-toggle" class="nav__icon" aria-hidden="true">
-      Expand the menu
+        Expand the menu
           <span class="nav__icon-line"></span>
           <span class="nav__icon-line"></span>
           <span class="nav__icon-line"></span>
@@ -10,17 +17,22 @@
       <nav role="navigation" class="nav">
         <ul class="nav__items">
           <li class="nav__item">
-            <a href="/about" title="About">About</a>
+            <a href="/about/" title="About">About</a>
           </li>
           <li class="nav__item">
-            <a href="/posts" title="Posts">Posts</a>
+            <a href="/posts/" title="Posts">Posts</a>
           </li>
           <li class="nav__item">
-            <a href="/privacy" title="Privacy">Privacy</a>
+            <a href="/privacy/" title="Privacy">Privacy</a>
           </li>
           <li class="nav__item">
-            <a href="/contact" title="Contact">Contact</a>
+            <a href="/contact/" title="Contact">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
+    `
+
+  })
+
+}

@@ -1,7 +1,7 @@
 ---
 layout: layouts/posts/singlepostherofit.11ty.js
 title: "The obligatory About Me page"
-#subtitle: 
+subtitle: "Just who do I think I am?"
 description: "Not a bio (you’d fall asleep), but just a few explanatory observations."
 author: Bryce Wray
 date: 2018-09-14T15:00:00-05:00

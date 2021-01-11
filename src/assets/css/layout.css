@@ -261,7 +261,7 @@ table.leagues td.col {
 }
 
 table.noborders {
-  @apply w-full border-0 border-collapse mt-6 mx-auto mb-4;
+  @apply font-sans w-full border-0 border-collapse mt-6 mx-auto mb-4;
 }
 
 table.noborders td {

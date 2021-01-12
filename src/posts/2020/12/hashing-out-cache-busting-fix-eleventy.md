@@ -5,7 +5,7 @@ subtitle: "Digging further under the hood"
 description: "Some of the code behind my previous post."
 author: Bryce Wray
 date: 2020-12-15T17:00:00-06:00
-lastmod: 2021-01-11T12:25:00-06:00
+lastmod: 2021-01-12T07:35:00-06:00
 draft: false
 discussionId: "2020-12-hashing-out-cache-busting-fix-eleventy"
 featured_image: "csshash-js_in_Nova_2786x1650.png"
@@ -137,6 +137,8 @@ To be specific:
 - Each of the scripts ending in `:postcss` (which one gets run depends on whether I run `start`, `testbuild`, or `build`) invokes the [postcss-cli](https://npmjs.com/package/postcss-cli) package to:
 	- Read and process the `index.css` file (which, remember, includes all those `@import`s).
 	- Write the resulting CSS to the `_site/css/` output folder (`_site` is the default folder where an Eleventy site exists when built) and name the file whatever is the content of that `csshash` text file that `cssdate.js` wrote to the project's top level.
+
+**Important**: Note that the process completes itself **only** during actual site **builds**, and **not** in the `dev` or `testbuild` scripts---which means that, for version control purposes (*i.e.*, changes you can commit in Git), actual site builds are the only times that all the applicable changes will occur.{.yellowBox}
 
 ## The head template
 

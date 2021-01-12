@@ -5,7 +5,7 @@ subtitle: "This time, a solution that really (?) works"
 description: "Sometimes, semi-bespoke is best."
 author: Bryce Wray
 date: 2020-12-11T16:55:00-06:00
-lastmod: 2021-01-11T12:25:00-06:00
+lastmod: 2021-01-12T07:35:00-06:00
 draft: false
 discussionId: "2020-12-cache-busting-eleventy-take-two"
 featured_image: "broken-glass-549087_4000x3000.jpg"
@@ -101,7 +101,7 @@ To my delight, it worked! And, by "it worked," I mean that the hash at the end o
 - Was successfully called within the final `head` for each page's HTML.
 - Was the same after each host completed its build process. This was important because---as I'd seen during my use of that interim query string solution---build configurations and processes vary among hosts and so, under certain conditions, can produce results that might not necessarily work for you.
 
-**Caution**: Chastened as I am by my recent whiff, I do **not** pretend that these tests, either locally or on actual hosting environments, can necessarily be accurate for **every** conceivable computing situation. That's why I put the "(?)" in the subtitle. All I can say for sure is that this solution works for me locally and on multiple hosts using various configurations where the previous, PostCSS Hash-based solution failed to be reliable. But, as always, YMMV.{.yellowBox}
+**Caution**: Chastened as I am by my recent whiff, I do **not** pretend that these tests, either locally or on actual hosting environments, can necessarily be accurate for **every** conceivable computing situation. That's why I put the "(?)" in the subtitle. All I can say for sure is that this solution works for me locally and on multiple hosts using various configurations where the previous, PostCSS Hash-based solution failed to be reliable. But, as always, YMMV. Also, **please note** that the process completes itself **only** during actual site **builds**, and **not** in dev mode (or the `testbuild` script I use, either, so be aware of that if you're looking at my code)---which means that, for version control purposes (*i.e.*, changes you can commit in Git), actual site builds are the only times that all the applicable changes will occur.{.yellowBox}
 
 ## To fork or not&nbsp;to&nbsp;fork&nbsp;.&nbsp;.&nbsp;.
 

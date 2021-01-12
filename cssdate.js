@@ -1,5 +1,4 @@
 // Detect when any CSS files change
-// Should've been named csshash.js, but it's a long story...
 
 const fs = require('fs')
 const md5 = require('md5')
@@ -25,12 +24,13 @@ var jsonValue = `{
 }`
 fs.writeFileSync(DATAFILE, jsonValue)
 
-var yearValue = `{
-  "copyrightYear": "${new Date().getFullYear()}"
-}`
-fs.writeFileSync(YEARFILE, yearValue)
-
 var txtValue = `index-${cssMd5Total}.css`
 fs.writeFileSync(PCSSFILE, txtValue)
 // ...the latter because, otherwise, you get the following error:
 // The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView.
+
+// Year-related stuff is for when site is on .njk templating (unnecessary if on .11ty.js templating)
+var yearValue = `{
+  "copyrightYear": "${new Date().getFullYear()}"
+}`
+fs.writeFileSync(YEARFILE, yearValue)

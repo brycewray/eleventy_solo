@@ -70,7 +70,7 @@ exports.render = function (data) {
    
   ${data.title != "The obligatory About Me page"
     ? `<div class="font-sans w-full px-8 md:px-0 bg-blue-700 align-middle mt-10 mb-10">
-    <h3 class="text-center text-3xl tracking-normal mb-0 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white italic">Other posts</a></h3>
+    <h3 class="text-center text-3xl tracking-normal mb-0 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
     ${data.nextPost && data.nextPost.url !== null
       ? `<p class="text-center mt-2 mb-2 text-xl text-white leading-tight tracking-tight">
         <strong>Next</strong>: 

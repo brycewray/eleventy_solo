@@ -12,13 +12,13 @@ exports.render = function (data) {
     </div>
     ${
       (data.featured_image_caption)
-      ? `<p class="font-sans text-center text-xs tracking-normal mt-1">${data.featured_image_caption}</p>`
+      ? `<p class="text-center text-xs tracking-normal mt-1">${data.featured_image_caption}</p>`
       : ``
     }
     <div class="container px-8 lg:grid lg:grid-cols-5 lg:gap-16 xb:gap-32 lg:w-3/4 xb:w-7/12 mr-auto ml-auto">
       <div class="col-span-3 home-colOne">
         <h1>Welcome.</h1>
-        <p class="font-sans text-xs tracking-normal mt-1 mb-0 dateInfo" style="line-height: 1.5 !important;">
+        <p class="text-xs tracking-normal mt-1 mb-0 dateInfo" style="line-height: 1.5 !important;">
           Published: ${this.pub_lastmod(data.page.date)}
             ${
               data.lastmod !== null && data.lastmod !== undefined
@@ -35,8 +35,8 @@ exports.render = function (data) {
           `
         <div>
           <h2 class="h4 not-italic tracking-tight"><a href="${post.url}">${post.data.title}</a></h2>
-          <p class="font-sans font-bold text-base mt-2 mb-0 leading-5">${post.data.subtitle}</p>
-          <p class="font-sans text-xs tracking-normal mt-0 mb-1">
+          <p class="font-bold text-base mt-2 mb-0 leading-5">${post.data.subtitle}</p>
+          <p class="text-xs tracking-normal mt-0 mb-1">
             Published: <time style="display: inline;" datetime="${this.pub_lastmod(post.date)}}">${this.pub_lastmod(post.date)}</time>
             ${
               post.data.lastmod
@@ -46,14 +46,14 @@ exports.render = function (data) {
               : ``
             }
           </p>
-          <p class="font-sans text-sm mt-2 mb-3">
+          <p class="text-sm mt-2 mb-3">
             ${post.data.description}
           </p>
         </div>
           ` 
         ).join('')}
 
-        <p class="font-sans"><a href="/posts/"><strong>All ${data.collections.post.length} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
+        <p><a href="/posts/"><strong>All ${data.collections.post.length} posts</strong></a> <span class="text-sm"><em>(listed five per page)</em></span></p>
         <!-- Twitter timeline used to go here -->
       </div>
     </div>

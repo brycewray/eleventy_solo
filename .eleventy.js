@@ -3,6 +3,7 @@ const htmlmin = require("html-minifier")
 const ofotigrid = require('./src/_includes/ofotigrid.js')
 const ErrorOverlay = require("eleventy-plugin-error-overlay")
 const svgContents = require("eleventy-plugin-svg-contents")
+const { fromPairs } = require("lodash")
 
 module.exports = function (eleventyConfig) {
   // theming -- based on Reuben Lillie's code (https://gitlab.com/reubenlillie/reubenlillie.com/)
@@ -59,6 +60,7 @@ module.exports = function (eleventyConfig) {
     "src/_includes/layouts/posts/singlepost.11ty.js"
   )
 
+
   /* Markdown plugins */
   // https://www.11ty.dev/docs/languages/markdown/
   // --and-- https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
@@ -86,7 +88,18 @@ module.exports = function (eleventyConfig) {
       rel: "noreferrer noopener",
     },
   })
+  // START, de-bracketing footnotes
+  //--- see http://dirtystylus.com/2020/06/15/eleventy-markdown-and-footnotes/
+  markdownEngine.renderer.rules.footnote_caption = (tokens, idx) => {
+    let n = Number(tokens[idx].meta.id + 1).toString()
+    if (tokens[idx].meta.subId > 0) {
+      n += ":" + tokens[idx].meta.subId
+    }
+    return n
+  }
+  // END, de-bracketing footnotes
   eleventyConfig.setLibrary("md", markdownEngine)
+
 
   eleventyConfig.addWatchTarget("src/**/*.js")
   eleventyConfig.addWatchTarget("./src/assets/css/*.css")

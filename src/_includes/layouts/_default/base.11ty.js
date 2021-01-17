@@ -1,5 +1,5 @@
 module.exports = function (data) {
-  return `
+  return /*html*/ `
 <!DOCTYPE html>
 <html lang="en" class="dark:bg-black">
   ${this.headTag(data)}

@@ -5,7 +5,7 @@ exports.data = {
 }
 
 exports.render = function (data) {
-  return `
+  return /*html*/ `
   <main>
     <div class="w-full height-hero">
       ${stringtoRet(data.featured_image, data.featured_image_alt, data.featured_image_width, data.featured_image_height, "index")}

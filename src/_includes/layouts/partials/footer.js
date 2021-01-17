@@ -6,7 +6,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addShortcode('siteFooter', function(data) {
 
-    return `
+    return /*html*/ `
     <footer class="text-center pb-6">
       <div class="w-5/6 md:w-3/4 lg:w-2/3 mx-auto">
         <p class="text-xs inline-flex mt-4 mb-4"><a href="https://github.com/brycewray/eleventy_solo" target="_blank" rel="noopener" class="mb-0 border-transparent" aria-label="GitHub">${svgGitHubIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/BryceWrayTX" target="_blank" rel="noopener" class="mb-0 border-transparent" aria-label="Twitter">${svgTwitterIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/brycewray" target="_blank" rel="noopener" class="mb-0 border-transparent" aria-label="LinkedIn">${svgLinkedInIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/index.xml" class="mb-0 border-transparent" aria-label="RSS">${svgRSSIcon}</a></p>

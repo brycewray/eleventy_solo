@@ -13,11 +13,11 @@ module.exports = function(eleventyConfig) {
     <meta name="generator" content="Eleventy v${require(`@11ty/eleventy/package.json`).version}" />  
     ${
       (data.title == "Home page")
-      ? `
+      ? /*html*/ `
       <title>${data.siteparams.siteTitle}</title> 
       <meta property="og:title" content="${data.siteparams.siteTitle}" />
       `
-      : `
+      : /*html*/ `
       <title>${data.title} | ${data.siteparams.siteTitle}</title>
       <meta property="og:title" content="${data.title} | ${data.siteparams.siteTitle}" />
       `
@@ -26,7 +26,7 @@ module.exports = function(eleventyConfig) {
     <!-- IndieWeb -->
     ${
       (data.title == "Home page")
-      ? `
+      ? /*html*/ `
       <link rel="me" href="https://twitter.com/BryceWrayTX" />
       <link rel="me" href="https://github.com/brycewray" />
       `

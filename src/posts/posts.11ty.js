@@ -14,22 +14,22 @@ exports.data = {
 }
 
 exports.render = function (data) {
-  const pagerThing = `
+  const pagerThing = /*html*/ `
   <p class="text-center text-sm mt-2 mb-2">
     ${
       data.pagination.href.previous === null 
-        ? `${svgFirstPageIcon}${svgFirstPageIcon}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${svgFirstPageIcon}</span>`
-        : `<a href="${data.pagination.href.first}" class="border-transparent" aria-label="First page">${svgPrevPageIcon}${svgPrevPageIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${data.pagination.href.previous}" class="border-transparent" aria-label="Previous page">${svgPrevPageIcon}</a>`      
+        ? /*html*/ `${svgFirstPageIcon}${svgFirstPageIcon}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${svgFirstPageIcon}</span>`
+        : /*html*/ `<a href="${data.pagination.href.first}" class="border-transparent" aria-label="First page">${svgPrevPageIcon}${svgPrevPageIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${data.pagination.href.previous}" class="border-transparent" aria-label="Previous page">${svgPrevPageIcon}</a>`      
     }
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     ${
       data.pagination.href.next === null
-        ? `<span class="text-gray-500">${svgLastPageIcon}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${svgLastPageIcon}${svgLastPageIcon}</span>`
-        : `<a href="${data.pagination.href.next}" class="border-transparent" aria-label="Next page">${svgNextPageIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${data.pagination.href.last}" class="border-transparent" aria-label="Last page">${svgNextPageIcon}${svgNextPageIcon}</a>` 
+        ? /*html*/ `<span class="text-gray-500">${svgLastPageIcon}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${svgLastPageIcon}${svgLastPageIcon}</span>`
+        : /*html*/ `<a href="${data.pagination.href.next}" class="border-transparent" aria-label="Next page">${svgNextPageIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${data.pagination.href.last}" class="border-transparent" aria-label="Last page">${svgNextPageIcon}${svgNextPageIcon}</a>` 
     }
   </p>
 `
-  return `
+  return /*html*/ `
   <main class="py-16">
   <div class="px-10 w-full md:w-2/3 lg:w-1/2 mx-auto">
     <h1 class="text-center tracking-tight">Posts</h1>
@@ -38,8 +38,7 @@ exports.render = function (data) {
       ${pagerThing}
       <hr class="mt-2 mb-6" />
       ${
-        data.pagination.items.map(post =>
-        `
+        data.pagination.items.map(post => /*html*/ `
         <div>          
           <h2 class="text-xl mb-1 leading-tight tracking-tight"><a href="${post.url}">${post.data.title}</a><br />
           <span class="text-base tracking-tight">${post.data.subtitle}</span></h2>
@@ -47,7 +46,7 @@ exports.render = function (data) {
             Published: <time style="display: inline;" datetime="${this.pub_lastmod(post.date)}}">${this.pub_lastmod(post.date)}</time>
             ${
               post.data.lastmod
-              ? `<br />Last modified: <time style="display: inline;" datetime="${this.pub_lastmod(post.data.lastmod)}">${this.pub_lastmod(post.data.lastmod)}</time>`
+              ? /*html*/ `<br />Last modified: <time style="display: inline;" datetime="${this.pub_lastmod(post.data.lastmod)}">${this.pub_lastmod(post.data.lastmod)}</time>`
               : ``
             }
           </p>

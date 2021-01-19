@@ -13,6 +13,10 @@
   }
 }
 
+.bold, strong {
+  font-weight: 625;
+}
+
 ul li li {
   list-style-type: circle;
 }
@@ -306,8 +310,7 @@ table.noborders thead tr {
 }
   
 table.noborders thead td {
-  @apply text-white;
-  font-weight: 625;
+  @apply text-white font-bold;
 }
   
 table.noborders td.td70 {

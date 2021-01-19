@@ -113,7 +113,7 @@ a.navborderless {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  @apply font-bold leading-tight tracking-tight;
+  @apply leading-tight tracking-tight;
 }
 
 h1, .h1 {
@@ -306,7 +306,8 @@ table.noborders thead tr {
 }
   
 table.noborders thead td {
-  @apply text-white font-bold;
+  @apply text-white;
+  font-weight: 625;
 }
   
 table.noborders td.td70 {

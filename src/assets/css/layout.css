@@ -334,6 +334,12 @@ blockquote {
   @apply font-sans;
 }
 
+.footnote-sim {
+  @apply text-xs text-blue-500 dark:text-blue-200;
+}
+
+.footnotes
+
 .footnote-ref {
   font-size: 0.65em;
 }

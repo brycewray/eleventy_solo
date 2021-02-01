@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepostherofit.njk
 title: "The obligatory About Me page"
 subtitle: "Just who do I think I am?"
 description: "Not a bio (you’d fall asleep), but just a few explanatory observations."

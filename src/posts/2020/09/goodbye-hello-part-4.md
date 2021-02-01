@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: "Goodbye and hello • Part 4"
 subtitle: "The future is now, so to Render we go"

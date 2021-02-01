@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepostherofit.njk
 title: "Through with 2020"
 subtitle: "This site’s offerings in a rough year"
 description: "What I talked about while the world burned."

@@ -1,13 +1,13 @@
 const { DateTime } = require("luxon")
 const htmlmin = require("html-minifier")
-const ofotigrid = require('./src/_includes/ofotigrid.js')
 const ErrorOverlay = require("eleventy-plugin-error-overlay")
+const pluginRss = require("@11ty/eleventy-plugin-rss")
 const svgContents = require("eleventy-plugin-svg-contents")
 const { fromPairs } = require("lodash")
 
 module.exports = function (eleventyConfig) {
-  // theming -- based on Reuben Lillie's code (https://gitlab.com/reubenlillie/reubenlillie.com/)
-  ofotigrid(eleventyConfig)
+
+  eleventyConfig.addPlugin(pluginRss)
 
   eleventyConfig.addPlugin(svgContents)
 

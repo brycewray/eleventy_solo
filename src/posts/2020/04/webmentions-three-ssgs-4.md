@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: "Webmentions in three SSGs: Part 4"
 subtitle: "IndieWebbin’ in Gatsby"

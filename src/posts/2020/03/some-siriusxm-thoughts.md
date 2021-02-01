@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: "Some Sirius(XM) thoughts"
 subtitle: "Radio, and more, from on high"

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepostherofit.njk
 title: "Hashing out a cache-busting fix for Eleventy"
 subtitle: "Digging further under the hood"
 description: "Some of the code behind my previous post."

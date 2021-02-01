@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: "Boxed in?"
 subtitle: "“Shoebox” apps (including Ulysses) and iCloud sync"

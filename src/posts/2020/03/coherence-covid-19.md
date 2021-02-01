@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.11ty.js
+layout: layouts/posts/singlepostherofit.njk
 tags: post
 title: "Coherence and COVID–19" #Non-breaking hyphen there, copied/pasted from https://alignedonline.com/non%E2%80%91breaking-spaces/ since it can't be entered otherwise in text string
 subtitle: "Trying to grasp the new reality"

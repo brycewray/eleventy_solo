@@ -13,7 +13,7 @@ module.exports = (imageUrl, alt, width, height, twitterUrl) => {
   divClass = `relative mb-2 p-4 bg-white border-2 border-gray-400 rounded md:rounded-md lg:rounded-lg xl:rounded-xl`
   imgClass = `containedImage lazy`
   nscClass = `containedImage`
-  dataSzes = `(min-width: 1024px) 25vw, 100vw`
+  dataSzes = `(min-width: 1024px) 100vw, 50vw`
   
   var separator = ', '
 

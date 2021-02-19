@@ -38,7 +38,7 @@ module.exports = (url, alt, width, height, tmpl) => {
       divClass = `relative`
       imgClass = `containedImage lazy`
       nscClass = `containedImage`
-      dataSzes = `(min-width: 1024px) 25vw, 100vw`
+      dataSzes = `(min-width: 1024px) 100vw, 50vw`
   }
   
   var separator = ', '

@@ -79,7 +79,7 @@
     "prismjs": "^1.23.0",
     "rss": "^1.2.2",
     "sanitize-html": "^2.3.0",
+    "sass": "^1.32.8",
     "tailwindcss": "^2.0.2"
-  },
-  "dependencies": {}
+  }
 }

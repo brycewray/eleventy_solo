@@ -1,0 +1,121 @@
+// === utility classes
+.ctr {
+  text-align: center;
+}
+
+.rgt {
+  text-align: right;
+}
+
+.wht {
+  color: #fff;
+}
+
+.smallCaps {
+  font-variant: small-caps;
+}
+
+.sortabig {
+  font-size: $sortabig + unquote("rem");
+}
+
+.bigger {
+  font-size: $bigger + unquote("rem");
+}
+
+.teenytxt, .teeny {
+  font-size: $teeny + unquote("rem");
+}
+
+.legaltxt, .legal {
+  font-size: $legal + unquote("rem");
+}
+
+.pokeytxt, .pokey {
+  font-size: $pokey + unquote("rem");
+}
+
+.text {
+  &-nowrap, .nobrk {
+    white-space: nowrap;
+    font-size: inherit;
+  }
+  &-link {
+    color: $blue;
+  }
+  &-link:active, &-link:focus, &-link:hover {
+    color: $darkblue;
+  }
+  &-muted {
+    color: $grey-1;
+    @media (prefers-color-scheme: dark) {
+      color: $grey-2-dark-mode;
+    }
+  }
+  &-body {
+  color: $default-color;
+  }
+}
+.bg-primary {
+  background-color: $blue !important;
+}
+
+.btn-primary {
+  background-color: $blue;
+  border-color: $blue;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: $darkblue;
+  border-color: $darkblue;
+}
+
+.sansSerif {
+  font-family: $sans-serif;
+}
+
+.IEonly {
+  display: none;
+}
+
+.yellowBox {
+  // font-family: $sans-serif;
+  display: block;
+  box-sizing: border-box;
+  background: #feef89;
+  border: 1px solid #333;
+  margin: 0.5rem auto;
+  width: 100%;
+  padding: 1.5rem;
+  @media (prefers-color-scheme: dark) {
+    background: #332200;
+    border: 1px solid $grey-1;
+  }
+}
+
+img.containedImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.imgcCaption {
+  // font-family: $sans-serif;
+  padding: 0;
+  margin-block-start: 0.5em;
+  line-height: 1.375;
+  font-size: $pokey + unquote("rem");
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+// === end, utility classes

@@ -11,7 +11,7 @@ var xFmPart2 = ',x_0,z_1/' // note ending slash
  
 module.exports = (imageUrl, alt, width, height, twitterUrl) => {
   divClass = `relative mb-2 p-4 bg-white border-2 border-gray-400 rounded md:rounded-md lg:rounded-lg xl:rounded-xl`
-  imgClass = `containedImage lazy`
+  imgClass = `containedImage`
   nscClass = `containedImage`
   dataSzes = `(min-width: 1024px) 100vw, 50vw`
   
@@ -29,7 +29,7 @@ module.exports = (imageUrl, alt, width, height, twitterUrl) => {
   stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2)
   stringtoRet += `" alt="${alt}" width="${width}" height="${height}" loading="lazy" sizes="${dataSzes}" /></a>
   <noscript>
-    <a href="${twitterUrl}" target="_blank" rel="noopener"><img class="${nscClass}" src="${cloudiBase + xFmPart1 + "300" + xFmPart2 + imageUrl}" alt="${alt}" /></a>
+    <a href="${twitterUrl}" target="_blank" rel="noopener"><img class="${nscClass}" src="${cloudiBase + xFmPart1 + "300" + xFmPart2 + imageUrl}" alt="${alt}" loading="lazy" /></a>
   </noscript>
   </div>`
 

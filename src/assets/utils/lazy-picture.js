@@ -55,7 +55,7 @@ module.exports = (url, alt, width, height, tmpl) => {
   stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2)
   stringtoRet += `" alt="${alt}" width="${width}" height="${height}" loading="lazy" sizes="${dataSzes}" />
   <noscript>
-    <img class="${nscClass}" src="${cloudiBase + xFmPart1 + "300" + xFmPart2 + url}" alt="${alt}" />
+    <img class="${nscClass}" src="${cloudiBase + xFmPart1 + "300" + xFmPart2 + url}" alt="${alt}" loading="lazy" />
   </noscript>
   </div>`
 

@@ -24,19 +24,19 @@ module.exports = (url, alt, width, height, tmpl) => {
   switch(tmpl) {
     case 'index':
       divClass = `h-full`
-      imgClass = `object-cover object-center h-full w-full containedImage lazy`
+      imgClass = `object-cover object-center h-full w-full containedImage`
       nscClass = `object-cover object-center h-full w-full containedImage`
       dataSzes = `100vw`
       break
     case 'posts':
       divClass = `h-full`
-      imgClass = `imgCover hero lazy`
+      imgClass = `imgCover hero`
       nscClass = `imgCover hero`
       dataSzes = `100vw`
       break
     default:
       divClass = `relative`
-      imgClass = `containedImage lazy`
+      imgClass = `containedImage`
       nscClass = `containedImage`
       dataSzes = `(min-width: 1024px) 100vw, 50vw`
   }
@@ -45,7 +45,7 @@ module.exports = (url, alt, width, height, tmpl) => {
 
   var stringtoRet = ``
   stringtoRet = `<div class="${divClass}" style="background-image: url(${cloudiBase + LQIPpholder + url}); background-position: center; background-repeat: no-repeat; background-size: cover;">
-  <img class="${imgClass}" data-src="${cloudiBase + xFmPart1 + "600" + xFmPart2 + url}" data-srcset="`
+  <img class="${imgClass}" src="${cloudiBase + xFmPart1 + "600" + xFmPart2 + url}" srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `${cloudiBase + xFmPart1 + size + xFmPart2 + url} ${size}w`
@@ -53,13 +53,7 @@ module.exports = (url, alt, width, height, tmpl) => {
     }
   })
   stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2)
-  stringtoRet += `" alt="${alt}" width="${width}" height="${height}"`
-  /*
-  if (divClass !== "h-full") {
-    stringtoRet += ` loading="lazy"` // not good for above-the-fold images
-  }
-  */
-  stringtoRet +=` sizes="${dataSzes}" />
+  stringtoRet += `" alt="${alt}" width="${width}" height="${height}" loading="lazy" sizes="${dataSzes}" />
   <noscript>
     <img class="${nscClass}" src="${cloudiBase + xFmPart1 + "300" + xFmPart2 + url}" alt="${alt}" />
   </noscript>

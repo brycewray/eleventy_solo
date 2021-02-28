@@ -19,7 +19,7 @@ module.exports = (imageUrl, alt, width, height, twitterUrl) => {
 
   var stringtoRet = ``
   stringtoRet = `<div class="${divClass}">
-  <a href="${twitterUrl}" target="_blank" rel="noopener"><img class="${imgClass}" data-src="${cloudiBase + xFmPart1 + "600" + xFmPart2 + imageUrl}" data-srcset="`
+  <a href="${twitterUrl}" target="_blank" rel="noopener"><img class="${imgClass}" src="${cloudiBase + xFmPart1 + "600" + xFmPart2 + imageUrl}" srcset="`
   respSizes.forEach(size => {
     if (size <= width) {
       stringtoRet += `${cloudiBase + xFmPart1 + size + xFmPart2 + imageUrl} ${size}w`
@@ -27,13 +27,7 @@ module.exports = (imageUrl, alt, width, height, twitterUrl) => {
     }
   })
   stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2)
-  stringtoRet += `" alt="${alt}" width="${width}" height="${height}"`
-  /*
-  if (divClass !== "h-full") {
-    stringtoRet += ` loading="lazy"` // not good for above-the-fold images
-  }
-  */
-  stringtoRet +=` sizes="${dataSzes}" /></a>
+  stringtoRet += `" alt="${alt}" width="${width}" height="${height}" loading="lazy" sizes="${dataSzes}" /></a>
   <noscript>
     <a href="${twitterUrl}" target="_blank" rel="noopener"><img class="${nscClass}" src="${cloudiBase + xFmPart1 + "300" + xFmPart2 + imageUrl}" alt="${alt}" /></a>
   </noscript>

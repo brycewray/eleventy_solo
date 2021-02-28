@@ -21,6 +21,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/svg")
   eleventyConfig.addPassthroughCopy("./src/images") // not just icons due to that one OG image
 
+  eleventyConfig.setUseGitIgnore(false) // for the sake of Sass-generated CSS
+
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
       "dd LLL yyyy"

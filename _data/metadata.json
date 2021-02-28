@@ -5,9 +5,9 @@
   "description": "brycewray.com — Observations, opinions, geekery.",
   "feed": {
     "subtitle": "brycewray.com — Observations, opinions, geekery.",
-    "filename": "feed.xml",
-    "path": "/feed.xml",
-    "url": "https://brycewray.com/feed.xml",
+    "filename": "index.xml",
+    "path": "/index.xml",
+    "url": "https://brycewray.com/index.xml",
     "id": "https://brycewray.com/"
   },
   "author": {

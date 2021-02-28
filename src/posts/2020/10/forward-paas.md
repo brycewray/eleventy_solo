@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: "Forward PaaS"
 subtitle: "Trying Cloudflare Workers and KV storage"

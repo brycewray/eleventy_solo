@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: "The full .11ty.js monty"
 subtitle: "Going all-JavaScript with my Eleventy site"

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: "Beginner’s luck"
 subtitle: "New Eleventy and Hugo starter sets"

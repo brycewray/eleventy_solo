@@ -4,49 +4,30 @@ layout: layouts/_default/base.njk
 ---
 
 <main>
-  <div class="background-hero-div">
-    <div class="background-hero-title-block-fit">
-      <h1 class="background-hero-title-text">{{ title }}</h1>
-      <h2 class="background-hero-subtitle-text">
-        {% if subtitle %}
-          {{ subtitle }}
-        {% else %}
-          &nbsp;
-        {% endif %}
-      </h2>
-      <p class="background-hero-description-text">{{ description }}</p>
-      <p class="background-hero-p-text">
-        <span style="font-variant: small-caps">published:</span>&nbsp; <strong>{{ page.date | htmlDateString }}</strong><br />
-        <span class="pokey">
-        {% if lastmod %}
-        <span style="font-variant: small-caps">last modified:</span>&nbsp; {{ lastmod | htmlDateString }}
-        {% else %}
-        &nbsp;
-        {% endif %}
-        </span>
-      </p>
-    </div>
-  </div>
 
-  <div class="container-narrower">
+  {% include 'layouts/partials/billboard.njk' %}
+
+  <div class="mr-auto ml-auto px-6" style="max-width: 60ch;">
+    <div class="mr-auto ml-auto border-b-2 border-blue-700 dark:border-white w-5/12"></div>
     <article class="article">
       {{ content | safe }}
     </article>
   </div>
 
   {% if title != "The obligatory About Me page" %}
-  <div class="bg-dark">
-    <h3 class="ctr wht"><a href="/posts" style="border-bottom: 0;">Other posts</a></h3>
+  {% include 'layouts/partials/fastcomments.njk' %}
+  <div class="w-full px-8 md:px-0 bg-blue-700 align-middle mt-10 mb-10">
+    <h3 class="text-center text-3xl tracking-normal mb-2 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
   {% if nextPost.url %}
-    <p class="ctr">
+    <p class="text-center my-2 text-xl text-white leading-tight tracking-tight">
       <strong>Next</strong>: 
-      <a class="next" href={{ nextPost.url }}>{{ nextPost.data.title }}</a>
+      <a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href={{ nextPost.url }}>{{ nextPost.data.title }}</a>
     </p>
   {% endif %}
   {% if prevPost.url %}
-    <p class="ctr">
+    <p class="text-center pb-4 my-2 text-xl text-white leading-tight tracking-tight">
       <strong>Previous</strong>: 
-      <a class="previous" href={{ prevPost.url }}>{{ prevPost.data.title }}</a>
+      <a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href={{ prevPost.url }}>{{ prevPost.data.title }}</a>
     </p>
   {% endif %}
   </div>

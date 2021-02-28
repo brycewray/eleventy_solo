@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: "Goodbye and hello • Part 2"
 subtitle: "Returning the site to Netlify"

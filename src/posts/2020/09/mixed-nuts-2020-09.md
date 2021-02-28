@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepostherofit.njk
+layout: layouts/posts/singlepost.njk
 tags: post
 title: "Mixed nuts • September, 2020"
 subtitle: "Oddities, observations, offal"

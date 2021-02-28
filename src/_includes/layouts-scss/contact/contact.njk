@@ -7,11 +7,9 @@ layout: layouts/_default/base.njk
   {% include 'layouts/partials/billboard.njk' %}
 
 
-  <div class="mr-auto ml-auto px-6" style="max-width: 60ch;">
-
-    <div class="mr-auto ml-auto border-b-2 border-blue-700 dark:border-white w-5/12"></div>
-
+  <div class="container-narrower">
     <article>
+      <div class="post-line"></div>
       {{ content | safe }}
     </article>
   </div>

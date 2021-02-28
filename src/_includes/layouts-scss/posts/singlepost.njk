@@ -1,0 +1,35 @@
+---
+title: singlepost.njk
+layout: layouts/_default/base.njk
+---
+
+<main>
+
+  {% include 'layouts/partials/billboard.njk' %}
+
+
+  <div class="container-narrower">
+    <div class="post-line"></div>
+    <article class="article">
+      {{ content | safe }}
+    </article>
+  </div>
+
+  {% if title != "The obligatory About Me page" %}
+  {% include 'layouts/partials/fastcomments.njk' %}
+  <div class="bg-dark">
+    <h3 class="ctr wht prevnextH3"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
+  {% if nextPost.url %}
+    <p class="ctr prevnextP">
+      <strong>Next</strong>: 
+      <a class="next" href={{ nextPost.url }}>{{ nextPost.data.title }}</a>
+    </p>
+  {% endif %}
+  {% if prevPost.url %}
+    <p class="ctr prevnextP">
+      <strong>Previous</strong>: 
+      <a class="previous" href={{ prevPost.url }}>{{ prevPost.data.title }}</a>
+    </p>
+  {% endif %}
+  </div>
+  {% endif %}

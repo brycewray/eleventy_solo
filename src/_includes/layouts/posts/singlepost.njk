@@ -9,7 +9,10 @@ layout: layouts/_default/base.njk
 
 
   <div class="container-narrower">
-    <div class="post-line"></div>
+    {% lazypicture featured_image, featured_image_alt, featured_image_width, featured_image_height %}
+    {% if featured_image_caption %}
+    <p class="ctr legal">{{ featured_image_caption | safe }}</p>
+    {% endif %}
     <article class="article">
       {{ content | safe }}
     </article>

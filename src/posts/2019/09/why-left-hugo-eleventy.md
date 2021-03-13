@@ -6,7 +6,7 @@ subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
-lastmod: 2020-11-22T10:25:00-06:00
+lastmod: 2021-02-11T07:50:00-06:00
 discussionId: "2019-09-why-left-hugo-eleventy"
 featured_image: "detour-2496197_4912x3264.jpg"
 featured_image_width: 4912
@@ -36,7 +36,8 @@ oldComments: |
     </div>
 ---
 
-**Note**: To put it simply, things [have](/posts/2019/09/back-with-hugo) [changed](/posts/2019/10/its-about-food-not-decor) [multiple](/posts/2019/10/now-gatsby-geezer) [times](/posts/2020/09/ignition-sequence-start) since this post, but it reflects my thinking at the time and also provides what I hope is some useful information, so [here it shall stay](/posts/2019/10/otoh).{.yellowBox}
+**Note**: To put it simply, things [have](/posts/2019/09/back-with-hugo) [changed](/posts/2019/10/its-about-food-not-decor) [multiple](/posts/2019/10/now-gatsby-geezer) [times](/posts/2021/02/simplify-simplify) since this post, but it reflects my thinking at the time and also provides what I hope is some useful information, so [here it shall stay](/posts/2019/10/otoh).
+{.yellowBox}
 
 Recently, I edited this site's footer. Where it used to say that this site is powered by Hugo---*i.e.*, the [Hugo](https://gohugo.io) [static site generator](https://staticgen.org) (SSG)---it now says it's powered by [the JAMstack](https://jamstack.org).
 
@@ -147,7 +148,7 @@ Yet, *because* of the Hugo built-ins to which I'd become accustomed, using Eleve
 
 Again, we're *learning*, here, so (b.) was the obvious selection.
 
-So how did I make up for what Hugo does from the moment you install it? Let me explain by covering my two "must-haves": typography and [SCSS/SASS](https://sass-lang.com).
+So how did I make up for what Hugo does from the moment you install it? Let me explain by covering my two "must-haves": typography and [SCSS/Sass](https://sass-lang.com).
 
 ### Definitely my type
 
@@ -165,15 +166,15 @@ In the case of Gatsby, I'd managed to get the "smart" typography and, usually, g
 
 And speaking of Gatsby: while you can go through many levels of hell trying to get plugins *not* to FUBAR each other with Gatsby, installing and using plugins with Eleventy is 'waaaaay easier and more stable.
 
-### SASSy stuff
+### Sassy stuff
 
 #### Hugo
 
-To enable the flexibility of SCSS/SASS, Hugo has [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/) for asset-processing---in this case, transforming one or more SCSS/SASS files on the fly while you're developing with `hugo server`.
+To enable the flexibility of SCSS/Sass, Hugo has [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/) for asset-processing---in this case, transforming one or more SCSS/Sass files on the fly while you're developing with `hugo server`.
 
 #### Eleventy
 
-With Eleventy, I installed the [node-sass](https://www.npmjs.com/package/node-sass) library and then set up [Gulp](https://gulpjs.com) to handle processing the SCSS/SASS files.
+With Eleventy, I installed the [node-sass](https://www.npmjs.com/package/node-sass) library and then set up [Gulp](https://gulpjs.com) to handle processing the SCSS/Sass files.
 
 Running Gulp with the settings in my repo's `gulpfile.js` file does this processing and watches constantly for changes, any of which will trigger a new processing run.
 

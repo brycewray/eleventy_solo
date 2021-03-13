@@ -6,9 +6,9 @@ subtitle: "The move to Cloudinary"
 description: "Getting a big burden off my shoulders—and my site-build workflow."
 author: Bryce Wray
 date: 2020-07-31T16:15:00-05:00
-lastmod: 2020-10-05T10:15:00-05:00
+lastmod: 2021-03-12T10:30:00-06:00
 discussionId: "2020-07-transformed"
-featured_image: "cinema-film-images-photography-64154_2806x1984.jpg"
+featured_image: cinema-film-images-photography-64154_2806x1984.jpg
 featured_image_width: 2806
 featured_image_height: 1984
 featured_image_alt: "Strips of photographic film positives with colorful landscape images"
@@ -16,7 +16,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=64154">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=64154">Pixabay</a></span>
 ---
 
-**Update, 2020-08-05**: If what you see herein makes you want to try Cloudinary, I request that you use [this invitation link](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu). **Full disclosure**: I will receive additional Cloudinary credits for each person who uses that link and subsequently enrolls with Cloudinary, even if only for the same ultra-generous free tier I describe in this post. Thanks in advance! *(The opinions herein are strictly my own and I was not compensated for them; the Cloudinary team provided this link to me **after** seeing what I'd already written.)* {.yellowBox}
+**Update, 2020-08-05**: If what you see herein makes you want to try Cloudinary, I request that you use [this invitation link](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/dqunpyaeqiizezj6lbdu). **Full disclosure**: I will receive additional Cloudinary credits for each person who uses that link and subsequently enrolls with Cloudinary, even if only for the same ultra-generous free tier I describe in this post. Thanks in advance! *(The opinions herein are strictly my own and I was not compensated for them; the Cloudinary team provided this link to me **after** seeing what I'd already written.)*
+{.yellowBox}
 
 This is about what one might call a transformative process.
 
@@ -38,9 +39,12 @@ Such was the case, [earlier this year](/posts/2020/05/going-solo-eleventy), when
 
 At first, I tried some excellent Eleventy plugins, but found each didn't fit my particular setup for differing reasons. As what was intended at first as only an interim measure but soon became my go-to answer, I came up with a build-time script, `imgxfm.js`, which used the [Sharp](https://github.com/lovell/sharp) library (and, later in the script's brief life, the [pngquant](https://pngquant.org/) library) to handle image-processing duties.
 
-When I first went with this method, the site wasn't using [hero images](https://www.optimizely.com/optimization-glossary/hero-image/). Thus, the script, handling only the relatively few images within my posts' body content, didn't take long to run each time I did a site build. Such had also been the case with the Eleventy/webpack setup.
+When I first went with this method, the site wasn't using [hero images](https://www.optimizely.com/optimization-glossary/hero-image/). Thus, the script, handling only the relatively few images within my posts’ body content, didn't take long to run each time I did a site build. Such had also been the case with the Eleventy/webpack setup.
 
 Things changed quite a bit once [I brought back hero images](/posts/2020/05/thousand-words-indeed) a couple of weeks later. Now, the build times fattened dramatically, and grew longer with each new post and its hero image---and, of course, these increasingly long builds were happening also on *local* builds while I was doing dev stuff. I spent plenty of time waiting through such builds, twiddling my metaphorical thumbs while listening to my iMac's fans kick up in protest.
+
+**Update, 2021-03-12**: I've [since chosen once again](/posts/2021/01/leaner-cleaner) to eschew the hero images; then, today, I brought them back as **featured** images rather than **hero** images.
+{.yellowBox}
 
 As a result: not long after I brought back the hero images, I was beginning to edge within sight of the [Netlify](https://netlify.com) free tier's 300-minutes-a-month build limit. My response took two forms (and resulted in posts about each):
 

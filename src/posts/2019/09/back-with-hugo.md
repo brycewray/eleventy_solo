@@ -6,9 +6,9 @@ subtitle: "Well, that didn’t last long"
 description: "Even for me, this switcheroo was quick, as the prodigal comes crawling back to Hugo."
 author: Bryce Wray
 date: 2019-09-20T16:40:00-05:00
-lastmod: 2020-09-27T10:20:00-05:00
+lastmod: 2021-02-11T07:50:00-06:00
 discussionId: "2019-09-back-with-hugo"
-featured_image: "skid-mark-567668_3500x2333.jpg"
+featured_image: skid-mark-567668_3500x2333.jpg
 featured_image_width: 3500
 featured_image_height: 2333
 featured_image_alt: "Skid marks on asphalt"
@@ -16,7 +16,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/Jan-Mallander-615621/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=567668">Jan Mallander</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=567668">Pixabay</a></span>
 ---
 
-**Note**: To put it simply, things have [changed](/posts/2019/10/now-gatsby-geezer) [multiple](/posts/2019/12/packing-up) [times](/posts/2020/09/ignition-sequence-start) since this post, but it reflects my thinking at the time, so [here it shall stay](/posts/2019/10/otoh).{.yellowBox}
+**Note**: To put it simply, things have [changed](/posts/2019/10/now-gatsby-geezer) [multiple](/posts/2019/12/packing-up) [times](/posts/2021/02/simplify-simplify) since this post, but it reflects my thinking at the time, so [here it shall stay](/posts/2019/10/otoh).
+{.yellowBox}
 
 I'm not even going to make a big deal of this, or spend a lot of your time explaining it. I'm just going to say it in what for me is a fairly short post.
 
@@ -88,7 +89,7 @@ However, this site is back on, and will remain on, Hugo. You have every right no
 
 Since I used to spend a lot a time on [Slashdot](https://slashdot.org), I'll offer a car analogy.
 
-Think about a car mechanic---which is really a stretch since I'm not mechanical at all, but it's just an analogy---who works days making sure customers' vehicles are running properly, then spends nights and weekends tinkering, as a hobby, on some old classic in his garage at home.
+Think about a car mechanic---which is really a stretch since I'm not mechanical at all, but it's just an analogy---who works days making sure customers’ vehicles are running properly, then spends nights and weekends tinkering, as a hobby, on some old classic in his garage at home.
 
 But he keeps the two separate.
 

@@ -6,7 +6,7 @@ subtitle: "An “interesting” learning experience"
 description: "After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo."
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
-lastmod: 2020-11-22T09:50:00-06:00
+lastmod: 2021-02-11T07:50:00-06:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: "hugo-logo_reflection_1280x720.jpg"
 featured_image_width: 1280
@@ -36,7 +36,8 @@ oldComments: |
     </div>
 ---
 
-**Note**: To put it simply, [things](/posts/2019/09/why-left-hugo-eleventy) [have](/posts/2019/09/back-with-hugo) [changed](/posts/2019/10/its-about-food-not-decor) [multiple](/posts/2019/10/now-gatsby-geezer) [times](/posts/2020/09/ignition-sequence-start) since this post, but it reflects my thinking at the time and also provides what I hope are some useful *caveats*, so [here it shall stay](/posts/2019/10/otoh).{.yellowBox}
+**Note**: To put it simply, [things](/posts/2019/09/why-left-hugo-eleventy) [have](/posts/2019/09/back-with-hugo) [changed](/posts/2019/10/its-about-food-not-decor) [multiple](/posts/2019/10/now-gatsby-geezer) [times](/posts/2021/02/simplify-simplify) since this post, but it reflects my thinking at the time and also provides what I hope are some useful *caveats*, so [here it shall stay](/posts/2019/10/otoh).
+{.yellowBox}
 
 If you've been sufficiently masochistic to read through most of my other [posts](/posts) up to this point, it's probably become pretty clear---and I've even said as much---that I tend to have a problem avoiding New Shiny Things where tech is concerned.
 
@@ -174,7 +175,7 @@ Anyway, thinking I now was finally over the hump and could see the finish line u
 
 The nights and weekends assumed a reasonably predictable pattern. Nearly every free moment when I wasn't at work, eating, or sleeping (fitfully), I was at my Mac, gradually adjusting files, templates, and code---and, all too often, finding that seemingly innocuous little changes, even if the instructions said they should be fine, crashed Gatsby and I had to enter `gatsby develop` yet again. (Thank goodness for [repeating commands](https://www.ostechnix.com/5-ways-repeat-last-command-linux/); it was a lot easier just to hit the `Up Arrow` key and `Return` than retyping `gatsby develop` innumerable times.)
 
-But, by the end of the "long weekend" starting with the Fourth of July holiday, the new site on my local system closely resembled the Hugo site for the first time, thanks especially to that help from the ["kind stranger" on Reddit to whom, unfortunately, I had no gold to give](https://knowyourmeme.com/memes/edit-thanks-for-the-gold-kind-stranger). Fortunately, getting [SCSS/SASS](https://en.wikipedia.org/wiki/Sass_(stylesheet_language)) to work on the Gatsby site through the use of `gatsby-plugin-sass` had proved much easier than some of the other plugin-related tinkering, so for the most part I was able to use the SCSS from this site without any serious changes. That provided the look-and-feel of this site's header, footer, nav menu, columns, and so on.
+But, by the end of the "long weekend" starting with the Fourth of July holiday, the new site on my local system closely resembled the Hugo site for the first time, thanks especially to that help from the ["kind stranger" on Reddit to whom, unfortunately, I had no gold to give](https://knowyourmeme.com/memes/edit-thanks-for-the-gold-kind-stranger). Fortunately, getting [SCSS/Sass](https://en.wikipedia.org/wiki/Sass_(stylesheet_language)) to work on the Gatsby site through the use of `gatsby-plugin-sass` had proved much easier than some of the other plugin-related tinkering, so for the most part I was able to use the SCSS from this site without any serious changes. That provided the look-and-feel of this site's header, footer, nav menu, columns, and so on.
 
 In addition, the [*gatsby-remark-smartypants* plugin](https://www.gatsbyjs.org/packages/gatsby-remark-smartypants/) produced the typographical effects to which I'd become accustomed here on the Hugo site such as "smart" quotes and em- and en-dashes from `---` and `--` respectively. Wouldn't have considered doing it any other way.
 

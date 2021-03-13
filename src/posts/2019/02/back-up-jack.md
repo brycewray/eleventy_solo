@@ -6,9 +6,9 @@ subtitle: "From 3-2-1 to 4-2-2"
 description: "Some observations on good backup practices, notably the 4-2-2 approach I’m now using."
 author: Bryce Wray
 date: 2019-02-23T12:45:00-06:00
-lastmod: 2020-11-26T08:15:00-06:00
+lastmod: 2021-02-14T07:50:00-06:00
 discussionId: "2019-02-back-up-jack"
-featured_image: "binary-2688910_6000x3372.jpg"
+featured_image: binary-2688910_6000x3372.jpg
 featured_image_width: 6000
 featured_image_height: 3372
 featured_image_alt: "Stylistic illustration of moving binary data"
@@ -16,7 +16,8 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2688910">Gerd Altmann</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2688910">Pixabay</a></span>
 ---
 
-**Update, 2020-01-11**: While I'll leave this here for archival purposes, the continuing and annoyingly anti-Mac glitchiness of OneDrive on macOS finally got under my skin one time too many, whereupon I have now ceased using it for both sync and the backup process described herein (which means that, contrary to the content here, I'm now "just" on 3-2-1 rather than 4-2-2). If you're on Windows, OneDrive is probably fine for these purposes, but Microsoft for reasons I sorta *can* imagine just doesn't seem to care about QC where its Mac version of OneDrive is concerned.{.yellowBox}
+**Update, 2020-01-11**:  While I'll leave this here for archival purposes, the continuing and annoyingly anti-Mac glitchiness of OneDrive on macOS finally got under my skin one time too many, whereupon I have now ceased using it for both sync and the backup process described herein (which means that, contrary to the content here, I'm now "just" on 3-2-1 rather than 4-2-2). If you're on Windows, OneDrive is probably fine for these purposes, but Microsoft for reasons I sorta *can* imagine just doesn't seem to care about QC where its Mac version of OneDrive is concerned.
+{.yellowBox}
 
 No one will ever mistake me for a high-tech version of [Henry David Thoreau](https://en.wikipedia.org/wiki/Henry_David_Thoreau) (which is a pretty bizarre concept, if you go there), but I've been trying to simplify my computing setup---not so much where hardware is concerned but, instead, the services to which I have subscribed.
 
@@ -73,13 +74,16 @@ Well, shut my mouth and call me "Cloudy."
 
 That had perfectly described my situation. Couldn't make it clearer than that.
 
-Sufficiently convinced by that opinion and others that said basically the same thing (*i.e.*, if you're all-in on Apple gear and sync'g only personal content, go with iCloud Drive), I promptly upgraded my iCloud subscription from fifty-gigabyte to two-terabyte and copied almost everything from my Dropbox folder onto iCloud Drive. It took about nine hours to complete the transfer, even with my high-bandwidth connectivity. Once there was nothing left available to move---there are a few apps I still use, such as the [Road Trip MPG](https://itunes.apple.com/us/app/road-trip-mpg/id298398207?mt=8) iOS app that keeps track of my car expenses, that require Dropbox to retain their data^[And even that app became iCloud-friendly a few months after I originally wrote this, so that was still one more nail in the Dropbox coffin for my purposes.]---I deleted the now-duplicated content from my Dropbox folder and terminated the paid subscription with Dropbox. I did keep the free [Dropbox Basic](https://www.dropbox.com/basic) two-gigabyte tier, which is more than enough for those aforementioned few apps' use.
+Sufficiently convinced by that opinion and others that said basically the same thing (*i.e.*, if you're all-in on Apple gear and sync'g only personal content, go with iCloud Drive), I promptly upgraded my iCloud subscription from fifty-gigabyte to two-terabyte and copied almost everything from my Dropbox folder onto iCloud Drive. It took about nine hours to complete the transfer, even with my high-bandwidth connectivity. Once there was nothing left available to move---there are a few apps I still use, such as the [Road Trip MPG](https://itunes.apple.com/us/app/road-trip-mpg/id298398207?mt=8) iOS app that keeps track of my car expenses, that require Dropbox to retain their data[^RoadTrip]---I deleted the now-duplicated content from my Dropbox folder and terminated the paid subscription with Dropbox. I did keep the free [Dropbox Basic](https://www.dropbox.com/basic) two-gigabyte tier, which is more than enough for those aforementioned few apps’ use.
+
+[^RoadTrip]: And even that app became iCloud-friendly a few months after I originally wrote this, so that was still one more nail in the Dropbox coffin for my purposes.
 
 As for the cost savings, they're small *but* I'm getting more for my money. Before, I was paying a buck a month for two hundred gigabytes of iCloud storage *and* ten bucks a month for *one* terabyte of Dropbox storage. Now, I'm paying ten bucks a month for *two* terabytes of iCloud storage *and*, not incidentally, sharing that two terabytes with my wife via [Family Sharing](https://www.apple.com/family-sharing/) for her iPhone photos, as well.[^8]
 
 In the first week under the new setup, I have been continually amazed to watch how smoothly macOS works with iCloud, now that I've finally given it the full "You da Sync Man" treatment---especially with the Mac set to [optimize local storage](https://support.apple.com/en-us/HT206996). I know, it should've been obvious, and it was, but *knowing* it was much different than *seeing* it has been. And, as a side benefit, I get a little thrill every time I check the Files app in iOS and see *all* my freakin' Mac stuff in there, too. That was sometimes problematic with the other services, notably OneDrive.
 
-**Note**: In the wake of my [later issues with my Mac's iCloud Sync that briefly caused me to drop using Ulysses](/posts/2019/05/boxed-in), I learned that [it can be unwise to use the </em>Optimize Mac Storage<em> option](https://www.macworld.com/article/3306257/how-to-disable-optimized-icloud-drive-storage-with-a-single-click.html), after all. It can inadvertently delete files on which [some](https://support.screencast-o-matic.com/hc/en-us/articles/360007256154--Sorry-this-recording-has-missing-files-since-iCloud-Drive-Optimize-Mac-Storage-is-enabled) [apps](https://support.native-instruments.com/hc/en-us/articles/360000816565-TRAKTOR-Warning-Message-Optimize-Mac-Storage-is-turned-on-in-iCloud-Drive-Mac-), particularly ["shoebox" apps](/posts/2019/05/boxed-in), depend. The more you know&nbsp;.&nbsp;.&nbsp;.{.yellowBox}
+**Note**: In the wake of my [later issues with my Mac's iCloud Sync that briefly caused me to drop using Ulysses](/posts/2019/05/boxed-in), I learned that [it can be unwise to use the *Optimize Mac Storage* option](https://www.macworld.com/article/3306257/how-to-disable-optimized-icloud-drive-storage-with-a-single-click.html), after all. It can inadvertently delete files on which [some](https://support.screencast-o-matic.com/hc/en-us/articles/360007256154--Sorry-this-recording-has-missing-files-since-iCloud-Drive-Optimize-Mac-Storage-is-enabled) [apps](https://support.native-instruments.com/hc/en-us/articles/360000816565-TRAKTOR-Warning-Message-Optimize-Mac-Storage-is-turned-on-in-iCloud-Drive-Mac-), particularly ["shoebox" apps](/posts/2019/05/boxed-in), depend. The more you know&nbsp;.&nbsp;.&nbsp;.
+{.yellowBox}
 
 Oh, yeah, OneDrive. Left that OneDrive-as-backup-from-Arq thread hanging, didn't I? Well, about that&nbsp;.&nbsp;.&nbsp;.
 
@@ -111,7 +115,7 @@ Yes, it is that precious to me. Yes, it is worth everything it has cost, is cost
 
 I urge you to figure out a 3-2-1 (or better) backup plan that works for you, as well as to pick at least one solid cloud vendor for sync purposes, so you can keep your own precious stuff *both* backed up and sync'd---safe for you and for those who might want it when you're gone. Do it even if you're just a kid now, much less an old codger like me. If you don't care now, you will someday.
 
-[^1]:	However, if you will spend enough time with it to make it worth it, Shadow isn't a bad deal for those who shy away from the up-front investment in a truly gaming-level PC. You're paying $35 a month (which you can stop at any time, as I did) to use a seriously outfitted PC in a rack someplace, and Shadow promises to keep the PC updated to meet newer games' requirements. As long as you have sufficiently good up/down bandwidth, it might well be worth checking out. Shadow has been cultivating tech-oriented YouTube channels, so you can probably find a good cheaper-first-month deal readily enough, as I did ($25 instead of $35).
+[^1]:	However, if you will spend enough time with it to make it worth it, Shadow isn't a bad deal for those who shy away from the up-front investment in a truly gaming-level PC. You're paying $35 a month (which you can stop at any time, as I did) to use a seriously outfitted PC in a rack someplace, and Shadow promises to keep the PC updated to meet newer games’ requirements. As long as you have sufficiently good up/down bandwidth, it might well be worth checking out. Shadow has been cultivating tech-oriented YouTube channels, so you can probably find a good cheaper-first-month deal readily enough, as I did ($25 instead of $35).
 
 [^2]:	Tip: if you ever want to use an Xbox controller with your Mac, make very sure you install the [360Controller driver](https://github.com/360Controller/360Controller/releases) first. It'll save you a world of trouble trying to dope it out.
 

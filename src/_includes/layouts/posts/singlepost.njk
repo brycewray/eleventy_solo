@@ -8,7 +8,10 @@ layout: layouts/_default/base.njk
   {% include 'layouts/partials/billboard.njk' %}
 
   <div class="mr-auto ml-auto px-6" style="max-width: 60ch;">
-    <div class="mr-auto ml-auto border-b-2 border-blue-700 dark:border-white w-5/12"></div>
+    {% lazypicture featured_image, featured_image_alt, featured_image_width, featured_image_height %}
+    {% if featured_image_caption %}
+    <p class="mt-2 text-center text-xs">{{ featured_image_caption | safe }}</p>
+    {% endif %}
     <article class="article">
       {{ content | safe }}
     </article>

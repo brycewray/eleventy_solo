@@ -64,12 +64,15 @@
     "postcss-clean": "^1.2.2",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.0",
-    "postcss-nested": "^5.0.5",
+    "postcss-partial-import": "^4.1.0",
     "posthtml": "^0.15.1",
     "prismjs": "^1.23.0",
     "rss": "^1.2.2",
     "sanitize-html": "^2.3.2",
     "sass": "^1.32.8",
     "tailwindcss": "^2.0.3"
+  },
+  "dependencies": {
+    "postcss-nesting": "^7.0.1"
   }
 }

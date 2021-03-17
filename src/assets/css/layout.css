@@ -61,18 +61,6 @@ a, a:focus, a:hover, a:active {
   @apply no-underline border-b border-solid border-blue-500;
 }
 
-span.caption {
-  text-shadow: none; /* keeps link borders from looking "dirty" */
-}
-
-span.caption a {
-  @apply text-blue-100 border-blue-100;
-}
-
-span.caption a:focus, span.caption a:hover, span caption a:active {
-  @apply text-gray-200 border-blue-100;
-}
-
 a {
   @apply text-blue-500 dark:text-blue-200 dark:border-blue-200;
 }
@@ -447,10 +435,14 @@ footer {
 .container-comments {
   @apply my-0 mx-auto text-sm w-5/6;
   max-width: 720px !important;
-  @media screen and (min-width: 900px) {
+}
+
+@media screen and (min-width: 900px) {
+  .container-comments {
     @apply w-2/5;
   }
 }
+
 /* END ==== for comments from FastComments */
 
 /* from vanilla-lazyload */

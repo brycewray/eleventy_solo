@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: "Good stuff without Google"
 subtitle: "Yes to variable typefaces, no to tracking"

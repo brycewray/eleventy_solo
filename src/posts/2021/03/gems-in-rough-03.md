@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 title: "Gems in the rough #3"
 subtitle: "Tips ’n’ tricks, this ’n’ that"
 description: "The latest installment of unrequested advice about tinkering with websites."

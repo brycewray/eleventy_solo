@@ -1,3 +1,10 @@
+const { svgNavIcon } = require( '../../../assets/svg/svgs.js')
+
+module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addShortcode('siteHeader', function() {
+
+    return /*html*/ `
     <header>
       <nav
         class="flex items-center bg-[#000] dark:bg-blue-700 justify-between flex-wrap px-6 py-2 md:py-0 fixed w-full z-10 top-0"
@@ -12,7 +19,7 @@
             href="/"
           >
             <span class="pl-2">
-              {{ '/src/assets/svg/svgNavIcon.svg' | svgContents | safe }}
+              ${svgNavIcon}
             </span>
           </a>
         </div>
@@ -87,3 +94,8 @@
         </div>
       </nav>
     </header>
+    `
+
+  })
+
+}

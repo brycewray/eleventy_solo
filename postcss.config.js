@@ -4,5 +4,8 @@ module.exports = {
     require('postcss-import'),
     require('@tailwindcss/jit'),
     require('autoprefixer'),
+    require('cssnano')({
+      preset: 'default',
+    }),
   ],
 }

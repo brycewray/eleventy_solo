@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 title: "Gems in the rough #2"
 subtitle: "More geeky hints for SSG fans"
 description: "Another collection of neat and/or nerdy items."

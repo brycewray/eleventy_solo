@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: "Webmentions in three SSGs: Part 1"
 subtitle: "Getting started with IndieWebbin’ in general"

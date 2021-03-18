@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.11ty.js
 tags: post
 title: "A normal person’s guide to static websites"
 subtitle: "Advice from a semi-normal old web geek"

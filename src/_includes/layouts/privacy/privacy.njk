@@ -1,0 +1,17 @@
+---
+title: privacy.njk
+layout: layouts/_default/base.njk
+---
+
+<main>
+
+  {% include 'layouts/partials/billboard.njk' %}
+
+  <div class="mr-auto ml-auto px-6" style="max-width: 60ch;">
+    <div class="mr-auto ml-auto border-b-2 border-blue-700 dark:border-white w-5/12"></div>
+    <article>
+      {{ content | safe }}
+    </article>
+  </div>
+
+</main>

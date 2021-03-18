@@ -1,5 +1,5 @@
 ---
-layout: layouts/contact/contact.11ty.js
+layout: layouts/contact/contact.njk
 title: "Want to reach me?"
 description: "Here are several ways to get in contact."
 author: Bryce Wray

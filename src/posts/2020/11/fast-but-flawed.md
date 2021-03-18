@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepost.njk
 title: "Fast but flawed"
 subtitle: "Two more static website hosts to consider (maybe)"
 description: "These can give you great performance, but there’s a catch."

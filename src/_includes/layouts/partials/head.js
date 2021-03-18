@@ -106,9 +106,11 @@ module.exports = function(eleventyConfig) {
     <link rel="preconnect" href="https://res.cloudinary.com" />
 
     <link rel="preload" href="/assets/fonts/Inter-3-15_subset_2020-08-20.woff2" as="font" type="font/woff2" crossorigin />
-    <style>
-      ${internalCSS}
-    </style>
+
+    ${ process.env.NODE_ENV === 'production' 
+      ? /*html*/ `<style>${internalCSS}</style>`
+      : /*html*/ `<link rel="stylesheet" href="/css/index.css" type="text/css"  />`
+    }
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}.notInIE{display: none;}}</style>
 
     ${analyticsCode}

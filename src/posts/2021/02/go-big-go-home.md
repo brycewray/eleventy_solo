@@ -67,7 +67,7 @@ Image: [Apple, Inc.](https://www.apple.com/newsroom/2020/11/introducing-the-next
 ```
 {% endraw %}
 
-[^commentsGo]: If you happen upon [this site's repo](https://github.com/brycewray/hugo_site) out of curiosity and check out this post's Markdown file, you'll notice that this text's bounding `{{` and `}}` also have wrapping `/*` and `*/`, respectively. That's because, otherwise, Hugo sees it as *real* code, not just a representation of it, and acts accordingly---in this case, once again displaying the image. I found this otherwise undocumented workaround in a [2015 comment](https://discourse.gohugo.io/t/a-way-to-mark-plain-text-and-stop-hugo-from-interpreting/1325/2) on the [Hugo Discourse forum](https://discourse.gohugo.io). This is similar to how Eleventy requires the use of `{% raw %}` and `{% endraw %}` for proper display of code blocks which contain certain combinations of characters.
+[^commentsGo]: If you happen upon [this site's repo](https://github.com/brycewray/hugo_site) out of curiosity and check out this post's Markdown file, you'll notice that this text's bounding {% raw %}`{{` and `}}`{% endraw %} also have wrapping `/*` and `*/`, respectively. That's because, otherwise, Hugo sees it as *real* code, not just a representation of it, and acts accordingly---in this case, once again displaying the image. I found this otherwise undocumented workaround in a [2015 comment](https://discourse.gohugo.io/t/a-way-to-mark-plain-text-and-stop-hugo-from-interpreting/1325/2) on the [Hugo Discourse forum](https://discourse.gohugo.io). This is similar to how Eleventy requires the use of `raw` and `endraw` statements for proper display of code blocks which contain certain combinations of characters.
 
 Here's what each shortcode does:
 
@@ -224,7 +224,7 @@ As for the `printf` stuff and all those `%s` items: `printf` is the [recommended
 
 ### Hyphens and curly brackets
 
-Finally, those hyphens connected to many of the curly brackets (`{{-` and `-}}`) eliminate extraneous white space in the resulting HTML. To be sure, the `--minify` flag in my site's `hugo build` command gets rid of that space, too, but I just personally hate to see it when I'm in dev mode. However, if you're **not** as picky about the appearance of your resulting HTML source code in dev mode, plain ol’ `{{` and `}}` do the job just fine. (Where a set of curly brackets has only one hyphen rather than both, that's because I deemed it necessary to dump only *some* of the white space it involved.)
+Finally, those hyphens connected to many of the curly brackets ({% raw %}`{{-` and `-}}`{% endraw %}) eliminate extraneous white space in the resulting HTML. To be sure, the `--minify` flag in my site's `hugo build` command gets rid of that space, too, but I just personally hate to see it when I'm in dev mode. However, if you're **not** as picky about the appearance of your resulting HTML source code in dev mode, plain ol’ {% raw %}`{{` and `}}`{% endraw %} do the job just fine. (Where a set of curly brackets has only one hyphen rather than both, that's because I deemed it necessary to dump only *some* of the white space it involved.)
 
 ## Twisted, mister
 

@@ -7,7 +7,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  */
 
  code {
-  @apply bg-gray-200 dark:bg-gray-800;
+  @apply bg-[#dfeeff] dark:bg-gray-800;
 }
 
 code[class*="language-"],
@@ -171,5 +171,4 @@ div.code-toolbar > .toolbar span:focus {
 
 article code {
   font-size: 0.9em;
-  @apply bg-gray-200 dark:bg-gray-700;
 }

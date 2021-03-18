@@ -181,7 +181,7 @@ article h1, article h2, article h3, article h4 {
 }
 
 article p, li {
-  @apply text-lg mt-6 mb-6 leading-relaxed;
+  @apply mt-6 mb-6 leading-relaxed;
 }
 
 article img.containedImage, .home-colOne img.containedImage {
@@ -206,13 +206,13 @@ article img.containedImage, .home-colOne img.containedImage {
 
 @media screen and (min-width: 769px) {
   article p, li {
-    @apply text-xl leading-relaxed;
+    @apply text-lg leading-relaxed;
   }
 }
 
 @media screen and (min-width: 1920px) {
   article p, li {
-    @apply text-2xl leading-relaxed;
+    @apply text-xl leading-relaxed;
   }
 }
 

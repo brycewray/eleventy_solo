@@ -1,15 +1,11 @@
 const { DateTime } = require("luxon")
 const htmlmin = require("html-minifier")
-const jsTheme = require('./src/_includes/jstheme.js')
 const ErrorOverlay = require("eleventy-plugin-error-overlay")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const svgContents = require("eleventy-plugin-svg-contents")
 const { fromPairs } = require("lodash")
 
 module.exports = function (eleventyConfig) {
-
-  // theming -- based on Reuben Lillie's code (https://gitlab.com/reubenlillie/reubenlillie.com/)
-  jsTheme(eleventyConfig)
 
   eleventyConfig.addPlugin(pluginRss)
 

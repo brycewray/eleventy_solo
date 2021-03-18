@@ -1,6 +1,5 @@
 const analyticsCode = require('../../../assets/utils/analytics.js')
 const fs = require('fs')
-const internalCSS = fs.readFileSync('src/_includes/css/index.css')
 let socialImg = `https://res.cloudinary.com/brycewray-com/image/upload/`
 socialImg += `c_fill,w_1024,h_512,q_auto:eco,f_auto,x_0,z_1/`
 const fallbackImg = `typewriter-monochrome_2242164_6260x4374.jpg`
@@ -106,11 +105,7 @@ module.exports = function(eleventyConfig) {
     <link rel="preconnect" href="https://res.cloudinary.com" />
 
     <link rel="preload" href="/assets/fonts/Inter-3-15_subset_2020-08-20.woff2" as="font" type="font/woff2" crossorigin />
-
-    ${ process.env.NODE_ENV === 'production' 
-      ? /*html*/ `<style>${internalCSS}</style>`
-      : /*html*/ `<link rel="stylesheet" href="/css/index.css" type="text/css"  />`
-    }
+    <link rel="stylesheet" href="/css/${data.csshash['index.css']}" type="text/css" />
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}.notInIE{display: none;}}</style>
 
     ${analyticsCode}

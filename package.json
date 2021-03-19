@@ -26,7 +26,7 @@
     "maintained node versions"
   ],
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-rss": "^1.1.0",
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",

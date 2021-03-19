@@ -1,6 +1,6 @@
 # Repo for brycewray.com
 
-This is the repository from which the [Eleventy](https://11ty.dev)-generated version of [brycewray.com](https://brycewray.com) formerly was built. I suggest you use it **only for reference** and, rather than cloning or forking it, use one of the **starter sets** based on it (see below). It now uses the [Tailwind CSS JIT compiler](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) and features internal (`head`-based) CSS; it also includes [Alpine.js](https://github.com/alpinejs/alpine).
+This is the repository from which the [Eleventy](https://11ty.dev)-generated version of [brycewray.com](https://brycewray.com) formerly was built. I suggest you use it **only for reference** and, rather than cloning or forking it, use one of the **starter sets** based on it (see below). It now uses the [Tailwind CSS JIT compiler](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css) and, in production mode, features internal (`head`-based) CSS; it also includes [Alpine.js](https://github.com/alpinejs/alpine).
 
 ## Starter sets based on this repo
 

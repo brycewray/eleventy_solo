@@ -5,7 +5,7 @@ subtitle: "Digging further under the hood"
 description: "Some of the code behind my previous post."
 author: Bryce Wray
 date: 2020-12-15T17:00:00-06:00
-lastmod: 2021-01-12T07:35:00-06:00
+lastmod: 2021-03-20T17:30:00-05:00
 draft: false
 discussionId: "2020-12-hashing-out-cache-busting-fix-eleventy"
 featured_image: "csshash-js_in_Nova_2786x1650.png"
@@ -15,6 +15,9 @@ featured_image_alt: "Screen capture of JavaScript file in the Nova code editor"
 featured_image_caption: |
   <span class="caption">Image: <em>cssdate.js</em> in the <a href="https://nova.app" target="_blank" rel="noopener">Nova</a> code&nbsp;editor, which I was trialing when I first published this&nbsp;post</span>
 ---
+
+**Note**: I later found a [much better solution](/posts/2021/03/tailwind-head-eleventy), but am leaving this here for the sake of [transparency](/posts/2019/10/otoh).
+{.yellowBox}
 
 *Up-front disclaimer: No proverbial horses were beaten to death (at least, not by me) during the writing of the following---although I could see how you might get a different impression.*
 

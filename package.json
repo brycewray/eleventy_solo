@@ -26,11 +26,11 @@
   ],
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@11ty/eleventy-plugin-rss": "^1.1.0",
+    "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
     "@babel/register": "^7.13.8",
-    "@tailwindcss/jit": "^0.1.4",
+    "@tailwindcss/jit": "^0.1.5",
     "autoprefixer": "^10.2.5",
     "axios": "^0.21.1",
     "babel-core": "^6.26.3",

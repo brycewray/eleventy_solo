@@ -115,7 +115,7 @@ module.exports = function(eleventyConfig) {
 
     ${ process.env.NODE_ENV === 'production' 
       ? /*html*/ `<style>${internalCSS}</style>`
-      : /*html*/ `<link rel="stylesheet" href="/css/index.css" type="text/css"  />`
+      : /*html*/ `<link rel="stylesheet" href="/css/index.css" type="text/css" />`
     }
 
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}.notInIE{display: none;}}</style>

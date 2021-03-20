@@ -14,7 +14,7 @@ exports.render = function (data) {
       <h2 class="h1 mt-4 lg:mt-0 mb-4 lg:mb-10 text-3xl lg:text-5xl 2xl:text-7xl">Latest <a href="/posts/">posts</a></h2>
       ${
         data.collections.post.slice(0, 3).map(post => /*html*/ `
-      <div>
+      <div class="lg:pr-8">
         <h2 class="not-italic tracking-tight text-2xl lg:text-3xl 2xl:text-4xl"><a href="${post.url}">${post.data.title}</a></h2>
         <p class="font-bold mt-1 mb-0 leading-5 text-xl lg:text-2xl 2xl:text-3xl">${post.data.subtitle}</p>
         <p class="text-sm tracking-normal mt-1 mb-0 dateInfo">

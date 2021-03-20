@@ -115,6 +115,7 @@ module.exports = function (eleventyConfig) {
     ...eleventyConfig.browserSyncConfig,
     files: ["src/**/*.js", "src/assets/css/*.css", "src/**/*.md"],
     ghostMode: false,
+    port: 3000,
   })
 
   eleventyConfig.addPlugin(ErrorOverlay)

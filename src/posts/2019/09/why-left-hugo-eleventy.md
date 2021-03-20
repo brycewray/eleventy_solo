@@ -65,7 +65,7 @@ First, I got a big spike in readership for that first post about it, courtesy of
 
 Second, not long after I dragged my bleeding carcass away from attempting to use Gatsby without sufficient familiarity with its [React](https://reactjs.org) framework, my initial sense of relief gave way to a distinct and annoying whisper in my ear:
 
-*"Beat you, old man. Heh, heh.”*
+*“Beat you, old man. Heh, heh.”*
 
 It wasn't so much that I felt Gatsby and its adherents had beaten me. It was more that I felt I'd been laid low by the newer generation of mostly JavaScript-based SSGs in general.
 
@@ -95,13 +95,13 @@ So, six days into Gatsby Experiment II, I abandoned it.
 
 Again, I heard that whispering, snickering voice:
 
-*"Beat you **again**.”* 
+*“Beat you **again**.”* 
 
 But this time, I didn't just slink off, happy to have retained my sanity if not my dignity. This time, I had a response.
 
-"No. **I** ***rejected*** **you**. 
+“No. **I** ***rejected*** **you**. 
 
-"And now I'm going to prove that *you*, **not** I, are the problem.
+“And now I'm going to prove that *you*, **not** I, are the problem.
 
 "I'm going to pick the 'new' SSG I should've picked the first time."
 

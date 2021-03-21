@@ -25,16 +25,18 @@ module.exports = function(eleventyConfig) {
         </div>
 
         <!--Toggle button (hidden on large screens)-->
-          <button
+        <button
           @click="isOpen = !isOpen"
           type="button"
           class="block lg:hidden px-2 text-white hover:text-gray-200 focus:outline-none focus:text-white"
           :class="{ 'transition transform-180': isOpen }"
+          aria-label="Open mobile menu"
         >
           <svg
             class="h-6 w-6 fill-current"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
+            aria-hidden="true"
           >
             <path
               x-show="isOpen"

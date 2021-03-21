@@ -15,7 +15,7 @@ main {
 }
 
 html, body {
-  @apply dark:bg-black;
+  @apply dark:bg-black overflow-y-scroll;
 }
 
 body {

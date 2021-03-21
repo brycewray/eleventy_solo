@@ -1,4 +1,4 @@
-const { svgNavIcon } = require( '../../../assets/svg/svgs.js')
+const { svgNavIcon } = require( '../../../assets/svgjs/svgs.js')
 
 module.exports = function(eleventyConfig) {
 

@@ -1,4 +1,4 @@
-const { svgFirstPageIcon, svgPrevPageIcon, svgNextPageIcon, svgLastPageIcon } = require( '../assets/svg/svgs.js')
+const { svgFirstPageIcon, svgPrevPageIcon, svgNextPageIcon, svgLastPageIcon } = require( '../assets/svgjs/svgs.js')
 
 exports.data = {
   layout: 'layouts/_default/base.11ty.js',

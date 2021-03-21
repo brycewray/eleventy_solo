@@ -1,6 +1,6 @@
 let copyYear = new Date().getFullYear()
 const affilLink = `https://usefathom.com/ref/ZKHYWX` // This is just for Bryce Wray's site, please note
-const { svgFooterIcon, svgGitHubIcon, svgTwitterIcon, svgLinkedInIcon, svgRSSIcon } = require( '../../../assets/svg/svgs.js')
+const { svgFooterIcon, svgGitHubIcon, svgTwitterIcon, svgLinkedInIcon, svgRSSIcon } = require( '../../../assets/svgjs/svgs.js')
 
 module.exports = function(eleventyConfig) {
 

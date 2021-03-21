@@ -5,7 +5,7 @@ subtitle: "Using <code>package.json</code> as an asset pipeline"
 description: "This follow-up to an earlier article about Hugo Pipes shows how to get internal CSS in an Eleventy site—and with no build tools required."
 author: Bryce Wray
 date: 2021-03-20T17:07:00-05:00
-#lastmod:
+lastmod: 2021-03-21T12:35:00-05:00
 #draft: false
 discussionId: "2021-03-tailwind-head-eleventy"
 featured_image: "code-html-head-5421210_5103x3403.jpg"
@@ -162,7 +162,7 @@ Here's the TL;DR version:
 
 Accordingly, I've decided to dip my toes back into the piranha tank of dependencies-heavy development, with the hope that I continue to be ambulatory thereafter.
 
-All of the above being the case, I also decided that I'd benefit more (consider it cross-training, if you will) from doing my personal stuff in a JavaScript-based SSG once again, rather than the [Go](https://golang.org)-based Hugo.
+All of the above being the case, I also decided that I'd benefit more (consider it cross-training, if you will) from doing my personal stuff in a JavaScript-based SSG once again rather than Hugo with its basis in the [Go language](https://golang.org).
 
 And, while I briefly considered trying to convert my site over to [Next.js](https://nextjs.org) since that's the framework we may very well adopt at the Day Job for the corporation's sites, I found it far more trouble than it was worth for a simple Markdown-based site like this one.[^nested]
 

@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
     return /*html*/ `
     <header>
       <nav
-        class="flex items-center bg-[#000] dark:bg-blue-700 justify-between flex-wrap px-6 py-2 md:py-0 fixed w-full z-10 top-0"
+        class="flex items-center bg-[#000] dark:bg-blue-700 justify-between flex-wrap px-6 py-2 fixed w-full z-10 top-0"
         x-data="{ isOpen: false }"
         @keydown.escape="isOpen = false"
       >

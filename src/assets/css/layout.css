@@ -334,7 +334,7 @@ blockquote {
 }
 
 .footnote-item pre, .footnote-item code {
-  @apply text-xs;
+  @apply text-sm;
 }
 
 /* == end, footnotes */

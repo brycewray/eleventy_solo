@@ -1,4 +1,5 @@
 const analyticsCode = require('../../../assets/utils/analytics.js')
+const alpineJSVer = '2.8.2'
 const fs = require('fs')
 var internalCSS = ''
 var internalCSSPath = 'src/_includes/css/index.css'
@@ -10,7 +11,6 @@ if (process.env.NODE_ENV === 'production') {
 let socialImg = `https://res.cloudinary.com/brycewray-com/image/upload/`
 socialImg += `c_fill,w_1024,h_512,q_auto:eco,f_auto,x_0,z_1/`
 const fallbackImg = `typewriter-monochrome_2242164_6260x4374.jpg`
-const alpineJSVer = '2.8.1'
 
 module.exports = function(eleventyConfig) {
 

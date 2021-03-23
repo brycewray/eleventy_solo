@@ -5,7 +5,7 @@ subtitle: "Using <code>package.json</code> as an asset pipeline"
 description: "This follow-up to an earlier article about Hugo Pipes shows how to get internal CSS in an Eleventy site—and with no build tools required."
 author: Bryce Wray
 date: 2021-03-20T17:07:00-05:00
-lastmod: 2021-03-21T12:35:00-05:00
+lastmod: 2021-03-23T03:53:00-05:00
 #draft: false
 discussionId: "2021-03-tailwind-head-eleventy"
 featured_image: "code-html-head-5421210_5103x3403.jpg"
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/stradus-833024/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5421210">Sárfi Benjámin</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5421210">Pixabay</a></span>
 ---
 
-**Spoiler alert**: I already updated my two [Eleventy](https://11ty.dev)-based starter sets with the solution explained in this post. If you prefer [Nunjucks templating](https://www.11ty.dev/docs/languages/nunjucks/), use the [eleventy_solo_starter_njk repo](https://github.com/brycewray/eleventy_solo_starter_njk); if you prefer [.11ty.js (pure JavaScript) templating](https://www.11ty.dev/docs/languages/javascript/), use the original [eleventy_solo_starter repo](https://github.com/brycewray/eleventy_solo_starter).  (I'd still suggest reading this post before you do so.) This solution replaces my more involved [CSS-hashing stuff](/posts/2020/12/hashing-out-cache-busting-fix-eleventy/) from a few months ago.
+**Spoiler alert, updated 2021-03-23**: I already updated my two [Eleventy](https://11ty.dev)-based starter sets with the solution explained in this post. If you prefer [Nunjucks templating](https://www.11ty.dev/docs/languages/nunjucks/), use the [eleventy_solo_starter_njk repo](https://github.com/brycewray/eleventy_solo_starter_njk); if you prefer [.11ty.js (pure JavaScript) templating](https://www.11ty.dev/docs/languages/javascript/), use the original [eleventy_solo_starter repo](https://github.com/brycewray/eleventy_solo_starter).  (I'd still suggest reading this post before you do so.) This solution replaces my more involved [CSS-hashing stuff](/posts/2020/12/hashing-out-cache-busting-fix-eleventy/) from a few months ago. ***Further update, 2021-03-23**: I also have now created two versions of those starter sets, [one for Nunjucks](https://github.com/brycewray/eleventy_solo_starter_njk_twjit) and [one for .11ty.js](https://github.com/brycewray/eleventy_solo_starter_twjit), which use the [experimental Tailwind JIT compiler](https://github.com/tailwindlabs/tailwindcss-jit) about which I [wrote a few days ago](/posts/2021/03/jit-game-changer-tailwind-css).*
 {.yellowBox}
 
 Last month, I posted "[Tailwind-to-head with Hugo Pipes](/posts/2021/02/tailwind-head-hugo-pipes/)," an explanation of how to achieve internal CSS---styles injected into the HTML `head` rather than existing in a separate .css file---in a [Hugo](https://gohugo.io)-based site. In particular, this procedure involved CSS from the popular [Tailwind CSS](https://tailwindcss.com) framework, although I also showed how to do it with [SCSS](https://sass-lang.com). Each method was easy because of Hugo's built-in asset pipeline, [Hugo Pipes](https://gohugo.io/hugo-pipes).

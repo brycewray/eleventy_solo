@@ -5,7 +5,7 @@ subtitle: "Using <code>package.json</code> as an asset pipeline"
 description: "This follow-up to an earlier article about Hugo Pipes shows how to get internal CSS in an Eleventy site—and with no build tools required."
 author: Bryce Wray
 date: 2021-03-20T17:07:00-05:00
-lastmod: 2021-03-23T03:53:00-05:00
+lastmod: 2021-03-24T06:17:00-05:00
 #draft: false
 discussionId: "2021-03-tailwind-head-eleventy"
 featured_image: "code-html-head-5421210_5103x3403.jpg"
@@ -45,12 +45,15 @@ First of all, let's cover the `package.json` scripting (I'll save space by not i
     "build": "NODE_ENV=production npm-run-all clean postcss-build --parallel prod:*",
     "postcss-build": "postcss src/assets/css/index.css -o src/_includes/css/index.css --config ./postcss.config.js",
     "dev:postcss": "postcss src/assets/css/index.css -o _site/css/index.css --config ./postcss.config.js -w",
-    "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --watch --quiet",
+    "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --watch --quiet --serve",
     "prod:postcss": "postcss src/assets/css/index.css -o src/_includes/css/index.css --config ./postcss.config.js",
     "prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site"
   },
 ```
 {% endraw %}
+
+**Update, 2021-03-24**: I corrected the script `dev:eleventy`, above, so that it also includes the `--serve` parameter. Sorry that I missed it earlier, which happened because I previously was using a separate BrowserSync instance and, thus, the code from which I was copying at the time didn't have the parameter.
+{.yellowBox}
 
 Now let's see what all those scripts do when you invoke either development mode (`npm run start`) or production mode (`npm run build`). Here's the resulting sequence of actions; they're more alike than not alike, so I'll combine them into one list:
 

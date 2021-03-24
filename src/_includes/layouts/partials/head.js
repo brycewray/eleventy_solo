@@ -26,7 +26,7 @@ module.exports = function(eleventyConfig) {
     <meta name="generator" content="Eleventy v${require(`@11ty/eleventy/package.json`).version}" />  
 
     ${
-      (data.title == "Home page")
+      (data.page.url == "/")
       ? /*html*/ `
       <title>${data.siteparams.siteTitle}</title> 
       <meta property="og:title" content="${data.siteparams.siteTitle}" />

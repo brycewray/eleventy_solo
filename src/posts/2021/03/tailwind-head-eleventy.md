@@ -5,7 +5,7 @@ subtitle: "Using <code>package.json</code> as an asset pipeline"
 description: "This follow-up to an earlier article about Hugo Pipes shows how to get internal CSS in an Eleventy site—and with no build tools required."
 author: Bryce Wray
 date: 2021-03-20T17:07:00-05:00
-lastmod: 2021-03-24T06:17:00-05:00
+lastmod: 2021-03-24T19:37:00-05:00
 #draft: false
 discussionId: "2021-03-tailwind-head-eleventy"
 featured_image: "code-html-head-5421210_5103x3403.jpg"
@@ -52,7 +52,7 @@ First of all, let's cover the `package.json` scripting (I'll save space by not i
 ```
 {% endraw %}
 
-**Update, 2021-03-24**: I corrected the script `dev:eleventy`, above, so that it also includes the `--serve` parameter. Sorry that I missed it earlier, which happened because I previously was using a separate BrowserSync instance and, thus, the code from which I was copying at the time didn't have the parameter.
+**Update, 2021-03-24**: I corrected the script `dev:eleventy`, above, so that it includes the `--serve` parameter rather than the `--watch` parameter; as I was [reminded on Twitter](https://twitter.com/marcfilleul/status/1374840637112131589) and is [explained in the Eleventy documentation](https://www.11ty.dev/docs/usage/#re-run-eleventy-when-you-save), `serve` includes the "watching" process, so it's unnecessary to have **both** `--watch` and `serve`. Sorry that I missed this earlier, which probably happened because I previously was using a separate BrowserSync instance and, thus, the code from which I was copying at the time didn't have (or need) the `--serve` parameter for Eleventy.
 {.yellowBox}
 
 Now let's see what all those scripts do when you invoke either development mode (`npm run start`) or production mode (`npm run build`). Here's the resulting sequence of actions; they're more alike than not alike, so I'll combine them into one list:

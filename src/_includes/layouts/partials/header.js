@@ -77,6 +77,7 @@ module.exports = function(eleventyConfig) {
                 @click="isOpen = false"
                 >Posts
               </a>
+            </li>
             <li class="text-lg lg:text-sm py-0 my-4 font-bold lg:tracking-[0.15em] lg:uppercase">
               <a
                 class="inline-block py-0 px-4 text-white border-0 hover:border-0 hover:text-gray-300 no-underline"
@@ -84,6 +85,7 @@ module.exports = function(eleventyConfig) {
                 @click="isOpen = false"
                 >Privacy
               </a>
+            </li>
             <li class="text-lg lg:text-sm py-0 my-4 font-bold lg:tracking-[0.15em] lg:uppercase">
               <a
                 class="inline-block py-0 px-4 text-white border-0 hover:border-0 hover:text-gray-300 no-underline"

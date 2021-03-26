@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepost.njk
 title: "Leaner and cleaner"
 subtitle: "Simpler is (usually) better"
 description: "After I remind myself of this site’s original, spartan appearance, changes result."

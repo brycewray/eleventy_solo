@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepost.njk
 title: "Cache-busting in Eleventy, take two"
 subtitle: "This time, a solution that really (?) works"
 description: "Sometimes, semi-bespoke is best."

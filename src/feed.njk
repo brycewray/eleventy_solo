@@ -1,39 +1,31 @@
----json
-{
-  "permalink": "/index.xml",
-  "eleventyExcludeFromCollections": "true",
-  metadata: {
-    "title": "BryceWray.com",
-    "subtitle": "brycewray.com — Observations, opinions, geekery.",
-    "url": "https://brycewray.com/",
-    "feedUrl": "https://brycewray.com/index.xml",
-    "author": {
-      "name": "Bryce Wray",
-      "email": "bw@brycewray.com"
-    }
-  }
-}
+---
+permalink: /index.xml
+eleventyExcludeFromCollections: true
+# No space allowed underneath the divider (breaks the XML)
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>{{ metadata.title }}</title>
-	<subtitle>{{ metadata.subtitle }}</subtitle>
-	<link href="{{ metadata.feedUrl }} rel="self"/>
-	<link href="{{ metadata.url }}"/>
-	<updated>{{ collections.post | getNewestCollectionItemDate | rssLastUpdatedDate }}</updated>
-	<id>{{ metadata.url }}</id>
+	<title>{{ siteparams.siteTitle }}</title>
+	<subtitle>{{ siteparams.feed.subtitle }}</subtitle>
+	<link href="{{ siteparams.siteBaseURL }}/index.xml" rel="self"/>
+	<link href="{{ siteparams.siteBaseURL }}"/>
+	<updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+	<id>{{ siteparams.feed.id }}</id>
 	<author>
-		<name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}}
+		<name>{{ siteparams.siteAuthor }}</name>
 	</author>
 	{%- for post in collections.post | reverse %}
 	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
 	<entry>
-		<title>{{ post.data.title }} | {{ post.data.subtitle }} </title>
+		<title>{{ post.data.title }}</title>
+    <subtitle>{{ post.data.subtitle }} </subtitle>
 		<link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date | rssDate }}</updated>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
 		<id>{{ absolutePostUrl }}</id>
-    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
-	</entry>
+    {% if post.data.description %}
+    <description>{{ post.data.description }}</description>
+    <content>{{ post.data.description }}</content>
+    {% endif %}
+  </entry>
 	{%- endfor %}
 </feed>

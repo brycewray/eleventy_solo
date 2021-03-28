@@ -1,33 +1,39 @@
----
-permalink: /index.xml
-eleventyExcludeFromCollections: true
-# No space allowed underneath the divider (breaks the XML)
+---json
+{
+  "permalink": "/index.xml",
+  "eleventyExcludeFromCollections": "true",
+  metadata: {
+    "title": "BryceWray.com",
+    "subtitle": "brycewray.com — Observations, opinions, geekery.",
+    "url": "https://brycewray.com/",
+    "feedUrl": "https://brycewray.com/index.xml",
+    "author": {
+      "name": "Bryce Wray",
+      "email": "bw@brycewray.com"
+    }
+  }
+}
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>{{ siteparams.siteTitle }}</title>
-	<subtitle>{{ siteparams.feed.subtitle }}</subtitle>
-	<link href="{{ siteparams.siteBaseURL }}/index.xml" rel="self"/>
-	<link href="{{ siteparams.siteBaseURL }}"/>
-	<updated>{{ collections.post | rssLastUpdatedDate }}</updated>
-	<id>{{ siteparams.feed.id }}</id>
+	<title>{{ metadata.title }}</title>
+	<subtitle>{{ metadata.subtitle }}</subtitle>
+	<link href="{{ metadata.feedUrl }} rel="self"/>
+	<link href="{{ metadata.url }}"/>
+	<updated>{{ collections.post | getNewestCollectionItemDate | rssLastUpdatedDate }}</updated>
+	<id>{{ metadata.url }}</id>
 	<author>
-		<name>{{ siteparams.siteAuthor }}</name>
+		<name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}}
 	</author>
 	{%- for post in collections.post | reverse %}
 	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
 	<entry>
 		<title>{{ post.data.title }} | {{ post.data.subtitle }} </title>
 		<link href="{{ absolutePostUrl }}"/>
-    {% if post.data.lastmod %}
-    <updated>{{ post.data.lastmod | rssDate }}</updated>
-    {% else %}
     <updated>{{ post.date | rssDate }}</updated>
-    {% endif %}
 		<id>{{ absolutePostUrl }}</id>
-    <description>
-      {{ post.data.description }}
-    </description>
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 	</entry>
 	{%- endfor %}
 </feed>

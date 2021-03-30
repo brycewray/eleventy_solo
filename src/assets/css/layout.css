@@ -88,7 +88,7 @@ a.navborderless {
   @apply text-gray-700 dark:text-gray-400;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   @apply leading-tight tracking-tight;
 }
 
@@ -97,7 +97,7 @@ h1, .h1 {
   font-weight: 825;
 }
 
-h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-weight: 625;
 }
 
@@ -113,7 +113,7 @@ h4, .h4 {
   @apply text-2xl;
 }
 
-h5, .h5, h6, .h6 {
+h5, .h5 {
   @apply text-lg;
 }
 
@@ -303,9 +303,11 @@ blockquote {
 
 /* start, footnotes */
 
+/*
 .footnotes {
   @apply font-sans;
 }
+*/
 
 .footnote-sim {
   @apply text-xs text-blue-500 dark:text-blue-200;
@@ -347,9 +349,11 @@ hr {
   @apply border-solid border-gray-900 dark:border-gray-100;
 }
 
+/*
 footer {
   @apply font-sans;
 }
+*/
 
 .lazypicturecaption {
   @apply text-sm p-0 mt-2 leading-snug text-center;

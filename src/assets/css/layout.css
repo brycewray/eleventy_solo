@@ -117,6 +117,10 @@ h5, .h5 {
   @apply text-lg;
 }
 
+blockquote {
+  @apply px-6 text-gray-700 dark:text-gray-400;
+}
+
 .height-hero {
   height: 45vh;
   max-height: 45vh;
@@ -132,45 +136,6 @@ h5, .h5 {
   @apply object-cover object-center h-full w-full;
 }
 
-.background-hero-image-div {
-  @apply relative overflow-hidden w-full bg-black;
-  /* Have to allow for mobile browsers' own "chrome"; can't go by Inspector simulations of smaller breakpoints */
-  height: 80vh;
-  max-height: 80vh;
-}
-
-
-.background-hero-title-block-fit {
-  @apply block w-full absolute bottom-0 px-4 pt-3 pb-6 bg-gradient-to-t from-black;
-}
-
-.background-hero-title-text {
-  text-shadow: 4px 4px 2px #000;
-}
-
-@media screen and (min-width: 768px) {
-  .background-hero-title-block-fit {
-    @apply px-12;
-  }
-
-  .background-hero-image-div {
-    height: 85vh;
-    max-height: 85vh;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  .background-hero-title-block-fit {
-    @apply px-16;
-  }
-
-  .background-hero-image-div {
-    height: 95vh;
-    max-height: 95vh;
-  }
-}
-
-
 .text-nowrap, .text-nobrk {
   @apply whitespace-nowrap;
 }
@@ -180,18 +145,15 @@ article h1, article h2, article h3, article h4 {
 }
 
 article p, li {
-  @apply mt-6 mb-6 leading-relaxed;
+  @apply mt-6 mb-6 leading-relaxed md:text-lg 2xl:text-xl;
 }
 
 article img.containedImage, .home-colOne img.containedImage {
-  min-width: 100%;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
+  @apply min-w-full max-w-full w-full h-auto;
   /* latter two for no-jank in Chrome and Firefox */
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .height-hero {
     height: 70vh;
     max-height: 70vh;
@@ -200,18 +162,6 @@ article img.containedImage, .home-colOne img.containedImage {
   .height-post {
     height: 40vh;
     max-height: 40vh;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  article p, li {
-    @apply text-lg leading-relaxed;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  article p, li {
-    @apply text-xl leading-relaxed;
   }
 }
 
@@ -240,29 +190,19 @@ ol {
 }
 
 table.leagues {
-  @apply w-11/12 mt-4 mx-auto mb-0 border-0 border-collapse;
+  @apply w-11/12 md:w-3/5 mt-4 mx-auto mb-0 border-0 border-collapse;
+}
+
+table.noborders td {
+  @apply text-gray-800 text-left align-middle py-1 pr-0 pl-2;
 }
 
 table.leagues td.col {
   @apply w-1/2;
 }
 
-@media (min-width: 900px) {
-  table.leagues {
-    @apply w-3/5;
-  }
-  table.noborders {
-    @apply w-11/12;
-  }
-}
-
 table.noborders {
-  @apply w-full border-0 border-collapse mt-6 mx-auto mb-4;
-}
-
-table.noborders td {
-  @apply text-gray-800 text-left align-middle py-1 pr-0 pl-2;
-  /* text-align: left !important; */
+  @apply w-full md:w-11/12 border-0 border-collapse mt-6 mx-auto mb-4;
 }
 
 table.noborders td img {
@@ -288,6 +228,7 @@ table.noborders thead td {
 table.noborders td.td70 {
   width: 70%;
 }
+
 table.noborders td.td70 img {
   @apply block w-1/2 h-auto;
   max-width: 50%;
@@ -295,10 +236,6 @@ table.noborders td.td70 img {
 
 table.noborders td.td30 {
   width: 30%;
-}
-
-blockquote {
-  @apply px-6 text-gray-700 dark:text-gray-400;
 }
 
 /* start, footnotes */
@@ -359,14 +296,6 @@ footer {
   @apply text-sm p-0 mt-2 leading-snug text-center;
 }
 
-.YTembed { /* container for iframe */
-  @apply relative pt-8 h-0 overflow-hidden;
-  padding-bottom: 56.25%;
-  & iframe, & object, & embed {
-    @apply absolute top-0 left-0 w-full h-full;
-  }
-}
-
 .home-colOne p {
   @apply leading-8 mb-4;
 }
@@ -384,44 +313,40 @@ footer {
   display: block;
   margin: 2rem auto 0 auto;
   padding: 1rem 0;
-  width: 75%;
-  & h3 {
-    margin: 0;
-    text-align: center;
-    font-size: 1.75rem;
-    letter-spacing: -0.025rem;
-  }
-  & p.commentDisclaimer {
-    font-size: 0.75rem;
-    text-align: center;
-  }
-  & p.commentName {
-    font-size: 0.75rem;
-    margin-top: 1rem;
-    margin-bottom: 0;
-  }
-  & .commentDate {
-    font-size: 0.85em;
-  }
-  & p.comment {
-    margin-top: 0;
-    margin-bottom: 0;
-    letter-spacing: normal;
-    font-size: 0.75rem;
-    line-height: 1.5;
-  }
 }
 
-@media screen and (min-width: 900px) {
-  .container-oldComments {
-    width: 40%;
-  }
+.container-oldComments h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.75rem;
+  letter-spacing: -0.025rem;
 }
 
-@media screen and (min-width: 1920px) {
-  .container-oldComments {
-    width: 33%;
-  }
+.container-oldComments p.commentDisclaimer {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.container-oldComments .commentName {
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.container-oldComments .commentDate {
+  font-size: 0.85em;
+}
+
+.container-oldComments p.comment {
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: normal;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.container-oldComments pre {
+  font-size: 0.75rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -436,14 +361,7 @@ footer {
 
 /* START == for comments from FastComments */
 .container-comments {
-  @apply my-0 mx-auto text-sm w-5/6;
-  max-width: 720px !important;
-}
-
-@media screen and (min-width: 900px) {
-  .container-comments {
-    @apply w-2/5;
-  }
+  @apply my-0 mx-auto text-sm w-full;
 }
 
 /* END ==== for comments from FastComments */

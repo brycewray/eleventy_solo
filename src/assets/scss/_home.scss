@@ -5,7 +5,7 @@
   text-align: center;
   h1 {
     line-height: 1.5em;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   @media screen and (min-width: var.$bkpt_lg) {
     text-align: right;
@@ -19,7 +19,7 @@
     min-height: 80vh;
     h1 {
       padding: 2.25em 0 0 2em;
-      font-size: 3rem;
+      font-size: 2rem;
     }
     a {
       color: var.$blueLight;
@@ -29,7 +29,7 @@
   @media screen and (min-width: var.$bkpt_2xl) {
     h1 {
       padding: 2.5em 0 0 2.5em;
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
   }
 }

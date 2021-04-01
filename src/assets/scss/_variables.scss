@@ -1,0 +1,58 @@
+// Colors
+$default-color: #333;
+$default-color-dark-mode: #ddd;
+$default-shade: #484848;
+$default-tint: rgba(170, 170, 170, 0.719);
+$grey-1: #595959;
+$grey-2: #c8c8c8;
+$chroma-bkgd: #ededed; // was ededed
+$grey-2-5: #ededed;
+$chroma-bkgd-dark-mode: #555;
+$grey-2-dark-mode: #a8a8a8;
+$grey-3: #f9f9f9;
+$white: #fff; // could also be #eee at some point, hence this var
+$background-dark-mode: #000; // was #181818
+$black: #000; // could also be #333 at some point, hence this var
+$blue: #0033ff; // was 0088ff but that's not sufficient contrast for accessibility
+$blueFirst: #0088ff; // Will use as a hover color only
+$blueLight: #adf; // for use with dark mode where supported
+$blueLightCode: #dfeeff;
+$darkblue: #0000aa;
+$shadow-color: rgba(0, 0, 0, .2);
+$code-color: #006400; // was 00aa22 and then 006600 but neither is sufficient contrast for accessibility on an f9f9f9 background
+$code-color-dark-mode: #88ff88;
+$code-bkgd-light-mode: #f6f6f6; // for reference, GitHub uses f6f8fa
+$code-bkgd-dark-mode: #0e2e3e;
+$code-color-tan: #996600;
+$code-color-blueLight-dark-mode: #88ddff;
+$code-color-orange-dark-mode: #ffaa00;
+
+// Typography
+$sans-serif: ui-sans-serif, system-ui, -system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+$monospaced: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+// These come from https://tailwindcss.com/docs/font-family as of 2021-02-13.
+
+// rems
+$biggest: 2.5rem;
+$bigger: 2rem;
+$mightybig: 1.75rem;
+$sortabig: 1.5rem;
+$slightlybig: 1.25rem;
+$minimalbig: 1.15rem;
+$stdsize: 1rem;
+$pokey: 0.85rem;
+$legal: 0.75rem;
+$timelineTxt: 0.7rem;
+$teeny: 0.6rem;
+
+// alignment
+$bodyalign: left;
+$nav-height: 50px;
+
+// breakpoints (based on Tailwind CSS)
+$bkpt_sm: 640px;
+$bkpt_md: 768px;
+$bkpt_lg: 1024px;
+$bkpt_xl: 1280px;
+$bkpt_2xl: 1536px;

@@ -1,0 +1,128 @@
+@use 'variables' as var;
+
+// === utility classes
+.ctr {
+  text-align: center;
+}
+
+.rgt {
+  text-align: right;
+}
+
+.wht {
+  color: #fff;
+}
+
+.smallCaps {
+  font-variant: small-caps;
+}
+
+.sortabig {
+  font-size: var.$sortabig;
+}
+
+.bigger {
+  font-size: var.$bigger;
+}
+
+.teenytxt, .teeny {
+  font-size: var.$teeny;
+}
+
+.legaltxt, .legal {
+  font-size: var.$legal;
+}
+
+.pokeytxt, .pokey {
+  font-size: var.$pokey;
+}
+
+.text {
+  &-nowrap, .nobrk {
+    white-space: nowrap;
+    font-size: inherit;
+  }
+  &-link {
+    color: var.$blue;
+  }
+  &-link:active, &-link:focus, &-link:hover {
+    color: var.$darkblue;
+  }
+  &-muted {
+    color: var.$grey-1;
+    @media (prefers-color-scheme: dark) {
+      color: var.$grey-2-dark-mode;
+    }
+  }
+  &-body {
+  color: var.$default-color;
+  }
+}
+.bg-primary {
+  background-color: var.$blue !important;
+}
+
+.btn-primary {
+  background-color: var.$blue;
+  border-color: var.$blue;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: var.$darkblue;
+  border-color: var.$darkblue;
+}
+
+.sansSerif {
+  font-family: var.$sans-serif;
+}
+
+.IEonly {
+  display: none;
+}
+
+.yellowBox {
+  // font-family: var.$sans-serif;
+  display: block;
+  box-sizing: border-box;
+  background: #feef89;
+  border: 1px solid #333;
+  margin: 0.5rem auto;
+  width: 100%;
+  padding: 1.5rem;
+  @media (prefers-color-scheme: dark) {
+    background: #332200;
+    border: 1px solid var.$grey-1;
+  }
+}
+
+/*! purgecss start ignore */
+
+img.containedImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.imgcCaption, .lazypicturecaption {
+  font-family: var.$sans-serif;
+  padding: 0;
+  margin-block-start: 0.5em;
+  line-height: 1.375;
+  font-size: var.$pokey;
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+/*! purgecss end ignore */
+
+// === end, utility classes

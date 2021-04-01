@@ -51,23 +51,23 @@ h3, .h3, h5, .h5 {
 */
 
 h1, .h1 {
-  font-size: var.$biggest + unquote("rem");
+  font-size: var.$biggest;
 }
 
 h2, .h2 {
-  font-size: var.$bigger + unquote("rem");
+  font-size: var.$bigger;
 }
 
 h3, .h3 {
-  font-size: var.$mightybig + unquote("rem");
+  font-size: var.$mightybig;
 }
 
 h4, .h4 {
-  font-size: var.$sortabig + unquote("rem");
+  font-size: var.$sortabig;
 }
 
 h5, .h5, h6, .h6 {
-  font-size: var.$slightlybig + unquote("rem");
+  font-size: var.$slightlybig;
 }
 
 a, a:focus, a:hover, a:active {
@@ -146,7 +146,7 @@ ul li li li {
 footer {
   // font-family: var.$sans-serif;
   text-align: center;
-  font-size: var.$legal + unquote("rem");
+  font-size: var.$legal;
   margin: 4rem auto 0 auto;
   width: 100%;
   padding-top: 0.5rem;

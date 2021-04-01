@@ -106,11 +106,12 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addWatchTarget("src/**/*.js")
   eleventyConfig.addWatchTarget("./src/assets/css/*.css")
+  eleventyConfig.addWatchTarget("./src/assets/scss/*.scss")
   eleventyConfig.addWatchTarget("./src/**/*.md")
 
   eleventyConfig.setBrowserSyncConfig({
     ...eleventyConfig.browserSyncConfig,
-    files: ["src/**/*.js", "src/assets/css/*.css", "src/**/*.md"],
+    files: ["src/**/*.js", "src/assets/css/*.css", "src/assets/scss/*.scss", "src/**/*.md"],
     ghostMode: false,
     port: 3000,
     callbacks: {

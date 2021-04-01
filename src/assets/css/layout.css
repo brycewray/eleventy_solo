@@ -10,6 +10,10 @@ ul li li li {
   list-style-type: square;
 }
 
+h3, .h3, h5, .h5 {
+  @apply italic;
+}
+
 main {
   @apply pt-12; /* needed in Eleventy repo; handled elsewhere in Hugo repo */
 }
@@ -240,12 +244,6 @@ table.noborders td.td30 {
 
 /* start, footnotes */
 
-/*
-.footnotes {
-  @apply font-sans;
-}
-*/
-
 .footnote-sim {
   @apply text-xs text-blue-500 dark:text-blue-200;
 }
@@ -285,12 +283,6 @@ table.noborders td.td30 {
 hr {
   @apply border-solid border-gray-900 dark:border-gray-100;
 }
-
-/*
-footer {
-  @apply font-sans;
-}
-*/
 
 .lazypicturecaption {
   @apply text-sm p-0 mt-2 leading-snug text-center;

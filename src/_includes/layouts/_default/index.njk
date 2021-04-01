@@ -16,7 +16,7 @@ layout: layouts/_default/base.njk
           <div>
             <h2 class="h4 text-2xl lg:text-3xl 2xl:text-4xl tracking-tight mb-2 2xl:mb-4"><a href="{{ post.url }}">{{ post.data.title | safe }}</a></h2>
             <p class="font-bold text-xl lg:text-2xl 2xl:text-3xl mt-1 mb-0 leading-6">{{ post.data.subtitle | safe }}</p>
-            <p class="text-xs lg:text-sm 2xl:text-base tracking-normal mt-1 mb-0"><strong><time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time></strong>
+            <p class="text-xs lg:text-sm 2xl:text-base mt-1 mb-0"><strong><time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time></strong>
               {% if post.data.lastmod %}
               <br />Last modified <time datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>
               {% endif %}

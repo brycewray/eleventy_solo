@@ -78,6 +78,7 @@
     "rimraf": "^3.0.2",
     "rss": "^1.2.2",
     "sanitize-html": "^2.3.3",
+    "sass": "^1.32.8",
     "tailwindcss": "^2.0.4"
   }
 }

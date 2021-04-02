@@ -222,12 +222,8 @@ footer {
   }
   &-comments {
     font-size: 85%;
-    width: 85%;
     max-width: 720px !important;
     margin-bottom: 0;
-    @media (min-width: 900px) {
-      width: 40%;
-    }
   }
   &-oldComments { // old comments from Talkyard
     // font-family: var.$sans-serif;
@@ -235,14 +231,7 @@ footer {
     border-bottom: 1px solid #333;
     display: block;
     margin: 2rem auto 0 auto;
-    padding: 1rem 0;
-    width: 75%;
-    @media screen and (min-width: 1024px) {
-      width: 40%;
-    }
-    @media screen and (min-width: 1536px) {
-      width: 33%;
-    }    
+    padding: 1rem 0;      
     @media (prefers-color-scheme: dark) {
       border-top: 1px solid #999;
       border-bottom: 1px solid #999;

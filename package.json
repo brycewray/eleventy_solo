@@ -9,7 +9,7 @@
     "devpostcss": "postcss _site/css/index.css -o _site/css/index.css",
     "prodpostcss": "postcss src/_includes/css/index.css -o src/_includes/css/index.css",
     "start": "NODE_ENV=development npm-run-all clean devsass --parallel dev:*",
-    "build": "NODE_ENV=production npm-run-all clean prodsass prod:sass prod:prefix prod:eleventy",
+    "build": "NODE_ENV=production npm-run-all clean prodsass prod:sass prod:postcss prod:eleventy",
     "testbuild": "NODE_ENV=production npm-run-all clean prodsass --parallel testProd:*",
     "dev:sass": "npm run devsass -- --watch",
     "dev:postcss": "npm run devpostcss --watch",

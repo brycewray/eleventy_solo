@@ -6,10 +6,17 @@
     [
       "prismjs", {
         "languages": [
+          "bash",
+          "go",
+          "http",
           "javascript",
+          "jsx",
           "css",
+          "scss",
           "markup",
-          "markdown"
+          "markdown",
+          "rss",
+          "yml"
         ],
         "plugins": [
           "show-language"

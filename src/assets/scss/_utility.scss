@@ -83,6 +83,8 @@
   display: none;
 }
 
+/*! purgecss start ignore */
+
 .yellowBox {
   // font-family: var.$sans-serif;
   display: block;
@@ -97,8 +99,6 @@
     border: 1px solid var.$grey-1;
   }
 }
-
-/*! purgecss start ignore */
 
 img.containedImage {
   display: block;

@@ -5,7 +5,7 @@ subtitle: "Why rumors of its death are greatly exaggerated"
 description: "It may not be This Week’s Kewl Thing, but Sass/SCSS is still an invaluable part of web development."
 author: Bryce Wray
 date: 2021-04-03T11:59:00-05:00
-lastmod: 2021-04-04T08:42:00-05:00
+lastmod: 2021-04-04T08:45:00-05:00
 #draft: false
 discussionId: "2021-04-speaking-up-for-sass"
 featured_image: "sass-and-glasses_3200x1800.png"
@@ -224,7 +224,7 @@ Although I have previously acknowledged Tailwind's strengths and am all too awar
 
 Tailwind adherents say this isn't a problem because, once you recognize that you're re-using certain Tailwind classes too frequently, you then simply extract them to reusable components and then `@apply` them, [as the Tailwind documentation suggests](https://tailwindcss.com/docs/extracting-components).  I agree that this is a workable strategy, but my own experience suggests it can get out of hand quickly, even in a small project. YMMV, of course.
 
-Then, once you've extracted a good quantity components as I suspect happens more often than not, you'll run into the next issue that Tailwind fans say it solves&nbsp;.&nbsp;.&nbsp;.
+Then, once you've extracted a good quantity of components as I suspect happens more often than not, you'll run into the next issue that Tailwind fans say it solves&nbsp;.&nbsp;.&nbsp;.
 
 ### "Naming is hard"---or is it?
 

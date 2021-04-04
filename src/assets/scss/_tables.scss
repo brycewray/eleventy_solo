@@ -25,7 +25,7 @@ table.noborders {
     }
   }
   tr:nth-child(even) {
-    background-color: #dfefff;
+    background-color: hsl(210, 100%, 94%);
   }
   thead {
     background-color: var.$darkblue;
@@ -36,7 +36,7 @@ table.noborders {
     }
   }
   thead td {
-    color: #fff !important;
+    color: hsl(0, 0%, 100%) !important;
     font-weight: bold;
     // font-family: var.$sans-serif;
   }

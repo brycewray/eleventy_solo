@@ -20,7 +20,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #ccc;
+  color: hsl(0, 0%, 80%);
   background: none;
   font-family: var.$monospaced;
   font-size: 1em;
@@ -50,7 +50,7 @@ pre[class*="language-"] {
 }
 
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
-  background: #27282a;
+  background: hsl(220, 4%, 16%);
 }
 
 /* Inline code */
@@ -65,35 +65,35 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #b3b3b3;
+  color: hsl(0, 0%, 70%);
 }
 
 .token.punctuation {
-  color: #d4d4d8;
+  color: hsl(240, 5%, 84%);
 }
 
 .token.tag,
 .token.attr-name,
 .token.namespace,
 .token.deleted {
-  color: #ff9688; /* was e2777a */
+  color: hsl(7, 100%, 77%);
 }
 
 .token.function-name {
-  color: #92b8dd; /* was 6196cc */
+  color: hsl(210, 52%, 72%); /* was 6196cc */
 }
 
 .token.boolean,
 .token.number,
 .token.function {
-  color: #f3a068; /* was f08d49 */
+  color: hsl(24, 85%, 68%); /* was f08d49 */
 }
 
 .token.property,
 .token.class-name,
 .token.constant,
 .token.symbol {
-  color: #f8c555;
+  color: hsl(41, 92%, 65%);
 }
 
 .token.selector,
@@ -101,7 +101,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-  color: #fa90e0; /* was cc99cd */
+  color: hsl(315, 91%, 77%); /* was cc99cd */
 }
 
 .token.string,
@@ -109,13 +109,13 @@ pre[class*="language-"] {
 .token.attr-value,
 .token.regex,
 .token.variable {
-  color: #66e0aa; /* was 7ec699 */
+  color: hsl(153, 66%, 64%); /* was 7ec699 */
 }
 
 .token.operator,
 .token.entity,
 .token.url {
-  color: #67cdcc;
+  color: hsl(179, 50%, 60%);
 }
 
 .token.important,
@@ -131,7 +131,7 @@ pre[class*="language-"] {
 }
 
 .token.inserted {
-  color: green;
+  color: hsl(120, 100%, 25%);
 }
 
 div.code-toolbar {
@@ -158,7 +158,7 @@ div.code-toolbar:focus-within > .toolbar {
 div.code-toolbar > .toolbar .toolbar-item {
   display: inline-block;
   span {
-    color: #fff;
+    color: hsl(0, 0%, 100%);
   }
 }
 
@@ -180,11 +180,11 @@ div.code-toolbar > .toolbar button {
 div.code-toolbar > .toolbar a,
 div.code-toolbar > .toolbar button,
 div.code-toolbar > .toolbar span {
-  color: #fff;// was #bbb
+  color: hsl(0, 0%, 100%);// was #bbb
   font-size: .8em;
   padding: 0 .5em;
   background: #000;
-  box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 0 0 hsla(0, 0%, 0%, 0.2);
   border-radius: .5em;
 }
 

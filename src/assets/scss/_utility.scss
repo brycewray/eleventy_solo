@@ -10,7 +10,7 @@
 }
 
 .wht {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 
 .smallCaps {
@@ -65,7 +65,7 @@
 .btn-primary {
   background-color: var.$blue;
   border-color: var.$blue;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   border-radius: 6px;
   padding: 0.25rem 0.5rem;
 }
@@ -89,13 +89,13 @@
   // font-family: var.$sans-serif;
   display: block;
   box-sizing: border-box;
-  background: #feef89;
-  border: 1px solid #333;
+  background: hsl(52, 98%, 77%);
+  border: 1px solid hsl(0, 0%, 20%);
   margin: 0.5rem auto;
   width: 100%;
   padding: 1.5rem;
   @media (prefers-color-scheme: dark) {
-    background: #332200;
+    background: hsl(40, 100%, 10%);
     border: 1px solid var.$grey-1;
   }
 }

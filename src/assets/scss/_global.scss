@@ -235,8 +235,8 @@ footer {
     margin: 2rem auto 0 auto;
     padding: 1rem 0;      
     @media (prefers-color-scheme: dark) {
-      border-top: 1px solid #999;
-      border-bottom: 1px solid #999;
+      border-top: 1px solid hsl(0, 0%, 60%);
+      border-bottom: 1px solid hsl(0, 0%, 60%);
     }
     h3 {
       margin: 0;

@@ -5,7 +5,7 @@ subtitle: "Why rumors of its death are greatly exaggerated"
 description: "It may not be This Week’s Kewl Thing, but Sass/SCSS is still an invaluable part of web development."
 author: Bryce Wray
 date: 2021-04-03T11:59:00-05:00
-lastmod: 2021-04-04T08:55:00-05:00
+lastmod: 2021-04-04T09:03:00-05:00
 #draft: false
 discussionId: "2021-04-speaking-up-for-sass"
 featured_image: "sass-and-glasses_3200x1800.png"
@@ -139,7 +139,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .bigContainer-narrower {
-	width: 60%;
+	width: 45%;
   }
 }
 ```

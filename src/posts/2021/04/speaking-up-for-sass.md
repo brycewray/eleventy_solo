@@ -5,7 +5,7 @@ subtitle: "Why rumors of its death are greatly exaggerated"
 description: "It may not be This Week’s Kewl Thing, but Sass/SCSS is still an invaluable part of web development."
 author: Bryce Wray
 date: 2021-04-03T11:59:00-05:00
-lastmod: 2021-04-04T08:46:00-05:00
+lastmod: 2021-04-04T08:55:00-05:00
 #draft: false
 discussionId: "2021-04-speaking-up-for-sass"
 featured_image: "sass-and-glasses_3200x1800.png"
@@ -216,7 +216,9 @@ Full disclosure: I personally haven't had to use more than a tiny fraction of th
 
 There's little doubt that the lead dog in the CSS mindshare race right now is the utility-first Tailwind CSS framework. It would be reasonable to wonder if there's even a future for something like Sass in a dev world seemingly dominated by Tailwind.
 
-As a current user of both Sass and Tailwind, I absolutely believe that Sass not only will survive the Tailwind era in particular and the utility-CSS-is-king movement in general, but likely will be around far longer. At least, I surely hope so. Here's my reasoning, and I grant you upfront that it's opinionated:
+As a current user of both Sass and Tailwind, I absolutely believe that Sass not only will survive the Tailwind era in particular and the utility-CSS-is-king movement in general, but likely will be around far longer. At least, I surely hope so.
+
+Here's my reasoning, and I grant you upfront that it's opinionated.
 
 ### Scalability concerns
 

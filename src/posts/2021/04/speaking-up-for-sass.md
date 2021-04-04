@@ -5,7 +5,7 @@ subtitle: "Why rumors of its death are greatly exaggerated"
 description: "It may not be This Week’s Kewl Thing, but Sass/SCSS is still an invaluable part of web development."
 author: Bryce Wray
 date: 2021-04-03T11:59:00-05:00
-lastmod: 2021-04-04T08:38:00-05:00
+lastmod: 2021-04-04T08:42:00-05:00
 #draft: false
 discussionId: "2021-04-speaking-up-for-sass"
 featured_image: "sass-and-glasses_3200x1800.png"
@@ -79,7 +79,7 @@ a, a:focus, a:visited {
 
 ### Nesting
 
-While [PostCSS](https://postcss.org) lets you nest selectors within parent selectors, the methods vary depending on which nesting plugin you use. Also, occasional changes in PostCSS and its universe of plugins can cause cross-plugin incompatibilities that make for problems. But Sass has long included nesting from the get-go, and it just works.
+While [PostCSS](https://postcss.org) lets you nest selectors within parent selectors, the methods vary depending on which nesting plugin you use. Also, occasional changes in PostCSS and its universe of plugins can cause cross-plugin incompatibilities that make for problems. But Sass has long included nesting from the get-go, and it just works. The following continues using some of the variables from the earlier example.
 
 {% raw %}
 
@@ -95,7 +95,7 @@ body {
   background-color: $ourClr;
   color: white;
   width: 100%;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $mdBkpt) {
 	width: 80%;
   }
   p, li {
@@ -112,7 +112,7 @@ body {
 ```
 {% endraw %}
 
-.&nbsp;.&nbsp;.&nbsp;which will generate the following CSS (using the variables from our earlier example):
+.&nbsp;.&nbsp;.&nbsp;which will generate the following CSS:
 
 {% raw %}
 

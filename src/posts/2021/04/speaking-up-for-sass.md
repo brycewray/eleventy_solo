@@ -5,7 +5,7 @@ subtitle: "Why rumors of its death are greatly exaggerated"
 description: "It may not be This Week’s Kewl Thing, but Sass/SCSS is still an invaluable part of web development."
 author: Bryce Wray
 date: 2021-04-03T11:59:00-05:00
-lastmod: 2021-04-04T08:30:00-05:00
+lastmod: 2021-04-04T08:38:00-05:00
 #draft: false
 discussionId: "2021-04-speaking-up-for-sass"
 featured_image: "sass-and-glasses_3200x1800.png"
@@ -79,7 +79,7 @@ a, a:focus, a:visited {
 
 ### Nesting
 
-While PostCSS lets you nest selectors within parent selectors, the methods vary depending on which nesting plugin you use. Also, occasional changes in PostCSS and its universe of plugins can cause cross-plugin incompatibilities that make for problems. But Sass has long included nesting from the get-go, and it just works.
+While [PostCSS](https://postcss.org) lets you nest selectors within parent selectors, the methods vary depending on which nesting plugin you use. Also, occasional changes in PostCSS and its universe of plugins can cause cross-plugin incompatibilities that make for problems. But Sass has long included nesting from the get-go, and it just works.
 
 {% raw %}
 
@@ -246,7 +246,7 @@ Tailwind depends on PostCSS, and a Tailwind user more often than not is going to
 
 This is certainly understandable once you grasp [how PostCSS works](https://www.smashingmagazine.com/2015/12/introduction-to-postcss/) (which, I'll grant, is impressive[^usingPostCSS]), but it can be a big time-suck, especially whenever those plugins and even PostCSS itself get updates. For example, the PostCSS 8 update broke or at least impaired a lot of plugins and related packages, or so I've recently read on various plugins' [GitHub](https://github.com) "Issues" pages.
 
-[^usingPostCSS]: As I mentioned earlier, I'm actually still using PostCSS with this site, even though it's with Sass, so I can run Autoprefixer. As of this writing, I'm also using the [PurgeCSS](https://purgecss.com) plugin, at least until I can find the time (and motivation?) to reduce my SCSS files' sizes through more manual methods.
+[^usingPostCSS]: As I mentioned in an earlier footnote, I'm actually still using PostCSS with this site, even though it's with Sass, so I can run Autoprefixer. As of this writing, I'm also using the [PurgeCSS](https://purgecss.com) plugin, at least until I can find the time (and motivation?) to reduce my SCSS files' sizes through more manual methods.
 
 By contrast, Sass is *one package*, and all its many capabilities---including all the ones whose PostCSS-powered lookalikes require all those add-ons--- work without the need for juggling plugins.[^binary] Moreover, in today's web dev world, it's easier than ever before to take advantage of Sass. Long ago, [you had to install Ruby](https://sass-lang.com/ruby-sass), but those days are in the web's distant past. Many key dev frameworks and bundlers support Sass out of the box; or, where necessary, it's easily added, such as through the [sass Node.js package](https://npmjs.com/package/sass).
 

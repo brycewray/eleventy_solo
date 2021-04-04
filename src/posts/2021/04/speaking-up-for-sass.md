@@ -5,7 +5,7 @@ subtitle: "Why rumors of its death are greatly exaggerated"
 description: "It may not be This Week’s Kewl Thing, but Sass/SCSS is still an invaluable part of web development."
 author: Bryce Wray
 date: 2021-04-03T11:59:00-05:00
-#lastmod:
+lastmod: 2021-04-04T08:30:00-05:00
 #draft: false
 discussionId: "2021-04-speaking-up-for-sass"
 featured_image: "sass-and-glasses_3200x1800.png"
@@ -16,28 +16,28 @@ featured_image_caption: |
   <span class="caption">Image: Sass logo and Sass glasses icon, sourced from <a href="https://sass-lang.com" target="_blank" rel="noopener">Sass website</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/" target="_blank" rel="noopener">Affinity&nbsp;Designer</a></span>
 ---
 
+**Note, 2021-04-04**: I revised this article to remove some references that, as a reader correctly pointed out, didn't really fit into what I was trying to say. (One of these days, I'll learn not to write these pieces late on Friday nights when I'm really, really tired.)
+{.yellowBox}
+
 It's important for me to stay current with trends that affect my web development efforts. That's true whether we're talking about the websites I manage as part of the Day Job or just the tinkering I do with this personal site.
 
 For example, I've recently [written about](/posts/2021/03/jit-game-changer-tailwind-css), and have made significant use of, not only [Tailwind CSS](https://tailwindcss.com) but also its new, experimental [just-in-time (JIT) compiler](https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css). To be sure, Tailwind's appeal among web developers---especially those who aren't particularly fond of futzing with CSS in the first place---is powerful and growing.
 
 That said, there's plenty to be said for the tried and the true, the styling methods that were around years ago, long before Tailwind and other examples of New Shiny CSS ever existed. And, today, I'm here to do some of that "saying" in support of one of them: namely, the [Sass CSS preprocessor](https://sass-lang.com).
 
-## Long-lasting power
+## Power that'll grow with you
 
 Sass---"Syntactically Awesome Style Sheets"---came into existence in 2006 and, almost from the beginning, one of its key slogans was that it "makes CSS fun again." While I can differ with that opinion on occasion, I completely agree with the Sass website's headline since 2013: "CSS with superpowers."
 
 And let me stop right here for those who are already grumbling, "Yeah, but in this day and age you can do so much more with plain, vanilla CSS than you could back when Sass was new and hot, so who needs it today?" My simple answer is: *you* might, if you support websites intended for use in either enterprises or government.
 
-That's because those tend to be places where the execrable Internet Explorer 11 is still alive and well (I wouldn't waste time worrying about an IE version before that), often because of the need to support legacy apps or files that require it. IE 11 is mostly or completely incompatible with many of the innovations CSS has gained in recent years:
+That's because those tend to be places where the execrable Internet Explorer 11 is still alive and well (I wouldn't waste time worrying about an IE version before that), often because of the need to support legacy apps or files that require it.[^TWCSSandIE] IE 11 is completely incompatible with one of modern CSS's coolest features, [CSS custom properties ("CSS variables")](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties). As I'll shortly explain, using variables in CSS can be an *immense* time- and labor-saver for web dev work, especially as your projects grow. But Sass lets you use variables---in its own way, to be fair---while still generating CSS that even IE 11 can read.[^oldBrowsers]
 
-- [CSS custom properties ("CSS variables")](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)---IE is [completely incompatible](https://caniuse.com/?search=CSS%20custom%20properties).
-- [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)---IE is [mostly incompatible](https://caniuse.com/?search=flexbox), especially with the current standard.
-- [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)---IE is [mostly incompatible](https://caniuse.com/?search=css%20grid), especially with the current standard.
-- A number of pseudo-classes and pseudo-selectors---Depends on which you mean, but IE is incompatible with all but the oldest of them. For example, it works with neither `:nth-child` nor `:nth-last-child`, which is a hassle if you're styling things like tables.
+[^TWCSSandIE]: By the way: as of the release of version 2.0 in November, 2020, [Tailwind CSS doesn't support Internet Explorer](https://blog.tailwindcss.com/tailwindcss-v2#incompatibility-with-ie11). If you must use Tailwind *and* support IE users, you'll have to stick with Tailwind version 1.9.
 
-But Sass lets you do all these things---in its own way, to be fair---and yet still generates CSS that IE 11 can read. (It also helps if you pair Sass with [PostCSS](https://postcss.org) and [Autoprefixer](https://github.com/postcss/autoprefixer), as I've done in [this site's repository](https://github.com/brycewray/eleventy_solo) as well as my two [Eleventy starter sets](/posts/2021/03/beginners-luck-update) that use SCSS, but that's up to you.)
+[^oldBrowsers]: Where the need to support old browsers is concerned, It also helps if you pair Sass with [PostCSS](https://postcss.org) and [Autoprefixer](https://github.com/postcss/autoprefixer), as I've done in [this site's repository](https://github.com/brycewray/eleventy_solo) as well as my two [Eleventy starter sets](/posts/2021/03/beginners-luck-update) that use SCSS, but that's up to you.
 
-However, even if you *don't* need to worry about all those mostly reluctant IE 11 users in businesses and government offices, Sass is still an incredibly attractive option for your work in CSS.
+However, even if you *don't* need to worry about IE 11 users, **Sass is still an incredibly attractive option for your work in CSS**.
 
 In case you're not that familiar with Sass, its proposition is simple: you create styling statements in a Sass file, usually as a .scss file[^sassFormat], and Sass automatically translates that into normal CSS that a browser can handle. One key thing to remember is that **any valid CSS works in an .scss file**, so you can start with just the basics and, as you learn more about what Sass makes possible, add on the Sass-powered goodies.
 

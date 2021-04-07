@@ -5,7 +5,7 @@ subtitle: "Why rumors of its death are greatly exaggerated"
 description: "It may not be This Week’s Kewl Thing, but Sass/SCSS is still an invaluable part of web development."
 author: Bryce Wray
 date: 2021-04-03T11:59:00-05:00
-lastmod: 2021-04-04T09:03:00-05:00
+lastmod: 2021-04-07T16:30:00-05:00
 #draft: false
 discussionId: "2021-04-speaking-up-for-sass"
 featured_image: "sass-and-glasses_3200x1800.png"
@@ -54,8 +54,8 @@ A typical use case involves colors and breakpoints you need to keep straight thr
 {% raw %}
 
 ```scss
-$ourClr: #d15285;
-$lkClr: #bb2417;
+$ourClr: hsl(336, 58%, 57%);
+$lkClr: hsl(5, 78%, 41%);
 $mdBkpt: 768px;
 
 @media screen and (min-width: $mdBkpt) {
@@ -126,7 +126,7 @@ body {
   }
 }
 .bigContainer {
-  background-color: #d15285;
+  background-color: hsl(336, 58%, 57%);
   color: white;
   width: 100%;
 }

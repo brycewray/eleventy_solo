@@ -1,0 +1,177 @@
+/*! purgecss start ignore */
+
+/* PrismJS 1.17.1
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+bash+markup-templating+git+go+graphql+php+markdown+powershell+jsx+yaml+toml&plugins=toolbar */
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
+
+code {
+  @apply bg-[#dfeeff] dark:bg-gray-800;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  @apply text-gray-100 bg-transparent whitespace-pre text-left break-normal leading-normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  tab-size: 4; 
+  hyphens: none;
+
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  @apply p-4 my-2 mx-0 overflow-auto;
+}
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+  @apply bg-gray-800;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  @apply whitespace-normal;
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: hsl(0, 0%, 70%); /* was TWCSS text-gray-400 */
+}
+
+.token.punctuation {
+  @apply text-gray-300; /* alt: hsl(240, 5%, 84%) */
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+  color: hsl(7, 100%, 77%);
+}
+
+.token.function-name {
+  color: hsl(210, 52%, 72%);
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+  color: hsl(24, 85%, 68%);
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+  color: hsl(41, 92%, 65%);
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+  color: hsl(315, 91%, 77%);
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+  color: hsl(153, 66%, 64%);
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+  color: hsl(179, 50%, 60%);
+}
+
+.token.important,
+.token.bold {
+  @apply font-bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.inserted {
+  color: hsl(120, 100%, 25%);
+}
+
+div.code-toolbar {
+  @apply relative;
+}
+
+div.code-toolbar > .toolbar {
+@apply absolute opacity-100;
+  top: .3em;
+  right: .2em;
+}
+
+div.code-toolbar:hover > .toolbar {
+  @apply opacity-100;
+}
+
+/* Separate line b/c rules are thrown out if selector is invalid.
+  IE11 and old Edge versions don't support :focus-within. */
+div.code-toolbar:focus-within > .toolbar {
+  @apply opacity-100;
+}
+
+div.code-toolbar > .toolbar .toolbar-item {
+  @apply inline-block;
+}
+
+div.code-toolbar > .toolbar .toolbar-item span {
+  @apply text-white;
+}
+
+div.code-toolbar > .toolbar a {
+  cursor: pointer;
+}
+
+div.code-toolbar > .toolbar button {
+@apply bg-transparent border-0 leading-normal overflow-visible p-0;
+  color: inherit;
+  font: inherit;
+  user-select: none; /* for button */
+}
+
+div.code-toolbar > .toolbar a,
+div.code-toolbar > .toolbar button,
+div.code-toolbar > .toolbar span {
+  @apply bg-black py-0 px-2;
+  color: hsl(0, 0%, 100%);
+  border-radius: .5em;
+  box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+  font-size: .8em;
+}
+
+div.code-toolbar > .toolbar a:hover,
+div.code-toolbar > .toolbar a:focus,
+div.code-toolbar > .toolbar button:hover,
+div.code-toolbar > .toolbar button:focus,
+div.code-toolbar > .toolbar span:hover,
+div.code-toolbar > .toolbar span:focus {
+  @apply no-underline;
+  color: inherit;
+}
+
+article code {
+  font-size: 0.9em;
+}

@@ -20,11 +20,11 @@ exports.render = data => `
     }
     <url>
       <loc>${data.siteparams.siteURLforOG}/about</loc>
-      <lastmod>2019-10-02</lastmod>
+      <lastmod>2021-01-30</lastmod>
     </url>
     <url>
       <loc>${data.siteparams.siteURLforOG}/</loc>
-      <lastmod>2019-10-02</lastmod>
+      <lastmod>2021-01-30</lastmod>
     </url>
   </urlset>
 `

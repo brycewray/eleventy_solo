@@ -8,6 +8,9 @@ const svgContents = require("eleventy-plugin-svg-contents")
 
 module.exports = function (eleventyConfig) {
 
+  // theming -- based on Reuben Lillie's code (https://gitlab.com/reubenlillie/reubenlillie.com/)
+  jsTheme(eleventyConfig)
+
   eleventyConfig.addPlugin(pluginRss)
 
   eleventyConfig.addPlugin(svgContents)

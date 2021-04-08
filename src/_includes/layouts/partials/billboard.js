@@ -13,7 +13,7 @@ module.exports = function(eleventyConfig) {
           }
       </h2>
       <p class="font-sans mt-8 lg:mt-12 2xl:mt-16 text-xl lg:text-2xl 2xl:text-3xl">${data.description}</p>
-      <p class="font-sans mt-4 lg:mt-6 2xl:mt-8"><strong>${this.pub_lastmod(data.page.date)}</strong><br />
+      <p class="font-sans text-lg mt-4 lg:mt-6 2xl:mt-8"><strong>${this.pub_lastmod(data.page.date)}</strong><br />
         <span class="text-base">
         ${
           data.lastmod !== null && data.lastmod !== undefined

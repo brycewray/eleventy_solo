@@ -1,5 +1,5 @@
 ---
-layout: layouts/privacy/privacy.njk
+layout: layouts/privacy/privacy.11ty.js
 title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray

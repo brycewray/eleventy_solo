@@ -5,6 +5,7 @@ const ErrorOverlay = require("eleventy-plugin-error-overlay")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const svgContents = require("eleventy-plugin-svg-contents")
 // const { fromPairs } = require("lodash")
+const jsTheme = require('./src/_includes/jstheme.js')
 
 module.exports = function (eleventyConfig) {
 

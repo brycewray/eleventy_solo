@@ -1,12 +1,16 @@
+const fs = require('fs')
 const alpineJSVer = '2.8.1'
 let socialImg = `https://res.cloudinary.com/brycewray-com/image/upload/`
 socialImg += `c_fill,w_1024,h_512,q_auto:eco,f_auto,x_0,z_1/`
 const fallbackImg = `typewriter-monochrome_2242164_6260x4374.jpg`
 const analyticsCode = require('../../../assets/utils/analytics.js')
-const internalCSS = fs.readFileSync('src/_includes/css/index.css')
-const fs = require('fs')
-let socialImg = `https://res.cloudinary.com/brycewray-com/image/upload/`
-socialImg += `c_fill,w_1024,h_512,q_auto:eco,f_auto,x_0,z_1/`
+var internalCSS = ''
+var internalCSSPath = 'src/_includes/css/index.css'
+if (process.env.NODE_ENV === 'production') {
+  if(fs.existsSync(internalCSSPath)) {
+    internalCSS = fs.readFileSync(internalCSSPath)
+  }  
+}
 
 module.exports = function(eleventyConfig) {
 

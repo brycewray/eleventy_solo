@@ -42,5 +42,5 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [], // if we add forms, do it here
+  plugins: [],
 }

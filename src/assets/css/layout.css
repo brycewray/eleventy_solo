@@ -88,10 +88,6 @@ a.navborderless {
   @apply border-b-0;
 }
 
-.dateInfo {
-  @apply text-gray-700 dark:text-gray-400;
-}
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   @apply leading-tight tracking-tight;
 }

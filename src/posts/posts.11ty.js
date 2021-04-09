@@ -41,8 +41,8 @@ exports.render = function (data) {
           data.pagination.items.map(post => /*html*/ `
           <div>          
             <h2 class="text-xl lg:text-3xl 2xl:text-4xl mb-2 tracking-tight"><a href="${post.url}">${post.data.title}</a></h2>
-            <p class="text-base lg:text-2xl 2xl:text-3xl font-bold leading-none tracking-tight">${post.data.subtitle}</p>
-            <p class="dateInfo mt-0">
+            <p class="text-base lg:text-2xl 2xl:text-3xl font-bold leading-none tracking-tight mb-2">${post.data.subtitle}</p>
+            <p class="mt-0 leading-tight">
               <time class="font-bold inline" datetime="${this.pub_lastmod(post.date)}}">${this.pub_lastmod(post.date)}</time>
               ${
                 post.data.lastmod

@@ -21,7 +21,7 @@ exports.render = function (data) {
     </article>
   </div>
   
-  ${data.url !== "/about"
+  ${data.page.url !== "/about/"
     ? /*html*/ `
     ${data.oldComments
       ? data.oldComments

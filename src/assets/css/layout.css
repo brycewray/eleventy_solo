@@ -346,14 +346,6 @@ hr {
 
 /* END ==== for old comments from TalkYard */
 
-
-/* START == for comments from FastComments */
-.container-comments {
-  @apply my-0 mx-auto text-sm w-full;
-}
-
-/* END ==== for comments from FastComments */
-
 /* from vanilla-lazyload */
 .lazy {
   @apply opacity-0;

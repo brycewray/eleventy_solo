@@ -30,27 +30,27 @@ exports.render = function (data) {
   </p>
 `
   return /*html*/ `
-  <main class="py-16 text-center">
-    <div class="px-10 w-full mx-auto">
-      <h1 class="tracking-tight text-4xl lg:text-6xl lg:pt-16">Posts</h1>
+  <main class="pt-12 pb-16 text-center">
+    <div class="px-12 w-full mx-auto">
+      <h1 class="tracking-tight text-5xl lg:text-7xl pt-6 lg:pt-16">Posts</h1>
       <div class="post-line"></div>
       <div>
         ${pagerThing}
         <hr class="mt-2 mx-auto mb-6 w-3/5 md:w-1/2 2xl:w-2/5" />
         ${
           data.pagination.items.map(post => /*html*/ `
-          <div>          
-            <h2 class="text-xl lg:text-3xl 2xl:text-4xl mb-2 tracking-tight"><a href="${post.url}">${post.data.title}</a></h2>
-            <p class="text-base lg:text-2xl 2xl:text-3xl font-bold leading-none tracking-tight mb-2">${post.data.subtitle}</p>
-            <p class="mt-0 leading-tight">
+          <div class="lg:px-12">          
+            <h2 class="text-3xl lg:text-3xl 2xl:text-4xl mb-2 tracking-tight"><a href="${post.url}">${post.data.title}</a></h2>
+            <p class="text-xl lg:text-2xl 2xl:text-3xl font-bold lg:leading-snug 2xl:leading-tight mb-2">${post.data.subtitle}</p>
+            <p class="mt-0 leading-tight 2xl:text-xl">
               <time class="font-bold inline" datetime="${this.pub_lastmod(post.date)}}">${this.pub_lastmod(post.date)}</time>
               ${
                 post.data.lastmod
-                ? /*html*/ `<br /><span class="text-sm">Last modified <time class="inline" datetime="${this.pub_lastmod(post.data.lastmod)}">${this.pub_lastmod(post.data.lastmod)}</time></span>`
+                ? /*html*/ `<br /><span class="text-sm 2xl:text-lg">Last modified <time class="inline" datetime="${this.pub_lastmod(post.data.lastmod)}">${this.pub_lastmod(post.data.lastmod)}</time></span>`
                 : ``
               }
             </p>
-            <p class="mt-2 mb-10">
+            <p class="mt-2 mb-10 lg:text-lg 2xl:text-xl leading-tight">
               ${post.data.description}
             </p>
           </div>

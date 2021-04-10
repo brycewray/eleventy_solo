@@ -18,18 +18,15 @@ exports.render = function (data) {
     </p>
     <article id="articleContent">
       ${data.content}
-    </article>
-  </div>
-  
-  ${data.page.url !== "/about/"
-    ? /*html*/ `
-    ${data.oldComments
-      ? data.oldComments
-      : ``
-    }
-    <div class="container-comments mx-auto md:w-1/2">
-      <script src="https://cdn.fastcomments.com/js/embed.min.js"></script>
-      <div id="fastcomments-widget"></div>
+
+      ${data.page.url !== "/about/"
+      ? /*html*/ `
+        ${data.oldComments
+          ? data.oldComments
+          : ``
+        }
+        <script src="https://cdn.fastcomments.com/js/embed.min.js"></script>
+        <div id="fastcomments-widget"></div>
         <script>
           (function () {
             var url = window.location.href
@@ -41,8 +38,14 @@ exports.render = function (data) {
               urlId: url
             })
           })()
-        </script>
-      </div>
+        </script>`
+      : ``
+      }
+    </article>
+  </div>
+  
+  ${data.page.url !== "/about/"
+    ? /*html*/ `
       <div class="w-full px-8 md:px-0 bg-blue-700 align-middle mt-10 mb-10">
         <h3 class="text-center text-3xl tracking-normal mb-2 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
         ${data.nextPost && data.nextPost.url !== null
@@ -52,16 +55,16 @@ exports.render = function (data) {
           </p>`
           : ``
         }
-      ${data.prevPost && data.prevPost.url !== null
-        ? /*html*/ `<p class="text-center pb-4 my-2 text-xl text-white leading-tight">
-          <strong>Previous</strong>: 
-          <a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="${data.prevPost.url}">${data.prevPost.data.title}</a>
-        </p>`
-        : /*html*/ `<p class="text-xs my-0 py-0 leading-tight">&nbsp;</p>`
-      }
-    </div>`
-    : ``
-  }
+        ${data.prevPost && data.prevPost.url !== null
+          ? /*html*/ `<p class="text-center pb-4 my-2 text-xl text-white leading-tight">
+            <strong>Previous</strong>: 
+            <a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="${data.prevPost.url}">${data.prevPost.data.title}</a>
+          </p>`
+          : /*html*/ `<p class="text-xs my-0 py-0 leading-tight">&nbsp;</p>`
+        }
+      </div>`
+      : ``
+    }
 </main>
 `
 }

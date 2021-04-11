@@ -1,0 +1,39 @@
+---
+title: singlepost.njk
+layout: layouts/_default/base.njk
+---
+
+<main class="pt-12">
+  {% include 'layouts/partials/billboard.njk' %}
+  <div class="sm:w-5/6 md:w-4/5 xl:w-1/2 mt-0 mr-auto ml-auto px-6 lg:px-0">
+    {% lazypicture featured_image, featured_image_alt, featured_image_width, featured_image_width %}
+    {% if featured_image_caption %}
+      <p class="mt-2 text-center text-xs">{{ featured_image_caption | safe }}</p>
+    {% endif %}
+      <article class="article">
+        {{ content | safe }}
+      </article>
+    {% if page.url !== "/about/" %}
+      {% include 'layouts/partials/fastcomments.njk' %}
+    {% endif %}
+  </div>
+
+  {% if page.url !== "/about/" %} 
+    <div class="w-full px-8 md:px-0 bg-blue-700 align-middle mt-10 mb-10">
+      <h3 class="text-center text-3xl mb-2 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
+      {% if nextPost.url %}
+        <p class="text-center my-2 text-xl text-white leading-tight">
+          <strong>Next</strong>: 
+          <a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+        </p>
+      {% endif %}
+      {% if prevPost.url %}
+        <p class="text-center pb-4 my-2 text-xl text-white leading-tight">
+          <strong>Previous</strong>: 
+          <a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+        </p>
+      {% else %}
+        <p class="text-xs my-0 py-0 leading-tight">&nbsp;</p>
+      {% endif %}
+    </div>
+  {% endif %}

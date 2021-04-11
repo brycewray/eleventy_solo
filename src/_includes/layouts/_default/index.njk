@@ -1,0 +1,33 @@
+---
+title: BryceWray.com
+layout: layouts/_default/base.njk
+---
+
+<main class="p-0">
+  <div class="pt-6 lg:pt-12 lg:flex w-full mr-auto ml-auto">
+    <div class="bg-transparent lg:bg-gradient-to-b from-blue-700 to-black lg:dark:bg-gradient-to-b lg:dark:from-black lg:dark:to-blue-700 lg:w-5/12 px-8 lg:px-12 pt-16 lg:text-white text-center lg:text-right">
+      <h1 class="text-3xl lg:leading-relaxed lg:text-4xl lg:pt-10">Welcome to brycewray.com, offering <a href="/about" class="lg:text-blue-100 lg:hover:text-blue-100 lg:border-blue-100 lg:hover:border-blue-100">its owner</a>&rsquo;s &ldquo;observations, opinions, and geekiness&rdquo; since&nbsp;2018.</h1>
+    </div>
+    <div class="text-center lg:text-left lg:w-7/12 px-6 lg:pl-16 lg:pr-6 lg:pt-16">
+      <div class="mt-8 border-blue-700 dark:border-white mx-auto my-auto w-3/5 border-solid border-b-4 lg:hidden"></div>
+      <h2 class="h1 mt-4 lg:mt-0 mb-4 lg:mb-10 text-3xl lg:text-5xl 2xl:text-6xl">Latest <a href="/posts/">posts</a></h2>
+      {% for post in collections.post | reverse %}
+        {% if loop.index0 < 3 %}	
+          <div class="lg:pr-8">
+            <h2 class="not-italic tracking-tight text-2xl lg:text-3xl 2xl:text-4xl"><a href="{{ post.url }}">{{ post.data.title | safe }}</a></h2>
+            <p class="font-bold mt-1 mb-0 text-xl lg:text-2xl 2xl:text-3xl">{{ post.data.subtitle | safe }}</p>
+            <p class="tracking-normal leading-tight my-2 dateInfo"><strong><time class="inline" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time></strong>
+              {% if post.data.lastmod %}
+              <br />Last modified <time datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>
+              {% endif %}
+            </p>
+            <p class="text-base mt-1 mb-6 lg:mb-10">
+              {{ post.data.description | safe }}
+            </p>
+          </div>
+        {% endif %}
+      {% endfor %}
+      <p class="mt-8 mb-8 2xl:mb-12 2xl:text-xl"><a href="/posts/"><strong>All {{ collections.post.length }} posts</strong></a> <span class="text-sm 2xl:text-base"><em>(listed five per page)</em></span></p>
+    </div>
+  </div>
+</main>

@@ -5,12 +5,8 @@ const ErrorOverlay = require("eleventy-plugin-error-overlay")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const svgContents = require("eleventy-plugin-svg-contents")
 // const { fromPairs } = require("lodash")
-const jsTheme = require('./src/_includes/jstheme.js')
 
 module.exports = function (eleventyConfig) {
-
-  // theming -- based on Reuben Lillie's code (https://gitlab.com/reubenlillie/reubenlillie.com/)
-  jsTheme(eleventyConfig)
 
   eleventyConfig.addPlugin(pluginRss)
 
@@ -64,7 +60,7 @@ module.exports = function (eleventyConfig) {
   // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
   eleventyConfig.addLayoutAlias(
     "posts", 
-    "src/_includes/layouts/posts/singlepost.11ty.js"
+    "src/_includes/layouts/posts/singlepost.njk"
   )
 
 

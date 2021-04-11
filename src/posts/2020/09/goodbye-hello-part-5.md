@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepost.njk
 tags: post
 title: "Goodbye and hello • Part 5"
 subtitle: "Failing to plan"

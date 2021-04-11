@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepost.njk
 title: "Speaking up for Sass"
 subtitle: "Why rumors of its death are greatly exaggerated"
 description: "It may not be This Week’s Kewl Thing, but Sass/SCSS is still an invaluable part of web development."

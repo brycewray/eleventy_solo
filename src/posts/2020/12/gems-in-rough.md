@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepost.njk
 title: "Gems in the rough"
 subtitle: "A few suggestions for your static website"
 description: "I learned these the hard way; perhaps you won’t have to do the same."

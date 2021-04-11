@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepost.njk
 title: "Eleventy and Hugo: Comparing and contrasting"
 subtitle: "You can’t always get what you want, but . . ."
 description: "Trying to choose between the two best static site generators? See if these points address your personal hot buttons."

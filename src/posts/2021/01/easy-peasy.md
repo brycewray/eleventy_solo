@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepost.njk
 title: "Easy-peasy"
 subtitle: "A theoretical conversation about building static websites"
 description: "Simplicity is in the mind of the conveyor."

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepost.njk
 tags: post
 title: "Beginner’s luck: an update"
 subtitle: "New and updated starter sets for Eleventy and Hugo"

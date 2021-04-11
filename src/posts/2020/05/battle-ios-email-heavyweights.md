@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.11ty.js
+layout: layouts/posts/singlepost.njk
 tags: post
 title: "Battle of the iOS email heavyweights"
 subtitle: "AltaMail vs. Preside: Two apps for power users"

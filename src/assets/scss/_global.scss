@@ -9,7 +9,7 @@ html, body {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  font-feature-settings: "liga" 1; // if using any ligature-savvy fonts, ligatures won't work without this
+  // font-feature-settings: "liga" 1; // if using any ligature-savvy fonts, ligatures won't work without this
   @media (prefers-color-scheme: dark) {
     background: var.$background-dark-mode;
     color: var.$default-color-dark-mode;

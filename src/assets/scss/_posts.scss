@@ -44,25 +44,25 @@
   &-Title {
     margin-bottom: 0.25em;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     letter-spacing: -0.025em;
     @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 1.75rem;
+      font-size: 2rem;
     }
     @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 2rem;
+      font-size: 2.25rem;
     }
   }
   &-Subtitle {
     letter-spacing: -0.0125em;
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-top: 0;
     margin-bottom: 0;
     @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
     @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
     }
   }
   &-Dates {
@@ -71,10 +71,10 @@
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 0.875rem;
+      font-size: 1rem;
     }
     @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 1rem;
+      font-size: 1.25rem;
     }
   }
   &-Description {

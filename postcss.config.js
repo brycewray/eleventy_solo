@@ -1,15 +1,16 @@
-const cssnano = require('cssnano')({
-  preset: 'default',
+const purgecss = require('@fullhuman/postcss-purgecss')({
+  content: [
+    './**/*.njk',
+    './**/*.11ty.js',
+    './**/*.html'
+  ]
 })
 
 module.exports = {
   plugins: [
-    require('postcss-nesting'),
-    require('postcss-import'),
-    require('tailwindcss'),
     require('autoprefixer'),
     ...process.env.NODE_ENV === 'production'
-      ? [cssnano]
+      ? [purgecss]
       : []
   ],
 }

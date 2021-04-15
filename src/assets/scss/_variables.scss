@@ -28,10 +28,9 @@ $code-color-blueLight-dark-mode: hsl(197, 100%, 77%);
 $code-color-orange-dark-mode: hsl(40, 100%, 50%);
 
 // Typography
-$sans-serif: ui-sans-serif, system-ui, -system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-$monospaced: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-// These come from https://tailwindcss.com/docs/font-family as of 2021-02-13.
+$sans-serif: Inter, system-ui, -system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$monospaced: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
 // rems
 $biggest: 2.5rem;

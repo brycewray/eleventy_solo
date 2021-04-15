@@ -12,70 +12,70 @@ pagination:
   alias: posts
 ---
 
-  <main class="pt-12 pb-16 text-center">
-    <div class="px-12 w-full mx-auto">
-      <h1 class="tracking-tight text-5xl lg:text-7xl pt-6 lg:pt-16">Posts</h1>
-      <div class="post-line"></div>
-      <div>
-        <p class="text-center text-sm mt-2 mb-2">
-          {% if pagination.firstPageHref != page.url %}
-          <a class="border-transparent" aria-label="First page" href={{ pagination.firstPageHref}}>{{ '/src/assets/svg/svgPrevPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgPrevPageIcon.svg' | svgContents | safe }}</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a class="border-transparent" aria-label="Previous page" href={{ pagination.previousPageHref }}>{{ '/src/assets/svg/svgPrevPageIcon.svg' | svgContents | safe }}</a>
-          {% else %}
-          <span class="text-gray-500">{{ '/src/assets/svg/svgFirstPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgFirstPageIcon.svg' | svgContents | safe }}</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span class="text-gray-500">{{ '/src/assets/svg/svgFirstPageIcon.svg' | svgContents | safe }}</span>
-          {% endif %}
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          {% if pagination.lastPageHref != page.url %}
-          <a class="border-transparent" aria-label="Next page" href={{ pagination.nextPageHref }}>{{ '/src/assets/svg/svgNextPageIcon.svg' | svgContents | safe }}</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a class="border-transparent" aria-label="Next page" href={{ pagination.lastPageHref }}>{{ '/src/assets/svg/svgNextPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgNextPageIcon.svg' | svgContents | safe }}</a>
-          {% else %}
-          <span class="text-gray-500">{{ '/src/assets/svg/svgLastPageIcon.svg' | svgContents | safe }}</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span class="text-gray-500">{{ '/src/assets/svg/svgLastPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgLastPageIcon.svg' | svgContents | safe }}</span>
-          {% endif %}
-        </p>
-        <hr class="mt-2 mx-auto mb-6 w-3/5 md:w-1/2 2xl:w-2/5" />
-        {% for post in posts %}
-          <div class="lg:px-12">          
-            <h2 class="text-3xl lg:text-3xl 2xl:text-4xl mb-2 tracking-tight"><a href="{{ post.url }}">{{ post.data.title | safe }}</a></h2>
-            <p class="text-xl lg:text-2xl 2xl:text-3xl font-bold lg:leading-snug 2xl:leading-tight mb-2">{{ post.data.subtitle | safe }}</p>
-            <p class="mt-0 leading-tight 2xl:text-xl"><time class="font-bold inline" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time>
-              {% if post.data.lastmod %}
-              <br /><span class="text-sm 2xl:text-lg">Last modified <time class="inline" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time></span>
-              {% endif %}
-            </p>
-            <p class="mt-2 mb-10 lg:text-lg 2xl:text-xl leading-tight">
-              {{ post.data.description | safe }}
-            </p>
-          </div>
-        {% endfor %}
-        <hr class="mt-6 mx-auto mb-6 w-3/5 md:w-1/2 2xl:w-2/5" />
-        <p class="text-center text-sm mt-2 mb-0 pb-0">
-          {% if pagination.firstPageHref != page.url %}
-          <a class="border-transparent" aria-label="First page" href={{ pagination.firstPageHref}}>{{ '/src/assets/svg/svgPrevPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgPrevPageIcon.svg' | svgContents | safe }}</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a class="border-transparent" aria-label="Previous page" href={{ pagination.previousPageHref }}>{{ '/src/assets/svg/svgPrevPageIcon.svg' | svgContents | safe }}</a>
-          {% else %}
-          <span class="text-gray-500">{{ '/src/assets/svg/svgFirstPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgFirstPageIcon.svg' | svgContents | safe }}</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span class="text-gray-500">{{ '/src/assets/svg/svgFirstPageIcon.svg' | svgContents | safe }}</span>
-          {% endif %}
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          {% if pagination.lastPageHref != page.url %}
-          <a class="border-transparent" aria-label="Next page" href={{ pagination.nextPageHref }}>{{ '/src/assets/svg/svgNextPageIcon.svg' | svgContents | safe }}</a>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a class="border-transparent" aria-label="Next page" href={{ pagination.lastPageHref }}>{{ '/src/assets/svg/svgNextPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgNextPageIcon.svg' | svgContents | safe }}</a>
-          {% else %}
-          <span class="text-gray-500">{{ '/src/assets/svg/svgLastPageIcon.svg' | svgContents | safe }}</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <span class="text-gray-500">{{ '/src/assets/svg/svgLastPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgLastPageIcon.svg' | svgContents | safe }}</span>
-          {% endif %}
-        </p>
-      </div>
-    </div>
+<main>
+  <div class="container ctr sansSerif">
+    <h1 class="posts-Head">Posts</h1>
+    <div class="posts-Container">
+      <p class="ctr pokey" style="margin-top: 0.5em; margin-bottom: 0.5em;">
+        {% if pagination.firstPageHref != page.url %}
+        <a class="icon" aria-label="First page" href={{ pagination.firstPageHref}}>{{ '/src/assets/svg/svgPrevPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgPrevPageIcon.svg' | svgContents | safe }}</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="icon" aria-label="Previous page" href={{ pagination.previousPageHref }}>{{ '/src/assets/svg/svgPrevPageIcon.svg' | svgContents | safe }}</a>
+        {% else %}
+        <span>{{ '/src/assets/svg/svgFirstPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgFirstPageIcon.svg' | svgContents | safe }}</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>{{ '/src/assets/svg/svgFirstPageIcon.svg' | svgContents | safe }}</span>
+        {% endif %}
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {% if pagination.lastPageHref != page.url %}
+        <a class="icon" aria-label="Next page" href={{ pagination.nextPageHref }}>{{ '/src/assets/svg/svgNextPageIcon.svg' | svgContents | safe }}</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="icon" aria-label="Next page" href={{ pagination.lastPageHref }}>{{ '/src/assets/svg/svgNextPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgNextPageIcon.svg' | svgContents | safe }}</a>
+        {% else %}
+        <span>{{ '/src/assets/svg/svgLastPageIcon.svg' | svgContents | safe }}</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>{{ '/src/assets/svg/svgLastPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgLastPageIcon.svg' | svgContents | safe }}</span>
+        {% endif %}
+      </p>
+      <hr class="paginatorTop" />
+      {% for post in posts %}
+        <div>          
+          <h2 class="posts-Title"><a href="{{ post.url }}">{{ post.data.title | safe }}</a></h2>
+          <p class="posts-Subtitle"><strong>{{ post.data.subtitle | safe }}</strong></p>
+          <p class="posts-Dates"><strong><time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time></strong>
+            {% if post.data.lastmod %}
+            <br />Last modified <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time>
+            {% endif %}
+          </p>
+          <p class="posts-Description">
+            {{ post.data.description | safe }}
+          </p>
+          <p class="legal">&nbsp;</p><!-- where reading time goes in Hugo site -->
+        </div>
+      {% endfor %}
+      <hr class="paginatorBottom" />
+      <p class="ctr pokey" style="margin-top: 0.5em;">
+        {% if pagination.firstPageHref != page.url %}
+        <a class="icon" aria-label="First page" href={{ pagination.firstPageHref}}>{{ '/src/assets/svg/svgPrevPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgPrevPageIcon.svg' | svgContents | safe }}</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="icon" aria-label="Previous page" href={{ pagination.previousPageHref }}>{{ '/src/assets/svg/svgPrevPageIcon.svg' | svgContents | safe }}</a>
+        {% else %}
+        <span>{{ '/src/assets/svg/svgFirstPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgFirstPageIcon.svg' | svgContents | safe }}</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>{{ '/src/assets/svg/svgFirstPageIcon.svg' | svgContents | safe }}</span>
+        {% endif %}
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {% if pagination.lastPageHref != page.url %}
+        <a class="icon" aria-label="Next page" href={{ pagination.nextPageHref }}>{{ '/src/assets/svg/svgNextPageIcon.svg' | svgContents | safe }}</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="icon" aria-label="Next page" href={{ pagination.lastPageHref }}>{{ '/src/assets/svg/svgNextPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgNextPageIcon.svg' | svgContents | safe }}</a>
+        {% else %}
+        <span>{{ '/src/assets/svg/svgLastPageIcon.svg' | svgContents | safe }}</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>{{ '/src/assets/svg/svgLastPageIcon.svg' | svgContents | safe }}{{ '/src/assets/svg/svgLastPageIcon.svg' | svgContents | safe }}</span>
+        {% endif %}
+      </p>
+		</div>
+	</div>
 
-  </main>
+</main>

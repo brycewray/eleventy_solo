@@ -1,8 +1,10 @@
-<div class="text-center px-4 md:px-6 lg:px-8 2xl:px-12">
-  <h1 class="tracking-tight text-4xl md:text-5xl lg:text-7xl pt-8 lg:pt-16">{{ title | safe }}</h1>
-  {% if subtitle %}<h2 class="mt-6 lg:mt-8 2xl:mt-12 text-2xl lg:text-4xl 2xl:text-5xl">{{ subtitle | safe }}</h2>{% endif %}
-  {% if description %}<p class="mt-8 lg:mt-12 2xl:mt-16 text-xl lg:text-2xl 2xl:text-3xl">{{ description | safe }}</p>{% endif %}
-  <p class="text-lg lg:text-xl mt-4 lg:mt-6 2xl:mt-8">
-    <strong>{{ page.date | htmlDateString }}</strong>{% if lastmod %}<br /><span class="text-base">Last modified {{ lastmod | htmlDateString }}</span>{% endif %}
-  </p>
+<div class="billboard-div">
+  <div class="billboard-title-block">
+    <h1 class="billboard-title-text">{{ title | safe }}</h1>
+    {% if subtitle %}<h2 class="billboard-subtitle-text">{{ subtitle | safe }}</h2>{% endif %}
+    {% if description %}<p class="billboard-description-text">{{ description | safe }}</p>{% endif %}
+    <p class="billboard-p-text">
+      <strong>{{ page.date | htmlDateString }}</strong>{% if lastmod %}<br /><span style="font-size: 75%;">Last modified {{ lastmod | htmlDateString }}</span>{% endif %}
+    </p>
+  </div>
 </div>

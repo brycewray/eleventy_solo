@@ -28,6 +28,10 @@
     font-size: 2.5rem;
     letter-spacing: -0.025em;
     margin-bottom: 0.25em;
+    @media screen and (min-width: var.$bkpt_md) {
+      padding-top: 2rem;
+      font-size: 3rem;
+    }
     @media screen and (min-width: var.$bkpt_lg) {
       padding-top: 3.25rem;
       font-size: 3.25rem;

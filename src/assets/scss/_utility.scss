@@ -100,6 +100,10 @@
   }
 }
 
+.yellowBox + hr { // for situations like in "Gems in the rough #4" as of 2021-04-15
+  margin-top: 1.75em;
+}
+
 img.containedImage {
   display: block;
   width: 100%;

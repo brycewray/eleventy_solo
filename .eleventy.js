@@ -4,7 +4,6 @@ const htmlmin = require("html-minifier")
 const ErrorOverlay = require("eleventy-plugin-error-overlay")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const svgContents = require("eleventy-plugin-svg-contents")
-// const { fromPairs } = require("lodash")
 
 module.exports = function (eleventyConfig) {
 

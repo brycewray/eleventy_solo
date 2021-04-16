@@ -1,7 +1,5 @@
 @use 'variables' as var;
 
-/*! purgecss start ignore */
-
 // === for billboard.html partial
 .billboard {
   &-div {
@@ -113,7 +111,5 @@
     }
   }
 }
-
-/*! purgecss end ignore */
 
 // === end, for billboard.html partial

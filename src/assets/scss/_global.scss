@@ -1,7 +1,5 @@
 @use 'variables' as var;
 
-/*! purgecss start ignore */
-
 html, body {
   font-family: var.$sans-serif;
   font-weight: 425;
@@ -294,5 +292,3 @@ article {
     margin-top: 1.25em; // definitely em, not rem
   }
 }
-
-/*! purgecss end ignore */

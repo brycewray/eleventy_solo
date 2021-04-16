@@ -1,7 +1,5 @@
 @use 'variables' as var;
 
-/*! purgecss start ignore */
-
 /*
 header {
   font-family: var.$sans-serif;
@@ -144,5 +142,3 @@ a.nav-LogoLink { // yes, this specificity is required
     text-decoration: none;
   }
 }
-
-/*! purgecss end ignore */

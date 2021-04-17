@@ -65,15 +65,15 @@
     }
   }
   &-Dates {
-    font-size: 0.75rem;
+    font-size: 1rem;
     line-height: 1.5em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     @media screen and (min-width: var.$bkpt_lg) {
-      font-size: 1rem;
+      font-size: 1.25rem;
     }
     @media screen and (min-width: var.$bkpt_2xl) {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
   }
   &-Description {

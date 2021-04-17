@@ -44,7 +44,7 @@ pagination:
           <p class="posts-Subtitle"><strong>{{ post.data.subtitle | safe }}</strong></p>
           <p class="posts-Dates"><strong><time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.date | htmlDateString }}</time></strong>
             {% if post.data.lastmod %}
-            <br /><span class="pokey">Last modified <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time></span>
+            <br /><span style="font-size: 85%;">Last modified <time style="display: inline;" datetime="{{ post.date | htmlDateString }}">{{ post.data.lastmod | htmlDateString }}</time></span>
             {% endif %}
           </p>
           <p class="posts-Description">

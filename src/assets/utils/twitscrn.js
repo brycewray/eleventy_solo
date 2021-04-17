@@ -5,7 +5,7 @@ This shortcode takes the following form...
 
 const respSizes = require(`../../../_data/siteparams.json`).respSizes
 var cloudiBase = 'https://res.cloudinary.com/brycewray-com/image/upload/'
-var LQIPholder = 'f_auto,q_1,w_20/' // note ending slash
+// var LQIPholder = 'f_auto,q_1,w_20/' // note ending slash
 var xFmPart1 = 'f_auto,q_auto:best,w_'
 var xFmPart2 = ',x_0,z_1/' // note ending slash
  

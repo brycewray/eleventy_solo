@@ -108,8 +108,6 @@ img.containedImage {
   height: auto;
   padding: 0;
   margin: 0 auto;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .imgcCaption, .lazypicturecaption {
@@ -123,6 +121,10 @@ img.containedImage {
 
 .relative {
   position: relative;
+}
+
+.h-full {
+  height: 100%;
 }
 
 // === end, utility classes

@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-#lastmod:
+#lastmod: 2021-04-17T14:07:00 # same day so not worrying about that now
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
@@ -27,7 +27,7 @@ Then, last night, I finally decided to give it a try and, shortly before midnigh
 
 [^whyNotHere]: I don't use it on this site, however, because I [let Cloudinary process this site's images](/posts/2020/07/transformed). While Eleventy Image definitely can work with images served from other locations besides your site, and although I greatly admire the elegance and features of Eleventy Image, it can't begin to match all the image-transformation capabilities you can [pack into a Cloudinary URL](https://cloudinary.com/documentation/image_transformations#transformation_url_syntax).
 
-[^imgXfm]: Adding Eleventy Image to these starter sets allowed me finally to relieve them of my bespoke `imgxfm.js` file---which, although it worked well enough, delayed each build for a few seconds and, inevitably, bulked up the user's project repository. For those who've used `imgxfm.js` in the past with any of my starter sets, I highly encourage you to upgrade to the latest and greatest so you can unburden yourself from that sludge. On the other hand, for any masochists out there who still are interested in the `imgxfm.js` code but don't have it, [let me know](/contact) and I'll provide it.
+[^imgXfm]: Adding Eleventy Image to these starter sets allowed me finally to relieve them of my bespoke `imgxfm.js` file---which, although it worked well enough, delayed each build for a few seconds. For those who've used `imgxfm.js` in the past with any of my starter sets, I highly encourage you to upgrade to the latest and greatest so you can unburden yourself from that sludge. On the other hand, for any masochists out there who still are interested in the `imgxfm.js` code but don't have it, [let me know](/contact) and I'll provide it.
 
 Now that I've gone through that, I offer this post in the hope of making it simpler for even new Eleventy users to understand Eleventy Image. After all, if **this** old fart can, so can you.
 

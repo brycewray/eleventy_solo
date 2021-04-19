@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "A thousand words, indeed"
 subtitle: "Feelings about look-and-feel"

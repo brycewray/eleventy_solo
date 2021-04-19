@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Two, but not terrible"
 subtitle: "Dual candles on the site’s cake"

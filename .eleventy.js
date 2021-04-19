@@ -57,10 +57,10 @@ module.exports = function(eleventyConfig) {
   })
 
   // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
-  eleventyConfig.addLayoutAlias(
-    "posts", 
-    "src/_includes/layouts/posts/singlepost.njk"
-  )
+  eleventyConfig.addLayoutAlias("singlepost", "layouts/posts/singlepost.html")
+  eleventyConfig.addLayoutAlias("index", "layouts/_default/index.html")
+  eleventyConfig.addLayoutAlias("contact", "layouts/contact/contact.html")
+  eleventyConfig.addLayoutAlias("privacy", "layouts/privacy/privacy.html")
 
 
   /* Markdown plugins */

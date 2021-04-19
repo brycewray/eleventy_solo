@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Sorta StranGe (SSG) trip"
 subtitle: "Recapping “the dance” and what it taught me"

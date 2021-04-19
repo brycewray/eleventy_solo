@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Publish or perish"
 subtitle: "Going live with your Hugo site"

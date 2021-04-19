@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Blox sux"
 subtitle: "Page builders are a pain, but . . ."

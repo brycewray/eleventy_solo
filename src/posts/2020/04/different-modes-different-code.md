@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Different modes for different code"
 subtitle: "Filling it out in triplicate"

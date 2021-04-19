@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "The Holy Mail"
 subtitle: "Stopping the e-madness"

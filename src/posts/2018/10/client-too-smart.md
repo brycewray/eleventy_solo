@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "The client is too smart for you"
 subtitle: "The email client, that is"

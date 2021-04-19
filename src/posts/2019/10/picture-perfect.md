@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Picture perfect?"
 subtitle: "With SSGs and images, it’s “location, location, location”"

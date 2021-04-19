@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Murdered darlings"
 subtitle: "R.I.P., WIP"

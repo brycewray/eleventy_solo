@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Streamers’ party"
 subtitle: "Getting with the (TV) program"

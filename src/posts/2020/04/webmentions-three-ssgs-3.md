@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Webmentions in three SSGs: Part 3"
 subtitle: "IndieWebbin’ in Hugo"

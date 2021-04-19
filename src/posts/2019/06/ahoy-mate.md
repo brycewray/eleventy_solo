@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Ahoy, ’Mate"
 subtitle: "Considering MailMate"

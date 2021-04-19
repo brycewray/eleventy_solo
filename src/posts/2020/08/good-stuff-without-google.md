@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Good stuff without Google"
 subtitle: "Yes to variable typefaces, no to tracking"

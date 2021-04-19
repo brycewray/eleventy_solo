@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Why I finally settled on Ulysses"
 subtitle: "The write stuff (sorry)"

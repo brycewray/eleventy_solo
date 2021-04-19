@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Freeing your folders"
 subtitle: "A safe way to change your cloud sync setup"

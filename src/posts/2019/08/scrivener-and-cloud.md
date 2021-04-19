@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Scrivener and The Cloud"
 subtitle: "Cutting through the fog (maybe)"

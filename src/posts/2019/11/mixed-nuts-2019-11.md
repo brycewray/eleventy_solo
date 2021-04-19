@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Mixed nuts • November, 2019"
 subtitle: "In a nutshell, odds and ends"

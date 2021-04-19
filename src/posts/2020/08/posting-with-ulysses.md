@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Posting with Ulysses"
 subtitle: "Trying the latest version"

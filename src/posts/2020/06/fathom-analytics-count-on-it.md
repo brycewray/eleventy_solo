@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Fathom Analytics: Count on it"
 subtitle: "A better way to analyze websites"

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 title: "Gems in the rough #3"
 subtitle: "Tips ’n’ tricks, this ’n’ that"
 description: "The latest installment of unrequested advice about tinkering with websites."

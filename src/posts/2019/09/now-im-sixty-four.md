@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Now I’m sixty-four"
 subtitle: "Amending my obligatory earworm"

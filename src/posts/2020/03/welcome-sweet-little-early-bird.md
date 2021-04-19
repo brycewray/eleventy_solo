@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Welcome, sweet little early bird"
 subtitle: "Plans, schmans"

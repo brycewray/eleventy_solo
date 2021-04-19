@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Getting framed"
 subtitle: "Why I still use Bootstrap"

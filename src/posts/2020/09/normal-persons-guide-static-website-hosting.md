@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "A normal person’s guide to static website hosting"
 subtitle: "Where your site should “live”"

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Thinking dark thoughts"
 subtitle: "How to keep up with a growing trend"

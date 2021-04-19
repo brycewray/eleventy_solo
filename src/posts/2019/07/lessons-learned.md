@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 title: "Lessons learned"
 tags: post
 subtitle: "What I found while trying other SSGs"

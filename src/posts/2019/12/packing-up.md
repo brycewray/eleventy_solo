@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Packing up"
 subtitle: "Eleventy and webpack are a powerful pair"

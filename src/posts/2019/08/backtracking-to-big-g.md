@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Backtracking to Big G"
 subtitle: "A noble experiment ends"

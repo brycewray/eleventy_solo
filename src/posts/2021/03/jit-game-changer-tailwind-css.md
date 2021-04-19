@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 title: "JIT is a game-changer for Tailwind CSS"
 subtitle: "Still experimental, but already impressive"
 description: "Why Tailwind’s new capabilities will give it even more  momentum among web developers."

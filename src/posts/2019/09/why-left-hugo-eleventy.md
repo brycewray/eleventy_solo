@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Why I left Hugo for Eleventy"
 subtitle: "The quest to learn more"

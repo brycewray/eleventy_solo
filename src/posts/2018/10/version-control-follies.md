@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "The version-control follies"
 subtitle: "Life’s too short for CLI"

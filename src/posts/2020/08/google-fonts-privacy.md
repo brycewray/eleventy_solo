@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Google Fonts and privacy"
 subtitle: "It’s about more than trust"

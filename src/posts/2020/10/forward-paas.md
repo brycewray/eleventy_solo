@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Forward PaaS"
 subtitle: "Trying Cloudflare Workers and KV storage"

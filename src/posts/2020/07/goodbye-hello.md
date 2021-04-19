@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Goodbye and hello"
 subtitle: "Moving from Netlify to Vercel"

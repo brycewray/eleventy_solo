@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 tags: post
 title: "Goodbye and hello • Part 4"
 subtitle: "The future is now, so to Render we go"

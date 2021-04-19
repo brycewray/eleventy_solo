@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.html
+layout: singlepost
 title: "Simplify, simplify"
 subtitle: "A Thoreau-ly fine website"
 description: "The result of choosing between simplicity and FOMO."

@@ -1,8 +1,8 @@
 /* ==== for IE 10 and 11 **ONLY** ==== */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 
-  html, body {
-    font-family: 'Segoe UI', sans-serif;
+  * {
+    font-family: 'Segoe UI', sans-serif !important;
   }
 
   main {

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "A stacked deck"
 subtitle: "Part 2 of a two-part series on web typography"

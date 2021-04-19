@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Grid-locked no more"
 subtitle: "Doing a 180 on CSS Grid"

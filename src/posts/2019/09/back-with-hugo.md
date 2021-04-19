@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Back with Hugo"
 subtitle: "Well, that didn’t last long"

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Packing up"
 subtitle: "Eleventy and webpack are a powerful pair"

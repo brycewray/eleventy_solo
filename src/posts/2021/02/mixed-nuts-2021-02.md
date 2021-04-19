@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 title: "Mixed nuts • February, 2021"
 subtitle: "Free-association folderol for February"
 description: "No brain cells were even used, much less harmed, in the production of this post."

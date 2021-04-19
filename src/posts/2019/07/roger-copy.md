@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Roger, Copy"
 subtitle: "Keeping my .git together with Working Copy"

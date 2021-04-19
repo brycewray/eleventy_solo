@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 title: "Hashing out a cache-busting fix for Eleventy"
 subtitle: "Digging further under the hood"
 description: "Some of the code behind my previous post."

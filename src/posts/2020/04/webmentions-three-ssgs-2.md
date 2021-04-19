@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Webmentions in three SSGs: Part 2"
 subtitle: "IndieWebbin’ in Eleventy"

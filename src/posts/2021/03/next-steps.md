@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 title: "Next steps?"
 subtitle: "Evaluating Next.js for the Day Job"
 description: "Some things I’ve learned while tinkering with a major React framework."

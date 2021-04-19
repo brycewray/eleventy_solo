@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Old dog learns old trick"
 subtitle: "How’d I miss this way to fool IE?"

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "A thousand words, indeed"
 subtitle: "Feelings about look-and-feel"

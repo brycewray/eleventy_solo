@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "It’s about the food, not the decor"
 subtitle: "The delivery method matters far less than what’s being delivered"

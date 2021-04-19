@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "iA for IO?"
 subtitle: "Evaluating iA Writer for use with an SSG"

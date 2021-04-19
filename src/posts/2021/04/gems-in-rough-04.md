@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 title: "Gems in the rough #4"
 subtitle: "More assorted short takes about building websites"
 description: "Here a drib, there a drab, everywhere a drib-drab of web dev miscellany."

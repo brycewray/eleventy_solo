@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Why I’m staying with Hugo"
 subtitle: "An “interesting” learning experience"

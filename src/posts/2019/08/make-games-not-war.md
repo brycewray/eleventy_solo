@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Make games, not war"
 subtitle: "Hey, MLB and NFL: time to unify"

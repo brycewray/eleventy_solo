@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Some curmudgeonish thoughts, 2019 edition"
 subtitle: "A few more things that irk me"

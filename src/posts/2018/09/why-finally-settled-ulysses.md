@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Why I finally settled on Ulysses"
 subtitle: "The write stuff (sorry)"

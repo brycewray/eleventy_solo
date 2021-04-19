@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "On Edge"
 subtitle: "Ch-ch-ch-ch-Chromium"

@@ -184,6 +184,7 @@ module.exports = function(eleventyConfig) {
       "njk", 
       "11ty.js"
     ],
+    htmlTemplateEngine: "njk",
     passthroughFileCopy: true,
   }
 }

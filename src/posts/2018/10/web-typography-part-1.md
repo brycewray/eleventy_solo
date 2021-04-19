@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Readable web text, pretty please"
 subtitle: "Part 1 of a two-part series on web typography"

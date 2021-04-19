@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Now I’m a Gatsby geezer"
 subtitle: "Gatsby Experiment III proves the winner"

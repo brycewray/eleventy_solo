@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Going solo with Eleventy"
 subtitle: "Losing webpack, regaining Tailwind CSS"

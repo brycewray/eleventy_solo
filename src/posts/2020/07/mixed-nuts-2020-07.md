@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Mixed nuts • July, 2020"
 subtitle: "Random thoughts “R” us"

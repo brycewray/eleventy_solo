@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Ignition sequence start"
 subtitle: "GitHub Actions to deploy to Firebase Hosting"

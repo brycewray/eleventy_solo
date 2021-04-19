@@ -1,11 +1,11 @@
 ---
-title: singlepost.njk
-layout: layouts/_default/base.njk
+title: singlepost.html
+layout: layouts/_default/base.html
 ---
 
 <main>
 
-  {% include 'layouts/partials/billboard.njk' %}
+  {% include 'layouts/partials/billboard.html' %}
 
   <div class="container-narrower">
     {% lazypicture featured_image, featured_image_alt, featured_image_width, featured_image_height %}
@@ -16,7 +16,7 @@ layout: layouts/_default/base.njk
       {{ content | safe }}
     </article>
     {% if page.url !== "/about/" %}
-      {% include 'layouts/partials/fastcomments.njk' %}
+      {% include 'layouts/partials/fastcomments.html' %}
     {% endif %}
   </div>
 

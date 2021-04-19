@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "O say can you CI/CD?"
 subtitle: "A way around the Netlify build limit"

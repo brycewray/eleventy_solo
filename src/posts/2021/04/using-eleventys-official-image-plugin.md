@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 title: "Using Eleventy’s official image plugin"
 subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."

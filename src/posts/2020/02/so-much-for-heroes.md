@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "So much for heroes"
 subtitle: "The Big Picture regarding big pictures"

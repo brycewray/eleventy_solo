@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 title: "Beta-testing Cloudflare Pages"
 subtitle: "A possible game-changer emerges"
 description: "I take a look at a new website-hosting platform and find some early glitchiness, but also plenty of potential."

@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 tags: post
 title: "Chasing 100: Tips for optimizing your website"
 subtitle: "Pointers about performance, and then some"

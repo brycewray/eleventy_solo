@@ -1,5 +1,5 @@
 ---
-layout: layouts/posts/singlepost.njk
+layout: layouts/posts/singlepost.html
 title: "New in Hugo: easier writing"
 subtitle: "How Hugo 0.81.0 lets me do more in Markdown"
 description: "The benefit of enhanced support for attributes."

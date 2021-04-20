@@ -56,7 +56,8 @@ module.exports = function(eleventyConfig) {
     )
   })
 
-  // https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
+  // hhttps://www.11ty.dev/docs/layouts/
+  eleventyConfig.addLayoutAlias("base", "layouts/_default/base.html")
   eleventyConfig.addLayoutAlias("singlepost", "layouts/posts/singlepost.html")
   eleventyConfig.addLayoutAlias("index", "layouts/_default/index.html")
   eleventyConfig.addLayoutAlias("contact", "layouts/contact/contact.html")

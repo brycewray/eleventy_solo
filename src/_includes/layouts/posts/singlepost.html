@@ -15,9 +15,6 @@ layout: base
     <article class="article">
       {{ content | safe }}
     </article>
-    {% if page.url !== "/about/" %}
-      {% include 'layouts/partials/fastcomments.html' %}
-    {% endif %}
   </div>
 
   {% if page.url !== "/about/" %}

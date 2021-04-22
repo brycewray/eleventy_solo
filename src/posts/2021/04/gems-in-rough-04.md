@@ -5,7 +5,7 @@ subtitle: "More assorted short takes about building websites"
 description: "Here a drib, there a drab, everywhere a drib-drab of web dev miscellany."
 author: Bryce Wray
 date: 2021-04-09T04:40:00-05:00
-lastmod: 2021-04-15T16:30:00-05:00
+lastmod: 2021-04-22T12:46:00-05:00
 #draft: false
 discussionId: "2021-04-gems-in-rough-04"
 featured_image: "gems-1400682_3364x2696.jpg"
@@ -53,4 +53,6 @@ In "[Speaking up for Sass](/posts/2021/04/speaking-up-for-sass)," I (foot)noted 
 
 However, in the days since, I've continued to research the choice. I've found that, increasingly, dev team leads are encouraging adoption of utility-first CSS, exactly for the purpose of making it *easier* for successors to take over existing code. These advocates' shared point is that, for someone new to a code base, it's easier to figure out how to make changes if one doesn't have to worry about all the existing interrelationships among the base's various web pages and styling cascades.
 
-While my choice of [Sass combined with CSS Modules](https://nextjs.org/docs/basic-features/built-in-css-support#sass-support) was intended to minimize such problems, I re-considered it in light of this argument and realized that I'd best listen to the experts. So I'm refactoring the Next.js-based work to use Tailwind---especially with the new [JIT functionality](/posts/2021/03/jit-game-changer-tailwind-css) that's [now built into Tailwind core](https://blog.tailwindcss.com/tailwindcss-2-1)---and, thus, have also taken this site back to Tailwind.
+While my choice of [Sass combined with CSS Modules](https://nextjs.org/docs/basic-features/built-in-css-support#sass-support) was intended to minimize such problems, I re-considered it in light of this argument and realized that I'd best listen to the experts. So I'm refactoring the Next.js-based work to use Tailwind---especially with the new [JIT functionality](/posts/2021/03/jit-game-changer-tailwind-css) that's [now built into Tailwind core](https://blog.tailwindcss.com/tailwindcss-2-1)---and, thus, have also taken this site back to Tailwind.[^sassAfterAll]
+
+[^sassAfterAll]: Or, at least that was the case as of the original publication of this post. However, after the Day Job's about-face that I mentioned at the top, I no longer had that as a reason to use Tailwind; so I reverted the site's styling to Sass, which I find easier to manage. I know Tailwind fans will find that hard to believe, but that's how it is.

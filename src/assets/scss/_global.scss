@@ -206,7 +206,7 @@ footer {
     margin: 1rem auto 0 auto;
     width: 80%;
     max-width: 60ch;
-    @media screen and (min-width: var.$bkpt_2xl) {
+    @media screen and (min-width: var.$bkpt_3xl) {
       max-width: 70ch;
     }
     figure img, img {

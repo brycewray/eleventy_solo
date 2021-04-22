@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-#lastmod: 2021-04-17T14:07:00 # same day so not worrying about that now
+lastmod: 2021-04-22T12:36:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
@@ -38,7 +38,7 @@ Let's break it down to three simple questions:<br />
 
 One of Eleventy's great strengths is how readily you can expand it, through plugins and other adaptations, to do more, work better, and fit your needs. The Eleventy Image plugin is a particularly apt example thereof. Built atop the super-fast and flexible [sharp](https://github.com/lovell/sharp) image processor[^sharpToo], Eleventy Image takes image files you "feed" it and turns them into files that are smaller and more efficient. This makes it easier to serve images that work better with your visitors' respective devices and connections.
 
-[^sharpToo]: Since I'd built `imgxfm.js` (see the previous footnote) on Sharp, too, I already knew I was going to like Eleventy Image once I did finally understand it well enough to use it.
+[^sharpToo]: Since I'd built `imgxfm.js` (see the previous footnote) on sharp, I already knew I was going to like Eleventy Image once I did finally understand it well enough to use it.
 
 So what? Well&nbsp;.&nbsp;.&nbsp;.
 

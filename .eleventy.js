@@ -91,6 +91,7 @@ module.exports = function(eleventyConfig) {
       rel: "noreferrer noopener",
     },
   })
+
   // START, de-bracketing footnotes
   //--- see http://dirtystylus.com/2020/06/15/eleventy-markdown-and-footnotes/
   markdownEngine.renderer.rules.footnote_caption = (tokens, idx) => {
@@ -102,7 +103,6 @@ module.exports = function(eleventyConfig) {
   }
   // END, de-bracketing footnotes
   eleventyConfig.setLibrary("md", markdownEngine)
-
 
   eleventyConfig.addWatchTarget("src/**/*.js")
   // eleventyConfig.addWatchTarget("./src/assets/css/*.css")
@@ -158,7 +158,6 @@ module.exports = function(eleventyConfig) {
 
   /* === START, prev/next posts stuff === */
   // https://github.com/11ty/eleventy/issues/529#issuecomment-568257426
-
   eleventyConfig.addCollection("posts", function (collection) {
     const coll = collection.getFilteredByTag("post")
     for (let i = 0; i < coll.length; i++) {
@@ -169,7 +168,6 @@ module.exports = function(eleventyConfig) {
     }
     return coll
   })
-
   /* === END, prev/next posts stuff === */
 
   /* pathPrefix: "/"; */

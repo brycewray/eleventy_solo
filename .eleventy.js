@@ -144,7 +144,7 @@ module.exports = function(eleventyConfig) {
       throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`)
     }
     let metadata = await Image(src, {
-      widths: [300, 600, 900, null], // === 'null' = original width, if larger than 900px
+      widths: [300, 600, 900, 1500], // === 'null' = original width, if larger than 900px
       // formats: ["webp", "jpeg"], // === default setting
       urlPath: "/images/",
       outputDir: "./_site/images/",

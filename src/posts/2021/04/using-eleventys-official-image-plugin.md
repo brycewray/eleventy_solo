@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2021-04-22T12:36:00-05:00
+lastmod: 2021-04-25T14:45:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
@@ -127,6 +127,9 @@ For each image file you "feed" this shortcode in your Markdown (we'll explain th
 - The file formats listed in the `formats` array. Here, we're specifying both WebP and JPEG formats because that covers you with virtually every browser out there.[^inOut]
 
 [^inOut]: For more details on the file formats Eleventy Image can accept (input) and create (output), see [its documentation](https://www.11ty.dev/docs/plugins/image/).
+
+ **Additional note, 2021-04-25**: If you have a *lot* of images you'll be running through this process, you'd best keep the `widths` array shorter than my example above, since more entries in `widths`---and, for that matter, `formats`---will result in even more files that Eleventy Image will have to create at build time. That can result in not only an extremely slow build but also, for local builds, a suddenly very hot CPU on your computer. Play with this over time and see what combination of image quantity, `widths` options, and `formats` options will work best for your project.
+ {.yellowBox}
 
 The setting for `urlPath` tells your site's pages to think of these images as being located in the site's `/images/` folder; and the `outputDir` setting tells Eleventy Image to copy them to the right location to make that work (given the standard Eleventy output directory of `./site`).
 

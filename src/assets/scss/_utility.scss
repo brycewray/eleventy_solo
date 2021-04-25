@@ -119,6 +119,10 @@ img.containedImage {
   text-align: center;
 }
 
+.EICapt { // for use with images used with Eleventy Image which have captions
+  margin-bottom: -0.5em;
+}
+
 .relative {
   position: relative;
 }

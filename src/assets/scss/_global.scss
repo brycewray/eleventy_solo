@@ -211,6 +211,7 @@ footer {
     }
     figure img, img {
       width: 100%;
+      height: auto;
     }
     .twitter-tweet {
       margin: 1rem auto 0 auto;
@@ -221,6 +222,9 @@ footer {
       @media screen and (prefers-color-scheme: dark) {
         border: 2px solid var.$grey-2;
       }
+    }
+    a .twitter-tweet {
+      margin: 0;
     }
   }
   &-comments {

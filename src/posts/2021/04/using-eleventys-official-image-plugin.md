@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2021-04-25T14:45:00-05:00
+lastmod: 2021-04-25T14:54:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
@@ -133,7 +133,7 @@ For each image file you "feed" this shortcode in your Markdown (we'll explain th
 
 The setting for `urlPath` tells your site's pages to think of these images as being located in the site's `/images/` folder; and the `outputDir` setting tells Eleventy Image to copy them to the right location to make that work (given the standard Eleventy output directory of `./site`).
 
-**Note**: This code is based on the "Do it yourself: \<picture>\" example in the Eleventy Image documentation's ["Use this in your templates" section](https://www.11ty.dev/docs/plugins/image/#use-this-in-your-templates). Precisely **because** we're specifying the creation and serving of both WebP and JPEG files, I chose the example that creates a [`picture` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture), so it can instruct the browser to select the file format it can best use. The "Use this in your templates" section has other examples you may prefer, especially if you don't care about serving more than just one format.
+**Note**: This code is based on the "We generate the HTML" example in the Eleventy Image documentation's ["Use this in your templates" section](https://www.11ty.dev/docs/plugins/image/#use-this-in-your-templates). The "Use this in your templates" section has other examples you may prefer.
 {.yellowBox}
 
 Now, let's get this show on the road.

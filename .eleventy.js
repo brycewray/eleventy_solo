@@ -4,6 +4,7 @@ const htmlmin = require("html-minifier")
 const ErrorOverlay = require("eleventy-plugin-error-overlay")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const svgContents = require("eleventy-plugin-svg-contents")
+const path = require('path')
 const Image = require("@11ty/eleventy-img")
 
 module.exports = function(eleventyConfig) {
@@ -144,10 +145,15 @@ module.exports = function(eleventyConfig) {
       throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`)
     }
     let metadata = await Image(src, {
-      widths: [300, 600, 900, 1500], // === 'null' = original width, if larger than 900px
-      // formats: ["webp", "jpeg"], // === default setting
+      widths: [600, 900, 1500], // default is 'null' = original width, if larger than 900px
+      // formats: ["webp", "jpeg"], // default setting
       urlPath: "/images/",
       outputDir: "./_site/images/",
+      filenameFormat: function (id, src, width, format, options) {
+        const extension = path.extname(src)
+        const name = path.basename(src, extension)
+        return `${name}-${width}w.${format}`
+      }
     })  
     let imageAttributes = {
       alt,

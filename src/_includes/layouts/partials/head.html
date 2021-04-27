@@ -6,7 +6,10 @@
 {% set internalCSSPath = 'src/_includes/css/index.css' %}
 
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=10"><!-- due to IE 11 issue with TWCSS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <meta name="generator" content="Eleventy v{{ eleventyVersion }}" />
         
     {% if page.url === "/" %}
@@ -16,10 +19,6 @@
       <title>{{ title }} | {{ siteparams.siteTitle }}</title>
       <meta property="og:title" content="{{ title }} | {{ siteparams.siteTitle }}" />
     {% endif %}
-    
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta property="og:image" content="{{ cloudiBase }}{% if featured_image %}{{ featured_image }}{% else %}{{ fallbackImg }}{% endif %}" />
 
@@ -40,12 +39,12 @@
     <meta name="twitter:creator" content="@BryceWrayTX">
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content="{{ cloudiBase }}{% if featured_image %}{{ featured_image }}{% else %}{{ fallbackImg }}{% endif %}" />
-    {% if title != "Home page" %}
-      <meta name="twitter:description" content="{{ description }}" />
-      <meta name="twitter:title" content="{{ title }}" />
-    {% else %}
+    {% if page.url === "/" %}
       <meta name="twitter:description" content="{{ siteparams.siteDescription }}" />
       <meta name="twitter:title" content="{{ siteparams.siteTitle }}" />
+    {% else %}
+      <meta name="twitter:description" content="{{ description }}" />
+      <meta name="twitter:title" content="{{ title }}" />
     {% endif %}
 
     <!-- **** BEGINNING, favicons **** -->

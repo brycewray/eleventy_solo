@@ -10,8 +10,8 @@ const Image = require("@11ty/eleventy-img")
 module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss)
-
   eleventyConfig.addPlugin(svgContents)
+  eleventyConfig.addPlugin(ErrorOverlay)
 
   eleventyConfig.setQuietMode(true)
 
@@ -24,6 +24,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/images") // not just icons due to that one OG image
 
   eleventyConfig.setUseGitIgnore(false) // for the sake of CSS generated just for `head`
+
+
+  /* --- date-handling --- */
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
@@ -58,6 +61,9 @@ module.exports = function(eleventyConfig) {
     )
   })
 
+  /* --- end, date-handling */
+
+
   // https://www.11ty.dev/docs/layouts/
   eleventyConfig.addLayoutAlias("base", "layouts/_default/base.html")
   eleventyConfig.addLayoutAlias("singlepost", "layouts/posts/singlepost.html")
@@ -66,7 +72,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("privacy", "layouts/privacy/privacy.html")
 
 
-  /* Markdown plugins */
+  /* --- Markdown handling --- */
+
   // https://www.11ty.dev/docs/languages/markdown/
   // --and-- https://github.com/11ty/eleventy-base-blog/blob/master/.eleventy.js
   // --and-- https://github.com/planetoftheweb/seven/blob/master/.eleventy.js
@@ -93,7 +100,6 @@ module.exports = function(eleventyConfig) {
       rel: "noreferrer noopener",
     },
   })
-
   // START, de-bracketing footnotes
   //--- see http://dirtystylus.com/2020/06/15/eleventy-markdown-and-footnotes/
   markdownEngine.renderer.rules.footnote_caption = (tokens, idx) => {
@@ -105,11 +111,14 @@ module.exports = function(eleventyConfig) {
   }
   // END, de-bracketing footnotes
   eleventyConfig.setLibrary("md", markdownEngine)
+  /* --- end, Markdown handling --- */
+
 
   eleventyConfig.addWatchTarget("src/**/*.js")
   // eleventyConfig.addWatchTarget("./src/assets/css/*.css")
   eleventyConfig.addWatchTarget("./src/assets/scss/*.scss")
   eleventyConfig.addWatchTarget("./src/**/*.md")
+
 
   eleventyConfig.setBrowserSyncConfig({
     ...eleventyConfig.browserSyncConfig,
@@ -135,7 +144,6 @@ module.exports = function(eleventyConfig) {
     }
   })
 
-  eleventyConfig.addPlugin(ErrorOverlay)
   
   // --- START, eleventy-img
   async function imageShortcode(src, alt, sizes="(min-width: 1024px) 100vw, 50vw") {
@@ -166,6 +174,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addShortcode("image", imageShortcode)
   // --- END, eleventy-img
 
+
   eleventyConfig.addShortcode(
     "lazypicture",
     require("./src/assets/utils/lazy-picture.js")
@@ -174,6 +183,7 @@ module.exports = function(eleventyConfig) {
     "twitscrn",
     require("./src/assets/utils/twitscrn.js")
   )
+
 
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (outputPath.endsWith(".html")) {
@@ -186,6 +196,7 @@ module.exports = function(eleventyConfig) {
     }
     return content
   })
+
 
   /* === START, prev/next posts stuff === */
   // https://github.com/11ty/eleventy/issues/529#issuecomment-568257426
@@ -201,6 +212,7 @@ module.exports = function(eleventyConfig) {
   })
   /* === END, prev/next posts stuff === */
 
+  
   /* pathPrefix: "/"; */
   return {
     dir: {

@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2021-04-25T14:54:00-05:00
+lastmod: 2021-04-28T12:40:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
@@ -92,28 +92,39 @@ module.exports = function (eleventyConfig) {
 ```
 {% endraw %}
 
-.&nbsp;.&nbsp;. so let's go into that in-between area where I put those comments, above, and create an `image` shortcode (note the lower-case "i") by adding the following:
+.&nbsp;.&nbsp;. so let's go into that in-between area where I put those comments, above, and create an `image` shortcode (note the lower-case "i") by adding the code shown below.
+
+**Update, 2021-04-28**: Due to a problem reported to me by a user of one of my [starter sets](/posts/2021/03/beginners-luck-update), I swapped out the code that previously was here with code that is based on *synchronous*, rather than *asynchronous*, usage. To read more about the difference, see [this section](https://www.11ty.dev/docs/plugins/image/#synchronous-usage) of the Eleventy Image documentation. I've also updated those starter sets accordingly.
+{.yellowBox}
 
 {% raw %}
 ```js
   // --- START, eleventy-img
-  async function imageShortcode(src, alt, sizes="(min-width: 1024px) 100vw, 50vw") {
-    if(alt === undefined) {
-      // We throw an error on missing alt (alt="" works okay)
-      throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
-    }
-    let metadata = await Image(src, {
-      widths: [300, 450, 600, 750, 900, 1050, 1200, 1350, 1500],
+  function imageShortcode(src, alt, sizes="(min-width: 1024px) 100vw, 50vw") {
+    console.log(`Generating image(s) from:  ${src}`)
+    let options = {
+      widths: [600, 900, 1500],
       formats: ["webp", "jpeg"],
       urlPath: "/images/",
       outputDir: "./_site/images/",
-    })  
+      filenameFormat: function (id, src, width, format, options) {
+        const extension = path.extname(src)
+        const name = path.basename(src, extension)
+        return `${name}-${width}w.${format}`
+      }
+    }
+  
+    // generate images
+    Image(src, options)
+  
     let imageAttributes = {
       alt,
       sizes,
       loading: "lazy",
       decoding: "async",
-    }  
+    }
+    // get metadata
+    metadata = Image.statsSync(src, options)
     return Image.generateHTML(metadata, imageAttributes)
   }
   eleventyConfig.addShortcode("image", imageShortcode)

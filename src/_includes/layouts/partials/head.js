@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
 
   // restructuring for easier reading/typing
   // ... https://wesbos.com/destructuring-objects
-  eleventyConfig.addShortcode('headTag', function({ siteparams, page, description, title }) {
+  eleventyConfig.addShortcode('headTag', function({ siteparams, page, description, title, featured_image }) {
     const { siteTitle, siteDescription, siteURLforOG } = siteparams
     const { url } = page
 

@@ -38,11 +38,11 @@ exports.render = function (data) {
         <hr class="paginatorTop" />
         ${
           data.pagination.items.map(post => /*html*/ `
-          <div class="lg:px-12">          
+          <div>          
             <h2 class="posts-Title"><a href="${post.url}">${post.data.title}</a></h2>
-            <p class="posts-Subtitle">${post.data.subtitle}</p>
+            <p class="posts-Subtitle"><strong>${post.data.subtitle}</strong></p>
             <p class="posts-Dates">
-              <time style="display: inline;" datetime="${this.pub_lastmod(post.date)}}">${this.pub_lastmod(post.date)}</time>
+              <strong><time style="display: inline;" datetime="${this.pub_lastmod(post.date)}}">${this.pub_lastmod(post.date)}</time></strong>
               ${
                 post.data.lastmod
                 ? /*html*/ `<br /><span style="font-size: 85%;">Last modified <time style="display: inline;" datetime="${this.pub_lastmod(post.data.lastmod)}">${this.pub_lastmod(post.data.lastmod)}</time></span>`

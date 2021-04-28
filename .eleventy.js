@@ -6,8 +6,12 @@ const pluginRss = require("@11ty/eleventy-plugin-rss")
 const svgContents = require("eleventy-plugin-svg-contents")
 const path = require('path')
 const Image = require("@11ty/eleventy-img")
+const jsTheme = require('./src/_includes/jstheme.js')
 
 module.exports = function(eleventyConfig) {
+
+  // theming --- based on Reuben Lillie's code (https://gitlab.com/reubenlillie/reubenlillie.com/)
+  jsTheme(eleventyConfig)
 
   eleventyConfig.addPlugin(pluginRss)
   eleventyConfig.addPlugin(svgContents)
@@ -65,11 +69,11 @@ module.exports = function(eleventyConfig) {
 
 
   // https://www.11ty.dev/docs/layouts/
-  eleventyConfig.addLayoutAlias("base", "layouts/_default/base.html")
-  eleventyConfig.addLayoutAlias("singlepost", "layouts/posts/singlepost.html")
-  eleventyConfig.addLayoutAlias("index", "layouts/_default/index.html")
-  eleventyConfig.addLayoutAlias("contact", "layouts/contact/contact.html")
-  eleventyConfig.addLayoutAlias("privacy", "layouts/privacy/privacy.html")
+  eleventyConfig.addLayoutAlias("base", "layouts/_default/base.11ty.js")
+  eleventyConfig.addLayoutAlias("singlepost", "layouts/posts/singlepost.11ty.js")
+  eleventyConfig.addLayoutAlias("index", "layouts/_default/index.11ty.js")
+  eleventyConfig.addLayoutAlias("contact", "layouts/contact/contact.11ty.js")
+  eleventyConfig.addLayoutAlias("privacy", "layouts/privacy/privacy.11ty.js")
 
 
   /* --- Markdown handling --- */

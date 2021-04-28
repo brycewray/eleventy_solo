@@ -22,7 +22,7 @@ exports.render = function (data) {
         <div class="post-line"></div>
         <h2 class="homePost-Latest">Latest <a href="/posts/">posts</a></h2>
         ${
-          collections.post.slice(-3).reverse().map(
+          collections.post.slice(0,3).map(
             ({url,
               date,
               data: {

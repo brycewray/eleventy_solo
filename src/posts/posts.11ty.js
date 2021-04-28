@@ -15,19 +15,26 @@ exports.data = {
 // 'previous'/'next' functionality below is as of Eleventy 0.10.0:
 // https://www.11ty.dev/docs/pagination/nav/#add-previous-and-next-links
 
-exports.render = function (data) {
+exports.render = function (data) {  // restructuring for easier reading/typing...
+  // https://wesbos.com/destructuring-objects
+  // https://stackoverflow.com/questions/65565806/destructure-object-properties-inside-array-prototype-map
+
+  const { pagination } = data
+  const { href } = pagination
+  const { first, last, previous, next } = href
+
   const pagerThing = /*html*/ `
   <p class="ctr pokey" style="margin-top: 0.5em; margin-bottom: 0.5em;">
     ${
-      data.pagination.href.previous === null 
+      previous === null 
         ? /*html*/ `${svgFirstPageIcon}${svgFirstPageIcon}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${svgFirstPageIcon}</span>`
-        : /*html*/ `<a href="${data.pagination.href.first}" class="icon" aria-label="First page">${svgPrevPageIcon}${svgPrevPageIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${data.pagination.href.previous}" class="icon" aria-label="Previous page">${svgPrevPageIcon}</a>`      
+        : /*html*/ `<a href="${first}" class="icon" aria-label="First page">${svgPrevPageIcon}${svgPrevPageIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${previous}" class="icon" aria-label="Previous page">${svgPrevPageIcon}</a>`      
     }
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     ${
-      data.pagination.href.next === null
+      next === null
         ? /*html*/ `<span>${svgLastPageIcon}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${svgLastPageIcon}${svgLastPageIcon}</span>`
-        : /*html*/ `<a href="${data.pagination.href.next}" class="icon" aria-label="Next page">${svgNextPageIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${data.pagination.href.last}" class="icon" aria-label="Last page">${svgNextPageIcon}${svgNextPageIcon}</a>` 
+        : /*html*/ `<a href="${next}" class="icon" aria-label="Next page">${svgNextPageIcon}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="${last}" class="icon" aria-label="Last page">${svgNextPageIcon}${svgNextPageIcon}</a>` 
     }
   </p>
 `
@@ -39,7 +46,7 @@ exports.render = function (data) {
         ${pagerThing}
         <hr class="paginatorTop" />
         ${
-          data.pagination.items.map(post => /*html*/ `
+          pagination.items.map(post => /*html*/ `
           <div>          
             <h2 class="posts-Title"><a href="${post.url}">${post.data.title}</a></h2>
             <p class="posts-Subtitle"><strong>${post.data.subtitle}</strong></p>

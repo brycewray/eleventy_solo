@@ -7,7 +7,7 @@ exports.render = function (data) {
   // https://wesbos.com/destructuring-objects
   // https://stackoverflow.com/questions/65565806/destructure-object-properties-inside-array-prototype-map
 
-  const { content, collections } = data
+  const { collections } = data
   const { length } = collections.post
 
   return /*html*/ `

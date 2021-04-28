@@ -7,7 +7,7 @@ exports.data = {
 exports.render = function (data) {
   return /*html*/ `
   <main>
-    ${this.billboard(data)}
+    ${this.billBoard(data)}
 
     <div class="container-narrower">
       ${stringtoRet(data.featured_image, data.featured_image_alt, data.featured_image_width, data.featured_image_height)}

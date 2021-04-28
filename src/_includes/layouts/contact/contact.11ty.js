@@ -5,7 +5,7 @@ exports.data = {
 exports.render = function (data) {
   return /*html*/ `
   <main>
-    ${this.billboard(data)}
+    ${this.billBoard(data)}
 
     <div class="container-narrower">
       <article>

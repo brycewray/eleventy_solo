@@ -12,6 +12,8 @@ exports.data = {
     alias: 'posts'
   }
 }
+// 'previous'/'next' functionality below is as of Eleventy 0.10.0:
+// https://www.11ty.dev/docs/pagination/nav/#add-previous-and-next-links
 
 exports.render = function (data) {
   const pagerThing = /*html*/ `

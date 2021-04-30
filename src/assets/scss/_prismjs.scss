@@ -63,7 +63,7 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: hsl(0, 0%, 70%);
+  color: hsl(150, 50%, 70%);
 }
 
 .token.punctuation {
@@ -107,7 +107,7 @@ pre[class*="language-"] {
 .token.attr-value,
 .token.regex,
 .token.variable {
-  color: hsl(153, 66%, 64%); /* was 7ec699 */
+  color: hsl(10, 65%, 75%); /* was 7ec699 */
 }
 
 .token.operator,

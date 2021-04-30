@@ -5,7 +5,7 @@ subtitle: "A short(code) trip from Eleventy to Hugo"
 description: "How some image-handling code moved from JavaScript to Go."
 author: Bryce Wray
 date: 2021-02-10T07:55:00-06:00
-lastmod: 2021-02-20T20:43:00-06:00
+lastmod: 2021-04-30T13:10:00-05:00
 #draft: false
 discussionId: "2021-02-go-big-go-home"
 featured_image: "markus-spiske-70Rir5vB96U-unsplash_5760x3840.jpg"
@@ -59,15 +59,13 @@ Image: [Apple, Inc.](https://www.apple.com/newsroom/2020/11/introducing-the-next
 ```
 {% endraw %}
 
-.&nbsp;.&nbsp;. and this shortcode[^commentsGo] in the Hugo repo:
+.&nbsp;.&nbsp;. and this shortcode in the Hugo repo:
 
 {% raw %}
 ```md
-{{</* imgc src="Apple_new-macbookpro-wallpaper-screen_11102020_1984x1118.jpg" alt="Partially opened MacBook Pro laptop" width="1984" height="1118" */>}}
+{{< imgc src="Apple_new-macbookpro-wallpaper-screen_11102020_1984x1118.jpg" alt="Partially opened MacBook Pro laptop" width="1984" height="1118" >}}
 ```
 {% endraw %}
-
-[^commentsGo]: If you happen upon [this site's repo](https://github.com/brycewray/hugo_site) out of curiosity and check out this post's Markdown file, you'll notice that this text's bounding {% raw %}`{{` and `}}`{% endraw %} also have wrapping `/*` and `*/`, respectively. That's because, otherwise, Hugo sees it as *real* code, not just a representation of it, and acts accordingly---in this case, once again displaying the image. I found this otherwise undocumented workaround in a [2015 comment](https://discourse.gohugo.io/t/a-way-to-mark-plain-text-and-stop-hugo-from-interpreting/1325/2) on the [Hugo Discourse forum](https://discourse.gohugo.io). This is similar to how Eleventy requires the use of `raw` and `endraw` statements for proper display of code blocks which contain certain combinations of characters.
 
 Here's what each shortcode does:
 

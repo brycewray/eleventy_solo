@@ -43,10 +43,7 @@ module.exports = function(eleventyConfig) {
       `
     }
     
-    <meta property="og:image" content="${featured_image
-      ? `${socialImg + featured_image}`
-      : `${socialImg + fallbackImg}`
-    }" />
+    <meta property="og:image" content="${socialImg + fallbackImg}" />
 
     <meta name="description" content="${description
       ? `${description}`
@@ -67,10 +64,7 @@ module.exports = function(eleventyConfig) {
     <meta name="twitter:site" content="@BryceWrayTX">
     <meta name="twitter:creator" content="@BryceWrayTX">
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="${featured_image
-      ? `${socialImg + featured_image}`
-      : `${socialImg + fallbackImg}`
-    }" />
+    <meta name="twitter:image" content="${socialImg + fallbackImg}" />
 
     <meta name="twitter:description" content="${description
       ? `${description}`

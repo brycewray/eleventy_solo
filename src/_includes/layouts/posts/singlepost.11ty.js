@@ -1,5 +1,3 @@
-const stringtoRet = require('../../../assets/utils/lazy-picture.js')
-
 exports.data = {
   layout: 'base'
 }
@@ -15,13 +13,7 @@ exports.render = function (data) {  // restructuring for easier reading/typing..
     ${this.billBoard(data)}
 
     <div class="container-narrower">
-      ${stringtoRet(featured_image, featured_image_alt, featured_image_width, featured_image_height)}
-      <p class="ctr legal">
-        ${ featured_image_caption 
-          ? `${featured_image_caption}`
-          : /*html*/ `&nbsp;`
-        }
-      </p>
+      <div class="post-line"></div>
       <article class="article">
         ${content}
       </article>

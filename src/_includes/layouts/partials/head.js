@@ -106,11 +106,6 @@ module.exports = function(eleventyConfig) {
 
     <!-- **** CONCLUSION, favicons **** -->
 
-    <link rel="preconnect" href="https://res.cloudinary.com" />
-    <link rel="dns-prefetch" href="//res.cloudinary.com" />
-    <link rel="dns-prefetch" href="//boa.brycewray.com" />
-    <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
-
     <link rel="preload" href="/assets/fonts/Inter-3-18_subset_2021-03-31.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
 
     ${ process.env.NODE_ENV === 'production' 
@@ -122,6 +117,12 @@ module.exports = function(eleventyConfig) {
     <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}.notInIE{display: none;}}</style>
 
     ${analyticsCode}
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch#best_practices -->
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdeliver.net" />
+    <link rel="dns-prefetch" href="https://res.cloudinary.com" crossorigin />
+    <link rel="preconnect" href="https://res.cloudinary.com" />
 
     <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v${alpineJSVer}/dist/alpine.min.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v${alpineJSVer}/dist/alpine-ie11.min.js" defer></script>

@@ -119,10 +119,10 @@ module.exports = function(eleventyConfig) {
     ${analyticsCode}
 
     <!-- https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch#best_practices -->
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" crossorigin />
-    <link rel="preconnect" href="https://cdn.jsdeliver.net" />
-    <link rel="dns-prefetch" href="https://res.cloudinary.com" crossorigin />
-    <link rel="preconnect" href="https://res.cloudinary.com" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://cdn.jsdeliver.net" crossorigin />
+    <link rel="dns-prefetch" href="https://res.cloudinary.com" />
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
 
     <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v${alpineJSVer}/dist/alpine.min.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v${alpineJSVer}/dist/alpine-ie11.min.js" defer></script>

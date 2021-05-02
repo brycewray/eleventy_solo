@@ -5,7 +5,7 @@ subtitle: "Managing caching and FLOC"
 description: "Here’s a Cloudflare Worker for handling headers with Cloudflare Pages."
 author: Bryce Wray
 date: 2021-05-01T11:43:00-05:00
-#lastmod:
+lastmod: 2021-05-02T11:33:00-05:00
 discussionId: "2021-05-headers-up"
 ---
 
@@ -37,7 +37,7 @@ In this scenario, your website's DNS is managed in Cloudflare, where your DNS se
 
 {% lazypicture "screen-cap-cloudflare-DNS_edit_1040x609.png", "Cloudflare DNS settings display", 1040, 609 %}
 
-You'll see here that there are two entries[^DNSitems] with the little orange cloud icon and the word "Proxied" under "Proxy status," each referring to an item under "Contents" that ends in `.pages.dev` (the default subdomain for a Cloudflare Pages site before one assigns a custom domain to it). With these settings, every hit on the site gets *proxied*---essentially, intercepted---so Cloudflare can do things with it.
+You'll see here that there are two entries[^DNSitems] with the little orange cloud icon and the word "Proxied" under "Proxy status," each referring to an item under "Content" that ends in `.pages.dev` (the default subdomain for a Cloudflare Pages site before one assigns a custom domain to it). With these settings, every hit on the site gets *proxied*---essentially, intercepted---so Cloudflare can do things with it.
 
 [^DNSitems]: Why two entries? One was for the root domain of `brycewray.com` and a second one was for its `www` subdomain.
 

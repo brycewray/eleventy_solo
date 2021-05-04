@@ -7,6 +7,12 @@ author: Bryce Wray
 date: 2021-05-01T11:43:00-05:00
 lastmod: 2021-05-02T11:33:00-05:00
 discussionId: "2021-05-headers-up"
+featured_image: "server-room-90389_4818x3212.jpg"
+featured_image_width: 4818
+featured_image_height: 3212
+featured_image_alt: "Floor view of data center showing numerous racks of servers"
+featured_image_caption: |
+  <span class="caption">Image: <a href="https://pixabay.com/users/kewl-24755/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=90389">kewl</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=90389">Pixabay</a></span>
 ---
 
 As I wrote [a few months ago](/posts/2020/11/fast-but-flawed), [Cloudflare Pages](https://pages.cloudflare.com)---which has since [emerged from beta testing](https://blog.cloudflare.com/cloudflare-pages-ga/)---is yet another in a growing list of [places](/posts/2020/09/normal-persons-guide-static-website-hosting) where you can host [static websites](/posts/2020/09/normal-persons-guide-static-websites). Back then, I dinged it for not giving you the ability to edit the [HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers) of a Pages site's content, so you can control how a browser [caches](https://web.dev/http-cache/) that content for better performance.

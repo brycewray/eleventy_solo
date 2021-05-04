@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2021-05-04T12:34:00-05:00
+lastmod: 2021-05-04T12:38:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
@@ -134,7 +134,7 @@ module.exports = function (eleventyConfig) {
 
 For each image file you "feed" this shortcode in your Markdown (we'll explain that part next), it will create new files with:
 
-- The sizes (in pixels) listed in the `widths` array. I used sizes ranging from 300 to 1,500 pixels because that's my preference; but you can enter whatever combination works for you, especially if you have any data about your most frequent visitors' screen sizes.
+- The sizes (in pixels) listed in the `widths` array. I used sizes ranging from 600 to 1,500 pixels because that's my preference; but you can enter whatever combination works for you, especially if you have any data about your most frequent visitors' screen sizes.
 - The file formats listed in the `formats` array. Here, we're specifying both WebP and JPEG formats because that covers you with virtually every browser out there.[^inOut]
 
 [^inOut]: For more details on the file formats Eleventy Image can accept (input) and create (output), see [its documentation](https://www.11ty.dev/docs/plugins/image/).

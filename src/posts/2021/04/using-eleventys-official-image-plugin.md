@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2021-05-04T12:38:00-05:00
+lastmod: 2021-05-04T12:48:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
@@ -139,12 +139,12 @@ For each image file you "feed" this shortcode in your Markdown (we'll explain th
 
 [^inOut]: For more details on the file formats Eleventy Image can accept (input) and create (output), see [its documentation](https://www.11ty.dev/docs/plugins/image/).
 
- **Additional note, 2021-04-25**: If you have a *lot* of images you'll be running through this process, you'd best keep the `widths` array shorter than my example above, since more entries in `widths`---and, for that matter, `formats`---will result in even more files that Eleventy Image will have to create at build time. That can result in not only an extremely slow build but also, for local builds, a suddenly very hot CPU on your computer. Play with this over time and see what combination of image quantity, `widths` options, and `formats` options will work best for your project.
+ **Additional note, 2021-04-25**: If you have a *lot* of images you'll be running through this process, you'd best keep the `widths` array short, since more entries in `widths`---and, for that matter, `formats`---will result in even more files that Eleventy Image will have to create at build time. That can result in not only an extremely slow build but also, for local builds, a suddenly very hot CPU on your computer. Play with this over time and see what combination of image quantity, `widths` options, and `formats` options will work best for your project.
  {.yellowBox}
 
 The setting for `urlPath` tells your site's pages to think of these images as being located in the site's `/images/` folder; and the `outputDir` setting tells Eleventy Image to copy them to the right location to make that work (given the standard Eleventy output directory of `./site`).
 
-**Note**: This code is based on the "We generate the HTML" example in the Eleventy Image documentation's ["Use this in your templates" section](https://www.11ty.dev/docs/plugins/image/#use-this-in-your-templates). The "Use this in your templates" section has other examples you may prefer.
+**Note**: The Eleventy Image documentation's ["Use this in your templates" section](https://www.11ty.dev/docs/plugins/image/#use-this-in-your-templates) has other examples you may prefer.
 {.yellowBox}
 
 Now, let's get this show on the road.
@@ -159,11 +159,7 @@ Let's say you keep your Eleventy project's original image files (the ones the `i
 ```
 {% endraw %}
 
-Here, you've entered what the shortcode considers the `src` part ("./src/images/my-pet-cat.jpg")[^location], then a comma, and then the `alt` text ("Photo of a brown-striped tabby cat named Tiger").
-
-As you know, the `alt` text describes for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/) what the image contains. **You must enter that `alt` text** if you want the shortcode to work properly---the `image` shortcode requires both `src` and `alt` to work, as you may have noted in the shortcode's configuration in `eleventy.js`. If an image is only [decorative](https://www.w3.org/WAI/tutorials/images/decorative/) (*e.g.*, a logo or other image that fits that description), it's perfectly acceptable for the `alt` to be just `""`, but you **must** have an `alt` entry after the `src` and that separating comma.
-
-[^location]: The location should be based on wherever `.eleventy.js` is, since that's where the shortcode resides as well; and, typically, that's the top level of an Eleventy project.
+Here, you've entered what the shortcode considers the `src` part ("./src/images/my-pet-cat.jpg"), then a comma, and then the `alt` text ("Photo of a brown-striped tabby cat named Tiger") for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/). The `src` location should be based on wherever `.eleventy.js` is, since that's where the shortcode resides as well; and, typically, that's the top level of an Eleventy project.
 
 ### Get a look at the result
 

@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2021-04-28T12:40:00-05:00
+lastmod: 2021-05-04T12:34:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
@@ -62,7 +62,7 @@ Now that you know what Eleventy Image is and why it's a great thing to have, let
 
 First, let's install Eleventy Image in your Eleventy project.
 
-**Install the plugin package**. In your chosen OS's terminal interface, enter the command `npm i -D @11ty/eleventy-img`. This will install (`-i`) the plugin package as a development dependency (`-D`).
+**Install the plugin package**. In your chosen OS's terminal interface, enter the command `npm i -D @11ty/eleventy-img`. This will install (`i`) the plugin package as a development dependency (`-D`).
 
 **Configure Eleventy to use Eleventy Image**. Now that the plugin package is installed, you'll tell Eleventy that it's there by going into the project's `.eleventy.js` configuration file---preferably at the top, **before** you get into the file's `module.exports` statement (about which we'll talk soon)---and adding the line:
 

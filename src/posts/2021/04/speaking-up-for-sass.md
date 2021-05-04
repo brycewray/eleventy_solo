@@ -11,7 +11,7 @@ discussionId: "2021-04-speaking-up-for-sass"
 featured_image: "sass-and-glasses_3200x1800.png"
 featured_image_width: 3200
 featured_image_height: 1800
-featured_image-alt: "Sass logo and Sass glasses icon on gradient background"
+featured_image_alt: "Sass logo and Sass glasses icon on gradient background"
 featured_image_caption: |
   <span class="caption">Image: Sass logo and Sass glasses icon, sourced from <a href="https://sass-lang.com" target="_blank" rel="noopener">Sass website</a>; adapted in <a href="https://affinity.serif.com/en-us/designer/" target="_blank" rel="noopener">Affinity&nbsp;Designer</a></span>
 ---

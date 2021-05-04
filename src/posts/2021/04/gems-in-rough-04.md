@@ -11,7 +11,7 @@ discussionId: "2021-04-gems-in-rough-04"
 featured_image: "gems-1400682_3364x2696.jpg"
 featured_image_width: 3364
 featured_image_height: 2696
-featured_image-alt: "Collection of semi-precious stones on a dark background"
+featured_image_alt: "Collection of semi-precious stones on a dark background"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/brett_hondow-49958/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1400682">Brett Hondow</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1400682">Pixabay</a></span>
 ---

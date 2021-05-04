@@ -10,7 +10,7 @@ discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
 featured_image_height: 4000
-featured_image-alt: "Close-up photo of camera lens with colorful mood lighting"
+featured_image_alt: "Close-up photo of camera lens with colorful mood lighting"
 featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@theregisti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">TheRegisti</a>; <a href="https://unsplash.com/s/photos/camera-lens?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---

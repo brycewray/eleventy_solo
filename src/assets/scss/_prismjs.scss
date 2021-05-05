@@ -48,7 +48,7 @@ pre[class*="language-"] {
 }
 
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
-  background: hsl(220, 4%, 16%);
+  background: hsl(220, 4%, 16%); // #27282a for checking in WebAIM
 }
 
 /* Inline code */
@@ -84,7 +84,7 @@ pre[class*="language-"] {
 .token.boolean,
 .token.number,
 .token.function {
-  color: hsl(24, 85%, 68%); /* was f08d49 */
+  color: hsl(200, 87%, 64%); /* #53BEF3 for WebAIM
 }
 
 .token.property,

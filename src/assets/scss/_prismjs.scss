@@ -48,7 +48,7 @@ pre[class*="language-"] {
 }
 
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
-  background: hsl(220, 4%, 16%); // #27282a for checking in WebAIM
+  background: hsl(220, 4%, 16%); /* #27282a for checking in WebAIM */
 }
 
 /* Inline code */
@@ -84,11 +84,11 @@ pre[class*="language-"] {
 .token.boolean,
 .token.number,
 .token.function {
-  color: hsl(56, 100%, 87%); // #fffbbd for WebAIM
+  color: hsl(56, 100%, 87%); /* #fffbbd for WebAIM */
 }
 
 .token.constant {
-  color: #3DBEFF; // #3DBEFF for WebAIM
+  color: #3DBEFF; /* #3DBEFF for WebAIM */
 }
 
 .token.property,
@@ -102,7 +102,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-  color: hsl(200, 87%, 64%); // #53BEF3 for WebAIM
+  color: hsl(200, 87%, 64%); /* #53BEF3 for WebAIM */
 }
 
 .token.string,
@@ -181,7 +181,7 @@ div.code-toolbar > .toolbar button {
 div.code-toolbar > .toolbar a,
 div.code-toolbar > .toolbar button,
 div.code-toolbar > .toolbar span {
-  color: hsl(0, 0%, 100%);// was #bbb
+  color: hsl(0, 0%, 100%); /* was #bbb */
   font-size: .8em;
   padding: 0 .5em;
   background: #000;

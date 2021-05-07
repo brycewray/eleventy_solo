@@ -28,7 +28,7 @@ module.exports = createRssFeed({
     var baseUrl = data.siteparams.siteURLforOG
     return {
       title: `${item.data.title}`,
-      description: `${item.data.description}`,
+      description: `${item.templateContent}`,
       url: `${baseUrl}${item.url}`,
       date: `${item.date}`
     }

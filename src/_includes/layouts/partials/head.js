@@ -123,7 +123,7 @@ module.exports = function(eleventyConfig) {
 
     <!-- **** CONCLUSION, favicons **** -->
 
-    <!--<link rel="preload" href="/assets/fonts/Inter-3-18_subset_2021-03-31.woff2" crossorigin="anonymous" as="font" type="font/woff2" />-->
+    <link rel="preload" href="/assets/fonts/Inter-3-18_subset_2021-03-31.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
 
     ${ process.env.NODE_ENV === 'production' 
       ? /*html*/ `<style>${internalCSS}</style>`

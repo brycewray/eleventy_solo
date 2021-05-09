@@ -64,7 +64,7 @@ module.exports = function(eleventyConfig) {
               <li class="nav-MenuLI">
                 <a
                   class="nav-MenuLILink"
-                  href="/about"
+                  href="/about/"
                   @click="isOpen = false"
                   >About
                 </a>
@@ -72,7 +72,7 @@ module.exports = function(eleventyConfig) {
               <li class="nav-MenuLI">
                 <a
                   class="nav-MenuLILink"
-                  href="/posts"
+                  href="/posts/"
                   @click="isOpen = false"
                   >Posts
                 </a>
@@ -80,7 +80,7 @@ module.exports = function(eleventyConfig) {
               <li class="nav-MenuLI">
                 <a
                   class="nav-MenuLILink"
-                  href="/privacy"
+                  href="/privacy/"
                   @click="isOpen = false"
                   >Privacy
                 </a>
@@ -88,7 +88,7 @@ module.exports = function(eleventyConfig) {
               <li class="nav-MenuLI">
                 <a
                   class="nav-MenuLILink"
-                  href="/contact"
+                  href="/contact/"
                   @click="isOpen = false"
                   >Contact
                 </a>

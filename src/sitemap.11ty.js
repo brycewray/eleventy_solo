@@ -5,7 +5,7 @@ exports.data = {
 exports.render = data => `
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     ${
-      data.collections.post.reverse().map(post =>
+      data.collections.post.slice().reverse().map(post =>
         `
         <url>
           <loc>${data.siteparams.siteURLforOG}${post.url}</loc>

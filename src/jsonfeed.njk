@@ -1,18 +1,32 @@
 ---json
 {
   "permalink": "/index.json",
-  "eleventyExcludeFromCollections": true  
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "BryceWray.com",
+    "description": "brycewray.com — Observations, opinions, geekery.",
+    "url": "https://brycewray.com/",
+    "feedUrl": "https://brycewray.com/index.json",
+    "authors": {
+      "name": "Bryce Wray",
+      "url": "https://brycewray.com/about/"
+    }
+  }
 }
 ---
 {
   "version": "https://jsonfeed.org/version/1.1",
-  "title": "{{ siteParams.siteTitle }}",
-  "home_page_url": "{{ siteParams.siteBaseURL }}",
-  "feed_url": "{{ siteParams.siteBaseURL }}/index.json",
+  "title": "{{ metadata.title }}",
+  "home_page_url": "{{ metadata.url }}",
+  "feed_url": "{{ metadata.feedUrl }}",
+  "description": "{{ metadata.description }}",
   "items": [
-    {% for post in collections.posts | reverse %}{
+    {% for post in collections.posts | reverse %}
+    {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset -%}
+    {
+      "id": "{{ absolutePostUrl }}",
       "title": "{{ post.data.title }}",
-      "url": "{{ post.url }}",
+      "url": "{{ absolutePostUrl }}",
       "date_published": "{{ post.date | dateFromRFC2822 }}",
       "date_modified": "{% if post.data.lastmod %}{{ post.data.lastmod | dateFromRFC2822 }}{% else %}{{ post.date | dateFromRFC2822 }}{% endif %}",
       "summary": "{{ post.data.description }}",

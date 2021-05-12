@@ -1,15 +1,15 @@
 const createRssFeed = require('eleventy-rss-helper')
 const permalink = '/index.xml'
+const baseUrl = 'https://www.brycewray.com'
 /*
   The feed permalink previously was feed.xml, but index.xml makes it compatible with 
   Hugo's fixed setting for those times when we switch SSGs for some reason and, thus, 
-  doesn't break it for forexisting subscribers.
+  doesn't break it for existing subscribers.
 */
  
 module.exports = createRssFeed({
   permalink,
   feedOptions(data) {
-    var baseUrl = data.siteparams.siteURLforOG
     return {
       title: `${data.siteparams.siteTitle}`,
       description: `${data.siteparams.siteDescription}`,
@@ -25,7 +25,6 @@ module.exports = createRssFeed({
       .reverse()
   },
   itemOptions(item, data) {
-    var baseUrl = data.siteparams.siteURLforOG
     return {
       title: `${item.data.title}`,
       description: `${item.templateContent}`,

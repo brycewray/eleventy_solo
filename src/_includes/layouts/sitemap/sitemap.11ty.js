@@ -10,7 +10,7 @@ exports.render = function (data) {
     <div class="post-line"></div>
     <h2>Main pages</h2>
     <ul>
-      <li><a href="${data.siteparams.siteURLforOG}">Home page</a></li>
+      <li><a href="${data.siteparams.siteURLforOG}/">Home page</a></li>
       <li><a href="${data.siteparams.siteURLforOG}/about/">About me</a></li>
       <li><a href="${data.siteparams.siteURLforOG}/privacy/">Site&rsquo;s privacy policy</a></li>
       <li><a href="${data.siteparams.siteURLforOG}/contact/">How to contact me</a></li>

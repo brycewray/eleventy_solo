@@ -1,15 +1,15 @@
 {
-  "siteURLforOG": "https://brycewray.com",
+  "siteURLforOG": "https://www.brycewray.com",
   "siteBaseURL": "/",
   "siteTitle": "BryceWray.com",
   "siteAuthor": "Bryce Wray",
   "siteDescription": "brycewray.com — Observations, opinions, geekery.",
   "feed": {
     "subtitle": "brycewray.com — Observations, opinions, geekery.",
-    "filename": "feed.xml",
-    "path": "/feed.xml",
-    "url": "https://brycewray.com/feed.xml",
-    "id": "https://brycewray.com"
+    "filename": "index.xml",
+    "path": "/index.xml",
+    "url": "https://www.brycewray.com/index.xml",
+    "id": "https://www.brycewray.com"
   },
   "respSizes": [ 300, 450, 600, 750, 900, 1050, 1200, 1350, 1500 ]
 }

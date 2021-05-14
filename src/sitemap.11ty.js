@@ -2,17 +2,17 @@ exports.data = {
   permalink: 'sitemap.xml'
 }
 
-exports.render = data => `
+exports.render = data => /*XML*/`
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     ${
       data.collections.post.slice().reverse().map(post =>
-        `
+        /*XML*/`
         <url>
           <loc>${data.siteparams.siteURLforOG}${post.url}</loc>
           ${
             post.data.lastmod
-            ? `<lastmod>${this.dateStringISO(post.data.lastmod)}</lastmod>`
-            : `<lastmod>${this.dateStringISO(post.date)}</lastmod>`
+            ? /*XML*/`<lastmod>${this.dateStringISO(post.data.lastmod)}</lastmod>`
+            : /*XML*/`<lastmod>${this.dateStringISO(post.date)}</lastmod>`
           }
         </url>
         `

@@ -18,7 +18,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: #a9eafa;
+  color: #fff; // was #a9eafa
   background: none;
   font-family: var.$monospaced;
   font-size: 1em;

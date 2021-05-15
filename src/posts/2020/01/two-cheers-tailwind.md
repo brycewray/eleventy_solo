@@ -6,7 +6,7 @@ subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray
 date: 2020-01-12T11:00:00-06:00
-lastmod: 2020-11-22T10:35:00-06:00
+lastmod: 2021-05-15T15:45:00-05:00
 discussionId: "2020-01-two-cheers-tailwind"
 featured_image: "CSS-code-1797778_1971x1306.jpg"
 featured_image_width: 1971
@@ -20,7 +20,7 @@ featured_image_caption: |
 
 A couple of weekends ago, I tweeted a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year's, so I figured I'd be fortunate if I got a handful of responses.
 
-{% twitscrn "Twitter_1210975092999704578.png", "Tweet by @BryceWrayTX, 2019-12-28: Reading about @tailwindcss and other #atomicCSS approaches (@tachyons_css, @basscss , etc.). They seem aimed at the multi-project, multi-dev use case. But what if it’s just one personal website with one maintainer (HTML and CSS)? Worth it then?", 1182, 516, "https://twitter.com/BryceWrayTX/status/1210975092999704578" %}
+{% tweet "1210975092999704578" %}
 
 Then it got retweeted by the [Tailwind CSS](https://tailwindcss.com) [Twitter account](https://twitter.com/tailwindcss) and, well, my phone was pretty actively "bink"-ing at me for a few hours thereafter.
 
@@ -30,7 +30,7 @@ Tens of thousands of "[impressions](https://help.twitter.com/en/managing-your-ac
 
 So I spent my spare time during the next few days doing precisely that on a branch of my site and, during the first afternoon of 2020, merged that branch into `Master` and pushed it to Netlify:
 
-{% twitscrn "Twitter_1212496201385418753.png", "Tweet by @BryceWrayTX, 2020-01-01: Another holiday, another site spruce-up. Decided to go the @tailwindcss route, as recommended by so many this past weekend — and, while at it, also made long-overdue changes to improve readability (I hope). Opinions welcome. Be nice. 😄", 1182, 636, "https://twitter.com/BryceWrayTX/status/1212496201385418753" %}
+{% tweet "1212496201385418753" %}
 
 ## Not a purist
 
@@ -85,7 +85,7 @@ I guess what still mainly bugs me is the whole idea of whether, specifically for
 
 By the way: no matter which way I go, a reversion to my previous workflow probably *wouldn't* mean going back to Sass/SCSS, which I jettisoned in the transition to utility-first. To learn how to use Tailwind CSS, I also had to learn about using [PostCSS](https://postcss.org). It's clear that, even I do go back to a less utilitarian approach, PostCSS and its [plugins](https://www.postcss.parts) can do everything, and more, for which I used Sass/SCSS. In fact, what PostCSS enables is pretty frickin' amazing. Just being able to take what starts out in dev mode as 2.4&nbsp;**MB** of CSS (some of which is related to using web fonts, I should note in all fairness) and end up with it in production mode at only about 7&nbsp;**K** is impressive, to put it mildly.
 
-## We Shall See<sup style="font-size: 0.5em; font-weight: normal; vertical-align: baseline; position: relative; top: -1rem; margin-right: -0.85rem;">&trade;</sup>---as usual
+## We shall see---as usual
 
 As I observed near the end of my [last post](/posts/2019/12/sorta-strange-ssg-trip), this site's [Eleventy](https://11ty.dev)/[webpack](https://webpack.js.org) combo gives me a solid foundation on which to build. And, on the subject I've discussed here today, it further shows how easily I can try new stuff.
 

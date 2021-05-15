@@ -6,7 +6,7 @@ subtitle: "Considering MailMate"
 description: "My last post notwithstanding, “the geek’s prerogative” makes it okay to try other email apps—like MailMate."
 author: Bryce Wray
 date: 2019-06-08T20:25:00-05:00
-lastmod: 2021-05-15T15:45:00-05:00
+lastmod: 2021-05-15T18:12:00-05:00
 discussionId: "2019-06-ahoy-mate"
 featured_image: "MailMate_screen_cap_1619x720.jpg"
 featured_image_width: 1619
@@ -44,11 +44,6 @@ My [last post](/posts/2019/05/the-holy-mail) closed with:
 And that continues, as I have become interested in [MailMate](https://freron.com). This macOS-only, [IMAP](https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol)-only app is a creation of Benny Kjær Nielsen, a Danish indie developer and holder of a doctorate in computer science.
 
 Dr. Nielsen [first released MailMate as a public beta](https://blog.freron.com/2010/first-beta-released/) almost a decade ago, in January, 2010, when the Mac version of Apple Mail looked very similar to how MailMate looks even now. But, while the appearance of Apple Mail has changed a lot since then, MailMate's really hasn't all that much---and that's fine with the good doctor, not to mention the app's many adherents.
-
-{% lazypicture "MailMate_screen_cap_1619x720.jpg", "Screen capture of the MailMate app", 1619, 720 %}
-
-Image: Screen capture of MailMate, with its Latin-displaying "distortion mode" engaged for privacy's sake
-{.lazypicturecaption}
 
 ## Power trip
 

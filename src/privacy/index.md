@@ -25,12 +25,12 @@ When I learned that the use of [Google Fonts](https://fonts.google.com) *served 
 
 [^Issue1495]: For the discussion that convinced me to go this route after my initial skepticism about its necessity, see the Google Fonts GitHub issue, "[GDPR compliance](https://github.com/google/fonts/issues/1495)."
 
+### Twitter
+
+I use [eleventy-plugin-embed-tweet](https://github.com/KyleMit/eleventy-plugin-embed-tweet) to embed tweets as purely static content with **no**&nbsp;cookies.
+
 ## Other considerations
 
 ### Embedded videos
 
 I no longer embed YouTube or other sites’ videos, since they can and do transmit personal information through cookies. In the two instances where I formerly did---“[Some curmudgeonish thoughts](/posts/2018/11/some-curmudgeonish-thoughts)” and “[Coherence and COVID-19](/posts/2020/03/coherence-covid-19)”---I replaced them with clearly identified links to their original locations, and footnoted each link with a reference and link to this privacy policy.
-
-### Twitter content
-
-I use [eleventy-plugin-embed-tweet](https://github.com/KyleMit/eleventy-plugin-embed-tweet) to embed tweets as purely static content with **no**&nbsp;cookies.

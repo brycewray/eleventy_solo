@@ -5,15 +5,28 @@
   letter-spacing: -0.025em !important;
   margin: 1rem auto 0 auto !important;
   border: 2px solid var.$grey-1 !important;
+  border-radius: 12px !important;
+  background: transparent !important;
   color: #333 !important;
+  a, a:hover {
+    @media screen and (prefers-color-scheme: dark) {
+      color: var.$blueLight !important;
+    }
+  }
   @media screen and (prefers-color-scheme: dark) {
     border: 2px solid var.$grey-2 !important;
+    color: #fff !important;
   }
   a, a:hover {
     border: 0;
   }
-  .tweet-footer a {
-    color: #333 !important;
+  .tweet-footer {
+    a {
+      color: #333 !important;
+      @media screen and (prefers-color-scheme: dark) {
+        color: #fff !important;
+      }
+    }
   }
 }
 

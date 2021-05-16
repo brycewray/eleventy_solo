@@ -6,7 +6,7 @@ subtitle: "Staying current can bite"
 description: "Trying to decide what I think about utility-first CSS."
 author: Bryce Wray
 date: 2020-01-12T11:00:00-06:00
-lastmod: 2021-05-15T15:45:00-05:00
+lastmod: 2021-05-16T10:23:00-05:00
 discussionId: "2020-01-two-cheers-tailwind"
 featured_image: "CSS-code-1797778_1971x1306.jpg"
 featured_image_width: 1971
@@ -16,7 +16,7 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://pixabay.com/users/WojciechKrakowiak-722397/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1797778">Wojciech Krakowiak</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1797778">Pixabay</a></span>
 ---
 
-**Update, 2020-05-09**: Although it was clear from this take---and what I added at the bottom---that I wasn't crazy about the subject of this post, I later changed my mind and reinstated it, as explained in "[Going solo with Eleventy](/posts/2020/05/going-solo-eleventy)." Still, am leaving this post in place for archival purposes and the sake of [transparency](/posts/2019/10/otoh).{.yellowBox}
+{% disclaimer %}
 
 A couple of weekends ago, I tweeted a question for the web devs among my few but greatly appreciated Twitter followers. It was the Saturday between Christmas and New Year's, so I figured I'd be fortunate if I got a handful of responses.
 

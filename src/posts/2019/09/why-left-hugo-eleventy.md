@@ -6,7 +6,7 @@ subtitle: "The quest to learn more"
 description: "Only weeks after telling you I was sticking with Hugo, I switch to Eleventy: the whys and wherefores."
 author: Bryce Wray
 date: 2019-09-08T10:00:00-05:00
-lastmod: 2021-05-15T15:45:00-05:00
+lastmod: 2021-05-16T10:18:00-05:00
 discussionId: "2019-09-why-left-hugo-eleventy"
 featured_image: "detour-2496197_4912x3264.jpg"
 featured_image_width: 4912
@@ -36,8 +36,7 @@ oldComments: |
     </div>
 ---
 
-**Note**: To put it simply, things have changed multiple times since this post, but it reflects my thinking at the time, so [here it shall stay](/posts/2019/10/otoh).
-{.yellowBox}
+{% disclaimer %}
 
 Recently, I edited this site's footer. Where it used to say that this site is powered by Hugo---*i.e.*, the [Hugo](https://gohugo.io) [static site generator](https://staticgen.org) (SSG)---it now says it's powered by [the JAMstack](https://jamstack.org).
 

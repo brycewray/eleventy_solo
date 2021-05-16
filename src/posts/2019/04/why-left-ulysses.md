@@ -5,7 +5,7 @@ subtitle: "iA Writer wins—for now"
 description: "Why, just months after proclaiming my allegiance to the Ulysses writing app, I’ve chosen to abandon it in favor of iA Writer."
 author: Bryce Wray
 date: 2019-04-20T11:17:00-05:00
-lastmod: 2021-05-15T15:45:00-05:00
+lastmod: 2021-05-16T10:15:00-05:00
 discussionId: "2019-04-why-left-ulysses"
 featured_image: "hand-butterfly-3751159_6000x4000.jpg"
 featured_image_width: 6000
@@ -26,9 +26,7 @@ oldComments: |
     </div>
 ---
 
-**Note, 2019-05-04**: In case you've already read this, be advised I've learned some additional information since the original post (2019-04-20) which doesn't truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see "[Boxed in](/posts/2019/05/boxed-in)."{.yellowBox}
-
-**Note, 2019-10-11**: I originally deleted this post after writing "Boxed in", but [later decided](/posts/2019/10/otoh) that had been a bad idea, so it's now back.{.yellowBox}
+**Note, 2019-05-04**: I've learned some additional information since the original post (2019-04-20) which doesn't truly exonerate Ulysses regarding the sync issues described herein **but** does raise serious questions about just where the fault really lies. So I went back and renewed the Ulysses sub after all. For details, see "[Boxed in](/posts/2019/05/boxed-in)."{.yellowBox}
 
 I quit using [Ulysses](https://ulysses.app) today.
 

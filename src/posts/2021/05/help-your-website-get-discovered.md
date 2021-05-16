@@ -5,7 +5,7 @@ subtitle: "You built it, but will they come?"
 description: "A few suggestions for getting your website the attention it deserves."
 author: Bryce Wray
 date: 2021-05-14T16:30:00-05:00
-#lastmod:
+lastmod: 2021-05-16T08:56:00-05:00
 discussionId: "2021-05-help-your-website-get-discovered"
 featured_image: "magnifying-glass-4490044_4288x2848.jpg"
 featured_image_width: 4288
@@ -60,7 +60,7 @@ Some starting assumptions:
 With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 
 1. If you haven't already added them to your Eleventy setup, add the [Eleventy RSS plugin](https://www.11ty.dev/docs/plugins/rss/) and the [Luxon](https://github.com/moment/luxon) time-related library.
-2. In your [sitewide configuration file](https://www.11ty.dev/docs/config/) (probably `.eleventy.js` at the top level of the project), add the following filters:
+2. In your [sitewide configuration file](https://www.11ty.dev/docs/config/) (probably `.eleventy.js` at the top level of the project), add the following:
 
 {% raw %}
 ```js
@@ -70,6 +70,7 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
   eleventyConfig.addFilter("dateStringISO", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd")
   })
+  eleventyConfig.addLayoutAlias("sitemap", "layouts/sitemap/sitemap.njk")
 ```
 {% endraw %}
 

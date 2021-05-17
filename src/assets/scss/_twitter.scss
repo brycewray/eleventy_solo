@@ -30,6 +30,12 @@
   }
 }
 
+.tweet-footer::after {
+  content: " (UTC)";
+  font-size: 85%;
+  padding-left: 0.5em;
+}
+
 .tweet-like {
   display: none !important;
 }

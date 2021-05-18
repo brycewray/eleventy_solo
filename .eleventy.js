@@ -195,7 +195,7 @@ module.exports = function(eleventyConfig) {
       </picture>`
     }
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
-    eleventyConfig.addLiquidShortcode("image", imageShortcode)
+    // eleventyConfig.addLiquidShortcode("image", imageShortcode)
     eleventyConfig.addJavaScriptFunction("image", imageShortcode)
     // --- END, eleventy-img
  

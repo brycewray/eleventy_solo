@@ -161,12 +161,13 @@ module.exports = function(eleventyConfig) {
   
   // --- START, eleventy-img
   async function imageShortcode(src, alt, sizes="(min-width: 1024px) 100vw, 50vw") {
+    let srcPrefix = `./src/assets/images/`
+    src = srcPrefix + src
     console.log(`Generating image(s) from:  ${src}`)
     if(alt === undefined) {
       // Throw an error on missing alt (alt="" works okay)
       throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`)
-    }
-  
+    }  
     let metadata = await Image(src, {
       widths: [600, 900, 1500],
       formats: ['webp', 'jpeg'],
@@ -177,10 +178,8 @@ module.exports = function(eleventyConfig) {
         const name = path.basename(src, extension)
         return `${name}-${width}w.${format}`
       }
-    })
-  
-    let lowsrc = metadata.jpeg[0]
-  
+    })  
+    let lowsrc = metadata.jpeg[0]  
     return `<picture>
       ${Object.values(metadata).map(imageFormat => {
         return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`

@@ -8,6 +8,41 @@ const path = require('path')
 const Image = require("@11ty/eleventy-img")
 const jsTheme = require('./src/_includes/jstheme.js')
 
+async function imageShortcode(src, alt) {
+  let sizes = "(min-width: 1024px) 100vw, 50vw"
+  let srcPrefix = `./src/assets/images/`
+  src = srcPrefix + src
+  console.log(`Generating image(s) from:  ${src}`)
+  if(alt === undefined) {
+    // Throw an error on missing alt (alt="" works okay)
+    throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`)
+  }  
+  let metadata = await Image(src, {
+    widths: [600, 900, 1500],
+    formats: ['webp', 'jpeg'],
+    urlPath: "/images/",
+    outputDir: "./_site/images/",
+    filenameFormat: function (id, src, width, format, options) {
+      const extension = path.extname(src)
+      const name = path.basename(src, extension)
+      return `${name}-${width}w.${format}`
+    }
+  })  
+  let lowsrc = metadata.jpeg[0]  
+  return `<picture>
+    ${Object.values(metadata).map(imageFormat => {
+      return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`
+    }).join("\n")}
+      <img
+        src="${lowsrc.url}"
+        width="${lowsrc.width}"
+        height="${lowsrc.height}"
+        alt="${alt}"
+        loading="lazy"
+        decoding="async">
+    </picture>`
+  }
+
 module.exports = function(eleventyConfig) {
 
   // theming --- based on Reuben Lillie's code (https://gitlab.com/reubenlillie/reubenlillie.com/)
@@ -158,47 +193,10 @@ module.exports = function(eleventyConfig) {
     }
   })
 
-  
-  // --- START, eleventy-img
-  async function imageShortcode(src, alt, sizes="(min-width: 1024px) 100vw, 50vw") {
-    let srcPrefix = `./src/assets/images/`
-    src = srcPrefix + src
-    console.log(`Generating image(s) from:  ${src}`)
-    if(alt === undefined) {
-      // Throw an error on missing alt (alt="" works okay)
-      throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`)
-    }  
-    let metadata = await Image(src, {
-      widths: [600, 900, 1500],
-      formats: ['webp', 'jpeg'],
-      urlPath: "/images/",
-      outputDir: "./_site/images/",
-      filenameFormat: function (id, src, width, format, options) {
-        const extension = path.extname(src)
-        const name = path.basename(src, extension)
-        return `${name}-${width}w.${format}`
-      }
-    })  
-    let lowsrc = metadata.jpeg[0]  
-    return `<picture>
-      ${Object.values(metadata).map(imageFormat => {
-        return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`
-      }).join("\n")}
-        <img
-          src="${lowsrc.url}"
-          width="${lowsrc.width}"
-          height="${lowsrc.height}"
-          alt="${alt}"
-          loading="lazy"
-          decoding="async">
-      </picture>`
-    }
-    eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
-    eleventyConfig.addLiquidShortcode("image", imageShortcode)
-    // Liquid needed if `markdownTemplateEngine` **isn't** changed from Eleventy default
-    eleventyConfig.addJavaScriptFunction("image", imageShortcode)
-    // --- END, eleventy-img
- 
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
+  eleventyConfig.addLiquidShortcode("image", imageShortcode)
+  // === Liquid needed if `markdownTemplateEngine` **isn't** changed from Eleventy default
+  eleventyConfig.addJavaScriptFunction("image", imageShortcode)
 
   eleventyConfig.addShortcode(
     "lazypicture",

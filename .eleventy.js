@@ -194,7 +194,8 @@ module.exports = function(eleventyConfig) {
       </picture>`
     }
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
-    // eleventyConfig.addLiquidShortcode("image", imageShortcode)
+    eleventyConfig.addLiquidShortcode("image", imageShortcode)
+    // Liquid needed if `markdownTemplateEngine` **isn't** changed from Eleventy default
     eleventyConfig.addJavaScriptFunction("image", imageShortcode)
     // --- END, eleventy-img
  

@@ -160,11 +160,16 @@ module.exports = function(eleventyConfig) {
 
   
   // --- START, eleventy-img
-  function imageShortcode(src, alt, sizes="(min-width: 1024px) 100vw, 50vw") {
+  async function imageShortcode(src, alt, sizes="(min-width: 1024px) 100vw, 50vw") {
     console.log(`Generating image(s) from:  ${src}`)
-    let options = {
+    if(alt === undefined) {
+      // Throw an error on missing alt (alt="" works okay)
+      throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`)
+    }
+  
+    let metadata = await Image(src, {
       widths: [600, 900, 1500],
-      formats: ["webp", "jpeg"],
+      formats: ['webp', 'jpeg'],
       urlPath: "/images/",
       outputDir: "./_site/images/",
       filenameFormat: function (id, src, width, format, options) {
@@ -172,24 +177,28 @@ module.exports = function(eleventyConfig) {
         const name = path.basename(src, extension)
         return `${name}-${width}w.${format}`
       }
-    }
+    })
   
-    // generate images
-    Image(src, options)
+    let lowsrc = metadata.jpeg[0]
   
-    let imageAttributes = {
-      alt,
-      sizes,
-      loading: "lazy",
-      decoding: "async",
+    return `<picture>
+      ${Object.values(metadata).map(imageFormat => {
+        return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`
+      }).join("\n")}
+        <img
+          src="${lowsrc.url}"
+          width="${lowsrc.width}"
+          height="${lowsrc.height}"
+          alt="${alt}"
+          loading="lazy"
+          decoding="async">
+      </picture>`
     }
-    // get metadata
-    metadata = Image.statsSync(src, options)
-    return Image.generateHTML(metadata, imageAttributes)
-  }
-  eleventyConfig.addShortcode("image", imageShortcode)
-  // --- END, eleventy-img
-
+    eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
+    eleventyConfig.addLiquidShortcode("image", imageShortcode)
+    eleventyConfig.addJavaScriptFunction("image", imageShortcode)
+    // --- END, eleventy-img
+ 
 
   eleventyConfig.addShortcode(
     "lazypicture",

@@ -5,7 +5,7 @@ subtitle: "Digging further under the hood"
 description: "Some of the code behind my previous post."
 author: Bryce Wray
 date: 2020-12-15T17:00:00-06:00
-lastmod: 2021-03-20T17:30:00-05:00
+lastmod: 2021-05-19T10:47:00-05:00
 draft: false
 discussionId: "2020-12-hashing-out-cache-busting-fix-eleventy"
 featured_image: "csshash-js_in_Nova_2786x1650.png"
@@ -141,7 +141,8 @@ To be specific:
 	- Read and process the `index.css` file (which, remember, includes all those `@import`s).
 	- Write the resulting CSS to the `_site/css/` output folder (`_site` is the default folder where an Eleventy site exists when built) and name the file whatever is the content of that `csshash` text file that `cssdate.js` wrote to the project's top level.
 
-**Important**: Note that the process completes itself **only** during actual site **builds**, and **not** in the `dev` or `testbuild` scripts---which means that, for version control purposes (*i.e.*, changes you can commit in Git), actual site builds are the only times that all the applicable changes will occur.{.yellowBox}
+**Important**: Note that the process completes itself **only** during actual site **builds**, and **not** in the `dev` or `testbuild` scripts---which means that, for version control purposes (*i.e.*, changes you can commit in Git), actual site builds are the only times that all the applicable changes will occur. Thus, you may want to `gitignore` the top-level file `csshash` (but **not** `csshash.js`) and the files `/_data/csshash.json` and `/_data/year.json`.
+{.yellowBox}
 
 ## The head template
 

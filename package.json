@@ -11,16 +11,12 @@
     "prodpostcss": "postcss _site/css/$(cat csshash) -o _site/css/$(cat csshash)",
     "start": "NODE_ENV=development npm-run-all clean hasher devsass --parallel dev:*",
     "build": "NODE_ENV=production npm-run-all clean hasher prod:sass prod:postcss prod:eleventy",
-    "testbuild": "NODE_ENV=production npm-run-all clean hasher prodsass --parallel testProd:*",
     "dev:sass": "npm run devsass -- --watch",
     "dev:postcss": "npm run devpostcss --watch",
     "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --quiet --serve",
     "prod:sass": "npm run prodsass",
     "prod:postcss": "npm run prodpostcss",
-    "prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site",
-    "testProd:sass": "npm run prodsass -- --watch",
-    "testProd:postcss": "npm run prodpostcss --watch",
-    "testProd:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site --quiet --serve"
+    "prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site"
   },
   "keywords": [],
   "author": "",

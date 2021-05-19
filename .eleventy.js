@@ -33,15 +33,15 @@ async function imageShortcode(src, alt) {
     ${Object.values(metadata).map(imageFormat => {
       return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`
     }).join("\n")}
-      <img
-        src="${lowsrc.url}"
-        width="${lowsrc.width}"
-        height="${lowsrc.height}"
-        alt="${alt}"
-        loading="lazy"
-        decoding="async">
-    </picture>`
-  }
+    <img
+      src="${lowsrc.url}"
+      width="${lowsrc.width}"
+      height="${lowsrc.height}"
+      alt="${alt}"
+      loading="lazy"
+      decoding="async">
+  </picture>`
+}
 
 module.exports = function(eleventyConfig) {
 

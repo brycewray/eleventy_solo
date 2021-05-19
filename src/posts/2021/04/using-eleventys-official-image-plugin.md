@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2021-05-04T12:48:00-05:00
+lastmod: 2021-05-19T08:18:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
@@ -92,45 +92,60 @@ module.exports = function (eleventyConfig) {
 ```
 {% endraw %}
 
-.&nbsp;.&nbsp;. so let's go into that in-between area where I put those comments, above, and create an `image` shortcode (note the lower-case "i") by adding the code shown below.
-
-**Update, 2021-04-28**: Due to a problem reported to me by a user of one of my [starter sets](/posts/2021/03/beginners-luck-update), I swapped out the code that previously was here with code that is based on *synchronous*, rather than *asynchronous*, usage. To read more about the difference, see [this section](https://www.11ty.dev/docs/plugins/image/#synchronous-usage) of the Eleventy Image documentation. I've also updated those starter sets accordingly.
-{.yellowBox}
+.&nbsp;.&nbsp;. so, **still** above that area, create an `image` shortcode (note the lower-case "i") by adding the code shown below.
 
 {% raw %}
 ```js
-  // --- START, eleventy-img
-  function imageShortcode(src, alt, sizes="(min-width: 1024px) 100vw, 50vw") {
-    console.log(`Generating image(s) from:  ${src}`)
-    let options = {
-      widths: [600, 900, 1500],
-      formats: ["webp", "jpeg"],
-      urlPath: "/images/",
-      outputDir: "./_site/images/",
-      filenameFormat: function (id, src, width, format, options) {
-        const extension = path.extname(src)
-        const name = path.basename(src, extension)
-        return `${name}-${width}w.${format}`
-      }
+async function imageShortcode(src, alt) {
+  let sizes = "(min-width: 1024px) 100vw, 50vw"
+  let srcPrefix = `./src/assets/images/`
+  src = srcPrefix + src
+  console.log(`Generating image(s) from:  ${src}`)
+  if(alt === undefined) {
+    // Throw an error on missing alt (alt="" works okay)
+    throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`)
+  }  
+  let metadata = await Image(src, {
+    widths: [600, 900, 1500],
+    formats: ['webp', 'jpeg'],
+    urlPath: "/images/",
+    outputDir: "./_site/images/",
+    filenameFormat: function (id, src, width, format, options) {
+      const extension = path.extname(src)
+      const name = path.basename(src, extension)
+      return `${name}-${width}w.${format}`
     }
-  
-    // generate images
-    Image(src, options)
-  
-    let imageAttributes = {
-      alt,
-      sizes,
-      loading: "lazy",
-      decoding: "async",
-    }
-    // get metadata
-    metadata = Image.statsSync(src, options)
-    return Image.generateHTML(metadata, imageAttributes)
-  }
-  eleventyConfig.addShortcode("image", imageShortcode)
-  // --- END, eleventy-img
+  })  
+  let lowsrc = metadata.jpeg[0]  
+  return `<picture>
+    ${Object.values(metadata).map(imageFormat => {
+      return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`
+    }).join("\n")}
+    <img
+      src="${lowsrc.url}"
+      width="${lowsrc.width}"
+      height="${lowsrc.height}"
+      alt="${alt}"
+      loading="lazy"
+      decoding="async">
+  </picture>`
+}
 ```
 {% endraw %}
+
+And, finally, ***within*** the `module.exports` section, add:
+
+{% raw %}
+```js
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
+  eleventyConfig.addLiquidShortcode("image", imageShortcode)
+  // === Liquid needed if `markdownTemplateEngine` **isn't** changed from Eleventy default
+  eleventyConfig.addJavaScriptFunction("image", imageShortcode)
+```
+{% endraw %}
+
+**Note**: You may want to consult "[Default Template Engine for Markdown Files](https://www.11ty.dev/docs/config/#default-template-engine-for-markdown-files)" within the Eleventy documentation. (After experiencing certain otherwise inexplicable glitches with the Eleventy Image examples on which the shortcode above was based, I found that specifying `markdownTemplateEngine: 'njk'` in `.eleventy.js` fixed them.)
+{.yellowBox}
 
 For each image file you "feed" this shortcode in your Markdown (we'll explain that part next), it will create new files with:
 
@@ -151,15 +166,15 @@ Now, let's get this show on the road.
 
 ### Use your new shortcode
 
-Let's say you keep your Eleventy project's original image files (the ones the `image` shortcode will process) in an `images` folder that's within a top-level `src` folder---*i.e.*, `./src/images/`. Let's also say that the image file you want to pop into a post you're writing is called `my-pet-cat.jpg`. So type this in your post's Markdown file:
+The code above assumes---and I recommend---that you keep your Eleventy project's original image files (the ones the `image` shortcode will process) in `./src/assets/images/`. So let's say that the image file you want to pop into a post you're writing is called `my-pet-cat.jpg`, located in that folder. So type this in your post's Markdown file:
 
 {% raw %}
 ```md
-{% image "./src/images/my-pet-cat.jpg", "Photo of a brown-striped tabby cat named Tiger" %}
+{% image "my-pet-cat.jpg", "Photo of a brown-striped tabby cat named Tiger" %}
 ```
 {% endraw %}
 
-Here, you've entered what the shortcode considers the `src` part ("./src/images/my-pet-cat.jpg"), then a comma, and then the `alt` text ("Photo of a brown-striped tabby cat named Tiger") for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/). The `src` location should be based on wherever `.eleventy.js` is, since that's where the shortcode resides as well; and, typically, that's the top level of an Eleventy project.
+Here, you've entered what the shortcode considers the `src` part ("my-pet-cat.jpg"; the code automatically adds `./src/assets/images` to it so **you** don't have to type it every time you use the shortcode), then a comma, and then the `alt` text ("Photo of a brown-striped tabby cat named Tiger") for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/). The `src` location should be based on wherever `.eleventy.js` is, since that's where the shortcode resides as well; and, typically, that's the top level of an Eleventy project.
 
 ### Get a look at the result
 

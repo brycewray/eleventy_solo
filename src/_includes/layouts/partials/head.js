@@ -17,7 +17,7 @@ module.exports = function(eleventyConfig) {
 
   // restructuring for easier reading/typing
   // ... https://wesbos.com/destructuring-objects
-  eleventyConfig.addShortcode('headTag', function({ siteparams, page, description, title, featured_image, featured_image_alt }) {
+  eleventyConfig.addShortcode('headTag', function({ siteparams, page, description, title, featured_image, featured_image_alt, csshash }) {
     const { siteTitle, siteDescription, siteURLforOG } = siteparams
     const { url } = page
 
@@ -131,8 +131,14 @@ module.exports = function(eleventyConfig) {
     <!--<link rel="preload" href="/assets/fonts/Inter-3-18_subset_2021-03-31.woff2" crossorigin="anonymous" as="font" type="font/woff2" />-->
 
     ${ process.env.NODE_ENV === 'production' 
-      ? /*html*/ `<style>${internalCSS}</style>`
-      : /*html*/ `<link rel="stylesheet" href="/css/index.css" type="text/css"  />`
+      ? /*html*/ `
+      <link rel="preload" href="/css/${csshash['index.css']}" as="style" />
+      <link rel="stylesheet" href="/css/${csshash['index.css']}" type="text/css" />
+      `
+      : /*html*/ `
+      <link rel="preload" href="/css/index.css" as="style" />
+      <link rel="stylesheet" href="/css/index.css" type="text/css"  />
+      `
     }
     <!-- re above, thanks to Duncan McDougall: https://www.belter.io/eleventy-sass-workflow/ -->
 

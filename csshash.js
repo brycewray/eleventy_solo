@@ -6,7 +6,7 @@ const md5 = require('md5')
 const globAll = require('glob-all')
 const DATAFILE = '_data/csshash.json'
 const PCSSFILE = 'csshash'
-const YEARFILE = '_data/year.json'
+const YEARFILE = '_data/year.json' // for use by Nunjucks templates
 cssFiles = globAll.sync([
   'src/assets/css/*.css'
 ])
@@ -29,6 +29,7 @@ var yearValue = `{
   "copyrightYear": "${new Date().getFullYear()}"
 }`
 fs.writeFileSync(YEARFILE, yearValue)
+// for use by Nunjucks templates
 
 var txtValue = `index-${cssMd5Total}.css`
 fs.writeFileSync(PCSSFILE, txtValue)

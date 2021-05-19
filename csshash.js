@@ -8,7 +8,7 @@ const DATAFILE = '_data/csshash.json'
 const PCSSFILE = 'csshash'
 const YEARFILE = '_data/year.json' // for use by Nunjucks templates
 cssFiles = globAll.sync([
-  'src/assets/css/*.css'
+  'src/assets/scss/*.scss'
 ])
 
 var cssMd5Total = 0

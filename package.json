@@ -9,7 +9,7 @@
     "prodsass": "sass --no-source-map src/assets/scss/index.scss _site/css/$(cat csshash)",
     "devpostcss": "postcss _site/css/index.css -o _site/css/index.css",
     "prodpostcss": "postcss _site/css/$(cat csshash) -o _site/css/$(cat csshash)",
-    "start": "NODE_ENV=development npm-run-all clean hasher devsass --parallel dev:*",
+    "start": "NODE_ENV=development npm-run-all clean devsass --parallel dev:*",
     "build": "NODE_ENV=production npm-run-all clean hasher prod:sass prod:postcss prod:eleventy",
     "dev:sass": "npm run devsass -- --watch",
     "dev:postcss": "npm run devpostcss --watch",

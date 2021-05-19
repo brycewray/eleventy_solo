@@ -44,6 +44,11 @@ async function imageShortcode(src, alt) {
 }
 
 module.exports = function(eleventyConfig) {
+  
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
+  eleventyConfig.addLiquidShortcode("image", imageShortcode)
+  // === Liquid needed if `markdownTemplateEngine` **isn't** changed from Eleventy default
+  eleventyConfig.addJavaScriptFunction("image", imageShortcode)
 
   // theming --- based on Reuben Lillie's code (https://gitlab.com/reubenlillie/reubenlillie.com/)
   jsTheme(eleventyConfig)
@@ -192,11 +197,6 @@ module.exports = function(eleventyConfig) {
       }
     }
   })
-
-  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode)
-  eleventyConfig.addLiquidShortcode("image", imageShortcode)
-  // === Liquid needed if `markdownTemplateEngine` **isn't** changed from Eleventy default
-  eleventyConfig.addJavaScriptFunction("image", imageShortcode)
 
   eleventyConfig.addShortcode(
     "lazypicture",

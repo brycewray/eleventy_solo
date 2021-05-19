@@ -20,12 +20,18 @@
   a, a:hover {
     border: 0;
   }
-  .tweet-footer {
-    a {
-      color: #333 !important;
-      @media screen and (prefers-color-scheme: dark) {
-        color: #fff !important;
-      }
+}
+
+.tweet-profile,
+.tweet-bird {
+  display: none;
+}
+
+.tweet-footer {
+  a {
+    color: #333 !important;
+    @media screen and (prefers-color-scheme: dark) {
+      color: #fff !important;
     }
   }
 }
@@ -38,15 +44,4 @@
 
 .tweet-like {
   display: none !important;
-}
-
-.tweet-like-icon {
-  display: none !important;
-  .tweet-icon {
-    display: none;
-  }
-}
-
-.tweet-like-count {
-  display: none;
 }

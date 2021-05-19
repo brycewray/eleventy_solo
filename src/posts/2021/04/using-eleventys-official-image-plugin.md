@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2021-05-19T08:24:00-05:00
+lastmod: 2021-05-19T09:52:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
@@ -170,17 +170,19 @@ The code above assumes---and I recommend---that you keep your Eleventy project's
 
 {% raw %}
 ```md
-{% image "my-pet-cat.jpg", "Photo of a brown-striped tabby cat named Tiger" %}
+{% image "my-pet-cat.jpg", "Photo of a cat named Shakespeare sitting on a window sill" %}
 ```
 {% endraw %}
 
 Here, you've entered what the shortcode considers the `src` part ("my-pet-cat.jpg"; the code automatically adds `./src/assets/images` to it so **you** don't have to type it every time you use the shortcode), then a comma, and then the `alt` text ("Photo of a brown-striped tabby cat named Tiger") for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/). The `src` location should be based on wherever `.eleventy.js` is, since that's where the shortcode resides as well; and, typically, that's the top level of an Eleventy project. As you know, the `alt` text describes for [screen readers](https://accessibility.its.uconn.edu/2018/08/22/what-is-a-screen-reader-and-how-does-it-work/) what the image contains. **You must enter that `alt` text** if you want the shortcode to work properly---the `image` shortcode requires both `src` and `alt` to work, as you may have noted in the shortcode's configuration in `eleventy.js`. If an image is only [decorative](https://www.w3.org/WAI/tutorials/images/decorative/) (*e.g.*, a logo or other image that fits that description), it's perfectly acceptable for the `alt` to be just `""`, but you **must** have an `alt` entry after the `src` and that separating comma.
 
-
-
 ### Get a look at the result
 
-Now, just build your site, and Eleventy Image will do its magic everywhere within your site that you're using the `image` shortcode. Of course, you'll want to get a sneak peek by running Eleventy in development mode and viewing your site locally, in case you need to adjust your site's CSS so each resulting image appears as you want.[^sizesInfo]
+Now, just build your site, and Eleventy Image will do its magic everywhere within your site that you're using the `image` shortcode. For example, here's what the shortcode above could produce:
+
+{% image "my-pet-cat.jpg", "Photo of a cat named Shakespeare sitting on a window sill" %}
+
+Of course, you'll want to get a sneak peek by running Eleventy in development mode and viewing your site locally, in case you need to adjust your site's CSS so each resulting image appears as you want.[^sizesInfo]
 
 [^sizesInfo]: You also can go back into the shortcode's definition in `.eleventy.js` to adjust the `sizes` parameter so that it works better with your site's unique layout. See [MDN's thorough explanation](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-sizes) of how the `sizes` setting in CSS affects images' appearances.
 

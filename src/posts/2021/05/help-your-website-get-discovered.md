@@ -5,7 +5,7 @@ subtitle: "You built it, but will they come?"
 description: "A few suggestions for getting your website the attention it deserves."
 author: Bryce Wray
 date: 2021-05-14T16:30:00-05:00
-lastmod: 2021-05-16T08:56:00-05:00
+lastmod: 2021-05-20T08:50:00-05:00
 discussionId: "2021-05-help-your-website-get-discovered"
 featured_image: "magnifying-glass-4490044_4288x2848.jpg"
 featured_image_width: 4288
@@ -60,82 +60,56 @@ Some starting assumptions:
 With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 
 1. If you haven't already added them to your Eleventy setup, add the [Eleventy RSS plugin](https://www.11ty.dev/docs/plugins/rss/) and the [Luxon](https://github.com/moment/luxon) time-related library.
-2. In your [sitewide configuration file](https://www.11ty.dev/docs/config/) (probably `.eleventy.js` at the top level of the project), add the following:
 
-{% raw %}
-```js
-  eleventyConfig.addFilter("dateFromRFC2822", (timestamp) => {
-    return DateTime.fromJSDate(timestamp).toISO()
-  })
-  eleventyConfig.addFilter("dateStringISO", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toFormat("yyyy-MM-dd")
-  })
-  eleventyConfig.addLayoutAlias("sitemap", "layouts/sitemap/sitemap.njk")
-```
-{% endraw %}
-
-3. In your [sitewide data folder](https://www.11ty.dev/docs/data-global/), create a file `siteparams.json` (with your values in place of the obvious examples):
-
-{% raw %}
-```json
-{
-  "siteURLforOG": "https://www.example.com",
-  "siteBaseURL": "/",
-  "siteTitle": "My Site Title",
-  "siteAuthor": "Your Name",
-  "siteDescription": "A short site description.",
-  "feed": {
-    "subtitle": "My Site -- What my site includes.",
-    "filename": "index.xml",
-    "path": "/index.xml",
-    "url": "https://www.example.com/index.xml",
-    "id": "https://www.example.com"
-  }
-}
-```
-{% endraw %}
-
-4. In the `src` folder, create the file `feed.njk` to make your template for the RSS feed:
+2. In the `src` folder, create the file `feed.njk` to make your template for the RSS feed:
 
 {% raw %}
 ```twig
----
-permalink: /index.xml
-eleventyExcludeFromCollections: true
-# No space allowed underneath the divider (breaks the XML)
+---json
+{
+  "permalink": "/index.json",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "My Site Title",
+    "description": "A short site description.",
+    "url": "https://www.example.com/",
+    "feedUrl": "https://www.example.com/index.xml",
+    "authors": {
+      "name": "Your Name",
+      "url": "https://www.example.com/about/"
+    }
+  }
+}
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>{{ siteparams.siteTitle }}</title>
-	<subtitle>{{ siteparams.feed.subtitle }}</subtitle>
-	<link href="{{ siteparams.siteURLforOG }}/index.xml" rel="self"/>
-	<link href="{{ siteparams.siteURLforOG }}"/>
-	<updated>{{ collections.post | rssLastUpdatedDate }}</updated>
-	<id>{{ siteparams.feed.id }}</id>
+	<title>{{ metadata.title }}</title>
+	<subtitle>{{ metadata.subtitle }}</subtitle>
+	<link href="{{ metadata.feedUrl }}" rel="self"/>
+	<link href="{{ metadata.url }}"/>
+	<updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+	<id>{{ metadata.url }}</id>
 	<author>
-		<name>{{ siteparams.siteAuthor }}</name>
+		<name>{{ metadata.author.name }}</name>
 	</author>
 	{%- for post in collections.post | reverse %}
-	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
-	<entry>
-		<title>{{ post.data.title }} | {{ post.data.subtitle }} </title>
-		<link href="{{ absolutePostUrl }}"/>
-    {% if post.data.lastmod %}
-    <updated>{{ post.data.lastmod | rssDate }}</updated>
-    {% else %}
-    <updated>{{ post.date | rssDate }}</updated>
-    {% endif %}
-		<id>{{ absolutePostUrl }}</id>
-    <description>
-      {{ post.data.description }}
-    </description>
-	</entry>
+		{% if loop.index0 < 10 %}
+			{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+			<entry>
+				<title>{{ post.data.title }} | {{ post.data.subtitle }} </title>
+				<link href="{{ absolutePostUrl }}"/>
+				<updated>{{ post.date | dateToRfc3339 }}</updated>
+				<id>{{ absolutePostUrl }}</id>
+				<description>{% if post.data.description %}{{ post.data.description }}{% else %}""{% endif %}</description>
+				<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+			</entry>
+		{% endif %}
 	{%- endfor %}
 </feed>
 ```
 {% endraw %}
 
-5. In the `src` folder, create the file `jsonfile.njk` to make your template for the JSON feed:
+3. In the `src` folder, create the file `jsonfile.njk` to make your template for the JSON feed:
 
 {% raw %}
 
@@ -179,7 +153,7 @@ eleventyExcludeFromCollections: true
 ```
 {% endraw %}
 
-6. In the `src` folder, create the file `sitemap.njk` to make your template for the XML sitemap (replace the dates in the final two items with what make sense for your site):
+4. In the `src` folder, create the file `sitemap.njk` to make your template for the XML sitemap (replace the dates in the final two items with what make sense for your site):
 
 {% raw %}
 ```twig
@@ -211,7 +185,7 @@ permalink: /sitemap.xml
 ```
 {% endraw %}
 
-7. In the `src` folder, create the folder `sitemap`; then, within it, create the file `index.md` with whatever date makes sense for you:
+5. In the `src` folder, create the folder `sitemap`; then, within it, create the file `index.md` with whatever date makes sense for you:
 
 ```md
 ---
@@ -222,7 +196,7 @@ title: "Sitemap (HTML form)"
 (The text for the page is all in the appropriate template.)
 ```
 
-8. Then, in the appropriate folder for your layouts (in my case, that's `src/_includes/layouts`), add a folder called `sitemap` and, within it, the `sitemap.njk` template which will serve as the template for your HTML sitemap (you'll have to handle the CSS classes on your own, of course, but this'll give you a start; also, the `layout` reference will vary based on what you call *your* site's [base layout](https://www.11ty.dev/docs/layout-chaining/)):
+6. Then, in the appropriate folder for your layouts (in my case, that's `src/_includes/layouts`), add a folder called `sitemap` and, within it, the `sitemap.njk` template which will serve as the template for your HTML sitemap (you'll have to handle the CSS classes on your own, of course, but this'll give you a start; also, the `layout` reference will vary based on what you call *your* site's [base layout](https://www.11ty.dev/docs/layout-chaining/)):
 
 {% raw %}
 ```twig

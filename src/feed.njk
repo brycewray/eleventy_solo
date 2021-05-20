@@ -23,7 +23,7 @@ eleventyExcludeFromCollections: true
 				<updated>{{ post.date | rssDate }}</updated>
 				<id>{{ absolutePostUrl }}</id>
 				<description>
-					{{ post.templateContent }}
+					{{ post.data.description }}
 				</description>
 			</entry>
 		{% endif %}

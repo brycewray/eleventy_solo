@@ -95,8 +95,8 @@ module.exports = function(eleventyConfig) {
 
 
     <!-- discover news feeds -->
-    <link rel="alternate" title="BryceWray.com - RSS" type="application/rss+xml" href="https://www.brycewray.com/index.xml" />
     <link rel="alternate" title="BryceWray.com - JSON" type="application/feed+json" href="https://www.brycewray.com/index.json" />
+    <link rel="alternate" title="BryceWray.com - RSS" type="application/rss+xml" href="https://www.brycewray.com/index.xml" />
 
     
     <!-- **** BEGINNING, favicons **** -->

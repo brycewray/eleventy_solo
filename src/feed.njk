@@ -15,15 +15,17 @@ eleventyExcludeFromCollections: true
 		<name>{{ siteparams.siteAuthor }}</name>
 	</author>
 	{%- for post in collections.post | reverse %}
-	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
-	<entry>
-		<title>{{ post.data.title }} | {{ post.data.subtitle }} </title>
-		<link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date | rssDate }}</updated>
-		<id>{{ absolutePostUrl }}</id>
-    <description>
-      {{ post.templateContent }}
-    </description>
-	</entry>
+		{% if loop.index0 < 10 %}
+			{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+			<entry>
+				<title>{{ post.data.title }} | {{ post.data.subtitle }} </title>
+				<link href="{{ absolutePostUrl }}"/>
+				<updated>{{ post.date | rssDate }}</updated>
+				<id>{{ absolutePostUrl }}</id>
+				<description>
+					{{ post.templateContent }}
+				</description>
+			</entry>
+		{% endif %}
 	{%- endfor %}
 </feed>

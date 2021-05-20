@@ -19,11 +19,7 @@ eleventyExcludeFromCollections: true
 	<entry>
 		<title>{{ post.data.title }} | {{ post.data.subtitle }} </title>
 		<link href="{{ absolutePostUrl }}"/>
-    {% if post.data.lastmod %}
-    <updated>{{ post.data.lastmod | rssDate }}</updated>
-    {% else %}
     <updated>{{ post.date | rssDate }}</updated>
-    {% endif %}
 		<id>{{ absolutePostUrl }}</id>
     <description>
       {{ post.templateContent }}

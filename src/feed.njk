@@ -1,18 +1,30 @@
----
-permalink: /index.xml
-eleventyExcludeFromCollections: true
-# No space allowed underneath the divider (breaks the XML)
+---json
+{
+  "permalink": "/index.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "BryceWray.com",
+    "subtitle": "brycewray.com — Observations, opinions, geekery.",
+    "description": "brycewray.com — Observations, opinions, geekery.",
+    "url": "https://www.brycewray.com/",
+    "feedUrl": "https://www.brycewray.com/index.xml",
+    "authors": {
+      "name": "Bryce Wray",
+      "url": "https://www.brycewray.com/about/"
+    }
+  }
+}
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>{{ siteparams.siteTitle }}</title>
-	<subtitle>{{ siteparams.feed.subtitle }}</subtitle>
-	<link href="{{ siteparams.siteURLforOG }}/index.xml" rel="self"/>
-	<link href="{{ siteparams.siteURLforOG }}"/>
-	<updated>{{ collections.post | rssLastUpdatedDate }}</updated>
-	<id>{{ siteparams.feed.id }}</id>
+	<title>{{ metadata.title }}</title>
+	<subtitle>{{ metadata.subtitle }}</subtitle>
+	<link href="{{ metadata.feedUrl }}" rel="self"/>
+	<link href="{{ metadata.url }}"/>
+	<updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+	<id>{{ metadata.url }}</id>
 	<author>
-		<name>{{ siteparams.siteAuthor }}</name>
+		<name>{{ metadata.author.name }}</name>
 	</author>
 	{%- for post in collections.post | reverse %}
 		{% if loop.index0 < 10 %}
@@ -20,11 +32,10 @@ eleventyExcludeFromCollections: true
 			<entry>
 				<title>{{ post.data.title }} | {{ post.data.subtitle }} </title>
 				<link href="{{ absolutePostUrl }}"/>
-				<updated>{{ post.date | rssDate }}</updated>
+				<updated>{{ post.date | dateToRfc3339 }}</updated>
 				<id>{{ absolutePostUrl }}</id>
-				<description>
-					{{ post.templateContent }}
-				</description>
+				<description>{% if post.data.description %}{{ post.data.description }}{% else %}""{% endif %}</description>
+				<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 			</entry>
 		{% endif %}
 	{%- endfor %}

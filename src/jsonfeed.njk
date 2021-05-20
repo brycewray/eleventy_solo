@@ -25,10 +25,9 @@
     {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset -%}
     {
       "id": "{{ absolutePostUrl }}",
-      "title": "{{ post.data.title }}",
+      "title": "{{ post.data.title }} | {{ post.data.subtitle }}",
       "url": "{{ absolutePostUrl }}",
       "date_published": "{{ post.date | dateFromRFC2822 }}",
-      "date_modified": "{% if post.data.lastmod %}{{ post.data.lastmod | dateFromRFC2822 }}{% else %}{{ post.date | dateFromRFC2822 }}{% endif %}",
       "summary": "{{ post.data.description }}",
       "content_html": {% if post.templateContent %}{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{% else %}""{% endif %}
     }{% if not loop.last %},{% endif %}

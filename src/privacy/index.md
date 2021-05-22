@@ -4,7 +4,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2021-05-18T08:21:00-05:00
+lastmod: 2021-05-22T08:45:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -27,7 +27,7 @@ When I learned that the use of [Google Fonts](https://fonts.google.com) *served 
 
 ### Twitter
 
-I use [eleventy-plugin-embed-tweet](https://github.com/KyleMit/eleventy-plugin-embed-tweet) to embed tweets as purely static content with **no**&nbsp;cookies.
+I use [eleventy-plugin-embed-tweet](https://github.com/KyleMit/eleventy-plugin-embed-tweet) to embed tweets as purely static content with **no**&nbsp;cookies, and my site's [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) blocks any images (typically, one per embedded tweet) that Twitter otherwise could use to track you.
 
 ## Other considerations
 

@@ -38,7 +38,7 @@ Each SSG has its own way of parsing the plain text, usually [Markdown](https://d
 
 The `Typographer` extension is supposed to make sure text has the proper "smart" punctuation:
 
-<p style="font-size: 1.5em; font-weight: normal; font-family: serif; text-align: center;">Here&rsquo;s some nice-lookin&rsquo; &ldquo;punctuation.&rdquo;</p>
+<p class="punctuationExample">Here&rsquo;s some nice-lookin&rsquo; &ldquo;punctuation.&rdquo;</p>
 
 However, as of this writing, the Goldmark version "shipping" with Hugo has a problem with plural possessives. As I noted in an [issue I filed concerning the problem](https://github.com/yuin/goldmark/issues/180), if you include the following text in a Markdown file&nbsp;.&nbsp;.&nbsp;.
 
@@ -48,11 +48,11 @@ John's dog is named Sam. The Smiths' dog is named Rover.
 
 .&nbsp;.&nbsp;. you'd expect to get:
 
-<p style="font-size: 1.5em; font-weight: normal; font-family: serif; text-align: center;">John&rsquo;s dog is named Sam. The Smiths&rsquo; dog is named Rover.</p>
+<p class="punctuationExample">John&rsquo;s dog is named Sam. The Smiths&rsquo; dog is named Rover.</p>
 
 But what you actually get right now is:
 
-<p style="font-size: 1.5em; font-weight: normal; font-family: serif; text-align: center;">John&rsquo;s dog is named Sam. The Smiths&apos; dog is named Rover.</p>
+<p class="punctuationExample">John&rsquo;s dog is named Sam. The Smiths&apos; dog is named Rover.</p>
 
 So, if you're a Hugo user right now, you have two options where it comes to good typography and plural possessives:
 

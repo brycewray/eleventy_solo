@@ -106,8 +106,7 @@ Finally, here are the best from among the many articles I've been reading (often
 - "[In Defense of Functional CSS](https://critter.blog/2018/06/08/in-defense-of-functional-css/)" by Mike Crittenden.
 - "[Why I Haven't Jumped on the Tailwind CSS Bandwagon](https://block81.com/blog/why-i-havent-jumped-on-the-tailwind-css-bandwagon)" by Angie Herrera.
 
-
-<hr style="margin-bottom: 1em;" />
+---
 
 ## *Update, 2020-01-18*
 

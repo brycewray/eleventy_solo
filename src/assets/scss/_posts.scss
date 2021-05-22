@@ -75,6 +75,9 @@
     @media screen and (min-width: var.$bkpt_2xl) {
       font-size: 1.5rem;
     }
+    time {
+      display: inline;
+    }
   }
   &-Description {
     font-size: 1rem;

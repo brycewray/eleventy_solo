@@ -10,6 +10,6 @@ exports.render = data => /*html*/ `
   <main class="ctr">
     <h1 class="billboard-title-text">Page not found</h1>
     <p class="billboard-subtitle-text">Sorry, that page isn&rsquo;t on this site.</p>
-    <p class="billboard-description-text" style="margin-bottom: 10em;">Please use the navigation menu, above, to find another&nbsp;page.</p>
+    <p class="billboard-description-text btmM10">Please use the navigation menu, above, to find another&nbsp;page.</p>
   </main>
 `

@@ -19,7 +19,7 @@ module.exports = function(eleventyConfig) {
         </h2>
         <p class="billboard-description-text">${description}</p>
         <p class="billboard-p-text"><strong>${this.pub_lastmod(page.date)}</strong><br />
-          <span style="font-size: 75%;">
+          <span class="seventyFive">
           ${
             lastmod !== null && lastmod !== undefined
             ? /*html*/ `Last modified ${this.pub_lastmod(lastmod)}`

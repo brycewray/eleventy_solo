@@ -24,7 +24,7 @@ exports.render = function (data) {  // restructuring for easier reading/typing..
   const { first, last, previous, next } = href
 
   const pagerThing = /*html*/ `
-  <p class="ctr pokey" style="margin-top: 0.5em; margin-bottom: 0.5em;">
+  <p class="posts-pagerThingp">
     ${
       previous === null 
         ? /*html*/ `${svgFirstPageIcon}${svgFirstPageIcon}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${svgFirstPageIcon}</span>`
@@ -51,10 +51,10 @@ exports.render = function (data) {  // restructuring for easier reading/typing..
             <h2 class="posts-Title"><a href="${post.url}">${post.data.title}</a></h2>
             <p class="posts-Subtitle"><strong>${post.data.subtitle}</strong></p>
             <p class="posts-Dates">
-              <strong><time style="display: inline;" datetime="${this.pub_lastmod(post.date)}}">${this.pub_lastmod(post.date)}</time></strong>
+              <strong><time datetime="${this.pub_lastmod(post.date)}}">${this.pub_lastmod(post.date)}</time></strong>
               ${
                 post.data.lastmod
-                ? /*html*/ `<br /><span style="font-size: 85%;">Last modified <time style="display: inline;" datetime="${this.pub_lastmod(post.data.lastmod)}">${this.pub_lastmod(post.data.lastmod)}</time></span>`
+                ? /*html*/ `<br /><span class="eightyFive">Last modified <time datetime="${this.pub_lastmod(post.data.lastmod)}">${this.pub_lastmod(post.data.lastmod)}</time></span>`
                 : ``
               }
             </p>

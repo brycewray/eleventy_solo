@@ -52,7 +52,7 @@ exports.render = function (data) {
           ` 
         ).join('')}
 
-        <p style="margin-top: 2em;"><a href="/posts/"><strong>All ${length} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
+        <p class="topM2"><a href="/posts/"><strong>All ${length} posts</strong></a> <span class="pokey"><em>(listed five per page)</em></span></p>
       </div>
     </div>
   </main>

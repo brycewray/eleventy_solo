@@ -37,6 +37,30 @@
   font-size: var.$pokey;
 }
 
+.eightyFive {
+  font-size: var.$eightyFive;
+}
+
+.seventyFive {
+  font-size: var.$seventyFive;
+}
+
+.sixtyFive {
+  font-size: var.$sixtyFive;
+}
+
+.topM2 {
+  margin-top: 2em;
+}
+
+.btmM1 {
+  margin-bottom: 1em;
+}
+
+.btmM10 {
+  margin-bottom: 10em;
+}
+
 .text {
   &-nowrap, .nobrk {
     white-space: nowrap;
@@ -123,6 +147,10 @@ img.containedImage {
   margin: 0 auto;
 }
 
+.red {
+  color: var.$red;
+}
+
 .imgcCaption, .imgCaption, .lazypicturecaption {
   font-family: var.$sans-serif;
   padding: 0;
@@ -142,6 +170,13 @@ img.containedImage {
 
 .h-full {
   height: 100%;
+}
+
+.punctuationExample {
+  font-size: 1.5em;
+  font-weight: normal;
+  font-family: var.$serif;
+  text-align: center;
 }
 
 // === end, utility classes

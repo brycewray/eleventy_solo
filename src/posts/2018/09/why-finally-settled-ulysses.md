@@ -48,9 +48,9 @@ You can read oodles of reviews of Ulysses and its "beautiful" interface and all 
 
 You see, in the end, I realized one fundamental, albeit annoying, truth about myself: when it comes to typing on a screen, I am easily distracted---particularly by typography, but by textual appearance in general.
 
-I think that's because I've spent the vast majority of my adult working life writing things that had to **look** good as well as read well. Thank you, desktop publishing. Indeed, when I briefly tried writing a novel back in the '90s, I actually used Quark XPress, back then my daily driver where DTP was concerned, because I was nearly as concerned with the layout as I was the words. Bad, bad me. Fortunately, I also exported it to .doc format---the Word format of the time---or I'd now have no idea how it read except from my increasingly foggy memory of it. I can tell you I didn't get too far with it in either XPress or Word, which was probably just as well.
+I think that's because I've spent the vast majority of my adult working life writing things that had to **look** good as well as read well. Thank you, desktop publishing. Indeed, when I briefly tried writing a novel back in the ’90s, I actually used Quark XPress, back then my daily driver where DTP was concerned, because I was nearly as concerned with the layout as I was the words. Bad, bad me. Fortunately, I also exported it to .doc format---the Word format of the time---or I'd now have no idea how it read except from my increasingly foggy memory of it. I can tell you I didn't get too far with it in either XPress or Word, which was probably just as well.
 
-To be sure, picking up web design in the mid-'90s as first a hobby and then a part of my daily working life didn't help, either, especially once I discovered CSS.[^2]
+To be sure, picking up web design in the mid-’90s as first a hobby and then a part of my daily working life didn't help, either, especially once I discovered CSS.[^2]
 
 It turns out that this predilection toward how it looks also has a positive, *if* I decide to self-publish my novel as I'm increasingly inclined to do. That's because my three decades of DTP taught me how to format professionally, and---if I do say so myself---I think I'll be able to do a fairly nice cover design, too.
 

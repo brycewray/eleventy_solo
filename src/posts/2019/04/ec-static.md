@@ -51,7 +51,7 @@ These instructions are based heavily on Hugo's [Quick Start page](https://gohugo
 
 ## Steps to a static site
 
-<span style="color: #d10000;">**IMPORTANT**</span>:
+<span class="red">**IMPORTANT**</span>:
 
 - All of these instructions presume you have **full administrative rights** to the system you're using, whether it's a Mac, a Windows PC, or a Linux system. If you don't, stop now because you simply won't be able to do it (and shouldn't be trying). Period.
 - Each time you see a command to enter, make it easier on yourself and just **copy/paste** it from the&nbsp;.&nbsp;.&nbsp;.

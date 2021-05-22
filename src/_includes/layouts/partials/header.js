@@ -13,11 +13,11 @@ module.exports = function(eleventyConfig) {
           <svg class="close" viewBox="0 0 384 512" width="100" title="times"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" /></svg>
         </label>
         <ul class="nav-Menu">
-          <li><a href="/" aria-title="Home page">${svgNavIcon}</li>
-          <li><a href="/about/" aria-title="About me">About</a></li>
-          <li><a href="/posts/" aria-title="Posts">Posts</a></li>
-          <li><a href="/privacy/" aria-title="Privacy policy">Privacy</a></li>
-          <li><a href="/contact/" aria-title="Contact me">Contact</a></li>
+          <li><a href="/" aria-label="Home page">${svgNavIcon}</li>
+          <li><a href="/about/" aria-label="About me">About</a></li>
+          <li><a href="/posts/" aria-label="Posts">Posts</a></li>
+          <li><a href="/privacy/" aria-label="Privacy policy">Privacy</a></li>
+          <li><a href="/contact/" aria-label="Contact me">Contact</a></li>
         </ul>
       </nav>
     </header>

@@ -141,8 +141,6 @@ module.exports = function(eleventyConfig) {
     }
     <!-- re above, thanks to Duncan McDougall: https://www.belter.io/eleventy-sass-workflow/ -->
 
-    <style>@-moz-document url-prefix() {.lazy:-moz-loading {visibility:hidden;}}.ieOnly {display: none;}@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {.ieOnly {display: block;}.notInIE{display: none;}}</style>
-
     ${analyticsCode}
 
     <!-- https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch#best_practices -->

@@ -30,6 +30,10 @@
         {
           "key": "Content-Security-Policy",
           "value": "default-src 'none'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; style-src 'self'; img-src 'self' https://*.brycewray.com https://*.cloudinary.com data:; font-src 'self'; script-src 'self' https://*.brycewray.com https://cdn.jsdelivr.net https://static.cloudflareinsights.com"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer, strict-origin-when-cross-origin"
         }
       ]
     },

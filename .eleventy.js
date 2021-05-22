@@ -60,7 +60,7 @@ module.exports = function(eleventyConfig) {
   let pluginEmbedTweet = require('eleventy-plugin-embed-tweet')
   let tweetEmbedOptions = {
     // cacheDirectory: '',
-    // useInlineStyles: false
+    useInlineStyles: false
     // useInlineStyles: true // default
     // autoEmbed: false
   }

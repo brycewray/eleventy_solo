@@ -1,4 +1,3 @@
-const alpineJSVer = '2.8.2'
 const fs = require('fs')
 let socialImg = `https://res.cloudinary.com/brycewray-com/image/upload/`
 socialImg += `c_fill,w_1024,h_512,q_auto:eco,f_auto,x_0,z_1/`
@@ -151,9 +150,6 @@ module.exports = function(eleventyConfig) {
     <link rel="preconnect" href="https://cdn.jsdeliver.net" crossorigin />
     <link rel="dns-prefetch" href="https://res.cloudinary.com" />
     <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
-
-    <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v${alpineJSVer}/dist/alpine.min.js"></script>
-    <script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v${alpineJSVer}/dist/alpine-ie11.min.js" defer></script>
     
   </head>
     `

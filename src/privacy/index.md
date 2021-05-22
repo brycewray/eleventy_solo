@@ -4,7 +4,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2021-05-22T08:45:00-05:00
+lastmod: 2021-05-22T15:42:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -13,7 +13,7 @@ This site and its owner **do NOT** store your personal information **in any way*
 
 ### Cloudflare Browser Insights
 
-This site's traffic goes through [Cloudflare](https://cloudflare.com) and is configured to use its Browser Insights tool. Cloudflare says Browser Insights "collects the bare minimum amount of information, timing metrics, to show customers how their websites perform" and that "Cloudflare does not track individual end-users *[sic]* across our customers' Internet properties." For more details, see [this Cloudflare support article](https://support.cloudflare.com/hc/en-us/articles/360033929991-Cloudflare-Browser-Insights) and the Cloudflare blog post, "[Introducing Browser Insights](https://blog.cloudflare.com/introducing-browser-insights/)."
+This site's traffic goes through [Cloudflare](https://cloudflare.com), but is **not** configured to use its Browser Insights toolm, whose code is blocked by the site's [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
 
 ### Fathom Analytics
 
@@ -27,7 +27,7 @@ When I learned that the use of [Google Fonts](https://fonts.google.com) *served 
 
 ### Twitter
 
-I use [eleventy-plugin-embed-tweet](https://github.com/KyleMit/eleventy-plugin-embed-tweet) to embed tweets as purely static content with **no**&nbsp;cookies, and my site's [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) blocks any images (typically, one per embedded tweet) that Twitter otherwise could use to track you.
+This site uses [eleventy-plugin-embed-tweet](https://github.com/KyleMit/eleventy-plugin-embed-tweet) to embed tweets as purely static content with **no**&nbsp;cookies, and the site's [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) blocks any images (typically, one per embedded tweet) that Twitter otherwise could use to track you.
 
 ## Other considerations
 

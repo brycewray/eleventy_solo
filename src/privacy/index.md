@@ -4,7 +4,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2021-05-22T15:42:00-05:00
+lastmod: 2021-05-23T11:40:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -13,7 +13,7 @@ This site and its owner **do NOT** store your personal information **in any way*
 
 ### Cloudflare Browser Insights
 
-This site's traffic goes through [Cloudflare](https://cloudflare.com), but is **not** configured to use its Browser Insights toolm, whose code is blocked by the site's [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
+This site's traffic goes through [Cloudflare](https://cloudflare.com), but is **not** configured to use its Browser Insights tool, whose code is blocked by the site's [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).
 
 ### Fathom Analytics
 

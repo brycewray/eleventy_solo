@@ -26,10 +26,10 @@
       {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset -%}
       {
         "id": "{{ absolutePostUrl }}",
-        "title": "{{ post.data.title }} | {{ post.data.subtitle }}",
+        "title": "{{ post.data.title }}",
         "url": "{{ absolutePostUrl }}",
         "date_published": "{{ post.date | dateFromRFC2822 }}",
-        "summary": "{{ post.data.description }}",
+        "summary": "{% if post.data.subtitle %}{{ post.data.subtitle }} • {% endif %}{% if post.data.description %}{{ post.data.description }}{% else %}[No description]{% endif %}",
         "content_html": {% if post.templateContent %}{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{% else %}""{% endif %}
       }{% if not loop.last %},{% endif %}
     {% endif %}

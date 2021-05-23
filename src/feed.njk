@@ -30,11 +30,11 @@
 		{% if loop.index0 < 10 %}
 			{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
 			<entry>
-				<title>{{ post.data.title }} | {{ post.data.subtitle }} </title>
+				<title>{{ post.data.title }}</title>
 				<link href="{{ absolutePostUrl }}"/>
 				<updated>{{ post.date | dateToRfc3339 }}</updated>
 				<id>{{ absolutePostUrl }}</id>
-				<description>{% if post.data.description %}{{ post.data.description }}{% else %}""{% endif %}</description>
+				<description>{% if post.data.subtitle %}{{ post.data.subtitle }}{% else %}""{% endif %}{% if post.data.description %} • {{ post.data.description }}{% else %}"[No description]"{% endif %}</description>
 				<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 			</entry>
 		{% endif %}

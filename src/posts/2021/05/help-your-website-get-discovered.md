@@ -5,7 +5,7 @@ subtitle: "You built it, but will they come?"
 description: "A few suggestions for getting your website the attention it deserves."
 author: Bryce Wray
 date: 2021-05-14T16:30:00-05:00
-lastmod: 2021-05-20T08:50:00-05:00
+lastmod: 2021-05-23T10:40:00-05:00
 discussionId: "2021-05-help-your-website-get-discovered"
 featured_image: "magnifying-glass-4490044_4288x2848.jpg"
 featured_image_width: 4288
@@ -100,7 +100,7 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 				<link href="{{ absolutePostUrl }}"/>
 				<updated>{{ post.date | dateToRfc3339 }}</updated>
 				<id>{{ absolutePostUrl }}</id>
-				<description>{% if post.data.description %}{{ post.data.description }}{% else %}""{% endif %}</description>
+				<description>{% if post.data.subtitle %}{{ post.data.subtitle }}{% else %}""{% endif %}{% if post.data.description %} • {{ post.data.description }}{% else %}"[No description]"{% endif %}</description>
 				<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 			</entry>
 		{% endif %}
@@ -138,17 +138,19 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
   "description": "{{ metadata.description }}",
   "items": [
     {% for post in collections.posts | reverse %}
-    {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset -%}
-    {
-      "id": "{{ absolutePostUrl }}",
-      "title": "{{ post.data.title }}",
-      "url": "{{ absolutePostUrl }}",
-      "date_published": "{{ post.date | dateFromRFC2822 }}",
-      "date_modified": "{% if post.data.lastmod %}{{ post.data.lastmod | dateFromRFC2822 }}{% else %}{{ post.date | dateFromRFC2822 }}{% endif %}",
-      "summary": "{{ post.data.description }}",
-      "content_html": {% if post.templateContent %}{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{% else %}""{% endif %}
-    }{% if not loop.last %},{% endif %}
-    {% endfor %}]
+    {% if loop.index0 < 10 %}
+      {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset -%}
+      {
+        "id": "{{ absolutePostUrl }}",
+        "title": "{{ post.data.title }}",
+        "url": "{{ absolutePostUrl }}",
+        "date_published": "{{ post.date | dateFromRFC2822 }}",
+        "summary": "{% if post.data.subtitle %}{{ post.data.subtitle }} • {% endif %}{% if post.data.description %}{{ post.data.description }}{% else %}[No description]{% endif %}",
+        "content_html": {% if post.templateContent %}{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{% else %}""{% endif %}
+      }{% if not loop.last %},{% endif %}
+    {% endif %}
+    {% endfor %}
+  ]
 }
 ```
 {% endraw %}
@@ -213,8 +215,8 @@ layout: 'base.njk'
     </ul>
     <h2>Posts</h2>
     <ul>
-	  {%- for post in collections.post | reverse %}
-	    <li>{{ siteparams.siteURLforOG }}{{ post.url }} &bull; {{ post.date | dateStringISO }}</li>
+    {%- for post in collections.post | reverse %}
+	  <li>{{ siteparams.siteURLforOG }}{{ post.url }} &bull; {{ post.date | dateStringISO }}</li>
     {%- endfor %}
     </ul>
   </div>
@@ -353,9 +355,9 @@ Now, finish up the Hugo-based setup with the "For either SSG" instructions below
 
 {% raw %}
 ```html
-<!-- discover news feeds -->
-<link rel="alternate" title="News feed - RSS" type="application/rss+xml" href="https://www.example.com/index.xml" />
-<link rel="alternate" title="News feed - JSON" type="application/feed+json" href="https://www.example.com/index.json" />
+<!-- discover feeds -->
+<link rel="alternate" title="Feed - RSS" type="application/rss+xml" href="https://www.example.com/index.xml" />
+<link rel="alternate" title="Feed - JSON" type="application/feed+json" href="https://www.example.com/index.json" />
 ```
 {% endraw %}
 

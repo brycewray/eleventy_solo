@@ -33,5 +33,6 @@
         "content_html": {% if post.templateContent %}{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{% else %}""{% endif %}
       }{% if not loop.last %},{% endif %}
     {% endif %}
-    {% endfor %}]
+    {% endfor %}
+  ]
 }

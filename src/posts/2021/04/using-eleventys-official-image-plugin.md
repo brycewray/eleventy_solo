@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2021-05-19T10:21:00-05:00
+lastmod: 2021-05-24T06:45:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
@@ -64,15 +64,19 @@ First, let's install Eleventy Image in your Eleventy project.
 
 **Install the plugin package**. In your chosen OS's terminal interface, enter the command `npm i -D @11ty/eleventy-img`. This will install (`i`) the plugin package as a development dependency (`-D`).
 
-**Configure Eleventy to use Eleventy Image**. Now that the plugin package is installed, you'll tell Eleventy that it's there by going into the project's `.eleventy.js` configuration file---preferably at the top, **before** you get into the file's `module.exports` statement (about which we'll talk soon)---and adding the line:
+**Configure Eleventy to use Eleventy Image**. Now that the plugin package is installed, you'll tell Eleventy that it's there by going into the project's `.eleventy.js` configuration file---preferably at the top, **before** you get into the file's `module.exports` statement (about which we'll talk soon)---and adding:
 
 {% raw %}
 ```js
 const Image = require("@11ty/eleventy-img")
+const path = require('path')
 ```
 {% endraw %}
 
-That tells Eleventy that, when we refer to `Image` (note the capital "I") from here on, we're talking about the Eleventy Image plugin package.
+That tells Eleventy that, when we refer to `Image` (note the capital "I") from here on, we're talking about the Eleventy Image plugin package. (The `path` part has to do with an option in the upcoming code; if you already have a `require(path)` statement in your `.eleventy.js` configuration file, make sure it comes **before** the code we'll add below.)
+
+**Update, 2021-05-24**: I had neglected to mention the `path` statement before now; I apologize for the omission and any inconvenience it may have caused you. Thanks to Ruvi Lecamwasam for catching this goof and reporting it to me!
+{.yellowBox}
 
 Keep that `.eleventy.js` file open for editing, as we move to the next step.
 
@@ -96,6 +100,9 @@ module.exports = function (eleventyConfig) {
 
 {% raw %}
 ```js
+
+
+
 async function imageShortcode(src, alt) {
   let sizes = "(min-width: 1024px) 100vw, 50vw"
   let srcPrefix = `./src/assets/images/`
@@ -110,6 +117,11 @@ async function imageShortcode(src, alt) {
     formats: ['webp', 'jpeg'],
     urlPath: "/images/",
     outputDir: "./_site/images/",
+    /* =====
+    Now we'll make sure each resulting file's name will 
+    make sense to you. **This** is why you need 
+    that `path` statement mentioned earlier.
+    ===== */
     filenameFormat: function (id, src, width, format, options) {
       const extension = path.extname(src)
       const name = path.basename(src, extension)

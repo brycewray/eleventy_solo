@@ -7,12 +7,15 @@ header {
   width: 100%;
   margin-top: 0;
   background-color: var.$black;
+  @media screen and (prefers-color-scheme: dark) {
+    background-color: var.$darkblue;
+  }
   z-index: 9999;
 }
 
 .nav {
-  background-color: var.$black;
   color: var.$white;
+  background-color: var.$black;
   @media screen and (prefers-color-scheme: dark) {
     background-color: var.$darkblue;
   }

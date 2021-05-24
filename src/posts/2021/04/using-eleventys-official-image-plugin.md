@@ -100,9 +100,6 @@ module.exports = function (eleventyConfig) {
 
 {% raw %}
 ```js
-
-
-
 async function imageShortcode(src, alt) {
   let sizes = "(min-width: 1024px) 100vw, 50vw"
   let srcPrefix = `./src/assets/images/`

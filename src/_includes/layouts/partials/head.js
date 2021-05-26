@@ -91,7 +91,7 @@ module.exports = function(eleventyConfig) {
     }" />
 
 
-    <!-- discover news feeds -->
+    <!-- discover feeds -->
     <link rel="alternate" title="BryceWray.com - JSON" type="application/feed+json" href="https://www.brycewray.com/index.json" />
     <link rel="alternate" title="BryceWray.com - RSS" type="application/rss+xml" href="https://www.brycewray.com/index.xml" />
 
@@ -125,7 +125,7 @@ module.exports = function(eleventyConfig) {
 
     <!-- **** CONCLUSION, favicons **** -->
 
-    <!--<link rel="preload" href="/assets/fonts/Inter-3-18_subset_2021-03-31.woff2" crossorigin="anonymous" as="font" type="font/woff2" />-->
+    <link rel="preload" href="/assets/fonts/Inter-3-18_subset_2021-03-31.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
 
     ${ process.env.NODE_ENV === 'production' 
       ? /*html*/ `

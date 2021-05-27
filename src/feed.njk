@@ -24,19 +24,19 @@
 	<updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
 	<id>{{ metadata.url }}</id>
 	<author>
-		<name>{{ metadata.author.name }}</name>
+		<name>{{ metadata.authors.name }}</name>
 	</author>
-	{%- for post in collections.post | reverse %}
-		{% if loop.index0 < 10 %}
-			{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+	{%- for post in collections.post | reverse -%}
+		{%- if loop.index0 < 10 -%}
+			{%- set absolutePostUrl -%}{{ post.url | url | absoluteUrl(metadata.url) }}{%- endset -%}
 			<entry>
 				<title>{{ post.data.title }}</title>
 				<link href="{{ absolutePostUrl }}"/>
 				<updated>{{ post.date | dateToRfc3339 }}</updated>
 				<id>{{ absolutePostUrl }}</id>
-				<description>{% if post.data.subtitle %}{{ post.data.subtitle }}{% else %}""{% endif %}{% if post.data.description %} • {{ post.data.description }}{% else %}"[No description]"{% endif %}</description>
+				<summary>{%- if post.data.subtitle -%}{{ post.data.subtitle }}{%- else -%}""{%- endif -%}{%- if post.data.description %} • {{ post.data.description }}{%- else -%}"[No description]"{%- endif -%}</summary>
 				<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 			</entry>
-		{% endif %}
+		{%- endif -%}
 	{%- endfor %}
 </feed>

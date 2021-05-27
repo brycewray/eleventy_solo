@@ -5,7 +5,7 @@ subtitle: "You built it, but will they come?"
 description: "A few suggestions for getting your website the attention it deserves."
 author: Bryce Wray
 date: 2021-05-14T16:30:00-05:00
-lastmod: 2021-05-27T08:24:00-05:00
+lastmod: 2021-05-27T08:57:00-05:00
 discussionId: "2021-05-help-your-website-get-discovered"
 featured_image: "magnifying-glass-4490044_4288x2848.jpg"
 featured_image_width: 4288
@@ -90,7 +90,7 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 	<updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
 	<id>{{ metadata.url }}</id>
 	<author>
-		<name>{{ metadata.author.name }}</name>
+		<name>{{ metadata.authors.name }}</name>
 	</author>
 	{%- for post in collections.post | reverse %}
 		{% if loop.index0 < 10 %}
@@ -100,7 +100,7 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 				<link href="{{ absolutePostUrl }}"/>
 				<updated>{{ post.date | dateToRfc3339 }}</updated>
 				<id>{{ absolutePostUrl }}</id>
-				<description>{% if post.data.subtitle %}{{ post.data.subtitle }}{% else %}""{% endif %}{% if post.data.description %} • {{ post.data.description }}{% else %}"[No description]"{% endif %}</description>
+				<summary>{%- if post.data.subtitle -%}{{ post.data.subtitle }}{%- else -%}""{%- endif -%}{%- if post.data.description %} • {{ post.data.description }}{%- else -%}"[No description]"{%- endif -%}</summary>
 				<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 			</entry>
 		{% endif %}

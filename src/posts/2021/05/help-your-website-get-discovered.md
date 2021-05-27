@@ -5,7 +5,7 @@ subtitle: "You built it, but will they come?"
 description: "A few suggestions for getting your website the attention it deserves."
 author: Bryce Wray
 date: 2021-05-14T16:30:00-05:00
-lastmod: 2021-05-23T10:40:00-05:00
+lastmod: 2021-05-27T08:24:00-05:00
 discussionId: "2021-05-help-your-website-get-discovered"
 featured_image: "magnifying-glass-4490044_4288x2848.jpg"
 featured_image_width: 4288
@@ -137,19 +137,17 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
   "feed_url": "{{ metadata.feedUrl }}",
   "description": "{{ metadata.description }}",
   "items": [
-    {% for post in collections.posts | reverse %}
-    {% if loop.index0 < 10 %}
-      {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset -%}
+    {%- for post in collections.posts | reverse -%}
+      {%- set absolutePostUrl -%}{{ post.url | url | absoluteUrl(metadata.url) }}{%- endset %}
       {
         "id": "{{ absolutePostUrl }}",
         "title": "{{ post.data.title }}",
         "url": "{{ absolutePostUrl }}",
         "date_published": "{{ post.date | dateFromRFC2822 }}",
-        "summary": "{% if post.data.subtitle %}{{ post.data.subtitle }} • {% endif %}{% if post.data.description %}{{ post.data.description }}{% else %}[No description]{% endif %}",
-        "content_html": {% if post.templateContent %}{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{% else %}""{% endif %}
-      }{% if not loop.last %},{% endif %}
-    {% endif %}
-    {% endfor %}
+        "summary": "{% if post.data.subtitle -%}{{ post.data.subtitle }} • {% endif -%}{%- if post.data.description -%}{{ post.data.description }}{%- else -%}No description{%- endif %}",
+        "content_html": {%- if post.templateContent -%}{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{%- else -%}""{%- endif %}
+      }{%- if not loop.last -%},{%- endif %}
+    {%- endfor %}
   ]
 }
 ```

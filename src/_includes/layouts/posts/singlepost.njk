@@ -6,14 +6,14 @@ layout: layouts/_default/base.njk
 <main>
   {% include 'layouts/partials/billboard.njk' %}
   <div class="container-narrower">
+    <div class="post-line"></div>
     <article class="article">
-      <div class="post-line"></div>
       {{ content | safe }}
     </article>
   </div>
   {% if page.url != "/about/" %}
   <div class="bg-dark">
-    <h3 class="ctr wht prevNextH3"><a href="/posts">Other posts</a></h3>
+    <h3 class="ctr wht prevnextH3"><a href="/posts">Other posts</a></h3>
   {% if nextPost.url %}
     <p class="ctr">
       <strong>Next</strong>: 

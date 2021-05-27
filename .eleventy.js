@@ -6,7 +6,6 @@ const pluginRss = require("@11ty/eleventy-plugin-rss")
 const svgContents = require("eleventy-plugin-svg-contents")
 const path = require('path')
 const Image = require("@11ty/eleventy-img")
-const jsTheme = require('./src/_includes/jstheme.js')
 
 async function imageShortcode(src, alt) {
   let sizes = "(min-width: 1024px) 100vw, 50vw"
@@ -49,9 +48,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLiquidShortcode("image", imageShortcode)
   // === Liquid needed if `markdownTemplateEngine` **isn't** changed from Eleventy default
   eleventyConfig.addJavaScriptFunction("image", imageShortcode)
-
-  // theming --- based on Reuben Lillie's code (https://gitlab.com/reubenlillie/reubenlillie.com/)
-  jsTheme(eleventyConfig)
 
   eleventyConfig.addPlugin(pluginRss)
   eleventyConfig.addPlugin(svgContents)
@@ -118,12 +114,12 @@ module.exports = function(eleventyConfig) {
 
 
   // https://www.11ty.dev/docs/layouts/
-  eleventyConfig.addLayoutAlias("base", "layouts/_default/base.11ty.js")
-  eleventyConfig.addLayoutAlias("singlepost", "layouts/posts/singlepost.11ty.js")
-  eleventyConfig.addLayoutAlias("index", "layouts/_default/index.11ty.js")
-  eleventyConfig.addLayoutAlias("contact", "layouts/contact/contact.11ty.js")
-  eleventyConfig.addLayoutAlias("privacy", "layouts/privacy/privacy.11ty.js")
-  eleventyConfig.addLayoutAlias("sitemap", "layouts/sitemap/sitemap.11ty.js")
+  eleventyConfig.addLayoutAlias("base", "layouts/_default/base.njk")
+  eleventyConfig.addLayoutAlias("singlepost", "layouts/posts/singlepost.njk")
+  eleventyConfig.addLayoutAlias("index", "layouts/_default/index.njk")
+  eleventyConfig.addLayoutAlias("contact", "layouts/contact/contact.njk")
+  eleventyConfig.addLayoutAlias("privacy", "layouts/privacy/privacy.njk")
+  eleventyConfig.addLayoutAlias("sitemap", "layouts/sitemap/sitemap.njk")
 
 
   /* --- Markdown handling --- */
@@ -187,7 +183,7 @@ module.exports = function(eleventyConfig) {
     callbacks: {
       ready: function(err, bs) {
         bs.addMiddleware("*", (req, res) => {
-          const content_404 = fs.readFileSync('_site/404.html')
+          const content_404 = fs.readFileSync('_site/404.njk')
           // Add 404 http status code in request header.
           res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" })
           // Provides the 404 content without redirect.

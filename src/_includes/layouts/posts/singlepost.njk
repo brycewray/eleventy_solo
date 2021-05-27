@@ -1,0 +1,30 @@
+---
+title: singlepost.njk
+layout: layouts/_default/base.njk
+---
+
+<main>
+  {% include 'layouts/partials/billboard.njk' %}
+  <div class="container-narrower">
+    <article class="article">
+      <div class="post-line"></div>
+      {{ content | safe }}
+    </article>
+  </div>
+  {% if page.url != "/about/" %}
+  <div class="bg-dark">
+    <h3 class="ctr wht prevNextH3"><a href="/posts">Other posts</a></h3>
+  {% if nextPost.url %}
+    <p class="ctr">
+      <strong>Next</strong>: 
+      <a class="next" href={{ nextPost.url }}>{{ nextPost.data.title }}</a>
+    </p>
+  {% endif %}
+  {% if prevPost.url %}
+    <p class="ctr">
+      <strong>Previous</strong>: 
+      <a class="previous" href={{ prevPost.url }}>{{ prevPost.data.title }}</a>
+    </p>
+  {% endif %}
+  </div>
+  {% endif %}

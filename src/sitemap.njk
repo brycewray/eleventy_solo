@@ -6,7 +6,7 @@ permalink: /sitemap.xml
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {%- for post in collections.post | reverse %}
   <url>
-    <loc>{{ siteparams.siteBaseURL }}{{ post.url }}</loc>
+    <loc>{{ siteparams.siteURLforOG }}{{ post.url }}</loc>
     {% if post.data.lastmod %}
     <lastmod>{{ post.data.lastmod | dateStringISO }}</lastmod>
     {% else %}
@@ -15,11 +15,11 @@ permalink: /sitemap.xml
   </url>
   {%- endfor %}
   <url>
-    <loc>{{ siteparams.siteBaseURL }}/about</loc>
-    <lastmod>2021-01-30</lastmod>
+    <loc>{{ siteparams.siteURLforOG }}/about</loc>
+    <lastmod>2021-03-20</lastmod>
   </url>
   <url>
-    <loc>{{ siteparams.siteBaseURL }}</loc>
-    <lastmod>2021-01-30</lastmod>
+    <loc>{{ siteparams.siteURLforOG }}</loc>
+    <lastmod>2021-03-20</lastmod>
   </url>
 </urlset>

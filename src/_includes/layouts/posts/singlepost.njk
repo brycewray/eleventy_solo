@@ -5,8 +5,11 @@ layout: layouts/_default/base.njk
 
 <main>
   {% include 'layouts/partials/billboard.njk' %}
+  {%- if featured_image -%}{%- lazypicture featured_image, featured_image_alt, featured_image_width, featured_image_height -%}{%- endif -%}
+  {%- if featured_image_caption -%}
+  <p class="ctr legal">{{ featured_image_caption | safe }}</p>
+  {%- endif %}
   <div class="container-narrower">
-    <div class="post-line"></div>
     <article class="article">
       {{ content | safe }}
     </article>

@@ -5,7 +5,7 @@ subtitle: "Managing caching and FLOC"
 description: "Here’s a Cloudflare Worker for handling headers with Cloudflare Pages."
 author: Bryce Wray
 date: 2021-05-01T11:43:00-05:00
-lastmod: 2021-05-26T10:00:00-05:00
+lastmod: 2021-05-29T14:03:00-05:00
 discussionId: "2021-05-headers-up"
 featured_image: "server-room-90389_4818x3212.jpg"
 featured_image_width: 4818
@@ -55,7 +55,7 @@ My original reason for caring about all this was because I really wanted a way t
 
 In case you haven't yet heard, there's a big flap in Websitedom over Google's new tracking method, **[FLOC](https://www.howtogeek.com/724441/what-is-googles-floc-and-how-will-it-track-you-online/)** (Federated Learning of Cohorts). I am **not** a FLOC fan by any means; so, when I found a blog post called "[Opting your Website out of Google's FLOC Network](https://paramdeo.com//blog/opting-your-website-out-of-googles-floc-network)," I quickly followed its instructions and added a no-FLOC header to my existing site. At that time, the site was on [Vercel](https://vercel.com), which makes such header edits easy through use of a [`vercel.json` configuration file](https://vercel.com/docs/configuration) in the project's top level.[^moreOnFLOC]
 
-[^moreOnFLOC: In fairness, I must also note that there are [opposing views](https://seirdy.one/2021/04/16/permissions-policy-floc-misinfo.html) on the need for this.]
+[^moreOnFLOC]: In fairness, I must also note that there are [opposing views](https://seirdy.one/2021/04/16/permissions-policy-floc-misinfo.html) on the need for this.
 
 Consequently, I now had another reason to learn how to manage a Pages site's HTTP headers.
 

@@ -43,7 +43,7 @@ Here are some hosted services I've tried, and one more about which I've read goo
 
 ### [Commento](https://commento.io)
 
-{% lazypicture "Commento_scr_cap_2702x1530.png", "Screen capture of Commento web page", 2702, 1530 %}
+{% imgc "Commento_scr_cap_2702x1530.png", "Screen capture of Commento web page", 2702, 1530 %}
 
 This is the one of the group I haven't yet tried, because its hosted version doesn't allow testing with `localhost` or even a local IP address, and I didn't want to try it "live" without doing local testing.
 
@@ -62,7 +62,7 @@ This is the one of the group I haven't yet tried, because its hosted version doe
 
 ### [FastComments](https://fastcomments.com)
 
-{% lazypicture "FastComments_scr_cap_2696x1530.png", "Screen capture of FastComments web page", 2696, 1530 %}
+{% imgc "FastComments_scr_cap_2696x1530.png", "Screen capture of FastComments web page", 2696, 1530 %}
 
 #### Advantages
 - Comments can be anonymous (if you allow that); anyone who wishes to log in can do so by providing his or her email address.
@@ -83,7 +83,7 @@ This is the one of the group I haven't yet tried, because its hosted version doe
 
 ### [Hyvor Talk](https://talk.hyvor.com)
 
-{% lazypicture "Hyvor_Talk_scr_cap_2696x1528.png", "Screen capture of FastComments web page", 2696, 1528 %}
+{% imgc "Hyvor_Talk_scr_cap_2696x1528.png", "Screen capture of FastComments web page", 2696, 1528 %}
 
 #### Advantages
 - Comments can be anonymous (if you allow that); otherwise, each commenter will have to create a Hyvor account.
@@ -104,7 +104,7 @@ This is the one of the group I haven't yet tried, because its hosted version doe
 
 ### [Talkyard](https://talkyard.io)
 
-{% lazypicture "Talkyard_scr_cap_2696x1524.png", "Screen capture of Talkyard web page", 2696, 1524 %}
+{% imgc "Talkyard_scr_cap_2696x1524.png", "Screen capture of Talkyard web page", 2696, 1524 %}
 
 #### Advantages
 - Comments can be anonymous (if you allow that); anyone who wishes to log in can do so either by creating a Talkyard account or via Google, Facebook, Twitter, or GitHub.
@@ -122,7 +122,7 @@ This is the one of the group I haven't yet tried, because its hosted version doe
 
 ### [Utterances](https://utteranc.es)
 
-{% lazypicture "Utterances_scr_cap_2698x1530.png", "Screen capture of FastComments web page", 2698, 1530 %}
+{% imgc "Utterances_scr_cap_2698x1530.png", "Screen capture of FastComments web page", 2698, 1530 %}
 
 #### Advantages
 - Uses the [GitHub](https://github.com) API to provide commenting as issues on your GitHub-based site repository.

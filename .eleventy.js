@@ -195,6 +195,10 @@ module.exports = function(eleventyConfig) {
   })
 
   eleventyConfig.addShortcode(
+    "imgc",
+    require("./src/assets/utils/imgc.js")
+  )
+  eleventyConfig.addShortcode(
     "lazypicture",
     require("./src/assets/utils/lazy-picture.js")
   )

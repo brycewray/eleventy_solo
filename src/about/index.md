@@ -21,7 +21,7 @@ Eons ago, when [the web was a new thing](http://info.cern.ch/hypertext/WWW/ThePr
 
 And, yes, I had one, back on what then was called [GTE.net](https://en.wikipedia.org/wiki/GTE). In fact, I was a "Charter Subscriber" to that ISP.
 
-{% lazypicture "gte-net_HTML_1997-04-17_crop_1280x715.jpg", "HTML code from a 1997 website", 1280, 715 %}
+{% imgc "gte-net_HTML_1997-04-17_crop_1280x715.jpg", "HTML code from a 1997 website", 1280, 715 %}
 
 Yet, as that free-file-space thing gradually went away, so, too, did many personal sites---mine among them.
 

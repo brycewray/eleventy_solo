@@ -24,7 +24,7 @@ That's why I thought I would write this little piece about two other free hostin
 
 ## Venerableness &plus; velocity
 
-{% lazypicture "GHP-2020-11-24_2476x1340.png", "Screen capture of GitHub Pages section of GitHub website", 2476, 1340 %}
+{% imgc "GHP-2020-11-24_2476x1340.png", "Screen capture of GitHub Pages section of GitHub website", 2476, 1340 %}
 
 [GitHub Pages](https://pages.github.com) (GHP) first appeared in 2008. Initially requiring the [Jekyll](https://jekyllrb.com) static site generator (SSG), it now can work with just about any SSG out there---including the two I favor, [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).
 
@@ -38,7 +38,7 @@ A GHP site typically has a name like *MyGitHubName.github.io*, but you can assig
 
 ## Is DOAP dope?
 
-{% lazypicture "DOAP-2020-11-24_2476x1362.png", "Screen capture of DIgitalOcean App Platform section of DigitalOcean website", 2476, 1362 %}
+{% imgc "DOAP-2020-11-24_2476x1362.png", "Screen capture of DIgitalOcean App Platform section of DigitalOcean website", 2476, 1362 %}
 
 The second choice is a recently introduced PaaS offering that's been getting some attention: [DigitalOcean](https://digitalocean.com)'s [App Platform](https://www.digitalocean.com/products/app-platform/)---or, as I'll abbreviate it for the remainder of this article, *DOAP*. With DOAP, your original content exists on DO's infrastructure behind Cloudflare, obviously no slouch in the CDN realm.
 

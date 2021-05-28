@@ -38,11 +38,11 @@ By "easily readable," I mean:
 
 But, rather than rant aimlessly, let me show you some examples of sins against either or both of these principles of web typography. They were current as of when I originally posted this.
 
-{% lazypicture "Typography-scr-cap-2-2018-10-16_1344x200.jpg", "Thin and dim text that is hard to read", 1344, 200 %}
+{% imgc "Typography-scr-cap-2-2018-10-16_1344x200.jpg", "Thin and dim text that is hard to read", 1344, 200 %}
 
-{% lazypicture "Typography-scr-cap-3-2018-10-16_1398x252.jpg", "More dim text that is hard to read", 1398, 252 %}
+{% imgc "Typography-scr-cap-3-2018-10-16_1398x252.jpg", "More dim text that is hard to read", 1398, 252 %}
 
-{% lazypicture "Typography-scr-cap-4-2018-10-16_1398x164.jpg", "Still more dim text that is hard to read", 1398, 164 %}
+{% imgc "Typography-scr-cap-4-2018-10-16_1398x164.jpg", "Still more dim text that is hard to read", 1398, 164 %}
 
 We can do better, friends.
 

@@ -41,7 +41,7 @@ I gratefully replied:
 
 In this scenario, your website's DNS is managed in Cloudflare, where your DNS settings screen shows info like this: 
 
-{% lazypicture "screen-cap-cloudflare-DNS_edit_1040x609.png", "Cloudflare DNS settings display", 1040, 609 %}
+{% imgc "screen-cap-cloudflare-DNS_edit_1040x609.png", "Cloudflare DNS settings display", 1040, 609 %}
 
 You'll see here that there are two entries[^DNSitems] with the little orange cloud icon and the word "Proxied" under "Proxy status," each referring to an item under "Content" that ends in `.pages.dev` (the default subdomain for a Cloudflare Pages site before one assigns a custom domain to it). With these settings, every hit on the site gets *proxied*---essentially, intercepted---so Cloudflare can do things with it.
 

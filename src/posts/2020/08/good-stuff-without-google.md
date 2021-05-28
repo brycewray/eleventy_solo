@@ -60,7 +60,7 @@ What, then, to do?
   
 If all your desired Google Fonts typefaces are *static* fonts, there's a great answer: use the excellent **[google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts)**.
 
-{% lazypicture "google-webfonts-helper_2516x1134.png", "Screen capture of google-webfonts-helper as of 2020-08-09", 2516, 1134 %}
+{% imgc "google-webfonts-helper_2516x1134.png", "Screen capture of google-webfonts-helper as of 2020-08-09", 2516, 1134 %}
 
 This wonderful, totally free site not only provides the correct font files---just use the search to find the typefaces you want---but even helps customize the CSS for you to drop into your site.[^2] However, at least as of this writing, it doesn't yet provide the *variable* fonts in the Google Fonts library. What if you want those?
 
@@ -74,19 +74,19 @@ For each variable font you want from Google Fonts:
 
 1. Pick all the widths and styles you want and see what appears under **Review** on the right side of the Google Fonts interface. For example, when I was using Public Sans for this site, I picked regular, italic, bold regular, and bold italic (*400* is the default regular weight and *700* is usually the default weight for boldfacing):  
 
-{% lazypicture "Public_Sans_selected_family_1024x1248.png", "Screen capture from Google Fonts showing typeface selections", 1024, 1248 %}
+{% imgc "Public_Sans_selected_family_1024x1248.png", "Screen capture from Google Fonts showing typeface selections", 1024, 1248 %}
 
 2. Then check the result in the **Embed** view. This gives you the code you'd use *if* you were going to serve the fonts off Google Fonts which, again, you *shouldn't* do:
 
-{% lazypicture "Public_Sans_Embed_1060x1798.png", "Screen capture from Google Fonts showing code for embedding", 1060, 1798 %} 
+{% imgc "Public_Sans_Embed_1060x1798.png", "Screen capture from Google Fonts showing code for embedding", 1060, 1798 %} 
 
 3. Instead, copy the URL from the code, like this:
 
-{% lazypicture "Public_Sans_URL_to_copy_1066x630.png", "Screen capture from Google Fonts showing the URL to select", 1066, 630 %}
+{% imgc "Public_Sans_URL_to_copy_1066x630.png", "Screen capture from Google Fonts showing the URL to select", 1066, 630 %}
 
 4. Paste the copied URL into a browser window/tab.
 
-{% lazypicture "Public_Sans_URL_pasted_into_browser_1588x74.png", "Screen capture from browser showing URL pasted into URL bar", 1588, 74 %}
+{% imgc "Public_Sans_URL_pasted_into_browser_1588x74.png", "Screen capture from browser showing URL pasted into URL bar", 1588, 74 %}
 
 5. Go to that URL.  
 	The resulting page will give you CSS that looks something like the following (the actual content will depend on what is current on Google Fonts at the time):
@@ -173,7 +173,7 @@ You probably don't need the `latin-extended` character sets (you already know if
 	- Paste the URL into *another* browser window/tab and press **Enter**.
 	- Download the file to *a folder of its own* on your development machine; and I also strongly suggest putting each of the folders in an overarching folder with a name that tells you the date you did this (I'll explain why shortly). For example, here's my `Public_Sans` folder with the files I downloaded to set them up on this site, and note that the inner folder is named `VF-2020-08-09`---*i.e.*, variable fonts downloaded 2020-08-09---and each font type has its own separate subfolder (I *did* get the `latin-extended` versions, just in case):
 
-{% lazypicture "Public_Sans_folder_1502x672.png", "Screen capture of OS folder with Public Sans typeface files", 1502, 672 %}
+{% imgc "Public_Sans_folder_1502x672.png", "Screen capture of OS folder with Public Sans typeface files", 1502, 672 %}
 
 7. **Back in the browser window/tab with the CSS you got from the Google Fonts-provided URL, copy the CSS into a text file so you can refer to it later.**
 8. Now, close the browser windows/tabs; you're done with them.

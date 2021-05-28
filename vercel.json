@@ -37,7 +37,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'none'; connect-src 'self'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; style-src 'self'; img-src 'self' https://*.brycewray.com https://*.cloudinary.com data:; font-src 'self'; script-src 'self' 'sha256-f3555cf99981c5fab362d944d4f0db8ee2562496065147a97a192d776a2bf772' 'sha256-ce1874d6c8dec9232cc821bc6ea24623a9af50884614feeaeecce7b616d9ff36' https://*.brycewray.com"
+          "value": "default-src 'none'; connect-src 'self'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; style-src 'self'; img-src 'self' https://*.brycewray.com https://*.cloudinary.com data:; font-src 'self'; script-src 'self' 'sha256-f3555cf99981c5fab362d944d4f0db8ee2562496065147a97a192d776a2bf772=' 'sha256-ce1874d6c8dec9232cc821bc6ea24623a9af50884614feeaeecce7b616d9ff36=' https://*.brycewray.com"
         },
         {
           "key": "Referrer-Policy",

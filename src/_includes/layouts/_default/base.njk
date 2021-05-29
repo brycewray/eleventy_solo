@@ -1,5 +1,3 @@
-{% set lazyLoadInstance = '17-3-0' %}
-
 <!DOCTYPE html>
 <html lang="en">
   {% include 'layouts/partials/head.njk' %}
@@ -7,11 +5,5 @@
     {% include 'layouts/partials/header.njk' %}
     {{ content | safe }}
     {% include 'layouts/partials/footer.njk' %}
-    <script src="/assets/js/lazyload_{{ lazyLoadInstance}}.min.js"></script>
-    <script>
-      var lazyLoadInstance = new LazyLoad({
-        threshold: 150,
-      })
-    </script>
   </body>
 </html>

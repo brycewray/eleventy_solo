@@ -15,9 +15,9 @@ async function imageShortcode(src, alt) {
   console.log(`Generating image(s) from:  ${src}`)
   if(alt === undefined) {
     // Throw an error on missing alt (alt="" works okay)
-    throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`)
+    throw new Error(`Missing \`alt\` on responsive image from: ${src}`)
   }  
-  let metadata = await Image(src, {
+  let metadataImg = await Image(src, {
     widths: [600, 900, 1500],
     formats: ['webp', 'jpeg'],
     urlPath: "/images/",
@@ -28,9 +28,9 @@ async function imageShortcode(src, alt) {
       return `${name}-${width}w.${format}`
     }
   })  
-  let lowsrc = metadata.jpeg[0]  
+  let lowsrc = metadataImg.jpeg[0]  
   return `<picture>
-    ${Object.values(metadata).map(imageFormat => {
+    ${Object.values(metadataImg).map(imageFormat => {
       return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`
     }).join("\n")}
     <img

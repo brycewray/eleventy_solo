@@ -8,7 +8,12 @@
         <ul class="nav-Menu">
           <li><a href="/" aria-label="Home page">{{ '/src/assets/svg/svgNavIcon.svg' | svgContents | safe }}</li>
           <li><a href="/about/" aria-label="About me">About</a></li>
-          <li><a href="/posts/" aria-label="Posts">Posts</a></li>
+          {%- for post in collections.post | reverse -%}
+            {%- if loop.index0 < 1 -%}
+              <li><a href="{{ post.url }}">Latest post</a></li>
+            {%- endif -%}
+          {%- endfor -%}
+          <li><a href="/posts/" aria-label="Posts">All posts</a></li>
           <li><a href="/privacy/" aria-label="Privacy policy">Privacy</a></li>
           <li><a href="/contact/" aria-label="Contact me">Contact</a></li>
         </ul>

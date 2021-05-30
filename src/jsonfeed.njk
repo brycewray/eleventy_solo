@@ -22,16 +22,16 @@
   "description": "{{ metadata.description }}",
   "items": [
     {%- for item in collections.all | reverse -%}
-    {%- if loop.index0 < 10  -%}
-      {%- set absolutePostUrl -%}{{ item.url | url | absoluteUrl(metadata.url) }}{%- endset %}
-      {
-        "id": "{{ absolutePostUrl }}",
-        "title": "{{ item.data.title }}",
-        "url": "{{ absolutePostUrl }}",
-        "date_published": "{{ item.date | dateFromRFC2822 }}",
-        "summary": "{% if item.data.subtitle -%}{{ item.data.subtitle }} • {% endif -%}{%- if item.data.description -%}{{ item.data.description }}{%- else -%}No description{%- endif %}",
-        "content_html": {%- if item.templateContent -%}{{item.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{%- else -%}""{%- endif %}
-      }{%- if not loop.last -%},{%- endif %}
+      {%- if loop.index0 < 10  -%}
+        {%- set absolutePostUrl -%}{{ item.url | url | absoluteUrl(metadata.url) }}{%- endset %}
+        {
+          "id": "{{ absolutePostUrl }}",
+          "title": "{{ item.data.title }}",
+          "url": "{{ absolutePostUrl }}",
+          "date_published": "{{ item.date | dateFromRFC2822 }}",
+          "summary": "{% if item.data.subtitle -%}{{ item.data.subtitle }} • {% endif -%}{%- if item.data.description -%}{{ item.data.description }}{%- else -%}No description{%- endif %}",
+          "content_html": {%- if item.templateContent -%}{{ item.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{%- else -%}""{%- endif -%}
+        }{%- if not loop.last -%},{%- endif %}
       {%- endif -%}
     {%- endfor %}
   ]

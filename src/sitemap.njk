@@ -4,14 +4,14 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {%- for item in collections.all | reverse %}
+  {%- for item in collections.all | reverse -%}
   <url>
     <loc>{{ siteparams.siteURLforOG }}{{ item.url }}</loc>
-    {% if item.data.lastmod %}
+    {%- if item.data.lastmod -%}
     <lastmod>{{ item.data.lastmod | dateStringISO }}</lastmod>
-    {% else %}
+    {%- else -%}
     <lastmod>{{ item.date | dateStringISO }}</lastmod>
-    {% endif %}
+    {%- endif -%}
   </url>
-  {%- endfor %}
+  {%- endfor -%}
 </urlset>

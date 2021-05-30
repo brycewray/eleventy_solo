@@ -5,7 +5,7 @@ subtitle: "You built it, but will they come?"
 description: "A few suggestions for getting your website the attention it deserves."
 author: Bryce Wray
 date: 2021-05-14T16:30:00-05:00
-lastmod: 2021-05-30T09:00:00-05:00
+lastmod: 2021-05-30T09:26:00-05:00
 discussionId: "2021-05-help-your-website-get-discovered"
 featured_image: "magnifying-glass-4490044_4288x2848.jpg"
 featured_image_width: 4288
@@ -138,16 +138,16 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
   "description": "{{ metadata.description }}",
   "items": [
     {%- for item in collections.all | reverse -%}
-    {%- if loop.index0 < 10  -%}
-      {%- set absolutePostUrl -%}{{ item.url | url | absoluteUrl(metadata.url) }}{%- endset %}
-      {
-        "id": "{{ absolutePostUrl }}",
-        "title": "{{ item.data.title }}",
-        "url": "{{ absolutePostUrl }}",
-        "date_published": "{{ item.date | dateFromRFC2822 }}",
-        "summary": "{% if item.data.subtitle -%}{{ item.data.subtitle }} • {% endif -%}{%- if item.data.description -%}{{ item.data.description }}{%- else -%}No description{%- endif %}",
-        "content_html": {%- if item.templateContent -%}{{item.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{%- else -%}""{%- endif %}
-      }{%- if not loop.last -%},{%- endif %}
+      {%- if loop.index0 < 10  -%}
+        {%- set absolutePostUrl -%}{{ item.url | url | absoluteUrl(metadata.url) }}{%- endset %}
+        {
+          "id": "{{ absolutePostUrl }}",
+          "title": "{{ item.data.title }}",
+          "url": "{{ absolutePostUrl }}",
+          "date_published": "{{ item.date | dateFromRFC2822 }}",
+          "summary": "{% if item.data.subtitle -%}{{ item.data.subtitle }} • {% endif -%}{%- if item.data.description -%}{{ item.data.description }}{%- else -%}No description{%- endif %}",
+          "content_html": {%- if item.templateContent -%}{{ item.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{%- else -%}""{%- endif -%}
+        }{%- if not loop.last -%},{%- endif %}
       {%- endif -%}
     {%- endfor %}
   ]
@@ -165,16 +165,16 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {%- for item in collections.all | reverse %}
+  {%- for item in collections.all | reverse -%}
   <url>
     <loc>{{ siteparams.siteURLforOG }}{{ item.url }}</loc>
-    {% if item.data.lastmod %}
+    {%- if item.data.lastmod -%}
     <lastmod>{{ item.data.lastmod | dateStringISO }}</lastmod>
-    {% else %}
+    {%- else -%}
     <lastmod>{{ item.date | dateStringISO }}</lastmod>
-    {% endif %}
+    {%- endif -%}
   </url>
-  {%- endfor %}
+  {%- endfor -%}
 </urlset>
 ```
 {% endraw %}

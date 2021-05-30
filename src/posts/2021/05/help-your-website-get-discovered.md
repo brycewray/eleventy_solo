@@ -5,7 +5,7 @@ subtitle: "You built it, but will they come?"
 description: "A few suggestions for getting your website the attention it deserves."
 author: Bryce Wray
 date: 2021-05-14T16:30:00-05:00
-lastmod: 2021-05-27T08:57:00-05:00
+lastmod: 2021-05-30T09:00:00-05:00
 discussionId: "2021-05-help-your-website-get-discovered"
 featured_image: "magnifying-glass-4490044_4288x2848.jpg"
 featured_image_width: 4288
@@ -87,23 +87,23 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 	<subtitle>{{ metadata.subtitle }}</subtitle>
 	<link href="{{ metadata.feedUrl }}" rel="self"/>
 	<link href="{{ metadata.url }}"/>
-	<updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+	<updated>{{ collections.all | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
 	<id>{{ metadata.url }}</id>
 	<author>
 		<name>{{ metadata.authors.name }}</name>
 	</author>
-	{%- for post in collections.post | reverse %}
-		{% if loop.index0 < 10 %}
-			{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+	{%- for item in collections.all | reverse -%}
+		{%- if loop.index0 < 10 -%}
+			{%- set absolutePostUrl -%}{{ item.url | url | absoluteUrl(metadata.url) }}{%- endset -%}
 			<entry>
-				<title>{{ post.data.title }} | {{ post.data.subtitle }} </title>
+				<title>{{ item.data.title }}</title>
 				<link href="{{ absolutePostUrl }}"/>
-				<updated>{{ post.date | dateToRfc3339 }}</updated>
+				<updated>{{ item.date | dateToRfc3339 }}</updated>
 				<id>{{ absolutePostUrl }}</id>
-				<summary>{%- if post.data.subtitle -%}{{ post.data.subtitle }}{%- else -%}""{%- endif -%}{%- if post.data.description %} • {{ post.data.description }}{%- else -%}"[No description]"{%- endif -%}</summary>
-				<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+				<summary>{%- if item.data.subtitle -%}{{ item.data.subtitle }}{%- else -%}""{%- endif -%}{%- if item.data.description %} • {{ item.data.description }}{%- else -%}"[No description]"{%- endif -%}</summary>
+				<content type="html">{{ item.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 			</entry>
-		{% endif %}
+		{%- endif -%}
 	{%- endfor %}
 </feed>
 ```
@@ -137,16 +137,18 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
   "feed_url": "{{ metadata.feedUrl }}",
   "description": "{{ metadata.description }}",
   "items": [
-    {%- for post in collections.posts | reverse -%}
-      {%- set absolutePostUrl -%}{{ post.url | url | absoluteUrl(metadata.url) }}{%- endset %}
+    {%- for item in collections.all | reverse -%}
+    {%- if loop.index0 < 10  -%}
+      {%- set absolutePostUrl -%}{{ item.url | url | absoluteUrl(metadata.url) }}{%- endset %}
       {
         "id": "{{ absolutePostUrl }}",
-        "title": "{{ post.data.title }}",
+        "title": "{{ item.data.title }}",
         "url": "{{ absolutePostUrl }}",
-        "date_published": "{{ post.date | dateFromRFC2822 }}",
-        "summary": "{% if post.data.subtitle -%}{{ post.data.subtitle }} • {% endif -%}{%- if post.data.description -%}{{ post.data.description }}{%- else -%}No description{%- endif %}",
-        "content_html": {%- if post.templateContent -%}{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{%- else -%}""{%- endif %}
+        "date_published": "{{ item.date | dateFromRFC2822 }}",
+        "summary": "{% if item.data.subtitle -%}{{ item.data.subtitle }} • {% endif -%}{%- if item.data.description -%}{{ item.data.description }}{%- else -%}No description{%- endif %}",
+        "content_html": {%- if item.templateContent -%}{{item.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | dump | safe }}{%- else -%}""{%- endif %}
       }{%- if not loop.last -%},{%- endif %}
+      {%- endif -%}
     {%- endfor %}
   ]
 }
@@ -159,28 +161,20 @@ With those understood, here we go&nbsp;.&nbsp;.&nbsp;.
 ```twig
 ---
 permalink: /sitemap.xml
-#eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {%- for post in collections.post | reverse %}
+  {%- for item in collections.all | reverse %}
   <url>
-    <loc>{{ siteparams.siteURLforOG }}{{ post.url }}</loc>
-    {% if post.data.lastmod %}
-    <lastmod>{{ post.data.lastmod | dateStringISO }}</lastmod>
+    <loc>{{ siteparams.siteURLforOG }}{{ item.url }}</loc>
+    {% if item.data.lastmod %}
+    <lastmod>{{ item.data.lastmod | dateStringISO }}</lastmod>
     {% else %}
-    <lastmod>{{ post.date | dateStringISO }}</lastmod>
+    <lastmod>{{ item.date | dateStringISO }}</lastmod>
     {% endif %}
   </url>
   {%- endfor %}
-  <url>
-    <loc>{{ siteparams.siteURLforOG }}/about</loc>
-    <lastmod>2019-09-08</lastmod>
-  </url>
-  <url>
-    <loc>{{ siteparams.siteURLforOG }}</loc>
-    <lastmod>2019-09-08</lastmod>
-  </url>
 </urlset>
 ```
 {% endraw %}
@@ -196,7 +190,7 @@ title: "Sitemap (HTML form)"
 (The text for the page is all in the appropriate template.)
 ```
 
-6. Then, in the appropriate folder for your layouts (in my case, that's `src/_includes/layouts`), add a folder called `sitemap` and, within it, the `sitemap.njk` template which will serve as the template for your HTML sitemap (you'll have to handle the CSS classes on your own, of course, but this'll give you a start; also, the `layout` reference will vary based on what you call *your* site's [base layout](https://www.11ty.dev/docs/layout-chaining/)):
+6. Then, in the appropriate folder for your layouts (in my case, that's `src/_includes/layouts`), add a folder called `sitemap` and, within it, the `sitemap.njk` template which will serve as the template for your HTML sitemap (you'll have to handle the CSS classes on your own, of course, but this'll give you a start; also, the `layout` reference will vary based on what you call *your* site's [base layout](https://www.11ty.dev/docs/layout-chaining/), and you'll obviously want to customize those "Main pages" items at the top):
 
 {% raw %}
 ```twig

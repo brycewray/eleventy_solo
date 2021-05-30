@@ -21,21 +21,21 @@
 	<subtitle>{{ metadata.subtitle }}</subtitle>
 	<link href="{{ metadata.feedUrl }}" rel="self"/>
 	<link href="{{ metadata.url }}"/>
-	<updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+	<updated>{{ collections.all | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
 	<id>{{ metadata.url }}</id>
 	<author>
 		<name>{{ metadata.authors.name }}</name>
 	</author>
-	{%- for post in collections.post | reverse -%}
+	{%- for item in collections.all | reverse -%}
 		{%- if loop.index0 < 10 -%}
-			{%- set absolutePostUrl -%}{{ post.url | url | absoluteUrl(metadata.url) }}{%- endset -%}
+			{%- set absolutePostUrl -%}{{ item.url | url | absoluteUrl(metadata.url) }}{%- endset -%}
 			<entry>
-				<title>{{ post.data.title }}</title>
+				<title>{{ item.data.title }}</title>
 				<link href="{{ absolutePostUrl }}"/>
-				<updated>{{ post.date | dateToRfc3339 }}</updated>
+				<updated>{{ item.date | dateToRfc3339 }}</updated>
 				<id>{{ absolutePostUrl }}</id>
-				<summary>{%- if post.data.subtitle -%}{{ post.data.subtitle }}{%- else -%}""{%- endif -%}{%- if post.data.description %} • {{ post.data.description }}{%- else -%}"[No description]"{%- endif -%}</summary>
-				<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+				<summary>{%- if item.data.subtitle -%}{{ item.data.subtitle }}{%- else -%}""{%- endif -%}{%- if item.data.description %} • {{ item.data.description }}{%- else -%}"[No description]"{%- endif -%}</summary>
+				<content type="html">{{ item.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 			</entry>
 		{%- endif -%}
 	{%- endfor %}

@@ -1,25 +1,17 @@
 ---
 permalink: /sitemap.xml
-#eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {%- for post in collections.post | reverse %}
+  {%- for item in collections.all | reverse %}
   <url>
-    <loc>{{ siteparams.siteURLforOG }}{{ post.url }}</loc>
-    {% if post.data.lastmod %}
-    <lastmod>{{ post.data.lastmod | dateStringISO }}</lastmod>
+    <loc>{{ siteparams.siteURLforOG }}{{ item.url }}</loc>
+    {% if item.data.lastmod %}
+    <lastmod>{{ item.data.lastmod | dateStringISO }}</lastmod>
     {% else %}
-    <lastmod>{{ post.date | dateStringISO }}</lastmod>
+    <lastmod>{{ item.date | dateStringISO }}</lastmod>
     {% endif %}
   </url>
   {%- endfor %}
-  <url>
-    <loc>{{ siteparams.siteURLforOG }}/about</loc>
-    <lastmod>2021-03-20</lastmod>
-  </url>
-  <url>
-    <loc>{{ siteparams.siteURLforOG }}</loc>
-    <lastmod>2021-03-20</lastmod>
-  </url>
 </urlset>

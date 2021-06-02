@@ -5,7 +5,7 @@
   },
   "headers": [
     {
-      "source": "/((?!(*.svg)))",
+      "source": "/((?!css/).*)",
       "headers": [
         {
           "key": "Cache-Control",

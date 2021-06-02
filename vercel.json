@@ -5,7 +5,7 @@
   },
   "headers": [
     {
-      "source": "/(?!(assets|css|images)/(.*))",
+      "source": "/((?!(assets|css)).*)",
       "headers": [
         {
           "key": "Cache-Control",

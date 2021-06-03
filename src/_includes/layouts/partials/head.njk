@@ -2,7 +2,6 @@
 {% set fallbackImg = "typewriter-monochrome_2242164_6260x4374.jpg" %}
 {% set eleventyVersion = pkg.devDependencies['@11ty/eleventy'] | replace("^", "") %}
 {% set eleventyEnv = projEnv.environment %}
-{% set internalCSSPath = 'src/_includes/css/index.css' %}
 
   <head>
     <meta charset="utf-8">
@@ -90,8 +89,8 @@
     <link rel="preload" href="/assets/fonts/Inter-3-18_subset_2021-03-31.woff2" crossorigin="anonymous" as="font" type="font/woff2" />
     
     {% if eleventyEnv == "production" %}
-      <link rel="preload" href="/css/{{ csshash['index.css'] }}" as="style" />
-      <link rel="stylesheet" href="/css/{{ csshash['index.css'] }}" type="text/css" />
+      <link rel="preload" href="/css/{{ csshash.indexCSS }}" as="style" />
+      <link rel="stylesheet" href="/css/{{ csshash.indexCSS }}" type="text/css" />
     {% else %}
       <link rel="stylesheet" href="/css/index.css" type="text/css" />
     {% endif %}

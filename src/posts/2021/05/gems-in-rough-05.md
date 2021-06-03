@@ -5,14 +5,14 @@ subtitle: "The latest of my wide-ranging website whatchamacallits"
 description: "More notes, notions, and nitpicks about managing one’s personal website."
 author: Bryce Wray
 date: 2021-05-30T13:16:00-05:00
-#lastmod:
+lastmod: 2021-06-03T12:14:00-05:00
 discussionId: "2021-05-gems-in-rough-05"
-featured_image: "gems-1405998_5924x3884.jpg"
-featured_image_width: 5924
-featured_image_height: 3884
+featured_image: "gems-sarah-brown-cVt0u781VGo-unsplash_5521x3767.jpg"
+featured_image_width: 5521
+featured_image_height: 3767
 featured_image_alt: "Several colorful semi-precious gemstones on a black background"
 featured_image_caption: |
-  <span class="caption">Image: <a href="https://pixabay.com/users/brett_hondow-49958/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1405998">Brett Hondow</a>; <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1405998">Pixabay</a></span>
+  <span class="caption">Image: <a href="https://unsplash.com/@sweetpagesco?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sarah Brown</a>; <a href="https://unsplash.com/s/photos/gemstones?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
 ---
 
 Once more, let's venture bravely into the miscellaneous info one gathers while tinkering with, and learning about, websites built by [static site generators](https://jamstack.org/generators) (SSGs) such as [Eleventy](https://11ty.dev) and [Hugo](https://gohugo.io).
@@ -38,7 +38,9 @@ In recent months, I've issued two different posts ([one about Hugo sites](/posts
 
 [PostCSS](https://postcss.org) is an amazing product that can give "CSS super-powers" to web developers. However, it's also a house of cards, in the form of the hundreds (thousands?) of plugins it's spawned; and it's clearer by the month that many of those cards got shuffled rather nastily with last year's [update to PostCSS 8](https://evilmartians.com/chronicles/postcss-8-plugin-migration).
 
-One of the most widely used PostCSS plugins is [postcss-preset-env](https://preset-env.cssdb.org/). It includes many capabilities which could otherwise require the use of numerous other plugins, but it [remains broken in PostCSS 8](https://github.com/csstools/postcss-preset-env/issues/191). I'd been using postcss-preset-env mainly to do what one can get with two separate plugins, [autoprefixer](https://github.com/postcss/autoprefixer) and [postcss-nesting](https://github.com/csstools/postcss-nesting), so I've replaced it with those.
+One of the most widely used PostCSS plugins is [postcss-preset-env](https://preset-env.cssdb.org/). It includes many capabilities which could otherwise require the use of numerous other plugins, but it [remains broken in PostCSS 8](https://github.com/csstools/postcss-preset-env/issues/191). I'd been using postcss-preset-env mainly to do what one can get with two separate plugins, [autoprefixer](https://github.com/postcss/autoprefixer) and [postcss-nesting](https://github.com/csstools/postcss-nesting), so I've replaced it with those.[^presetStarters]
+
+[^presetStarters]: For the most part, my most recent use of postcss-preset-env was in some of my [starter sets](/posts/2021/03/beginners-luck-update).
 
 Another PostCSS 8-incompatible plugin I had to replace is [postcss-clean](https://github.com/leodido/postcss-clean) for minifying CSS output. Instead, I'm now using [postcss-csso](https://github.com/lahmatiy/postcss-csso).[^sassOnly]
 

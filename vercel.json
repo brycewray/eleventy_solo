@@ -5,16 +5,8 @@
   },
   "headers": [
     {
-      "source": "(*.html)",
+      "source": "(.*)",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0"
-        },
-        {
-          "key": "CDN-Cache-Control",
-          "value": "public, max-age=0"
-        },
         {
           "key": "Permissions-Policy",
           "value": "interest-cohort=()"

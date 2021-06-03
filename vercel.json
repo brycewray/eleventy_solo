@@ -5,7 +5,7 @@
   },
   "headers": [
     {
-      "source": "(.*)",
+      "source": "/(?!images).*",
       "headers": [
         {
           "key": "Permissions-Policy",

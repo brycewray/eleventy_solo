@@ -8,7 +8,7 @@
         <ul class="nav-Menu">
           <li><a href="/" aria-label="Home page">{{ '/src/assets/svg/svgNavIcon.svg' | svgContents | safe }}</li>
           <li class="notMobile">
-            <form method="POST" class="searchForm" action="https://www.startpage.com/sp/search" role="search" name="searchForm">
+            <form method="POST" class="searchForm" action="https://www.startpage.com/sp/search" target="_blank" role="search" name="searchForm">
               <label for="searchFormQuery" class="sr-only searchFormLabel">Search term</label>
               <input class="searchFormQuery" type="text" name="query" id="searchFormQuery" value="site:brycewray.com ">
               <button class="searchFormButton" type="submit"><strong>Search site on StartPage</strong></button>

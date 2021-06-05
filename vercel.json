@@ -29,7 +29,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'none'; connect-src 'self'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; style-src 'self'; img-src 'self' https://*.brycewray.com https://*.cloudinary.com data:; font-src 'self'; script-src 'self' https://*.brycewray.com 'sha256-zsCwUGkLoDWEZGcx285cF8GlXmPmiaLim9E4QuXCpiM='"
+          "value": "default-src 'none'; connect-src 'self'; base-uri 'self'; frame-ancestors 'self'; style-src 'self'; img-src 'self' https://*.brycewray.com https://*.cloudinary.com data:; font-src 'self'; script-src 'self' https://*.brycewray.com 'sha256-zsCwUGkLoDWEZGcx285cF8GlXmPmiaLim9E4QuXCpiM='"
         },
         {
           "key": "Referrer-Policy",

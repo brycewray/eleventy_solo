@@ -3,40 +3,21 @@
 // search form
 
 .search {
-  &Div {
-    margin: 2em auto 0 auto;
-    text-align: center;
-    font-family: var.$sans-serif;
-    line-height: 2;
+  &Form {
+    margin-top: -0.35em;
+    margin-bottom: 0;
   }
   &FormQuery {
-    font-size: var.$stdsize;
-    border-radius: 6px;
-    padding: 0.25em;
-    background: transparent;
-    border: 1px solid var.$darkblue;
-    @media screen and (prefers-color-scheme: dark) {
-      border: 1px solid var.$blueLight;
-      color: var.$white;
-    }
-    @media screen and (min-width: var.$bkpt_md) {
-      width: 30ch;
-    }
-    @media screen and (min-width: var.$bkpt_lg) {
-      width: 35ch;
-    }
+    border: 0;
+    margin-right: 0.25em;
+    // border-radius: 6px;
+    padding: 0.25em 0.5em;
+    background: white;
   }
   &FormButton {
-    border-radius: 6px;
-    margin-left: 0.5em;
-    padding: 0.5em 1em;
-    border: 1px solid var.$darkblue;
-    background: var.$darkblue;
-    color: var.$white;
-    @media screen and (prefers-color-scheme: dark) {
-      border: 1px solid var.$blueLight;
-      background: var.$blueLight;
-      color: var.$black;
-    }
+    // border-radius: 6px;
+    padding: 0.25em 0.5em;
+    border: 0;
+    background: var.$grey-2;
   }
 }

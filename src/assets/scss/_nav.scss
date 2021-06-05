@@ -59,6 +59,9 @@ header {
       display: none;
       font-weight: bold;
       padding-right: 0.75em;
+      &.notMobile {
+        display: none;
+      }
 
       &:first-child {
         padding: 0;
@@ -111,16 +114,19 @@ header {
     &-Menu {
       flex-direction: row;
       padding: 0;
-      gap: 1.5rem;
+      gap: 0.5rem;
       margin: 0.5rem 1.5rem 0 0;
 
       li {
         font-size: var.$pokey;
         display: block;
         text-transform: uppercase;
-        letter-spacing: 0.2em;
+        // letter-spacing: 0.2em;
         margin: 0.5rem 0 0.5rem 0;
         // padding: 0;
+        &.notMobile {
+          display: block;
+        }
 
         &:first-child {
           letter-spacing: normal;

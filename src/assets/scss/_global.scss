@@ -19,7 +19,7 @@ p, li {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: var.$sans-serif;
+  // font-family: var.$sans-serif;
   letter-spacing: -0.025rem;
   @media (prefers-color-scheme: dark) {
     color: var.$default-color-dark-mode;
@@ -27,11 +27,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-  font-weight: 825;
+  font-weight: 800;
 }
 
 h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-weight: 625;
+  font-weight: 600;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -138,7 +138,7 @@ ul li li li {
 }
 
 footer {
-  font-family: var.$sans-serif;
+  // font-family: var.$sans-serif;
   text-align: center;
   font-size: var.$legal;
   margin: 4rem auto 0 auto;
@@ -173,7 +173,7 @@ footer {
   // width: 90%;
   margin: 0 auto;
   &-home {
-    font-family: var.$sans-serif;
+    // font-family: var.$sans-serif;
     text-align: center;
     padding: 2rem 0;
     margin: 0 auto;
@@ -226,7 +226,7 @@ footer {
     margin-bottom: 0;
   }
   &-oldComments { // old comments from Talkyard
-    font-family: var.$sans-serif;
+    // font-family: var.$sans-serif;
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
     display: block;

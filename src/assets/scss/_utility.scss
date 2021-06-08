@@ -108,7 +108,7 @@
 }
 
 .yellowBox, .blueBox {
-  font-family: var.$sans-serif;
+  // font-family: var.$sans-serif;
   display: block;
   box-sizing: border-box;
   border: 1px solid hsl(0, 0%, 20%);
@@ -152,7 +152,7 @@ img.containedImage {
 }
 
 .imgcCaption, .imgCaption, .lazypicturecaption {
-  font-family: var.$sans-serif;
+  // font-family: var.$sans-serif;
   padding: 0;
   margin-block-start: 0.5em;
   line-height: 1.375;

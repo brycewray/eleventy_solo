@@ -19,5 +19,8 @@
     padding: 0.25em 0.5em;
     border: 0;
     background: var.$grey-2;
+    &:hover {
+      background: var.$blueLight;
+    }
   }
 }

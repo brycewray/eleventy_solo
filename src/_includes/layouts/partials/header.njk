@@ -17,7 +17,7 @@
           <li><a href="/about/" aria-label="About me">About</a></li>
           {%- for post in collections.post | reverse -%}
             {%- if loop.index0 < 1 -%}
-              <li><a href="{{ post.url }}">Latest post</a></li>
+              <li><a href="{{ post.url }}">Newest post</a></li>
             {%- endif -%}
           {%- endfor -%}
           <li><a href="/posts/" aria-label="Posts">All posts</a></li>

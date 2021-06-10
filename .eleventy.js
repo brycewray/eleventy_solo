@@ -4,7 +4,6 @@ const htmlmin = require("html-minifier")
 const ErrorOverlay = require("eleventy-plugin-error-overlay")
 const pluginRss = require("@11ty/eleventy-plugin-rss")
 const svgContents = require("eleventy-plugin-svg-contents")
-const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const path = require('path')
 const Image = require("@11ty/eleventy-img")
 
@@ -53,7 +52,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss)
   eleventyConfig.addPlugin(svgContents)
   eleventyConfig.addPlugin(ErrorOverlay)
-  eleventyConfig.addPlugin(syntaxHighlight)
 
   let pluginEmbedTweet = require('eleventy-plugin-embed-tweet')
   let tweetEmbedOptions = {
@@ -133,6 +131,7 @@ module.exports = function(eleventyConfig) {
   let markdownItFootnote = require("markdown-it-footnote")
   let markdownItAttrs = require("markdown-it-attrs")
   let markdownItBrakSpans = require("markdown-it-bracketed-spans")
+  let markdownItPrism = require("markdown-it-prism")
   let markdownItLinkAttrs = require("markdown-it-link-attributes")
   let markdownItOpts = {
     html: true,
@@ -143,6 +142,7 @@ module.exports = function(eleventyConfig) {
   markdownEngine.use(markdownItFootnote)
   markdownEngine.use(markdownItAttrs)
   markdownEngine.use(markdownItBrakSpans)
+  markdownEngine.use(markdownItPrism)
   markdownEngine.use(markdownItLinkAttrs, {
     pattern: /^https:/,
     attrs: {

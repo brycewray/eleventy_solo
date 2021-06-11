@@ -5,7 +5,7 @@ header {
   position: fixed;
   width: 100%;
   margin-top: 0;
-  background-color: var.$black;
+  background-color: var.$default-color;
   @media screen and (prefers-color-scheme: dark) {
     background-color: var.$darkblue;
   }
@@ -14,7 +14,7 @@ header {
 
 .nav {
   color: var.$white;
-  background-color: var.$black;
+  background-color: var.$default-color;
   @media screen and (prefers-color-scheme: dark) {
     background-color: var.$darkblue;
   }
@@ -44,7 +44,7 @@ header {
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
-    background-color: var.$black;
+    background-color: var.$default-color;
     @media screen and (prefers-color-scheme: dark) {
       background-color: var.$darkblue;
     }

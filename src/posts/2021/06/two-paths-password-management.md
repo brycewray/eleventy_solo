@@ -5,7 +5,7 @@ subtitle: "Ways to practice superior cybersecurity"
 description: "Some suggestions for wisely managing your passwords."
 author: Bryce Wray
 date: 2021-06-15T16:30:00-05:00
-lastmod: 2021-06-16T17:27:00-05:00
+lastmod: 2021-06-16T13:54:00-05:00
 discussionId: "2021-06-two-paths-password-management"
 featured_image: "lock-and-castle-5359174_4109x2832.jpg"
 featured_image_width: 4109
@@ -84,7 +84,7 @@ More on that in a bit.
 
 That, then, takes us to Option 2 among password management apps: the ones that *aren't* part of the KeePass project. In this case, your credentials live in a database that's on a provider's servers, not your devices; also, the database file format is specific to that provider rather than being a "universal" file format as in the KeePass project. As you add and change your credentials for various sites, the service saves these edits to your database on its servers and then syncs that database with each of your devices.
 
-This is the sector of password management apps about which you see and hear the most, because it's where the serious money is being made. This involves the likes of [1Password](https://1password.com), [Bitwarden](https://www.bitwarden.com), [LastPass](https://www.lastpass.com), [Keeper](https://www.keepersecurity.com), [NordPass](https://www.nordpass.com), and [RoboForm](https://www.roboform.com), among others.
+This is the sector of password management apps about which you see and hear the most, because it's where the serious money is being made. This involves the likes of [1Password](https://1password.com), [Bitwarden](https://www.bitwarden.com), [Keeper](https://www.keepersecurity.com), [LastPass](https://www.lastpass.com), [NordPass](https://www.nordpass.com), and [RoboForm](https://www.roboform.com), among others.
 
 {% imgc "bitwarden-com_screen-cap_2021-06-09_3164x1420.png", "Screen capture of the Bitwarden website", 3164, 1420 %}
 

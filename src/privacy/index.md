@@ -4,7 +4,7 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2021-06-16T07:55:00-05:00
+lastmod: 2021-06-16T16:01:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
@@ -27,7 +27,7 @@ The search form in the site navigation menu sends site-specific queries to [Star
 
 ### Twitter
 
-This site uses [eleventy-plugin-embed-tweet](https://github.com/KyleMit/eleventy-plugin-embed-tweet) to embed tweets as purely static content with **no**&nbsp;cookies, and the site's [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) blocks any images (typically, one per embedded tweet) that Twitter otherwise could use to track you.
+This site *quotes* tweets in the form of purely static text (with, obviously, no tracking involved), rather than embeds of any kind.
 
 ## Other considerations
 

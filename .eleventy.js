@@ -53,15 +53,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(svgContents)
   eleventyConfig.addPlugin(ErrorOverlay)
 
-  let pluginEmbedTweet = require('eleventy-plugin-embed-tweet')
-  let tweetEmbedOptions = {
-    // cacheDirectory: '',
-    useInlineStyles: false
-    // useInlineStyles: true // default
-    // autoEmbed: false
-  }
-  eleventyConfig.addPlugin(pluginEmbedTweet, tweetEmbedOptions)
-
   eleventyConfig.setQuietMode(true)
 
   eleventyConfig.addPassthroughCopy("browserconfig.xml")

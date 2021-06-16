@@ -5,7 +5,7 @@ subtitle: "Ways to practice superior cybersecurity"
 description: "Some suggestions for wisely managing your passwords."
 author: Bryce Wray
 date: 2021-06-15T16:30:00-05:00
-#lastmod:
+lastmod: 2021-06-16T17:27:00-05:00
 discussionId: "2021-06-two-paths-password-management"
 featured_image: "lock-and-castle-5359174_4109x2832.jpg"
 featured_image_width: 4109
@@ -97,7 +97,7 @@ Each involves cloud sync from the word "go"[^Enpass] (although Bitwarden [can be
 
 [^extsKP]: Some KeePass-compatible apps---notably, KeePassXC---also work with web browser extensions, but this appears to be the exception rather than the rule in that category. Besides, the more hard-core KeePass rooters tend to express about as many suspicions about the security of browser extensions as they do for that of cloud-based database syncing.
 
-Another advantage these services have over the KeePass way is in their allowing secure storage and access of other sensitive data, such as credit cards' authentication codes. (Some KeePass-compatible apps do allow this in some measure, but how they do it, and how easy they make it for you to use, varies widely from app to app.)
+Another advantage these services have over the KeePass way is in their allowing secure storage and access of other sensitive data, such as credit cards' authentication codes. (Some KeePass-compatible apps do allow this in some measure, but how they do it, and how easy they make it for you to use, will vary widely from app to app.)
 
 These services' pricing is all over the map, although there are free versions of nearly all of these---and definitely free *trials*, or at least generous money-back-guarantee periods, for all. You sign up with the service, download the appropriate app to each device, connect that app to your service account, and you're off to the races.
 

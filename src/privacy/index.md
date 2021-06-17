@@ -4,12 +4,16 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2021-06-16T16:01:00-05:00
+lastmod: 2021-06-17T09:57:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
 ## Notes about external services
+
+### DuckDuckGo
+
+The search form in the site navigation menu sends site-specific queries to [DuckDuckGo](https://duckduckgo.com), a privacy-focused search engine. See also the [DuckDuckGo privacy policy](https://duckduckgo.com/privacy).
 
 ### Fathom Analytics
 
@@ -20,10 +24,6 @@ This site uses [Fathom Analytics](https://usefathom.com), which [does not store 
 When I learned that the use of [Google Fonts](https://fonts.google.com) *served from* Google will transmit a visitor's apparently **not** anonymized IP address[^Issue1495] to Google, I quit using this product (and suggesting to others that they use it) and, instead, served from my own site any typefaces that aren't part of the so-called "[system fonts stack](/posts/2018/10/web-typography-part-2)."
 
 [^Issue1495]: For the discussion that convinced me to go this route after my initial skepticism about its necessity, see the Google Fonts GitHub issue, "[GDPR compliance](https://github.com/google/fonts/issues/1495)."
-
-### StartPage
-
-The search form in the site navigation menu sends site-specific queries to [StartPage](https://www.startpage.com), a privacy-focused search engine which provides Google search results without the Google cookies and scripts. For more information, see the [StartPage privacy policy](https://www.startpage.com/en/search/privacy-policy.html).
 
 ### Twitter
 

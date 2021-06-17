@@ -7,13 +7,6 @@
         </label>
         <ul class="nav-Menu">
           <li><a href="/" aria-label="Home page">{{ '/src/assets/svg/svgNavIcon.svg' | svgContents | safe }}</li>
-          <li class="notMobile">
-            <form method="POST" class="searchForm" action="https://duckduckgo.com" target="_blank" role="search" name="searchForm">
-              <label for="searchFormQuery" class="sr-only searchFormLabel">Search term</label>
-              <input class="searchFormQuery" type="text" name="q" id="searchFormQuery" value="site:brycewray.com ">
-              <button class="searchFormButton" type="submit"><strong>Search site on DuckDuckGo</strong></button>
-            </form>
-          </li>
           <li><a href="/about/" aria-label="About me">About</a></li>
           {%- for post in collections.post | reverse -%}
             {%- if loop.index0 < 1 -%}

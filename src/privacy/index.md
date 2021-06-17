@@ -4,16 +4,12 @@ title: "Privacy policy"
 description: "Information regarding this site and its vendors"
 author: Bryce Wray
 date: 2020-08-02T09:00:00-05:00
-lastmod: 2021-06-17T09:57:00-05:00
+lastmod: 2021-06-17T10:07:00-05:00
 ---
 
 This site and its owner **do NOT** store your personal information **in any way**. However, the site does use certain **externally hosted** services, each of which has its own privacy policies and methods of complying with applicable privacy regulations.
 
 ## Notes about external services
-
-### DuckDuckGo
-
-The search form in the site navigation menu sends site-specific queries to [DuckDuckGo](https://duckduckgo.com), a privacy-focused search engine. See also the [DuckDuckGo privacy policy](https://duckduckgo.com/privacy).
 
 ### Fathom Analytics
 

@@ -6,7 +6,7 @@ subtitle: "An “interesting” learning experience"
 description: "After experimenting for a few weeks with Gatsby and a few other trendy SSGs, I realize just how good I have it with Hugo."
 author: Bryce Wray
 date: 2019-07-14T20:45:00-05:00
-lastmod: 2021-06-24T08:30:00-05:00
+lastmod: 2021-06-16T15:31:00-05:00
 discussionId: "2019-07-why-staying-with-hugo"
 featured_image: hugo-logo_reflection_closer_3200x1800.jpg
 featured_image_width: 3200
@@ -139,19 +139,19 @@ You plan a structure. This structure has directories---folders, if you prefer---
 
 [^index]: In each case where you see `index.html` in this diagram, it could just as easily be `index.php`, or `index.asp`, or `index.js`, or whatever makes sense for the particular site's setup.
 
-```treeview
-[top level, usually “/public_html” on a server]/
-|-- index.html [site’s home page]
-|   |-- about/
-|   |   |-- index.html [site’s “About us” page]
-|   |-- contact/
-|   |   |-- index.html [site’s “Contact us” page]
-|   |-- images/
-|   |-- |-- [files and/or subdirectories]
-|   |-- downloads/
-|   |-- |-- [files and/or subdirectories]
+```markdown
+. [top level, usually "/public_html" on a server]
+└── index.html [site's home page]
+    └── about [directory]
+    |   └── index.html [site's "About us" page]
+    ├── contact [directory]
+    |   ├── index.html [site's "Contact us" page]
+    ├── images [directory]
+    |   ├── [files and/or subdirectories]
+    ├── downloads [directory]
+    |   ├── [files and/or subdirectories]
 ```
-
+    
 .&nbsp;.&nbsp;. and so on. Now, because it's an SSG, [Hugo's structure is a little different](https://gohugo.io/content-management/organization/), but the basic idea remains the same.
 
 And, silly me, I figured Gatsby would follow a convention more or less like that. After all, it had the `gatsby-source-filesystem` plugin which, when set up properly in `/gatsby-config.js`, was [supposed](https://www.gatsbyjs.org/docs/sourcing-from-the-filesystem/) (I thought) to point Gatsby to wherever I wanted it to point.[^filesystem]

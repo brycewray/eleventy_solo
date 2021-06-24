@@ -182,7 +182,8 @@ module.exports = function(eleventyConfig) {
           res.end()
         })
       }
-    }
+    },
+    snippet: false,
   })
 
   eleventyConfig.addShortcode(

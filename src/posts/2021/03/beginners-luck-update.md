@@ -7,7 +7,7 @@ description: "The inventory has grown, so here’s what I currently offer for th
 author: Bryce Wray
 date: 2021-03-25T20:25:00-05:00
 lastmod: 2021-04-22T12:57:00-05:00
-discussionId: "2020-07-chasing-100-tips-optimizing-website"
+discussionId: "2021-03-beginners-luck-update"
 featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
 featured_image_width: 4608
 featured_image_height: 3072

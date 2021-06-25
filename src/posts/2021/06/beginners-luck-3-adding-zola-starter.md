@@ -2,7 +2,7 @@
 layout: singlepost
 tags: post
 title: "Beginner’s luck #3: adding a Zola starter"
-subtitle: "And then there were five"
+subtitle: "And then there were seven"
 description: "For those interested in a (somewhat) easy take on Hugo, here’s a starter set for you."
 author: Bryce Wray
 date: 2021-06-25T16:50:00-05:00
@@ -17,7 +17,7 @@ featured_image_caption: |
 
 ---
 
-This will be an unusually short entry. I just wanted to advise that I've built my fifth [static site generator (SSG)](https://jamstack.org/generators) [starter set](/posts/2021/03/beginners-luck-update). It uses [Zola](https://getzola.org), and you can find its GitHub repository at [https://github.com/brycewray/zola_solo](https://github.com/brycewray/zola_solo). There's also a [live demo](https://zola-solo.vercel.app).
+This will be an unusually short entry. I just wanted to advise that I've built my seventh [static site generator (SSG)](https://jamstack.org/generators) [starter set](/posts/2021/03/beginners-luck-update). It uses [Zola](https://getzola.org), and you can find its GitHub repository at [https://github.com/brycewray/zola_solo](https://github.com/brycewray/zola_solo). There's also a [live demo](https://zola-solo.vercel.app).
 
 Unfamiliar with Zola? It's a [Rust](https://rust-lang.org)-based SSG that came about because its creator, [Vincent Prouillet](https://www.vincentprouillet.com/), was using the [Go](https://golang.org)-based [Hugo](https://gohugo.io). He loved the fact that Hugo was a single binary (see my article, "[Eleventy and Hugo: comparing and contrasting](/posts/2020/12/eleventy-hugo-comparing-contrasting)," for some insight into why that can be appealing) but became frustrated by the unwieldiness of Go templating. Instead, he decided to build a very Hugo-like SSG but with much simpler templating, based on his own creation: the [Tera](https://tera.netlify.app/) template engine. If you're familiar with how [Nunjucks](https://mozilla.github.io/nunjucks/) reads and works in [Eleventy](https://11ty.dev), you'll find Tera's syntax and feature set quite familiar and, therefore, comfortable.
 

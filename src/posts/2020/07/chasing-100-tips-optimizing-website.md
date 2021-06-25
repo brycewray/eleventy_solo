@@ -1,12 +1,12 @@
 ---
 layout: singlepost
 tags: post
-title: "Chasing 100: Tips for optimizing your website"
+title: "Chasing 100: tips for optimizing your website"
 subtitle: "Pointers about performance, and then some"
 description: "It takes work, but making your website better is worth it."
 author: Bryce Wray
 date: 2020-07-16T20:30:00-05:00
-lastmod: 2021-05-16T10:35:00-05:00
+lastmod: 2021-06-25T16:45:00-06:00
 discussionId: "2020-07-chasing-100-tips-optimizing-website"
 featured_image: "tsvetoslav-hristov-QW-f6s9nFIs-unsplash_6036x4020.jpg"
 featured_image_width: 6036

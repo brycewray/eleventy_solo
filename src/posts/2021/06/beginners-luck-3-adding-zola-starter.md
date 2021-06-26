@@ -3,10 +3,10 @@ layout: singlepost
 tags: post
 title: "Beginner’s luck #3: adding a Zola starter"
 subtitle: "And then there were seven"
-description: "For those interested in a (somewhat) easy take on Hugo, here’s a starter set for you."
+description: "For those interested in a (somewhat) easy take on Hugo, here’s a starter set for you."
 author: Bryce Wray
 date: 2021-06-25T16:50:00-05:00
-#lastmod: 
+lastmod: 2021-06-26T10:02:00-05:00
 discussionId: "2021-06-beginners-luck-3-adding-zola-starter"
 featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
 featured_image_width: 4608
@@ -24,3 +24,6 @@ Unfamiliar with Zola? It's a [Rust](https://rust-lang.org)-based SSG that came a
 If you want to use this starter set, be sure to check the repo README for some important details---especially if you're interested in using footnotes in your Markdown. The README also notes that I don't plan any additional development on this set for the time being. This is for the same reasons as with my Hugo starter sets, mainly that there are certain needed features or compatibilities which each respective SSG lacks, as I [complained a few days ago about Hugo](/posts/2021/06/gems-in-rough-06).
 
 All that aside, I had some nerdy fun building this starter, debugging it, and generally learning more about how Zola works. Perhaps it will similarly appeal to your own geekiness.
+
+**Update, 2021-06-26**: I've now added an **eighth** starter repo. It's [another Zola starter](https://github.com/brycewray/zola_twcss) (with a [demo version](https://zola-twcss.vercel.app) also live), but uses [Tailwind CSS](https://tailwindcss.com)---**including** the [JIT mode](https://tailwindcss.com/docs/just-in-time-mode), which Hugo **still** doesn't support---rather than Sass. Unlike the other repo that I added yesterday, this one likely will stay in active development at least for a while because of Zola's ability to work with Tailwind and JIT, although I still am perturbed by Zola's own shortcomings (notably about footnote-handling).
+{.yellowBox}

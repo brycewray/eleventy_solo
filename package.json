@@ -13,10 +13,10 @@
     "build": "NODE_ENV=production npm-run-all clean hasher prod:sass prod:postcss prod:eleventy",
     "dev:sass": "npm run devsass -- --watch",
     "dev:postcss": "npm run devpostcss --watch",
-    "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --quiet --serve",
+    "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --quiet --serve --config=eleventy.config.js",
     "prod:sass": "npm run prodsass",
     "prod:postcss": "npm run prodpostcss",
-    "prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site"
+    "prod:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy --output=./_site --config=eleventy.config.js"
   },
   "keywords": [],
   "author": "",

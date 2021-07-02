@@ -19,5 +19,4 @@ bw@brycewray.com<br />
 
 - [brycewray on GitHub](https://github.com/brycewray/)
 - [@BryceWrayTX on Twitter](https://twitter.com/BryceWrayTX/)
-- [brycewray on LinkedIn](https://linkedin.com/in/brycewray/)
 - This site’s news feed ([JSON](/index.json) or [RSS](/index.xml))

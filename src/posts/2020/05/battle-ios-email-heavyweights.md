@@ -6,7 +6,7 @@ subtitle: "AltaMail vs. Preside: Two apps for power users"
 description: "There’s no MailMate for iOS, but these try to play in the same ballpark."
 author: Bryce Wray
 date: 2020-05-14T17:45:00-05:00
-lastmod: 2020-05-16T12:15:00-05:00
+lastmod: 2021-07-03T20:49:00-05:00
 discussionId: "2020-05-battle-ios-email-heavyweights"
 featured_image: "mail-old-mailboxes-1048452_3888x2592.jpg"
 featured_image_width: 3888
@@ -192,6 +192,9 @@ Thus: if, like me, you *really* want to get a notification whenever an email hit
 Incidentally: AltaMail's notifications can be a little slow, too, unless you activate *both* of two settings called **Use push notifications (quicker)** and **Quick Notifications**---the latter of which is described in the app somewhat ominously as including "No filtering or Email Rule/SPAM checking" (meaning at the app level, not at your provider's level, of course). While these settings do, indeed, provide pretty quick notifications, they can be somewhat hoggish on a device's battery.
 
 So, in truth, neither Preside nor AltaMail has a totally clean slate on notifications when compared to the old standby, Apple Mail. However, that's true for virtually all other third-party iOS email apps unless they're running your emails through their servers (potentially a [violation](https://www.vice.com/en_us/article/pkekmb/free-email-apps-spying-on-you-edison-slice-cleanfox) of your security) which, fortunately, neither of these apps does.
+
+**Update, 2021-07-03**: For an explanation of how to get more immediate notifications from Preside, see my later post, "[Better notifications in the Preside email app](/posts/2021/07/better-notifications-preside-email-app/)."
+{.yellowBox}
 
 ## The winnah
 

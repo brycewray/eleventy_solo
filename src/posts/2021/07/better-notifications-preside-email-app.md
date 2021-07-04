@@ -6,7 +6,7 @@ subtitle: "Now hear and see this"
 description: "How to use MailMate with Preside for quick and audible email notifications on your iOS devices"
 author: Bryce Wray
 date: 2021-07-03T16:20:00-05:00
-#lastmod:
+lastmod: 2021-07-04T10:06:00-05:00
 discussionId: "2021-07-better-notifications-preside-email-app"
 featured_image: apple-iphone-in-hands-closeup-1281744_5472x3648-with-preside-icon_90pct.jpg
 featured_image_width: 5472
@@ -59,59 +59,82 @@ The [MailMate-related instructions](https://github.com/richwaters/PresideNotify#
 
 ### Assumptions
 
-- `{$User}` represents your user name on the Mac.
-- You know how to use a terminal app **and** a [command-line text editor](https://support.apple.com/guide/terminal/use-command-line-text-editors-apdb02f1133-25af-4c65-8976-159609f99817/mac) such as vim or nano. *(If not, don't proceed. These instructions aren't that hard to follow; but, if you find a command-line interface daunting, Here Be Dragons.)*
+- You understand that, in the following instructions, `{$User}` represents your user name on the Mac.
+- You know how to use a terminal app **and** a [command-line text editor](https://support.apple.com/guide/terminal/use-command-line-text-editors-apdb02f1133-25af-4c65-8976-159609f99817/mac) such as vim or nano. *(If not, don't proceed. These instructions aren't all that hard to follow but, if you find a command-line interface daunting, Here Be Dragons.)*
 - You have [Git](https://git-scm.com) installed on your Mac.
 - You have a [preside.io account](https://preside.io/PremiumFAQ.html#PresideAccounts). You'll need to enter the user ID (probably an email address) and password, so have them ready.
-- In Preside's "More &gt; Syncing &amp; notifications" settings:
-	- You have set the "Background Sync" type to "Remote (private computer)."
+- In Preside's **More** &gt; **Syncing &amp; notifications** settings:
+	- You have set the **Background Sync** type to "Remote (private computer)."
 	- You have enabled notifications, including with audio, and done so for Preside in iOS's own main Notifications settings, if necessary; if you haven't done so yet, setting it in Preside will prompt you to do it in iOS settings.
-	- You have set "Manager" in "Remote Notifications" to "Remote."
+	- You have set "Manager" in **Remote Notifications** to "Remote."
 
 Ready? Here we go.
 
 ### Steps
 
-1. On your Mac, open the Finder (I highly suggest you select "View as List").
-2. Navigate to the following location: `{$User}`/Library/Application Support/MailMate/. 
-3. If this folder doesn't already have a "Bundles" folder in it, create one.
-4. Navigate to that "Bundles" folder. \
+1. On your Mac, open the Finder. I highly suggest you select the "View as List" setting (**&#8984;**-**2**).
+
+2. Navigate to:\
+`{$User}`/Library/Application Support/MailMate/
+
+3. If this location doesn't already have a "Bundles" folder in it, create one.
+
+4. Navigate to that "Bundles" folder, so that you're now in:\
+`{$User}`/Library/Application Support/MailMate/Bundles/
+
 **Keep this Finder window open** while you perform the next steps.
-5. Open your chosen terminal app (*e.g.*, the one that comes standard with macOS). It'll typically open at the `{$User}` level but, if it doesn't, execute the necessary command(s) to get to there.
+{.indentAfterLI}
+
+5. Open your chosen terminal app. If the app doesn't open at the `{$User}` level, execute the necessary command(s) to get to there.
+
 6. In the terminal app, execute the following command, which will clone the PresideNotify repository into a "PresideNotify" folder at the top level of your `{$User}` folder:
 ```bash
 git clone https://github.com/richwaters/PresideNotify.git PresideNotify
 ```
 
-7. **Open another Finder window** (remember to keep that first one open) and navigate to `{$User}`/PresideNotify/.
-8. In that folder, you'll see an item called "Preside.mmBundle" (the MailMate bundle for PresideNotify). **Copy** it from **that** Finder window to `{$User}`/Library/Application Support/MailMate/Bundles/ in the **other** Finder window.\
+7. **Open another Finder window**---remember to keep that first one open---and navigate to:\
+`{$User}`/PresideNotify/
+
+8. In that folder, you'll see an item called "Preside.mmBundle," which is the MailMate bundle for PresideNotify. **Copy** it from **that** Finder window to `{$User}`/Library/Application Support/MailMate/Bundles/ in the **other** Finder window.
+
 Although the Finder makes "Preside.mmBundle" appear to be a special sort of file, it's actually a folder, as the following few steps will make clear.
+{.indentAfterLI}
+
 9. Back in the terminal app, execute the following command to navigate to the necessary location for the next few steps (and the quotation marks **are** required):
 ```bash
 cd "Library/Application Support/MailMate/Bundles/Preside.mmBundle/Support/bin/"
 ```
 
 10. Execute `ls` and you should see a listing of one item: a [shell script](https://en.wikipedia.org/wiki/Shell_script) file called "preside.notify.sh."
-11. Use your chosen command-line text editor to open this shell file. [Here is the original on GitHub](https://github.com/richwaters/PresideNotify/blob/master/Preside.mmBundle/Support/bin/preside_notify.sh), to which you may want to refer in the next few steps to keep the line numbering straight.\
+
+11. Use your chosen command-line text editor to open this shell file. [Here is the original on GitHub](https://github.com/richwaters/PresideNotify/blob/master/Preside.mmBundle/Support/bin/preside_notify.sh), to which you may want to refer in the next few steps to keep the line numbering straight.
+
 Because the original **doesn't** set Preside notifications to have any audio **and** doesn't tell you which of your (presumed-to-be) multiple accounts is providing a new email, we're going to fix that.
+{.indentAfterLI}
+
 12. On line 9, delete the opening `#` (which otherwise comments-out the line) so it reads as:
 ```bash
 alertSound="GHSound_ChurchBell.mp3"
 ```
 
-For a list of the available sounds you can use instead of that default one, see the [URL File Reference](https://github.com/richwaters/PresideNotify#url-reference). I personally am partial to `GHSound_Piano1.mp3`, but to each his/her own.)
+For a list of the available sounds you can use instead of that default one, see the [URL File Reference](https://github.com/richwaters/PresideNotify#url-reference). (I personally am partial to `GHSound_Piano1.mp3`, but to each his/her own.)
+{.indentAfterLI}
 
 13. Go down to line 68, which currently is:
 ```bash
 msgTxt="${alertPrefix} From: ${fromStr}, Subject: ${MM_SUBJECT}"
 ```
+
 This is the line which controls the "banner" text which you'll see on your iOS device screen when you get a notification.
+{.indentAfterLI}
 
 14. Edit the line so that it reads as follows:
 ```bash
 msgTxt="${alertPrefix} Account: ${MM_ACCOUNT} • From: ${fromStr} • Subject: ${MM_SUBJECT}"
 ```
+
 This will result in a notification message that tells you the sending account **and** separates the items nicely, since they'll appear on one text line. [You can just copy/paste that line **or**, to enter the bullet character on a Mac, hold down the **option** key (&#8997;) and press **8**.]
+{.indentAfterLI}
 
 15. Now, let's add a line that will **use** the "alert sound" in the first place. **After** line 77 (that's `--data-urlencode "ghEnableEmailActions=1" \`) but **before** line 79, add the following line:
 ```bash
@@ -119,15 +142,18 @@ This will result in a notification message that tells you the sending account **
 ```
 
 16. You're done editing this file (as we revert to the developer's original instructions), so save it with its current name however the text editor lets you do that, and then exit the text editor. **Stay in the terminal app** and in this directory, because you have one more thing to do therein.
+
 17. Execute the following line:
 ```bash
 sh preside_notify.sh --setup
 ```
 18. At the prompts, enter your preside.io account user name and password.\
 **Now you're finished in the terminal app and in both Folder windows, all of which you can close if you want**.
+
 19. If MailMate was open during all this, restart it. If it wasn't, start it now. Also, if Preside isn't already running on your iOS device, start it as well.
+
 20. First, we'll test the notification process which that MailMate bundle will handle:
-	- Select any email.
+	- In MailMate, select any email.
 	- Click **Commands** in the MailMate menu bar. You should see **Preside** among the options, thanks to that PresideNotify MailMate bundle you installed.
 	- From it, select **SendNotification**. That should send a test notification---complete with your chosen audio!---to your Preside app.[^glitch]
 
@@ -149,7 +175,7 @@ In it, we'll enable the actual notification setting for each account. In MailMat
 
 ## Caveats and conquering temptation
 
-As Mr. Waters makes clear in the original instructions, there are some things to keep in mind about this setup:
+Mr. Waters makes clear in the original instructions that there are some things to keep in mind about this setup:
 
 - As he says, "things will work better if the name of each Source in MailMate matches the 'Nickname' of the corresponding account in Preside." If you're as OCD-ish as I, you already had things set that way in the respective apps, but it's worth noting.
 - While it works fine when your Mac is fully awake, all bets may be off when the Mac is asleep.[^sleepNote] So far, it hasn't been a problem for me, but I'm running MailMate on a desktop Mac and can't claim any experience using a battery-powered Mac with this config. (Do Mac laptops "sleep harder" than desktop Macs? I honestly have no idea.)

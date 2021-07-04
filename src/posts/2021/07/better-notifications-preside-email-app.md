@@ -13,7 +13,7 @@ featured_image_width: 5472
 featured_image_height: 3648
 featured_image_alt: "Email concept: Preside app icon atop image of hands holding a smartphone"
 featured_image_caption: |
-  <span class="caption">Photo: <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1281744">Pexels</a> via <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1281744">Pixabay</a>; Preside icon from GoodHumans via <a href="https://preside.io">Preside website</a></span>
+  <span class="caption">Images: photo from <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1281744">Pexels</a> via <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1281744">Pixabay</a>; Preside icon from GoodHumans via <a href="https://preside.io">Preside website</a></span>
 
 ---
 

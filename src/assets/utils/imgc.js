@@ -19,12 +19,14 @@ module.exports = (url, alt, width, height, tmpl) => {
   if (!tmpl) tmpl == "none"
 
   switch(tmpl) {
+    /*
     case 'index':
       divClass = `h-full`
       imgClass = `object-cover object-center h-full w-full containedImage lazy`
       nscClass = `imgCover hero`
       dataSzes = `100vw`
       break
+    */
     case 'posts':
       divClass = `h-full`
       imgClass = `imgCover hero lazy`

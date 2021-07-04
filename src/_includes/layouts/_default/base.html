@@ -5,5 +5,11 @@
     {% include 'layouts/partials/header.html' %}
     {{ content | safe }}
     {% include 'layouts/partials/footer.html' %}
+    <script src="/assets/js/lazyload_17-4-0.min.js"></script>
+    <script>
+      var lazyLoadInstance = new LazyLoad({
+        threshold: 150,
+      })
+    </script>
   </body>
 </html>

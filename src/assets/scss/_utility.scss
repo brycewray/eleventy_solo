@@ -179,6 +179,13 @@ img.containedImage {
   text-align: center;
 }
 
+.indentAfterLI {
+  margin-left: 2.25em;
+  @media screen and (min-width: var.$bkpt_2xl) {
+    margin-left: 2em;
+  } 
+}
+
 /* borrowed from TWCSS */
 .sr-only {
   position: absolute;

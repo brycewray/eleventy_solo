@@ -127,13 +127,13 @@ nav {
   }
 
   nav {
-    @apply mt-0 col-start-4 col-end-7 transform-none;
+    @apply mt-0 col-start-3 col-end-7 transform-none;
     top: 15%;
     & a {
       @apply opacity-100 relative;
     }
     & ul {
-      padding-right: 10%;
+      padding-right: 5%;
       @apply text-right;
     }
     & li {

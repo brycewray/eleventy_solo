@@ -4,34 +4,64 @@ layout: base
 ---
 
 <main>
-  {% include 'layouts/partials/billboard.html' %}
-  {%- if featured_image -%}
-    {%- imgc featured_image, featured_image_alt, featured_image_width, featured_image_height -%}
-    {%- if featured_image_caption -%}
-      <p class="ctr legal sansSerif">{{ featured_image_caption | safe }}</p>
-    {%- endif -%}
-  {%- else -%}
-    <div class="post-line"></div>
-  {%- endif %}
-  <div class="container-narrower">
+  <div class="background-hero-image-div">
+    {%- if featured_image -%}
+      {%- imgc featured_image, featured_image_alt, featured_image_width, featured_image_height, "posts" -%}
+    {%- endif %}
+    <div class="background-hero-title-block-fit">
+      <div class="background-hero-title-text">
+        <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl xb:text-7xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">{{ title }}</h1>
+        <h2 class="text-center text-2xl md:text-left md:text-3xl lg:text-4xl xb:text-5xl leading-tight tracking-tight px-6 md:px-0 text-white">
+          {% if subtitle %}
+            {{ subtitle | safe }}
+          {% else %}
+            &nbsp;
+          {% endif %}
+        </h2>
+        <p class="font-sans hidden not-italic md:block md:text-2xl tracking-tight md:mt-8 mb-6 text-white">{{ description }}</p>
+        <p class="font-sans text-base text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
+          <strong class="text-lg md:text-xl 2xl:text-2xl">{{ page.date | htmlDateString }}</strong><br />
+          <span class="text-sm">
+          {% if lastmod %}
+          <span>Last modified</span> {{ lastmod | htmlDateString }}
+          {% else %}
+          &nbsp;
+          {% endif %}
+          </span>
+        </p>
+        <p class="font-sans text-center text-white text-xs mt-4 mb-0 md:mb-1 pb-1">
+        {% if featured_image_caption %}
+          {{ featured_image_caption | safe }}
+        {% else %}
+          &nbsp;
+        {% endif %}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sm:w-5/6 md:w-4/5 lg:2/3 xl:w-7/12 mt-10 mr-auto ml-auto px-6 lg:px-16">
     <article class="article">
       {{ content | safe }}
     </article>
   </div>
+
   {% if page.url != "/about/" %}
-  <div class="bg-dark">
-    <h3 class="ctr wht prevnextH3"><a href="/posts">Other posts</a></h3>
+  <div class="w-full px-8 md:px-0 bg-blue-700 align-middle mt-10 mb-10">
+    <h3 class="text-center text-3xl tracking-normal mb-2 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
   {% if nextPost.url %}
-    <p class="ctr prevnextP">
+    <p class="font-sans text-center mt-2 mb-2 text-xl lg:text-2xl text-white leading-tight tracking-tight">
       <strong>Next</strong>: 
-      <a class="next" href={{ nextPost.url }}>{{ nextPost.data.title }}</a>
+      <a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
     </p>
   {% endif %}
   {% if prevPost.url %}
-    <p class="ctr prevnextP">
+    <p class="font-sans text-center pb-4 mt-2 mb-0 text-xl lg:text-2xl text-white leading-tight tracking-tight">
       <strong>Previous</strong>: 
-      <a class="previous" href={{ prevPost.url }}>{{ prevPost.data.title }}</a>
+      <a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
     </p>
+  {% else %}
+    <p class="p-0 -mt-2 leading-none">&nbsp;</p>
   {% endif %}
   </div>
   {% endif %}

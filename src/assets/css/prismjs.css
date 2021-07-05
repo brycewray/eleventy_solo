@@ -12,7 +12,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
 code[class*="language-"],
 pre[class*="language-"] {
-  @apply text-gray-100 bg-transparent whitespace-pre text-left break-normal leading-normal;
+  @apply text-gray-100 bg-transparent text-base whitespace-pre text-left break-normal leading-normal;
   word-spacing: normal;
   word-wrap: normal;
   tab-size: 4; 

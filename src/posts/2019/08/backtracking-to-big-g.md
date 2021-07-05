@@ -6,7 +6,7 @@ subtitle: "A noble experiment ends"
 description: "I admit it: I get too much utility from the myriad of Google services to pass them up, my privacy be damned."
 author: Bryce Wray
 date: 2019-08-25T10:45:00-05:00
-lastmod: 2021-06-16T15:43:00-05:00
+lastmod: 2021-07-05T13:03:00-05:00
 discussionId: "2019-08-backtracking-to-big-g"
 featured_image: "BW_shadow_of_G_on_gray_gradient_1280x720.jpg"
 featured_image_width: 1280
@@ -101,9 +101,6 @@ I tried [DuckDuckGo](https://duckduckgo.com) for a while and found its [Bing](ht
 So my next alternative was [Startpage](https://startpage.com), formerly called Ixquick, a Netherlands-based site which pays Google for its results so you can get Google search without Google tracking. It therefore sounded like the answer, until even it turned out **in my use cases** not to be as effective; YMMV. (There have been reports over the years about its being dangerous because of incidents involving malware that somehow could result from using it, but those don't seem to be still occurring.)
 
 As I was still employing regular Google search in the Day Job, using my Google ID from work (where we make heavy use of various Google services), I could compare the results and their quality with what I'd gotten from DuckDuckGo and Startpage. Simply put, I found nothing could beat Google in this regard, especially when I really need the best and most current answers to my questions.
-
-**Note, 2021-06-05**: Since I wrote this in 2019, StartPage has improved a lot in my estimation and, as of today, this site [uses StartPage](/privacy) for the navigation menu's search form, which is based on code provided in "[How To Add Search To Your Static Site](https://dev.to/faraixyz/how-to-add-search-to-your-static-site-2idk)" by [Farai Gandiya](https://github.com/faraixyz).
-{.yellowBox}
 
 ## Reality bites
 

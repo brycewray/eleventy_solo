@@ -1,6 +1,3 @@
-.bold, strong {
-  font-weight: 625;
-}
 
 ul li li {
   list-style-type: circle;
@@ -15,12 +12,13 @@ main {
 }
 
 html, body {
-  @apply dark:bg-black overflow-y-scroll;
+  @apply dark:bg-black;
 }
 
 body {
   @apply dark:text-gray-100;
   font-feature-settings: "liga" 1;
+  font-weight: 425;
 }
 
 p, li {
@@ -60,16 +58,24 @@ a, a:focus, a:hover, a:active {
   @apply no-underline border-b border-solid border-blue-500;
 }
 
+span.caption {
+  text-shadow: none; /* keeps link borders from looking "dirty" */
+}
+
+span.caption a {
+  @apply text-blue-100 border-blue-100;
+}
+
+span.caption a:focus, span.caption a:hover, span caption a:active {
+  @apply text-gray-200 border-blue-100;
+}
+
 a {
-  @apply text-blue-500 dark:text-blue-200 dark:border-blue-200;
+  @apply text-blue-500 border-blue-500 dark:text-blue-200 dark:border-blue-200;
 }
 
 a:focus, a:hover, a:active {
-  @apply text-blue-800 border-blue-500;
-}
-
-a:hover {
-  @apply dark:text-blue-300;
+  @apply text-blue-800 dark:text-gray-400 border-blue-500 dark:border-blue-200;
 }
 
 sup a, a.previous, a.next, .footnote-return {
@@ -88,8 +94,8 @@ a.navborderless {
   @apply text-gray-700 dark:text-gray-400;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  @apply leading-tight tracking-tight;
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  @apply font-bold leading-tight tracking-tight;
 }
 
 h1, .h1 {
@@ -97,7 +103,7 @@ h1, .h1 {
   font-weight: 825;
 }
 
-h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 625;
 }
 
@@ -113,12 +119,8 @@ h4, .h4 {
   @apply text-2xl;
 }
 
-h5, .h5 {
+h5, .h5, h6, .h6 {
   @apply text-lg;
-}
-
-blockquote {
-  @apply px-6 text-gray-700 dark:text-gray-400;
 }
 
 .height-hero {
@@ -136,6 +138,45 @@ blockquote {
   @apply object-cover object-center h-full w-full;
 }
 
+.background-hero-image-div {
+  @apply relative overflow-hidden w-full bg-black;
+  /* Have to allow for mobile browsers' own "chrome"; can't go by Inspector simulations of smaller breakpoints */
+  height: 80vh;
+  max-height: 80vh;
+}
+
+
+.background-hero-title-block-fit {
+  @apply block w-full absolute bottom-0 px-4 pt-3 pb-6 bg-gradient-to-t from-black;
+}
+
+.background-hero-title-text {
+  text-shadow: 4px 4px 2px #000;
+}
+
+@media screen and (min-width: 768px) {
+  .background-hero-title-block-fit {
+    @apply px-12;
+  }
+
+  .background-hero-image-div {
+    height: 85vh;
+    max-height: 85vh;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .background-hero-title-block-fit {
+    @apply px-16;
+  }
+
+  .background-hero-image-div {
+    height: 95vh;
+    max-height: 95vh;
+  }
+}
+
+
 .text-nowrap, .text-nobrk {
   @apply whitespace-nowrap;
 }
@@ -145,15 +186,18 @@ article h1, article h2, article h3, article h4 {
 }
 
 article p, li {
-  @apply mt-6 mb-6 leading-relaxed md:text-lg 2xl:text-xl;
+  @apply text-lg mt-6 mb-6 leading-relaxed;
 }
 
-article img.containedImage, .home-colOne img.containedImage {
-  @apply min-w-full max-w-full w-full h-auto;
+article img.containedImage, .home-colOne img.containedImage, article picture img {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
   /* latter two for no-jank in Chrome and Firefox */
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .height-hero {
     height: 70vh;
     max-height: 70vh;
@@ -165,12 +209,28 @@ article img.containedImage, .home-colOne img.containedImage {
   }
 }
 
-.yellowBox {
-  @apply bg-yellow-200 border border-gray-900 border-solid mx-auto my-8 w-full p-8 dark:bg-gray-800 dark:border-gray-500;
+@media screen and (min-width: 769px) {
+  article p, li {
+    @apply text-xl leading-relaxed;
+  }
 }
 
-.yellowbox p { 
-  @apply w-full p-2 m-0;
+@media screen and (min-width: 1920px) {
+  article p, li {
+    @apply text-2xl leading-relaxed;
+  }
+}
+
+.yellowBox, .blueBox {
+  @apply border border-gray-900 border-solid mx-auto my-8 w-full p-8 dark:bg-gray-800 dark:border-gray-500;
+}
+
+.yellowBox {
+  @apply bg-yellow-100 dark:bg-gray-800;
+}
+
+.blueBox {
+  @apply text-sm bg-blue-100 dark:bg-blue-900;
 }
 
 ul, ol {
@@ -186,23 +246,33 @@ ol {
 }
 
 .twitter-tweet {
-  @apply border-2 border-black rounded-lg p-4 mt-4 mb-4 mx-auto;
+  @apply mt-4 mx-auto mb-0;
 }
 
 table.leagues {
-  @apply w-11/12 md:w-3/5 mt-4 mx-auto mb-0 border-0 border-collapse;
-}
-
-table.noborders td {
-  @apply text-gray-800 text-left align-middle py-1 pr-0 pl-2;
+  @apply w-11/12 mt-4 mx-auto mb-0 border-0 border-collapse;
 }
 
 table.leagues td.col {
   @apply w-1/2;
 }
 
+@media (min-width: 900px) {
+  table.leagues {
+    @apply w-3/5;
+  }
+  table.noborders {
+    @apply w-11/12;
+  }
+}
+
 table.noborders {
-  @apply w-full md:w-11/12 border-0 border-collapse mt-6 mx-auto mb-4;
+  @apply w-full border-0 border-collapse mt-6 mx-auto mb-4;
+}
+
+table.noborders td {
+  @apply text-gray-800 text-left align-middle py-1 pr-0 pl-2;
+  /* text-align: left !important; */
 }
 
 table.noborders td img {
@@ -228,7 +298,6 @@ table.noborders thead td {
 table.noborders td.td70 {
   width: 70%;
 }
-
 table.noborders td.td70 img {
   @apply block w-1/2 h-auto;
   max-width: 50%;
@@ -238,19 +307,11 @@ table.noborders td.td30 {
   width: 30%;
 }
 
+blockquote {
+  @apply px-6 text-gray-700 dark:text-gray-400;
+}
+
 /* start, footnotes */
-
-/*
-.footnotes {
-  @apply font-sans;
-}
-*/
-
-.footnote-sim {
-  @apply text-xs text-blue-500 dark:text-blue-200;
-}
-
-.footnotes
 
 .footnote-ref {
   font-size: 0.65em;
@@ -273,7 +334,7 @@ table.noborders td.td30 {
 }
 
 .footnote-item pre, .footnote-item code {
-  @apply text-sm;
+  @apply text-xs;
 }
 
 /* == end, footnotes */
@@ -288,12 +349,20 @@ hr {
 
 /*
 footer {
-  @apply font-sans;
+  @apply bg-gradient-to-t from-transparent dark:from-blue-700;
 }
 */
 
 .lazypicturecaption {
   @apply text-sm p-0 mt-2 leading-snug text-center;
+}
+
+.YTembed { /* container for iframe */
+  @apply relative pt-8 h-0 overflow-hidden;
+  padding-bottom: 56.25%;
+  & iframe, & object, & embed {
+    @apply absolute top-0 left-0 w-full h-full;
+  }
 }
 
 .home-colOne p {
@@ -304,67 +373,10 @@ footer {
   @apply my-4;
 }
 
-
-/* START == for old comments from TalkYard */
-
-.container-oldComments {
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
-  display: block;
-  margin: 2rem auto 0 auto;
-  padding: 1rem 0;
+.indentAfterLI {
+  @apply ml-8;
 }
 
-.container-oldComments h3 {
-  margin: 0;
-  text-align: center;
-  font-size: 1.75rem;
-  letter-spacing: -0.025rem;
-}
-
-.container-oldComments p.commentDisclaimer {
-  font-size: 0.75rem;
-  text-align: center;
-}
-
-.container-oldComments .commentName {
-  font-size: 0.75rem;
-  margin-top: 1rem;
-  margin-bottom: 0;
-}
-
-.container-oldComments .commentDate {
-  font-size: 0.85em;
-}
-
-.container-oldComments p.comment {
-  margin-top: 0;
-  margin-bottom: 0;
-  letter-spacing: normal;
-  font-size: 0.75rem;
-  line-height: 1.5;
-}
-
-.container-oldComments pre {
-  font-size: 0.75rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  .container-oldComments {
-    border-top: 1px solid #999;
-    border-bottom: 1px solid #999;
-  }
-}
-
-/* END ==== for old comments from TalkYard */
-
-
-/* START == for comments from FastComments */
-.container-comments {
-  @apply my-0 mx-auto text-sm w-full;
-}
-
-/* END ==== for comments from FastComments */
 
 /* from vanilla-lazyload */
 .lazy {

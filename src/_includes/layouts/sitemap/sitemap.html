@@ -10,14 +10,14 @@ eleventyExcludeFromCollections: true
       <div class="post-line"></div>
       <h2 class="text-2xl my-6">Main pages</h2>
       <ul>
-        <li class="text-sm my-4"><a href="{{ data.siteparams.siteURLforOG }}/">Home page</a></li>
-        <li class="text-sm my-4"><a href="{{ data.siteparams.siteURLforOG }}/about/">About me</a></li>
-        <li class="text-sm my-4"><a href="{{ data.siteparams.siteURLforOG }}/privacy/">Site&rsquo;s privacy policy</a></li>
-        <li class="text-sm my-4"><a href="{{ data.siteparams.siteURLforOG }}/contact/">How to contact me</a></li>
+        <li class="text-sm my-4"><a href="{{ siteparams.siteURLforOG }}/">Home page</a></li>
+        <li class="text-sm my-4"><a href="{{ siteparams.siteURLforOG }}/about/">About me</a></li>
+        <li class="text-sm my-4"><a href="{{ siteparams.siteURLforOG }}/privacy/">Site&rsquo;s privacy policy</a></li>
+        <li class="text-sm my-4"><a href="{{ siteparams.siteURLforOG }}/contact/">How to contact me</a></li>
       </ul>
       <h2 class="text-2xl my-6">Posts</h2>
       <ul>
-        <li class="text-sm my-4"><a href="{{ data.siteparams.siteURLforOG }}/posts/"><strong>Complete list</strong></a> <em>(first page of paginated list; five posts per page)</em></li>
+        <li class="text-sm my-4"><a href="{{ siteparams.siteURLforOG }}/posts/"><strong>Complete list</strong></a> <em>(first page of paginated list; five posts per page)</em></li>
         {% for post in collections.post | reverse %}
           <li class="text-sm my-4"><a href="{{ siteparams.siteURLforOG }}{{ post.url }}"><strong>{{ post.data.title | safe }}</strong></a>&nbsp;&bull;&nbsp;{{ post.date | htmlDateString }}<br />
           <strong>{{ post.data.subtitle | safe }}</strong><br />

@@ -308,7 +308,7 @@ table.noborders td.td30 {
 }
 
 blockquote {
-  @apply px-6 text-gray-700 dark:text-gray-400;
+  @apply px-6 text-gray-700 dark:text-gray-400 border-l-4 border-gray-300 dark:border-gray-500;
 }
 
 /* start, footnotes */
@@ -353,7 +353,7 @@ footer {
 }
 */
 
-.lazypicturecaption {
+.lazypicturecaption, .imgcCaption {
   @apply text-sm p-0 mt-2 leading-snug text-center;
 }
 

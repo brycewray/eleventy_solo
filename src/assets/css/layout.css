@@ -71,7 +71,7 @@ span.caption a:focus, span.caption a:hover, span caption a:active {
 }
 
 a {
-  @apply text-blue-500 border-blue-500 dark:text-blue-200 dark:border-blue-200;
+  @apply text-blue-500 border-blue-500 dark:text-blue-100 dark:border-blue-100;
 }
 
 a:focus, a:hover, a:active {
@@ -226,7 +226,7 @@ article img.containedImage, .home-colOne img.containedImage, article picture img
 }
 
 .yellowBox {
-  @apply bg-yellow-100 dark:bg-gray-800;
+  @apply bg-yellow-100 dark:bg-yellow-900;
 }
 
 .blueBox {

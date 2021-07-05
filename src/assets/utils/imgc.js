@@ -43,7 +43,7 @@ module.exports = (url, alt, width, height, tmpl) => {
   var separator = ', '
 
   var stringtoRet = ``
-  stringtoRet = `<div class="${divClass}" style="background-image: url(${cloudiBase + LQIPpholder + url}); background-position: center; background-repeat: no-repeat; background-size: cover;">
+  stringtoRet = `<div class="${divClass} bg-center bg-no-repeat bg-cover" data-bg="url(${cloudiBase + LQIPpholder + url})">
     <img class="${imgClass}" aspect-ratio="${width} / ${height}" data-src="${cloudiBase + xFmPart1 + "600" + xFmPart2 + url}" data-srcset="`
     respSizes.forEach(size => {
       if (size <= width) {

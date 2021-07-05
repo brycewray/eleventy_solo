@@ -50,7 +50,7 @@ In the second week after I issued that post, I got curious and began researching
 
 ## Get your \*\*\*\*ing shoebox
 
-[Yes, I know: [the correct line from *Goodfellas*](http://www.moviequotedb.com/movies/goodfellas/quote_9863.html) is "Now go home and get your \*\*\*\*ing *shinebox*." But, hey, work with me, okay?]
+[Yes, I know: [the correct line from *Goodfellas*](https://www.moviequotedb.com/movies/goodfellas/quote_9863.html) is "Now go home and get your \*\*\*\*ing *shinebox*." But, hey, work with me, okay?]
 
 Mind you, my post had differentiated between apps like Ulysses---sometimes called *shoebox* or *central-library* apps \(like Apple's own Notes and Photos apps, among many others\)---and *document-based* apps like iA Writer.[^centralLib] In a few words&nbsp;.&nbsp;.&nbsp;.
 

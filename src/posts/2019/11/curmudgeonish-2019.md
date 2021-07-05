@@ -48,7 +48,7 @@ And to them, I say: "Tough nougies."
 
 ## "Breaking news" is broken
 
-There's a saying: "When everything is an emergency, nothing is an emergency." To that, I would add: "When everything is 'breaking news,' nothing is 'breaking news.’"
+There's a saying: "When everything is an emergency, nothing is an emergency." To that, I would add: "When everything is 'breaking news,' nothing is ’breaking news.’"
 
 For those of you not at the advanced age bracket from which network and cable newscasts still get a big percentage of viewers, be aware their producers now try desperately to retain (or regain?) relevance by beginning *every news program* with words like "Breaking news as we come on the air tonight"---even when the "breaking" story is one about which those of us with smartphones saw an alert *hours ago*.
 

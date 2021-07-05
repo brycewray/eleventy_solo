@@ -1,11 +1,11 @@
 ---
 layout: singlepost
 title: "Tailwind-to-head with Eleventy"
-subtitle: "Using <code>package.json</code> as an asset pipeline"
+subtitle: "Using package.json as an asset pipeline"
 description: "This follow-up to an earlier article about Hugo Pipes shows how to get internal CSS in an Eleventy site—and with no build tools required."
 author: Bryce Wray
 date: 2021-03-20T17:07:00-05:00
-lastmod: 2021-06-02T16:40:00-05:00
+lastmod: 2021-07-04T21:56:00-05:00
 #draft: false
 discussionId: "2021-03-tailwind-head-eleventy"
 featured_image: "code-html-head-5421210_5103x3403.jpg"

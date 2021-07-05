@@ -3,10 +3,10 @@ layout: singlepost
 tags: post
 title: "Better notifications in the Preside email app"
 subtitle: "Now hear and see this"
-description: "How to use MailMate with Preside for quick and audible email notifications on your iOS devices"
+description: "How to use MailMate with Preside for quick and audible email notifications on your iOS devices."
 author: Bryce Wray
 date: 2021-07-03T16:20:00-05:00
-lastmod: 2021-07-04T10:06:00-05:00
+lastmod: 2021-07-04T22:34:00-05:00
 discussionId: "2021-07-better-notifications-preside-email-app"
 featured_image: apple-iphone-in-hands-closeup-1281744_5472x3648-with-preside-icon_90pct.jpg
 featured_image_width: 5472

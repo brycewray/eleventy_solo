@@ -377,6 +377,9 @@ footer {
   @apply ml-8;
 }
 
+.punctuationExample {
+  @apply font-serif text-2xl text-center;
+}
 
 /* from vanilla-lazyload */
 .lazy {

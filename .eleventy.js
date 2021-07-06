@@ -105,12 +105,12 @@ module.exports = function(eleventyConfig) {
 
 
   // https://www.11ty.dev/docs/layouts/
-  eleventyConfig.addLayoutAlias("base", "layouts/_default/base.html")
-  eleventyConfig.addLayoutAlias("singlepost", "layouts/posts/singlepost.html")
-  eleventyConfig.addLayoutAlias("index", "layouts/_default/index.html")
-  eleventyConfig.addLayoutAlias("contact", "layouts/contact/contact.html")
-  eleventyConfig.addLayoutAlias("privacy", "layouts/privacy/privacy.html")
-  eleventyConfig.addLayoutAlias("sitemap", "layouts/sitemap/sitemap.html")
+  eleventyConfig.addLayoutAlias("base", "layouts/_default/base.njk")
+  eleventyConfig.addLayoutAlias("singlepost", "layouts/posts/singlepost.njk")
+  eleventyConfig.addLayoutAlias("index", "layouts/_default/index.njk")
+  eleventyConfig.addLayoutAlias("contact", "layouts/contact/contact.njk")
+  eleventyConfig.addLayoutAlias("privacy", "layouts/privacy/privacy.njk")
+  eleventyConfig.addLayoutAlias("sitemap", "layouts/sitemap/sitemap.njk")
 
 
   /* --- Markdown handling --- */

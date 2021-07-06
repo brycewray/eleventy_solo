@@ -1,0 +1,33 @@
+<header class="h-12 bg-black dark:bg-blue-700 w-full fixed p-0 mt-0 z-50">
+  <p class="site-logo-holder ml-4 md:ml-8 lg:ml-12 xl:ml-16"><a href="/" aria-label="This site's “BW” logo">{{ '/src/assets/svg/svgNavIcon.svg' | svgContents | safe }}</a></span></p>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+  <label for="nav-toggle" class="nav__icon" aria-hidden="true">
+  Expand the menu
+      <span class="nav__icon-line"></span>
+      <span class="nav__icon-line"></span>
+      <span class="nav__icon-line"></span>
+  </label>
+  <nav role="navigation" class="nav">
+    <ul class="nav__items">
+      <li class="nav__item">
+        <a href="/about/" title="About" aria-label="About me">About</a>
+      </li>
+      {%- for post in collections.post | reverse -%}
+        {%- if loop.index0 < 1 -%}
+          <li class="nav__item">
+            <a href="{{ post.url }}" title="Newest post" aria-label="Newest post">Newest post</a>
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+      <li class="nav__item">
+        <a href="/posts/" title="All posts" aria-label="All posts">All posts</a>
+      </li>
+      <li class="nav__item">
+        <a href="/privacy/" title="Privacy" aria-label="Privacy policy">Privacy</a>
+      </li>
+      <li class="nav__item">
+        <a href="/contact/" title="Contact" aria-label="Contact me">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>

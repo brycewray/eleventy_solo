@@ -1,0 +1,8 @@
+<div class="container h-auto w-full min-w-full relative overflow-hidden pt-12 px-4 md:px-8 2xl:px-12">
+  <h1 class="text-center text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl tracking-tight leading-tight md:mt-6 md:mb-12 2xl:mt-16 mb-0">{{ title }}</h1>
+  {% if subtitle %}<h2 class="text-center text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl leading-tight tracking-tight">{{ subtitle }}</h2>{% endif %}
+  {% if description %}<p class="text-center md:block md:text-2xl 2xl:text-3xl tracking-tight mt-6 md:mt-12 mb-0 md:mb-6 2xl:mb-12">{{ description }}</p>{% endif %}
+  <p class="text-center text-base lg:text-lg 2xl:text-xl px-4 md:px-0 mt-8 mb-0 md:mt-0">
+    <strong>{{ page.date | htmlDateString }}</strong>{% if lastmod %}<br /><span class="text-sm">Last modified {{ lastmod | htmlDateString }}</span>{% endif %}
+  </p>
+</div>

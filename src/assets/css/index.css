@@ -1,10 +1,15 @@
 /*! purgecss start ignore */
 @import 'fonts.css';
-@import 'intervf.css';
 @import 'prismjs.css';
 @import 'tailwindcss/base';
-@import 'layout.css';
+@import 'global.css';
+@import 'utility.css';
+@import 'tables.css';
+@import 'footnotes.css';
 @import 'nav.css';
+@import 'lazyload.css';
+@import 'intervf.css';
+/* @import 'ffoxobliq.css'; */
 @import 'tailwindcss/components';
 /*! purgecss end ignore */
 @import 'tailwindcss/utilities';

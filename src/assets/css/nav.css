@@ -118,6 +118,14 @@ nav {
   }
 }
 
+#nav-toggle:checked + #navMenu {
+  @apply block;
+}
+
+a.navborderless {
+  @apply border-b-0;
+}
+
 /* === Beginning of primary settings for larger screens === */
 @media screen and (min-width: 900px) {
   .nav-toggle-label {

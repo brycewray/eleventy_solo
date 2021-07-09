@@ -1,0 +1,116 @@
+
+main {
+  @apply pt-12; /* needed in Eleventy repo; handled elsewhere in Hugo repo */
+}
+
+html, body {
+  @apply dark:bg-black;
+}
+
+body {
+  @apply dark:text-gray-100;
+  font-feature-settings: "liga" 1;
+  font-weight: 425;
+}
+
+p, li {
+  /* for handling Markdown-created <p> and <li> */
+  @apply mb-3 text-lg;
+}
+
+ul li li {
+  list-style-type: circle;
+}
+
+ul li li li {
+  list-style-type: square;
+}
+
+a {
+  @apply no-underline border-b text-blue-700 border-blue-600 dark:text-blue-100 dark:border-blue-100;
+  &:focus, &:hover, &:active {
+    @apply text-blue-800 dark:text-blue-300 border-blue-500 dark:border-blue-200;
+  }
+}
+
+sup a, a.previous, a.next, .footnote-return {
+  @apply border-b-0;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  @apply font-bold leading-tight tracking-tight;
+}
+
+h1, .h1 {
+  @apply text-4xl mb-4;
+  font-weight: 825;
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-weight: 625;
+}
+
+h2, .h2 {
+  @apply text-4xl;
+}
+
+h3, .h3 {
+  @apply text-3xl;
+}
+
+h4, .h4 {
+  @apply text-2xl;
+}
+
+h5, .h5, h6, .h6 {
+  @apply text-lg;
+}
+
+article h1, article h2, article h3, article h4 {
+  @apply tracking-tight mt-8 mb-6;
+}
+
+article p, li {
+  @apply text-lg mt-6 mb-6 leading-relaxed;
+}
+
+article img.containedImage, .home-colOne img.containedImage, article picture img {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  /* latter two for no-jank in Chrome and Firefox */
+}
+
+@media screen and (min-width: 769px) {
+  article p, li {
+    @apply text-xl leading-relaxed;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  article p, li {
+    @apply text-2xl leading-relaxed;
+  }
+}
+
+ul, ol {
+  @apply pl-8;
+}
+
+ul {
+  @apply list-disc;
+}
+
+ol {
+  @apply list-decimal;
+}
+
+blockquote {
+  @apply px-6 text-gray-700 dark:text-gray-300 border-l-4 border-gray-300 dark:border-gray-400;
+}
+
+hr {
+  @apply border-solid border-gray-900 dark:border-gray-100;
+}
+

@@ -1,0 +1,27 @@
+/* start, footnotes */
+
+.footnote-ref {
+  font-size: 0.65em;
+}
+
+.footnote-ref a {
+  @apply border-transparent;
+}
+
+.footnotes-sep {
+  @apply mb-3;
+}
+
+.footnotes-list {
+  @apply list-decimal pl-6;
+}
+
+.footnote-item, .footnote-item p {
+  @apply text-sm tracking-normal;
+}
+
+.footnote-item pre, .footnote-item code {
+  @apply text-xs;
+}
+
+/* == end, footnotes */

@@ -4,11 +4,11 @@ layout: base
 ---
 
 <main>
-  <div class="background-hero-image-div">
+  <div class="relative overflow-hidden w-full bg-black h-[80vh] max-h-[80vh] md:h-[85vh] md:max-h-[85vh] lg:h-[95vh] lg:max-h-[95vh]">
     {%- if featured_image -%}
       {%- imgc featured_image, featured_image_alt, featured_image_width, featured_image_height, "posts" -%}
     {%- endif %}
-    <div class="background-hero-title-block-fit">
+    <div class="block w-full absolute bottom-0 px-4 md:px-12 lg:px-16 pt-3 pb-6 bg-gradient-to-t from-black">
       <div class="background-hero-title-text">
         <h1 class="text-center text-4xl md:text-left md:text-5xl lg:text-6xl 2xl:text-7xl tracking-tight leading-tight mb-6 px-4 md:px-0 text-white">{{ title }}</h1>
         <h2 class="text-center text-2xl md:text-left md:text-3xl lg:text-4xl 2xl:text-5xl leading-tight tracking-tight px-6 md:px-0 text-white">

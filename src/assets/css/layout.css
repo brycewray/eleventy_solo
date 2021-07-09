@@ -138,44 +138,9 @@ h5, .h5, h6, .h6 {
   @apply object-cover object-center h-full w-full;
 }
 
-.background-hero-image-div {
-  @apply relative overflow-hidden w-full bg-black;
-  /* Have to allow for mobile browsers' own "chrome"; can't go by Inspector simulations of smaller breakpoints */
-  height: 80vh;
-  max-height: 80vh;
-}
-
-
-.background-hero-title-block-fit {
-  @apply block w-full absolute bottom-0 px-4 pt-3 pb-6 bg-gradient-to-t from-black;
-}
-
 .background-hero-title-text {
   text-shadow: 4px 4px 2px #000;
 }
-
-@media screen and (min-width: 768px) {
-  .background-hero-title-block-fit {
-    @apply px-12;
-  }
-
-  .background-hero-image-div {
-    height: 85vh;
-    max-height: 85vh;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  .background-hero-title-block-fit {
-    @apply px-16;
-  }
-
-  .background-hero-image-div {
-    height: 95vh;
-    max-height: 95vh;
-  }
-}
-
 
 .text-nowrap, .text-nobrk {
   @apply whitespace-nowrap;
@@ -195,18 +160,6 @@ article img.containedImage, .home-colOne img.containedImage, article picture img
   width: 100%;
   height: auto;
   /* latter two for no-jank in Chrome and Firefox */
-}
-
-@media screen and (min-width: 769px) {
-  .height-hero {
-    height: 70vh;
-    max-height: 70vh;
-  }
-
-  .height-post {
-    height: 40vh;
-    max-height: 40vh;
-  }
 }
 
 @media screen and (min-width: 769px) {

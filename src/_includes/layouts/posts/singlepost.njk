@@ -47,18 +47,18 @@ layout: base
   </div>
 
   {% if page.url != "/about/" %}
-  <div class="w-full px-8 md:px-0 bg-blue-800 align-middle mt-10 mb-10">
-    <h3 class="text-center text-3xl tracking-normal mb-2 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-white">Other posts</a></h3>
+  <div class="w-full px-8 md:px-0 bg-black dark:bg-blue-900 align-middle mt-10 mb-10">
+    <h3 class="text-center text-3xl tracking-normal mb-2 pt-2"><a href="/posts" class="border-transparent text-blue-100 hover:text-blue-200 hover:border-blue-200">Other posts</a></h3>
   {% if nextPost.url %}
     <p class="font-sans text-center mt-2 mb-2 text-xl lg:text-2xl text-white leading-tight tracking-tight">
       <strong>Next</strong>: 
-      <a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+      <a class="border-transparent text-blue-100 hover:text-blue-200 hover:border-blue-200" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
     </p>
   {% endif %}
   {% if prevPost.url %}
     <p class="font-sans text-center pb-4 mt-2 mb-0 text-xl lg:text-2xl text-white leading-tight tracking-tight">
       <strong>Previous</strong>: 
-      <a class="border-transparent text-blue-100 hover:text-white hover:border-blue-100" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+      <a class="border-transparent text-blue-100 hover:text-blue-200 hover:border-blue-200" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
     </p>
   {% else %}
     <p class="p-0 -mt-2 leading-none">&nbsp;</p>

@@ -46,13 +46,13 @@ table.noborders thead td {
 }
   
 table.noborders td.td70 {
-  width: 70%;
+  @apply w-[70%];
 }
+
 table.noborders td.td70 img {
-  @apply block w-1/2 h-auto;
-  max-width: 50%;
+  @apply block w-1/2 h-auto max-w-[50%];
 }
 
 table.noborders td.td30 {
-  width: 30%;
+  @apply w-[30%];
 }

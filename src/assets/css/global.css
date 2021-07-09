@@ -27,7 +27,7 @@ ul li li li {
 }
 
 a {
-  @apply no-underline border-b text-blue-700 border-blue-600 dark:text-blue-100 dark:border-blue-100;
+  @apply no-underline border-b text-blue-700 border-blue-600 dark:text-blue-200 dark:border-blue-200;
   &:focus, &:hover, &:active {
     @apply text-blue-800 dark:text-blue-300 border-blue-500 dark:border-blue-200;
   }
@@ -74,11 +74,8 @@ article p, li {
   @apply text-lg mt-6 mb-6 leading-relaxed;
 }
 
-article img.containedImage, .home-colOne img.containedImage, article picture img {
-  min-width: 100%;
-  max-width: 100%;
-  width: 100%;
-  height: auto;
+article img.containedImage, article picture img {
+  @apply min-w-full max-w-full w-full h-auto;
   /* latter two for no-jank in Chrome and Firefox */
 }
 
@@ -113,4 +110,3 @@ blockquote {
 hr {
   @apply border-solid border-gray-900 dark:border-gray-100;
 }
-

@@ -111,6 +111,13 @@ nav {
   }
 }
 
+.site-logo-holder {
+  @apply mt-1 pt-1 w-full;
+  & a {
+    @apply no-underline border-b-0;
+  }
+}
+
 /* === Beginning of primary settings for larger screens === */
 @media screen and (min-width: 900px) {
   .nav-toggle-label {
@@ -142,10 +149,4 @@ nav {
   }
 }
 
-.site-logo-holder {
-  @apply mt-1 pt-1 w-full;
-  & a {
-    @apply no-underline border-b-0;
-  }
-}
 /* === End of primary settings for larger screens === */

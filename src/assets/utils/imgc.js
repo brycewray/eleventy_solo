@@ -53,11 +53,9 @@ module.exports = (url, alt, width, height, tmpl) => {
     })
     stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2)
     stringtoRet += `" alt="${alt}" width="${width}" height="${height}"`
-    /*
     if (divClass !== "h-full") {
       stringtoRet += ` loading="lazy"` // not good for above-the-fold images
     }
-    */
     stringtoRet +=` sizes="${dataSzes}" />
   </div>
   <noscript>

@@ -4,9 +4,9 @@ This shortcode takes the following form...
 ...with url in the form of (note NO leading or ending slash):
   filename.ext
 ...and 'temp[late]' optional in body copy. The template is used 
-to specify hero images on either the home page ('index') or 
-post pages ('posts'). Without this parameter, the `switch` 
-statement below defaults to body copy-style image-handling.
+to specify hero images on  post pages ('posts'). 
+Without this parameter, the `switch` statement below defaults 
+to body copy-style image-handling.
 */
 
 const respSizes = require(`../../../_data/siteparams.json`).respSizes
@@ -51,7 +51,7 @@ module.exports = (url, alt, width, height, tmpl) => {
         stringtoRet += separator
       }
     })
-    stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2)
+    stringtoRet = stringtoRet.substring(0, stringtoRet.length - 2) // last one loses the final separator
     stringtoRet += `" alt="${alt}" width="${width}" height="${height}"`
     if (divClass !== "h-full") {
       stringtoRet += ` loading="lazy"` // not good for above-the-fold images

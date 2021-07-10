@@ -4,7 +4,7 @@ layout: base
 ---
 
 <main>
-  <div class="relative overflow-hidden w-full bg-black h-[80vh] max-h-[80vh] md:h-[85vh] md:max-h-[85vh] lg:h-[95vh] lg:max-h-[95vh]">
+  <div class="relative overflow-hidden w-full bg-black h-[80vh] max-h-[80vh] min-h-[80vh] md:h-[85vh] md:max-h-[85vh] md:min-h-[85vh] 2xl:h-[95vh] 2xl:max-h-[95vh] 2xl:min-h-[95vh]">
     {%- if featured_image -%}
       {%- imgc featured_image, featured_image_alt, featured_image_width, featured_image_height, "posts" -%}
     {%- endif %}
@@ -18,7 +18,7 @@ layout: base
             &nbsp;
           {% endif %}
         </h2>
-        <p class="font-sans hidden not-italic md:block md:text-2xl tracking-tight md:mt-8 mb-6 text-white">{{ description }}</p>
+        <p class="font-sans text-center not-italic md:block md:text-2xl md:text-left tracking-tight mt-8 mb-6 text-white">{{ description }}</p>
         <p class="font-sans text-base text-center px-4 md:text-right md:px-0 mt-4 md:mt-0 mb-0 text-white">
           <strong class="text-lg md:text-xl 2xl:text-2xl">{{ page.date | htmlDateString }}</strong><br />
           <span class="text-sm">

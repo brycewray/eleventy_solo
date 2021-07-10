@@ -21,40 +21,12 @@
   @apply text-sm p-0 mt-2 leading-snug text-center;
 }
 
-.YTembed { /* container for iframe */
-  @apply relative pt-8 h-0 overflow-hidden;
-  padding-bottom: 56.25%;
-  & iframe, & object, & embed {
-    @apply absolute top-0 left-0 w-full h-full;
-  }
-}
-
-.home-colOne p {
-  @apply leading-8 mb-4;
-}
-
-.home-colOne img {
-  @apply my-4;
-}
-
 .indentAfterLI {
   @apply ml-8;
 }
 
 .punctuationExample {
   @apply font-serif text-2xl text-center;
-}
-
-.aspect-16x9 {
-  padding-bottom: 56.25%;
-}
-
-.twitter-tweet {
-  @apply mt-4 mx-auto mb-0;
-}
-
-.dateInfo {
-  @apply text-gray-700 dark:text-gray-400;
 }
 
 .navWhite, .navWhite:visited {
@@ -71,10 +43,6 @@
 
 .text-blue-dark { /* for dark mode */
   @apply text-blue-200;
-}
-
-.gradient-titles {
-  @apply bg-gradient-to-b from-blue-700 to-black;
 }
 
 .ctr {

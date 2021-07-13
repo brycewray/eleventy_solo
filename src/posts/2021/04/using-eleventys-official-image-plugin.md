@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2021-07-13T08:11:00-05:00
+lastmod: 2021-07-13T08:54:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000

@@ -5,7 +5,7 @@ subtitle: "Save time and trouble with this intro and code"
 description: "The what, why, and how of Eleventy Image."
 author: Bryce Wray
 date: 2021-04-17T13:41:00-05:00
-lastmod: 2021-05-29T12:24:00-05:00
+lastmod: 2021-07-13T08:11:00-05:00
 discussionId: "2021-04-using-eleventys-official-image-plugin"
 featured_image: "camera-lens-color-bkgd-theregisti-TduXmZMD2uQ-unsplash_6000x4000.jpg"
 featured_image_width: 6000
@@ -125,15 +125,16 @@ async function imageShortcode(src, alt) {
       return `${name}-${width}w.${format}`
     }
   })  
-  let lowsrc = metadata.jpeg[0]  
+  let lowsrc = metadataImg.jpeg[0]
+  let highsrc = metadataImg.jpeg[metadataImg.jpeg.length - 1]  
   return `<picture>
     ${Object.values(metadata).map(imageFormat => {
       return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`
     }).join("\n")}
     <img
       src="${lowsrc.url}"
-      width="${lowsrc.width}"
-      height="${lowsrc.height}"
+      width="${highsrc.width}"
+      height="${highsrc.height}"
       alt="${alt}"
       loading="lazy"
       decoding="async">

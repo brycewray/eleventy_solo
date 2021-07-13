@@ -27,15 +27,16 @@ async function imageShortcode(src, alt) {
       return `${name}-${width}w.${format}`
     }
   })  
-  let lowsrc = metadataImg.jpeg[0]  
+  let lowsrc = metadataImg.jpeg[0]
+  let highsrc = metadataImg.jpeg[metadataImg.jpeg.length - 1]  
   return `<picture>
     ${Object.values(metadataImg).map(imageFormat => {
       return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat.map(entry => entry.srcset).join(", ")}" sizes="${sizes}">`
     }).join("\n")}
     <img
       src="${lowsrc.url}"
-      width="${lowsrc.width}"
-      height="${lowsrc.height}"
+      width="${highsrc.width}"
+      height="${highsrc.height}"
       alt="${alt}"
       loading="lazy"
       decoding="async">

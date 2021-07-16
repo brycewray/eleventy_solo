@@ -14,6 +14,15 @@ body {
   font-weight: 425;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    font-weight: 375;
+  }
+  bold, strong {
+    font-weight: 650;
+  }
+}
+
 p, li {
   /* for handling Markdown-created <p> and <li> */
   @apply mb-3 text-lg;

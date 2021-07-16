@@ -58,7 +58,7 @@ span.caption {
 }
 
 span.caption a {
-  @apply text-blue-200 border-blue-200;
+  @apply text-blue-100 border-blue-100;
   &:focus, &:hover, &:active {
     @apply text-blueGray-200 border-blue-100;
   }

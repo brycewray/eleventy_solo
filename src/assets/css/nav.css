@@ -71,7 +71,7 @@ CSS-only and **accessible** menu based on... https://codepen.io/jonraedeke/pen/W
    @apply hidden invisible;
    &:checked {
      & ~ nav .nav__items {
-       @apply h-auto bg-black dark:bg-blue-800 transition-all duration-500 ease-linear;
+       @apply h-auto bg-black dark:bg-blue-900 transition-all duration-500 ease-linear;
        max-height: 30rem;
      }
      & ~ label .nav__icon-line:first-child {

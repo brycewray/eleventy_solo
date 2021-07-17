@@ -5,7 +5,7 @@ subtitle: "Eleventy Meetup #1, Firefox’s woes, and other website-related arca
 description: "Static site generator fans, here’s another (sorta) brief set of goodies for your edification."
 author: Bryce Wray
 date: 2021-07-17T14:23:00-05:00
-#lastmod: 2021-07-17T14:38:00-05:00
+#lastmod: 2021-07-17T14:58:00-05:00
 discussionId: "2021-07-gems-in-rough-07"
 featured_image: "gemstones-1419780_3648x2736.jpg"
 featured_image_width: 3648
@@ -42,6 +42,6 @@ In my tests so far, the ASWA site's performance is so-so, especially compared to
 
 ## Comment-by-email
 
-On one of my at-least-daily visits to the [Eleventy Discord](https://www.11ty.dev/blog/discord/), I noticed a link to "[Emails, not comments](https://luke.work/blog/2021/07/alternative-to-comments/)" by [Luke Harris](https://twitter.com/lkhrs). The article described how, having decided not to have a commenting platform on his Eleventy site anymore, Mr. Harris decided to make it a one-click action for anyone to reply to his articles by email. (He'd probably want me to add that he got the idea from [Kev Quick's site](https://kevq.uk/), as the linked article duly notes.)
+On one of my at-least-daily visits to the [Eleventy Discord](https://www.11ty.dev/blog/discord/), I noticed a link to "[Emails, not comments](https://luke.work/blog/2021/07/alternative-to-comments/)" by [Luke Harris](https://twitter.com/lkhrs). The article described how, having decided not to have a commenting platform on his Eleventy site anymore, Mr. Harris decided to make it a one-click action for anyone to reply to his articles by email. (He'd probably want me to add that he got the idea from [Kev Quirk's site](https://kevq.uk/), as the linked article duly notes.)
 
 The process was both appealingly simple and, to me, geekily interesting; so I stole, um, adopted his approach---as you can see at the bottom of this post, as well as all other pages on the site using the same template. Thank you, sir!

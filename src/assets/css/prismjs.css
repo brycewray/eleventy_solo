@@ -76,7 +76,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.keyword,
 .token.builtin {
-  @apply text-blue-300;
+  @apply text-sky-200;
 }
 
 .token.string,

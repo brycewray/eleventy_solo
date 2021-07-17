@@ -5,7 +5,7 @@ subtitle: "Eleventy Meetup #1, Firefox’s woes, and other website-related arca
 description: "Static site generator fans, here’s another (sorta) brief set of goodies for your edification."
 author: Bryce Wray
 date: 2021-07-17T14:23:00-05:00
-#lastmod:
+#lastmod: 2021-07-17T14:38:00-05:00
 discussionId: "2021-07-gems-in-rough-07"
 featured_image: "gemstones-1419780_3648x2736.jpg"
 featured_image_width: 3648
@@ -34,9 +34,9 @@ As for the elephant in the room represented by these numbers: we've clearly reac
 
 It escaped my notice until this week that Microsoft's [Azure Static Web Apps](https://azure.microsoft.com/en-us/services/app-service/static/) service [has been in general availability for two months](https://azure.microsoft.com/en-us/blog/develop-production-scale-modern-web-apps-quickly-with-azure-static-web-apps/). On learning this, I decided to give ASWA a try with the same Eleventy-based test repo I use on various [Jamstack](https://jamstack.org)-savvy hosts.
 
-Getting signed up was, well, challenging, as one tends to find for most things Azure; and the build process was lengthy[^ASWAslowbuild] and supports only a limited number of SSGs, *not* including Eleventy as of now. Still, I got it going.
+Getting signed up was, well, challenging, as one tends to find for most things [Azure](https://azure.microsoft.com/en-us/); and the build process was lengthy[^ASWAslowbuild] and supports only a limited number of SSGs, *not* including Eleventy as of now. Still, I got it going.
 
-In my tests so far, the ASWA site's performance is so-so, especially compared to that of hosts with *far* less up-front hassle. It's not terrible, but I'd have expected more from an [Azure](https://azure.microsoft.com/en-us/)-hosted site. Will keep a watch on it but, for now, I'm of the opinion that Microsoft is content to let the usual Jamstack hosts lead the way since ASWA probably doesn't fit its business model all that well.
+In my tests so far, the ASWA site's performance is so-so, especially compared to that of hosts with *far* less up-front hassle. It's not terrible, but I'd have expected more from an Azure-hosted site. Will keep a watch on it but, for now, I'm of the opinion that Microsoft is content to let the usual Jamstack hosts lead the way since ASWA probably doesn't fit its business model all that well.
 
 [^ASWAslowbuild]: To be fair, I should note that it depends on [GitHub Actions](https://github.com/features/actions), which in my experience adds about ninety to 120 seconds to the process on its own. That said, a build process taking nearly three times as long on ASWA compared to a similarly GitHub Actions-fueled one on a [CloudFlare Workers site](https://workers.cloudflare.com) doesn't augur well for Microsoft's setup right now.
 

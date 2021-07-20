@@ -6,7 +6,7 @@ subtitle: "And then there were seven"
 description: "For those interested in a (somewhat) easy take on Hugo, here’s a starter set for you."
 author: Bryce Wray
 date: 2021-06-25T16:50:00-05:00
-lastmod: 2021-06-26T10:02:00-05:00
+lastmod: 2021-07-20T07:05:00-05:00
 discussionId: "2021-06-beginners-luck-3-adding-zola-starter"
 featured_image: susan-holt-simpson-H7SCRwU1aiM-unsplash_4608x3072.jpg
 featured_image_width: 4608
@@ -16,6 +16,9 @@ featured_image_caption: |
   <span class="caption">Image: <a href="https://unsplash.com/@shs521?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Susan Holt Simpson</a>; <a href="https://unsplash.com/s/photos/toy-blocks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 ---
+
+**Update, 2021-07-20**: Due to breaking changes introduced in Zola version 0.14.0 (released 2021-07-19), **DO&nbsp;NOT** use either starter set mentioned herein with that version or higher.
+{.yellowBox}
 
 This will be an unusually short entry. I just wanted to advise that I've built my seventh [static site generator (SSG)](https://jamstack.org/generators) [starter set](/posts/2021/03/beginners-luck-update). It uses [Zola](https://getzola.org), and you can find its GitHub repository at [https://github.com/brycewray/zola_solo](https://github.com/brycewray/zola_solo). There's also a [live demo](https://zola-solo.vercel.app).
 

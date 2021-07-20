@@ -20,15 +20,14 @@
           {{ '/src/assets/svg/svgNavIcon.svg' | svgContents | safe }}
         </a>
         <button 
-          class="text-white cursor-pointer text-2xl leading-none py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" 
+          class="text-white cursor-pointer leading-none -py-2 border border-solid border-transparent rounded bg-transparent block hamburger lg:hidden outline-none focus:outline-none" 
           type="button"  
           aria-haspopup="true" 
           aria-expanded="false" 
           aria-control="menu" 
           aria-label="Navigation" 
           id="collapse-button"
-        >
-          &#9776;
+        >          
         </button>
       </div>
       <div class="lg:flex flex-grow hidden" id="collapse-navbar">

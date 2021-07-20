@@ -75,3 +75,13 @@ span.caption a {
 .text-nowrap, .text-nobrk {
   @apply whitespace-nowrap;
 }
+
+#collapse-button.hamburger:before {
+  font-size: 150%;
+  content: "\2630"; /* same as &#9776; HTML entity */
+}
+
+#collapse-button.close:before {
+  font-size: 170%;
+  content: "\00D7"; /* same as &times; HTML entity */
+}

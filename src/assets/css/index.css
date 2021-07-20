@@ -1,6 +1,6 @@
 /*! purgecss start ignore */
 @import 'reset.css';
-@import 'fonts.css';
+@import 'fonts_Public_Sans.css';
 @import 'prismjs.css';
 @import 'tailwindcss/base';
 @import 'global.css';
@@ -9,7 +9,7 @@
 @import 'footnotes.css';
 /* @import 'nav.css'; */
 @import 'lazyload.css';
-@import 'intervf.css';
+/* @import 'intervf.css'; */
 /* @import 'ffoxobliq.css'; */
 @import 'tailwindcss/components';
 /*! purgecss end ignore */

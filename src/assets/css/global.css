@@ -8,10 +8,9 @@ html, body {
 }
 
 body {
-  @apply dark:text-gray-100;
+  @apply dark:text-gray-100 dark:font-light;
   /* font-feature-settings: "liga" 1; */
   /* commenting out because of Menlo weirdness if browser uses */
-  font-weight: 425;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -66,6 +65,10 @@ h2, .h2 {
 
 h3, .h3 {
   @apply text-3xl;
+}
+
+h3, .h3, h5, .h5 {
+  @apply italic;
 }
 
 h4, .h4 {

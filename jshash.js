@@ -1,39 +1,42 @@
 const fs = require('fs')
 const md5 = require('md5')
-const JSDATAFILE = '_data/jshash.json'
-const JSHASHFILE = 'jshash'
-const DIRECTORY = 'src/assets/js/hash'
-var lazyloadFile =  'src/assets/js/lazyload-helper.js'
+const DIRECTORY = 'src/assets/js'
+const LAZYDATAFILE = '_data/lazyloadhelper.json'
+const MOBIDATAFILE = '_data/mobilemenuhelper.json'
+var lazyloadFile = DIRECTORY + '/' + 'lazyload-helper.js'
+var mobimenuFile = DIRECTORY + '/' + 'mobile-menu-helper.js'
 
 var lazyloadMd5Total = 0
 var lazyloadContent = ''
+var mobimenuMd5Total = 0
+var mobimenuContent = ''
 
 lazyloadContent = fs.readFileSync(lazyloadFile)
+mobimenuContent = fs.readFileSync(mobimenuFile)
 
 lazyloadMd5Total = md5(lazyloadContent)
-console.log(`lazyload MD5 result =`, lazyloadMd5Total)
+console.log(`lazyload MD5 result = `, lazyloadMd5Total)
+mobimenuMd5Total = md5(mobimenuContent)
+console.log(`mobimenu MD5 result = `, mobimenuMd5Total)
 
-var jsonValue = `{
+var lazyloadValue = `{
   "lazyloadJS": "lazyload-helper-${lazyloadMd5Total}.js"
 }`
-
-fs.writeFileSync(JSDATAFILE, jsonValue)
+var mobimenuValue = `{
+  "mobimenuJS": "mobile-menu-helper-${mobimenuMd5Total}.js"
+}`
 
 // actual file-handling
-// first, get rid of existing hashed content
-if(fs.existsSync(DIRECTORY)) {
-  fs.rmdir(DIRECTORY, {recursive: true})
-}
-if(!fs.existsSync(DIRECTORY)) {
-  fs.mkdirSync(DIRECTORY)
-}
-// create the actual file
+
+fs.writeFileSync(LAZYDATAFILE, lazyloadValue)
+fs.writeFileSync(MOBIDATAFILE, mobimenuValue)
+
+// create the actual JS files
 fs.writeFile(DIRECTORY + '/' + 'lazyload-helper-' + lazyloadMd5Total + '.js', lazyloadContent, (err) => {
   if (err)
     console.log(err)
 })
-
-var txtValue = `lazyload-helper-${lazyloadMd5Total}.js`
-fs.writeFileSync(JSHASHFILE, txtValue)
-// ...the latter because, otherwise, you get the following error:
-// The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView.
+fs.writeFile(DIRECTORY + '/' + 'mobile-menu-helper-' + mobimenuMd5Total + '.js', mobimenuContent, (err) => {
+  if (err)
+    console.log(err)
+})

@@ -81,3 +81,10 @@ csp.txt
 
 _data/csshash.json
 _data/year.json
+_data/jshash.json
+
+
+src/assets/js/hash
+
+lazyloadjshash
+mobimenujshash

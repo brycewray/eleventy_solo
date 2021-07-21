@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf _site",
-    "hasher": "node csshash.js",
+    "hasher": "node csshash.js && node jshash.js",
     "start": "TAILWIND_MODE=watch NODE_ENV=development npm-run-all clean --parallel dev:*",
     "dev:postcss": "postcss src/assets/css/index.css -o _site/css/index.css --config ./postcss.config.js --watch",
     "dev:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --incremental --quiet --serve",

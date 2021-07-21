@@ -1,27 +1,39 @@
 const fs = require('fs')
 const md5 = require('md5')
-const globAll = require('glob-all')
-const DATAFILE = '_data/csshash.json'
-const PCSSFILE = 'csshash'
-cssFiles = globAll.sync([
-  'src/assets/css/*.css'
-])
+const JSDATAFILE = '_data/jshash.json'
+const JSHASHFILE = 'jshash'
+const DIRECTORY = 'src/assets/js/hash'
+var lazyloadFile =  'src/assets/js/lazyload-helper.js'
 
-var cssMd5Total = 0
-var cssContent = ''
+var lazyloadMd5Total = 0
+var lazyloadContent = ''
 
-for(i=0; i<cssFiles.length; i++) {
-  cssContent += (fs.readFileSync(cssFiles[i]))
-}
-cssMd5Total = md5(cssContent)
-console.log(`CSS MD5 result =`, cssMd5Total)
+lazyloadContent = fs.readFileSync(lazyloadFile)
+
+lazyloadMd5Total = md5(lazyloadContent)
+console.log(`lazyload MD5 result =`, lazyloadMd5Total)
 
 var jsonValue = `{
-  "indexCSS": "index-${cssMd5Total}.css"
+  "lazyloadJS": "lazyload-helper-${lazyloadMd5Total}.js"
 }`
-fs.writeFileSync(DATAFILE, jsonValue)
 
-var txtValue = `index-${cssMd5Total}.css`
-fs.writeFileSync(PCSSFILE, txtValue)
+fs.writeFileSync(JSDATAFILE, jsonValue)
+
+// actual file-handling
+// first, get rid of existing hashed content
+if(fs.existsSync(DIRECTORY)) {
+  fs.rmdir(DIRECTORY, {recursive: true})
+}
+if(!fs.existsSync(DIRECTORY)) {
+  fs.mkdirSync(DIRECTORY)
+}
+// create the actual file
+fs.writeFile(DIRECTORY + '/' + 'lazyload-helper-' + lazyloadMd5Total + '.js', lazyloadContent, (err) => {
+  if (err)
+    console.log(err)
+})
+
+var txtValue = `lazyload-helper-${lazyloadMd5Total}.js`
+fs.writeFileSync(JSHASHFILE, txtValue)
 // ...the latter because, otherwise, you get the following error:
 // The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView.

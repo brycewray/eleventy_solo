@@ -1,41 +1,41 @@
 <header class="bg-black dark:bg-blue-800 w-full fixed z-50">
-  <!-- 
-  h/t https://stefvanlooveren.me/blog/tailwind-responsive-header-menu-example 
+  <!--
+  h/t https://stefvanlooveren.me/blog/tailwind-responsive-header-menu-example
   and https://www.creative-tim.com/learning-lab/tailwind-starter-kit/documentation/javascript/navbars
   -->
-  <nav 
-    class="relative flex flex-wrap justify-between bg-black dark:bg-blue-800" 
-    role="navigation" 
+  <nav
+    class="relative flex flex-wrap justify-between bg-black dark:bg-blue-800"
+    role="navigation"
     id="block-main"
   >
     <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
       <div class="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start">
-        <a 
-          class="inline-block mr-4 py-2 border-0 float-right lg:float-none" 
-          href="/" 
-          aria-label="Link to home page" 
+        <a
+          class="inline-block mr-4 py-2 border-0 float-right lg:float-none"
+          href="/"
+          aria-label="Link to home page"
           title="Link to home page"
         >
           {{ '/src/assets/svg/svgNavIcon.svg' | svgContents | safe }}
         </a>
-        <button 
-          class="text-white cursor-pointer leading-none -py-2 border border-solid border-transparent rounded bg-transparent block hamburger lg:hidden outline-none focus:outline-none" 
-          type="button"  
-          aria-haspopup="true" 
-          aria-expanded="false" 
-          aria-control="menu" 
-          aria-label="Navigation" 
+        <button
+          class="text-white cursor-pointer leading-none -py-2 border border-solid border-transparent rounded bg-transparent block hamburger lg:hidden outline-none focus:outline-none"
+          type="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Navigation"
           id="collapse-button"
-        >          
+        >
         </button>
       </div>
       <div class="lg:flex flex-grow hidden" id="collapse-navbar">
         <ul class="w-full pr-2 lg:w-auto flex flex-col justify-end lg:flex-row list-none mb-4 lg:mb-0 lg:ml-auto">
           <li class="nav-item my-2 lg:my-0">
-            <a 
-              class="flex px-2 items-center lg:text-sm lg:uppercase font-bold leading-snug hover:opacity-75 border-0 text-white focus:text-gray-100 active:text-gray-100 hover:text-gray-100 float-right lg:float-none" 
-              href="/about/" 
-              title="About me" 
+            <a
+              class="flex px-2 items-center lg:text-sm lg:uppercase font-bold leading-snug hover:opacity-75 border-0 text-white focus:text-gray-100 active:text-gray-100 hover:text-gray-100 float-right lg:float-none"
+              href="/about/"
+              title="About me"
               aria-label="About me"
             >
               <span class="ml-2">About</span>
@@ -44,10 +44,10 @@
           {%- for post in collections.post | reverse -%}
             {%- if loop.index0 < 1 -%}
               <li class="nav-item my-2 lg:my-0">
-                <a 
-                  class="flex px-2 items-center lg:text-sm lg:uppercase font-bold leading-snug hover:opacity-75 border-0 text-white focus:text-gray-100 active:text-gray-100 hover:text-gray-100 float-right lg:float-none" 
-                  href="{{ post.url }}" 
-                  title="Newest post" 
+                <a
+                  class="flex px-2 items-center lg:text-sm lg:uppercase font-bold leading-snug hover:opacity-75 border-0 text-white focus:text-gray-100 active:text-gray-100 hover:text-gray-100 float-right lg:float-none"
+                  href="{{ post.url }}"
+                  title="Newest post"
                   aria-label="Newest post">
                   <span class="ml-2">Newest post</span>
                 </a>
@@ -55,30 +55,30 @@
             {%- endif -%}
           {%- endfor -%}
           <li class="nav-item my-2 lg:my-0">
-            <a 
-              class="flex px-2 items-center lg:text-sm lg:uppercase font-bold leading-snug hover:opacity-75 border-0 text-white focus:text-gray-100 active:text-gray-100 hover:text-gray-100 float-right lg:float-none" 
-              href="/posts/" 
-              title="All posts" 
+            <a
+              class="flex px-2 items-center lg:text-sm lg:uppercase font-bold leading-snug hover:opacity-75 border-0 text-white focus:text-gray-100 active:text-gray-100 hover:text-gray-100 float-right lg:float-none"
+              href="/posts/"
+              title="All posts"
               aria-label="All posts"
             >
               <span class="ml-2">All posts</span>
             </a>
           </li>
           <li class="nav-item my-2 lg:my-0">
-            <a 
-              class="flex px-2 items-center lg:text-sm lg:uppercase font-bold leading-snug hover:opacity-75 border-0 text-white focus:text-gray-100 active:text-gray-100 hover:text-gray-100 float-right lg:float-none" 
-              href="/privacy/" 
-              title="Privacy policy" 
+            <a
+              class="flex px-2 items-center lg:text-sm lg:uppercase font-bold leading-snug hover:opacity-75 border-0 text-white focus:text-gray-100 active:text-gray-100 hover:text-gray-100 float-right lg:float-none"
+              href="/privacy/"
+              title="Privacy policy"
               aria-label="Privacy policy"
             >
               <span class="ml-2">Privacy</span>
             </a>
           </li>
           <li class="nav-item my-2 lg:my-0">
-            <a 
-              class="flex px-2 items-center lg:text-sm lg:uppercase font-bold leading-snug hover:opacity-75 border-0 text-white focus:text-gray-100 active:text-gray-100 hover:text-gray-100 float-right lg:float-none" 
-              href="/contact/" 
-              title="Contact me" 
+            <a
+              class="flex px-2 items-center lg:text-sm lg:uppercase font-bold leading-snug hover:opacity-75 border-0 text-white focus:text-gray-100 active:text-gray-100 hover:text-gray-100 float-right lg:float-none"
+              href="/contact/"
+              title="Contact me"
               aria-label="Contact me"
             >
               <span class="ml-2">Contact</span>

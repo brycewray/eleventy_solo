@@ -5,7 +5,7 @@ subtitle: "An Electron-ic firestorm"
 description: "A timely follow-up to my earlier article about password management."
 author: Bryce Wray
 date: 2021-08-14T10:20:00-05:00
-#lastmod: 2021-08-14T10:30:00-05:00
+lastmod: 2021-08-17T18:41:00-05:00
 discussionId: "2021-08-1Password-hits-fan"
 featured_image: "lock-and-castle-5359174_4109x2832.jpg"
 featured_image_width: 4109
@@ -58,7 +58,7 @@ All that said, where would I recommend "never-again" 1Password users haul their 
 ### The KeePass way
 
 - On Mac, Windows, or Linux: [KeePassXC](https://keepassxc.org).
-- On iOS: [Strongbox](https://strongboxsafe.com).
+- On iOS: [KeePassium](https://keepassium.com) or [Strongbox](https://strongboxsafe.com).
 - On Android: [KeePass2Android](https://github.com/PhilippC/keepass2android/).
 - Synchronization across your devices: any cloud vendor will do as long as your devices can access individual files on it. This is one particular beauty of the KeePass way: all you're doing is sharing a KeePass-formatted file. You can use whichever vendor suits you.
 
@@ -76,9 +76,9 @@ Migrating your 1Password credentials to Bitwarden is *fairly* easy if you follow
 
 ## As for me&nbsp;.&nbsp;.&nbsp;.
 
-I've been a 1Password subscriber for a few years but had already decided to let the sub lapse late this year in favor of a paid Bitwarden plan I'm already using. However, at this writing, I'm also testing out a "KeePass way" setup of KeePassXC on the Mac and Strongbox on my iOS devices.[^KeePassium] Which "way" I'll finally land remains to be seen. I would say the same is true for all those mad-as-hell 1Password subscribers whose hot takes I've been reading the last few days. It's definitely worth watching.
+I've been a 1Password subscriber for a few years but had already decided to let the sub lapse late this year in favor of a paid Bitwarden plan I'm already using. However, at this writing, I'm also testing out a "KeePass way" setup of KeePassXC on the Mac and KeePassium on my iOS devices.[^KeePassium] Which "way" I'll finally land remains to be seen. I would say the same is true for all those mad-as-hell 1Password subscribers whose hot takes I've been reading the last few days. It's definitely worth watching.
 
-[^KeePassium]: I tried [KeePassium](https://keepassium.com) first, but couldn't stop running into an iOS 14-caused glitch despite the developer's [helpful description of a remedy](https://keepassium.com/blog/2020/09/ios-14-file-doesnt-exist/). The only final way around that glitch would've been to [change a setting in KeePassXC](https://www.reddit.com/r/KeePassium/comments/oicp1j/cannot_find_the_database_file_the_file_doesnt/h4ukrbk?utm_source=share&utm_medium=web2x&context=3) I'd rather not make.
+[^KeePassium]: In the original version of this post, I mentioned that I tried KeePassium before Strongbox but kept encountering an iOS 14-caused glitch with the former. I was initially wary about the KeePassium developer's [helpful description of a remedy](https://keepassium.com/blog/2020/09/ios-14-file-doesnt-exist/), which involved [changing a file security setting in KeePassXC](https://www.reddit.com/r/KeePassium/comments/oicp1j/cannot_find_the_database_file_the_file_doesnt/h4ukrbk?utm_source=share&utm_medium=web2x&context=3). However, he subsequently explained to me that KeePassium handled this differently because of a [purposeful feature that's designed to make it more secure](https://keepassium.com/articles/cloud-sync-sandboxing/), so I reverted to KeePassium and it worked fine.
 
 **Note**: Whichever "way" you go, I suggest you **not** store any [time-based one-time passwords](https://en.wikipedia.org/wiki/Time-based_One-Time_Password) (TOTPs) in it, even though these apps generally are capable of allowing that. It's the whole "don't put all your eggs in one basket" thing. Instead, use a **separate** authentication app, and one that syncs your TOTPs across your devices. The one I suggest (and use myself) is [Authy](https://authy.com), with [Microsoft Authenticator](https://www.microsoft.com/en-us/security/mobile-authenticator-app) coming in second. I strongly suggest you **not** use [Google Authenticator](https://support.google.com/accounts/answer/1066447) mainly because of its inability to back up and recover your TOTPs' "seeds." For more information on this subject, see this [ArsTechnica authenticator roundup](https://arstechnica.com/information-technology/2020/05/choosing-2fa-authenticator-apps-can-be-hard-ars-did-it-so-you-dont-have-to/) from 2020.
 {.yellowBox}
